@@ -38,9 +38,9 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.lv;
+package j86.sun.text.resources.lv;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_lv_LV extends ParallelListResourceBundle {
     /**

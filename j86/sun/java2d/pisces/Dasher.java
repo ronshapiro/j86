@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pisces;
+package j86.sun.java2d.pisces;
 
-import j86.j86.sun.awt.geom.PathConsumer2D;
+import j86.sun.awt.geom.PathConsumer2D;
 
 /**
  * The <code>Dasher</code> class takes a series of linear commands
@@ -38,7 +38,7 @@ import j86.j86.sun.awt.geom.PathConsumer2D;
  * semantics are unclear.
  *
  */
-final class Dasher implements j86.j86.sun.awt.geom.PathConsumer2D {
+final class Dasher implements j86.sun.awt.geom.PathConsumer2D {
 
     private final PathConsumer2D out;
     private final float[] dash;

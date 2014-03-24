@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.java2d.cmm.lcms;
+package j86.sun.java2d.cmm.lcms;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ComponentColorModel;
-import j86.j86.j86.java.awt.image.ComponentSampleModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
-import j86.j86.j86.sun.awt.image.ShortComponentRaster;
-import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ComponentColorModel;
+import j86.java.awt.image.ComponentSampleModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.SampleModel;
+import j86.sun.awt.image.ByteComponentRaster;
+import j86.sun.awt.image.ShortComponentRaster;
+import j86.sun.awt.image.IntegerComponentRaster;
 
 class LCMSImageLayout {
 

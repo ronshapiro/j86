@@ -25,8 +25,8 @@
 
 package j86.java.io;
 
-import j86.j86.java.nio.channels.FileChannel;
-import j86.j86.j86.sun.nio.ch.FileChannelImpl;
+import j86.java.nio.channels.FileChannel;
+import j86.sun.nio.ch.FileChannelImpl;
 
 
 /**
@@ -147,8 +147,8 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
      * </table>
      *
      * The <tt>"rws"</tt> and <tt>"rwd"</tt> modes work much like the {@link
-     * j86.j86.java.nio.channels.FileChannel#force(boolean) force(boolean)} method of
-     * the {@link j86.j86.java.nio.channels.FileChannel} class, passing arguments of
+     * j86.java.nio.channels.FileChannel#force(boolean) force(boolean)} method of
+     * the {@link j86.java.nio.channels.FileChannel} class, passing arguments of
      * <tt>true</tt> and <tt>false</tt>, respectively, except that they always
      * apply to every I/O operation and are therefore often more efficient.  If
      * the file resides on a local storage device then when an invocation of a
@@ -190,7 +190,7 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
      *               {@code checkWrite} method denies write access to the file
      * @see        j86.java.lang.SecurityManager#checkRead(java.lang.String)
      * @see        j86.java.lang.SecurityManager#checkWrite(java.lang.String)
-     * @see        j86.j86.java.nio.channels.FileChannel#force(boolean)
+     * @see        j86.java.nio.channels.FileChannel#force(boolean)
      * @revised 1.4
      * @spec JSR-51
      */
@@ -252,10 +252,10 @@ public class RandomAccessFile implements DataOutput, DataInput, Closeable {
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file.
      *
-     * <p> The {@link j86.j86.java.nio.channels.FileChannel#position()
+     * <p> The {@link j86.java.nio.channels.FileChannel#position()
      * position} of the returned channel will always be equal to
      * this object's file-pointer offset as returned by the {@link
      * #getFilePointer getFilePointer} method.  Changing this object's

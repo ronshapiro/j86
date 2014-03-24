@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.policytool;
+package j86.sun.security.tools.policytool;
 
 import j86.java.io.*;
 import j86.java.util.LinkedList;
@@ -32,7 +32,7 @@ import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.text.Collator;
 import j86.java.text.MessageFormat;
 import j86.sun.security.util.PropertyExpander;
@@ -47,15 +47,15 @@ import j86.java.awt.Insets;
 import j86.java.awt.Point;
 import j86.java.awt.Toolkit;
 import j86.java.awt.Window;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.awt.event.*;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateException;
 import j86.java.security.*;
 import j86.sun.security.provider.*;
 import j86.sun.security.util.PolicyUtil;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.border.EmptyBorder;
 
 /**
  * PolicyTool may be used by users and administrators to configure the
@@ -72,7 +72,7 @@ public class PolicyTool {
     // for i18n
     static final j86.java.util.ResourceBundle rb =
         j86.java.util.ResourceBundle.getBundle(
-            "j86.j86.sun.security.tools.policytool.Resources");
+            "j86.sun.security.tools.policytool.Resources");
     static final Collator collator = Collator.getInstance();
     static {
         // this is for case insensitive string comparisons
@@ -402,13 +402,13 @@ public class PolicyTool {
                                                 null);
         } catch (IOException ioe) {
 
-            // copied from j86.j86.sun.security.pkcs11.SunPKCS11
+            // copied from j86.sun.security.pkcs11.SunPKCS11
             String MSG = "no password provided, and no callback handler " +
                         "available for retrieving password";
 
             Throwable cause = ioe.getCause();
             if (cause != null &&
-                cause instanceof j86.j86.javax.security.auth.login.LoginException &&
+                cause instanceof j86.javax.security.auth.login.LoginException &&
                 MSG.equals(cause.getMessage())) {
 
                 // throw a more friendly exception message
@@ -899,7 +899,7 @@ class PolicyEntry {
         if (ge.codeBase != null)
             location = new URL(ge.codeBase);
         this.codesource = new CodeSource(location,
-            (j86.j86.java.security.cert.Certificate[]) null);
+            (j86.java.security.cert.Certificate[]) null);
 
         if (testing) {
             System.out.println("Adding Policy Entry:");
@@ -1561,7 +1561,7 @@ class ToolDialog extends JDialog {
                 "j86.java.io.FilePermission";
 
     public static final String X500_PRIN_CLASS         =
-                "j86.j86.javax.security.auth.x500.X500Principal";
+                "j86.javax.security.auth.x500.X500Principal";
 
     /* popup menus */
     public static final String PERM             =
@@ -4072,14 +4072,14 @@ class Prin {
 class KrbPrin extends Prin {
     public KrbPrin() {
         super("KerberosPrincipal",
-                "j86.j86.javax.security.auth.kerberos.KerberosPrincipal");
+                "j86.javax.security.auth.kerberos.KerberosPrincipal");
     }
 }
 
 class X500Prin extends Prin {
     public X500Prin() {
         super("X500Principal",
-                "j86.j86.javax.security.auth.x500.X500Principal");
+                "j86.javax.security.auth.x500.X500Principal");
     }
 }
 
@@ -4173,7 +4173,7 @@ class AWTPerm extends Perm {
 class DelegationPerm extends Perm {
     public DelegationPerm() {
     super("DelegationPermission",
-        "j86.j86.javax.security.auth.kerberos.DelegationPermission",
+        "j86.javax.security.auth.kerberos.DelegationPermission",
         new String[]    {
                 // allow user input
                 },
@@ -4228,7 +4228,7 @@ class InqSecContextPerm extends Perm {
 class LogPerm extends Perm {
     public LogPerm() {
     super("LoggingPermission",
-        "j86.j86.java.util.logging.LoggingPermission",
+        "j86.java.util.logging.LoggingPermission",
         new String[]    {
                 "control"
                 },
@@ -4239,7 +4239,7 @@ class LogPerm extends Perm {
 class MgmtPerm extends Perm {
     public MgmtPerm() {
     super("ManagementPermission",
-        "j86.j86.java.lang.management.ManagementPermission",
+        "j86.java.lang.management.ManagementPermission",
         new String[]    {
                 "control",
                 "monitor"
@@ -4351,7 +4351,7 @@ class PropPerm extends Perm {
 class ReflectPerm extends Perm {
     public ReflectPerm() {
     super("ReflectPermission",
-        "j86.j86.j86.java.lang.reflect.ReflectPermission",
+        "j86.java.lang.reflect.ReflectPermission",
         new String[]    {
                 "suppressAccessChecks"
                 },
@@ -4453,7 +4453,7 @@ class SerialPerm extends Perm {
 class ServicePerm extends Perm {
     public ServicePerm() {
     super("ServicePermission",
-        "j86.j86.javax.security.auth.kerberos.ServicePermission",
+        "j86.javax.security.auth.kerberos.ServicePermission",
         new String[]    {
                 // allow user input
                 },
@@ -4497,7 +4497,7 @@ class SQLPerm extends Perm {
 class SSLPerm extends Perm {
     public SSLPerm() {
     super("SSLPermission",
-        "j86.j86.javax.net.ssl.SSLPermission",
+        "j86.javax.net.ssl.SSLPermission",
         new String[]    {
                 "setHostnameVerifier",
                 "getSSLSessionContext"
@@ -4509,7 +4509,7 @@ class SSLPerm extends Perm {
 class SubjDelegPerm extends Perm {
     public SubjDelegPerm() {
     super("SubjectDelegationPermission",
-        "j86.j86.javax.management.remote.SubjectDelegationPermission",
+        "j86.javax.management.remote.SubjectDelegationPermission",
         new String[]    {
                 // allow user input
                 },

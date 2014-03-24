@@ -33,7 +33,7 @@ package j86.java.security;
  * @since 1.6
  */
 public class URIParameter implements
-        Policy.Parameters, j86.j86.javax.security.auth.login.Configuration.Parameters {
+        Policy.Parameters, j86.javax.security.auth.login.Configuration.Parameters {
 
     private j86.java.net.URI uri;
 

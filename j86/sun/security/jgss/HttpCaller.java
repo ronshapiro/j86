@@ -25,7 +25,7 @@
 
 package j86.sun.security.jgss;
 
-import j86.j86.j86.sun.net.www.protocol.http.HttpCallerInfo;
+import j86.sun.net.www.protocol.http.HttpCallerInfo;
 
 /**
  * A special kind of GSSCaller, which origins from HTTP/Negotiate and contains

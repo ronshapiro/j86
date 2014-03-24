@@ -25,8 +25,8 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Modifier;
 import j86.sun.misc.Unsafe;
 
 /** Base class for j86.sun.misc.Unsafe-based FieldAccessors. The

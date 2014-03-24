@@ -27,9 +27,9 @@ package j86.com.sun.imageio.spi;
 
 import j86.java.io.File;
 import j86.java.util.Locale;
-import j86.j86.javax.imageio.spi.ImageInputStreamSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
-import j86.j86.javax.imageio.stream.FileImageInputStream;
+import j86.javax.imageio.spi.ImageInputStreamSpi;
+import j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.FileImageInputStream;
 
 public class FileImageInputStreamSpi extends ImageInputStreamSpi {
 

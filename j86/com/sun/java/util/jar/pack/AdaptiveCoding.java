@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Adaptive coding.

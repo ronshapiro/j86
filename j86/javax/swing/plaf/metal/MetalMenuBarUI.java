@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.basic.*;
 
 /**
  * Metal implementation of <code>MenuBarUI</code>. This class is responsible
  * for providing the metal look and feel for <code>JMenuBar</code>s.
  *
- * @see j86.j86.javax.swing.plaf.MenuBarUI
+ * @see j86.javax.swing.plaf.MenuBarUI
  * @since 1.5
  */
 public class MetalMenuBarUI extends BasicMenuBarUI  {
@@ -86,8 +86,8 @@ public class MetalMenuBarUI extends BasicMenuBarUI  {
      * @param c JComponent painting on
      * @throws NullPointerException if <code>g</code> or <code>c</code> is
      *         null
-     * @see j86.j86.javax.swing.plaf.ComponentUI#update
-     * @see j86.j86.javax.swing.plaf.ComponentUI#paint
+     * @see j86.javax.swing.plaf.ComponentUI#update
+     * @see j86.javax.swing.plaf.ComponentUI#paint
      * @since 1.5
      */
     public void update(Graphics g, JComponent c) {

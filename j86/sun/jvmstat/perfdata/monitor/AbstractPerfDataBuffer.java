@@ -29,7 +29,7 @@ import j86.sun.misc.Perf;
 import j86.sun.jvmstat.monitor.*;
 import j86.java.util.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.nio.ByteBuffer;
 
 /**
@@ -107,7 +107,7 @@ public abstract class AbstractPerfDataBuffer {
      * the name of each object matches the given pattern.
      *
      * @param patternString  a string containing a pattern as described in
-     *                       {@link j86.j86.java.util.regex.Pattern}.
+     *                       {@link j86.java.util.regex.Pattern}.
      * @return List<Monitor> - a List of {@link Monitor} objects that can be used to
      *                monitor the instrumentation objects whose names match
      *                the given pattern. If no instrumentation objects have`
@@ -115,7 +115,7 @@ public abstract class AbstractPerfDataBuffer {
      *                is returned.
      * @throws MonitorException Thrown if an error occurs while communicating
      *                          with the target Java Virtual Machine.
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      */
     public List<Monitor> findByPattern(String patternString) throws MonitorException {
         return impl.findByPattern(patternString);

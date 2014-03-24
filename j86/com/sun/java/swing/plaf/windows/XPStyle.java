@@ -38,24 +38,24 @@
  *
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 import j86.java.security.AccessController;
 import j86.java.util.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.JTextComponent;
 
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.SunWritableRaster;
 import j86.sun.awt.windows.ThemeReader;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.swing.CachedPainter;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.*;
 
 
 /**

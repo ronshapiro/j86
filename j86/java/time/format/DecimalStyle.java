@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
 import j86.java.text.DecimalFormatSymbols;
 import j86.java.util.Arrays;
@@ -68,8 +68,8 @@ import j86.java.util.HashSet;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * Localized decimal style used in date and time formatting.

@@ -175,7 +175,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
         // Estimate size of array; be prepared to see more or fewer elements
         int size = size();
         T[] r = a.length >= size ? a :
-                  (T[])j86.j86.j86.java.lang.reflect.Array
+                  (T[])j86.java.lang.reflect.Array
                   .newInstance(a.getClass().getComponentType(), size);
         Iterator<E> it = iterator();
 

@@ -26,8 +26,8 @@
 package j86.sun.security.util;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.util.regex.Pattern;
-import j86.j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
 import j86.java.util.Locale;
 
 /**

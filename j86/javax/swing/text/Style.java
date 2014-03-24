@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.awt.Component;
-import j86.j86.javax.swing.event.ChangeListener;
-import j86.j86.javax.swing.event.ChangeEvent;
+import j86.javax.swing.event.ChangeListener;
+import j86.javax.swing.event.ChangeEvent;
 
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;

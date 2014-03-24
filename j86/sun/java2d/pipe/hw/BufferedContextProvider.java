@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.java2d.pipe.hw;
+package j86.sun.java2d.pipe.hw;
 
-import j86.j86.sun.java2d.pipe.BufferedContext;
+import j86.sun.java2d.pipe.BufferedContext;
 
 /**
  * Classes implementing this interface can provide the {@code BufferedContext}
  * associated with or used by them.
  *
- * @see j86.j86.sun.java2d.pipe.BufferedContext
+ * @see j86.sun.java2d.pipe.BufferedContext
  */
 public interface BufferedContextProvider {
     /**
@@ -39,7 +39,7 @@ public interface BufferedContextProvider {
      * interface.
      *
      * @return associated context
-     * @see j86.j86.sun.java2d.pipe.BufferedContext
+     * @see j86.sun.java2d.pipe.BufferedContext
      */
     public BufferedContext getContext();
 }

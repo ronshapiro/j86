@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 import j86.java.rmi.*;
 import j86.java.io.ObjectOutput;
 import j86.java.io.ObjectInput;
@@ -35,12 +35,12 @@ import j86.java.io.IOException;
  * (in conjunction with stubs and skeletons of remote objects) to carry out a
  * call to a remote object.  The <code>RemoteCall</code> interface is
  * deprecated because it is only used by deprecated methods of
- * <code>j86.j86.java.rmi.server.RemoteRef</code>.
+ * <code>j86.java.rmi.server.RemoteRef</code>.
  *
  * @since   JDK1.1
  * @author  Ann Wollrath
  * @author  Roger Riggs
- * @see     j86.j86.java.rmi.server.RemoteRef
+ * @see     j86.java.rmi.server.RemoteRef
  * @deprecated no replacement.
  */
 @Deprecated

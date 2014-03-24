@@ -31,13 +31,13 @@ import j86.java.security.PrivateKey;
 import j86.java.security.KeyFactory;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
-import j86.j86.java.security.spec.X509EncodedKeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.spec.X509EncodedKeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.Cipher;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * This class is a helper class which construct key objects

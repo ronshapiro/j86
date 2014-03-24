@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
@@ -104,7 +104,7 @@ public abstract class RMIClassLoaderSpi {
      * Provides the implementation for
      * {@link RMIClassLoader#loadProxyClass(String,String[],ClassLoader)}.
      *
-     * Loads a dynamic proxy class (see {@link j86.j86.j86.java.lang.reflect.Proxy}
+     * Loads a dynamic proxy class (see {@link j86.java.lang.reflect.Proxy}
      * that implements a set of interfaces with the given names
      * from a codebase URL path, optionally using the supplied loader.
      *
@@ -130,7 +130,7 @@ public abstract class RMIClassLoaderSpi {
      * @throws  ClassNotFoundException if a definition for one of
      * the named interfaces could not be found at the specified location,
      * or if creation of the dynamic proxy class failed (such as if
-     * {@link j86.j86.j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])}
+     * {@link j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])}
      * would throw an <code>IllegalArgumentException</code> for the given
      * interface list)
      */

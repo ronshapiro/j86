@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.stream;
+package j86.javax.imageio.stream;
 
 import j86.java.io.DataOutput;
 import j86.java.io.IOException;

@@ -25,8 +25,8 @@
 
 package j86.sun.java2d;
 
-import j86.j86.j86.sun.awt.image.SunVolatileImage;
-import j86.j86.j86.sun.awt.image.VolatileSurfaceManager;
+import j86.sun.awt.image.SunVolatileImage;
+import j86.sun.awt.image.VolatileSurfaceManager;
 
 /**
  * This factory creates platform specific VolatileSurfaceManager

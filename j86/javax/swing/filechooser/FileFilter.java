@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.filechooser;
+package j86.javax.swing.filechooser;
 
 import j86.java.io.File;
 

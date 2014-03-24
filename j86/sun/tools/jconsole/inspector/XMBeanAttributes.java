@@ -23,48 +23,48 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 
 import j86.java.awt.Component;
 import j86.java.awt.EventQueue;
 import j86.java.awt.Dimension;
-import j86.j86.java.awt.event.MouseAdapter;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseAdapter;
+import j86.java.awt.event.MouseEvent;
 import j86.java.io.IOException;
 
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 import j86.java.util.EventObject;
 import j86.java.util.HashMap;
 import j86.java.util.WeakHashMap;
 
-import j86.j86.java.util.concurrent.ExecutionException;
-import j86.j86.java.util.logging.Level;
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.concurrent.ExecutionException;
+import j86.java.util.logging.Level;
+import j86.java.util.logging.Logger;
 import j86.javax.management.JMException;
 import j86.javax.management.MBeanInfo;
 import j86.javax.management.MBeanAttributeInfo;
 import j86.javax.management.AttributeList;
 import j86.javax.management.Attribute;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.TabularData;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.TabularData;
 
 import j86.javax.swing.JComponent;
 import j86.javax.swing.JOptionPane;
 import j86.javax.swing.JTable;
 import j86.javax.swing.JTextField;
 import j86.javax.swing.SwingWorker;
-import j86.j86.javax.swing.event.ChangeEvent;
-import j86.j86.javax.swing.event.TableModelEvent;
-import j86.j86.javax.swing.event.TableModelListener;
-import j86.j86.javax.swing.table.DefaultTableCellRenderer;
-import j86.j86.javax.swing.table.DefaultTableModel;
-import j86.j86.javax.swing.table.TableCellEditor;
-import j86.j86.javax.swing.table.TableCellRenderer;
-import j86.j86.javax.swing.table.TableColumn;
-import j86.j86.javax.swing.table.TableColumnModel;
-import j86.j86.javax.swing.table.TableModel;
+import j86.javax.swing.event.ChangeEvent;
+import j86.javax.swing.event.TableModelEvent;
+import j86.javax.swing.event.TableModelListener;
+import j86.javax.swing.table.DefaultTableCellRenderer;
+import j86.javax.swing.table.DefaultTableModel;
+import j86.javax.swing.table.TableCellEditor;
+import j86.javax.swing.table.TableCellRenderer;
+import j86.javax.swing.table.TableColumn;
+import j86.javax.swing.table.TableColumnModel;
+import j86.javax.swing.table.TableModel;
 
 import j86.sun.tools.jconsole.MBeansTab;
 import j86.sun.tools.jconsole.JConsole;
@@ -812,7 +812,7 @@ public class XMBeanAttributes extends XTable {
     }
 
     class ValueCellEditor extends XTextFieldEditor {
-        // implements j86.j86.javax.swing.table.TableCellEditor
+        // implements j86.javax.swing.table.TableCellEditor
         @Override
         public Component getTableCellEditorComponent(JTable table,
                                                      Object value,

@@ -26,7 +26,7 @@ package j86.sun.swing;
 
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.Image;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Iterator;
 import j86.java.util.LinkedList;
 

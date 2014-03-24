@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
@@ -58,7 +58,7 @@ import j86.java.io.Serializable;
  *
  * <p>
  * This interface is designed to provide access to a single extension,
- * unlike {@link j86.j86.java.security.cert.X509Extension} which is more suitable
+ * unlike {@link j86.java.security.cert.X509Extension} which is more suitable
  * for accessing a set of extensions.
  *
  * @since 1.7

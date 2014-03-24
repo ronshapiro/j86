@@ -26,8 +26,8 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.Font;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.event.WindowEvent;
 import j86.java.io.*;
 
 import j86.javax.swing.*;
@@ -113,7 +113,7 @@ public class OutputViewer {
                     // Any thread should be allowed to write except this one
                     // but we just use this one to keep the pipe alive.
                     try {
-                        j86.j86.j86.java.lang.reflect.Field f =
+                        j86.java.lang.reflect.Field f =
                             PipedInputStream.class.getDeclaredField("writeSide");
                         f.setAccessible(true);
                         f.set(inPipe, this);

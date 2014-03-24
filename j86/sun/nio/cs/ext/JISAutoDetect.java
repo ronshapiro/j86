@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.nio.cs.ext;
+package j86.sun.nio.cs.ext;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CoderResult;
-import j86.j86.java.nio.charset.CharacterCodingException;
-import j86.j86.java.nio.charset.MalformedInputException;
-import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.CharacterCodingException;
+import j86.java.nio.charset.MalformedInputException;
+import j86.sun.nio.cs.HistoricallyNamedCharset;
 import j86.java.security.AccessController;
 import j86.sun.security.action.GetPropertyAction;
 import static j86.java.lang.Character.UnicodeBlock;

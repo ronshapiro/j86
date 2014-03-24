@@ -29,7 +29,7 @@ package j86.javax.management;
 
 /**
  * Represents exceptions thrown in the MBean server when using the
- * j86.j86.j86.java.lang.reflect classes to invoke methods on MBeans. It "wraps" the
+ * j86.java.lang.reflect classes to invoke methods on MBeans. It "wraps" the
  * actual j86.java.lang.Exception thrown.
  *
  * @since 1.5

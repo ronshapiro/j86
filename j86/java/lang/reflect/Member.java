@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 /**
  * Member is an interface that reflects identifying information about

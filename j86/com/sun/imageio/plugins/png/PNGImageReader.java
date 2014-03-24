@@ -27,13 +27,13 @@ package j86.com.sun.imageio.plugins.png;
 
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferByte;
-import j86.j86.j86.java.awt.image.DataBufferUShort;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferByte;
+import j86.java.awt.image.DataBufferUShort;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 import j86.java.io.BufferedInputStream;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.DataInputStream;
@@ -45,20 +45,20 @@ import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.Enumeration;
 import j86.java.util.Iterator;
-import j86.j86.java.util.zip.Inflater;
-import j86.j86.java.util.zip.InflaterInputStream;
+import j86.java.util.zip.Inflater;
+import j86.java.util.zip.InflaterInputStream;
 import j86.javax.imageio.IIOException;
 import j86.javax.imageio.ImageReader;
 import j86.javax.imageio.ImageReadParam;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.stream.ImageInputStream;
 import j86.com.sun.imageio.plugins.common.InputStreamAdapter;
 import j86.com.sun.imageio.plugins.common.ReaderUtil;
 import j86.com.sun.imageio.plugins.common.SubImageInputStream;
 import j86.java.io.ByteArrayOutputStream;
-import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
+import j86.sun.awt.image.ByteInterleavedRaster;
 
 class PNGImageDataEnumeration implements Enumeration<InputStream> {
 
@@ -1109,7 +1109,7 @@ public class PNGImageReader extends ImageReader {
                 curr = tmp;
 
                 pixelStream.readFully(curr, 0, bytesPerRow);
-            } catch (j86.j86.java.util.zip.ZipException ze) {
+            } catch (j86.java.util.zip.ZipException ze) {
                 // TODO - throw a more meaningful exception
                 throw ze;
             }

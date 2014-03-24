@@ -26,8 +26,8 @@
 package j86.sun.security.ssl;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.ECPublicKey;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.ECPublicKey;
+import j86.java.security.spec.*;
 
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.KeyAgreement;

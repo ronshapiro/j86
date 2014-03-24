@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.http;
+package j86.sun.net.www.http;
 
 import j86.java.io.*;
 import j86.java.net.*;
 import j86.java.util.Locale;
 import j86.sun.net.NetworkClient;
 import j86.sun.net.ProgressSource;
-import j86.j86.sun.net.www.MessageHeader;
-import j86.j86.sun.net.www.HeaderParser;
-import j86.j86.sun.net.www.MeteredStream;
-import j86.j86.sun.net.www.ParseUtil;
-import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
-import j86.j86.sun.util.logging.PlatformLogger;
-import static j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
+import j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.HeaderParser;
+import j86.sun.net.www.MeteredStream;
+import j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.sun.util.logging.PlatformLogger;
+import static j86.sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
 
 /**
  * @author Herb Jellinek
@@ -518,7 +518,7 @@ public class HttpClient extends NetworkClient {
             url.getProtocol().equals("https") ) {
 
             if ((proxy != null) && (proxy.type() == Proxy.Type.HTTP)) {
-                j86.j86.sun.net.www.URLConnection.setProxiedHost(host);
+                j86.sun.net.www.URLConnection.setProxiedHost(host);
                 privilegedOpenServer((InetSocketAddress) proxy.address());
                 usingProxy = true;
                 return;
@@ -534,7 +534,7 @@ public class HttpClient extends NetworkClient {
              * ftp url.
              */
             if ((proxy != null) && (proxy.type() == Proxy.Type.HTTP)) {
-                j86.j86.sun.net.www.URLConnection.setProxiedHost(host);
+                j86.sun.net.www.URLConnection.setProxiedHost(host);
                 privilegedOpenServer((InetSocketAddress) proxy.address());
                 usingProxy = true;
                 return;

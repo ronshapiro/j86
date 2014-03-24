@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.ScrollbarPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.ScrollbarPeer;
+import j86.java.awt.event.*;
 import j86.java.util.EventListener;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
@@ -96,7 +96,7 @@ import j86.javax.accessibility.*;
  * Any object that wishes to be notified of changes to the
  * scroll bar's value should implement
  * <code>AdjustmentListener</code>, an interface defined in
- * the package <code>j86.j86.java.awt.event</code>.
+ * the package <code>j86.java.awt.event</code>.
  * Listeners can be added and removed dynamically by calling
  * the methods <code>addAdjustmentListener</code> and
  * <code>removeAdjustmentListener</code>.
@@ -159,8 +159,8 @@ import j86.javax.accessibility.*;
  * positioning.
  *
  * @author      Sami Shaio
- * @see         j86.j86.java.awt.event.AdjustmentEvent
- * @see         j86.j86.java.awt.event.AdjustmentListener
+ * @see         j86.java.awt.event.AdjustmentEvent
+ * @see         j86.java.awt.event.AdjustmentListener
  * @since       JDK1.0
  */
 public class Scrollbar extends Component implements Adjustable, Accessible {
@@ -970,8 +970,8 @@ public class Scrollbar extends Component implements Adjustable, Accessible {
      * @param        l the adjustment listener
      * @see          #removeAdjustmentListener
      * @see          #getAdjustmentListeners
-     * @see          j86.j86.java.awt.event.AdjustmentEvent
-     * @see          j86.j86.java.awt.event.AdjustmentListener
+     * @see          j86.java.awt.event.AdjustmentEvent
+     * @see          j86.java.awt.event.AdjustmentListener
      * @since        JDK1.1
      */
     public synchronized void addAdjustmentListener(AdjustmentListener l) {
@@ -993,8 +993,8 @@ public class Scrollbar extends Component implements Adjustable, Accessible {
      * @param           l    the adjustment listener
      * @see             #addAdjustmentListener
      * @see             #getAdjustmentListeners
-     * @see             j86.j86.java.awt.event.AdjustmentEvent
-     * @see             j86.j86.java.awt.event.AdjustmentListener
+     * @see             j86.java.awt.event.AdjustmentEvent
+     * @see             j86.java.awt.event.AdjustmentListener
      * @since           JDK1.1
      */
     public synchronized void removeAdjustmentListener(AdjustmentListener l) {
@@ -1013,8 +1013,8 @@ public class Scrollbar extends Component implements Adjustable, Accessible {
      *         listeners are currently registered
      * @see             #addAdjustmentListener
      * @see             #removeAdjustmentListener
-     * @see             j86.j86.java.awt.event.AdjustmentEvent
-     * @see             j86.j86.java.awt.event.AdjustmentListener
+     * @see             j86.java.awt.event.AdjustmentEvent
+     * @see             j86.java.awt.event.AdjustmentListener
      * @since 1.4
      */
     public synchronized AdjustmentListener[] getAdjustmentListeners() {
@@ -1084,7 +1084,7 @@ public class Scrollbar extends Component implements Adjustable, Accessible {
      * exception.
      *
      * @param        e the event
-     * @see          j86.j86.java.awt.event.AdjustmentEvent
+     * @see          j86.java.awt.event.AdjustmentEvent
      * @see          j86.java.awt.Scrollbar#processAdjustmentEvent
      * @since        JDK1.1
      */
@@ -1114,8 +1114,8 @@ public class Scrollbar extends Component implements Adjustable, Accessible {
      * exception.
      *
      * @param       e the adjustment event
-     * @see         j86.j86.java.awt.event.AdjustmentEvent
-     * @see         j86.j86.java.awt.event.AdjustmentListener
+     * @see         j86.java.awt.event.AdjustmentEvent
+     * @see         j86.java.awt.event.AdjustmentListener
      * @see         j86.java.awt.Scrollbar#addAdjustmentListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1

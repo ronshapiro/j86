@@ -27,9 +27,9 @@ package j86.com.sun.jmx.mbeanserver;
 
 import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
 
 import j86.java.util.Map;
 

@@ -33,15 +33,15 @@ package j86.javax.management;
 import j86.java.io.Serializable;
 
 // Javadoc imports:
-import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.MemoryUsage;
 import j86.java.util.Arrays;
 import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
-import j86.j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
+import j86.javax.management.openmbean.OpenType;
 
 /**
  * <p>Additional metadata for a JMX element.  A {@code Descriptor}
@@ -65,7 +65,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * for an immutable descriptor.  Immutable descriptors are usually
  * instances of {@link ImmutableDescriptor} or a subclass.  Mutable
  * descriptors are usually instances of
- * {@link j86.j86.javax.management.modelmbean.DescriptorSupport} or a subclass.
+ * {@link j86.javax.management.modelmbean.DescriptorSupport} or a subclass.
  *
  * <p>Certain fields are used by the JMX implementation.  This means
  * either that the presence of the field may change the behavior of
@@ -104,7 +104,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * <td>MBeanAttributeInfo<br>MBeanParameterInfo</td>
  *
  * <td>Default value for an attribute or parameter.  See
- * {@link j86.j86.javax.management.openmbean}.</td>
+ * {@link j86.javax.management.openmbean}.</td>
  *
  * <tr><td>deprecated</td><td>String</td><td>Any</td>
  *
@@ -196,7 +196,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * <td>{@literal Set<?>}</td><td>MBeanAttributeInfo<br>MBeanParameterInfo</td>
  *
  * <td>Legal values for an attribute or parameter.  See
- * {@link j86.j86.javax.management.openmbean}.</td>
+ * {@link j86.javax.management.openmbean}.</td>
  *
  * <tr id="locale"><td>locale</td>
  * <td>String</td><td>Any</td>
@@ -209,7 +209,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * <td>MBeanAttributeInfo<br>MBeanParameterInfo</td>
  *
  * <td>Maximum legal value for an attribute or parameter.  See
- * {@link j86.j86.javax.management.openmbean}.</td>
+ * {@link j86.javax.management.openmbean}.</td>
  *
  * <tr id="metricType"><td>metricType</td><td>String</td>
  * <td>MBeanAttributeInfo<br>MBeanOperationInfo</td>
@@ -228,7 +228,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * <td>MBeanAttributeInfo<br>MBeanParameterInfo</td>
  *
  * <td>Minimum legal value for an attribute or parameter.  See
- * {@link j86.j86.javax.management.openmbean}.</td>
+ * {@link j86.javax.management.openmbean}.</td>
  *
  * <tr id="mxbean"><td><i>mxbean</i><td>String</td>
  * <td>MBeanInfo</td>
@@ -266,7 +266,7 @@ import j86.j86.javax.management.openmbean.OpenType;
  * in an MXBean interface defines an attribute called {@code
  * HeapMemoryUsage} of type {@link CompositeData}.  The {@code
  * originalType} field in the Descriptor for this attribute will have
- * the value {@code "j86.j86.java.lang.management.MemoryUsage"}.
+ * the value {@code "j86.java.lang.management.MemoryUsage"}.
  *
  * <p>The format of this string is described in the section <a
  * href="MXBean.html#type-names">Type Names</a> of the MXBean

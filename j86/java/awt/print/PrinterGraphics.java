@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 
 /**
  * The <code>PrinterGraphics</code> interface is implemented by
@@ -40,7 +40,7 @@ public interface PrinterGraphics {
      * current rendering request.
      * @return the <code>PrinterJob</code> controlling the current
      * rendering request.
-     * @see j86.j86.java.awt.print.Printable
+     * @see j86.java.awt.print.Printable
      */
     PrinterJob getPrinterJob();
 

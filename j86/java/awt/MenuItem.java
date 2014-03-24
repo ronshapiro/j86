@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.MenuItemPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.MenuItemPeer;
+import j86.java.awt.event.*;
 import j86.java.util.EventListener;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
@@ -516,8 +516,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      * @param      l the action listener.
      * @see        #removeActionListener
      * @see        #getActionListeners
-     * @see        j86.j86.java.awt.event.ActionEvent
-     * @see        j86.j86.java.awt.event.ActionListener
+     * @see        j86.java.awt.event.ActionEvent
+     * @see        j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -538,8 +538,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      * @param      l the action listener.
      * @see        #addActionListener
      * @see        #getActionListeners
-     * @see        j86.j86.java.awt.event.ActionEvent
-     * @see        j86.j86.java.awt.event.ActionListener
+     * @see        j86.java.awt.event.ActionEvent
+     * @see        j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -559,8 +559,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      *
      * @see        #addActionListener
      * @see        #removeActionListener
-     * @see        j86.j86.java.awt.event.ActionEvent
-     * @see        j86.j86.java.awt.event.ActionListener
+     * @see        j86.java.awt.event.ActionEvent
+     * @see        j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -658,8 +658,8 @@ public class MenuItem extends MenuComponent implements Accessible {
      * exception.
      *
      * @param       e the action event
-     * @see         j86.j86.java.awt.event.ActionEvent
-     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.event.ActionEvent
+     * @see         j86.java.awt.event.ActionListener
      * @see         j86.java.awt.MenuItem#enableEvents
      * @since       JDK1.1
      */

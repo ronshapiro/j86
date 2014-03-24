@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -170,7 +170,7 @@ public interface OpenMBeanOperationInfo  {
     /**
      * Returns a string representation of this <code>OpenMBeanOperationInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanOperationInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.OpenMBeanOperationInfo</code>),
      * and the name, signature, return open type and impact of the described operation.
      *
      * @return  a string representation of this <code>OpenMBeanOperationInfo</code> instance

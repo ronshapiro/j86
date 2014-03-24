@@ -27,7 +27,7 @@ package j86.javax.security.auth;
 
 import j86.java.util.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.text.MessageFormat;
 import j86.java.security.AccessController;
 import j86.java.security.AccessControlContext;

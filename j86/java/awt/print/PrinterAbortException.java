@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 
 /**
  * The <code>PrinterAbortException</code> class is a subclass of

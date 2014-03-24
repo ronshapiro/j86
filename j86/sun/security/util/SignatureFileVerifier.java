@@ -25,14 +25,14 @@
 
 package j86.sun.security.util;
 
-import j86.j86.java.security.cert.CertPath;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertPath;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateFactory;
 import j86.java.security.*;
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.util.jar.*;
+import j86.java.util.jar.*;
 
 import j86.sun.security.pkcs.*;
 import j86.java.util.Base64;

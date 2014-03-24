@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.digest;
+package j86.com.sun.security.sasl.digest;
 
 import j86.java.util.Map;
 import j86.java.util.Arrays;
 import j86.java.util.List;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.math.BigInteger;
 import j86.java.util.Random;
 
@@ -39,8 +39,8 @@ import j86.java.io.IOException;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.InvalidKeyException;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 import j86.java.security.InvalidAlgorithmParameterException;
 
 import j86.javax.crypto.Cipher;
@@ -49,15 +49,15 @@ import j86.javax.crypto.Mac;
 import j86.javax.crypto.SecretKeyFactory;
 import j86.javax.crypto.NoSuchPaddingException;
 import j86.javax.crypto.IllegalBlockSizeException;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
-import j86.j86.javax.crypto.spec.DESKeySpec;
-import j86.j86.javax.crypto.spec.DESedeKeySpec;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.DESKeySpec;
+import j86.javax.crypto.spec.DESedeKeySpec;
 
 import j86.javax.security.sasl.*;
-import j86.j86.com.sun.security.sasl.util.AbstractSaslImpl;
+import j86.com.sun.security.sasl.util.AbstractSaslImpl;
 
-import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.CallbackHandler;
 
 /**
  * Utility class for DIGEST-MD5 mechanism. Provides utility methods

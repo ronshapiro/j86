@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.tree;
+package j86.sun.reflect.generics.tree;
 
-import j86.j86.sun.reflect.generics.visitor.Visitor;
+import j86.sun.reflect.generics.visitor.Visitor;
 
 public class ClassSignature implements Signature {
     private FormalTypeParameter[] formalTypeParams;

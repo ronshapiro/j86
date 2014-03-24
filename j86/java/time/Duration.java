@@ -65,10 +65,10 @@ import static j86.java.time.LocalTime.NANOS_PER_SECOND;
 import static j86.java.time.LocalTime.SECONDS_PER_DAY;
 import static j86.java.time.LocalTime.SECONDS_PER_HOUR;
 import static j86.java.time.LocalTime.SECONDS_PER_MINUTE;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.NANOS;
-import static j86.j86.java.time.temporal.ChronoUnit.SECONDS;
+import static j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.NANOS;
+import static j86.java.time.temporal.ChronoUnit.SECONDS;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -79,19 +79,19 @@ import j86.java.io.Serializable;
 import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.math.RoundingMode;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Objects;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
 
 /**
  * A time-based amount of time, such as '34.5 seconds'.

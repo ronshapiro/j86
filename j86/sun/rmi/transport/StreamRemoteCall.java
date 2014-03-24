@@ -34,11 +34,11 @@ import j86.java.io.StreamCorruptedException;
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.MarshalException;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.ObjID;
-import j86.j86.java.rmi.server.RemoteCall;
+import j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.RemoteCall;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.server.UnicastRef;
-import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
+import j86.sun.rmi.transport.tcp.TCPEndpoint;
 
 /**
  * Stream-based implementation of the RemoteCall interface.

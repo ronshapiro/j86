@@ -29,7 +29,7 @@ import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.cert.X509Extension;
+import j86.java.security.cert.X509Extension;
 import j86.sun.security.util.DerValue;
 import j86.sun.security.util.DerOutputStream;
 import j86.sun.security.util.ObjectIdentifier;

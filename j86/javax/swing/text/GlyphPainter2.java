@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.text.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.font.*;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.font.*;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * A class to perform rendering of the glyphs.
@@ -42,7 +42,7 @@ import j86.j86.java.awt.geom.Rectangle2D;
  * <p>
  * This implementation is intended for operation
  * under the JDK.  It uses the
- * j86.j86.java.awt.font.TextLayout class to do i18n capable
+ * j86.java.awt.font.TextLayout class to do i18n capable
  * rendering.
  *
  * @author  Timothy Prinzing

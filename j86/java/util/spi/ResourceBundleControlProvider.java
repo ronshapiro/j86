@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.ResourceBundle;
 

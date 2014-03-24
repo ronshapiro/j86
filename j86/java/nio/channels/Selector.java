@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.Closeable;
 import j86.java.io.IOException;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.nio.channels.spi.SelectorProvider;
 import j86.java.util.Set;
 
 
@@ -36,9 +36,9 @@ import j86.java.util.Set;
  *
  * <p> A selector may be created by invoking the {@link #open open} method of
  * this class, which will use the system's default {@link
- * j86.j86.j86.java.nio.channels.spi.SelectorProvider selector provider} to
+ * j86.java.nio.channels.spi.SelectorProvider selector provider} to
  * create a new selector.  A selector may also be created by invoking the
- * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider#openSelector openSelector}
+ * {@link j86.java.nio.channels.spi.SelectorProvider#openSelector openSelector}
  * method of a custom selector provider.  A selector remains open until it is
  * closed via its {@link #close close} method.
  *
@@ -214,9 +214,9 @@ public abstract class Selector implements Closeable {
      * Opens a selector.
      *
      * <p> The new selector is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openSelector openSelector} method
+     * j86.java.nio.channels.spi.SelectorProvider#openSelector openSelector} method
      * of the system-wide default {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  </p>
+     * j86.java.nio.channels.spi.SelectorProvider} object.  </p>
      *
      * @return  A new selector
      *

@@ -30,9 +30,9 @@ import j86.java.io.FileInputStream;
 import j86.java.io.FileNotFoundException;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
-import j86.j86.java.lang.management.ManagementFactory;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.management.ManagementFactory;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.java.net.InetAddress;
 import j86.java.net.Socket;
 import j86.java.net.UnknownHostException;
@@ -41,18 +41,18 @@ import j86.java.util.MissingResourceException;
 import j86.java.util.Properties;
 import j86.java.util.ResourceBundle;
 
-import j86.j86.javax.management.remote.JMXConnectorServer;
-import j86.j86.javax.management.remote.JMXServiceURL;
+import j86.javax.management.remote.JMXConnectorServer;
+import j86.javax.management.remote.JMXServiceURL;
 
 import static j86.sun.management.AgentConfigurationError.*;
-import j86.j86.sun.management.jmxremote.ConnectorBootstrap;
-import j86.j86.sun.management.jdp.JdpController;
-import j86.j86.sun.management.jdp.JdpException;
+import j86.sun.management.jmxremote.ConnectorBootstrap;
+import j86.sun.management.jdp.JdpController;
+import j86.sun.management.jdp.JdpException;
 import j86.sun.misc.VMSupport;
 
 /**
- * This Agent is started by the VM when -Dcom.j86.j86.sun.management.snmp or
- * -Dcom.j86.j86.sun.management.jmxremote is set. This class will be loaded by the
+ * This Agent is started by the VM when -Dcom.j86.sun.management.snmp or
+ * -Dcom.j86.sun.management.jmxremote is set. This class will be loaded by the
  * system class loader. Also jmx framework could be started by jcmd
  */
 public class Agent {
@@ -63,19 +63,19 @@ public class Agent {
     private static final String CONFIG_FILE =
             "com.j86.sun.management.config.file";
     private static final String SNMP_PORT =
-            "com.j86.j86.sun.management.snmp.port";
+            "com.j86.sun.management.snmp.port";
     private static final String JMXREMOTE =
-            "com.j86.j86.sun.management.jmxremote";
+            "com.j86.sun.management.jmxremote";
     private static final String JMXREMOTE_PORT =
-            "com.j86.j86.sun.management.jmxremote.port";
+            "com.j86.sun.management.jmxremote.port";
     private static final String RMI_PORT =
-            "com.j86.j86.sun.management.jmxremote.rmi.port";
+            "com.j86.sun.management.jmxremote.rmi.port";
     private static final String ENABLE_THREAD_CONTENTION_MONITORING =
             "com.j86.sun.management.enableThreadContentionMonitoring";
     private static final String LOCAL_CONNECTOR_ADDRESS_PROP =
-            "com.j86.j86.sun.management.jmxremote.localConnectorAddress";
+            "com.j86.sun.management.jmxremote.localConnectorAddress";
     private static final String SNMP_ADAPTOR_BOOTSTRAP_CLASS_NAME =
-            "j86.j86.sun.management.snmp.AdaptorBootstrap";
+            "j86.sun.management.snmp.AdaptorBootstrap";
 
     private static final String JDP_DEFAULT_ADDRESS = "224.0.23.178";
     private static final int JDP_DEFAULT_PORT = 7095;
@@ -270,9 +270,9 @@ public class Agent {
     private static void startDiscoveryService(Properties props)
             throws IOException {
         // Start discovery service if requested
-        String discoveryPort = props.getProperty("com.j86.j86.sun.management.jdp.port");
-        String discoveryAddress = props.getProperty("com.j86.j86.sun.management.jdp.address");
-        String discoveryShouldStart = props.getProperty("com.j86.j86.sun.management.jmxremote.autodiscovery");
+        String discoveryPort = props.getProperty("com.j86.sun.management.jdp.port");
+        String discoveryAddress = props.getProperty("com.j86.sun.management.jdp.address");
+        String discoveryShouldStart = props.getProperty("com.j86.sun.management.jmxremote.autodiscovery");
 
         // Decide whether we should start autodicovery service.
         // To start autodiscovery following conditions should be met:
@@ -323,7 +323,7 @@ public class Agent {
                     : String.format(
                     "service:jmx:rmi:///jndi/rmi://%s:%s/jmxrmi", hostname, jmxremotePort);
 
-            String instanceName = props.getProperty("com.j86.j86.sun.management.jdp.name");
+            String instanceName = props.getProperty("com.j86.sun.management.jdp.name");
 
             try{
                JdpController.startDiscoveryService(address, port, instanceName, jmxUrlStr);

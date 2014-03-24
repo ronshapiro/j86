@@ -37,8 +37,8 @@
 
 package j86.java.text;
 
-import j86.j86.sun.text.normalizer.NormalizerBase;
-import j86.j86.sun.text.normalizer.NormalizerImpl;
+import j86.sun.text.normalizer.NormalizerBase;
+import j86.sun.text.normalizer.NormalizerImpl;
 
 /**
  * This class provides the method <code>normalize</code> which transforms Unicode

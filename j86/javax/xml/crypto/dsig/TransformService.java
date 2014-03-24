@@ -25,7 +25,7 @@
 /*
  * $Id: TransformService.java,v 1.6.4.1 2005/09/15 12:42:11 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.NoSuchAlgorithmException;
@@ -37,7 +37,7 @@ import j86.java.util.*;
 import j86.javax.xml.crypto.MarshalException;
 import j86.javax.xml.crypto.XMLStructure;
 import j86.javax.xml.crypto.XMLCryptoContext;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
 import j86.sun.security.jca.*;
 import j86.sun.security.jca.GetInstance.Instance;

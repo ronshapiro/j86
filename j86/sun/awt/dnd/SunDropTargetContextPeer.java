@@ -23,40 +23,40 @@
  * questions.
  */
 
-package j86.j86.sun.awt.dnd;
+package j86.sun.awt.dnd;
 
 import j86.java.awt.Component;
 import j86.java.awt.Point;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import j86.j86.java.awt.dnd.DnDConstants;
+import j86.java.awt.dnd.DnDConstants;
 
-import j86.j86.java.awt.dnd.DropTarget;
-import j86.j86.java.awt.dnd.DropTargetContext;
-import j86.j86.java.awt.dnd.DropTargetListener;
-import j86.j86.java.awt.dnd.DropTargetEvent;
-import j86.j86.java.awt.dnd.DropTargetDragEvent;
-import j86.j86.java.awt.dnd.DropTargetDropEvent;
-import j86.j86.java.awt.dnd.InvalidDnDOperationException;
+import j86.java.awt.dnd.DropTarget;
+import j86.java.awt.dnd.DropTargetContext;
+import j86.java.awt.dnd.DropTargetListener;
+import j86.java.awt.dnd.DropTargetEvent;
+import j86.java.awt.dnd.DropTargetDragEvent;
+import j86.java.awt.dnd.DropTargetDropEvent;
+import j86.java.awt.dnd.InvalidDnDOperationException;
 
-import j86.j86.j86.java.awt.dnd.peer.DropTargetContextPeer;
+import j86.java.awt.dnd.peer.DropTargetContextPeer;
 
 import j86.java.util.HashSet;
 import j86.java.util.Map;
 import j86.java.util.Arrays;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
-import j86.j86.sun.awt.datatransfer.DataTransferer;
-import j86.j86.sun.awt.datatransfer.ToolkitThreadBlockedHandler;
+import j86.sun.awt.datatransfer.DataTransferer;
+import j86.sun.awt.datatransfer.ToolkitThreadBlockedHandler;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -105,7 +105,7 @@ public abstract class SunDropTargetContextPeer implements DropTargetContextPeer,
 
     protected static final Object _globalLock = new Object();
 
-    private static final PlatformLogger dndLog = PlatformLogger.getLogger("j86.j86.sun.awt.dnd.SunDropTargetContextPeer");
+    private static final PlatformLogger dndLog = PlatformLogger.getLogger("j86.sun.awt.dnd.SunDropTargetContextPeer");
 
     /*
      * a primitive mechanism for advertising intra-JVM Transferables

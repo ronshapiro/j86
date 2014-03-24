@@ -30,7 +30,7 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package j86.j86.sun.util.locale;
+package j86.sun.util.locale;
 
 import j86.java.util.Collections;
 import j86.java.util.Map;

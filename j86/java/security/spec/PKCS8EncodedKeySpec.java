@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 /**
  * This class represents the ASN.1 encoding of a private key,

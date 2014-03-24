@@ -28,7 +28,7 @@ package j86.javax.crypto;
 import j86.java.io.*;
 import j86.java.net.*;
 import j86.java.security.*;
-import j86.j86.java.util.jar.*;
+import j86.java.util.jar.*;
 
 /**
  * This class verifies JAR files (and any supporting JAR files), and
@@ -136,7 +136,7 @@ final class JarVerifier {
      * @throws Exception if the list of certs did not contain
      *          the framework signing certificate
      */
-    static void verifyPolicySigned(j86.j86.java.security.cert.Certificate[] certs)
+    static void verifyPolicySigned(j86.java.security.cert.Certificate[] certs)
             throws Exception {
     }
 

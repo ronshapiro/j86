@@ -36,7 +36,7 @@ import j86.java.security.ProtectionDomain;
 import j86.java.security.Security;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * A {@code SubjectDomainCombiner} updates ProtectionDomains

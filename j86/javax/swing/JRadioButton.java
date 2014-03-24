@@ -25,10 +25,10 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.io.ObjectOutputStream;
@@ -47,7 +47,7 @@ import j86.java.io.IOException;
  * <strong>Note:</strong>
  * The ButtonGroup object is a logical grouping -- not a physical grouping.
  * To create a button panel, you should still create a {@link JPanel} or similar
- * container-object and add a {@link j86.j86.javax.swing.border.Border} to it to set it off from surrounding
+ * container-object and add a {@link j86.javax.swing.border.Border} to it to set it off from surrounding
  * components.
  * </blockquote>
  * <p>

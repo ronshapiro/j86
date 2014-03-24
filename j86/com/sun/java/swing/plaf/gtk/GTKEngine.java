@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 import j86.java.util.HashMap;
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.javax.swing.plaf.synth.*;
 
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.TextDirection;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.PositionType;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.TextDirection;
 
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.SunWritableRaster;
 import j86.sun.swing.ImageCache;
 
 /**

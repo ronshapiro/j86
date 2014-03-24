@@ -27,12 +27,12 @@ package j86.sun.management;
 
 import com.j86.sun.management.GarbageCollectorMXBean;
 import com.j86.sun.management.GarbageCollectionNotificationInfo;
-import j86.j86.java.lang.management.ManagementFactory;
-import j86.j86.java.lang.management.MemoryPoolMXBean;
-import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.MemoryPoolMXBean;
+import j86.java.lang.management.MemoryUsage;
 
 import com.j86.sun.management.GcInfo;
-import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeData;
 import j86.javax.management.MBeanInfo;
 import j86.javax.management.MBeanAttributeInfo;
 import j86.javax.management.ObjectName;

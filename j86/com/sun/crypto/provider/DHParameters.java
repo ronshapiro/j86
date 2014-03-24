@@ -29,9 +29,9 @@ import j86.java.io.*;
 import j86.sun.security.util.*;
 import j86.java.math.BigInteger;
 import j86.java.security.AlgorithmParametersSpi;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.javax.crypto.spec.DHParameterSpec;
 
 /**
  * This class implements the parameter set used by the

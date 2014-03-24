@@ -33,7 +33,7 @@ import j86.java.io.DataInputStream;
 
 import j86.javax.sound.sampled.AudioFileFormat;
 import j86.javax.sound.sampled.AudioInputStream;
-import j86.j86.javax.sound.sampled.spi.AudioFileWriter;
+import j86.javax.sound.sampled.spi.AudioFileWriter;
 
 
 

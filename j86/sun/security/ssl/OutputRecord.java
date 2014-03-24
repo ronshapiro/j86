@@ -30,7 +30,7 @@ import j86.java.io.*;
 import j86.java.nio.*;
 import j86.java.util.Arrays;
 
-import j86.j86.javax.net.ssl.SSLException;
+import j86.javax.net.ssl.SSLException;
 import j86.sun.misc.HexDumpEncoder;
 
 

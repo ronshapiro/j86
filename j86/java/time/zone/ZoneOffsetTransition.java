@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.zone;
+package j86.java.time.zone;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -181,10 +181,10 @@ public final class ZoneOffsetTransition
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.zone.Ser">dedicated serialized form</a>.
      * @serialData
      * Refer to the serialized form of
-     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
+     * <a href="../../../serialized-form.html#j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
      * for the encoding of epoch seconds and offsets.
      * <pre style="font-size:1.0em">{@code
      *

@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 public class Nonce {
 

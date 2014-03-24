@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.awt.Dimension;
 import j86.java.awt.Graphics;
 import j86.java.awt.Color;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * JButton object that draws a scaled Arrow in one of the cardinal directions.

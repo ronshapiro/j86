@@ -27,16 +27,16 @@ package j86.java.beans;
 
 import j86.com.sun.beans.TypeResolver;
 import j86.com.sun.beans.WeakCache;
-import j86.j86.com.sun.beans.finder.ClassFinder;
-import j86.j86.com.sun.beans.finder.MethodFinder;
+import j86.com.sun.beans.finder.ClassFinder;
+import j86.com.sun.beans.finder.MethodFinder;
 
 import j86.java.awt.Component;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Type;
 
 import j86.java.util.Map;
 import j86.java.util.ArrayList;
@@ -47,7 +47,7 @@ import j86.java.util.EventObject;
 import j86.java.util.List;
 import j86.java.util.TreeMap;
 
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * The Introspector class provides a standard way for tools to learn about

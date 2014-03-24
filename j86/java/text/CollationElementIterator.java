@@ -41,7 +41,7 @@ package j86.java.text;
 import j86.java.lang.Character;
 import j86.java.util.Vector;
 import j86.sun.text.CollatorUtilities;
-import j86.j86.sun.text.normalizer.NormalizerBase;
+import j86.sun.text.normalizer.NormalizerBase;
 
 /**
  * The <code>CollationElementIterator</code> class is used as an iterator

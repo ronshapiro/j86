@@ -72,10 +72,10 @@ import j86.java.util.Enumeration;
   *
   * @see Context#list
   * @see Context#listBindings
-  * @see j86.j86.javax.naming.directory.DirContext#search
-  * @see j86.j86.javax.naming.directory.Attributes#getAll
-  * @see j86.j86.javax.naming.directory.Attributes#getIDs
-  * @see j86.j86.javax.naming.directory.Attribute#getAll
+  * @see j86.javax.naming.directory.DirContext#search
+  * @see j86.javax.naming.directory.Attributes#getAll
+  * @see j86.javax.naming.directory.Attributes#getIDs
+  * @see j86.javax.naming.directory.Attribute#getAll
   * @since 1.3
   */
 public interface NamingEnumeration<T> extends Enumeration<T> {

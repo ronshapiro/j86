@@ -31,9 +31,9 @@
 package j86.sun.font;
 
 import j86.sun.font.GlyphLayout.*;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.awt.geom.Point2D;
+import j86.java.lang.ref.SoftReference;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.util.Locale;
 
 /*

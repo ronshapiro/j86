@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.digest;
+package j86.com.sun.security.sasl.digest;
 
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.io.ByteArrayOutputStream;
@@ -35,14 +35,14 @@ import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Arrays;
 
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.security.sasl.*;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.callback.PasswordCallback;
-import j86.j86.javax.security.auth.callback.NameCallback;
-import j86.j86.javax.security.auth.callback.Callback;
-import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.PasswordCallback;
+import j86.javax.security.auth.callback.NameCallback;
+import j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /**
   * An implementation of the DIGEST-MD5
@@ -79,7 +79,7 @@ import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
   * j86.javax.security.sasl.sendmaxbuffer
   *    max send buffer size; default is 65536; (min with server max recv size)
   *
-  * j86.j86.com.sun.security.sasl.digest.cipher
+  * j86.com.sun.security.sasl.digest.cipher
   *    name a specific cipher to use; setting must be compatible with the
   *    setting of the j86.javax.security.sasl.strength property.
   *
@@ -100,7 +100,7 @@ final class DigestMD5Client extends DigestMD5Base implements SaslClient {
 
     // Property for specifying cipher explicitly
     private static final String CIPHER_PROPERTY =
-        "j86.j86.com.sun.security.sasl.digest.cipher";
+        "j86.com.sun.security.sasl.digest.cipher";
 
     /* Directives encountered in challenges sent by the server. */
     private static final String[] DIRECTIVE_KEY = {

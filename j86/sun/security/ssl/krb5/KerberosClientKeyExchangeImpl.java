@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.ssl.krb5;
+package j86.sun.security.ssl.krb5;
 
 import j86.java.io.IOException;
 import j86.java.io.PrintStream;
@@ -35,23 +35,23 @@ import j86.java.security.SecureRandom;
 import j86.java.net.InetAddress;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.javax.security.auth.kerberos.KerberosTicket;
-import j86.j86.javax.security.auth.kerberos.KerberosKey;
-import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
-import j86.j86.javax.security.auth.kerberos.ServicePermission;
+import j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.javax.security.auth.kerberos.KerberosKey;
+import j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.javax.security.auth.kerberos.ServicePermission;
 import j86.sun.security.jgss.GSSCaller;
 
 import j86.sun.security.krb5.EncryptionKey;
 import j86.sun.security.krb5.EncryptedData;
 import j86.sun.security.krb5.PrincipalName;
-import j86.j86.sun.security.krb5.internal.Ticket;
-import j86.j86.sun.security.krb5.internal.EncTicketPart;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.Ticket;
+import j86.sun.security.krb5.internal.EncTicketPart;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 
-import j86.j86.sun.security.jgss.krb5.Krb5Util;
-import j86.j86.sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.jgss.krb5.Krb5Util;
+import j86.sun.security.jgss.krb5.ServiceCreds;
 import j86.sun.security.krb5.KrbException;
-import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.sun.security.krb5.internal.Krb5;
 
 import j86.sun.security.ssl.Debug;
 import j86.sun.security.ssl.HandshakeInStream;
@@ -291,7 +291,7 @@ public final class KerberosClientKeyExchangeImpl
         }
     }
 
-    // Similar to j86.j86.sun.security.jgss.krb5.Krb5InitCredenetial/Krb5Context
+    // Similar to j86.sun.security.jgss.krb5.Krb5InitCredenetial/Krb5Context
     private static KerberosTicket getServiceTicket(String serverName,
         final AccessControlContext acc) throws IOException {
 
@@ -396,7 +396,7 @@ public final class KerberosClientKeyExchangeImpl
      * is null or zero, in case any side does not have kvno info available.
      *
      * Note: zero is included because N/A is not a legal value for kvno
-     * in j86.j86.javax.security.auth.kerberos.KerberosKey. Therefore, the info
+     * in j86.javax.security.auth.kerberos.KerberosKey. Therefore, the info
      * that the kvno is N/A might be lost when converting between
      * EncryptionKey and KerberosKey.
      */

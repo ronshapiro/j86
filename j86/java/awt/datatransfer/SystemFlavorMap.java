@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.awt.datatransfer;
+package j86.java.awt.datatransfer;
 
 import j86.java.awt.Toolkit;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 
 import j86.java.io.BufferedReader;
 import j86.java.io.File;
@@ -46,7 +46,7 @@ import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
 
-import j86.j86.sun.awt.datatransfer.DataTransferer;
+import j86.sun.awt.datatransfer.DataTransferer;
 
 /**
  * The SystemFlavorMap is a configurable map between "natives" (Strings), which

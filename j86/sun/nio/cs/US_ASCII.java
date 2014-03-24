@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.cs;
+package j86.sun.nio.cs;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CoderResult;
 import j86.java.util.Arrays;
 
 public class US_ASCII

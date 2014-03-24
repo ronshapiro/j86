@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.channels.*;
-import j86.j86.java.util.concurrent.ExecutorService;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.java.nio.channels.*;
+import j86.java.util.concurrent.ExecutorService;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.locks.*;
 import j86.java.io.FileDescriptor;
 import j86.java.io.IOException;
 

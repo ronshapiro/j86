@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.serial;
+package j86.javax.sql.rowset.serial;
 
 import j86.java.io.BufferedReader;
 import j86.java.io.IOException;

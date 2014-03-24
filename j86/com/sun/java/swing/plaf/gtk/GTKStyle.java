@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.security.*;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.synth.*;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.UNIXToolkit;
 import j86.sun.swing.SwingUtilities2;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.sun.swing.plaf.synth.SynthIcon;
 
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
+import j86.com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
 
 /**
  *

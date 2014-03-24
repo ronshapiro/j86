@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.LabelPeer;
+import j86.java.awt.peer.LabelPeer;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.javax.accessibility.*;

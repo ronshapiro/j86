@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.java.util.*;
 import j86.java.beans.ConstructorProperties;
 import j86.java.io.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 /**
  * A simple tree data model that uses TreeNodes.

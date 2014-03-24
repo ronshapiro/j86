@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.rmi.rmic.newrmic;
+package j86.sun.rmi.rmic.newrmic;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.RootDoc;
@@ -33,8 +33,8 @@ import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.io.PrintStream;
 import j86.java.io.PrintWriter;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.HashMap;
@@ -42,7 +42,7 @@ import j86.java.util.HashSet;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.JrmpGenerator;
+import j86.sun.rmi.rmic.newrmic.jrmp.JrmpGenerator;
 import j86.sun.tools.util.CommandLine;
 
 /**
@@ -652,7 +652,7 @@ public class Main {
         }
 
         // run javac with our output stream
-        int status = com.j86.j86.sun.tools.javac.Main.compile(
+        int status = com.j86.sun.tools.javac.Main.compile(
             javacArgs.toArray(new String[javacArgs.size()]),
             new PrintWriter(out, true));
         return status == 0;

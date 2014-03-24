@@ -29,7 +29,7 @@ import j86.java.util.Arrays; // JDK 1.2
 import j86.java.util.Hashtable;
 
 import j86.java.io.OutputStream;
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.ldap.Control;
 
 /**
  * Extends SimpleClientId to add property values specific for Digest-MD5.

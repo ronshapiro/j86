@@ -25,17 +25,17 @@
 
 
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Point;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.PixelInterleavedSampleModel;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.PixelInterleavedSampleModel;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.java.awt.image.WritableRaster;
 import j86.sun.java2d.SurfaceData;
 
 /**

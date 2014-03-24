@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
@@ -49,19 +49,19 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibGroup;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardMetaServer;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMibGroup;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardMetaServer;
+import j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
+import j86.com.sun.jmx.snmp.agent.SnmpMibTable;
 import j86.com.sun.jmx.snmp.EnumRowStatus;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRuntimeMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTInputArgsTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTClassPathTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTLibraryPathTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmRuntimeMeta;
+import j86.sun.management.snmp.jvmmib.JvmRTInputArgsTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmRTClassPathTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmRTLibraryPathTableMeta;
 
 /**
  * The class is used for representing SNMP metadata for the "JvmRuntime" group.

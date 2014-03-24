@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.colorchooser;
+package j86.javax.swing.colorchooser;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.java.awt.Color;
 import j86.java.io.Serializable;
 

@@ -24,7 +24,7 @@
  */
 
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.File;
@@ -32,12 +32,12 @@ import j86.java.io.FileInputStream;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.util.jar.JarOutputStream;
-import j86.j86.java.util.jar.Pack200;
-import j86.j86.java.util.zip.CRC32;
-import j86.j86.java.util.zip.Deflater;
-import j86.j86.java.util.zip.ZipEntry;
-import j86.j86.java.util.zip.ZipOutputStream;
+import j86.java.util.jar.JarOutputStream;
+import j86.java.util.jar.Pack200;
+import j86.java.util.zip.CRC32;
+import j86.java.util.zip.Deflater;
+import j86.java.util.zip.ZipEntry;
+import j86.java.util.zip.ZipOutputStream;
 
 class NativeUnpack {
     // Pointer to the native unpacker obj

@@ -27,7 +27,7 @@
  * @author Charlton Innovations, Inc.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
 import j86.java.util.Comparator;
 import j86.java.util.Arrays;
@@ -58,11 +58,11 @@ public final class GraphicsPrimitiveMgr {
                 CompositeType.class,
                 SunGraphics2D.class,
                 j86.java.awt.Color.class,
-                j86.j86.java.awt.geom.AffineTransform.class,
+                j86.java.awt.geom.AffineTransform.class,
                 XORComposite.class,
                 j86.java.awt.AlphaComposite.class,
-                j86.j86.java.awt.geom.Path2D.class,
-                j86.j86.java.awt.geom.Path2D.Float.class,
+                j86.java.awt.geom.Path2D.class,
+                j86.java.awt.geom.Path2D.Float.class,
                 j86.sun.awt.SunHints.class);
         CustomComponent.register();
         GeneralRenderer.register();

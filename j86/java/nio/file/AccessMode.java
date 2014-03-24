@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 /**
  * Defines access modes used to test the accessibility of a file.

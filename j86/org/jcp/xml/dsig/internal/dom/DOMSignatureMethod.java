@@ -26,18 +26,18 @@
 /*
  * $Id: DOMSignatureMethod.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
 
 import j86.java.io.IOException;
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import org.w3c.dom.Element;
 
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.implementations.SignatureECDSA;
 import j86.org.jcp.xml.dsig.internal.SignerOutputStream;
 
 /**
@@ -47,8 +47,8 @@ import j86.org.jcp.xml.dsig.internal.SignerOutputStream;
  */
 public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
 
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal.dom");
 
     private SignatureMethodParameterSpec params;
     private Signature signature;
@@ -159,7 +159,7 @@ public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
         if (signature == null) {
             try {
                 Provider p = (Provider)context.getProperty
-                    ("j86.j86.org.jcp.xml.dsig.internal.dom.SignatureProvider");
+                    ("j86.org.jcp.xml.dsig.internal.dom.SignatureProvider");
                 signature = (p == null)
                     ? Signature.getInstance(getJCAAlgorithm())
                     : Signature.getInstance(getJCAAlgorithm(), p);
@@ -168,9 +168,9 @@ public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
             }
         }
         signature.initVerify((PublicKey)key);
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Signature provider:" + signature.getProvider());
-            log.log(j86.j86.java.util.logging.Level.FINE, "verifying with key: " + key);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Signature provider:" + signature.getProvider());
+            log.log(j86.java.util.logging.Level.FINE, "verifying with key: " + key);
         }
         ((DOMSignedInfo)si).canonicalize(context,
                                          new SignerOutputStream(signature));
@@ -202,7 +202,7 @@ public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
         if (signature == null) {
             try {
                 Provider p = (Provider)context.getProperty
-                    ("j86.j86.org.jcp.xml.dsig.internal.dom.SignatureProvider");
+                    ("j86.org.jcp.xml.dsig.internal.dom.SignatureProvider");
                 signature = (p == null)
                     ? Signature.getInstance(getJCAAlgorithm())
                     : Signature.getInstance(getJCAAlgorithm(), p);
@@ -211,9 +211,9 @@ public abstract class DOMSignatureMethod extends AbstractDOMSignatureMethod {
             }
         }
         signature.initSign((PrivateKey)key);
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Signature provider:" + signature.getProvider());
-            log.log(j86.j86.java.util.logging.Level.FINE, "Signing with key: " + key);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Signature provider:" + signature.getProvider());
+            log.log(j86.java.util.logging.Level.FINE, "Signing with key: " + key);
         }
 
         ((DOMSignedInfo)si).canonicalize(context,

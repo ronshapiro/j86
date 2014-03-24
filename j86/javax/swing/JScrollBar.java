@@ -29,12 +29,12 @@ import j86.java.io.Serializable;
 import j86.java.awt.Component;
 import j86.java.awt.Adjustable;
 import j86.java.awt.Dimension;
-import j86.j86.java.awt.event.AdjustmentListener;
-import j86.j86.java.awt.event.AdjustmentEvent;
+import j86.java.awt.event.AdjustmentListener;
+import j86.java.awt.event.AdjustmentEvent;
 import j86.java.awt.Graphics;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.io.ObjectOutputStream;

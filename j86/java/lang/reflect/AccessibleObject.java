@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.java.security.AccessController;
 import j86.sun.reflect.Reflection;
 import j86.sun.reflect.ReflectionFactory;
-import j86.j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.Annotation;
 
 /**
  * The AccessibleObject class is the base class for Field, Method and
@@ -115,7 +115,7 @@ public class AccessibleObject implements AnnotatedElement {
      * the class {@link j86.java.lang.Class}).
      *
      * <p>A {@code SecurityException} is raised if this object is a {@link
-     * j86.j86.j86.java.lang.reflect.Constructor} object for the class
+     * j86.java.lang.reflect.Constructor} object for the class
      * {@code j86.java.lang.Class}, and {@code flag} is true.
      *
      * @param flag the new value for the {@code accessible} flag

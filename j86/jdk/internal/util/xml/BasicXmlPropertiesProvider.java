@@ -30,7 +30,7 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
 
-import j86.j86.sun.util.spi.XmlPropertiesProvider;
+import j86.sun.util.spi.XmlPropertiesProvider;
 
 /**
  * A {@code XmlPropertiesProvider} implementation that uses the UKit XML parser.

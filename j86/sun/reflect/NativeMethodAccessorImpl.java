@@ -25,8 +25,8 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.java.lang.reflect.*;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /** Used only for the first few invocations of a Method; afterward,
     switches to bytecode-based implementation */

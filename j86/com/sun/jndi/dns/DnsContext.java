@@ -30,8 +30,8 @@ import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.DirectoryManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.DirectoryManager;
 
 import j86.com.sun.jndi.toolkit.ctx.*;
 
@@ -1027,7 +1027,7 @@ final class NameClassPairEnumeration
         NameNode nnode = nodes.nextElement();
         String className = (nnode.isZoneCut() ||
                             (nnode.getChildren() != null))
-            ? "j86.j86.javax.naming.directory.DirContext"
+            ? "j86.javax.naming.directory.DirContext"
             : "j86.java.lang.Object";
 
         String label = nnode.getLabel();

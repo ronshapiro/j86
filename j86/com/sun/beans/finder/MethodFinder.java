@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
 import j86.com.sun.beans.TypeResolver;
-import j86.j86.com.sun.beans.util.Cache;
+import j86.com.sun.beans.util.Cache;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
 import j86.java.util.Arrays;
 
-import static j86.j86.com.sun.beans.util.Cache.Kind.SOFT;
-import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.com.sun.beans.util.Cache.Kind.SOFT;
+import static j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 /**
  * This utility class provides {@code static} methods

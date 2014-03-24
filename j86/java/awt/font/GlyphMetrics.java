@@ -38,9 +38,9 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>GlyphMetrics</code> class represents information for a

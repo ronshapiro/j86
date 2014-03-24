@@ -25,9 +25,9 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.ColorModel;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Arrays;
 
 /**

@@ -24,16 +24,16 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.security.*;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.java.beans.PropertyChangeListener;
 import j86.sun.misc.JavaAWTAccess;
 import j86.sun.misc.SharedSecrets;
@@ -56,18 +56,18 @@ import j86.sun.misc.SharedSecrets;
  * cannot subsequently be changed.
  * <p>
  * At startup the LogManager class is located using the
- * j86.j86.java.util.logging.manager system property.
+ * j86.java.util.logging.manager system property.
  * <p>
  * The LogManager defines two optional system properties that allow control over
  * the initial configuration:
  * <ul>
- * <li>"j86.j86.java.util.logging.config.class"
- * <li>"j86.j86.java.util.logging.config.file"
+ * <li>"j86.java.util.logging.config.class"
+ * <li>"j86.java.util.logging.config.file"
  * </ul>
  * These two properties may be specified on the command line to the "java"
  * command, or as system property definitions passed to JNI_CreateJavaVM.
  * <p>
- * If the "j86.j86.java.util.logging.config.class" property is set, then the
+ * If the "j86.java.util.logging.config.class" property is set, then the
  * property value is treated as a class name.  The given class will be
  * loaded, an object will be instantiated, and that object's constructor
  * is responsible for reading in the initial configuration.  (That object
@@ -75,8 +75,8 @@ import j86.sun.misc.SharedSecrets;
  * alternate configuration class can use <tt>readConfiguration(InputStream)</tt>
  * to define properties in the LogManager.
  * <p>
- * If "j86.j86.java.util.logging.config.class" property is <b>not</b> set,
- * then the "j86.j86.java.util.logging.config.file" system property can be used
+ * If "j86.java.util.logging.config.class" property is <b>not</b> set,
+ * then the "j86.java.util.logging.config.file" system property can be used
  * to specify a properties file (in j86.java.util.Properties format). The
  * initial logging configuration will be read from this file.
  * <p>
@@ -184,7 +184,7 @@ public class LogManager {
                 LogManager mgr = null;
                 String cname = null;
                 try {
-                    cname = System.getProperty("j86.j86.java.util.logging.manager");
+                    cname = System.getProperty("j86.java.util.logging.manager");
                     if (cname != null) {
                         try {
                             Class<?> clz = ClassLoader.getSystemClassLoader()
@@ -398,8 +398,8 @@ public class LogManager {
                                 public Void run() throws Exception {
                                     readConfiguration();
 
-                                    // Platform loggers begin to delegate to j86.j86.java.util.logging.Logger
-                                    j86.j86.sun.util.logging.PlatformLogger.redirectPlatformLoggers();
+                                    // Platform loggers begin to delegate to j86.java.util.logging.Logger
+                                    j86.sun.util.logging.PlatformLogger.redirectPlatformLoggers();
                                     return null;
                                 }
                             });
@@ -1266,7 +1266,7 @@ public class LogManager {
         checkPermission();
 
         // if a configuration class is specified, load it and use it.
-        String cname = System.getProperty("j86.j86.java.util.logging.config.class");
+        String cname = System.getProperty("j86.java.util.logging.config.class");
         if (cname != null) {
             try {
                 // Instantiate the named class.  It is its constructor's
@@ -1288,7 +1288,7 @@ public class LogManager {
             }
         }
 
-        String fname = System.getProperty("j86.j86.java.util.logging.config.file");
+        String fname = System.getProperty("j86.java.util.logging.config.file");
         if (fname == null) {
             fname = System.getProperty("java.home");
             if (fname == null) {
@@ -1704,27 +1704,27 @@ public class LogManager {
      * {@link j86.javax.management.ObjectName} for the management interface
      * for the logging facility.
      *
-     * @see j86.j86.java.lang.management.PlatformLoggingMXBean
-     * @see j86.j86.java.util.logging.LoggingMXBean
+     * @see j86.java.lang.management.PlatformLoggingMXBean
+     * @see j86.java.util.logging.LoggingMXBean
      *
      * @since 1.5
      */
     public final static String LOGGING_MXBEAN_NAME
-        = "j86.j86.java.util.logging:type=Logging";
+        = "j86.java.util.logging:type=Logging";
 
     /**
      * Returns <tt>LoggingMXBean</tt> for managing loggers.
      * An alternative way to manage loggers is through the
-     * {@link j86.j86.java.lang.management.PlatformLoggingMXBean} interface
+     * {@link j86.java.lang.management.PlatformLoggingMXBean} interface
      * that can be obtained by calling:
      * <pre>
-     *     PlatformLoggingMXBean logging = {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
+     *     PlatformLoggingMXBean logging = {@link j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
      *         ManagementFactory.getPlatformMXBean}(PlatformLoggingMXBean.class);
      * </pre>
      *
      * @return a {@link LoggingMXBean} object.
      *
-     * @see j86.j86.java.lang.management.PlatformLoggingMXBean
+     * @see j86.java.lang.management.PlatformLoggingMXBean
      * @since 1.5
      */
     public static synchronized LoggingMXBean getLoggingMXBean() {

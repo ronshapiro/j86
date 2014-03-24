@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.util;
+package j86.sun.invoke.util;
 
-import j86.j86.java.lang.invoke.MethodType;
-import j86.j86.sun.invoke.empty.Empty;
+import j86.java.lang.invoke.MethodType;
+import j86.sun.invoke.empty.Empty;
 
 /**
  * This class centralizes information about the JVM verifier

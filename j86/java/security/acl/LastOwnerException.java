@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.security.acl;
+package j86.java.security.acl;
 
 /**
  * This is an exception that is thrown whenever an attempt is made to delete
  * the last owner of an Access Control List.
  *
- * @see j86.j86.java.security.acl.Owner#deleteOwner
+ * @see j86.java.security.acl.Owner#deleteOwner
  *
  * @author Satish Dharmaraj
  */

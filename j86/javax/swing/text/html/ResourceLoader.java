@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.io.InputStream;
 

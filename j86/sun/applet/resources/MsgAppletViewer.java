@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.applet.resources;
+package j86.sun.applet.resources;
 
 import j86.java.util.ListResourceBundle;
 

@@ -25,7 +25,7 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An unbounded priority {@linkplain Queue queue} based on a priority heap.
@@ -62,7 +62,7 @@ import j86.j86.java.util.function.Consumer;
  * Multiple threads should not access a {@code PriorityQueue}
  * instance concurrently if any of the threads modifies the queue.
  * Instead, use the thread-safe {@link
- * j86.j86.java.util.concurrent.PriorityBlockingQueue} class.
+ * j86.java.util.concurrent.PriorityBlockingQueue} class.
  *
  * <p>Implementation note: this implementation provides
  * O(log(n)) time for the enqueuing and dequeuing methods

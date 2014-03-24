@@ -26,12 +26,12 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.*;
-import j86.j86.javax.naming.event.*;
-import j86.j86.javax.naming.ldap.*;
-import j86.j86.javax.naming.ldap.LdapName;
-import j86.j86.javax.naming.ldap.Rdn;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.*;
+import j86.javax.naming.event.*;
+import j86.javax.naming.ldap.*;
+import j86.javax.naming.ldap.LdapName;
+import j86.javax.naming.ldap.Rdn;
 
 import j86.java.util.Locale;
 import j86.java.util.Vector;
@@ -46,7 +46,7 @@ import j86.java.io.OutputStream;
 import j86.com.sun.jndi.toolkit.ctx.*;
 import j86.com.sun.jndi.toolkit.dir.HierMemDirCtx;
 import j86.com.sun.jndi.toolkit.dir.SearchFilter;
-import j86.j86.com.sun.jndi.ldap.ext.StartTlsResponseImpl;
+import j86.com.sun.jndi.ldap.ext.StartTlsResponseImpl;
 
 /**
  * The LDAP context implementation.
@@ -130,7 +130,7 @@ final public class LdapCtx extends ComponentDirContext
 
         // Used by LdapPoolManager
     static final String DEFAULT_SSL_FACTORY =
-        "j86.j86.javax.net.ssl.SSLSocketFactory";       // use Sun's SSL
+        "j86.javax.net.ssl.SSLSocketFactory";       // use Sun's SSL
     private static final int DEFAULT_REFERRAL_LIMIT = 10;
     private static final String STARTTLS_REQ_OID = "1.3.6.1.4.1.1466.20037";
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
 import j86.java.util.Map;
 import j86.java.io.IOException;

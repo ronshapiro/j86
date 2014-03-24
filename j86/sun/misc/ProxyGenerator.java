@@ -30,11 +30,11 @@ import j86.java.io.DataOutputStream;
 import j86.java.io.File;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.Paths;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Method;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.Paths;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.LinkedList;
@@ -45,7 +45,7 @@ import j86.sun.security.action.GetBooleanAction;
 
 /**
  * ProxyGenerator contains the code to generate a dynamic proxy class
- * for the j86.j86.j86.java.lang.reflect.Proxy API.
+ * for the j86.java.lang.reflect.Proxy API.
  *
  * The external interfaces to ProxyGenerator is the static
  * "generateProxyClass" method.
@@ -305,7 +305,7 @@ public class ProxyGenerator {
     // end of constants copied from j86.sun.tools.java.RuntimeConstants
 
     /** name of the superclass of proxy classes */
-    private final static String superclassName = "j86.j86.j86.java.lang.reflect/Proxy";
+    private final static String superclassName = "j86.java.lang.reflect/Proxy";
 
     /** name of field for storing a proxy instance's invocation handler */
     private final static String handlerFieldName = "h";
@@ -473,7 +473,7 @@ public class ProxyGenerator {
 
                     // add static field for method's Method object
                     fields.add(new FieldInfo(pm.methodFieldName,
-                        "Lj86.j86.j86.java.lang.reflect/Method;",
+                        "Lj86.java.lang.reflect/Method;",
                          ACC_PRIVATE | ACC_STATIC));
 
                     // generate code for proxy method and add it
@@ -915,14 +915,14 @@ public class ProxyGenerator {
             out.writeByte(opc_getfield);
             out.writeShort(cp.getFieldRef(
                 superclassName,
-                handlerFieldName, "Lj86.j86.j86.java.lang.reflect/InvocationHandler;"));
+                handlerFieldName, "Lj86.java.lang.reflect/InvocationHandler;"));
 
             code_aload(0, out);
 
             out.writeByte(opc_getstatic);
             out.writeShort(cp.getFieldRef(
                 dotToSlash(className),
-                methodFieldName, "Lj86.j86.j86.java.lang.reflect/Method;"));
+                methodFieldName, "Lj86.java.lang.reflect/Method;"));
 
             if (parameterTypes.length > 0) {
 
@@ -948,9 +948,9 @@ public class ProxyGenerator {
 
             out.writeByte(opc_invokeinterface);
             out.writeShort(cp.getInterfaceMethodRef(
-                "j86.j86.j86.java.lang.reflect/InvocationHandler",
+                "j86.java.lang.reflect/InvocationHandler",
                 "invoke",
-                "(Lj86.java.lang/Object;Lj86.j86.java.lang.reflect/Method;" +
+                "(Lj86.java.lang/Object;Lj86.java.lang.reflect/Method;" +
                     "[Lj86.java.lang/Object;)Ljava/lang/Object;"));
             out.writeByte(4);
             out.writeByte(0);
@@ -988,7 +988,7 @@ public class ProxyGenerator {
 
                 out.writeByte(opc_new);
                 out.writeShort(cp.getClass(
-                    "j86.j86.j86.java.lang.reflect/UndeclaredThrowableException"));
+                    "j86.java.lang.reflect/UndeclaredThrowableException"));
 
                 out.writeByte(opc_dup);
 
@@ -997,7 +997,7 @@ public class ProxyGenerator {
                 out.writeByte(opc_invokespecial);
 
                 out.writeShort(cp.getMethodRef(
-                    "j86.j86.j86.java.lang.reflect/UndeclaredThrowableException",
+                    "j86.java.lang.reflect/UndeclaredThrowableException",
                     "<init>", "(Lj86.java.lang/Throwable;)V"));
 
                 out.writeByte(opc_athrow);
@@ -1149,12 +1149,12 @@ public class ProxyGenerator {
                 "j86.java.lang/Class",
                 "getMethod",
                 "(Lj86.java.lang/String;[Ljava/lang/Class;)" +
-                "Lj86.j86.j86.java.lang.reflect/Method;"));
+                "Lj86.java.lang.reflect/Method;"));
 
             out.writeByte(opc_putstatic);
             out.writeShort(cp.getFieldRef(
                 dotToSlash(className),
-                methodFieldName, "Lj86.j86.j86.java.lang.reflect/Method;"));
+                methodFieldName, "Lj86.java.lang.reflect/Method;"));
         }
     }
 
@@ -1163,7 +1163,7 @@ public class ProxyGenerator {
      */
     private MethodInfo generateConstructor() throws IOException {
         MethodInfo minfo = new MethodInfo(
-            "<init>", "(Lj86.j86.j86.java.lang.reflect/InvocationHandler;)V",
+            "<init>", "(Lj86.java.lang.reflect/InvocationHandler;)V",
             ACC_PUBLIC);
 
         DataOutputStream out = new DataOutputStream(minfo.code);
@@ -1175,7 +1175,7 @@ public class ProxyGenerator {
         out.writeByte(opc_invokespecial);
         out.writeShort(cp.getMethodRef(
             superclassName,
-            "<init>", "(Lj86.j86.j86.java.lang.reflect/InvocationHandler;)V"));
+            "<init>", "(Lj86.java.lang.reflect/InvocationHandler;)V"));
 
         out.writeByte(opc_return);
 

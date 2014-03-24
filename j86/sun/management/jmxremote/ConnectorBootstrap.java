@@ -23,25 +23,25 @@
  * questions.
  */
 
-package j86.j86.sun.management.jmxremote;
+package j86.sun.management.jmxremote;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.File;
 import j86.java.io.FileInputStream;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.ManagementFactory;
 import j86.java.net.InetAddress;
 import j86.java.net.MalformedURLException;
 import j86.java.net.UnknownHostException;
 import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.registry.Registry;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.registry.Registry;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.UnicastRemoteObject;
 import j86.java.security.KeyStore;
 import j86.java.security.Principal;
 import j86.java.util.HashMap;
@@ -53,14 +53,14 @@ import j86.java.util.Set;
 import j86.java.util.StringTokenizer;
 
 import j86.javax.management.MBeanServer;
-import j86.j86.javax.management.remote.JMXAuthenticator;
-import j86.j86.javax.management.remote.JMXConnectorServer;
-import j86.j86.javax.management.remote.JMXConnectorServerFactory;
-import j86.j86.javax.management.remote.JMXServiceURL;
-import j86.j86.j86.javax.management.remote.rmi.RMIConnectorServer;
-import j86.j86.javax.net.ssl.KeyManagerFactory;
-import j86.j86.javax.net.ssl.SSLContext;
-import j86.j86.javax.net.ssl.TrustManagerFactory;
+import j86.javax.management.remote.JMXAuthenticator;
+import j86.javax.management.remote.JMXConnectorServer;
+import j86.javax.management.remote.JMXConnectorServerFactory;
+import j86.javax.management.remote.JMXServiceURL;
+import j86.javax.management.remote.rmi.RMIConnectorServer;
+import j86.javax.net.ssl.KeyManagerFactory;
+import j86.javax.net.ssl.SSLContext;
+import j86.javax.net.ssl.TrustManagerFactory;
 import j86.javax.rmi.ssl.SslRMIClientSocketFactory;
 import j86.javax.rmi.ssl.SslRMIServerSocketFactory;
 import j86.javax.security.auth.Subject;
@@ -106,33 +106,33 @@ public final class ConnectorBootstrap {
     public static interface PropertyNames {
 
         public static final String PORT =
-                "com.j86.j86.sun.management.jmxremote.port";
+                "com.j86.sun.management.jmxremote.port";
         public static final String RMI_PORT =
-                "com.j86.j86.sun.management.jmxremote.rmi.port";
+                "com.j86.sun.management.jmxremote.rmi.port";
         public static final String CONFIG_FILE_NAME =
                 "com.j86.sun.management.config.file";
         public static final String USE_LOCAL_ONLY =
-                "com.j86.j86.sun.management.jmxremote.local.only";
+                "com.j86.sun.management.jmxremote.local.only";
         public static final String USE_SSL =
-                "com.j86.j86.sun.management.jmxremote.ssl";
+                "com.j86.sun.management.jmxremote.ssl";
         public static final String USE_REGISTRY_SSL =
-                "com.j86.j86.sun.management.jmxremote.registry.ssl";
+                "com.j86.sun.management.jmxremote.registry.ssl";
         public static final String USE_AUTHENTICATION =
-                "com.j86.j86.sun.management.jmxremote.authenticate";
+                "com.j86.sun.management.jmxremote.authenticate";
         public static final String PASSWORD_FILE_NAME =
-                "com.j86.j86.sun.management.jmxremote.password.file";
+                "com.j86.sun.management.jmxremote.password.file";
         public static final String ACCESS_FILE_NAME =
-                "com.j86.j86.sun.management.jmxremote.access.file";
+                "com.j86.sun.management.jmxremote.access.file";
         public static final String LOGIN_CONFIG_NAME =
-                "com.j86.j86.sun.management.jmxremote.login.config";
+                "com.j86.sun.management.jmxremote.login.config";
         public static final String SSL_ENABLED_CIPHER_SUITES =
-                "com.j86.j86.sun.management.jmxremote.ssl.enabled.cipher.suites";
+                "com.j86.sun.management.jmxremote.ssl.enabled.cipher.suites";
         public static final String SSL_ENABLED_PROTOCOLS =
-                "com.j86.j86.sun.management.jmxremote.ssl.enabled.protocols";
+                "com.j86.sun.management.jmxremote.ssl.enabled.protocols";
         public static final String SSL_NEED_CLIENT_AUTH =
-                "com.j86.j86.sun.management.jmxremote.ssl.need.client.auth";
+                "com.j86.sun.management.jmxremote.ssl.need.client.auth";
         public static final String SSL_CONFIG_FILE_NAME =
-                "com.j86.j86.sun.management.jmxremote.ssl.config.file";
+                "com.j86.sun.management.jmxremote.ssl.config.file";
     }
 
     /**
@@ -282,7 +282,7 @@ public final class ConnectorBootstrap {
 
      /**
       * Initializes and starts the JMX Connector Server.
-      * If the com.j86.j86.sun.management.jmxremote.port property is not defined,
+      * If the com.j86.sun.management.jmxremote.port property is not defined,
       * simply return. Otherwise, attempts to load the config file, and
       * then calls {@link #startRemoteConnectorServer
       *                            (j86.java.lang.String, j86.java.util.Properties)}.
@@ -492,8 +492,8 @@ public final class ConnectorBootstrap {
      */
     public static JMXConnectorServer startLocalConnectorServer() {
         // Ensure cryptographically strong random number generater used
-        // to choose the object number - see j86.j86.java.rmi.server.ObjID
-        System.setProperty("j86.j86.java.rmi.server.randomIDs", "true");
+        // to choose the object number - see j86.java.rmi.server.ObjID
+        System.setProperty("j86.java.rmi.server.randomIDs", "true");
 
         // This RMI server should not keep the VM alive
         Map<String, Object> env = new HashMap<>();
@@ -644,13 +644,13 @@ public final class ConnectorBootstrap {
                     p.load(bin);
                 }
                 String keyStore =
-                        p.getProperty("j86.j86.javax.net.ssl.keyStore");
+                        p.getProperty("j86.javax.net.ssl.keyStore");
                 String keyStorePassword =
-                        p.getProperty("j86.j86.javax.net.ssl.keyStorePassword", "");
+                        p.getProperty("j86.javax.net.ssl.keyStorePassword", "");
                 String trustStore =
-                        p.getProperty("j86.j86.javax.net.ssl.trustStore");
+                        p.getProperty("j86.javax.net.ssl.trustStore");
                 String trustStorePassword =
-                        p.getProperty("j86.j86.javax.net.ssl.trustStorePassword", "");
+                        p.getProperty("j86.javax.net.ssl.trustStorePassword", "");
 
                 char[] keyStorePasswd = null;
                 if (keyStorePassword.length() != 0) {
@@ -717,7 +717,7 @@ public final class ConnectorBootstrap {
         /* Make sure we use non-guessable RMI object IDs.  Otherwise
          * attackers could hijack open connections by guessing their
          * IDs.  */
-        System.setProperty("j86.j86.java.rmi.server.randomIDs", "true");
+        System.setProperty("j86.java.rmi.server.randomIDs", "true");
 
         JMXServiceURL url = new JMXServiceURL("rmi", null, rmiPort);
 

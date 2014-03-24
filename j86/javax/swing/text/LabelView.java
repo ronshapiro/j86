@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.awt.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 /**
  * A <code>LabelView</code> is a styled chunk of text

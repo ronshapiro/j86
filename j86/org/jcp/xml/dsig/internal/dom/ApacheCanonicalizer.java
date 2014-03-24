@@ -26,24 +26,24 @@
 /*
  * $Id: ApacheCanonicalizer.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.OutputStream;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.util.Set;
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.TransformException;
-import j86.j86.javax.xml.crypto.dsig.TransformService;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.TransformException;
+import j86.javax.xml.crypto.dsig.TransformService;
+import j86.javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -54,8 +54,8 @@ public abstract class ApacheCanonicalizer extends TransformService {
         j86.com.sun.org.apache.xml.internal.security.Init.init();
     }
 
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal.dom");
     protected Canonicalizer apacheCanonicalizer;
     private Transform apacheTransform;
     protected String inclusiveNamespaces;
@@ -78,11 +78,11 @@ public abstract class ApacheCanonicalizer extends TransformService {
         if (parent == null) {
             throw new NullPointerException();
         }
-        if (!(parent instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
+        if (!(parent instanceof j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("parent must be of type DOMStructure");
         }
         transformElem = (Element)
-            ((j86.j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
+            ((j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
         ownerDoc = DOMUtils.getOwnerDocument(transformElem);
     }
 
@@ -96,11 +96,11 @@ public abstract class ApacheCanonicalizer extends TransformService {
         if (parent == null) {
             throw new NullPointerException();
         }
-        if (!(parent instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
+        if (!(parent instanceof j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("parent must be of type DOMStructure");
         }
         transformElem = (Element)
-            ((j86.j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
+            ((j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
         ownerDoc = DOMUtils.getOwnerDocument(transformElem);
     }
 
@@ -116,8 +116,8 @@ public abstract class ApacheCanonicalizer extends TransformService {
         if (apacheCanonicalizer == null) {
             try {
                 apacheCanonicalizer = Canonicalizer.getInstance(getAlgorithm());
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Created canonicalizer for algorithm: " + getAlgorithm());
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Created canonicalizer for algorithm: " + getAlgorithm());
                 }
             } catch (InvalidCanonicalizerException ice) {
                 throw new TransformException
@@ -171,8 +171,8 @@ public abstract class ApacheCanonicalizer extends TransformService {
                 @SuppressWarnings("unchecked")
                 Set<Node> ns = Utils.toNodeSet(nsd.iterator());
                 nodeSet = ns;
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Canonicalizing " + nodeSet.size() + " nodes");
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Canonicalizing " + nodeSet.size() + " nodes");
                 }
             } else {
                 return new OctetStreamData(new ByteArrayInputStream(
@@ -212,8 +212,8 @@ public abstract class ApacheCanonicalizer extends TransformService {
                 apacheTransform =
                     new Transform(ownerDoc, getAlgorithm(), transformElem.getChildNodes());
                 apacheTransform.setElement(transformElem, xc.getBaseURI());
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Created transform for algorithm: " + getAlgorithm());
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Created transform for algorithm: " + getAlgorithm());
                 }
             } catch (Exception ex) {
                 throw new TransformException
@@ -223,13 +223,13 @@ public abstract class ApacheCanonicalizer extends TransformService {
 
         XMLSignatureInput in;
         if (data instanceof ApacheData) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "ApacheData = true");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "ApacheData = true");
             }
             in = ((ApacheData)data).getXMLSignatureInput();
         } else if (data instanceof NodeSetData) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "isNodeSet() = true");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "isNodeSet() = true");
             }
             if (data instanceof DOMSubTreeData) {
                 DOMSubTreeData subTree = (DOMSubTreeData)data;
@@ -242,8 +242,8 @@ public abstract class ApacheCanonicalizer extends TransformService {
                 in = new XMLSignatureInput(nodeSet);
             }
         } else {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "isNodeSet() = false");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "isNodeSet() = false");
             }
             try {
                 in = new XMLSignatureInput

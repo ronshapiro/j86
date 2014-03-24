@@ -26,17 +26,17 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 import j86.java.util.*;
 
 import j86.javax.accessibility.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.filechooser.FileFilter;
+import j86.javax.swing.border.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.filechooser.FileFilter;
 
 
 import com.j86.sun.tools.jconsole.JConsoleContext;

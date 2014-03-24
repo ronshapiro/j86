@@ -26,7 +26,7 @@
 package j86.sun.management;
 
 import j86.java.util.List;
-import j86.j86.sun.management.counter.Counter;
+import j86.sun.management.counter.Counter;
 /**
  * An interface for the monitoring and management of the
  * Java virtual machine.

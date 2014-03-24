@@ -25,15 +25,15 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 
 /** This interface provides the declaration for
-    j86.j86.j86.java.lang.reflect.Constructor.invoke(). Each Constructor object is
+    j86.java.lang.reflect.Constructor.invoke(). Each Constructor object is
     configured with a (possibly dynamically-generated) class which
     implements this interface. */
 
 public interface ConstructorAccessor {
-    /** Matches specification in {@link j86.j86.j86.java.lang.reflect.Constructor} */
+    /** Matches specification in {@link j86.java.lang.reflect.Constructor} */
     public Object newInstance(Object[] args)
         throws InstantiationException,
                IllegalArgumentException,

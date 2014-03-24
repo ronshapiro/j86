@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.wrapper;
+package j86.sun.security.jgss.wrapper;
 
 import j86.java.io.UnsupportedEncodingException;
 import j86.java.security.Provider;
@@ -32,7 +32,7 @@ import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.GSSCaller;
 import j86.sun.security.jgss.GSSExceptionImpl;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 
 /**
  * JGSS plugin for generic mechanisms provided through native GSS framework.

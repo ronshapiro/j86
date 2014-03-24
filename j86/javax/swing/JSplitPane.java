@@ -30,7 +30,7 @@ package j86.javax.swing;
 
 
 import j86.java.beans.ConstructorProperties;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.awt.*;

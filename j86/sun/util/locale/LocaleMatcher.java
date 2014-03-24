@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.locale;
+package j86.sun.util.locale;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;

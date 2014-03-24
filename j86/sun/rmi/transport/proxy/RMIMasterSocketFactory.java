@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.proxy;
+package j86.sun.rmi.transport.proxy;
 
 import j86.java.io.*;
 import j86.java.net.*;
 import j86.java.security.*;
 import j86.java.util.*;
-import j86.j86.java.rmi.server.LogStream;
-import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.java.rmi.server.LogStream;
+import j86.java.rmi.server.RMISocketFactory;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.runtime.NewThreadAction;
 import j86.sun.security.action.GetBooleanAction;
@@ -53,12 +53,12 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
 
     private static String getLogLevel() {
         return j86.java.security.AccessController.doPrivileged(
-            new j86.sun.security.action.GetPropertyAction("j86.j86.sun.rmi.transport.proxy.logLevel"));
+            new j86.sun.security.action.GetPropertyAction("j86.sun.rmi.transport.proxy.logLevel"));
     }
 
     /* proxy package log */
     static final Log proxyLog =
-        Log.getLog("j86.j86.sun.rmi.transport.tcp.proxy",
+        Log.getLog("j86.sun.rmi.transport.tcp.proxy",
                    "transport", RMIMasterSocketFactory.logLevel);
 
     /** timeout for attemping direct socket connections */
@@ -66,14 +66,14 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
 
     private static long getConnectTimeout() {
         return j86.java.security.AccessController.doPrivileged(
-                new GetLongAction("j86.j86.sun.rmi.transport.proxy.connectTimeout",
+                new GetLongAction("j86.sun.rmi.transport.proxy.connectTimeout",
                               15000)).longValue(); // default: 15 seconds
     }
 
     /** whether to fallback to HTTP on general connect failures */
     private static final boolean eagerHttpFallback =
         j86.java.security.AccessController.doPrivileged(new GetBooleanAction(
-            "j86.j86.sun.rmi.transport.proxy.eagerHttpFallback")).booleanValue();
+            "j86.sun.rmi.transport.proxy.eagerHttpFallback")).booleanValue();
 
     /** table of hosts successfully connected to and the factory used */
     private Hashtable<String, RMISocketFactory> successTable =
@@ -111,7 +111,7 @@ public class RMIMasterSocketFactory extends RMISocketFactory {
                     new GetPropertyAction("proxyHost"));
 
             boolean disable = j86.java.security.AccessController.doPrivileged(
-                new GetPropertyAction("j86.j86.java.rmi.server.disableHttp", "true"))
+                new GetPropertyAction("j86.java.rmi.server.disableHttp", "true"))
                 .equalsIgnoreCase("true");
 
             if (!disable && proxyHost != null && proxyHost.length() > 0) {

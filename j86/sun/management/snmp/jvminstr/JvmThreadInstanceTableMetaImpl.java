@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
@@ -33,8 +33,8 @@ import j86.java.util.Map;
 import j86.java.util.TreeMap;
 import j86.java.util.Enumeration;
 
-import j86.j86.java.lang.management.ThreadInfo;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.ThreadInfo;
+import j86.java.lang.management.ManagementFactory;
 
 // jmx imports
 //
@@ -58,19 +58,19 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpIndex;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.com.sun.jmx.snmp.agent.SnmpIndex;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmThreadInstanceEntryMBean;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmThreadInstanceTableMeta;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableCache;
-import j86.j86.j86.sun.management.snmp.util.SnmpCachedData;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableHandler;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
-import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
+import j86.sun.management.snmp.jvmmib.JvmThreadInstanceEntryMBean;
+import j86.sun.management.snmp.jvmmib.JvmThreadInstanceTableMeta;
+import j86.sun.management.snmp.util.SnmpTableCache;
+import j86.sun.management.snmp.util.SnmpCachedData;
+import j86.sun.management.snmp.util.SnmpTableHandler;
+import j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmThreadInstanceTable" group.
@@ -206,7 +206,7 @@ public class JvmThreadInstanceTableMetaImpl
         log.debug("JvmThreadInstanceTableMetaImpl", "Create Thread meta");
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(Object userData)
         throws SnmpStatusException {
         log.debug("JvmThreadInstanceTableMetaImpl", "getNextOid");
@@ -214,7 +214,7 @@ public class JvmThreadInstanceTableMetaImpl
         return getNextOid(null,userData);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(SnmpOid oid, Object userData)
         throws SnmpStatusException {
         log.debug("getNextOid", "previous=" + oid);
@@ -250,7 +250,7 @@ public class JvmThreadInstanceTableMetaImpl
         return next;
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected boolean contains(SnmpOid oid, Object userData) {
 
         // Get the handler.
@@ -269,7 +269,7 @@ public class JvmThreadInstanceTableMetaImpl
     }
 
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     public Object getEntry(SnmpOid oid)
         throws SnmpStatusException {
         log.debug("*** **** **** **** getEntry", "oid [" + oid + "]");

@@ -40,23 +40,23 @@ import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.math.MathContext;
 import j86.java.math.RoundingMode;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.IllegalCharsetNameException;
-import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.IllegalCharsetNameException;
+import j86.java.nio.charset.UnsupportedCharsetException;
 import j86.java.text.DateFormatSymbols;
 import j86.java.text.DecimalFormat;
 import j86.java.text.DecimalFormatSymbols;
 import j86.java.text.NumberFormat;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
 
 import j86.java.time.DateTimeException;
 import j86.java.time.Instant;
 import j86.java.time.ZoneId;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalQueries;
 
 import j86.sun.misc.DoubleConsts;
 import j86.sun.misc.FormattedFloatingDecimal;
@@ -1967,7 +1967,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified file name.
      *
      * <p> The charset used is the {@linkplain
-     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2012,7 +2012,7 @@ public final class Formatter implements Closeable, Flushable {
      *         will be written to the file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException
@@ -2046,7 +2046,7 @@ public final class Formatter implements Closeable, Flushable {
      *         will be written to the file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l
@@ -2078,7 +2078,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified file.
      *
      * <p> The charset used is the {@linkplain
-     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2123,7 +2123,7 @@ public final class Formatter implements Closeable, Flushable {
      *         file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException
@@ -2157,7 +2157,7 @@ public final class Formatter implements Closeable, Flushable {
      *         file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l
@@ -2209,7 +2209,7 @@ public final class Formatter implements Closeable, Flushable {
      * Constructs a new formatter with the specified output stream.
      *
      * <p> The charset used is the {@linkplain
-     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * <p> The locale used is the {@linkplain
@@ -2240,7 +2240,7 @@ public final class Formatter implements Closeable, Flushable {
      *         The output will be buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -2261,7 +2261,7 @@ public final class Formatter implements Closeable, Flushable {
      *         The output will be buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @param  l

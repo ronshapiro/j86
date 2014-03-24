@@ -25,9 +25,9 @@
 
 /**
  * This package comprises the interfaces and classes used to
- * develop new {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService}
+ * develop new {@link j86.com.sun.jdi.connect.spi.TransportService}
  * implementations.
  */
 
 @jdk.Exported
-package j86.j86.j86.com.sun.jdi.connect.spi;
+package j86.com.sun.jdi.connect.spi;

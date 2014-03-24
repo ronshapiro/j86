@@ -34,12 +34,12 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.java.awt.color;
+package j86.java.awt.color;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
-import j86.j86.sun.java2d.cmm.PCMM;
-import j86.j86.sun.java2d.cmm.CMSManager;
+import j86.sun.java2d.cmm.PCMM;
+import j86.sun.java2d.cmm.CMSManager;
 
 
 /**

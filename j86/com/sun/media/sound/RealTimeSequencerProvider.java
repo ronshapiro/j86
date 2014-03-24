@@ -27,7 +27,7 @@ package j86.com.sun.media.sound;
 
 import j86.javax.sound.midi.MidiDevice;
 import j86.javax.sound.midi.MidiUnavailableException;
-import j86.j86.javax.sound.midi.spi.MidiDeviceProvider;
+import j86.javax.sound.midi.spi.MidiDeviceProvider;
 
 /**
  * Provider for RealTimeSequencer objects.

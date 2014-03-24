@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.*;
 
 /**
@@ -460,7 +460,7 @@ public class Event implements j86.java.io.Serializable {
      * Replaced by InputEvent.getWhen().
      *
      * @serial
-     * @see j86.j86.java.awt.event.InputEvent#getWhen()
+     * @see j86.java.awt.event.InputEvent#getWhen()
      */
     public long when;
 
@@ -479,7 +479,7 @@ public class Event implements j86.java.io.Serializable {
      * Replaced by MouseEvent.getX()
      *
      * @serial
-     * @see j86.j86.java.awt.event.MouseEvent#getX()
+     * @see j86.java.awt.event.MouseEvent#getX()
      */
     public int x;
 
@@ -488,7 +488,7 @@ public class Event implements j86.java.io.Serializable {
      * Replaced by MouseEvent.getY()
      *
      * @serial
-     * @see j86.j86.java.awt.event.MouseEvent#getY()
+     * @see j86.java.awt.event.MouseEvent#getY()
      */
     public int y;
 
@@ -497,7 +497,7 @@ public class Event implements j86.java.io.Serializable {
      * This has been replaced by KeyEvent.getKeyCode()
      *
      * @serial
-     * @see j86.j86.java.awt.event.KeyEvent#getKeyCode()
+     * @see j86.java.awt.event.KeyEvent#getKeyCode()
      */
     public int key;
 
@@ -513,7 +513,7 @@ public class Event implements j86.java.io.Serializable {
      * of InputEvent.
      *
      * @serial
-     * @see j86.j86.java.awt.event.InputEvent#getModifiers()
+     * @see j86.java.awt.event.InputEvent#getModifiers()
      */
     public int modifiers;
 
@@ -524,7 +524,7 @@ public class Event implements j86.java.io.Serializable {
      * This field has been replaced by MouseEvent.getClickCount().
      *
      * @serial
-     * @see j86.j86.java.awt.event.MouseEvent#getClickCount()
+     * @see j86.java.awt.event.MouseEvent#getClickCount()
      */
     public int clickCount;
 

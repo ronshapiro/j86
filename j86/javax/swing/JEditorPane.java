@@ -27,17 +27,17 @@ package j86.javax.swing;
 import j86.sun.swing.SwingUtilities2;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.awt.event.*;
+import j86.java.lang.reflect.*;
 import j86.java.net.*;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.java.util.*;
 
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.j86.javax.swing.text.html.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.html.*;
 import j86.javax.accessibility.*;
 
 /**
@@ -64,11 +64,11 @@ import j86.javax.accessibility.*;
  * <code>DefaultEditorKit</code> that produces a wrapped plain text view.
  * <dt><b>text/html</b>
  * <dd>HTML text.  The kit used in this case is the class
- * <code>j86.j86.j86.javax.swing.text.html.HTMLEditorKit</code>
+ * <code>j86.javax.swing.text.html.HTMLEditorKit</code>
  * which provides HTML 3.2 support.
  * <dt><b>text/rtf</b>
  * <dd>RTF text.  The kit used in this case is the class
- * <code>j86.j86.j86.javax.swing.text.rtf.RTFEditorKit</code>
+ * <code>j86.javax.swing.text.rtf.RTFEditorKit</code>
  * which provides a limited support of the Rich Text Format.
  * </dl>
  * <p>
@@ -321,7 +321,7 @@ public class JEditorPane extends JTextComponent {
      * @since 1.4
      */
     public synchronized HyperlinkListener[] getHyperlinkListeners() {
-        return listenerList.getListeners(j86.j86.javax.swing.event.HyperlinkListener.class);
+        return listenerList.getListeners(j86.javax.swing.event.HyperlinkListener.class);
     }
 
     /**
@@ -1292,11 +1292,11 @@ public class JEditorPane extends JTextComponent {
                     defaultEditorKitMap.put("text/plain",
                                             "j86.javax.swing.JEditorPane$PlainEditorKit");
                     defaultEditorKitMap.put("text/html",
-                                            "j86.j86.j86.javax.swing.text.html.HTMLEditorKit");
+                                            "j86.javax.swing.text.html.HTMLEditorKit");
                     defaultEditorKitMap.put("text/rtf",
-                                            "j86.j86.j86.javax.swing.text.rtf.RTFEditorKit");
+                                            "j86.javax.swing.text.rtf.RTFEditorKit");
                     defaultEditorKitMap.put("application/rtf",
-                                            "j86.j86.j86.javax.swing.text.rtf.RTFEditorKit");
+                                            "j86.javax.swing.text.rtf.RTFEditorKit");
                 }
             }
             Hashtable ht = new Hashtable();
@@ -1522,7 +1522,7 @@ public class JEditorPane extends JTextComponent {
 
     private Hashtable<String, Object> pageProperties;
 
-    /** Should be kept in sync with j86.j86.j86.javax.swing.text.html.FormView counterpart. */
+    /** Should be kept in sync with j86.javax.swing.text.html.FormView counterpart. */
     final static String PostDataProperty = "j86.javax.swing.JEditorPane.postdata";
 
     /**
@@ -2120,7 +2120,7 @@ public class JEditorPane extends JTextComponent {
          * Paragraph for representing plain-text lines that support
          * bidirectional text.
          */
-        static class PlainParagraph extends j86.j86.javax.swing.text.ParagraphView {
+        static class PlainParagraph extends j86.javax.swing.text.ParagraphView {
 
             PlainParagraph(Element elem) {
                 super(elem);

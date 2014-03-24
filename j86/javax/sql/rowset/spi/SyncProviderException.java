@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
 import j86.java.sql.SQLException;
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 /**
  * Indicates an error with the <code>SyncProvider</code> mechanism. This exception
@@ -58,14 +58,14 @@ import j86.j86.javax.sql.rowset.*;
  * called to retrieve the description if there is one.
  *
  * @author Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncResolver
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncResolver
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class SyncProviderException extends j86.java.sql.SQLException {
 
     /**
-     * The instance of <code>j86.j86.j86.javax.sql.rowset.spi.SyncResolver</code> that
+     * The instance of <code>j86.javax.sql.rowset.spi.SyncResolver</code> that
      * this <code>SyncProviderException</code> object will return when its
      * <code>getSyncResolver</code> method is called.
      */
@@ -130,7 +130,7 @@ public class SyncProviderException extends j86.java.sql.SQLException {
             return syncResolver;
         } else {
             try {
-              syncResolver = new j86.j86.com.sun.rowset.internal.SyncResolverImpl();
+              syncResolver = new j86.com.sun.rowset.internal.SyncResolverImpl();
             } catch (SQLException sqle) {
             }
             return syncResolver;

@@ -28,7 +28,7 @@
  *  (C) Copyright IBM Corp. 1999 All Rights Reserved.
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
-package j86.j86.sun.security.jgss.spi;
+package j86.sun.security.jgss.spi;
 
 import j86.org.ietf.jgss.*;
 import j86.java.io.InputStream;

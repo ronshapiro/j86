@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
+package j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import j86.java.io.File;
@@ -35,13 +35,13 @@ import j86.java.util.HashMap;
 import j86.java.util.HashSet;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
-import j86.j86.sun.rmi.rmic.newrmic.Generator;
-import j86.j86.sun.rmi.rmic.newrmic.IndentingWriter;
-import j86.j86.sun.rmi.rmic.newrmic.Main;
-import j86.j86.sun.rmi.rmic.newrmic.Resources;
+import j86.sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.sun.rmi.rmic.newrmic.Generator;
+import j86.sun.rmi.rmic.newrmic.IndentingWriter;
+import j86.sun.rmi.rmic.newrmic.Main;
+import j86.sun.rmi.rmic.newrmic.Resources;
 
-import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * JRMP rmic back end; generates source code for JRMP stub and

@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.toolkit.ctx;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 
 /* Direct subclasses of ComponentDirContext must provide implementations for
  * the abstract c_ DirContext methods, and override the c_ Context methods

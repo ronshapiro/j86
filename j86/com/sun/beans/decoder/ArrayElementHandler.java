@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.decoder;
+package j86.com.sun.beans.decoder;
 
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 /**
  * This class is intended to handle &lt;array&gt; element,

@@ -25,31 +25,31 @@
 
 package j86.javax.management;
 
-import j86.j86.java.lang.annotation.Documented;
-import j86.j86.java.lang.annotation.ElementType;
-import j86.j86.java.lang.annotation.Retention;
-import j86.j86.java.lang.annotation.RetentionPolicy;
-import j86.j86.java.lang.annotation.Target;
+import j86.java.lang.annotation.Documented;
+import j86.java.lang.annotation.ElementType;
+import j86.java.lang.annotation.Retention;
+import j86.java.lang.annotation.RetentionPolicy;
+import j86.java.lang.annotation.Target;
 
 // remaining imports are for Javadoc
 import j86.java.io.InvalidObjectException;
-import j86.j86.java.lang.management.MemoryUsage;
-import j86.j86.j86.java.lang.reflect.UndeclaredThrowableException;
+import j86.java.lang.management.MemoryUsage;
+import j86.java.lang.reflect.UndeclaredThrowableException;
 import j86.java.util.Arrays;
 import j86.java.util.List;
-import j86.j86.javax.management.openmbean.ArrayType;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataInvocationHandler;
-import j86.j86.javax.management.openmbean.CompositeDataSupport;
-import j86.j86.javax.management.openmbean.CompositeDataView;
-import j86.j86.javax.management.openmbean.CompositeType;
-import j86.j86.javax.management.openmbean.OpenDataException;
-import j86.j86.javax.management.openmbean.OpenMBeanInfo;
-import j86.j86.javax.management.openmbean.OpenType;
-import j86.j86.javax.management.openmbean.SimpleType;
-import j86.j86.javax.management.openmbean.TabularData;
-import j86.j86.javax.management.openmbean.TabularDataSupport;
-import j86.j86.javax.management.openmbean.TabularType;
+import j86.javax.management.openmbean.ArrayType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataInvocationHandler;
+import j86.javax.management.openmbean.CompositeDataSupport;
+import j86.javax.management.openmbean.CompositeDataView;
+import j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.OpenDataException;
+import j86.javax.management.openmbean.OpenMBeanInfo;
+import j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.SimpleType;
+import j86.javax.management.openmbean.TabularData;
+import j86.javax.management.openmbean.TabularDataSupport;
+import j86.javax.management.openmbean.TabularType;
 
 /**
     <p>Annotation to mark an interface explicitly as being an MXBean
@@ -83,7 +83,7 @@ import j86.j86.javax.management.openmbean.TabularType;
 
     <p>The MXBean concept provides a simple way to code an MBean
       that only references a predefined set of types, the ones defined
-      by {@link j86.j86.javax.management.openmbean}.  In this way, you can be
+      by {@link j86.javax.management.openmbean}.  In this way, you can be
       sure that your MBean will be usable by any client, including
       remote clients, without any requirement that the client have
       access to <em>model-specific classes</em> representing the types
@@ -186,9 +186,9 @@ public class MemoryUsage {
       define the management interface in almost exactly the same way,
       the MXBean framework <em>converts</em> model-specific classes into
       standard classes from the Java platform.  Using arrays and the
-      {@link j86.j86.javax.management.openmbean.CompositeData CompositeData} and
-      {@link j86.j86.javax.management.openmbean.TabularData TabularData} classes
-      from the standard {@link j86.j86.javax.management.openmbean} package, it
+      {@link j86.javax.management.openmbean.CompositeData CompositeData} and
+      {@link j86.javax.management.openmbean.TabularData TabularData} classes
+      from the standard {@link j86.javax.management.openmbean} package, it
       is possible to build data structures of arbitrary complexity
       using only standard classes.</p>
 
@@ -417,10 +417,10 @@ public class MemoryPool
     <h2 id="mapping-rules">Type mapping rules</h2>
 
     <p>An MXBean is a kind of Open MBean, as defined by the {@link
-      j86.j86.javax.management.openmbean} package.  This means that the types of
+      j86.javax.management.openmbean} package.  This means that the types of
       attributes, operation parameters, and operation return values must
       all be describable using <em>Open Types</em>, that is the four
-      standard subclasses of {@link j86.j86.javax.management.openmbean.OpenType}.
+      standard subclasses of {@link j86.javax.management.openmbean.OpenType}.
       MXBeans achieve this by mapping Java types into Open Types.</p>
 
     <p>For every Java type <em>J</em>, the MXBean mapping is described
@@ -429,7 +429,7 @@ public class MemoryPool
     <ul>
       <li>The corresponding Open Type, <em>opentype(J)</em>.  This is
         an instance of a subclass of {@link
-        j86.j86.javax.management.openmbean.OpenType}.</li>
+        j86.javax.management.openmbean.OpenType}.</li>
       <li>The <em>mapped</em> Java type, <em>opendata(J)</em>, which is
         always the same for any given <em>opentype(J)</em>.  This is a Java
         class.</li>
@@ -735,7 +735,7 @@ public interface ModuleMXBean {
       been created by {@link
       JMX#newMXBeanProxy(MBeanServerConnection, ObjectName, Class)
       JMX.newMXBeanProxy}; or it can have been created using {@link
-      j86.j86.j86.java.lang.reflect.Proxy Proxy} with an invocation handler that
+      j86.java.lang.reflect.Proxy Proxy} with an invocation handler that
       is {@link MBeanServerInvocationHandler} or a subclass.</p>
 
     <p>If the same MXBean were registered under two different
@@ -902,7 +902,7 @@ public interface ModuleMXBean {
 
       <li><p>Otherwise, if <em>J</em> is an interface that has no methods
         other than getters, an instance of <em>J</em> is constructed
-        using a {@link j86.j86.j86.java.lang.reflect.Proxy} with a {@link
+        using a {@link j86.java.lang.reflect.Proxy} with a {@link
         CompositeDataInvocationHandler} backed by the {@code
         CompositeData} being converted.</p></li>
 

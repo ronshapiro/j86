@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.provider.certpath.ssl;
+package j86.sun.security.provider.certpath.ssl;
 
 import j86.java.io.IOException;
 import j86.java.net.URI;
@@ -35,25 +35,25 @@ import j86.java.util.List;
 import j86.java.security.GeneralSecurityException;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.Provider;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertSelector;
-import j86.j86.java.security.cert.CertStore;
-import j86.j86.java.security.cert.CertStoreException;
-import j86.j86.java.security.cert.CertStoreParameters;
-import j86.j86.java.security.cert.CertStoreSpi;
-import j86.j86.java.security.cert.CRLSelector;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.X509CRL;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertSelector;
+import j86.java.security.cert.CertStore;
+import j86.java.security.cert.CertStoreException;
+import j86.java.security.cert.CertStoreParameters;
+import j86.java.security.cert.CertStoreSpi;
+import j86.java.security.cert.CRLSelector;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509CRL;
 import j86.java.net.Socket;
 import j86.java.net.URLConnection;
-import j86.j86.javax.net.ssl.HostnameVerifier;
-import j86.j86.javax.net.ssl.HttpsURLConnection;
-import j86.j86.javax.net.ssl.SSLContext;
-import j86.j86.javax.net.ssl.SSLSession;
-import j86.j86.javax.net.ssl.SSLEngine;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
-import j86.j86.javax.net.ssl.TrustManager;
-import j86.j86.javax.net.ssl.X509ExtendedTrustManager;
+import j86.javax.net.ssl.HostnameVerifier;
+import j86.javax.net.ssl.HttpsURLConnection;
+import j86.javax.net.ssl.SSLContext;
+import j86.javax.net.ssl.SSLSession;
+import j86.javax.net.ssl.SSLEngine;
+import j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.TrustManager;
+import j86.javax.net.ssl.X509ExtendedTrustManager;
 
 /**
  * A CertStore that retrieves an SSL server's certificate chain.

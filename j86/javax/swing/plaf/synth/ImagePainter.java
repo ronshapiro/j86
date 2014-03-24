@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.*;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.net.*;
 import j86.javax.swing.*;
 import j86.sun.awt.AppContext;
-import j86.j86.j86.sun.swing.plaf.synth.Paint9Painter;
+import j86.sun.swing.plaf.synth.Paint9Painter;
 
 /**
  * ImagePainter fills in the specified region using an Image. The Image

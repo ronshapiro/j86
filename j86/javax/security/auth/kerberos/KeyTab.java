@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;
 
 import j86.java.io.File;
 import j86.java.security.AccessControlException;
@@ -62,7 +62,7 @@ import j86.sun.security.krb5.RealmException;
  * instance from a Subject. This permission is not needed when the
  * application depends on the default JGSS Kerberos mechanism to access the
  * KeyTab. In that case, however, the application will need an appropriate
- * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  * <p>
  * The keytab file format is described at
  * <a href="http://www.ioplex.com/utilities/keytab.txt">
@@ -79,7 +79,7 @@ public final class KeyTab {
      * (can be missing). Itself has no content. In order to read content,
      * take a snapshot and read from it.
      *
-     * The snapshot is of type j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab, which
+     * The snapshot is of type j86.sun.security.krb5.internal.ktab.KeyTab, which
      * contains the content of the keytab file when the snapshot is taken.
      * Itself has no refresh function and mostly an immutable class (except
      * for the create/add/save methods only used by the ktab command).
@@ -217,9 +217,9 @@ public final class KeyTab {
 
     // Takes a snapshot of the keytab content. This method is called by
     // JavaxSecurityAuthKerberosAccessImpl so no more private
-    j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab takeSnapshot() {
+    j86.sun.security.krb5.internal.ktab.KeyTab takeSnapshot() {
         try {
-            return j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab.getInstance(file);
+            return j86.sun.security.krb5.internal.ktab.KeyTab.getInstance(file);
         } catch (AccessControlException ace) {
             if (file != null) {
                 // It's OK to show the name if caller specified it

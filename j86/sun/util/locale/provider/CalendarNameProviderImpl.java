@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import static j86.java.util.Calendar.*;
 import j86.java.util.Comparator;
@@ -30,10 +30,10 @@ import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.util.TreeMap;
-import j86.j86.java.util.spi.CalendarNameProvider;
+import j86.java.util.spi.CalendarNameProvider;
 
 /**
- * Concrete implementation of the  {@link j86.j86.java.util.spi.CalendarDataProvider
+ * Concrete implementation of the  {@link j86.java.util.spi.CalendarDataProvider
  * CalendarDataProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Masayoshi Okutsu

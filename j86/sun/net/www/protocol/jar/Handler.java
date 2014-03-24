@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.jar;
+package j86.sun.net.www.protocol.jar;
 
 import j86.java.io.IOException;
 import j86.java.net.*;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /*
  * Jar URL Handler
@@ -156,7 +156,7 @@ public class Handler extends j86.java.net.URLStreamHandler {
             int bangSlash = indexOfBangSlash(file);
             String toBangSlash = file.substring(0, bangSlash);
             String afterBangSlash = file.substring(bangSlash);
-            j86.j86.sun.net.www.ParseUtil canonizer = new ParseUtil();
+            j86.sun.net.www.ParseUtil canonizer = new ParseUtil();
             afterBangSlash = canonizer.canonizeString(afterBangSlash);
             file = toBangSlash + afterBangSlash;
         }

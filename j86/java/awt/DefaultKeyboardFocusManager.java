@@ -24,18 +24,18 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.FocusEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.peer.ComponentPeer;
-import j86.j86.java.awt.peer.LightweightPeer;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.LightweightPeer;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.LinkedList;
 import j86.java.util.Iterator;
 import j86.java.util.ListIterator;
 import j86.java.util.Set;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;

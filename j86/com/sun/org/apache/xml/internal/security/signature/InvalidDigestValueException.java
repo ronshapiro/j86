@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 /**
  * Raised when the computed hash value doesn't match the given <i>DigestValue</i>.

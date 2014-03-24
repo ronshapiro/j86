@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
-import static j86.j86.java.nio.file.StandardOpenOption.CREATE_NEW;
-import static j86.j86.java.nio.file.StandardOpenOption.WRITE;
+import static j86.java.nio.file.StandardOpenOption.CREATE_NEW;
+import static j86.java.nio.file.StandardOpenOption.WRITE;
 
 import j86.java.io.BufferedOutputStream;
 import j86.java.io.File;
 import j86.java.io.FileOutputStream;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.java.nio.channels.FileChannel;
-import j86.j86.java.nio.file.FileAlreadyExistsException;
-import j86.j86.java.nio.file.Paths;
+import j86.java.nio.channels.FileChannel;
+import j86.java.nio.file.FileAlreadyExistsException;
+import j86.java.nio.file.Paths;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
@@ -70,7 +70,7 @@ import j86.java.security.PrivilegedAction;
  *        (defaults to no <tt>Filter</tt>). </li>
  * <li>   &lt;handler-name&gt;.formatter
  *        specifies the name of a <tt>Formatter</tt> class to use
- *        (defaults to <tt>j86.j86.java.util.logging.XMLFormatter</tt>) </li>
+ *        (defaults to <tt>j86.java.util.logging.XMLFormatter</tt>) </li>
  * <li>   &lt;handler-name&gt;.encoding
  *        the name of the character set encoding to use (defaults to
  *        the default platform encoding). </li>
@@ -90,14 +90,14 @@ import j86.java.security.PrivilegedAction;
  * <p>
  * For example, the properties for {@code FileHandler} would be:
  * <ul>
- * <li>   j86.j86.java.util.logging.FileHandler.level=INFO </li>
- * <li>   j86.j86.java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.java.util.logging.FileHandler.level=INFO </li>
+ * <li>   j86.java.util.logging.FileHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * A pattern consists of a string that includes the following special

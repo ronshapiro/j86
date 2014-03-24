@@ -32,10 +32,10 @@ import j86.java.util.Hashtable;
 import j86.java.util.List;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.*;
+import j86.javax.naming.spi.*;
 
 import j86.com.sun.jndi.toolkit.url.UrlUtil;
-import j86.j86.sun.net.dns.ResolverConfiguration;       // available since 1.4.1
+import j86.sun.net.dns.ResolverConfiguration;       // available since 1.4.1
 
 
 /**

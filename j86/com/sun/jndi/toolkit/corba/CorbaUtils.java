@@ -28,8 +28,8 @@ package j86.com.sun.jndi.toolkit.corba;
 // Needed for RMI/IIOP
 import j86.java.rmi.Remote;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.Hashtable;
 import j86.java.util.Properties;
 import j86.java.util.Enumeration;

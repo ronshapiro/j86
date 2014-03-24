@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;
 
 import j86.java.util.Arrays;
 import j86.javax.crypto.SecretKey;
@@ -52,7 +52,7 @@ import j86.javax.security.auth.DestroyFailedException;
  * application depends on the default JGSS Kerberos mechanism to access the
  * KerberosKey. In that case, however, the application will need an
  * appropriate
- * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  *
  * @author Mayank Upadhyay
  * @since 1.4

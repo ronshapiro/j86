@@ -29,7 +29,7 @@ package j86.sun.security.ssl;
 import j86.java.io.*;
 import j86.java.util.*;
 
-import j86.j86.javax.net.ssl.SSLException;
+import j86.javax.net.ssl.SSLException;
 
 /**
  * A list of CipherSuites. Also maintains the lists of supported and

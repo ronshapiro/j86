@@ -33,14 +33,14 @@ import j86.java.awt.KeyboardFocusManager;
 import j86.java.awt.KeyEventPostProcessor;
 import j86.java.awt.Toolkit;
 
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 
 import j86.java.security.AccessController;
 
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.border.Border;
 
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 import j86.java.beans.PropertyChangeListener;
 
 import j86.java.io.Serializable;
@@ -57,7 +57,7 @@ import j86.sun.awt.SunToolkit;
 import j86.sun.awt.OSInfo;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.swing.SwingUtilities2;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.util.HashMap;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.AWTAccessor;
@@ -82,7 +82,7 @@ import j86.sun.awt.AWTAccessor;
  * The following example illustrates setting the look and feel based on
  * class name:
  * <pre>
- *   UIManager.setLookAndFeel("j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel");
+ *   UIManager.setLookAndFeel("j86.javax.swing.plaf.metal.MetalLookAndFeel");
  * </pre>
  * Once the look and feel has been changed it is imperative to invoke
  * {@code updateUI} on all {@code JComponents}. The method {@link
@@ -366,21 +366,21 @@ public class UIManager implements Serializable
     static {
         ArrayList<LookAndFeelInfo> iLAFs = new ArrayList<LookAndFeelInfo>(4);
         iLAFs.add(new LookAndFeelInfo(
-                      "Metal", "j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel"));
+                      "Metal", "j86.javax.swing.plaf.metal.MetalLookAndFeel"));
         iLAFs.add(new LookAndFeelInfo(
-                      "Nimbus", "j86.j86.j86.javax.swing.plaf.nimbus.NimbusLookAndFeel"));
+                      "Nimbus", "j86.javax.swing.plaf.nimbus.NimbusLookAndFeel"));
         iLAFs.add(new LookAndFeelInfo("CDE/Motif",
-                  "j86.j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel"));
+                  "j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel"));
 
         // Only include windows on Windows boxs.
         OSInfo.OSType osType = AccessController.doPrivileged(OSInfo.getOSTypeAction());
         if (osType == OSInfo.OSType.WINDOWS) {
             iLAFs.add(new LookAndFeelInfo("Windows",
-                        "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel"));
+                        "j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel"));
             if (Toolkit.getDefaultToolkit().getDesktopProperty(
                     "win.xpstyle.themeActive") != null) {
                 iLAFs.add(new LookAndFeelInfo("Windows Classic",
-                 "j86.j86.com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"));
+                 "j86.com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel"));
             }
         }
         else if (osType == OSInfo.OSType.MACOSX) {
@@ -389,7 +389,7 @@ public class UIManager implements Serializable
         else {
             // GTK is not shipped on Windows.
             iLAFs.add(new LookAndFeelInfo("GTK+",
-                  "j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel"));
+                  "j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel"));
         }
         installedLAFs = iLAFs.toArray(new LookAndFeelInfo[iLAFs.size()]);
     }
@@ -574,9 +574,9 @@ public class UIManager implements Serializable
                IllegalAccessException,
                UnsupportedLookAndFeelException
     {
-        if ("j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel".equals(className)) {
+        if ("j86.javax.swing.plaf.metal.MetalLookAndFeel".equals(className)) {
             // Avoid reflection for the common case of metal.
-            setLookAndFeel(new j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel());
+            setLookAndFeel(new j86.javax.swing.plaf.metal.MetalLookAndFeel());
         }
         else {
             Class lnfClass = SwingUtilities.loadSystemClass(className);
@@ -605,7 +605,7 @@ public class UIManager implements Serializable
         }
         OSInfo.OSType osType = AccessController.doPrivileged(OSInfo.getOSTypeAction());
         if (osType == OSInfo.OSType.WINDOWS) {
-            return "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
+            return "j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
         } else {
             String desktop = AccessController.doPrivileged(new GetPropertyAction("sun.desktop"));
             Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -613,7 +613,7 @@ public class UIManager implements Serializable
                     toolkit instanceof SunToolkit &&
                     ((SunToolkit) toolkit).isNativeGTKAvailable()) {
                 // May be set on Linux and Solaris boxs.
-                return "j86.j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
+                return "j86.com.sun.java.swing.plaf.gtk.GTKLookAndFeel";
             }
             if (osType == OSInfo.OSType.MACOSX) {
                 if (toolkit.getClass() .getName()
@@ -622,7 +622,7 @@ public class UIManager implements Serializable
                 }
             }
             if (osType == OSInfo.OSType.SOLARIS) {
-                return "j86.j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel";
+                return "j86.com.sun.java.swing.plaf.motif.MotifLookAndFeel";
             }
         }
         return getCrossPlatformLookAndFeelClassName();
@@ -645,7 +645,7 @@ public class UIManager implements Serializable
         if (laf != null) {
             return laf;
         }
-        return "j86.j86.j86.javax.swing.plaf.metal.MetalLookAndFeel";
+        return "j86.javax.swing.plaf.metal.MetalLookAndFeel";
     }
 
 
@@ -1044,7 +1044,7 @@ public class UIManager implements Serializable
     private static LookAndFeel getMultiLookAndFeel() {
         LookAndFeel multiLookAndFeel = getLAFState().multiLookAndFeel;
         if (multiLookAndFeel == null) {
-            String defaultName = "j86.j86.j86.javax.swing.plaf.multi.MultiLookAndFeel";
+            String defaultName = "j86.javax.swing.plaf.multi.MultiLookAndFeel";
             String className = getLAFState().swingProps.getProperty(multiplexingLAFKey, defaultName);
             try {
                 Class lnfClass = SwingUtilities.loadSystemClass(className);

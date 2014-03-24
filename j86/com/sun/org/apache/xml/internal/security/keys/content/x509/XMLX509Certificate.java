@@ -20,18 +20,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
+package j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.Arrays;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -76,7 +76,7 @@ public class XMLX509Certificate extends SignatureElementProxy implements XMLX509
 
         try {
             this.addBase64Text(x509certificate.getEncoded());
-        } catch (j86.j86.java.security.cert.CertificateEncodingException ex) {
+        } catch (j86.java.security.cert.CertificateEncodingException ex) {
             throw new XMLSecurityException("empty", ex);
         }
     }
@@ -154,8 +154,8 @@ public class XMLX509Certificate extends SignatureElementProxy implements XMLX509
                 result = 31 * result + bytes[i];
             }
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
         }
         return result;

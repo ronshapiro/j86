@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.monitor.event;
+package j86.sun.jvmstat.monitor.event;
 
 import j86.java.util.EventObject;
 import j86.sun.jvmstat.monitor.MonitoredHost;

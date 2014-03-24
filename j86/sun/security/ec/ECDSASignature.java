@@ -29,8 +29,8 @@ import j86.java.nio.ByteBuffer;
 import j86.java.math.BigInteger;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.*;
+import j86.java.security.spec.*;
 
 import j86.sun.security.jca.JCAUtil;
 import j86.sun.security.util.*;

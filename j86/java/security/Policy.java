@@ -28,7 +28,7 @@ package j86.java.security;
 
 import j86.java.util.Enumeration;
 import j86.java.util.WeakHashMap;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.concurrent.atomic.AtomicReference;
 import j86.sun.security.jca.GetInstance;
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.SecurityConstants;

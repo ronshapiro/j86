@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
 import j86.java.io.*;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 /**
  * Provides implementations for the methods that set and get

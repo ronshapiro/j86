@@ -25,18 +25,18 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
 import j86.java.security.AccessController;
 import j86.java.security.AccessControlContext;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
-import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.locks.LockSupport;
+import j86.sun.nio.ch.Interruptible;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 import j86.sun.security.util.SecurityConstants;
@@ -220,9 +220,9 @@ class Thread implements Runnable {
 
     /**
      * The argument supplied to the current call to
-     * j86.j86.j86.java.util.concurrent.locks.LockSupport.park.
-     * Set by (private) j86.j86.j86.java.util.concurrent.locks.LockSupport.setBlocker
-     * Accessed using j86.j86.j86.java.util.concurrent.locks.LockSupport.getBlocker
+     * j86.java.util.concurrent.locks.LockSupport.park.
+     * Set by (private) j86.java.util.concurrent.locks.LockSupport.setBlocker
+     * Accessed using j86.java.util.concurrent.locks.LockSupport.getBlocker
      */
     volatile Object parkBlocker;
 
@@ -277,7 +277,7 @@ class Thread implements Runnable {
      * for debugging or testing purposes, where it may help to reproduce
      * bugs due to race conditions. It may also be useful when designing
      * concurrency control constructs such as the ones in the
-     * {@link j86.j86.j86.java.util.concurrent.locks} package.
+     * {@link j86.java.util.concurrent.locks} package.
      */
     public static native void yield();
 
@@ -885,16 +885,16 @@ class Thread implements Runnable {
      * will receive an {@link InterruptedException}.
      *
      * <p> If this thread is blocked in an I/O operation upon an {@link
-     * j86.j86.java.nio.channels.InterruptibleChannel InterruptibleChannel}
+     * j86.java.nio.channels.InterruptibleChannel InterruptibleChannel}
      * then the channel will be closed, the thread's interrupt
      * status will be set, and the thread will receive a {@link
-     * j86.j86.java.nio.channels.ClosedByInterruptException}.
+     * j86.java.nio.channels.ClosedByInterruptException}.
      *
-     * <p> If this thread is blocked in a {@link j86.j86.java.nio.channels.Selector}
+     * <p> If this thread is blocked in a {@link j86.java.nio.channels.Selector}
      * then the thread's interrupt status will be set and it will return
      * immediately from the selection operation, possibly with a non-zero
      * value, just as if the selector's {@link
-     * j86.j86.java.nio.channels.Selector#wakeup wakeup} method were invoked.
+     * j86.java.nio.channels.Selector#wakeup wakeup} method were invoked.
      *
      * <p> If none of the previous conditions hold then this thread's interrupt
      * status will be set. </p>
@@ -2015,7 +2015,7 @@ class Thread implements Runnable {
 
 
     // The following three initially uninitialized fields are exclusively
-    // managed by class j86.j86.java.util.concurrent.ThreadLocalRandom. These
+    // managed by class j86.java.util.concurrent.ThreadLocalRandom. These
     // fields are used to build the high-performance PRNGs in the
     // concurrent code, and we can not risk accidental false sharing.
     // Hence, the fields are isolated with @Contended.

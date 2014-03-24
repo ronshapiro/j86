@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 
 
@@ -35,7 +35,7 @@ import j86.java.net.UnknownHostException;
 
 
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.Group;
+import j86.java.security.acl.Group;
 
 
 /**

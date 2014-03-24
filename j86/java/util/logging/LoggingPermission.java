@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.security.*;
 

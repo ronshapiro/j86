@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 
 import j86.java.util.*;
-import j86.j86.sun.invoke.util.*;
+import j86.sun.invoke.util.*;
 import j86.sun.misc.Unsafe;
 
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import j86.j86.java.util.logging.Level;
-import j86.j86.java.util.logging.Logger;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import j86.java.util.logging.Level;
+import j86.java.util.logging.Logger;
 
 /**
  * A method handle is a typed, directly executable reference to an underlying method,
@@ -41,8 +41,8 @@ import j86.j86.java.util.logging.Logger;
  * These transformations are quite general, and include such patterns as
  * {@linkplain #asType conversion},
  * {@linkplain #bindTo insertion},
- * {@linkplain j86.j86.java.lang.invoke.MethodHandles#dropArguments deletion},
- * and {@linkplain j86.j86.java.lang.invoke.MethodHandles#filterArguments substitution}.
+ * {@linkplain j86.java.lang.invoke.MethodHandles#dropArguments deletion},
+ * and {@linkplain j86.java.lang.invoke.MethodHandles#filterArguments substitution}.
  *
  * <h1>Method handle contents</h1>
  * Method handles are dynamically and strongly typed according to their parameter and return types.
@@ -51,7 +51,7 @@ import j86.j86.java.util.logging.Logger;
  * the method handle's own {@linkplain #type type descriptor}.
  * <p>
  * Every method handle reports its type descriptor via the {@link #type type} accessor.
- * This type descriptor is a {@link j86.j86.java.lang.invoke.MethodType MethodType} object,
+ * This type descriptor is a {@link j86.java.lang.invoke.MethodType MethodType} object,
  * whose structure is a series of classes, one of which is
  * the return type of the method (or {@code void.class} if none).
  * <p>
@@ -199,11 +199,11 @@ import j86.j86.java.util.logging.Logger;
  * Java code can create a method handle that directly accesses
  * any method, constructor, or field that is accessible to that code.
  * This is done via a reflective, capability-based API called
- * {@link j86.j86.java.lang.invoke.MethodHandles.Lookup MethodHandles.Lookup}
+ * {@link j86.java.lang.invoke.MethodHandles.Lookup MethodHandles.Lookup}
  * For example, a static method handle can be obtained
- * from {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findStatic Lookup.findStatic}.
+ * from {@link j86.java.lang.invoke.MethodHandles.Lookup#findStatic Lookup.findStatic}.
  * There are also conversion methods from Core Reflection API objects,
- * such as {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect}.
+ * such as {@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect}.
  * <p>
  * Like classes and strings, method handles that correspond to accessible
  * fields, methods, and constructors can also be represented directly
@@ -334,12 +334,12 @@ mh.invokeExact(System.out, "Hello, world.");
  * untransformed descriptors, without reporting linkage errors.
  *
  * <h1>Interoperation between method handles and the Core Reflection API</h1>
- * Using factory methods in the {@link j86.j86.java.lang.invoke.MethodHandles.Lookup Lookup} API,
+ * Using factory methods in the {@link j86.java.lang.invoke.MethodHandles.Lookup Lookup} API,
  * any class member represented by a Core Reflection API object
  * can be converted to a behaviorally equivalent method handle.
- * For example, a reflective {@link j86.j86.j86.java.lang.reflect.Method Method} can
+ * For example, a reflective {@link j86.java.lang.reflect.Method Method} can
  * be converted to a method handle using
- * {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect}.
+ * {@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect}.
  * The resulting method handles generally provide more direct and efficient
  * access to the underlying class members.
  * <p>
@@ -350,12 +350,12 @@ mh.invokeExact(System.out, "Hello, world.");
  * Their reflective appearance, as viewed by
  * {@link j86.java.lang.Class#getDeclaredMethod Class.getDeclaredMethod},
  * is unaffected by their special status in this API.
- * For example, {@link j86.j86.j86.java.lang.reflect.Method#getModifiers Method.getModifiers}
+ * For example, {@link j86.java.lang.reflect.Method#getModifiers Method.getModifiers}
  * will report exactly those modifier bits required for any similarly
  * declared method, including in this case {@code native} and {@code varargs} bits.
  * <p>
  * As with any reflected method, these methods (when reflected) may be
- * invoked via {@link j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}.
+ * invoked via {@link j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}.
  * However, such reflective calls do not result in method handle invocations.
  * Such a call, if passed the required argument
  * (a single one, of type {@code Object[]}), will ignore the argument and
@@ -368,9 +368,9 @@ mh.invokeExact(System.out, "Hello, world.");
  * {@code Class.getDeclaredMethod}, may be regarded as placeholders only.
  * <p>
  * In order to obtain an invoker method for a particular type descriptor,
- * use {@link j86.j86.java.lang.invoke.MethodHandles#exactInvoker MethodHandles.exactInvoker},
- * or {@link j86.j86.java.lang.invoke.MethodHandles#invoker MethodHandles.invoker}.
- * The {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findVirtual Lookup.findVirtual}
+ * use {@link j86.java.lang.invoke.MethodHandles#exactInvoker MethodHandles.exactInvoker},
+ * or {@link j86.java.lang.invoke.MethodHandles#invoker MethodHandles.invoker}.
+ * The {@link j86.java.lang.invoke.MethodHandles.Lookup#findVirtual Lookup.findVirtual}
  * API is also able to return a method handle
  * to call {@code invokeExact} or plain {@code invoke},
  * for any specified type descriptor .
@@ -429,8 +429,8 @@ public abstract class MethodHandle {
      * Internal marker interface which distinguishes (to the Java compiler)
      * those methods which are <a href="MethodHandle.html#sigpoly">signature polymorphic</a>.
      */
-    @j86.j86.java.lang.annotation.Target({java.lang.annotation.ElementType.METHOD})
-    @j86.j86.java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
+    @j86.java.lang.annotation.Target({java.lang.annotation.ElementType.METHOD})
+    @j86.java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
     @interface PolymorphicSignature { }
 
     private final MethodType type;
@@ -451,7 +451,7 @@ public abstract class MethodHandle {
     /**
      * Package-private constructor for the method handle implementation hierarchy.
      * Method handle inheritance will be contained completely within
-     * the {@code j86.j86.java.lang.invoke} package.
+     * the {@code j86.java.lang.invoke} package.
      */
     // @param type type (permanently assigned) of the new method handle
     /*non-public*/ MethodHandle(MethodType type, LambdaForm form) {
@@ -472,8 +472,8 @@ public abstract class MethodHandle {
      * When this method is observed via the Core Reflection API,
      * it will appear as a single native method, taking an object array and returning an object.
      * If this native method is invoked directly via
-     * {@link j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}, via JNI,
-     * or indirectly via {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect},
+     * {@link j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}, via JNI,
+     * or indirectly via {@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect},
      * it will throw an {@code UnsupportedOperationException}.
      * @param args the signature-polymorphic parameter list, statically represented using varargs
      * @return the signature-polymorphic result, statically represented using {@code Object}
@@ -508,8 +508,8 @@ public abstract class MethodHandle {
      * When this method is observed via the Core Reflection API,
      * it will appear as a single native method, taking an object array and returning an object.
      * If this native method is invoked directly via
-     * {@link j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}, via JNI,
-     * or indirectly via {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect},
+     * {@link j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}, via JNI,
+     * or indirectly via {@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect Lookup.unreflect},
      * it will throw an {@code UnsupportedOperationException}.
      * @param args the signature-polymorphic parameter list, statically represented using varargs
      * @return the signature-polymorphic result, statically represented using {@code Object}
@@ -721,7 +721,7 @@ public abstract class MethodHandle {
      *     on the primitive value.  (These are the primitive widening conversions.)
      *     <em>T0</em> must be a wrapper class or a supertype of one.
      *     (In the case where <em>T0</em> is Object, these are the conversions
-     *     allowed by {@link j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}.)
+     *     allowed by {@link j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}.)
      *     The unboxing conversion must have a possibility of success, which means that
      *     if <em>T0</em> is not itself a wrapper class, there must exist at least one
      *     wrapper class <em>TW</em> which is a subtype of <em>T0</em> and whose unboxed
@@ -1168,7 +1168,7 @@ assertEquals("[three, thee, tee]", Arrays.toString((Object[])ls.get(0)));
      * Such method handles arise from the following sources:
      * <ul>
      * <li>a call to {@linkplain #asVarargsCollector asVarargsCollector}
-     * <li>a call to a {@linkplain j86.j86.java.lang.invoke.MethodHandles.Lookup lookup method}
+     * <li>a call to a {@linkplain j86.java.lang.invoke.MethodHandles.Lookup lookup method}
      *     which resolves to a variable arity Java method or constructor
      * <li>an {@code ldc} instruction of a {@code CONSTANT_MethodHandle}
      *     which resolves to a variable arity Java method or constructor

@@ -28,10 +28,10 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.ccache;
+package j86.sun.security.krb5.internal.ccache;
 
 import j86.sun.security.krb5.*;
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
 import j86.java.io.IOException;

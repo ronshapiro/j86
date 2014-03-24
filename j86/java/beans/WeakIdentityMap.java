@@ -25,8 +25,8 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * Hash table based mapping, which uses weak references to store keys

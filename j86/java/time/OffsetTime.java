@@ -65,9 +65,9 @@ import static j86.java.time.LocalTime.NANOS_PER_HOUR;
 import static j86.java.time.LocalTime.NANOS_PER_MINUTE;
 import static j86.java.time.LocalTime.NANOS_PER_SECOND;
 import static j86.java.time.LocalTime.SECONDS_PER_DAY;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
-import static j86.j86.java.time.temporal.ChronoUnit.NANOS;
+import static j86.java.time.temporal.ChronoField.NANO_OF_DAY;
+import static j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.java.time.temporal.ChronoUnit.NANOS;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInput;
@@ -75,21 +75,21 @@ import j86.java.io.ObjectOutput;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.format.DateTimeFormatter;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
-import j86.j86.java.time.zone.ZoneRules;
+import j86.java.time.format.DateTimeFormatter;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
+import j86.java.time.zone.ZoneRules;
 import j86.java.util.Objects;
 
 /**
@@ -302,7 +302,7 @@ public final class OffsetTime
      * Obtains an instance of {@code OffsetTime} from a text string such as {@code 10:15:30+01:00}.
      * <p>
      * The string must represent a valid time and is parsed using
-     * {@link j86.j86.java.time.format.DateTimeFormatter#ISO_OFFSET_TIME}.
+     * {@link j86.java.time.format.DateTimeFormatter#ISO_OFFSET_TIME}.
      *
      * @param text  the text to parse such as "10:15:30+01:00", not null
      * @return the parsed local time, not null

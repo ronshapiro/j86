@@ -24,9 +24,9 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.LightweightPeer;
-import j86.j86.java.awt.peer.ScrollPanePeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.peer.ScrollPanePeer;
+import j86.java.awt.event.*;
 import j86.javax.accessibility.*;
 import j86.sun.awt.ScrollPaneWheelScroller;
 import j86.sun.awt.SunToolkit;
@@ -645,8 +645,8 @@ public class ScrollPane extends Container implements Accessible {
      *                      automatically for a MouseWheelEvent,
      *                      <code>false</code> otherwise.
      * @see #isWheelScrollingEnabled
-     * @see j86.j86.java.awt.event.MouseWheelEvent
-     * @see j86.j86.java.awt.event.MouseWheelListener
+     * @see j86.java.awt.event.MouseWheelEvent
+     * @see j86.java.awt.event.MouseWheelListener
      * @since 1.4
      */
     public void setWheelScrollingEnabled(boolean handleWheel) {

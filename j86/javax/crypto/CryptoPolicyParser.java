@@ -32,8 +32,8 @@ import j86.java.util.Vector;
 import static j86.java.util.Locale.ENGLISH;
 
 import j86.java.security.GeneralSecurityException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.lang.reflect.*;
 
 /**
  * JCE has two pairs of jurisdiction policy files: one represents U.S. export
@@ -54,7 +54,7 @@ import j86.j86.j86.java.lang.reflect.*;
  * @author Sharon Liu
  *
  * @see j86.java.security.Permissions
- * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.spec.AlgorithmParameterSpec
  * @see j86.javax.crypto.CryptoPermission
  * @see j86.javax.crypto.CryptoAllPermission
  * @see j86.javax.crypto.CryptoPermissions

@@ -63,17 +63,17 @@
  * The protocol sends packets to 224.0.23.178:7095 by default.
  *
  * The protocol uses system properties to control it's behaviour:
- * - `com.j86.j86.sun.management.jdp.port` -- override default port
+ * - `com.j86.sun.management.jdp.port` -- override default port
  *
- * - `com.j86.j86.sun.management.jdp.address` -- override default address
+ * - `com.j86.sun.management.jdp.address` -- override default address
  *
- * - `com.j86.j86.sun.management.jmxremote.autodiscovery` -- whether we should start autodiscovery or
+ * - `com.j86.sun.management.jmxremote.autodiscovery` -- whether we should start autodiscovery or
  * not. Autodiscovery starts if and only if following conditions are met: (autodiscovery is
  * true OR (autodiscovery is not set AND jdp.port is set))
  *
- * - `com.j86.j86.sun.management.jdp.ttl`         -- set ttl for broadcast packet, default is 1
- * - `com.j86.j86.sun.management.jdp.pause`       -- set broadcast interval in seconds default is 5
- * - `com.j86.j86.sun.management.jdp.source_addr` -- an address of interface to use for broadcast
+ * - `com.j86.sun.management.jdp.ttl`         -- set ttl for broadcast packet, default is 1
+ * - `com.j86.sun.management.jdp.pause`       -- set broadcast interval in seconds default is 5
+ * - `com.j86.sun.management.jdp.source_addr` -- an address of interface to use for broadcast
  */
 
-package j86.j86.sun.management.jdp;
+package j86.sun.management.jdp;

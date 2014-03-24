@@ -59,23 +59,23 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoUnit.ERAS;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoUnit.ERAS;
 
 import j86.java.time.DateTimeException;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.format.DateTimeFormatterBuilder;
-import j86.j86.java.time.format.TextStyle;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.format.DateTimeFormatterBuilder;
+import j86.java.time.format.TextStyle;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Locale;
 
 /**

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 
 /**
  * A field may be annotated as stable if all of its component variables

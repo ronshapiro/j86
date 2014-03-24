@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.wrapper;
+package j86.sun.security.jgss.wrapper;
 
 import j86.java.util.HashMap;
 import j86.java.security.Provider;
@@ -49,7 +49,7 @@ public final class SunNativeProvider extends Provider {
     private static final String NAME = "SunNativeGSS";
     private static final String INFO = "Sun Native GSS provider";
     private static final String MF_CLASS =
-        "j86.j86.sun.security.jgss.wrapper.NativeGSSFactory";
+        "j86.sun.security.jgss.wrapper.NativeGSSFactory";
     private static final String LIB_PROP = "j86.sun.security.jgss.lib";
     private static final String DEBUG_PROP = "sun.security.nativegss.debug";
     private static HashMap<String, String> MECH_MAP;

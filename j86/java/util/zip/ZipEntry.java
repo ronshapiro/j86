@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
-import static j86.j86.java.util.zip.ZipUtils.*;
-import j86.j86.j86.java.nio.file.attribute.FileTime;
+import static j86.java.util.zip.ZipUtils.*;
+import j86.java.nio.file.attribute.FileTime;
 import j86.java.util.Objects;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.TimeUnit;
 
-import static j86.j86.java.util.zip.ZipConstants64.*;
+import static j86.java.util.zip.ZipConstants64.*;
 
 /**
  * This class is used to represent a ZIP file entry.

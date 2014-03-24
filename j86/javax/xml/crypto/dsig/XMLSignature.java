@@ -33,13 +33,13 @@
 /*
  * $Id: XMLSignature.java,v 1.10 2005/05/10 16:03:48 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.KeySelector;
 import j86.javax.xml.crypto.KeySelectorResult;
 import j86.javax.xml.crypto.MarshalException;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
 import j86.java.security.Signature;
 import j86.java.util.List;
 

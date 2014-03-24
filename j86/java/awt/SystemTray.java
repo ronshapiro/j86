@@ -26,7 +26,7 @@
 package j86.java.awt;
 
 import j86.java.util.Vector;
-import j86.j86.java.awt.peer.SystemTrayPeer;
+import j86.java.awt.peer.SystemTrayPeer;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeSupport;
 import j86.sun.awt.AppContext;
@@ -72,8 +72,8 @@ import j86.sun.awt.AWTAccessor;
  *         // load an image
  *         {@link j86.java.awt.Image} image = {@link java.awt.Toolkit#getImage(String) Toolkit.getDefaultToolkit().getImage}(...);
  *         // create a action listener to listen for default action executed on the tray icon
- *         {@link j86.j86.java.awt.event.ActionListener} listener = new {@link java.awt.event.ActionListener ActionListener}() {
- *             public void {@link j86.j86.java.awt.event.ActionListener#actionPerformed actionPerformed}({@link java.awt.event.ActionEvent} e) {
+ *         {@link j86.java.awt.event.ActionListener} listener = new {@link java.awt.event.ActionListener ActionListener}() {
+ *             public void {@link j86.java.awt.event.ActionListener#actionPerformed actionPerformed}({@link java.awt.event.ActionEvent} e) {
  *                 // execute default action of the application
  *                 // ...
  *             }
@@ -88,7 +88,7 @@ import j86.sun.awt.AWTAccessor;
  *         // construct a TrayIcon
  *         trayIcon = new {@link TrayIcon#TrayIcon(j86.java.awt.Image, String, java.awt.PopupMenu) TrayIcon}(image, "Tray Demo", popup);
  *         // set the TrayIcon properties
- *         trayIcon.{@link TrayIcon#addActionListener(j86.j86.java.awt.event.ActionListener) addActionListener}(listener);
+ *         trayIcon.{@link TrayIcon#addActionListener(j86.java.awt.event.ActionListener) addActionListener}(listener);
  *         // ...
  *         // add the tray image
  *         try {

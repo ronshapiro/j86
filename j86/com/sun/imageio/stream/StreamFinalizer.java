@@ -26,7 +26,7 @@
 package j86.com.sun.imageio.stream;
 
 import j86.java.io.IOException;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * Small class to assist in properly closing an ImageInputStream instance

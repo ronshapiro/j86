@@ -33,12 +33,12 @@ import j86.java.util.Arrays;
 import j86.java.util.Hashtable;
 import j86.java.util.List;
 import j86.java.util.Map;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.javax.management.MBeanPermission;
 
 import j86.javax.management.ObjectName;
-import j86.j86.javax.management.loading.PrivateClassLoader;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.javax.management.loading.PrivateClassLoader;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class keeps the list of Class Loaders registered in the MBean Server.
@@ -138,14 +138,14 @@ final class ClassLoaderRepositorySupport
     private final Map<ObjectName,ClassLoader> loadersWithNames =
         new Hashtable<ObjectName,ClassLoader>(10);
 
-    // from j86.j86.javax.management.loading.DefaultLoaderRepository
+    // from j86.javax.management.loading.DefaultLoaderRepository
     public final Class<?> loadClass(String className)
         throws ClassNotFoundException {
         return  loadClass(loaders, className, null, null);
     }
 
 
-    // from j86.j86.javax.management.loading.DefaultLoaderRepository
+    // from j86.javax.management.loading.DefaultLoaderRepository
     public final Class<?> loadClassWithout(ClassLoader without, String className)
             throws ClassNotFoundException {
         if (MBEANSERVER_LOGGER.isLoggable(Level.FINER)) {

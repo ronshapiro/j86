@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
 import j86.java.awt.Graphics;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.Rectangle;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 
 /**
  * This class contains a number of static utility methods that may be

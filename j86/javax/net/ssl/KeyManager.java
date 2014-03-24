@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 /**
  * This is the base interface for JSSE key managers.

@@ -28,7 +28,7 @@ package j86.sun.security.x509;
 /**
  * CertException indicates one of a variety of certificate problems.
  *
- * @deprecated use one of Exceptions defined in the j86.j86.java.security.cert
+ * @deprecated use one of Exceptions defined in the j86.java.security.cert
  * package.
  *
  * @see j86.java.security.Certificate

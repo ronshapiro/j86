@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.tree;
+package j86.sun.reflect.generics.tree;
 
 /**
  * Common superinterface for generic signatures. These are the signatures

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.connect;
+package j86.com.sun.jdi.connect;
 
 import j86.java.util.List;
 import j86.java.util.ArrayList;

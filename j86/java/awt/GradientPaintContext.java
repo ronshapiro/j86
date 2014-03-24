@@ -25,14 +25,14 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.image.Raster;
+import j86.sun.awt.image.IntegerComponentRaster;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.lang.ref.WeakReference;
 
 class GradientPaintContext implements PaintContext {
     static ColorModel xrgbmodel =

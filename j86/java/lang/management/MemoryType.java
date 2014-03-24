@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 /**
  * Types of {@link MemoryPoolMXBean memory pools}.

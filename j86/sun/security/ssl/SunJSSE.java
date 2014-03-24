@@ -227,7 +227,7 @@ public abstract class SunJSSE extends j86.java.security.Provider {
          * KeyStore
          */
         put("KeyStore.PKCS12",
-            "j86.j86.sun.security.pkcs12.PKCS12KeyStore");
+            "j86.sun.security.pkcs12.PKCS12KeyStore");
     }
 
     private void subclassCheck() {

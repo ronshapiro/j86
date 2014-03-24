@@ -31,15 +31,15 @@ import j86.java.awt.Canvas;
 import j86.java.awt.Scrollbar;
 import j86.java.awt.Panel;
 
-import j86.j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.FocusEvent;
 
-import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
-import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.KeyboardFocusManagerPeer;
+import j86.java.awt.peer.ComponentPeer;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 public abstract class KeyboardFocusManagerPeerImpl implements KeyboardFocusManagerPeer {
 

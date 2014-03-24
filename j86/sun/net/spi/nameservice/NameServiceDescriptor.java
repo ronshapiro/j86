@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.spi.nameservice;
+package j86.sun.net.spi.nameservice;
 
 public interface NameServiceDescriptor {
     /**

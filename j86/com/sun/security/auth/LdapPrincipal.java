@@ -27,7 +27,7 @@ package j86.com.sun.security.auth;
 
 import j86.java.security.Principal;
 import j86.javax.naming.InvalidNameException;
-import j86.j86.javax.naming.ldap.LdapName;
+import j86.javax.naming.ldap.LdapName;
 
 /**
  * A principal identified by a distinguished name as specified by

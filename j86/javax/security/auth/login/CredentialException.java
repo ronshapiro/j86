@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
 /**
  * A generic credential exception.

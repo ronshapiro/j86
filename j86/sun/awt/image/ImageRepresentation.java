@@ -23,28 +23,28 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Color;
 import j86.java.awt.Graphics;
 import j86.java.awt.Transparency;
 import j86.java.awt.AWTException;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.ImageConsumer;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
-import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferInt;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.ImageConsumer;
+import j86.java.awt.image.ImageObserver;
+import j86.sun.awt.image.ByteComponentRaster;
+import j86.sun.awt.image.IntegerComponentRaster;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferInt;
 import j86.java.awt.Graphics2D;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.sun.awt.image.ImageWatched;
+import j86.java.awt.geom.AffineTransform;
+import j86.sun.awt.image.ImageWatched;
 import j86.java.util.Hashtable;
 
 public class ImageRepresentation extends ImageWatched implements ImageConsumer

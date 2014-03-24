@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -32,7 +32,7 @@ import j86.java.io.ObjectOutput;
 import j86.java.io.Serializable;
 import j86.java.security.AccessController;
 import j86.java.security.SecureRandom;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.concurrent.atomic.AtomicLong;
 import j86.sun.security.action.GetPropertyAction;
 
 /**
@@ -57,7 +57,7 @@ import j86.sun.security.action.GetPropertyAction;
  * equivalent to one returned by invoking the {@link UID#UID(short)}
  * constructor with the value zero.
  *
- * <p>If the system property <code>j86.j86.java.rmi.server.randomIDs</code>
+ * <p>If the system property <code>j86.java.rmi.server.randomIDs</code>
  * is defined to equal the string <code>"true"</code> (case insensitive),
  * then the {@link #ObjID()} constructor will use a cryptographically
  * strong random number generator to choose the object number of the
@@ -102,7 +102,7 @@ public final class ObjID implements Serializable {
     /**
      * Generates a unique object identifier.
      *
-     * <p>If the system property <code>j86.j86.java.rmi.server.randomIDs</code>
+     * <p>If the system property <code>j86.java.rmi.server.randomIDs</code>
      * is defined to equal the string <code>"true"</code> (case insensitive),
      * then this constructor will use a cryptographically
      * strong random number generator to choose the object number of the
@@ -242,7 +242,7 @@ public final class ObjID implements Serializable {
 
     private static boolean useRandomIDs() {
         String value = AccessController.doPrivileged(
-            new GetPropertyAction("j86.j86.java.rmi.server.randomIDs"));
+            new GetPropertyAction("j86.java.rmi.server.randomIDs"));
         return value == null ? true : Boolean.parseBoolean(value);
     }
 }

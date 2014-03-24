@@ -27,10 +27,10 @@ package j86.sun.security.ec;
 
 import j86.java.math.BigInteger;
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.ECGenParameterSpec;
-import j86.j86.java.security.spec.ECParameterSpec;
-import j86.j86.java.security.spec.ECPoint;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.ECGenParameterSpec;
+import j86.java.security.spec.ECParameterSpec;
+import j86.java.security.spec.ECPoint;
 
 import j86.sun.security.ec.NamedCurve;
 import j86.sun.security.ec.ECParameters;

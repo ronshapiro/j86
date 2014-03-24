@@ -2,19 +2,19 @@
  * reserved comment block
  * DO NOT REMOVE OR ALTER!
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
 import j86.java.security.Key;
 import j86.java.security.KeyStore;
 import j86.java.security.PrivateKey;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.javax.crypto.SecretKey;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 /**
@@ -24,8 +24,8 @@ import org.w3c.dom.Element;
 public class SecretKeyResolver extends KeyResolverSpi
 {
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(SecretKeyResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(SecretKeyResolver.class.getName());
 
     private KeyStore keyStore;
     private char[] password;
@@ -92,8 +92,8 @@ public class SecretKeyResolver extends KeyResolverSpi
     public SecretKey engineResolveSecretKey(
         Element element, String baseURI, StorageResolver storage
     ) throws KeyResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName() + "?");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName() + "?");
         }
 
         if (XMLUtils.elementIsInSignatureSpace(element, Constants._TAG_KEYNAME)) {
@@ -104,11 +104,11 @@ public class SecretKeyResolver extends KeyResolverSpi
                     return (SecretKey) key;
                 }
             } catch (Exception e) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Cannot recover the key", e);
+                log.log(j86.java.util.logging.Level.FINE, "Cannot recover the key", e);
             }
         }
 
-        log.log(j86.j86.java.util.logging.Level.FINE, "I can't");
+        log.log(j86.java.util.logging.Level.FINE, "I can't");
         return null;
     }
 

@@ -27,7 +27,7 @@ package com.j86.sun.tools.jconsole;
 
 import j86.javax.management.MBeanServerConnection;
 import j86.java.beans.PropertyChangeListener;
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 
 /**
  * {@code JConsoleContext} represents a JConsole connection to a target

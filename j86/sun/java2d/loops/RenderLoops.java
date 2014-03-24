@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
 /*
  * This class stores the various loops that are used by the

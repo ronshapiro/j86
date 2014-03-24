@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.net.InetAddress;
 import j86.java.net.NetworkInterface;
 import j86.java.util.*;

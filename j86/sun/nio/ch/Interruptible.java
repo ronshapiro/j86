@@ -27,7 +27,7 @@
  * An object that interrupts a thread blocked in an I/O operation.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 public interface Interruptible {
 

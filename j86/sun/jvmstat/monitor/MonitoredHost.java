@@ -27,9 +27,9 @@ package j86.sun.jvmstat.monitor;
 
 import j86.java.util.*;
 import j86.java.net.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
-import j86.j86.sun.jvmstat.monitor.event.HostListener;
+import j86.sun.jvmstat.monitor.event.HostListener;
 
 /**
  * An abstraction for a host that contains instrumented Java Virtual
@@ -96,7 +96,7 @@ public abstract class MonitoredHost {
      * This property is not expected to be set under normal circumstances.
      */
     private static final String REMOTE_PROTOCOL_PROP_NAME =
-            "j86.j86.sun.jvmstat.monitor.remote";
+            "j86.sun.jvmstat.monitor.remote";
     private static final String REMOTE_PROTOCOL =
             System.getProperty(REMOTE_PROTOCOL_PROP_NAME, "rmi");
 

@@ -61,9 +61,9 @@
  */
 package j86.java.time;
 
-import static j86.j86.java.time.temporal.ChronoField.INSTANT_SECONDS;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.java.time.temporal.ChronoField.INSTANT_SECONDS;
+import static j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
 
 import j86.java.io.DataOutput;
 import j86.java.io.IOException;
@@ -71,22 +71,22 @@ import j86.java.io.ObjectInput;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.chrono.ChronoZonedDateTime;
-import j86.j86.java.time.format.DateTimeFormatter;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
-import j86.j86.java.time.zone.ZoneOffsetTransition;
-import j86.j86.java.time.zone.ZoneRules;
+import j86.java.time.chrono.ChronoZonedDateTime;
+import j86.java.time.format.DateTimeFormatter;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
+import j86.java.time.zone.ZoneOffsetTransition;
+import j86.java.time.zone.ZoneRules;
 import j86.java.util.List;
 import j86.java.util.Objects;
 
@@ -571,7 +571,7 @@ public final class ZonedDateTime
      * {@code 2007-12-03T10:15:30+01:00[Europe/Paris]}.
      * <p>
      * The string must represent a valid date-time and is parsed using
-     * {@link j86.j86.java.time.format.DateTimeFormatter#ISO_ZONED_DATE_TIME}.
+     * {@link j86.java.time.format.DateTimeFormatter#ISO_ZONED_DATE_TIME}.
      *
      * @param text  the text to parse such as "2007-12-03T10:15:30+01:00[Europe/Paris]", not null
      * @return the parsed zoned date-time, not null
@@ -1192,7 +1192,7 @@ public final class ZonedDateTime
      * For example this code returns a date on the last day of July:
      * <pre>
      *  import static j86.java.time.Month.*;
-     *  import static j86.j86.java.time.temporal.Adjusters.*;
+     *  import static j86.java.time.temporal.Adjusters.*;
      *
      *  result = zonedDateTime.with(JULY).with(lastDayOfMonth());
      * </pre>
@@ -1506,7 +1506,7 @@ public final class ZonedDateTime
      * {@link ChronoUnit#DAYS DAYS}. Other units throw an exception.
      * <p>
      * This operates on the local time-line,
-     * {@link LocalDateTime#truncatedTo(j86.j86.java.time.temporal.TemporalUnit) truncating}
+     * {@link LocalDateTime#truncatedTo(j86.java.time.temporal.TemporalUnit) truncating}
      * the underlying local date-time. This is then converted back to a
      * {@code ZonedDateTime}, using the zone ID to obtain the offset.
      * <p>
@@ -2028,7 +2028,7 @@ public final class ZonedDateTime
      * what the result of this method will be.
      * <p>
      * The result of this method is obtained by invoking the
-     * {@link j86.j86.java.time.temporal.TemporalQuery#queryFrom(TemporalAccessor)} method on the
+     * {@link j86.java.time.temporal.TemporalQuery#queryFrom(TemporalAccessor)} method on the
      * specified query passing {@code this} as the argument.
      *
      * @param <R> the type of the result

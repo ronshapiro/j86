@@ -217,7 +217,7 @@ public class LayoutFocusTraversalPolicy extends SortingFocusTraversalPolicy
      * @see j86.java.awt.Component#isDisplayable
      * @see j86.java.awt.Component#isEnabled
      * @see j86.java.awt.Component#isFocusable
-     * @see j86.j86.javax.swing.plaf.ComboBoxUI#isFocusTraversable
+     * @see j86.javax.swing.plaf.ComboBoxUI#isFocusTraversable
      * @see j86.javax.swing.JComponent#getInputMap
      * @see j86.java.awt.DefaultFocusTraversalPolicy#accept
      * @return <code>true</code> if <code>aComponent</code> is a valid choice

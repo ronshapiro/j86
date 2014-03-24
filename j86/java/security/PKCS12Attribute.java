@@ -28,7 +28,7 @@ package j86.java.security;
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.util.Arrays;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Pattern;
 import j86.sun.security.util.*;
 
 /**

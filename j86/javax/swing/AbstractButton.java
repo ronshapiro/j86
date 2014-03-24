@@ -25,23 +25,23 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.event.*;
+import j86.java.awt.image.*;
 import j86.java.text.*;
-import j86.j86.java.awt.geom.*;
+import j86.java.awt.geom.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.Transient;
 import j86.java.util.Enumeration;
 import j86.java.util.Vector;
 import j86.java.io.Serializable;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.j86.javax.swing.text.html.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.text.html.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.java.util.*;
 
 /**
@@ -1550,10 +1550,10 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * <p>
      * A mnemonic must correspond to a single key on the keyboard
      * and should be specified using one of the <code>VK_XXX</code>
-     * keycodes defined in <code>j86.j86.java.awt.event.KeyEvent</code>.
+     * keycodes defined in <code>j86.java.awt.event.KeyEvent</code>.
      * These codes and the wider array of codes for international
      * keyboards may be obtained through
-     * <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
+     * <code>j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code>.
      * Mnemonics are case-insensitive, therefore a key event
      * with the corresponding keycode would cause the button to be
      * activated whether or not the Shift modifier was pressed.
@@ -1563,7 +1563,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * will be underlined to indicate the mnemonic to the user.
      *
      * @param mnemonic the key code which represents the mnemonic
-     * @see     j86.j86.java.awt.event.KeyEvent
+     * @see     j86.java.awt.event.KeyEvent
      * @see     #setDisplayedMnemonicIndex
      *
      * @beaninfo
@@ -1825,7 +1825,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * example, <code>JButton</code> might do the following:
      * <pre>
      *      setUI((ButtonUI)UIManager.getUI(
-     *          "ButtonUI", "j86.j86.j86.javax.swing.plaf.basic.BasicButtonUI", this));
+     *          "ButtonUI", "j86.javax.swing.plaf.basic.BasicButtonUI", this));
      * </pre>
      */
     public void updateUI() {
@@ -2192,7 +2192,7 @@ public abstract class AbstractButton extends JComponent implements ItemSelectabl
      * @param y  the y coordinate
      * @param w  the width
      * @param h  the height
-     * @see     j86.j86.j86.java.awt.image.ImageObserver
+     * @see     j86.java.awt.image.ImageObserver
      * @see     j86.java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean imageUpdate(Image img, int infoflags,

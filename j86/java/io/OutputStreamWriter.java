@@ -25,15 +25,15 @@
 
 package j86.java.io;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.j86.sun.nio.cs.StreamEncoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.sun.nio.cs.StreamEncoder;
 
 
 /**
  * An OutputStreamWriter is a bridge from character streams to byte streams:
  * Characters written to it are encoded into bytes using a specified {@link
- * j86.j86.java.nio.charset.Charset charset}.  The charset that it uses
+ * j86.java.nio.charset.Charset charset}.  The charset that it uses
  * may be specified by name or may be given explicitly, or the platform's
  * default charset may be accepted.
  *
@@ -63,12 +63,12 @@ import j86.j86.j86.sun.nio.cs.StreamEncoder;
  *
  * <p> This class always replaces malformed surrogate elements and unmappable
  * character sequences with the charset's default <i>substitution sequence</i>.
- * The {@linkplain j86.j86.java.nio.charset.CharsetEncoder} class should be used when more
+ * The {@linkplain j86.java.nio.charset.CharsetEncoder} class should be used when more
  * control over the encoding process is required.
  *
  * @see BufferedWriter
  * @see OutputStream
- * @see j86.j86.java.nio.charset.Charset
+ * @see j86.java.nio.charset.Charset
  *
  * @author      Mark Reinhold
  * @since       JDK1.1
@@ -86,7 +86,7 @@ public class OutputStreamWriter extends Writer {
      *
      * @param  charsetName
      *         The name of a supported
-     *         {@link j86.j86.java.nio.charset.Charset charset}
+     *         {@link j86.java.nio.charset.Charset charset}
      *
      * @exception  UnsupportedEncodingException
      *             If the named encoding is not supported
@@ -167,7 +167,7 @@ public class OutputStreamWriter extends Writer {
      * @return The historical name of this encoding, or possibly
      *         <code>null</code> if the stream has been closed
      *
-     * @see j86.j86.java.nio.charset.Charset
+     * @see j86.java.nio.charset.Charset
      *
      * @revised 1.4
      * @spec JSR-51

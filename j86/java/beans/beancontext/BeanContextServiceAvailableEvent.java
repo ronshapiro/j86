@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
-import j86.j86.java.beans.beancontext.BeanContextChild;
-import j86.j86.java.beans.beancontext.BeanContextEvent;
+import j86.java.beans.beancontext.BeanContextChild;
+import j86.java.beans.beancontext.BeanContextEvent;
 
-import j86.j86.java.beans.beancontext.BeanContextServices;
+import j86.java.beans.beancontext.BeanContextServices;
 
 import j86.java.util.Iterator;
 

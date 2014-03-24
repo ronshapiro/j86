@@ -119,7 +119,7 @@ import j86.java.util.Map;
  * @see DataLine#getFormat
  * @see AudioInputStream#getFormat
  * @see AudioFileFormat
- * @see j86.j86.javax.sound.sampled.spi.FormatConversionProvider
+ * @see j86.javax.sound.sampled.spi.FormatConversionProvider
  * @since 1.3
  */
 public class AudioFormat {
@@ -572,7 +572,7 @@ public class AudioFormat {
      * are equal.
      *
      * @see AudioFormat
-     * @see j86.j86.javax.sound.sampled.spi.FormatConversionProvider
+     * @see j86.javax.sound.sampled.spi.FormatConversionProvider
      *
      * @author Kara Kytle
      * @since 1.3

@@ -317,14 +317,14 @@ public interface Context {
      * @param obj
      *          the object to bind; possibly null
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #bind(String, Object)
      * @see #rebind(Name, Object)
-     * @see j86.j86.javax.naming.directory.DirContext#bind(Name, Object,
-     *          j86.j86.javax.naming.directory.Attributes)
+     * @see j86.javax.naming.directory.DirContext#bind(Name, Object,
+     *          j86.javax.naming.directory.Attributes)
      */
     public void bind(Name name, Object obj) throws NamingException;
 
@@ -337,7 +337,7 @@ public interface Context {
      * @param obj
      *          the object to bind; possibly null
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      */
@@ -357,15 +357,15 @@ public interface Context {
      *          the name to bind; may not be empty
      * @param obj
      *          the object to bind; possibly null
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #rebind(String, Object)
      * @see #bind(Name, Object)
-     * @see j86.j86.javax.naming.directory.DirContext#rebind(Name, Object,
-     *          j86.j86.javax.naming.directory.Attributes)
-     * @see j86.j86.javax.naming.directory.DirContext
+     * @see j86.javax.naming.directory.DirContext#rebind(Name, Object,
+     *          j86.javax.naming.directory.Attributes)
+     * @see j86.javax.naming.directory.DirContext
      */
     public void rebind(Name name, Object obj) throws NamingException;
 
@@ -377,7 +377,7 @@ public interface Context {
      *          the name to bind; may not be empty
      * @param obj
      *          the object to bind; possibly null
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if object did not supply all mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      */
@@ -586,13 +586,13 @@ public interface Context {
      * @return  the newly created context
      *
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if creation of the subcontext requires specification of
      *          mandatory attributes
      * @throws  NamingException if a naming exception is encountered
      *
      * @see #createSubcontext(String)
-     * @see j86.j86.javax.naming.directory.DirContext#createSubcontext
+     * @see j86.javax.naming.directory.DirContext#createSubcontext
      */
     public Context createSubcontext(Name name) throws NamingException;
 
@@ -605,7 +605,7 @@ public interface Context {
      * @return  the newly created context
      *
      * @throws  NameAlreadyBoundException if name is already bound
-     * @throws  j86.j86.javax.naming.directory.InvalidAttributesException
+     * @throws  j86.javax.naming.directory.InvalidAttributesException
      *          if creation of the subcontext requires specification of
      *          mandatory attributes
      * @throws  NamingException if a naming exception is encountered
@@ -831,9 +831,9 @@ public interface Context {
      * <p> The value of this constant is "java.naming.factory.initial".
      *
      * @see InitialContext
-     * @see j86.j86.javax.naming.directory.InitialDirContext
-     * @see j86.j86.javax.naming.spi.NamingManager#getInitialContext
-     * @see j86.j86.javax.naming.spi.InitialContextFactory
+     * @see j86.javax.naming.directory.InitialDirContext
+     * @see j86.javax.naming.spi.NamingManager#getInitialContext
+     * @see j86.javax.naming.spi.InitialContextFactory
      * @see NoInitialContextException
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
@@ -852,8 +852,8 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.object".
      *
-     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
-     * @see j86.j86.javax.naming.spi.ObjectFactory
+     * @see j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.javax.naming.spi.ObjectFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET
@@ -871,8 +871,8 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.state".
      *
-     * @see j86.j86.javax.naming.spi.NamingManager#getStateToBind
-     * @see j86.j86.javax.naming.spi.StateFactory
+     * @see j86.javax.naming.spi.NamingManager#getStateToBind
+     * @see j86.javax.naming.spi.StateFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET
@@ -895,9 +895,9 @@ public interface Context {
      *
      * <p> The value of this constant is "java.naming.factory.url.pkgs".
      *
-     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
-     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
-     * @see j86.j86.javax.naming.spi.ObjectFactory
+     * @see j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.javax.naming.spi.NamingManager#getURLContext
+     * @see j86.javax.naming.spi.ObjectFactory
      * @see #addToEnvironment(String, Object)
      * @see #removeFromEnvironment(String)
      * @see #APPLET

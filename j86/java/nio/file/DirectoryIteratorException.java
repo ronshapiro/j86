@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 import j86.java.util.ConcurrentModificationException;
 import j86.java.util.Objects;

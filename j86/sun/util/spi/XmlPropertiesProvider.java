@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.spi;
+package j86.sun.util.spi;
 
 import j86.java.util.Properties;
 import j86.java.util.InvalidPropertiesFormatException;

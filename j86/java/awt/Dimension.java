@@ -25,7 +25,7 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.geom.Dimension2D;
+import j86.java.awt.geom.Dimension2D;
 import j86.java.beans.Transient;
 
 /**

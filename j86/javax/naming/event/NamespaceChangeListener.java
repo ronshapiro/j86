@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.event;
+package j86.javax.naming.event;
 
 /**
   * Specifies the methods that a listener interested in namespace changes

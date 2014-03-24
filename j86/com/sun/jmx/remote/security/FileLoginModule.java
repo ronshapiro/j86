@@ -40,14 +40,14 @@ import j86.java.util.Map;
 import j86.java.util.Properties;
 
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
-import j86.j86.javax.management.remote.JMXPrincipal;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
+import j86.javax.management.remote.JMXPrincipal;
 
 import j86.com.sun.jmx.remote.util.ClassLogger;
 import j86.com.sun.jmx.remote.util.EnvHelp;
-import j86.j86.sun.management.jmxremote.ConnectorBootstrap;
+import j86.sun.management.jmxremote.ConnectorBootstrap;
 
 /**
  * This {@link LoginModule} performs file-based authentication.
@@ -78,16 +78,16 @@ import j86.j86.sun.management.jmxremote.ConnectorBootstrap;
  *
  * <dt> <code>useFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
- *      and "j86.j86.javax.security.auth.login.password" as the respective keys. The
+ *      from the module's shared state, using "j86.javax.security.auth.login.name"
+ *      and "j86.javax.security.auth.login.password" as the respective keys. The
  *      retrieved values are used for authentication. If authentication fails,
  *      no attempt for a retry is made, and the failure is reported back to
  *      the calling application.</dd>
  *
  * <dt> <code>tryFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
- *       and "j86.j86.javax.security.auth.login.password" as the respective keys.  The
+ *      from the module's shared state, using "j86.javax.security.auth.login.name"
+ *       and "j86.javax.security.auth.login.password" as the respective keys.  The
  *      retrieved values are used for authentication. If authentication fails,
  *      the module uses the CallbackHandler to retrieve a new username and
  *      password, and another attempt to authenticate is made. If the
@@ -97,8 +97,8 @@ import j86.j86.sun.management.jmxremote.ConnectorBootstrap;
  * <dt> <code>storePass</code> </dt>
  * <dd> if <code>true</code>, this module stores the username and password
  *      obtained from the CallbackHandler in the module's shared state, using
- *      "j86.j86.javax.security.auth.login.name" and
- *      "j86.j86.javax.security.auth.login.password" as the respective keys.  This is
+ *      "j86.javax.security.auth.login.name" and
+ *      "j86.javax.security.auth.login.password" as the respective keys.  This is
  *      not performed if existing values already exist for the username and
  *      password in the shared state, or if authentication fails.</dd>
  *
@@ -119,15 +119,15 @@ public class FileLoginModule implements LoginModule {
 
     // Key to retrieve the stored username
     private static final String USERNAME_KEY =
-        "j86.j86.javax.security.auth.login.name";
+        "j86.javax.security.auth.login.name";
 
     // Key to retrieve the stored password
     private static final String PASSWORD_KEY =
-        "j86.j86.javax.security.auth.login.password";
+        "j86.javax.security.auth.login.password";
 
     // Log messages
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", "FileLoginModule");
+        new ClassLogger("j86.javax.management.remote.misc", "FileLoginModule");
 
     // Configurable options
     private boolean useFirstPass = false;

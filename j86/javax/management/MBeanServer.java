@@ -31,7 +31,7 @@ import j86.java.util.Set;
 import j86.java.io.ObjectInputStream;
 
 // RI import
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * <p>This is the interface for MBean manipulation on the agent
@@ -522,7 +522,7 @@ public interface MBeanServer extends MBeanServerConnection {
     /**
      * <p>Instantiates an object using the list of all class loaders
      * registered in the MBean server's {@link
-     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The object's class should have a public
      * constructor.  This method returns a reference to the newly
      * created object.  The newly created object is not registered in
@@ -587,7 +587,7 @@ public interface MBeanServer extends MBeanServerConnection {
     /**
      * <p>Instantiates an object using the list of all class loaders
      * registered in the MBean server {@link
-     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The object's class should have a public
      * constructor.  The call returns a reference to the newly created
      * object.  The newly created object is not registered in the
@@ -674,7 +674,7 @@ public interface MBeanServer extends MBeanServerConnection {
      * <p>De-serializes a byte array in the context of a given MBean
      * class loader.  The class loader is found by loading the class
      * <code>className</code> through the {@link
-     * j86.j86.javax.management.loading.ClassLoaderRepository Class Loader
+     * j86.javax.management.loading.ClassLoaderRepository Class Loader
      * Repository}.  The resultant class's class loader is the one to
      * use.
      *

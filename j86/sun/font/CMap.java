@@ -29,7 +29,7 @@ import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
 import j86.java.nio.IntBuffer;
 import j86.java.util.Locale;
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.charset.*;
 
 /*
  * A tt font has a CMAP table which is in turn made up of sub-tables which

@@ -24,15 +24,15 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
 //
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
@@ -45,9 +45,9 @@ import j86.javax.management.DescriptorRead;
 import j86.javax.management.ImmutableDescriptor;
 import j86.javax.management.MBeanAttributeInfo;
 import j86.com.sun.jmx.remote.util.EnvHelp;
-import j86.j86.sun.reflect.misc.ConstructorUtil;
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ConstructorUtil;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Describes an attribute of an open MBean.
@@ -1081,7 +1081,7 @@ public class OpenMBeanAttributeInfoSupport
      * {@code OpenMBeanAttributeInfoSupport} instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * {@code j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport}),
+     * {@code j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport}),
      * the string representation of the name and open type of the
      * described parameter, the string representation of its
      * default, min, max and legal values and the string

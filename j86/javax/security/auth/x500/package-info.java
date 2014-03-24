@@ -46,4 +46,4 @@
  *
  * @since JDK1.4
  */
-package j86.j86.javax.security.auth.x500;
+package j86.javax.security.auth.x500;

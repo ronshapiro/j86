@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -44,17 +44,17 @@ import j86.java.util.List;
 import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.StringTokenizer;
-import j86.j86.java.util.regex.PatternSyntaxException;
+import j86.java.util.regex.PatternSyntaxException;
 
 import j86.javax.swing.ImageIcon;
 import j86.javax.swing.JSplitPane;
 import j86.javax.swing.SwingConstants;
 import j86.javax.swing.UIDefaults;
-import j86.j86.javax.swing.plaf.ColorUIResource;
-import j86.j86.javax.swing.plaf.DimensionUIResource;
-import j86.j86.javax.swing.plaf.FontUIResource;
-import j86.j86.javax.swing.plaf.InsetsUIResource;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.plaf.DimensionUIResource;
+import j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.InsetsUIResource;
+import j86.javax.swing.plaf.UIResource;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
@@ -66,7 +66,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import j86.j86.com.sun.beans.decoder.DocumentHandler;
+import j86.com.sun.beans.decoder.DocumentHandler;
 
 class SynthParser extends DefaultHandler {
     //

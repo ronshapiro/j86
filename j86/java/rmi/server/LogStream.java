@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.io.*;
 import j86.java.util.*;
@@ -124,7 +124,7 @@ public class LogStream extends PrintStream {
 
         if (sm != null) {
             sm.checkPermission(
-                new j86.j86.java.util.logging.LoggingPermission("control", null));
+                new j86.java.util.logging.LoggingPermission("control", null));
         }
 
         defaultStream = newDefault;

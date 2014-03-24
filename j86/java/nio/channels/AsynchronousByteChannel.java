@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.Future;
 
 /**
  * An asynchronous channel that can read and write bytes.

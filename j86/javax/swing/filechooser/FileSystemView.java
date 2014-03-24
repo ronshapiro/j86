@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.filechooser;
+package j86.javax.swing.filechooser;
 
 
 import j86.javax.swing.*;
@@ -35,13 +35,13 @@ import j86.java.io.IOException;
 import j86.java.text.MessageFormat;
 import j86.java.util.List;
 import j86.java.util.ArrayList;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.sun.awt.shell.*;
+import j86.sun.awt.shell.*;
 
 /**
  * FileSystemView is JFileChooser's gateway to the

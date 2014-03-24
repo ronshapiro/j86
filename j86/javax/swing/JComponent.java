@@ -37,12 +37,12 @@ import j86.java.util.Map;
 import j86.java.util.HashMap;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.event.*;
+import j86.java.awt.image.VolatileImage;
 import j86.java.awt.Graphics2D;
-import j86.j86.java.awt.peer.LightweightPeer;
-import j86.j86.java.awt.dnd.DropTarget;
-import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.dnd.DropTarget;
+import j86.java.awt.font.FontRenderContext;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.VetoableChangeListener;
 import j86.java.beans.VetoableChangeSupport;
@@ -57,9 +57,9 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInputValidation;
 import j86.java.io.InvalidObjectException;
 
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import static j86.javax.swing.ClientPropertyKey.*;
 import j86.javax.accessibility.*;
 
@@ -90,7 +90,7 @@ import j86.sun.swing.UIClientPropertyKey;
  *     programmer or (optionally) selected by the user at runtime.
  *     The look and feel for each component is provided by a
  *     <em>UI delegate</em> -- an object that descends from
- *     {@link j86.j86.javax.swing.plaf.ComponentUI}.
+ *     {@link j86.javax.swing.plaf.ComponentUI}.
  *     See <a
  * href="http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html">How
  *     to Set the Look and Feel</a>
@@ -956,7 +956,7 @@ public abstract class JComponent extends Container implements Serializable,
      * @param g the <code>Graphics</code> context in which to paint
      * @see #paint
      * @see #paintComponent
-     * @see j86.j86.javax.swing.plaf.ComponentUI
+     * @see j86.javax.swing.plaf.ComponentUI
      */
     public void update(Graphics g) {
         paint(g);
@@ -5375,7 +5375,7 @@ public abstract class JComponent extends Container implements Serializable,
          * for now.
          */
         if (getToolTipText() != null ||
-            this instanceof j86.j86.javax.swing.table.JTableHeader) {
+            this instanceof j86.javax.swing.table.JTableHeader) {
             ToolTipManager.sharedInstance().unregisterComponent(JComponent.this);
         }
     }

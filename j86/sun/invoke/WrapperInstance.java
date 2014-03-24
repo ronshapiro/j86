@@ -25,12 +25,12 @@
 
 package j86.sun.invoke;
 
-import j86.j86.java.lang.invoke.MethodHandle;
+import j86.java.lang.invoke.MethodHandle;
 
 /**
- * Private API used inside of j86.j86.java.lang.invoke.MethodHandles.
+ * Private API used inside of j86.java.lang.invoke.MethodHandles.
  * Interface implemented by every object which is produced by
- * {@link j86.j86.java.lang.invoke.MethodHandleProxies#asInterfaceInstance MethodHandleProxies.asInterfaceInstance}.
+ * {@link j86.java.lang.invoke.MethodHandleProxies#asInterfaceInstance MethodHandleProxies.asInterfaceInstance}.
  * The methods of this interface allow a caller to recover the parameters
  * to {@code asInstance}.
  * This allows applications to repeatedly convert between method handles

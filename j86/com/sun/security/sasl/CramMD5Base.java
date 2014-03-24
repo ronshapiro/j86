@@ -32,7 +32,7 @@ import j86.javax.security.sasl.Sasl;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.MessageDigest;
 
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.logging.Logger;
 
 /**
   * Base class for implementing CRAM-MD5 client and server mechanisms.

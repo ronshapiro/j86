@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.java.io.*;
 import j86.java.beans.ConstructorProperties;

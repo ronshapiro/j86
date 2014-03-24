@@ -33,7 +33,7 @@
  ******************************************************************
  ******************************************************************/
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 /**
  *  This abstract class defines an interface for extracting samples of pixels
@@ -69,13 +69,13 @@ package j86.j86.j86.java.awt.image;
  *  appropriate subclass and extract the information needed to directly
  *  manipulate pixels in the DataBuffer.
  *
- *  @see j86.j86.j86.java.awt.image.DataBuffer
- *  @see j86.j86.j86.java.awt.image.Raster
- *  @see j86.j86.j86.java.awt.image.ComponentSampleModel
- *  @see j86.j86.j86.java.awt.image.PixelInterleavedSampleModel
- *  @see j86.j86.j86.java.awt.image.BandedSampleModel
- *  @see j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel
- *  @see j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel
+ *  @see j86.java.awt.image.DataBuffer
+ *  @see j86.java.awt.image.Raster
+ *  @see j86.java.awt.image.ComponentSampleModel
+ *  @see j86.java.awt.image.PixelInterleavedSampleModel
+ *  @see j86.java.awt.image.BandedSampleModel
+ *  @see j86.java.awt.image.MultiPixelPackedSampleModel
+ *  @see j86.java.awt.image.SinglePixelPackedSampleModel
  */
 
 public abstract class SampleModel
@@ -95,7 +95,7 @@ public abstract class SampleModel
     protected int numBands;
 
     /** Data type of the DataBuffer storing the pixel data.
-     *  @see j86.j86.j86.java.awt.image.DataBuffer
+     *  @see j86.java.awt.image.DataBuffer
      */
     protected int dataType;
 
@@ -212,7 +212,7 @@ public abstract class SampleModel
      *  @see #setDataElements(int, int, Object, DataBuffer)
      *  @see #setDataElements(int, int, int, int, Object, DataBuffer)
      *  @see #getNumDataElements
-     *  @see j86.j86.j86.java.awt.image.DataBuffer
+     *  @see j86.java.awt.image.DataBuffer
      */
     public int getTransferType() {
         return dataType;
@@ -289,7 +289,7 @@ public abstract class SampleModel
      * @return the data elements for the specified pixel.
      * @see #getNumDataElements
      * @see #getTransferType
-     * @see j86.j86.j86.java.awt.image.DataBuffer
+     * @see j86.java.awt.image.DataBuffer
      * @see #setDataElements(int, int, Object, DataBuffer)
      *
      * @throws NullPointerException if data is null.
@@ -344,7 +344,7 @@ public abstract class SampleModel
      * @see #getNumDataElements
      * @see #getTransferType
      * @see #setDataElements(int, int, int, int, Object, DataBuffer)
-     * @see j86.j86.j86.java.awt.image.DataBuffer
+     * @see j86.java.awt.image.DataBuffer
      *
      * @throws NullPointerException if data is null.
      * @throws ArrayIndexOutOfBoundsException if the coordinates are
@@ -525,7 +525,7 @@ public abstract class SampleModel
      * @see #getNumDataElements
      * @see #getTransferType
      * @see #getDataElements(int, int, Object, DataBuffer)
-     * @see j86.j86.j86.java.awt.image.DataBuffer
+     * @see j86.java.awt.image.DataBuffer
      *
      * @throws NullPointerException if data is null.
      * @throws ArrayIndexOutOfBoundsException if the coordinates are
@@ -574,7 +574,7 @@ public abstract class SampleModel
      * @see #getNumDataElements
      * @see #getTransferType
      * @see #getDataElements(int, int, int, int, Object, DataBuffer)
-     * @see j86.j86.j86.java.awt.image.DataBuffer
+     * @see j86.java.awt.image.DataBuffer
      *
      * @throws NullPointerException if data is null.
      * @throws ArrayIndexOutOfBoundsException if the coordinates are

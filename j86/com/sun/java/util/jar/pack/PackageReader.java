@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.*;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.File;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.*;
+import j86.com.sun.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.java.util.jar.pack.Package.File;
+import j86.com.sun.j86.java.util.jar.pack.Package.InnerClass;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.EOFException;
 import j86.java.io.PrintStream;
@@ -48,7 +48,7 @@ import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.java.util.ListIterator;
 import j86.java.util.Set;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Reader for a package file.

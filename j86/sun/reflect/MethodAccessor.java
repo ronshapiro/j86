@@ -25,16 +25,16 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 
 /** This interface provides the declaration for
-    j86.j86.j86.java.lang.reflect.Method.invoke(). Each Method object is
+    j86.java.lang.reflect.Method.invoke(). Each Method object is
     configured with a (possibly dynamically-generated) class which
     implements this interface.
 */
 
 public interface MethodAccessor {
-    /** Matches specification in {@link j86.j86.j86.java.lang.reflect.Method} */
+    /** Matches specification in {@link j86.java.lang.reflect.Method} */
     public Object invoke(Object obj, Object[] args)
         throws IllegalArgumentException, InvocationTargetException;
 }

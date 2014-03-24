@@ -23,27 +23,27 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Color;
 import j86.java.awt.Rectangle;
 import j86.java.awt.GraphicsConfiguration;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.DataBuffer;
 
 import j86.sun.java2d.SurfaceData;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.StateTrackable;
 import j86.sun.java2d.StateTrackable.*;
 import j86.sun.java2d.StateTracker;
-import j86.j86.sun.java2d.loops.SurfaceType;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.loops.RenderLoops;
+import j86.sun.java2d.loops.SurfaceType;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.RenderLoops;
 
 
 public class BufImgSurfaceData extends SurfaceData {
@@ -333,7 +333,7 @@ public class BufImgSurfaceData extends SurfaceData {
         return super.getRenderLoops(sg2d);
     }
 
-    public j86.j86.j86.java.awt.image.Raster getRaster(int x, int y, int w, int h) {
+    public j86.java.awt.image.Raster getRaster(int x, int y, int w, int h) {
         return bufImg.getRaster();
     }
 

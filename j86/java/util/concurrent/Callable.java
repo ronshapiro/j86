@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 /**
  * A task that returns a result and may throw an exception.

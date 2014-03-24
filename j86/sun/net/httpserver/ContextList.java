@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
 import j86.java.util.*;
-import com.j86.j86.sun.net.httpserver.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.*;
+import com.j86.sun.net.httpserver.*;
+import j86.com.j86.sun.net.httpserver.spi.*;
 
 class ContextList {
 

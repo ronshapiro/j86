@@ -26,16 +26,16 @@
 /*
  * $Id$
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
 
 /**
  * DOM-based implementation of CanonicalizationMethod for Canonical XML 1.1

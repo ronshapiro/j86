@@ -26,21 +26,21 @@
 package j86.sun.security.provider;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
 import j86.java.net.URI;
 import j86.java.util.*;
 import j86.java.text.MessageFormat;
 import j86.java.security.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 import j86.java.io.FilePermission;
 import j86.java.net.SocketPermission;
 import j86.java.net.NetPermission;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.concurrent.atomic.AtomicReference;
 import j86.sun.misc.JavaSecurityProtectionDomainAccess;
 import static j86.sun.misc.JavaSecurityProtectionDomainAccess.ProtectionDomainCache;
 import j86.sun.misc.SharedSecrets;
@@ -49,7 +49,7 @@ import j86.sun.security.util.PropertyExpander;
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.ResourcesMgr;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * This class represents a default implementation for
@@ -229,11 +229,11 @@ import j86.j86.sun.net.www.ParseUtil;
  *  If the grant clause contains principal information, <b>${{self}}</b>
  *  will be replaced with that same principal information.
  *  For example, <b>${{self}}</b> in BarPermission will be replaced by
- *  <b>j86.j86.javax.security.auth.x500.X500Principal "cn=Duke"</b>
+ *  <b>j86.javax.security.auth.x500.X500Principal "cn=Duke"</b>
  *  in the following grant clause:
  *
  *  <pre>
- *    grant principal j86.j86.javax.security.auth.x500.X500Principal "cn=Duke" {
+ *    grant principal j86.javax.security.auth.x500.X500Principal "cn=Duke" {
  *      permission BarPermission "... ${{self}} ...";
  *    };
  *  </pre>
@@ -264,7 +264,7 @@ public class PolicyFile extends j86.java.security.Policy {
 
     private static final String SELF = "${{self}}";
     private static final String X500PRINCIPAL =
-                        "j86.j86.javax.security.auth.x500.X500Principal";
+                        "j86.javax.security.auth.x500.X500Principal";
     private static final String POLICY = "j86.java.security.policy";
     private static final String SECURITY_MANAGER = "j86.java.security.manager";
     private static final String POLICY_URL = "policy.url.";
@@ -862,7 +862,7 @@ public class PolicyFile extends j86.java.security.Policy {
                             debug.println("  "+perm);
                         }
                     }
-                } catch (j86.j86.j86.java.lang.reflect.InvocationTargetException ite) {
+                } catch (j86.java.lang.reflect.InvocationTargetException ite) {
                     MessageFormat form = new MessageFormat
                         (ResourcesMgr.getString
                          (POLICY +

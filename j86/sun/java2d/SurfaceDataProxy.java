@@ -32,12 +32,12 @@ import j86.java.awt.GraphicsEnvironment;
 
 import j86.sun.awt.DisplayChangedListener;
 import j86.sun.java2d.StateTrackable.State;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.loops.SurfaceType;
-import j86.j86.sun.java2d.loops.Blit;
-import j86.j86.sun.java2d.loops.BlitBg;
-import j86.j86.j86.sun.awt.image.SurfaceManager;
-import j86.j86.j86.sun.awt.image.SurfaceManager.FlushableCacheData;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.SurfaceType;
+import j86.sun.java2d.loops.Blit;
+import j86.sun.java2d.loops.BlitBg;
+import j86.sun.awt.image.SurfaceManager;
+import j86.sun.awt.image.SurfaceManager.FlushableCacheData;
 
 import j86.java.security.AccessController;
 import j86.sun.security.action.GetPropertyAction;

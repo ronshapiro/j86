@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Objects;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.function.Supplier;
 
 /**
  * Low-level utility methods for creating and manipulating streams.
@@ -52,7 +52,7 @@ public final class StreamSupport {
      * <p>It is strongly recommended the spliterator report a characteristic of
      * {@code IMMUTABLE} or {@code CONCURRENT}, or be
      * <a href="../Spliterator.html#binding">late-binding</a>.  Otherwise,
-     * {@link #stream(j86.j86.java.util.function.Supplier, int, boolean)} should be used
+     * {@link #stream(j86.java.util.function.Supplier, int, boolean)} should be used
      * to reduce the scope of potential interference with the source.  See
      * <a href="package-summary.html#NonInterference">Non-Interference</a> for
      * more details.
@@ -123,7 +123,7 @@ public final class StreamSupport {
      * <p>It is strongly recommended the spliterator report a characteristic of
      * {@code IMMUTABLE} or {@code CONCURRENT}, or be
      * <a href="../Spliterator.html#binding">late-binding</a>.  Otherwise,
-     * {@link #intStream(j86.j86.java.util.function.Supplier, int, boolean)} should be
+     * {@link #intStream(j86.java.util.function.Supplier, int, boolean)} should be
      * used to reduce the scope of potential interference with the source.  See
      * <a href="package-summary.html#NonInterference">Non-Interference</a> for
      * more details.
@@ -190,7 +190,7 @@ public final class StreamSupport {
      * <p>It is strongly recommended the spliterator report a characteristic of
      * {@code IMMUTABLE} or {@code CONCURRENT}, or be
      * <a href="../Spliterator.html#binding">late-binding</a>.  Otherwise,
-     * {@link #longStream(j86.j86.java.util.function.Supplier, int, boolean)} should be
+     * {@link #longStream(j86.java.util.function.Supplier, int, boolean)} should be
      * used to reduce the scope of potential interference with the source.  See
      * <a href="package-summary.html#NonInterference">Non-Interference</a> for
      * more details.
@@ -258,7 +258,7 @@ public final class StreamSupport {
      * <p>It is strongly recommended the spliterator report a characteristic of
      * {@code IMMUTABLE} or {@code CONCURRENT}, or be
      * <a href="../Spliterator.html#binding">late-binding</a>.  Otherwise,
-     * {@link #doubleStream(j86.j86.java.util.function.Supplier, int, boolean)} should
+     * {@link #doubleStream(j86.java.util.function.Supplier, int, boolean)} should
      * be used to reduce the scope of potential interference with the source.  See
      * <a href="package-summary.html#NonInterference">Non-Interference</a> for
      * more details.

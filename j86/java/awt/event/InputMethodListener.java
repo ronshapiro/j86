@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.util.EventListener;
 
@@ -37,7 +37,7 @@ import j86.java.util.EventListener;
  *
  * @author JavaSoft Asia/Pacific
  * @see InputMethodEvent
- * @see j86.j86.java.awt.im.InputMethodRequests
+ * @see j86.java.awt.im.InputMethodRequests
  * @since 1.2
  */
 

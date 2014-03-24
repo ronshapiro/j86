@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.model;
+package j86.com.sun.tools.hat.internal.model;
 
 /**
  * Primitive array type codes as defined by VM specification.

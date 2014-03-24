@@ -25,14 +25,14 @@
 
 package j86.java.util;
 import j86.java.io.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.LongConsumer;
-import j86.j86.java.util.stream.DoubleStream;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.LongStream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.LongConsumer;
+import j86.java.util.stream.DoubleStream;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.LongStream;
+import j86.java.util.stream.StreamSupport;
 
 import j86.sun.misc.Unsafe;
 
@@ -62,7 +62,7 @@ import j86.sun.misc.Unsafe;
  * However, the concurrent use of the same {@code j86.java.util.Random}
  * instance across threads may encounter contention and consequent
  * poor performance. Consider instead using
- * {@link j86.j86.java.util.concurrent.ThreadLocalRandom} in multithreaded
+ * {@link j86.java.util.concurrent.ThreadLocalRandom} in multithreaded
  * designs.
  *
  * <p>Instances of {@code j86.java.util.Random} are not cryptographically

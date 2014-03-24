@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.serial;
+package j86.javax.sql.rowset.serial;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.Arrays;
 import j86.java.util.Vector;
-import j86.j86.javax.sql.rowset.RowSetWarning;
+import j86.javax.sql.rowset.RowSetWarning;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * A serializable mapping in the Java programming language of an SQL

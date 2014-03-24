@@ -56,7 +56,7 @@ public abstract class VersionHelper {
         j86.javax.naming.Context.PROVIDER_URL,
         j86.javax.naming.Context.DNS_URL,
         // The following shouldn't create a runtime dependence on ldap package.
-        j86.j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
+        j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
     };
 
     public final static int INITIAL_CONTEXT_FACTORY = 0;

@@ -32,10 +32,10 @@ import j86.java.util.StringTokenizer;
 import j86.java.util.List;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.NamingManager;
-import j86.j86.javax.naming.ldap.LdapName;
-import j86.j86.javax.naming.ldap.Rdn;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.ldap.LdapName;
+import j86.javax.naming.ldap.Rdn;
 
 /**
  * This class discovers the location of LDAP services by querying DNS.

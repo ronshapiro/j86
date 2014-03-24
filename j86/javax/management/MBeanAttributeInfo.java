@@ -25,7 +25,7 @@
 
 package j86.javax.management;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.security.AccessController;
 
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;

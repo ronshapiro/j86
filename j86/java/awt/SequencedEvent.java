@@ -48,7 +48,7 @@ class SequencedEvent extends AWTEvent implements ActiveEvent {
     private static final long serialVersionUID = 547742659238625067L;
 
     private static final int ID =
-        j86.j86.java.awt.event.FocusEvent.FOCUS_LAST + 1;
+        j86.java.awt.event.FocusEvent.FOCUS_LAST + 1;
     private static final LinkedList<SequencedEvent> list = new LinkedList<>();
 
     private final AWTEvent nested;

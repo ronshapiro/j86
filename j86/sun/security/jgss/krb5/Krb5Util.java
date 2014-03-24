@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
-import j86.j86.javax.security.auth.kerberos.KerberosTicket;
-import j86.j86.javax.security.auth.kerberos.KerberosKey;
-import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
-import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.javax.security.auth.kerberos.KerberosKey;
+import j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.javax.security.auth.kerberos.KeyTab;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.login.LoginException;
 import j86.java.security.AccessControlContext;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.GSSCaller;
@@ -247,7 +247,7 @@ public class Krb5Util {
      * @param ktab the javax..KeyTab object
      * @return the sun..KeyTab object
      */
-    public static j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab
+    public static j86.sun.security.krb5.internal.ktab.KeyTab
             snapshotFromJavaxKeyTab(KeyTab ktab) {
         return KerberosSecrets.getJavaxSecurityAuthKerberosAccess()
                 .keyTabTakeSnapshot(ktab);

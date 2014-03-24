@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.security.Principal;
 
@@ -227,7 +227,7 @@ public interface SSLSession {
      *          been verified
      * @see #getPeerPrincipal()
      */
-    public j86.j86.java.security.cert.Certificate [] getPeerCertificates()
+    public j86.java.security.cert.Certificate [] getPeerCertificates()
             throws SSLPeerUnverifiedException;
 
     /**
@@ -250,7 +250,7 @@ public interface SSLSession {
      *
      * @see #getLocalPrincipal()
      */
-    public j86.j86.java.security.cert.Certificate [] getLocalCertificates();
+    public j86.java.security.cert.Certificate [] getLocalCertificates();
 
     /**
      * Returns the identity of the peer which was identified as part

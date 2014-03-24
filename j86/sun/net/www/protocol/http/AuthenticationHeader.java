@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
-import j86.j86.sun.net.www.*;
+import j86.sun.net.www.*;
 import j86.java.util.Iterator;
 import j86.java.util.HashMap;
 

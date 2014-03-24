@@ -35,7 +35,7 @@
 package j86.com.sun.tools.example.debug.bdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.event.*;
+import j86.com.sun.jdi.event.*;
 
 import j86.com.sun.tools.example.debug.event.*;
 

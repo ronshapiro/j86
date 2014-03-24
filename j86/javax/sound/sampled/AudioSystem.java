@@ -37,10 +37,10 @@ import j86.java.util.Set;
 import j86.java.util.Vector;
 import j86.java.util.ArrayList;
 
-import j86.j86.javax.sound.sampled.spi.AudioFileWriter;
-import j86.j86.javax.sound.sampled.spi.AudioFileReader;
-import j86.j86.javax.sound.sampled.spi.FormatConversionProvider;
-import j86.j86.javax.sound.sampled.spi.MixerProvider;
+import j86.javax.sound.sampled.spi.AudioFileWriter;
+import j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.sampled.spi.FormatConversionProvider;
+import j86.javax.sound.sampled.spi.MixerProvider;
 
 import j86.com.sun.media.sound.JDK13Services;
 
@@ -106,7 +106,7 @@ import j86.com.sun.media.sound.JDK13Services;
  * The property value consists of the provider class name
  * and the mixer name, separated by the hash mark (&quot;#&quot;).
  * The provider class name is the fully-qualified
- * name of a concrete {@link j86.j86.javax.sound.sampled.spi.MixerProvider
+ * name of a concrete {@link j86.javax.sound.sampled.spi.MixerProvider
  * mixer provider} class. The mixer name is matched against
  * the <code>String</code> returned by the <code>getName</code>
  * method of <code>Mixer.Info</code>.
@@ -1383,7 +1383,7 @@ public class AudioSystem {
      * Obtains the set of format converters (codecs, transcoders, etc.)
      * that are currently installed on the system.
      * @return an array of
-     * {@link j86.j86.javax.sound.sampled.spi.FormatConversionProvider
+     * {@link j86.javax.sound.sampled.spi.FormatConversionProvider
      * FormatConversionProvider}
      * objects representing the available format converters.  If no format
      * converters readers are available on the system, an array of length 0 is
@@ -1397,7 +1397,7 @@ public class AudioSystem {
     /**
      * Obtains the set of audio file readers that are currently installed on the system.
      * @return a List of
-     * {@link j86.j86.javax.sound.sampled.spi.AudioFileReader
+     * {@link j86.javax.sound.sampled.spi.AudioFileReader
      * AudioFileReader}
      * objects representing the installed audio file readers.  If no audio file
      * readers are available on the system, an empty List is returned.

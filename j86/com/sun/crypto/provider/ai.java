@@ -34,7 +34,7 @@ import j86.java.security.NoSuchProviderException;
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.IllegalBlockSizeException;
 import j86.javax.crypto.SealedObject;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 /**
  * This class is introduced to workaround a problem in

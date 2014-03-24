@@ -30,8 +30,8 @@ import j86.java.io.InputStream;
 import j86.java.io.File;
 import j86.java.io.OutputStream;
 import j86.java.util.Hashtable;
-import j86.j86.sun.net.util.IPAddressUtil;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * The abstract class {@code URLStreamHandler} is the common

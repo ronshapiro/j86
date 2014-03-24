@@ -62,17 +62,17 @@
 package j86.java.time;
 
 import static j86.java.time.LocalTime.SECONDS_PER_DAY;
-import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_MONTH;
+import static j86.java.time.temporal.ChronoField.ALIGNED_DAY_OF_WEEK_IN_YEAR;
+import static j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.ALIGNED_WEEK_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
+import static j86.java.time.temporal.ChronoField.YEAR;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -80,25 +80,25 @@ import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.chrono.ChronoLocalDate;
-import j86.j86.java.time.chrono.Era;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.DateTimeFormatter;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
-import j86.j86.java.time.zone.ZoneOffsetTransition;
-import j86.j86.java.time.zone.ZoneRules;
+import j86.java.time.chrono.ChronoLocalDate;
+import j86.java.time.chrono.Era;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.DateTimeFormatter;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
+import j86.java.time.zone.ZoneOffsetTransition;
+import j86.java.time.zone.ZoneRules;
 import j86.java.util.Objects;
 
 /**
@@ -375,7 +375,7 @@ public final class LocalDate
      * Obtains an instance of {@code LocalDate} from a text string such as {@code 2007-12-03}.
      * <p>
      * The string must represent a valid date and is parsed using
-     * {@link j86.j86.java.time.format.DateTimeFormatter#ISO_LOCAL_DATE}.
+     * {@link j86.java.time.format.DateTimeFormatter#ISO_LOCAL_DATE}.
      *
      * @param text  the text to parse such as "2007-12-03", not null
      * @return the parsed local date, not null
@@ -885,7 +885,7 @@ public final class LocalDate
      * For example this code returns a date on the last day of July:
      * <pre>
      *  import static j86.java.time.Month.*;
-     *  import static j86.j86.java.time.temporal.Adjusters.*;
+     *  import static j86.java.time.temporal.Adjusters.*;
      *
      *  result = localDate.with(JULY).with(lastDayOfMonth());
      * </pre>
@@ -1850,7 +1850,7 @@ public final class LocalDate
      * If all the dates being compared are instances of {@code LocalDate},
      * then the comparison will be entirely based on the date.
      * If some dates being compared are in different chronologies, then the
-     * chronology is also considered, see {@link j86.j86.java.time.chrono.ChronoLocalDate#compareTo}.
+     * chronology is also considered, see {@link j86.java.time.chrono.ChronoLocalDate#compareTo}.
      *
      * @param other  the other date to compare to, not null
      * @return the comparator value, negative if less, positive if greater

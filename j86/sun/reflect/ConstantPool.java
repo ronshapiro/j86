@@ -25,7 +25,7 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 /** Provides reflective access to the constant pools of classes.
     Currently this is needed to provide reflective access to annotations

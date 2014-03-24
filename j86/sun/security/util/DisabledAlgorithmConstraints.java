@@ -40,8 +40,8 @@ import j86.java.util.Collections;
 import j86.java.util.HashSet;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
-import j86.j86.java.util.regex.Pattern;
-import j86.j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
 
 /**
  * Algorithm constraints for disabled algorithms property

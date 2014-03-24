@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
-import j86.j86.java.beans.beancontext.BeanContextMembershipEvent;
+import j86.java.beans.beancontext.BeanContextMembershipEvent;
 
 import j86.java.util.EventListener;
 
@@ -37,7 +37,7 @@ import j86.java.util.EventListener;
  *
  * @author      Laurence P. G. Cable
  * @since       1.2
- * @see         j86.j86.java.beans.beancontext.BeanContext
+ * @see         j86.java.beans.beancontext.BeanContext
  */
 
 public interface BeanContextMembershipListener extends EventListener {

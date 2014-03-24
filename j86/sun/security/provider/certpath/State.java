@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertPathValidatorException;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertPathValidatorException;
 
 /**
  * A specification of a PKIX validation state

@@ -20,24 +20,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 public class DSAKeyValueResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(DSAKeyValueResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(DSAKeyValueResolver.class.getName());
 
 
     /**
@@ -76,8 +76,8 @@ public class DSAKeyValueResolver extends KeyResolverSpi {
 
             return pk;
         } catch (XMLSecurityException ex) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
             }
             //do nothing
         }

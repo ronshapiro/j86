@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.dgc;
+package j86.java.rmi.dgc;
 
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.ObjID;
 
 /**
  * The DGC abstraction is used for the server side of the distributed

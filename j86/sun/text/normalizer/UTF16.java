@@ -34,7 +34,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 /**
  * <p>Standalone utility class providing UTF16 character conversions and

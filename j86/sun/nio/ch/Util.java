@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.reflect.*;
 import j86.java.io.IOException;
 import j86.java.io.FileDescriptor;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.MappedByteBuffer;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.*;
@@ -395,7 +395,7 @@ public class Util {
             if (!j86.sun.misc.VM.isBooted())
                 return false;
             String value = AccessController.doPrivileged(
-                new GetPropertyAction("j86.j86.j86.sun.nio.ch.bugLevel"));
+                new GetPropertyAction("j86.sun.nio.ch.bugLevel"));
             bugLevel = (value != null) ? value : "";
         }
         return bugLevel.equals(bl);

@@ -24,17 +24,17 @@
  */
 package j86.com.sun.beans;
 
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.GenericArrayType;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.j86.java.lang.reflect.TypeVariable;
-import j86.j86.j86.java.lang.reflect.WildcardType;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.GenericArrayType;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.TypeVariable;
+import j86.java.lang.reflect.WildcardType;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 
-import j86.j86.sun.reflect.generics.reflectiveObjects.GenericArrayTypeImpl;
-import j86.j86.sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
+import j86.sun.reflect.generics.reflectiveObjects.GenericArrayTypeImpl;
+import j86.sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl;
 
 /**
  * This is utility class to resolve types.

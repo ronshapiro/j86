@@ -31,7 +31,7 @@ import j86.java.io.InputStream;
 import j86.jdk.internal.org.xml.sax.InputSource;
 import j86.jdk.internal.org.xml.sax.SAXException;
 import j86.jdk.internal.org.xml.sax.XMLReader;
-import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
 
 
 /**

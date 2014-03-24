@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 import j86.javax.management.MBeanServer; // for Javadoc
 

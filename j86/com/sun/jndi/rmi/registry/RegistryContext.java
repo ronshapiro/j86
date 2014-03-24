@@ -29,12 +29,12 @@ package j86.com.sun.jndi.rmi.registry;
 import j86.java.util.Hashtable;
 import j86.java.util.Properties;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.*;
-import j86.j86.java.rmi.registry.Registry;
-import j86.j86.java.rmi.registry.LocateRegistry;
+import j86.java.rmi.server.*;
+import j86.java.rmi.registry.Registry;
+import j86.java.rmi.registry.LocateRegistry;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.spi.NamingManager;
 
 
 /**

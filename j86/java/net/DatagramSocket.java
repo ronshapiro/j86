@@ -26,7 +26,7 @@
 package j86.java.net;
 
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.DatagramChannel;
+import j86.java.nio.channels.DatagramChannel;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedExceptionAction;
 
@@ -60,7 +60,7 @@ import j86.java.security.PrivilegedExceptionAction;
  *
  * @author  Pavani Diwanji
  * @see     j86.java.net.DatagramPacket
- * @see     j86.j86.java.nio.channels.DatagramChannel
+ * @see     j86.java.nio.channels.DatagramChannel
  * @since JDK1.0
  */
 public
@@ -617,7 +617,7 @@ class DatagramSocket implements j86.java.io.Closeable {
      * @exception  PortUnreachableException may be thrown if the socket is connected
      *             to a currently unreachable destination. Note, there is no
      *             guarantee that the exception will be thrown.
-     * @exception  j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @exception  j86.java.nio.channels.IllegalBlockingModeException
      *             if this socket has an associated channel,
      *             and the channel is in non-blocking mode.
      * @exception  IllegalArgumentException if the socket is connected,
@@ -695,7 +695,7 @@ class DatagramSocket implements j86.java.io.Closeable {
      * @exception  PortUnreachableException may be thrown if the socket is connected
      *             to a currently unreachable destination. Note, there is no guarantee that the
      *             exception will be thrown.
-     * @exception  j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @exception  j86.java.nio.channels.IllegalBlockingModeException
      *             if this socket has an associated channel,
      *             and the channel is in non-blocking mode.
      * @see        j86.java.net.DatagramPacket
@@ -1197,11 +1197,11 @@ class DatagramSocket implements j86.java.io.Closeable {
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.DatagramChannel} object
+     * Returns the unique {@link j86.java.nio.channels.DatagramChannel} object
      * associated with this datagram socket, if any.
      *
      * <p> A datagram socket will have a channel if, and only if, the channel
-     * itself was created via the {@link j86.j86.java.nio.channels.DatagramChannel#open
+     * itself was created via the {@link j86.java.nio.channels.DatagramChannel#open
      * DatagramChannel.open} method.
      *
      * @return  the datagram channel associated with this datagram socket,

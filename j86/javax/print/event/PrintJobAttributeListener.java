@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.event;
+package j86.javax.print.event;
 
 /**
   * Implementations of this interface are attached to a
@@ -36,7 +36,7 @@ public interface PrintJobAttributeListener {
     /**
      * Notifies the listener of a change in some print job attributes.
      * One example of an occurrence triggering this event is if the
-     * {@link j86.j86.j86.javax.print.attribute.standard.JobState JobState}
+     * {@link j86.javax.print.attribute.standard.JobState JobState}
      * attribute changed from
      * <code>PROCESSING</code> to <code>PROCESSING_STOPPED</code>.
      * @param pjae the event.

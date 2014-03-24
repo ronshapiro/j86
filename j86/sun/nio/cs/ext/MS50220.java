@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.nio.cs.ext;
+package j86.sun.nio.cs.ext;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
 
 public class MS50220 extends ISO2022_JP
 {

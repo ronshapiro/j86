@@ -24,9 +24,9 @@
  */
 
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
-import j86.j86.j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBuffer;
 import j86.sun.java2d.SurfaceData;
 import j86.java.awt.Rectangle;
 

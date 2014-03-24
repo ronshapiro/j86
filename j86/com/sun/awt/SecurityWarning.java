@@ -26,7 +26,7 @@
 package com.j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.geom.*;
+import j86.java.awt.geom.*;
 
 import j86.sun.awt.AWTAccessor;
 

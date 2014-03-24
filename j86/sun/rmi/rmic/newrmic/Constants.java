@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.rmi.rmic.newrmic;
+package j86.sun.rmi.rmic.newrmic;
 
 /**
  * Constants potentially useful to all rmic generators.

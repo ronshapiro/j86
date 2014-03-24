@@ -25,14 +25,14 @@
 
 package com.j86.sun.management;
 
-import j86.j86.java.lang.management.PlatformManagedObject;
+import j86.java.lang.management.PlatformManagedObject;
 import j86.javax.management.DynamicMBean;
 
 /**
  * Management interface for the diagnostic commands for the HotSpot Virtual Machine.
  *
  * <p>The {code DiagnosticCommandMBean} is registered to the
- * {@linkplain j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
+ * {@linkplain j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
  * platform MBeanServer} as are other platform MBeans.
  *
  * <p>The {@link j86.javax.management.ObjectName ObjectName} for uniquely identifying

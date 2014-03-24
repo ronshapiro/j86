@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.EnumSyntax;
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.EnumSyntax;
+import j86.javax.print.attribute.PrintRequestAttribute;
 
 /**
  * Class DialogTypeSelection is a printing attribute class, an enumeration,

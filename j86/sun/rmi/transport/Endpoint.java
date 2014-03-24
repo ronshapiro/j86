@@ -26,8 +26,8 @@ package j86.sun.rmi.transport;
 
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.Remote;
-import j86.j86.java.rmi.server.ObjID;
-import j86.j86.java.rmi.server.RemoteServer;
+import j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.RemoteServer;
 
 public interface Endpoint {
     /**

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.net.URL;
 import j86.java.io.IOException;
 import j86.java.net.Authenticator.RequestorType;
 import j86.java.util.Base64;
 import j86.java.util.HashMap;
-import j86.j86.sun.net.www.HeaderParser;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.KERBEROS;
+import j86.sun.net.www.HeaderParser;
+import static j86.sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
+import static j86.sun.net.www.protocol.http.AuthScheme.KERBEROS;
 
 /**
  * NegotiateAuthentication:

@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.*;
 import j86.java.util.BitSet;
 import j86.java.util.Vector;
 import j86.java.util.Arrays;
 import j86.javax.swing.SizeRequirements;
-import j86.j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.event.DocumentEvent;
 
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * HTML table view.
@@ -931,7 +931,7 @@ import j86.j86.javax.swing.text.*;
             } else if ((kind == HTML.Tag.TD) || (kind == HTML.Tag.TH)) {
                 return new CellView(elem);
             } else if (kind == HTML.Tag.CAPTION) {
-                return new j86.j86.j86.javax.swing.text.html.ParagraphView(elem);
+                return new j86.javax.swing.text.html.ParagraphView(elem);
             }
         }
         // default is to delegate to the normal factory

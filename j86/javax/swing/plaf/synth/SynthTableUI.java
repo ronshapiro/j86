@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -44,14 +44,14 @@ import j86.javax.swing.JComponent;
 import j86.javax.swing.JLabel;
 import j86.javax.swing.JTable;
 import j86.javax.swing.LookAndFeel;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicTableUI;
-import j86.j86.javax.swing.table.DefaultTableCellRenderer;
-import j86.j86.javax.swing.table.JTableHeader;
-import j86.j86.javax.swing.table.TableCellRenderer;
-import j86.j86.javax.swing.table.TableColumn;
-import j86.j86.javax.swing.table.TableColumnModel;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicTableUI;
+import j86.javax.swing.table.DefaultTableCellRenderer;
+import j86.javax.swing.table.JTableHeader;
+import j86.javax.swing.table.TableCellRenderer;
+import j86.javax.swing.table.TableColumn;
+import j86.javax.swing.table.TableColumnModel;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

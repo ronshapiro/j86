@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.EventRequest;
+import j86.com.sun.jdi.request.EventRequest;
 
 /**
  * An occurrence in a target VM that is of interest to a debugger. Event is

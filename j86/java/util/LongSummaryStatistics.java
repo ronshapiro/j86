@@ -24,16 +24,16 @@
  */
 package j86.java.util;
 
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.LongConsumer;
-import j86.j86.java.util.stream.Collector;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.LongConsumer;
+import j86.java.util.stream.Collector;
 
 /**
  * A state object for collecting statistics such as count, min, max, sum, and
  * average.
  *
  * <p>This class is designed to work with (though does not require)
- * {@linkplain j86.j86.java.util.stream streams}. For example, you can compute
+ * {@linkplain j86.java.util.stream streams}. For example, you can compute
  * summary statistics on a stream of longs with:
  * <pre> {@code
  * LongSummaryStatistics stats = longStream.collect(LongSummaryStatistics::new,
@@ -42,8 +42,8 @@ import j86.j86.java.util.stream.Collector;
  * }</pre>
  *
  * <p>{@code LongSummaryStatistics} can be used as a
- * {@linkplain j86.j86.java.util.stream.Stream#collect(Collector)} reduction}
- * target for a {@linkplain j86.j86.java.util.stream.Stream stream}. For example:
+ * {@linkplain j86.java.util.stream.Stream#collect(Collector)} reduction}
+ * target for a {@linkplain j86.java.util.stream.Stream stream}. For example:
  *
  * <pre> {@code
  * LongSummaryStatistics stats = people.stream()
@@ -54,9 +54,9 @@ import j86.j86.java.util.stream.Collector;
  * maximum, sum, and average of their ages.
  *
  * @implNote This implementation is not thread safe. However, it is safe to use
- * {@link j86.j86.java.util.stream.Collectors#summarizingLong(j86.java.util.function.ToLongFunction)
+ * {@link j86.java.util.stream.Collectors#summarizingLong(j86.java.util.function.ToLongFunction)
  * Collectors.toLongStatistics()} on a parallel stream, because the parallel
- * implementation of {@link j86.j86.java.util.stream.Stream#collect Stream.collect()}
+ * implementation of {@link j86.java.util.stream.Stream#collect Stream.collect()}
  * provides the necessary partitioning, isolation, and merging of results for
  * safe and efficient parallel execution.
  *

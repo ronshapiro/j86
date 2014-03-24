@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -32,7 +32,7 @@ import j86.java.util.Set;
 /**
  * Several {@link Event} objects may be created at a given time by
  * the target {@link VirtualMachine}. For example, there may be
- * more than one {@link j86.j86.com.sun.jdi.request.BreakpointRequest}
+ * more than one {@link j86.com.sun.jdi.request.BreakpointRequest}
  * for a given {@link Location}
  * or you might single step to the same location as a
  * BreakpointRequest.  These {@link Event} objects are delivered
@@ -137,7 +137,7 @@ public interface EventSet extends Mirror, Set<Event> {
      * policy which suspends the most threads.  The target VM
      * suspends threads according to that policy
      * and that policy is returned here. See
-     * {@link j86.j86.com.sun.jdi.request.EventRequest} for the possible
+     * {@link j86.com.sun.jdi.request.EventRequest} for the possible
      * policy values.
      * <p>
      * In rare cases, the suspend policy may differ from the requested
@@ -146,9 +146,9 @@ public interface EventSet extends Mirror, Set<Event> {
      * for details.
      *
      * @return the suspendPolicy which is either
-     * {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL},
-     * {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD SUSPEND_EVENT_THREAD} or
-     * {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE SUSPEND_NONE}.
+     * {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL},
+     * {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD SUSPEND_EVENT_THREAD} or
+     * {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE SUSPEND_NONE}.
      */
     int suspendPolicy();
 
@@ -159,11 +159,11 @@ public interface EventSet extends Mirror, Set<Event> {
 
     /**
      * Resumes threads suspended by this event set. If the {@link #suspendPolicy}
-     * is {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL}, a call
+     * is {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL}, a call
      * to this method is equivalent to
      * {@link j86.com.sun.jdi.VirtualMachine#resume}. If the
      * suspend policy is
-     * {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD},
+     * {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD},
      * a call to this method is equivalent to
      * {@link j86.com.sun.jdi.ThreadReference#resume} for the event thread.
      * Otherwise, a call to this method is a no-op.

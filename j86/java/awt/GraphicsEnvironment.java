@@ -26,7 +26,7 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.security.AccessController;
 import j86.java.util.Locale;
 

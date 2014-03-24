@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.util.AbstractList;
 import j86.java.util.ArrayList;
@@ -33,7 +33,7 @@ import j86.java.util.List;
 import j86.java.util.ListIterator;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Representation of constant pool entries and indexes.
@@ -692,9 +692,9 @@ class ConstantPool {
                 switch (classRefs[0].stringValue()) {
                 case "j86.java.lang/String":
                     return CONSTANT_String;
-                case "j86.j86.java.lang.invoke/MethodHandle":
+                case "j86.java.lang.invoke/MethodHandle":
                     return CONSTANT_MethodHandle;
-                case "j86.j86.java.lang.invoke/MethodType":
+                case "j86.java.lang.invoke/MethodType":
                     return CONSTANT_MethodType;
                 default:  // j86.java.lang/Object, etc.
                     return CONSTANT_LoadableValue;

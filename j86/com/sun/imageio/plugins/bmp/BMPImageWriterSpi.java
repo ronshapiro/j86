@@ -25,20 +25,20 @@
 
 package j86.com.sun.imageio.plugins.bmp;
 
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.SinglePixelPackedSampleModel;
 
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.spi.ServiceRegistry;
-import j86.j86.javax.imageio.spi.IIORegistry;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.spi.ServiceRegistry;
+import j86.javax.imageio.spi.IIORegistry;
+import j86.javax.imageio.stream.ImageOutputStream;
 import j86.javax.imageio.ImageWriter;
 import j86.javax.imageio.ImageTypeSpecifier;
 import j86.javax.imageio.IIOException;
 import j86.java.util.Locale;
 
-import j86.j86.javax.imageio.plugins.bmp.BMPImageWriteParam;
+import j86.javax.imageio.plugins.bmp.BMPImageWriteParam;
 
 public class BMPImageWriterSpi extends ImageWriterSpi {
     private static String [] readerSpiNames =

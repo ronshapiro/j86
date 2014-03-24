@@ -207,7 +207,7 @@ public class InvalidityDateExtension extends Extension
         return NAME;
     }
 
-    public static InvalidityDateExtension toImpl(j86.j86.java.security.cert.Extension ext)
+    public static InvalidityDateExtension toImpl(j86.java.security.cert.Extension ext)
         throws IOException {
         if (ext instanceof InvalidityDateExtension) {
             return (InvalidityDateExtension) ext;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.awt.Component;
 import j86.java.awt.Cursor;
@@ -32,17 +32,17 @@ import j86.java.awt.HeadlessException;
 import j86.java.awt.Image;
 import j86.java.awt.Point;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.datatransfer.FlavorMap;
-import j86.j86.java.awt.datatransfer.SystemFlavorMap;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.datatransfer.FlavorMap;
+import j86.java.awt.datatransfer.SystemFlavorMap;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.Serializable;
 import j86.java.security.AccessController;
 import j86.java.util.EventListener;
-import j86.j86.sun.awt.dnd.SunDragSourceContextPeer;
+import j86.sun.awt.dnd.SunDragSourceContextPeer;
 import j86.sun.security.action.GetIntegerAction;
 
 
@@ -97,7 +97,7 @@ import j86.sun.security.action.GetIntegerAction;
  * If the Drag and Drop System is
  * unable to initiate a drag operation for
  * some reason, the startDrag() method throws
- * a <code>j86.j86.java.awt.dnd.InvalidDnDOperationException</code>
+ * a <code>j86.java.awt.dnd.InvalidDnDOperationException</code>
  * to signal such a condition. Typically this
  * exception is thrown when the underlying platform
  * system is either not in a state to
@@ -283,7 +283,7 @@ public class DragSource implements Serializable {
      * @param dsl            the <code>DragSourceListener</code>
      * @param flavorMap      the <code>FlavorMap</code> to use, or <code>null</code>
      * <P>
-     * @throws j86.j86.java.awt.dnd.InvalidDnDOperationException
+     * @throws j86.java.awt.dnd.InvalidDnDOperationException
      *    if the Drag and Drop
      *    system is unable to initiate a drag operation, or if the user
      *    attempts to start a drag while an existing drag operation
@@ -343,7 +343,7 @@ public class DragSource implements Serializable {
      * @param dsl            the <code>DragSourceListener</code>
      * @param flavorMap      the <code>FlavorMap</code> to use or <code>null</code>
      * <P>
-     * @throws j86.j86.java.awt.dnd.InvalidDnDOperationException
+     * @throws j86.java.awt.dnd.InvalidDnDOperationException
      *    if the Drag and Drop
      *    system is unable to initiate a drag operation, or if the user
      *    attempts to start a drag while an existing drag operation
@@ -380,7 +380,7 @@ public class DragSource implements Serializable {
      * @param transferable      the subject data of the drag
      * @param dsl               the <code>DragSourceListener</code>
      * <P>
-     * @throws j86.j86.java.awt.dnd.InvalidDnDOperationException
+     * @throws j86.java.awt.dnd.InvalidDnDOperationException
      *    if the Drag and Drop
      *    system is unable to initiate a drag operation, or if the user
      *    attempts to start a drag while an existing drag operation
@@ -412,7 +412,7 @@ public class DragSource implements Serializable {
      * @param transferable      the subject data of the drag
      * @param dsl               the <code>DragSourceListener</code>
      * <P>
-     * @throws j86.j86.java.awt.dnd.InvalidDnDOperationException
+     * @throws j86.java.awt.dnd.InvalidDnDOperationException
      *    if the Drag and Drop
      *    system is unable to initiate a drag operation, or if the user
      *    attempts to start a drag while an existing drag operation
@@ -847,7 +847,7 @@ public class DragSource implements Serializable {
      * <li>Otherwise, the key/value pair is skipped.
      * </ul>
      *
-     * @see j86.j86.java.awt.datatransfer.SystemFlavorMap#getDefaultFlavorMap
+     * @see j86.java.awt.datatransfer.SystemFlavorMap#getDefaultFlavorMap
      * @since 1.4
      */
     private void readObject(ObjectInputStream s)

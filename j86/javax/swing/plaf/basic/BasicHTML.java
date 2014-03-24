@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.io.*;
 import j86.java.awt.*;
 import j86.java.net.URL;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.j86.javax.swing.text.html.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.text.html.*;
 
 import j86.sun.swing.SwingUtilities2;
 
 /**
  * Support for providing html views for the swing components.
- * This translates a simple html string to a j86.j86.javax.swing.text.View
+ * This translates a simple html string to a j86.javax.swing.text.View
  * implementation that can render the html and provide the necessary
  * layout semantics.
  *
@@ -140,7 +140,7 @@ public class BasicHTML {
             return -1;
         }
         View child = view.getView(index);
-        if (view instanceof j86.j86.javax.swing.text.ParagraphView) {
+        if (view instanceof j86.javax.swing.text.ParagraphView) {
             Rectangle rect;
             if (bounds instanceof Rectangle) {
                 rect = (Rectangle)bounds;
@@ -155,7 +155,7 @@ public class BasicHTML {
     }
 
     private static boolean hasParagraph(View view) {
-        if (view instanceof j86.j86.javax.swing.text.ParagraphView) {
+        if (view instanceof j86.javax.swing.text.ParagraphView) {
             return true;
         }
         if (view.getViewCount() == 0) {

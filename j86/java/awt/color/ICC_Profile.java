@@ -34,15 +34,15 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.java.awt.color;
+package j86.java.awt.color;
 
-import j86.j86.sun.java2d.cmm.PCMM;
-import j86.j86.sun.java2d.cmm.CMSManager;
-import j86.j86.sun.java2d.cmm.Profile;
-import j86.j86.sun.java2d.cmm.ProfileDataVerifier;
-import j86.j86.sun.java2d.cmm.ProfileDeferralMgr;
-import j86.j86.sun.java2d.cmm.ProfileDeferralInfo;
-import j86.j86.sun.java2d.cmm.ProfileActivator;
+import j86.sun.java2d.cmm.PCMM;
+import j86.sun.java2d.cmm.CMSManager;
+import j86.sun.java2d.cmm.Profile;
+import j86.sun.java2d.cmm.ProfileDataVerifier;
+import j86.sun.java2d.cmm.ProfileDeferralMgr;
+import j86.sun.java2d.cmm.ProfileDeferralInfo;
+import j86.sun.java2d.cmm.ProfileActivator;
 
 import j86.java.io.File;
 import j86.java.io.FileInputStream;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.security.*;
 
@@ -269,7 +269,7 @@ public class SSLContext {
      * <P>
      * Only the first instance of a particular key and/or trust manager
      * implementation type in the array is used.  (For example, only
-     * the first j86.j86.javax.net.ssl.X509KeyManager in the array will be used.)
+     * the first j86.javax.net.ssl.X509KeyManager in the array will be used.)
      *
      * @param km the sources of authentication keys or null
      * @param tm the sources of peer authentication trust decisions or null

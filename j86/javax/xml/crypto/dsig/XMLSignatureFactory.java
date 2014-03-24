@@ -25,19 +25,19 @@
 /*
  * $Id: XMLSignatureFactory.java,v 1.14 2005/09/15 14:29:01 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.Data;
 import j86.javax.xml.crypto.MarshalException;
 import j86.javax.xml.crypto.NoSuchMechanismException;
 import j86.javax.xml.crypto.URIDereferencer;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.javax.xml.crypto.dom.DOMStructure;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.*;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMSignContext;
+import j86.javax.xml.crypto.dom.DOMStructure;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
+import j86.javax.xml.crypto.dsig.spec.*;
+import j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
+import j86.javax.xml.crypto.dsig.dom.DOMSignContext;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.NoSuchAlgorithmException;

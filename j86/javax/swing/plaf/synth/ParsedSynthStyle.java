@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Graphics;
 import j86.java.util.LinkedList;
 
-import j86.j86.j86.sun.swing.plaf.synth.DefaultSynthStyle;
+import j86.sun.swing.plaf.synth.DefaultSynthStyle;
 
 /**
  * ParsedSynthStyle are the SynthStyle's that SynthParser creates.

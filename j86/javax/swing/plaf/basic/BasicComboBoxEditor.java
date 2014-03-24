@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.ComboBoxEditor;
 import j86.javax.swing.JTextField;
-import j86.j86.javax.swing.border.Border;
+import j86.javax.swing.border.Border;
 import j86.java.awt.Component;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 /**
  * The default editor for editable combo boxes. The editor is implemented as a JTextField.
@@ -165,6 +165,6 @@ public class BasicComboBoxEditor implements ComboBoxEditor,FocusListener {
      * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends BasicComboBoxEditor
-    implements j86.j86.javax.swing.plaf.UIResource {
+    implements j86.javax.swing.plaf.UIResource {
     }
 }

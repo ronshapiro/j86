@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.awt.AppContext;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * MetalButtonUI implementation
@@ -122,8 +122,8 @@ public class MetalButtonUI extends BasicButtonUI {
      * @param c JComponent painting on
      * @throws NullPointerException if <code>g</code> or <code>c</code> is
      *         null
-     * @see j86.j86.javax.swing.plaf.ComponentUI#update
-     * @see j86.j86.javax.swing.plaf.ComponentUI#paint
+     * @see j86.javax.swing.plaf.ComponentUI#update
+     * @see j86.javax.swing.plaf.ComponentUI#paint
      * @since 1.5
      */
     public void update(Graphics g, JComponent c) {

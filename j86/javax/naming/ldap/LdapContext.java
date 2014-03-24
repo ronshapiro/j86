@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.naming.ldap;
+package j86.javax.naming.ldap;
 
 import j86.javax.naming.NamingException;
-import j86.j86.javax.naming.directory.DirContext;
+import j86.javax.naming.directory.DirContext;
 import j86.java.util.Hashtable;
 
 /**
@@ -35,7 +35,7 @@ import j86.java.util.Hashtable;
  * extended operations.
  *
  * For applications that do not require such controls or extended
- * operations, the more generic <tt>j86.j86.javax.naming.directory.DirContext</tt>
+ * operations, the more generic <tt>j86.javax.naming.directory.DirContext</tt>
  * should be used instead.
  *
  * <h3>Usage Details About Controls</h3>
@@ -168,7 +168,7 @@ import j86.java.util.Hashtable;
  * @author Vincent Ryan
  *
  * @see InitialLdapContext
- * @see LdapReferralException#getReferralContext(j86.java.util.Hashtable,j86.j86.javax.naming.ldap.Control[])
+ * @see LdapReferralException#getReferralContext(j86.java.util.Hashtable,j86.javax.naming.ldap.Control[])
  * @since 1.3
  */
 

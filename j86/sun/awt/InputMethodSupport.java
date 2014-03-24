@@ -27,9 +27,9 @@ package j86.sun.awt;
 
 import j86.java.awt.AWTException;
 import j86.java.awt.Window;
-import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.awt.im.spi.InputMethodDescriptor;
 import j86.java.util.Locale;
-import j86.j86.sun.awt.im.InputContext;
+import j86.sun.awt.im.InputContext;
 
 /**
  * Input method support for toolkits

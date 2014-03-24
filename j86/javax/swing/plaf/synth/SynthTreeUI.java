@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -38,16 +38,16 @@ import j86.javax.swing.JComponent;
 import j86.javax.swing.JTextField;
 import j86.javax.swing.JTree;
 import j86.javax.swing.LookAndFeel;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.j86.javax.swing.plaf.basic.BasicTreeUI;
-import j86.j86.javax.swing.tree.DefaultTreeCellEditor;
-import j86.j86.javax.swing.tree.DefaultTreeCellRenderer;
-import j86.j86.javax.swing.tree.TreeCellEditor;
-import j86.j86.javax.swing.tree.TreeCellRenderer;
-import j86.j86.javax.swing.tree.TreeModel;
-import j86.j86.javax.swing.tree.TreePath;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.basic.BasicTreeUI;
+import j86.javax.swing.tree.DefaultTreeCellEditor;
+import j86.javax.swing.tree.DefaultTreeCellRenderer;
+import j86.javax.swing.tree.TreeCellEditor;
+import j86.javax.swing.tree.TreeCellRenderer;
+import j86.javax.swing.tree.TreeModel;
+import j86.javax.swing.tree.TreePath;
+import j86.sun.swing.plaf.synth.SynthIcon;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

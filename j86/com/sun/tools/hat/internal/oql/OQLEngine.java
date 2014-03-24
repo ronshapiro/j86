@@ -30,11 +30,11 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.oql;
+package j86.com.sun.tools.hat.internal.oql;
 
-import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.com.sun.tools.hat.internal.model.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.*;
 
 /**

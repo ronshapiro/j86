@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.awt.Component;
 
@@ -37,8 +37,8 @@ import j86.java.awt.Component;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see j86.j86.java.beans.beancontext.BeanContext
- * @see j86.j86.java.beans.beancontext.BeanContextSupport
+ * @see j86.java.beans.beancontext.BeanContext
+ * @see j86.java.beans.beancontext.BeanContextSupport
  */
 
 public interface BeanContextChildComponentProxy {

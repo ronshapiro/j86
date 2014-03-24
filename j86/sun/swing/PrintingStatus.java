@@ -26,16 +26,16 @@ package j86.sun.swing;
 
 import j86.javax.swing.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterJob;
 import j86.java.text.MessageFormat;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.lang.reflect.InvocationTargetException;
 
 /**
  * The {@code PrintingStatus} provides a dialog that displays progress

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.rmi.*;
 
@@ -34,7 +34,7 @@ import j86.java.rmi.*;
  *
  * @author  Ann Wollrath
  * @since   JDK1.1
- * @see     j86.j86.java.rmi.server.RemoteStub
+ * @see     j86.java.rmi.server.RemoteStub
  */
 public interface RemoteRef extends j86.java.io.Externalizable {
 
@@ -72,7 +72,7 @@ public interface RemoteRef extends j86.java.io.Externalizable {
      * @since 1.2
      */
     Object invoke(Remote obj,
-                  j86.j86.j86.java.lang.reflect.Method method,
+                  j86.java.lang.reflect.Method method,
                   Object[] params,
                   long opnum)
         throws Exception;
@@ -99,7 +99,7 @@ public interface RemoteRef extends j86.java.io.Externalizable {
      * @param hash stub/skeleton interface hash
      * @return call object representing remote call
      * @throws RemoteException if failed to initiate new remote call
-     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     RemoteCall newCall(RemoteObject obj, Operation[] op, int opnum, long hash)
@@ -125,7 +125,7 @@ public interface RemoteRef extends j86.java.io.Externalizable {
      *
      * @param call object representing remote call
      * @throws Exception if any exception occurs during remote method
-     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     void invoke(RemoteCall call) throws Exception;
@@ -146,7 +146,7 @@ public interface RemoteRef extends j86.java.io.Externalizable {
      *
      * @param call object representing remote call
      * @throws RemoteException if remote error occurs during call cleanup
-     * @see #invoke(Remote,j86.j86.j86.java.lang.reflect.Method,Object[],long)
+     * @see #invoke(Remote,j86.java.lang.reflect.Method,Object[],long)
      */
     @Deprecated
     void done(RemoteCall call) throws RemoteException;

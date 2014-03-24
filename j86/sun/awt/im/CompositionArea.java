@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTEvent;
 import j86.java.awt.Color;
@@ -34,19 +34,19 @@ import j86.java.awt.Graphics2D;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.InputMethodEvent;
-import j86.j86.java.awt.event.InputMethodListener;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.TextHitInfo;
-import j86.j86.java.awt.font.TextLayout;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.event.InputMethodEvent;
+import j86.java.awt.event.InputMethodListener;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.TextHitInfo;
+import j86.java.awt.font.TextLayout;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.im.InputMethodRequests;
 import j86.java.text.AttributedCharacterIterator;
 import j86.javax.swing.JFrame;
 import j86.javax.swing.JPanel;
-import j86.j86.javax.swing.border.LineBorder;
+import j86.javax.swing.border.LineBorder;
 
 /**
  * A composition area is used to display text that's being composed

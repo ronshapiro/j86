@@ -34,11 +34,11 @@ import j86.java.awt.Graphics;
 import j86.java.awt.Insets;
 import j86.java.awt.LayoutManager;
 import j86.java.awt.LayoutManager2;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.io.Serializable;

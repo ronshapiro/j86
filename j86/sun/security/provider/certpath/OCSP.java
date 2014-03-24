@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
@@ -30,19 +30,19 @@ import j86.java.io.OutputStream;
 import j86.java.net.URI;
 import j86.java.net.URL;
 import j86.java.net.HttpURLConnection;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertPathValidatorException;
-import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
-import j86.j86.java.security.cert.CRLReason;
-import j86.j86.java.security.cert.Extension;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertPathValidatorException;
+import j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.java.security.cert.CRLReason;
+import j86.java.security.cert.Extension;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.Date;
 import j86.java.util.List;
 import j86.java.util.Map;
 
-import static j86.j86.sun.security.provider.certpath.OCSPResponse.*;
+import static j86.sun.security.provider.certpath.OCSPResponse.*;
 import j86.sun.security.action.GetIntegerAction;
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.ObjectIdentifier;

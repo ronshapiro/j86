@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.Calendar;
 import j86.java.util.Locale;
@@ -157,7 +157,7 @@ import j86.java.util.Map;
  * </table>
  *
  * <p>Calendar field value names for {@code "gregory"} must be consistent with
- * the date-time symbols provided by {@link j86.j86.java.text.spi.DateFormatSymbolsProvider}.
+ * the date-time symbols provided by {@link j86.java.text.spi.DateFormatSymbolsProvider}.
  *
  * <p>Time zone names are supported by {@link TimeZoneNameProvider}.
  *

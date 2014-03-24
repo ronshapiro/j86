@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.io.InputStream;
 import j86.java.util.Collection;
@@ -52,8 +52,8 @@ import j86.sun.security.jca.GetInstance.Instance;
  * validate it with a {@code CertPathValidator}.
  *
  * <p>A certificate factory for X.509 must return certificates that are an
- * instance of {@code j86.j86.java.security.cert.X509Certificate}, and CRLs
- * that are an instance of {@code j86.j86.java.security.cert.X509CRL}.
+ * instance of {@code j86.java.security.cert.X509Certificate}, and CRLs
+ * that are an instance of {@code j86.java.security.cert.X509CRL}.
  *
  * <p>The following example reads a file with Base64 encoded certificates,
  * which are each bounded at the beginning by -----BEGIN CERTIFICATE-----, and
@@ -452,7 +452,7 @@ public class CertificateFactory {
      * @param inStream the input stream with the certificates.
      *
      * @return a (possibly empty) collection view of
-     * j86.j86.java.security.cert.Certificate objects
+     * j86.java.security.cert.Certificate objects
      * initialized with the data from the input stream.
      *
      * @exception CertificateException on parsing errors.
@@ -525,7 +525,7 @@ public class CertificateFactory {
      * @param inStream the input stream with the CRLs.
      *
      * @return a (possibly empty) collection view of
-     * j86.j86.java.security.cert.CRL objects initialized with the data from the input
+     * j86.java.security.cert.CRL objects initialized with the data from the input
      * stream.
      *
      * @exception CRLException on parsing errors.

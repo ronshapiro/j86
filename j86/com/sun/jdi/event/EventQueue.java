@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -35,10 +35,10 @@ import j86.com.sun.jdi.*;
  * {@link j86.com.sun.jdi.VirtualMachine VirtualMachine}.
  * <P>
  * Some events cause the suspension of the target VM - event requests
- * ({@link j86.j86.com.sun.jdi.request}) with a
- * {@link j86.j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
- * of {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL}
- * or {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD
+ * ({@link j86.com.sun.jdi.request}) with a
+ * {@link j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
+ * of {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL}
+ * or {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_EVENT_THREAD
  * SUSPEND_EVENT_THREAD} and sometimes
  * {@link VMStartEvent}.
  * If these suspensions are not resumed the target VM will hang.
@@ -68,7 +68,7 @@ public interface EventQueue extends Mirror {
      * this thread.
      * @throws j86.com.sun.jdi.VMDisconnectedException if the connection
      * to the target VM is no longer available.  Note this will always
-     * be preceded by a {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent}.
+     * be preceded by a {@link j86.com.sun.jdi.event.VMDisconnectEvent}.
      */
     EventSet remove() throws InterruptedException;
 
@@ -81,7 +81,7 @@ public interface EventQueue extends Mirror {
      * this thread.
      * @throws j86.com.sun.jdi.VMDisconnectedException if the connection
      * to the target VM is no longer available.  Note this will always
-     * be preceded by a {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent}.
+     * be preceded by a {@link j86.com.sun.jdi.event.VMDisconnectEvent}.
      * @throws IllegalArgumentException if the timeout argument
      * contains an illegal value.
      */

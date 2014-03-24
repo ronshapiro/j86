@@ -25,12 +25,12 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
-import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.ComponentPeer;
 
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.InvocationTargetException;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -38,12 +38,12 @@ import j86.java.security.PrivilegedAction;
 import j86.java.util.EmptyStackException;
 
 import j86.sun.awt.*;
-import j86.j86.sun.awt.dnd.SunDropTargetEvent;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.awt.dnd.SunDropTargetEvent;
+import j86.sun.util.logging.PlatformLogger;
 
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.Lock;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.Lock;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 
 import j86.java.security.AccessControlContext;
 
@@ -182,7 +182,7 @@ public class EventQueue {
 
     private FwDispatcher fwDispatcher;
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.EventQueue");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.java.awt.event.EventQueue");
 
     static {
         AWTAccessor.setEventQueueAccessor(
@@ -781,9 +781,9 @@ public class EventQueue {
      *         dispatched, or <code>System.currentTimeMillis()</code> if this
      *         method is invoked on a thread other than an event dispatching
      *         thread
-     * @see j86.j86.java.awt.event.InputEvent#getWhen
-     * @see j86.j86.java.awt.event.ActionEvent#getWhen
-     * @see j86.j86.java.awt.event.InvocationEvent#getWhen
+     * @see j86.java.awt.event.InputEvent#getWhen
+     * @see j86.java.awt.event.ActionEvent#getWhen
+     * @see j86.java.awt.event.InvocationEvent#getWhen
      * @see #isDispatchThread
      *
      * @since 1.4

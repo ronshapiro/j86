@@ -26,7 +26,7 @@
 package j86.java.lang;
 
 import j86.java.io.*;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.TimeUnit;
 
 /**
  * The {@link ProcessBuilder#start()} and

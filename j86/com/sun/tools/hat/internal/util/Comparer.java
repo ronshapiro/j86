@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.util;
+package j86.com.sun.tools.hat.internal.util;
 
 /**
  * Base class for comparison of two objects.

@@ -34,12 +34,12 @@ import j86.java.io.InputStreamReader;
 import j86.java.io.OutputStream;
 import j86.java.math.BigInteger;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.java.security.cert.Certificate;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.misc.HexDumpEncoder;
 import j86.java.util.Base64;
@@ -497,7 +497,7 @@ public class X509CertImpl extends X509Certificate implements DerEncoder {
      /**
      * This static method is the default implementation of the
      * verify(PublicKey key, Provider sigProvider) method in X509Certificate.
-     * Called from j86.j86.java.security.cert.X509Certificate.verify(PublicKey key,
+     * Called from j86.java.security.cert.X509Certificate.verify(PublicKey key,
      * Provider sigProvider)
      */
     public static void verify(X509Certificate cert, PublicKey key,
@@ -812,7 +812,7 @@ public class X509CertImpl extends X509Certificate implements DerEncoder {
         return sb.toString();
     }
 
-    // the strongly typed gets, as per j86.j86.java.security.cert.X509Certificate
+    // the strongly typed gets, as per j86.java.security.cert.X509Certificate
 
     /**
      * Gets the publickey from this certificate.
@@ -1845,7 +1845,7 @@ public class X509CertImpl extends X509Certificate implements DerEncoder {
 
     /**
      * Extract the subject X500Principal from an X509Certificate.
-     * Called from j86.j86.java.security.cert.X509Certificate.getSubjectX500Principal().
+     * Called from j86.java.security.cert.X509Certificate.getSubjectX500Principal().
      */
     public static X500Principal getSubjectX500Principal(X509Certificate cert) {
         try {
@@ -1857,7 +1857,7 @@ public class X509CertImpl extends X509Certificate implements DerEncoder {
 
     /**
      * Extract the issuer X500Principal from an X509Certificate.
-     * Called from j86.j86.java.security.cert.X509Certificate.getIssuerX500Principal().
+     * Called from j86.java.security.cert.X509Certificate.getIssuerX500Principal().
      */
     public static X500Principal getIssuerX500Principal(X509Certificate cert) {
         try {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.awt.Component;
 import j86.java.awt.Container;
@@ -61,7 +61,7 @@ import j86.java.util.Map;
 
 /**
  * This helper class provides a utility implementation of the
- * j86.j86.java.beans.beancontext.BeanContext interface.
+ * j86.java.beans.beancontext.BeanContext interface.
  * <p>
  * Since this class directly implements the BeanContext interface, the class
  * can, and is intended to be used either by subclassing this implementation,
@@ -392,7 +392,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
 
 
             // The specification requires that we invoke setBeanContext() on the
-            // newly added child if it implements the j86.j86.java.beans.beancontext.BeanContextChild interface
+            // newly added child if it implements the j86.java.beans.beancontext.BeanContextChild interface
 
             BeanContextChild cbcc  = getChildBeanContextChild(targetChild);
             BeanContextChild  bccp = null;
@@ -508,7 +508,7 @@ public class      BeanContextSupport extends BeanContextChildSupport
             Object   peer  = null;
 
             // we are required to notify the child that it is no longer nested here if
-            // it implements j86.j86.java.beans.beancontext.BeanContextChild
+            // it implements j86.java.beans.beancontext.BeanContextChild
 
             synchronized(targetChild) {
                 if (callChildSetBC) {

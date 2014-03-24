@@ -33,22 +33,22 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.io.ObjectStreamField;
 import j86.java.net.NetworkInterface;
 import j86.java.util.Enumeration;
 import j86.java.util.Random;
 import j86.java.util.Spliterator;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.LongConsumer;
-import j86.j86.java.util.stream.DoubleStream;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.LongStream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.LongConsumer;
+import j86.java.util.stream.DoubleStream;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.LongStream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * A random number generator isolated to the current thread.  Like the

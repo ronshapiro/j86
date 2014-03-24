@@ -25,7 +25,7 @@
 
 package j86.sun.misc;
 
-import j86.j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarFile;
 import j86.java.io.Console;
 import j86.java.io.FileDescriptor;
 import j86.java.security.ProtectionDomain;
@@ -155,7 +155,7 @@ public class SharedSecrets {
 
     public static JavaUtilZipFileAccess getJavaUtilZipFileAccess() {
         if (javaUtilZipFileAccess == null)
-            unsafe.ensureClassInitialized(j86.j86.java.util.zip.ZipFile.class);
+            unsafe.ensureClassInitialized(j86.java.util.zip.ZipFile.class);
         return javaUtilZipFileAccess;
     }
 

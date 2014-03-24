@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 
 
@@ -67,7 +67,7 @@ public abstract class SnmpMibNode implements Serializable {
      * @param id Id we start from looking for the next.
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The next id in this group.
@@ -90,7 +90,7 @@ public abstract class SnmpMibNode implements Serializable {
      * @param id Id we start from looking for the next.
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      * @param pduVersion Protocol version of the original request PDU.
      *
@@ -122,7 +122,7 @@ public abstract class SnmpMibNode implements Serializable {
      * @param id Id we start from looking for the next.
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      * @param pduVersion Protocol version of the original request PDU.
      *

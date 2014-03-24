@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.beans.editors;
+package j86.com.sun.beans.editors;
 
 /**
  * Property editor for a java builtin "short" type.

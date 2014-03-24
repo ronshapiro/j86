@@ -26,16 +26,16 @@
 /*
  * $Id: DOMKeyValue.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyValue;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyValue;
 
 // import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.java.security.AccessController;
 import j86.java.security.KeyException;
 import j86.java.security.KeyFactory;
@@ -43,24 +43,24 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.interfaces.DSAParams;
-import j86.j86.java.security.interfaces.DSAPublicKey;
-import j86.j86.java.security.interfaces.ECPublicKey;
-import j86.j86.java.security.interfaces.RSAPublicKey;
-import j86.j86.java.security.spec.DSAPublicKeySpec;
-import j86.j86.java.security.spec.ECParameterSpec;
-import j86.j86.java.security.spec.ECPoint;
-import j86.j86.java.security.spec.ECPublicKeySpec;
-import j86.j86.java.security.spec.EllipticCurve;
-import j86.j86.java.security.spec.InvalidKeySpecException;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.RSAPublicKeySpec;
+import j86.java.security.interfaces.DSAParams;
+import j86.java.security.interfaces.DSAPublicKey;
+import j86.java.security.interfaces.ECPublicKey;
+import j86.java.security.interfaces.RSAPublicKey;
+import j86.java.security.spec.DSAPublicKeySpec;
+import j86.java.security.spec.ECParameterSpec;
+import j86.java.security.spec.ECPoint;
+import j86.java.security.spec.ECPublicKeySpec;
+import j86.java.security.spec.EllipticCurve;
+import j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.RSAPublicKeySpec;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * DOM-based implementation of KeyValue.
@@ -485,12 +485,12 @@ public abstract class DOMKeyValue extends DOMStructure implements KeyValue {
     }
 
     static final class Unknown extends DOMKeyValue {
-        private j86.j86.javax.xml.crypto.dom.DOMStructure externalPublicKey;
+        private j86.javax.xml.crypto.dom.DOMStructure externalPublicKey;
         Unknown(Element elem) throws MarshalException {
             super(elem);
         }
         PublicKey unmarshalKeyValue(Element kvElem) throws MarshalException {
-            externalPublicKey = new j86.j86.javax.xml.crypto.dom.DOMStructure(kvElem);
+            externalPublicKey = new j86.javax.xml.crypto.dom.DOMStructure(kvElem);
             return null;
         }
         void marshalPublicKey(Node parent, Document doc, String dsPrefix,

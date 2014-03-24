@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import static j86.jdk.internal.org.objectweb.asm.Opcodes.*;
-import static j86.j86.java.lang.invoke.LambdaForm.basicTypes;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.REF_invokeStatic;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.LambdaForm.basicTypes;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.REF_invokeStatic;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
 
-import j86.j86.java.lang.invoke.LambdaForm.Name;
-import j86.j86.java.lang.invoke.LambdaForm.NamedFunction;
-import j86.j86.java.lang.invoke.MethodHandles.Lookup;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.invoke.LambdaForm.Name;
+import j86.java.lang.invoke.LambdaForm.NamedFunction;
+import j86.java.lang.invoke.MethodHandles.Lookup;
+import j86.java.lang.reflect.Field;
 import j86.java.util.Arrays;
 import j86.java.util.HashMap;
 
-import j86.j86.sun.invoke.util.ValueConversions;
-import j86.j86.sun.invoke.util.Wrapper;
+import j86.sun.invoke.util.ValueConversions;
+import j86.sun.invoke.util.Wrapper;
 
 import j86.jdk.internal.org.objectweb.asm.ClassWriter;
 import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
@@ -502,11 +502,11 @@ import j86.jdk.internal.org.objectweb.asm.Type;
         static final String JLO_SIG  = "Lj86.java.lang/Object;";
         static final String JLS_SIG  = "Lj86.java.lang/String;";
         static final String JLC_SIG  = "Lj86.java.lang/Class;";
-        static final String MH       = "j86.j86.java.lang.invoke/MethodHandle";
+        static final String MH       = "j86.java.lang.invoke/MethodHandle";
         static final String MH_SIG   = "L"+MH+";";
-        static final String BMH      = "j86.j86.java.lang.invoke/BoundMethodHandle";
+        static final String BMH      = "j86.java.lang.invoke/BoundMethodHandle";
         static final String BMH_SIG  = "L"+BMH+";";
-        static final String SPECIES_DATA     = "j86.j86.java.lang.invoke/BoundMethodHandle$SpeciesData";
+        static final String SPECIES_DATA     = "j86.java.lang.invoke/BoundMethodHandle$SpeciesData";
         static final String SPECIES_DATA_SIG = "L"+SPECIES_DATA+";";
 
         static final String SPECIES_PREFIX_NAME = "Species_";
@@ -517,7 +517,7 @@ import j86.jdk.internal.org.objectweb.asm.Type;
         static final String MYSPECIES_DATA_SIG = "()" + SPECIES_DATA_SIG;
         static final String VOID_SIG   = "()V";
 
-        static final String SIG_INCIPIT = "(Lj86.j86.java.lang.invoke/MethodType;Ljava/lang/invoke/LambdaForm;";
+        static final String SIG_INCIPIT = "(Lj86.java.lang.invoke/MethodType;Ljava/lang/invoke/LambdaForm;";
 
         static final Class<?>[] TYPES = new Class<?>[] { Object.class, int.class, long.class, float.class, double.class };
 

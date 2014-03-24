@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -150,7 +150,7 @@ public class CompositeDataSupport
      * Constructs a <tt>CompositeDataSupport</tt> instance with the specified <tt>compositeType</tt>, whose item names and corresponding values
      * are given by the mappings in the map <tt>items</tt>.
      * This constructor converts the keys to a string array and the values to an object array and calls
-     * <tt>CompositeDataSupport(j86.j86.javax.management.openmbean.CompositeType, j86.java.lang.String[], java.lang.Object[])</tt>.
+     * <tt>CompositeDataSupport(j86.javax.management.openmbean.CompositeType, j86.java.lang.String[], java.lang.Object[])</tt>.
      *
      * @param  compositeType  the <i>composite type </i> of this <i>composite data</i> instance;
      *                        must not be null.
@@ -453,7 +453,7 @@ public class CompositeDataSupport
     /**
      * Returns a string representation of this <code>CompositeDataSupport</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.CompositeDataSupport</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.CompositeDataSupport</code>),
      * the string representation of the composite type of this instance, and the string representation of the contents
      * (ie list the itemName=itemValue mappings).
      *

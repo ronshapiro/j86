@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
-import j86.j86.j86.java.nio.file.attribute.*;
-import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.java.nio.file.attribute.*;
+import j86.java.nio.file.spi.FileSystemProvider;
 import j86.java.util.Set;
 import j86.java.io.Closeable;
 import j86.java.io.IOException;
@@ -120,7 +120,7 @@ public abstract class FileSystem
      * file system is already closed then invoking this method has no effect.
      *
      * <p> Closing a file system will close all open {@link
-     * j86.j86.java.nio.channels.Channel channels}, {@link DirectoryStream directory-streams},
+     * j86.java.nio.channels.Channel channels}, {@link DirectoryStream directory-streams},
      * {@link WatchService watch-service}, and other closeable objects associated
      * with this file system. The {@link FileSystems#getDefault default} file
      * system cannot be closed.
@@ -407,7 +407,7 @@ public abstract class FileSystem
      * </ul>
      *
      * <p> When the syntax is "{@code regex}" then the pattern component is a
-     * regular expression as defined by the {@link j86.j86.java.util.regex.Pattern}
+     * regular expression as defined by the {@link j86.java.util.regex.Pattern}
      * class.
      *
      * <p>  For both the glob and regex syntaxes, the matching details, such as
@@ -421,7 +421,7 @@ public abstract class FileSystem
      *
      * @throws  IllegalArgumentException
      *          If the parameter does not take the form: {@code syntax:pattern}
-     * @throws  j86.j86.java.util.regex.PatternSyntaxException
+     * @throws  j86.java.util.regex.PatternSyntaxException
      *          If the pattern is invalid
      * @throws  UnsupportedOperationException
      *          If the pattern syntax is not known to the implementation

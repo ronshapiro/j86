@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.java.security.ProtectionDomain;
 
@@ -40,7 +40,7 @@ import j86.java.security.ProtectionDomain;
     want.  However, before consulting the context class loader, it
     looks up the call stack for a class with a non-null class loader,
     and uses that if it finds one.  So, in the standalone version of
-    j86.j86.javax.management.remote, if the class you're looking for is known
+    j86.javax.management.remote, if the class you're looking for is known
     to the loader of jmxremote.jar (typically the system class loader)
     then that loader will load it.  This contradicts the class-loading
     semantics required.

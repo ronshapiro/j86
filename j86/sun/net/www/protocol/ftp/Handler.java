@@ -27,15 +27,15 @@
  *      FTP stream opener
  */
 
-package j86.j86.j86.sun.net.www.protocol.ftp;
+package j86.sun.net.www.protocol.ftp;
 
 import j86.java.io.IOException;
 import j86.java.net.URL;
 import j86.java.net.Proxy;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
-import j86.j86.sun.net.ftp.FtpClient;
-import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.sun.net.ftp.FtpClient;
+import j86.sun.net.www.protocol.http.HttpURLConnection;
 
 /** open an ftp connection given a URL */
 public class Handler extends j86.java.net.URLStreamHandler {

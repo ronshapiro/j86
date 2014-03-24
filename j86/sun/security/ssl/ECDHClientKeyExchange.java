@@ -29,8 +29,8 @@ import j86.java.io.IOException;
 import j86.java.io.PrintStream;
 
 import j86.java.security.PublicKey;
-import j86.j86.java.security.interfaces.ECPublicKey;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.ECPublicKey;
+import j86.java.security.spec.*;
 
 /**
  * ClientKeyExchange message for all ECDH based key exchange methods. It

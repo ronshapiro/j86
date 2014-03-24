@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.net.SocketAddress;
 import j86.java.net.SocketOption;
 import j86.java.net.StandardSocketOptions;
@@ -35,9 +35,9 @@ import j86.java.io.IOException;
 import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.util.Collections;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.j86.java.util.concurrent.locks.ReadWriteLock;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantReadWriteLock;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.locks.ReadWriteLock;
+import j86.java.util.concurrent.locks.ReentrantReadWriteLock;
 import j86.sun.net.NetHooks;
 
 /**

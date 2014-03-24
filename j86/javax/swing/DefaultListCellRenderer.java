@@ -26,8 +26,8 @@
 package j86.javax.swing;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
 
 import j86.java.awt.Component;
 import j86.java.awt.Color;
@@ -256,7 +256,7 @@ public class DefaultListCellRenderer extends JLabel
         if (propertyName == "text"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }
@@ -342,7 +342,7 @@ public class DefaultListCellRenderer extends JLabel
      * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends DefaultListCellRenderer
-        implements j86.j86.javax.swing.plaf.UIResource
+        implements j86.javax.swing.plaf.UIResource
     {
     }
 }

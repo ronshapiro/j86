@@ -25,10 +25,10 @@
 
 package com.j86.sun.management;
 
-import j86.j86.java.lang.management.MemoryUsage;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataView;
-import j86.j86.javax.management.openmbean.CompositeType;
+import j86.java.lang.management.MemoryUsage;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataView;
+import j86.javax.management.openmbean.CompositeType;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
 import j86.java.util.HashMap;
@@ -205,11 +205,11 @@ public class GcInfo implements CompositeData, CompositeDataView {
      * </tr>
      * <tr>
      *   <td>memoryUsageBeforeGc</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.TabularData</tt></td>
+     *   <td><tt>j86.javax.management.openmbean.TabularData</tt></td>
      * </tr>
      * <tr>
      *   <td>memoryUsageAfterGc</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.TabularData</tt></td>
+     *   <td><tt>j86.javax.management.openmbean.TabularData</tt></td>
      * </tr>
      * </table>
      * </blockquote>

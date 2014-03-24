@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
 import j86.java.awt.Paint;
 import j86.java.awt.PaintContext;
 import j86.java.awt.Composite;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.sun.awt.image.BufImgSurfaceData;
-import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.WritableRaster;
+import j86.sun.awt.image.BufImgSurfaceData;
+import j86.sun.java2d.loops.GraphicsPrimitive;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 
 /**
  * MaskFill

@@ -31,17 +31,17 @@ import j86.java.sql.*;
 import j86.javax.sql.*;
 import j86.java.math.*;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
-import j86.j86.j86.javax.sql.rowset.serial.*;
-import j86.j86.com.sun.rowset.providers.*;
-import j86.j86.com.sun.rowset.internal.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.serial.*;
+import j86.com.sun.rowset.providers.*;
+import j86.com.sun.rowset.internal.*;
 
 /**
  * The standard implementation of the <code>FilteredRowSet</code> interface. See the interface
  * definition for full behavior and implementation requirements.
  *
- * @see j86.j86.javax.sql.rowset.Predicate
+ * @see j86.javax.sql.rowset.Predicate
  * @author Jonathan Bruce, Amit Handa
  */
 

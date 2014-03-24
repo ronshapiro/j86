@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.spnego;
+package j86.sun.security.jgss.spnego;
 
 import j86.java.io.*;
 import j86.java.util.*;
@@ -80,7 +80,7 @@ public class NegTokenInit extends SpNegoToken {
         this.mechListMIC = mechListMIC;
     }
 
-    // Used by j86.j86.sun.security.jgss.wrapper.NativeGSSContext
+    // Used by j86.sun.security.jgss.wrapper.NativeGSSContext
     // to parse SPNEGO tokens
     public NegTokenInit(byte[] in) throws GSSException {
         super(NEG_TOKEN_INIT_ID);
@@ -206,7 +206,7 @@ public class NegTokenInit extends SpNegoToken {
         return mechTypes;
     }
 
-    // Used by j86.j86.sun.security.jgss.wrapper.NativeGSSContext
+    // Used by j86.sun.security.jgss.wrapper.NativeGSSContext
     // to find the mechs in SPNEGO tokens
     public Oid[] getMechTypeList() {
         return mechTypeList;
@@ -216,7 +216,7 @@ public class NegTokenInit extends SpNegoToken {
         return reqFlags;
     }
 
-    // Used by j86.j86.sun.security.jgss.wrapper.NativeGSSContext
+    // Used by j86.sun.security.jgss.wrapper.NativeGSSContext
     // to access the mech token portion of SPNEGO tokens
     public byte[] getMechToken() {
         return mechToken;

@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Transparency;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.ColorModel;
 
 /**
  * EffectUtils

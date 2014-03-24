@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.nio.cs.ext;
+package j86.sun.nio.cs.ext;
 
 import j86.java.io.*;
 import j86.java.nio.CharBuffer;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CoderResult;
 import j86.java.util.Arrays;
-import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
-import static j86.j86.j86.sun.nio.cs.CharsetMapping.*;
+import j86.sun.nio.cs.HistoricallyNamedCharset;
+import static j86.sun.nio.cs.CharsetMapping.*;
 
 public class EUC_TW extends Charset implements HistoricallyNamedCharset
 {

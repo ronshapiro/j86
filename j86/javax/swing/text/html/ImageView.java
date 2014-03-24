@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageObserver;
 import j86.java.net.*;
 import j86.java.util.Dictionary;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
 
 /**
  * View of an Image, intended to support the HTML &lt;IMG&gt; tag.

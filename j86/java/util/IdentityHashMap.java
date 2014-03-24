@@ -26,10 +26,10 @@
 package j86.java.util;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Consumer;
+import j86.java.lang.reflect.Array;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Consumer;
 
 /**
  * This class implements the <tt>Map</tt> interface with a hash table, using

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.Arc2D;
-import j86.j86.java.awt.geom.Ellipse2D;
-import j86.j86.java.awt.geom.Line2D;
-import j86.j86.java.awt.geom.RoundRectangle2D;
-import j86.j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Arc2D;
+import j86.java.awt.geom.Ellipse2D;
+import j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.RoundRectangle2D;
+import j86.java.awt.geom.GeneralPath;
 import j86.sun.java2d.SunGraphics2D;
 
 /**

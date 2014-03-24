@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.java.util.Enumeration;
 import j86.java.util.Vector;

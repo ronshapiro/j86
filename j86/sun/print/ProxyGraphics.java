@@ -34,7 +34,7 @@ import j86.java.awt.Polygon;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
 
-import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageObserver;
 
 import j86.java.text.AttributedCharacterIterator;
 
@@ -814,8 +814,8 @@ public class ProxyGraphics extends Graphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       ImageObserver observer) {
@@ -852,8 +852,8 @@ public class ProxyGraphics extends Graphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -888,8 +888,8 @@ public class ProxyGraphics extends Graphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       Color bgcolor,
@@ -932,8 +932,8 @@ public class ProxyGraphics extends Graphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -986,8 +986,8 @@ public class ProxyGraphics extends Graphics {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1049,8 +1049,8 @@ public class ProxyGraphics extends Graphics {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,

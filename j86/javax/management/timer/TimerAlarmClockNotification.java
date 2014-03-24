@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.timer;
+package j86.javax.management.timer;
 
 /**
  * <p>Definitions of the notifications sent by TimerAlarmClock

@@ -27,10 +27,10 @@ package j86.sun.font;
 
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * To avoid people downcasting Shape to a known mutable subclass and

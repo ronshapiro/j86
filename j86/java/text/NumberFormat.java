@@ -44,18 +44,18 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.math.BigInteger;
 import j86.java.math.RoundingMode;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.Currency;
 import j86.java.util.HashMap;
 import j86.java.util.Hashtable;
 import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.ResourceBundle;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.spi.LocaleServiceProvider;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.spi.LocaleServiceProvider;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleServiceProviderPool;
 
 /**
  * <code>NumberFormat</code> is the abstract base class for all number
@@ -580,7 +580,7 @@ public abstract class NumberFormat extends Format  {
      * localized instances.
      * The returned array represents the union of locales supported by the Java
      * runtime and by installed
-     * {@link j86.j86.java.text.spi.NumberFormatProvider NumberFormatProvider} implementations.
+     * {@link j86.java.text.spi.NumberFormatProvider NumberFormatProvider} implementations.
      * It must contain at least a <code>Locale</code> instance equal to
      * {@link j86.java.util.Locale#US Locale.US}.
      *

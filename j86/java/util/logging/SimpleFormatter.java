@@ -24,12 +24,12 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.io.*;
 import j86.java.text.*;
 import j86.java.util.Date;
-import j86.j86.sun.util.logging.LoggingSupport;
+import j86.sun.util.logging.LoggingSupport;
 
 /**
  * Print a brief summary of the {@code LogRecord} in a human readable
@@ -40,7 +40,7 @@ import j86.j86.sun.util.logging.LoggingSupport;
  * <b>Configuration:</b></a>
  * The {@code SimpleFormatter} is initialized with the
  * <a href="../Formatter.html#syntax">format string</a>
- * specified in the {@code j86.j86.java.util.logging.SimpleFormatter.format}
+ * specified in the {@code j86.java.util.logging.SimpleFormatter.format}
  * property to {@linkplain #format format} the log messages.
  * This property can be defined
  * in the {@linkplain LogManager#getProperty logging properties}
@@ -68,7 +68,7 @@ public class SimpleFormatter extends Formatter {
      * The formatting can be customized by specifying the
      * <a href="../Formatter.html#syntax">format string</a>
      * in the <a href="#formatting">
-     * {@code j86.j86.java.util.logging.SimpleFormatter.format}</a> property.
+     * {@code j86.java.util.logging.SimpleFormatter.format}</a> property.
      * The given {@code LogRecord} will be formatted as if by calling:
      * <pre>
      *    {@link String#format String.format}(format, date, source, logger, level, message, thrown);
@@ -77,7 +77,7 @@ public class SimpleFormatter extends Formatter {
      * <ol>
      * <li>{@code format} - the {@link j86.java.util.Formatter
      *     j86.java.util.Formatter} format string specified in the
-     *     {@code j86.j86.java.util.logging.SimpleFormatter.format} property
+     *     {@code j86.java.util.logging.SimpleFormatter.format} property
      *     or the default format.</li>
      * <li>{@code date} - a {@link Date} object representing
      *     {@linkplain LogRecord#getMillis event time} of the log record.</li>
@@ -100,14 +100,14 @@ public class SimpleFormatter extends Formatter {
      *
      * <p>Some example formats:<br>
      * <ul>
-     * <li> {@code j86.j86.java.util.logging.SimpleFormatter.format="%4$s: %5$s [%1$tc]%n"}
+     * <li> {@code j86.java.util.logging.SimpleFormatter.format="%4$s: %5$s [%1$tc]%n"}
      *     <p>This prints 1 line with the log level ({@code 4$}),
      *     the log message ({@code 5$}) and the timestamp ({@code 1$}) in
      *     a square bracket.
      *     <pre>
      *     WARNING: warning message [Tue Mar 22 13:11:31 PDT 2011]
      *     </pre></li>
-     * <li> {@code j86.j86.java.util.logging.SimpleFormatter.format="%1$tc %2$s%n%4$s: %5$s%6$s%n"}
+     * <li> {@code j86.java.util.logging.SimpleFormatter.format="%1$tc %2$s%n%4$s: %5$s%6$s%n"}
      *     <p>This prints 2 lines where the first line includes
      *     the timestamp ({@code 1$}) and the source ({@code 2$});
      *     the second line includes the log level ({@code 4$}) and
@@ -121,7 +121,7 @@ public class SimpleFormatter extends Formatter {
      *             at MyClass.crunch(MyClass.java:6)
      *             at MyClass.main(MyClass.java:3)
      *     </pre></li>
-     * <li> {@code j86.j86.java.util.logging.SimpleFormatter.format="%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp %2$s%n%4$s: %5$s%n"}
+     * <li> {@code j86.java.util.logging.SimpleFormatter.format="%1$tb %1$td, %1$tY %1$tl:%1$tM:%1$tS %1$Tp %2$s%n%4$s: %5$s%n"}
      *      <p>This prints 2 lines similar to the example above
      *         with a different date/time formatting and does not print
      *         the throwable and its backtrace:

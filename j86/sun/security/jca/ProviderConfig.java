@@ -26,7 +26,7 @@
 package j86.sun.security.jca;
 
 import j86.java.io.File;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 import j86.java.security.*;
 
@@ -47,7 +47,7 @@ final class ProviderConfig {
 
     // classname of the SunPKCS11-Solaris provider
     private static final String P11_SOL_NAME =
-        "j86.j86.sun.security.pkcs11.SunPKCS11";
+        "j86.sun.security.pkcs11.SunPKCS11";
 
     // config file argument of the SunPKCS11-Solaris provider
     private static final String P11_SOL_ARG  =
@@ -107,7 +107,7 @@ final class ProviderConfig {
                     return Boolean.FALSE;
                 }
                 if ("false".equalsIgnoreCase(System.getProperty
-                        ("j86.j86.sun.security.pkcs11.enable-solaris"))) {
+                        ("j86.sun.security.pkcs11.enable-solaris"))) {
                     return Boolean.FALSE;
                 }
                 return Boolean.TRUE;

@@ -54,33 +54,33 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.temporal;
+package j86.java.time.temporal;
 
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.ERAS;
-import static j86.j86.java.time.temporal.ChronoUnit.FOREVER;
-import static j86.j86.java.time.temporal.ChronoUnit.HALF_DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.HOURS;
-import static j86.j86.java.time.temporal.ChronoUnit.MICROS;
-import static j86.j86.java.time.temporal.ChronoUnit.MILLIS;
-import static j86.j86.java.time.temporal.ChronoUnit.MINUTES;
-import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
-import static j86.j86.java.time.temporal.ChronoUnit.NANOS;
-import static j86.j86.java.time.temporal.ChronoUnit.SECONDS;
-import static j86.j86.java.time.temporal.ChronoUnit.WEEKS;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.ERAS;
+import static j86.java.time.temporal.ChronoUnit.FOREVER;
+import static j86.java.time.temporal.ChronoUnit.HALF_DAYS;
+import static j86.java.time.temporal.ChronoUnit.HOURS;
+import static j86.java.time.temporal.ChronoUnit.MICROS;
+import static j86.java.time.temporal.ChronoUnit.MILLIS;
+import static j86.java.time.temporal.ChronoUnit.MINUTES;
+import static j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.java.time.temporal.ChronoUnit.NANOS;
+import static j86.java.time.temporal.ChronoUnit.SECONDS;
+import static j86.java.time.temporal.ChronoUnit.WEEKS;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.time.DayOfWeek;
 import j86.java.time.Instant;
 import j86.java.time.Year;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.chrono.ChronoLocalDate;
-import j86.j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.ChronoLocalDate;
+import j86.java.time.chrono.Chronology;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
 import j86.java.util.ResourceBundle;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleResources;
 
 /**
  * A standard set of fields.
@@ -298,7 +298,7 @@ public enum ChronoField implements TemporalField {
      * The field is combined with {@code MINUTE_OF_HOUR}, {@code SECOND_OF_MINUTE} and
      * {@code NANO_OF_SECOND} to produce a {@code LocalTime}.
      * In lenient mode, any excess days are added to the parsed date, or
-     * made available via {@link j86.j86.java.time.format.DateTimeFormatter#parsedExcessDays()}.
+     * made available via {@link j86.java.time.format.DateTimeFormatter#parsedExcessDays()}.
      */
     HOUR_OF_DAY("HourOfDay", HOURS, DAYS, ValueRange.of(0, 23), "hour"),
     /**

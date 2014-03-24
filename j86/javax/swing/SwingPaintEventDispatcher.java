@@ -27,11 +27,11 @@ package j86.javax.swing;
 import j86.java.awt.Component;
 import j86.java.awt.Container;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.PaintEvent;
+import j86.java.awt.event.PaintEvent;
 import j86.java.security.AccessController;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
-import j86.j86.sun.awt.event.IgnorePaintEvent;
+import j86.sun.awt.event.IgnorePaintEvent;
 import j86.sun.security.action.GetBooleanAction;
 import j86.sun.security.action.GetPropertyAction;
 

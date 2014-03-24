@@ -26,7 +26,7 @@
 package j86.sun.security.jgss;
 
 import j86.org.ietf.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.java.security.Provider;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

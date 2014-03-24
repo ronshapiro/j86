@@ -25,7 +25,7 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An iterator over a collection.  {@code Iterator} takes the place of

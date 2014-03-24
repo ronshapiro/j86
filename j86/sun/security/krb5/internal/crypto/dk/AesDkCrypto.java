@@ -26,21 +26,21 @@
 /*
  */
 
-package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
+package j86.sun.security.krb5.internal.crypto.dk;
 
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.Mac;
 import j86.javax.crypto.SecretKeyFactory;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
-import j86.j86.javax.crypto.spec.DESedeKeySpec;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.PBEKeySpec;
-import j86.j86.java.security.spec.KeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.DESedeKeySpec;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.PBEKeySpec;
+import j86.java.security.spec.KeySpec;
 import j86.java.security.GeneralSecurityException;
 import j86.sun.security.krb5.KrbCryptoException;
 import j86.sun.security.krb5.Confounder;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 import j86.java.util.Arrays;
 
 /**

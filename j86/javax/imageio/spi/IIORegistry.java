@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.spi;
+package j86.javax.imageio.spi;
 
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AccessController;
@@ -83,7 +83,7 @@ import j86.java.util.ServiceConfigurationError;
  * would contain a file named:
  *
  * <pre>
- * META-INF/services/j86.j86.javax.imageio.spi.ImageReaderSpi
+ * META-INF/services/j86.javax.imageio.spi.ImageReaderSpi
  * </pre>
  *
  * containing the line:

@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.java.time.temporal.ChronoField.YEAR;
 
 import j86.java.io.IOException;
 import j86.java.text.FieldPosition;
@@ -80,14 +80,14 @@ import j86.java.time.DateTimeException;
 import j86.java.time.Period;
 import j86.java.time.ZoneId;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.DateTimeFormatterBuilder.CompositePrinterParser;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.IsoFields;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQuery;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.DateTimeFormatterBuilder.CompositePrinterParser;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.IsoFields;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQuery;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.HashMap;

@@ -31,7 +31,7 @@ import j86.java.awt.SystemTray;
 import j86.java.awt.TrayIcon;
 import j86.java.awt.Toolkit;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.java.awt.event.InvocationEvent;
+import j86.java.awt.event.InvocationEvent;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Collections;
@@ -42,11 +42,11 @@ import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.beans.PropertyChangeSupport;
 import j86.java.beans.PropertyChangeListener;
-import j86.j86.sun.util.logging.PlatformLogger;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.Lock;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.sun.util.logging.PlatformLogger;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.Lock;
+import j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * The AppContext is a table referenced by ThreadGroup which stores

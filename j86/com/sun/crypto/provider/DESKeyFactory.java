@@ -27,11 +27,11 @@ package j86.com.sun.crypto.provider;
 
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.SecretKeyFactorySpi;
-import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.javax.crypto.spec.DESKeySpec;
 import j86.java.security.InvalidKeyException;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * This class implements the DES key factory of the Sun provider.

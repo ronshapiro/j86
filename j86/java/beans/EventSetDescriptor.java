@@ -25,9 +25,9 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
 
 /**
  * An EventSetDescriptor describes a group of events that a given Java
@@ -197,7 +197,7 @@ public class EventSetDescriptor extends FeatureDescriptor {
 
     /**
      * Creates an <TT>EventSetDescriptor</TT> from scratch using
-     * <TT>j86.j86.j86.java.lang.reflect.Method</TT> and <TT>java.lang.Class</TT> objects.
+     * <TT>j86.java.lang.reflect.Method</TT> and <TT>java.lang.Class</TT> objects.
      *
      * @param eventSetName The programmatic name of the event set.
      * @param listenerType The Class for the listener interface.
@@ -222,7 +222,7 @@ public class EventSetDescriptor extends FeatureDescriptor {
 
     /**
      * This constructor creates an EventSetDescriptor from scratch using
-     * j86.j86.j86.java.lang.reflect.Method and java.lang.Class objects.
+     * j86.java.lang.reflect.Method and java.lang.Class objects.
      *
      * @param eventSetName The programmatic name of the event set.
      * @param listenerType The Class for the listener interface.
@@ -255,7 +255,7 @@ public class EventSetDescriptor extends FeatureDescriptor {
 
     /**
      * Creates an <TT>EventSetDescriptor</TT> from scratch using
-     * <TT>j86.j86.j86.java.lang.reflect.MethodDescriptor</TT> and <TT>java.lang.Class</TT>
+     * <TT>j86.java.lang.reflect.MethodDescriptor</TT> and <TT>java.lang.Class</TT>
      *  objects.
      *
      * @param eventSetName The programmatic name of the event set.

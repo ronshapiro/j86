@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTEvent;
 import j86.java.awt.AWTKeyStroke;
@@ -33,16 +33,16 @@ import j86.java.awt.Frame;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Toolkit;
 import j86.java.awt.Window;
-import j86.j86.java.awt.event.ComponentEvent;
-import j86.j86.java.awt.event.ComponentListener;
-import j86.j86.java.awt.event.FocusEvent;
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.InputMethodEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.event.WindowListener;
-import j86.j86.java.awt.im.InputMethodRequests;
-import j86.j86.j86.java.awt.im.spi.InputMethod;
+import j86.java.awt.event.ComponentEvent;
+import j86.java.awt.event.ComponentListener;
+import j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputMethodEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowListener;
+import j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.im.spi.InputMethod;
 import j86.java.lang.Character.Subset;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -50,9 +50,9 @@ import j86.java.text.MessageFormat;
 import j86.java.util.HashMap;
 import j86.java.util.Iterator;
 import j86.java.util.Locale;
-import j86.j86.java.util.prefs.BackingStoreException;
-import j86.j86.java.util.prefs.Preferences;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.java.util.prefs.BackingStoreException;
+import j86.java.util.prefs.Preferences;
+import j86.sun.util.logging.PlatformLogger;
 import j86.sun.awt.SunToolkit;
 
 /**
@@ -61,13 +61,13 @@ import j86.sun.awt.SunToolkit;
  * here to avoid exposing protected members that are needed by the
  * subclass InputMethodContext.
  *
- * @see j86.j86.java.awt.im.InputContext
+ * @see j86.java.awt.im.InputContext
  * @author JavaSoft Asia/Pacific
  */
 
-public class InputContext extends j86.j86.java.awt.im.InputContext
+public class InputContext extends j86.java.awt.im.InputContext
                           implements ComponentListener, WindowListener {
-    private static final PlatformLogger log = PlatformLogger.getLogger("j86.j86.sun.awt.im.InputContext");
+    private static final PlatformLogger log = PlatformLogger.getLogger("j86.sun.awt.im.InputContext");
     // The current input method is represented by two objects:
     // a locator is used to keep information about the selected
     // input method and locale until we actually need a real input
@@ -111,7 +111,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     // Input Method selection hot key stuff
     private static AWTKeyStroke inputMethodSelectionKey;
     private static boolean inputMethodSelectionKeyInitialized = false;
-    private static final String inputMethodSelectionKeyPath = "/j86.j86.java.awt.im/selectionKey";
+    private static final String inputMethodSelectionKeyPath = "/j86.java.awt.im/selectionKey";
     private static final String inputMethodSelectionKeyCodeName = "keyCode";
     private static final String inputMethodSelectionKeyModifiersName = "modifiers";
 
@@ -132,7 +132,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#selectInputMethod
+     * @see j86.java.awt.im.InputContext#selectInputMethod
      * @exception NullPointerException when the locale is null.
      */
     public synchronized boolean selectInputMethod(Locale locale) {
@@ -175,7 +175,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#getLocale
+     * @see j86.java.awt.im.InputContext#getLocale
      */
     public Locale getLocale() {
         if (inputMethod != null) {
@@ -188,7 +188,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#setCharacterSubsets
+     * @see j86.java.awt.im.InputContext#setCharacterSubsets
      */
     public void setCharacterSubsets(Subset[] subsets) {
         if (subsets == null) {
@@ -204,7 +204,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#reconvert
+     * @see j86.java.awt.im.InputContext#reconvert
      * @since 1.3
      * @exception UnsupportedOperationException when input method is null
      */
@@ -217,7 +217,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#dispatchEvent
+     * @see j86.java.awt.im.InputContext#dispatchEvent
      */
     @SuppressWarnings("fallthrough")
     public void dispatchEvent(AWTEvent event) {
@@ -298,7 +298,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
          */
         synchronized (source.getTreeLock()) {
             synchronized (this) {
-                if ("j86.j86.sun.awt.im.CompositionArea".equals(source.getClass().getName())) {
+                if ("j86.sun.awt.im.CompositionArea".equals(source.getClass().getName())) {
                     // no special handling for this one
                 } else if (getComponentWindow(source) instanceof InputMethodWindow) {
                     // no special handling for this one either
@@ -606,7 +606,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#removeNotify
+     * @see j86.java.awt.im.InputContext#removeNotify
      * @exception NullPointerException when the component is null.
      */
     public synchronized void removeNotify(Component component) {
@@ -658,7 +658,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#dispose
+     * @see j86.java.awt.im.InputContext#dispose
      * @exception IllegalStateException when the currentClientComponent is not null
      */
     public synchronized void dispose() {
@@ -706,7 +706,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#getInputMethodControlObject
+     * @see j86.java.awt.im.InputContext#getInputMethodControlObject
      */
     public synchronized Object getInputMethodControlObject() {
         InputMethod inputMethod = getInputMethod();
@@ -719,7 +719,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#setCompositionEnabled(boolean)
+     * @see j86.java.awt.im.InputContext#setCompositionEnabled(boolean)
      * @exception UnsupportedOperationException when input method is null
      */
     public void setCompositionEnabled(boolean enable) {
@@ -732,7 +732,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#isCompositionEnabled
+     * @see j86.java.awt.im.InputContext#isCompositionEnabled
      * @exception UnsupportedOperationException when input method is null
      */
     public boolean isCompositionEnabled() {
@@ -817,9 +817,9 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
      * instantiation failed.
      *
      * @return an InputMethod instance
-     * @see j86.j86.j86.java.awt.im.spi.InputMethod#setInputMethodContext
-     * @see j86.j86.j86.java.awt.im.spi.InputMethod#setLocale
-     * @see j86.j86.j86.java.awt.im.spi.InputMethod#setCharacterSubsets
+     * @see j86.java.awt.im.spi.InputMethod#setInputMethodContext
+     * @see j86.java.awt.im.spi.InputMethod#setLocale
+     * @see j86.java.awt.im.spi.InputMethod#setCharacterSubsets
      */
     private InputMethod getInputMethodInstance() {
         InputMethodLocator locator = inputMethodLocator;
@@ -886,7 +886,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     private void logCreationFailed(Throwable throwable) {
-        PlatformLogger logger = PlatformLogger.getLogger("j86.j86.sun.awt.im");
+        PlatformLogger logger = PlatformLogger.getLogger("j86.sun.awt.im");
         if (logger.isLoggable(PlatformLogger.Level.CONFIG)) {
             String errorTextFormat = Toolkit.getProperty("AWT.InputMethodCreationFailed",
                                                          "Could not create {0}. Reason: {1}");
@@ -906,7 +906,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.java.awt.im.InputContext#endComposition
+     * @see j86.java.awt.im.InputContext#endComposition
      */
     public synchronized void endComposition() {
         if (inputMethod != null) {
@@ -915,7 +915,7 @@ public class InputContext extends j86.j86.java.awt.im.InputContext
     }
 
     /**
-     * @see j86.j86.j86.java.awt.im.spi.InputMethodContext#enableClientWindowNotification
+     * @see j86.java.awt.im.spi.InputMethodContext#enableClientWindowNotification
      */
     synchronized void enableClientWindowNotification(InputMethod requester,
                                                      boolean enable) {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 /**
   * An interface for objects that wish to be informed when tiles

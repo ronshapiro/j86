@@ -54,11 +54,11 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
 import j86.java.io.InvalidObjectException;
-import static j86.j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
+import static j86.java.time.temporal.ChronoField.YEAR;
 
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
@@ -67,11 +67,11 @@ import j86.java.time.DateTimeException;
 import j86.java.time.Instant;
 import j86.java.time.LocalDate;
 import j86.java.time.ZoneId;
-import j86.j86.java.time.format.ResolverStyle;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.format.ResolverStyle;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Arrays;
 import j86.java.util.HashMap;
 import j86.java.util.List;
@@ -374,7 +374,7 @@ public final class ThaiBuddhistChronology extends AbstractChronology implements 
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(1);     // identifies a Chronology

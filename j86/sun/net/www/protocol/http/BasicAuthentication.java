@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.net.URL;
 import j86.java.net.URI;
@@ -32,7 +32,7 @@ import j86.java.net.PasswordAuthentication;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.util.Base64;
-import j86.j86.sun.net.www.HeaderParser;
+import j86.sun.net.www.HeaderParser;
 
 /**
  * BasicAuthentication: Encapsulate an http server authentication using

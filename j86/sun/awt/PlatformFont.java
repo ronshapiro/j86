@@ -25,7 +25,7 @@
 
 package j86.sun.awt;
 
-import j86.j86.java.awt.peer.FontPeer;
+import j86.java.awt.peer.FontPeer;
 import j86.java.util.Locale;
 import j86.java.util.Vector;
 import j86.sun.font.SunFontManager;

@@ -25,7 +25,7 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 import j86.java.math.*;
 
 
@@ -1580,7 +1580,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long sum(long a, long b) {
@@ -1594,7 +1594,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long max(long a, long b) {
@@ -1608,7 +1608,7 @@ public final class Long extends Number implements Comparable<Long> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static long min(long a, long b) {

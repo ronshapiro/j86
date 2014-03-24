@@ -25,7 +25,7 @@
 
 package j86.com.sun.jmx.defaults;
 
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.logging.Logger;
 
 /**
  * This contains the property list defined for this
@@ -138,7 +138,7 @@ public class JmxProperties {
      * Logger name for Monitor information.
      */
     public static final String MONITOR_LOGGER_NAME =
-            "j86.j86.javax.management.monitor";
+            "j86.javax.management.monitor";
 
     /**
      * Logger for Monitor information.
@@ -150,7 +150,7 @@ public class JmxProperties {
      * Logger name for Timer information.
      */
     public static final String TIMER_LOGGER_NAME =
-            "j86.j86.javax.management.timer";
+            "j86.javax.management.timer";
 
     /**
      * Logger for Timer information.
@@ -174,7 +174,7 @@ public class JmxProperties {
      * Logger name for Relation Service.
      */
     public static final String RELATION_LOGGER_NAME =
-            "j86.j86.javax.management.relation";
+            "j86.javax.management.relation";
 
     /**
      * Logger for Relation Service.
@@ -186,7 +186,7 @@ public class JmxProperties {
      * Logger name for Model MBean.
      */
     public static final String MODELMBEAN_LOGGER_NAME =
-            "j86.j86.javax.management.modelmbean";
+            "j86.javax.management.modelmbean";
 
     /**
      * Logger for Model MBean.

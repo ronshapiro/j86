@@ -38,9 +38,9 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.AffineTransform;
 import j86.java.io.Serializable;
 import j86.java.io.ObjectStreamException;
 

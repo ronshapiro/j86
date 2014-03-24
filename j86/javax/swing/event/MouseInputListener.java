@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
-import j86.j86.java.awt.event.MouseListener;
-import j86.j86.java.awt.event.MouseMotionListener;
+import j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseMotionListener;
 
 /**
  * A listener implementing all the methods in both the {@code MouseListener} and

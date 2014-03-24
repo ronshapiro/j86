@@ -26,7 +26,7 @@
 package j86.sun.swing;
 
 import j86.java.awt.Color;
-import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.plaf.ColorUIResource;
 
 /**
  * A subclass of ColorUIResource that wraps an alternate color

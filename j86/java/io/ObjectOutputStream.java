@@ -26,17 +26,17 @@
 package j86.java.io;
 
 import j86.java.io.ObjectStreamClass.WeakClassKey;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.ReferenceQueue;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.List;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 import static j86.java.io.ObjectStreamClass.processQueue;
 import j86.java.io.SerialCallbackContext;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * An ObjectOutputStream writes primitive data types and graphs of Java objects

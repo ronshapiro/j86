@@ -41,7 +41,7 @@ class AppletMessageHandler {
     static {
         try {
             rb = ResourceBundle.getBundle
-                ("j86.j86.sun.applet.resources.MsgAppletViewer");
+                ("j86.sun.applet.resources.MsgAppletViewer");
         } catch (MissingResourceException e) {
             System.out.println(e.getMessage());
             System.exit(1);

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.javax.swing.colorchooser;
+package j86.javax.swing.colorchooser;
 
 import j86.java.awt.Color;
 import j86.java.awt.Graphics;
 import j86.java.awt.Insets;
-import j86.j86.java.awt.event.MouseEvent;
-import j86.j86.java.awt.event.MouseListener;
-import j86.j86.java.awt.event.MouseMotionListener;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseMotionListener;
+import j86.java.awt.image.BufferedImage;
 import j86.javax.swing.JComponent;
 
 final class DiagramComponent extends JComponent implements MouseListener, MouseMotionListener {

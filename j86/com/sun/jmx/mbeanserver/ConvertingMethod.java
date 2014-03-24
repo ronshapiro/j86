@@ -25,15 +25,15 @@
 
 package j86.com.sun.jmx.mbeanserver;
 import j86.java.io.InvalidObjectException;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Type;
 
 import j86.javax.management.Descriptor;
 import j86.javax.management.MBeanException;
-import j86.j86.javax.management.openmbean.OpenDataException;
-import j86.j86.javax.management.openmbean.OpenType;
-import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.javax.management.openmbean.OpenDataException;
+import j86.javax.management.openmbean.OpenType;
+import j86.sun.reflect.misc.MethodUtil;
 
 final class ConvertingMethod {
     static ConvertingMethod from(Method m) {

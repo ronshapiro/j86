@@ -27,7 +27,7 @@
  *      news stream opener
  */
 
-package j86.j86.sun.net.www;
+package j86.sun.net.www;
 
 import j86.java.io.*;
 import j86.java.util.Collections;

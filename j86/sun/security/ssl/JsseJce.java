@@ -29,8 +29,8 @@ import j86.java.util.*;
 import j86.java.math.BigInteger;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.RSAPublicKey;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.RSAPublicKey;
+import j86.java.security.spec.*;
 
 import j86.javax.crypto.*;
 

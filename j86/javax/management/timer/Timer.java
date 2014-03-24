@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.timer;
+package j86.javax.management.timer;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
 import j86.java.util.ArrayList;
@@ -33,7 +33,7 @@ import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.util.TreeSet;
 import j86.java.util.Vector;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 // jmx imports
 //

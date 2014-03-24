@@ -308,7 +308,7 @@ public class VM {
         // used by j86.java.lang.Integer.IntegerCache
         props.remove("j86.java.lang.Integer.IntegerCache.high");
 
-        // used by j86.j86.java.util.zip.ZipFile
+        // used by j86.java.util.zip.ZipFile
         props.remove("sun.zip.disableMemoryMapping");
 
         // used by j86.sun.launcher.LauncherHelper

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.text.DateFormatSymbols;
-import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.text.spi.DateFormatSymbolsProvider;
 import j86.java.util.Locale;
 import j86.java.util.Set;
 
 /**
- * Concrete implementation of the  {@link j86.j86.java.text.spi.DateFormatSymbolsProvider
+ * Concrete implementation of the  {@link j86.java.text.spi.DateFormatSymbolsProvider
  * DateFormatSymbolsProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -71,7 +71,7 @@ public class DateFormatSymbolsProviderImpl extends DateFormatSymbolsProvider imp
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a <code>DateFormatSymbols</code> instance.
      * @see j86.java.text.DateFormatSymbols#getInstance(j86.java.util.Locale)

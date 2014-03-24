@@ -24,14 +24,14 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.SSLContextSpi
+ * NOTE:  this file was copied from j86.javax.net.ssl.SSLContextSpi
  */
 
 package com.j86.sun.net.ssl;
 
 import j86.java.util.*;
 import j86.java.security.*;
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -42,7 +42,7 @@ import j86.j86.javax.net.ssl.*;
  * of a particular SSL context.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.SSLContextSpi}.
+ *      replaced by {@link j86.javax.net.ssl.SSLContextSpi}.
  */
 @Deprecated
 public abstract class SSLContextSpi {

@@ -35,7 +35,7 @@
 package j86.java.util;
 
 import j86.java.io.Serializable;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * Resizable-array implementation of the {@link Deque} interface.  Array
@@ -822,7 +822,7 @@ public class ArrayDeque<E> extends AbstractCollection<E>
     public <T> T[] toArray(T[] a) {
         int size = size();
         if (a.length < size)
-            a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
+            a = (T[])j86.java.lang.reflect.Array.newInstance(
                     a.getClass().getComponentType(), size);
         copyElements(a);
         if (a.length > size)

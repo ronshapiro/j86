@@ -25,7 +25,7 @@
 /*
  * $Id: Reference.java,v 1.9 2005/05/10 16:03:46 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.Data;
 import j86.javax.xml.crypto.URIReference;

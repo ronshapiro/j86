@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.awt.im;
+package j86.java.awt.im;
 
 import j86.java.awt.Component;
 import j86.java.util.Locale;
 import j86.java.awt.AWTEvent;
 import j86.java.beans.Transient;
 import j86.java.lang.Character.Subset;
-import j86.j86.sun.awt.im.InputMethodContext;
+import j86.sun.awt.im.InputMethodContext;
 
 /**
  * Provides methods to control text input facilities such as input
@@ -54,7 +54,7 @@ import j86.j86.sun.awt.im.InputMethodContext;
  *
  * <p>
  * The Java Platform supports input methods that have been developed in the Java
- * programming language, using the interfaces in the {@link j86.j86.j86.java.awt.im.spi} package,
+ * programming language, using the interfaces in the {@link j86.java.awt.im.spi} package,
  * and installed into a Java SE Runtime Environment as extensions. Implementations
  * may also support using the native input methods of the platforms they run on;
  * however, not all platforms and locales provide input methods. Keyboard layouts
@@ -82,14 +82,14 @@ public class InputContext {
      * calling {@link #getInstance}.
      */
     protected InputContext() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
      * Returns a new InputContext instance.
      */
     public static InputContext getInstance() {
-        return new j86.j86.sun.awt.im.InputMethodContext();
+        return new j86.sun.awt.im.InputMethodContext();
     }
 
     /**
@@ -142,7 +142,7 @@ public class InputContext {
      * @exception NullPointerException if <code>locale</code> is null
      */
     public boolean selectInputMethod(Locale locale) {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
         return false;
     }
 
@@ -151,7 +151,7 @@ public class InputContext {
      * layout.
      * Returns null if the input context does not have a current input method
      * or keyboard layout or if the current input method's
-     * {@link j86.j86.j86.java.awt.im.spi.InputMethod#getLocale()} method returns null.
+     * {@link j86.java.awt.im.spi.InputMethod#getLocale()} method returns null.
      *
      * <p>
      * Not all host operating systems provide API to determine the locale of
@@ -165,7 +165,7 @@ public class InputContext {
      * @since 1.3
      */
     public Locale getLocale() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
         return null;
     }
 
@@ -183,7 +183,7 @@ public class InputContext {
      * @param subsets The subsets of the Unicode character set from which characters may be input
      */
     public void setCharacterSubsets(Subset[] subsets) {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -213,7 +213,7 @@ public class InputContext {
      * @since 1.3
      */
     public void setCompositionEnabled(boolean enable) {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -232,7 +232,7 @@ public class InputContext {
      */
     @Transient
     public boolean isCompositionEnabled() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
         return false;
     }
 
@@ -256,7 +256,7 @@ public class InputContext {
      * @since 1.3
      */
     public void reconvert() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -267,7 +267,7 @@ public class InputContext {
      * @exception NullPointerException if <code>event</code> is null
      */
     public void dispatchEvent(AWTEvent event) {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -284,7 +284,7 @@ public class InputContext {
      * @exception NullPointerException if <code>client</code> is null
      */
     public void removeNotify(Component client) {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -302,7 +302,7 @@ public class InputContext {
      *
      */
     public void endComposition() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -312,7 +312,7 @@ public class InputContext {
      * has no effect.
      */
     public void dispose() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
     }
 
     /**
@@ -330,7 +330,7 @@ public class InputContext {
      * @return A control object from the current input method, or null.
      */
     public Object getInputMethodControlObject() {
-        // real implementation is in j86.j86.sun.awt.im.InputContext
+        // real implementation is in j86.sun.awt.im.InputContext
         return null;
     }
 

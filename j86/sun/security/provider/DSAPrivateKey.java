@@ -31,9 +31,9 @@ import j86.java.math.BigInteger;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.ProviderException;
 import j86.java.security.AlgorithmParameters;
-import j86.j86.java.security.spec.DSAParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.java.security.interfaces.DSAParams;
+import j86.java.security.spec.DSAParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.interfaces.DSAParams;
 
 import j86.sun.security.x509.AlgIdDSA;
 import j86.sun.security.pkcs.PKCS8Key;
@@ -54,7 +54,7 @@ import j86.sun.security.util.DerOutputStream;
  */
 
 public final class DSAPrivateKey extends PKCS8Key
-implements j86.j86.java.security.interfaces.DSAPrivateKey, Serializable {
+implements j86.java.security.interfaces.DSAPrivateKey, Serializable {
 
     /** use serialVersionUID from JDK 1.1. for interoperability */
     private static final long serialVersionUID = -3244453684193605938L;

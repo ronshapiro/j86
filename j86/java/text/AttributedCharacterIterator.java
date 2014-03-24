@@ -67,10 +67,10 @@ import j86.java.util.Set;
  *
  * <p>
  * Attribute keys are instances of {@link AttributedCharacterIterator.Attribute} and its
- * subclasses, such as {@link j86.j86.java.awt.font.TextAttribute}.
+ * subclasses, such as {@link j86.java.awt.font.TextAttribute}.
  *
  * @see AttributedCharacterIterator.Attribute
- * @see j86.j86.java.awt.font.TextAttribute
+ * @see j86.java.awt.font.TextAttribute
  * @see AttributedString
  * @see Annotation
  * @since 1.2

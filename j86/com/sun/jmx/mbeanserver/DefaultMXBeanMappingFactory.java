@@ -28,24 +28,24 @@ package j86.com.sun.jmx.mbeanserver;
 import static j86.com.sun.jmx.mbeanserver.Util.*;
 import static j86.com.sun.jmx.mbeanserver.MXBeanIntrospector.typeName;
 
-import static j86.j86.javax.management.openmbean.SimpleType.*;
+import static j86.javax.management.openmbean.SimpleType.*;
 
 import j86.com.sun.jmx.remote.util.EnvHelp;
 
 import j86.java.io.InvalidObjectException;
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.annotation.ElementType;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.GenericArrayType;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.ElementType;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.GenericArrayType;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Type;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.BitSet;
@@ -62,26 +62,26 @@ import j86.java.util.WeakHashMap;
 
 import j86.javax.management.JMX;
 import j86.javax.management.ObjectName;
-import j86.j86.javax.management.openmbean.ArrayType;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataInvocationHandler;
-import j86.j86.javax.management.openmbean.CompositeDataSupport;
-import j86.j86.javax.management.openmbean.CompositeDataView;
-import j86.j86.javax.management.openmbean.CompositeType;
-import j86.j86.javax.management.openmbean.OpenDataException;
-import j86.j86.javax.management.openmbean.OpenType;
-import j86.j86.javax.management.openmbean.SimpleType;
-import j86.j86.javax.management.openmbean.TabularData;
-import j86.j86.javax.management.openmbean.TabularDataSupport;
-import j86.j86.javax.management.openmbean.TabularType;
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.javax.management.openmbean.ArrayType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataInvocationHandler;
+import j86.javax.management.openmbean.CompositeDataSupport;
+import j86.javax.management.openmbean.CompositeDataView;
+import j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.OpenDataException;
+import j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.SimpleType;
+import j86.javax.management.openmbean.TabularData;
+import j86.javax.management.openmbean.TabularDataSupport;
+import j86.javax.management.openmbean.TabularType;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  *   <p>A converter between Java types and the limited set of classes
  *   defined by Open MBeans.</p>
  *
- *   <p>A Java type is an instance of j86.j86.j86.java.lang.reflect.Type.  For our
+ *   <p>A Java type is an instance of j86.java.lang.reflect.Type.  For our
  *   purposes, it is either a Class, such as String.class or int.class;
  *   or a ParameterizedType, such as List<String> or Map<Integer,
  *   String[]>.  On J2SE 1.4 and earlier, it can only be a Class.</p>

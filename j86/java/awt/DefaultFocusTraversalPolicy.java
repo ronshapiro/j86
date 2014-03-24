@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.ComponentPeer;
 
 
 /**

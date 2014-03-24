@@ -59,15 +59,15 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
 import j86.java.io.InvalidObjectException;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
-import static j86.j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
+import static j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
 
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
@@ -81,11 +81,11 @@ import j86.java.time.Period;
 import j86.java.time.Year;
 import j86.java.time.ZoneId;
 import j86.java.time.ZonedDateTime;
-import j86.j86.java.time.format.ResolverStyle;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.format.ResolverStyle;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Arrays;
 import j86.java.util.List;
 import j86.java.util.Locale;
@@ -587,7 +587,7 @@ public final class IsoChronology extends AbstractChronology implements Serializa
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(1);     // identifies a Chronology

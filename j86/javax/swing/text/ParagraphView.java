@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.Arrays;
 import j86.java.awt.*;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.javax.swing.event.*;
+import j86.java.awt.font.TextAttribute;
+import j86.javax.swing.event.*;
 import j86.javax.swing.SizeRequirements;
 
 /**
@@ -63,7 +63,7 @@ public class ParagraphView extends FlowView implements TabExpander {
             try {
                 if (i18nStrategy == null) {
                     // the classname should probably come from a property file.
-                    String classname = "j86.j86.javax.swing.text.TextLayoutStrategy";
+                    String classname = "j86.javax.swing.text.TextLayoutStrategy";
                     ClassLoader loader = getClass().getClassLoader();
                     if (loader != null) {
                         i18nStrategy = loader.loadClass(classname);

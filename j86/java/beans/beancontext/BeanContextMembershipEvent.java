@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.util.EventObject;
 
-import j86.j86.java.beans.beancontext.BeanContext;
-import j86.j86.java.beans.beancontext.BeanContextEvent;
+import j86.java.beans.beancontext.BeanContext;
+import j86.java.beans.beancontext.BeanContextEvent;
 
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
@@ -50,9 +50,9 @@ import j86.java.util.Iterator;
  *
  * @author      Laurence P. G. Cable
  * @since       1.2
- * @see         j86.j86.java.beans.beancontext.BeanContext
- * @see         j86.j86.java.beans.beancontext.BeanContextEvent
- * @see         j86.j86.java.beans.beancontext.BeanContextMembershipListener
+ * @see         j86.java.beans.beancontext.BeanContext
+ * @see         j86.java.beans.beancontext.BeanContextEvent
+ * @see         j86.java.beans.beancontext.BeanContextMembershipListener
  */
 public class BeanContextMembershipEvent extends BeanContextEvent {
     private static final long serialVersionUID = 3499346510334590959L;

@@ -29,33 +29,33 @@ import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.java.io.PrintStream;
 import j86.java.io.OutputStream;
-import j86.j86.java.rmi.server.LogStream;
-import j86.j86.java.util.logging.ConsoleHandler;
-import j86.j86.java.util.logging.Handler;
-import j86.j86.java.util.logging.Formatter;
-import j86.j86.java.util.logging.SimpleFormatter;
-import j86.j86.java.util.logging.StreamHandler;
-import j86.j86.java.util.logging.Level;
-import j86.j86.java.util.logging.Logger;
-import j86.j86.java.util.logging.LogManager;
-import j86.j86.java.util.logging.LogRecord;
-import j86.j86.java.util.logging.StreamHandler;
+import j86.java.rmi.server.LogStream;
+import j86.java.util.logging.ConsoleHandler;
+import j86.java.util.logging.Handler;
+import j86.java.util.logging.Formatter;
+import j86.java.util.logging.SimpleFormatter;
+import j86.java.util.logging.StreamHandler;
+import j86.java.util.logging.Level;
+import j86.java.util.logging.Logger;
+import j86.java.util.logging.LogManager;
+import j86.java.util.logging.LogRecord;
+import j86.java.util.logging.StreamHandler;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
 
 /**
  * Utility which provides an abstract "logger" like RMI internal API
  * which can be directed to use one of two types of logging
- * infrastructure: the j86.j86.java.util.logging API or the
- * j86.j86.java.rmi.server.LogStream API.  The default behavior is to use the
- * j86.j86.java.util.logging API.  The LogStream API may be used instead by
+ * infrastructure: the j86.java.util.logging API or the
+ * j86.java.rmi.server.LogStream API.  The default behavior is to use the
+ * j86.java.util.logging API.  The LogStream API may be used instead by
  * setting the system property j86.sun.rmi.log.useOld to true.
  *
  * For backwards compatibility, supports the RMI system logging
  * properties which pre-1.4 comprised the only way to configure RMI
- * logging.  If the j86.j86.java.util.logging API is used and RMI system log
+ * logging.  If the j86.java.util.logging API is used and RMI system log
  * properties are set, the system properties override initial RMI
- * logger values as appropriate. If the j86.j86.java.util.logging API is
+ * logger values as appropriate. If the j86.java.util.logging API is
  * turned off, pre-1.4 logging behavior is used.
  *
  * @author Laird Dornin
@@ -155,7 +155,7 @@ public abstract class Log {
 
     /**
      * Factory to create Log objects which deliver log messages to the
-     * j86.j86.java.util.logging API.
+     * j86.java.util.logging API.
      */
     private static class LoggerLogFactory implements LogFactory {
         LoggerLogFactory() {}
@@ -175,7 +175,7 @@ public abstract class Log {
     }
 
     /**
-     * Class specialized to log messages to the j86.j86.java.util.logging API
+     * Class specialized to log messages to the j86.java.util.logging API
      */
     private static class LoggerLog extends Log {
 
@@ -349,7 +349,7 @@ public abstract class Log {
 
     /**
      * Factory to create Log objects which deliver log messages to the
-     * j86.j86.java.rmi.server.LogStream API
+     * j86.java.rmi.server.LogStream API
      */
     private static class LogStreamLogFactory implements LogFactory {
         LogStreamLogFactory() {}
@@ -368,7 +368,7 @@ public abstract class Log {
 
     /**
      * Class specialized to log messages to the
-     * j86.j86.java.rmi.server.LogStream API
+     * j86.java.rmi.server.LogStream API
      */
     private static class LogStreamLog extends Log {
         /** Log stream to which log messages are written */

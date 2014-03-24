@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
@@ -48,7 +48,7 @@ import j86.sun.management.Util;
  * instance could implement one or more MXBean interfaces.
  *
  * For example, com.j86.sun.management.GarbageCollectorMXBean
- * extends j86.j86.java.lang.management.GarbageCollectorMXBean
+ * extends j86.java.lang.management.GarbageCollectorMXBean
  * and there is one set of garbage collection MXBean instances,
  * each of which implements both c.s.m. and j.l.m. interfaces.
  * There are two separate enums GARBAGE_COLLECTOR
@@ -64,7 +64,7 @@ enum PlatformComponent {
      * Class loading system of the Java virtual machine.
      */
     CLASS_LOADING(
-        "j86.j86.java.lang.management.ClassLoadingMXBean",
+        "j86.java.lang.management.ClassLoadingMXBean",
         "j86.java.lang", "ClassLoading", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<ClassLoadingMXBean>() {
@@ -77,7 +77,7 @@ enum PlatformComponent {
      * Compilation system of the Java virtual machine.
      */
     COMPILATION(
-        "j86.j86.java.lang.management.CompilationMXBean",
+        "j86.java.lang.management.CompilationMXBean",
         "j86.java.lang", "Compilation", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<CompilationMXBean>() {
@@ -95,7 +95,7 @@ enum PlatformComponent {
      * Memory system of the Java virtual machine.
      */
     MEMORY(
-        "j86.j86.java.lang.management.MemoryMXBean",
+        "j86.java.lang.management.MemoryMXBean",
         "j86.java.lang", "Memory", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<MemoryMXBean>() {
@@ -108,7 +108,7 @@ enum PlatformComponent {
      * Garbage Collector in the Java virtual machine.
      */
     GARBAGE_COLLECTOR(
-        "j86.j86.java.lang.management.GarbageCollectorMXBean",
+        "j86.java.lang.management.GarbageCollectorMXBean",
         "j86.java.lang", "GarbageCollector", keyProperties("name"),
         false, // zero or more instances
         new MXBeanFetcher<GarbageCollectorMXBean>() {
@@ -122,7 +122,7 @@ enum PlatformComponent {
      * Memory manager in the Java virtual machine.
      */
     MEMORY_MANAGER(
-        "j86.j86.java.lang.management.MemoryManagerMXBean",
+        "j86.java.lang.management.MemoryManagerMXBean",
         "j86.java.lang", "MemoryManager", keyProperties("name"),
         false, // zero or more instances
         new MXBeanFetcher<MemoryManagerMXBean>() {
@@ -136,7 +136,7 @@ enum PlatformComponent {
      * Memory pool in the Java virtual machine.
      */
     MEMORY_POOL(
-        "j86.j86.java.lang.management.MemoryPoolMXBean",
+        "j86.java.lang.management.MemoryPoolMXBean",
         "j86.java.lang", "MemoryPool", keyProperties("name"),
         false, // zero or more instances
         new MXBeanFetcher<MemoryPoolMXBean>() {
@@ -149,7 +149,7 @@ enum PlatformComponent {
      * Operating system on which the Java virtual machine is running
      */
     OPERATING_SYSTEM(
-        "j86.j86.java.lang.management.OperatingSystemMXBean",
+        "j86.java.lang.management.OperatingSystemMXBean",
         "j86.java.lang", "OperatingSystem", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<OperatingSystemMXBean>() {
@@ -162,7 +162,7 @@ enum PlatformComponent {
      * Runtime system of the Java virtual machine.
      */
     RUNTIME(
-        "j86.j86.java.lang.management.RuntimeMXBean",
+        "j86.java.lang.management.RuntimeMXBean",
         "j86.java.lang", "Runtime", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<RuntimeMXBean>() {
@@ -175,7 +175,7 @@ enum PlatformComponent {
      * Threading system of the Java virtual machine.
      */
     THREADING(
-        "j86.j86.java.lang.management.ThreadMXBean",
+        "j86.java.lang.management.ThreadMXBean",
         "j86.java.lang", "Threading", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<ThreadMXBean>() {
@@ -189,8 +189,8 @@ enum PlatformComponent {
      * Logging facility.
      */
     LOGGING(
-        "j86.j86.java.lang.management.PlatformLoggingMXBean",
-        "j86.j86.java.util.logging", "Logging", defaultKeyProperties(),
+        "j86.java.lang.management.PlatformLoggingMXBean",
+        "j86.java.util.logging", "Logging", defaultKeyProperties(),
         true, // singleton
         new MXBeanFetcher<PlatformLoggingMXBean>() {
             public List<PlatformLoggingMXBean> getMXBeans() {
@@ -207,7 +207,7 @@ enum PlatformComponent {
      * Buffer pools.
      */
     BUFFER_POOL(
-        "j86.j86.java.lang.management.BufferPoolMXBean",
+        "j86.java.lang.management.BufferPoolMXBean",
         "j86.java.nio", "BufferPool", keyProperties("name"),
         false, // zero or more instances
         new MXBeanFetcher<BufferPoolMXBean>() {

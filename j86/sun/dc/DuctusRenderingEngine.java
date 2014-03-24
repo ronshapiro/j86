@@ -27,14 +27,14 @@ package j86.sun.dc;
 
 import j86.java.awt.Shape;
 import j86.java.awt.BasicStroke;
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.AffineTransform;
 
-import j86.j86.sun.awt.geom.PathConsumer2D;
-import j86.j86.sun.java2d.pipe.Region;
-import j86.j86.sun.java2d.pipe.AATileGenerator;
-import j86.j86.sun.java2d.pipe.RenderingEngine;
+import j86.sun.awt.geom.PathConsumer2D;
+import j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.AATileGenerator;
+import j86.sun.java2d.pipe.RenderingEngine;
 
 import j86.sun.dc.pr.Rasterizer;
 import j86.sun.dc.pr.PathStroker;

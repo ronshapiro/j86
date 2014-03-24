@@ -33,9 +33,9 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.j86.java.awt.image.renderable;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.j86.java.awt.image.RenderedImage;
+package j86.java.awt.image.renderable;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.image.RenderedImage;
 
 /**
  * ContextualRenderedImageFactory provides an interface for the

@@ -33,16 +33,16 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.j86.java.awt.image.renderable;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.ImageConsumer;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
+package j86.java.awt.image.renderable;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.ImageConsumer;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
 import j86.java.util.Enumeration;
 import j86.java.util.Vector;
 

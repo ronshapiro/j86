@@ -29,8 +29,8 @@ import j86.java.security.AccessController;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.PrivilegedAction;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
 import j86.java.util.*;
 import j86.sun.security.x509.X509CertImpl;
 

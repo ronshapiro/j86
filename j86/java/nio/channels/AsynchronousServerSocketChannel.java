@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
-import j86.j86.j86.java.nio.channels.spi.*;
+import j86.java.nio.channels.spi.*;
 import j86.java.net.SocketOption;
 import j86.java.net.SocketAddress;
-import j86.j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.Future;
 import j86.java.io.IOException;
 
 /**
@@ -119,9 +119,9 @@ public abstract class AsynchronousServerSocketChannel
      * Opens an asynchronous server-socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider#openAsynchronousServerSocketChannel
+     * j86.java.nio.channels.spi.AsynchronousChannelProvider#openAsynchronousServerSocketChannel
      * openAsynchronousServerSocketChannel} method on the {@link
-     * j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider} object that created
+     * j86.java.nio.channels.spi.AsynchronousChannelProvider} object that created
      * the given group. If the group parameter is <tt>null</tt> then the
      * resulting channel is created by the system-wide default provider, and
      * bound to the <em>default group</em>.

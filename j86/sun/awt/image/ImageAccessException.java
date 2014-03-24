@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 public class ImageAccessException extends Exception {
     public ImageAccessException(String s) {

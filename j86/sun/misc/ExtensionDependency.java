@@ -32,17 +32,17 @@ import j86.java.io.FileNotFoundException;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * <p>

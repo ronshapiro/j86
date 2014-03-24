@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputEvent;
 
 /**
  * The <code>DragSourceDragEvent</code> is
@@ -86,8 +86,8 @@ public class DragSourceDragEvent extends DragSourceEvent {
      * The arguments <code>dropAction</code> and <code>action</code> should
      * be one of <code>DnDConstants</code> that represents a single action.
      * The argument <code>modifiers</code> should be either a bitwise mask
-     * of old <code>j86.j86.java.awt.event.InputEvent.*_MASK</code> constants or a
-     * bitwise mask of extended <code>j86.j86.java.awt.event.InputEvent.*_DOWN_MASK</code>
+     * of old <code>j86.java.awt.event.InputEvent.*_MASK</code> constants or a
+     * bitwise mask of extended <code>j86.java.awt.event.InputEvent.*_DOWN_MASK</code>
      * constants.
      * This constructor does not throw any exception for invalid <code>dropAction</code>,
      * <code>action</code> and <code>modifiers</code>.
@@ -105,7 +105,7 @@ public class DragSourceDragEvent extends DragSourceEvent {
      *
      * @throws IllegalArgumentException if <code>dsc</code> is <code>null</code>.
      *
-     * @see j86.j86.java.awt.event.InputEvent
+     * @see j86.java.awt.event.InputEvent
      * @see DragSourceEvent#getLocation
      */
 
@@ -135,8 +135,8 @@ public class DragSourceDragEvent extends DragSourceEvent {
      * The arguments <code>dropAction</code> and <code>action</code> should
      * be one of <code>DnDConstants</code> that represents a single action.
      * The argument <code>modifiers</code> should be either a bitwise mask
-     * of old <code>j86.j86.java.awt.event.InputEvent.*_MASK</code> constants or a
-     * bitwise mask of extended <code>j86.j86.java.awt.event.InputEvent.*_DOWN_MASK</code>
+     * of old <code>j86.java.awt.event.InputEvent.*_MASK</code> constants or a
+     * bitwise mask of extended <code>j86.java.awt.event.InputEvent.*_DOWN_MASK</code>
      * constants.
      * This constructor does not throw any exception for invalid <code>dropAction</code>,
      * <code>action</code> and <code>modifiers</code>.
@@ -156,7 +156,7 @@ public class DragSourceDragEvent extends DragSourceEvent {
      *
      * @throws IllegalArgumentException if <code>dsc</code> is <code>null</code>.
      *
-     * @see j86.j86.java.awt.event.InputEvent
+     * @see j86.java.awt.event.InputEvent
      * @since 1.4
      */
     public DragSourceDragEvent(DragSourceContext dsc, int dropAction,

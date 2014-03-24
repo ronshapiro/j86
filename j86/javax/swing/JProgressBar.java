@@ -36,9 +36,9 @@ import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.plaf.ProgressBarUI;
+import j86.javax.swing.plaf.ProgressBarUI;
 
 
 /**
@@ -118,7 +118,7 @@ import j86.j86.javax.swing.plaf.ProgressBarUI;
  * has been added to the <code>j86.java.beans</code> package.
  * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see j86.j86.j86.javax.swing.plaf.basic.BasicProgressBarUI
+ * @see j86.javax.swing.plaf.basic.BasicProgressBarUI
  * @see j86.javax.swing.BoundedRangeModel
  * @see j86.javax.swing.SwingWorker
  *
@@ -665,7 +665,7 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      *
      * @see #changeListener
      * @see #fireStateChanged
-     * @see j86.j86.javax.swing.event.ChangeListener
+     * @see j86.javax.swing.event.ChangeListener
      * @see j86.javax.swing.BoundedRangeModel
      */
     protected ChangeListener createChangeListener() {
@@ -918,7 +918,7 @@ public class JProgressBar extends JComponent implements SwingConstants, Accessib
      *                  <code>false</code> if it should revert to normal.
      *
      * @see #isIndeterminate
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicProgressBarUI
+     * @see j86.javax.swing.plaf.basic.BasicProgressBarUI
      *
      * @since 1.4
      *

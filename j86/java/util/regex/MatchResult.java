@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.regex;
+package j86.java.util.regex;
 
 /**
  * The result of a match operation.

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.*;
 import j86.java.net.URL;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.swing.PrintColorUIResource;
 import j86.sun.swing.SwingLazyValue;
@@ -130,7 +130,7 @@ public class OceanTheme extends DefaultMetalTheme {
      */
     public void addCustomEntriesToTable(UIDefaults table) {
         Object focusBorder = new SwingLazyValue(
-                      "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                      "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                       new Object[] {getPrimary1()});
         // .30 0 DDE8F3 white secondary2
         j86.java.util.List buttonGradient = Arrays.asList(
@@ -244,7 +244,7 @@ public class OceanTheme extends DefaultMetalTheme {
 
             "List.focusCellHighlightBorder", focusBorder,
 
-            "MenuBarUI", "j86.j86.j86.javax.swing.plaf.metal.MetalMenuBarUI",
+            "MenuBarUI", "j86.javax.swing.plaf.metal.MetalMenuBarUI",
 
             "OptionPane.errorIcon",
                    getIconResource("icons/ocean/error.png"),

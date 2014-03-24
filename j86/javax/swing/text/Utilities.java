@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 import j86.java.awt.Component;
 import j86.java.awt.Rectangle;
@@ -33,14 +33,14 @@ import j86.java.awt.FontMetrics;
 import j86.java.awt.Shape;
 import j86.java.awt.Toolkit;
 import j86.java.awt.Graphics2D;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.TextLayout;
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.TextLayout;
+import j86.java.awt.font.TextAttribute;
 
 import j86.java.text.*;
 import j86.javax.swing.JComponent;
 import j86.javax.swing.SwingConstants;
-import j86.j86.javax.swing.text.ParagraphView.Row;
+import j86.javax.swing.text.ParagraphView.Row;
 import j86.sun.swing.SwingUtilities2;
 
 /**

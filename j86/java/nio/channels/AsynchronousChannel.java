@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.IOException;
-import j86.j86.java.util.concurrent.Future;  // javadoc
+import j86.java.util.concurrent.Future;  // javadoc
 
 /**
  * A channel that supports asynchronous I/O operations. Asynchronous I/O
@@ -65,7 +65,7 @@ import j86.j86.java.util.concurrent.Future;  // javadoc
  *
  * <p> The {@code Future} interface defines the {@link Future#cancel cancel}
  * method to cancel execution. This causes all threads waiting on the result of
- * the I/O operation to throw {@link j86.j86.java.util.concurrent.CancellationException}.
+ * the I/O operation to throw {@link j86.java.util.concurrent.CancellationException}.
  * Whether the underlying I/O operation can be cancelled is highly implementation
  * specific and therefore not specified. Where cancellation leaves the channel,
  * or the entity to which it is connected, in an inconsistent state, then the

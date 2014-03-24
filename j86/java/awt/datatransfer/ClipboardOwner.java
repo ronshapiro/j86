@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.java.awt.datatransfer;
+package j86.java.awt.datatransfer;
 
 /**
  * Defines the interface for classes that will provide data to
  * a clipboard. An instance of this interface becomes the owner
  * of the contents of a clipboard (clipboard owner) if it is
  * passed as an argument to
- * {@link j86.j86.java.awt.datatransfer.Clipboard#setContents} method of
+ * {@link j86.java.awt.datatransfer.Clipboard#setContents} method of
  * the clipboard and this method returns successfully.
  * The instance remains the clipboard owner until another application
  * or another object within this application asserts ownership
  * of this clipboard.
  *
- * @see j86.j86.java.awt.datatransfer.Clipboard
+ * @see j86.java.awt.datatransfer.Clipboard
  *
  * @author      Amy Fowler
  */

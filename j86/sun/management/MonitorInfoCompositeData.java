@@ -25,11 +25,11 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.MonitorInfo;
-import j86.j86.javax.management.openmbean.CompositeType;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataSupport;
-import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.java.lang.management.MonitorInfo;
+import j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataSupport;
+import j86.javax.management.openmbean.OpenDataException;
 import j86.java.util.Set;
 
 /**

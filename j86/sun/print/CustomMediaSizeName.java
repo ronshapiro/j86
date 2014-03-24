@@ -26,10 +26,10 @@
 
 package j86.sun.print;
 
-import j86.j86.javax.print.attribute.EnumSyntax;
-import j86.j86.j86.javax.print.attribute.standard.Media;
-import j86.j86.j86.javax.print.attribute.standard.MediaSize;
-import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
+import j86.javax.print.attribute.EnumSyntax;
+import j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.standard.MediaSize;
+import j86.javax.print.attribute.standard.MediaSizeName;
 import j86.java.util.ArrayList;
 
 class CustomMediaSizeName extends MediaSizeName {

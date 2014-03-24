@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.Color;
 import j86.java.awt.Graphics;
 
 import j86.javax.swing.JMenuItem;
 
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.State;
 
 /**
  * Accessor interface for WindowsMenuItemUI to allow for "multiple implementation

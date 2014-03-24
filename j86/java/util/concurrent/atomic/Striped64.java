@@ -33,10 +33,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
+package j86.java.util.concurrent.atomic;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.concurrent.ThreadLocalRandom;
 
 /**
  * A package-local class holding common representation and mechanics

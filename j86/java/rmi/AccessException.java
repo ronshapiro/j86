@@ -29,7 +29,7 @@ package j86.java.rmi;
  * An <code>AccessException</code> is thrown by certain methods of the
  * <code>j86.java.rmi.Naming</code> class (specifically <code>bind</code>,
  * <code>rebind</code>, and <code>unbind</code>) and methods of the
- * <code>j86.j86.java.rmi.activation.ActivationSystem</code> interface to
+ * <code>j86.java.rmi.activation.ActivationSystem</code> interface to
  * indicate that the caller does not have permission to perform the action
  * requested by the method call.  If the method was invoked from a non-local
  * host, then an <code>AccessException</code> is thrown.
@@ -38,7 +38,7 @@ package j86.java.rmi;
  * @author  Roger Riggs
  * @since   JDK1.1
  * @see     j86.java.rmi.Naming
- * @see     j86.j86.java.rmi.activation.ActivationSystem
+ * @see     j86.java.rmi.activation.ActivationSystem
  */
 public class AccessException extends j86.java.rmi.RemoteException {
 

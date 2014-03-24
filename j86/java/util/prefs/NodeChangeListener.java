@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.prefs;
+package j86.java.util.prefs;
 
 /**
  * A listener for receiving preference node change events.

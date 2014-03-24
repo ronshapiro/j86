@@ -25,7 +25,7 @@
 
 package j86.java.sql;
 
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.logging.Logger;
 
 /**
  * The interface that every driver class must implement.
@@ -174,7 +174,7 @@ public interface Driver {
      *
      * @return the parent Logger for this driver
      * @throws SQLFeatureNotSupportedException if the driver does not use
-     * {@code j86.j86.java.util.logging}.
+     * {@code j86.java.util.logging}.
      * @since 1.7
      */
     public Logger getParentLogger() throws SQLFeatureNotSupportedException;

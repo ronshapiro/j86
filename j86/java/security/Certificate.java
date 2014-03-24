@@ -60,7 +60,7 @@ import j86.java.util.Date;
  *             This Certificate interface is entirely deprecated and
  *             is here to allow for a smooth transition to the new
  *             package.
- * @see j86.j86.java.security.cert.Certificate
+ * @see j86.java.security.cert.Certificate
  */
 @Deprecated
 public interface Certificate {

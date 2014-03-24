@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
 import j86.sun.java2d.SurfaceData;
-import j86.j86.j86.sun.awt.image.SurfaceManager;
-import j86.j86.j86.sun.java2d.pipe.hw.AccelGraphicsConfig;
+import j86.sun.awt.image.SurfaceManager;
+import j86.sun.java2d.pipe.hw.AccelGraphicsConfig;
 
 /**
  * This interface collects the methods that are provided by both

@@ -26,12 +26,12 @@
 package j86.com.sun.imageio.plugins.jpeg;
 
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
-import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ICC_ColorSpace;
 
 /**
  * A class containing JPEG-related constants, definitions, and

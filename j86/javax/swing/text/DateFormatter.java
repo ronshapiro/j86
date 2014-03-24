@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.text.*;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * DateFormatter is an <code>InternationalFormatter</code> that does its

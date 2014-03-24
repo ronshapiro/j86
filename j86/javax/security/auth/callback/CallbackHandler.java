@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.callback;
+package j86.javax.security.auth.callback;
 
 /**
  * <p> An application implements a {@code CallbackHandler} and passes

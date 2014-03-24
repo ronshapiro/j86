@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.net.www;
+package j86.sun.net.www;
 
 import j86.java.net.URL;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.sun.net.ProgressSource;
-import j86.j86.j86.sun.net.www.http.ChunkedInputStream;
+import j86.sun.net.www.http.ChunkedInputStream;
 
 
 public class MeteredStream extends FilterInputStream {

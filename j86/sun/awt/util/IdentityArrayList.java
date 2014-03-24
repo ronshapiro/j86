@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.util;
+package j86.sun.awt.util;
 
 import j86.java.util.AbstractList;
 import j86.java.util.Arrays;

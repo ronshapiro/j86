@@ -25,7 +25,7 @@
 
 package j86.javax.security.sasl;
 
-import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.CallbackHandler;
 
 import j86.java.util.Enumeration;
 import j86.java.util.Iterator;
@@ -498,7 +498,7 @@ public class Sasl {
                     String protocol,
                     String serverName,
                     Map<String,?> props,
-                    j86.j86.javax.security.auth.callback.CallbackHandler cbh)
+                    j86.javax.security.auth.callback.CallbackHandler cbh)
         throws SaslException {
 
         SaslServer mech = null;

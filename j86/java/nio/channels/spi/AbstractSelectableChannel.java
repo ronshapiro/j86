@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.channels.spi;
+package j86.java.nio.channels.spi;
 
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 
 
 /**
@@ -36,7 +36,7 @@ import j86.j86.java.nio.channels.*;
  * registration, deregistration, and closing.  It maintains the current
  * blocking mode of this channel as well as its current set of selection keys.
  * It performs all of the synchronization required to implement the {@link
- * j86.j86.java.nio.channels.SelectableChannel} specification.  Implementations of the
+ * j86.java.nio.channels.SelectableChannel} specification.  Implementations of the
  * abstract protected methods defined in this class need not synchronize
  * against other threads that might be engaged in the same operations.  </p>
  *
@@ -225,7 +225,7 @@ public abstract class AbstractSelectableChannel
      *
      * <p> This method, which is specified in the {@link
      * AbstractInterruptibleChannel} class and is invoked by the {@link
-     * j86.j86.java.nio.channels.Channel#close close} method, in turn invokes the
+     * j86.java.nio.channels.Channel#close close} method, in turn invokes the
      * {@link #implCloseSelectableChannel implCloseSelectableChannel} method in
      * order to perform the actual work of closing this channel.  It then
      * cancels all of this channel's keys.  </p>
@@ -245,7 +245,7 @@ public abstract class AbstractSelectableChannel
     /**
      * Closes this selectable channel.
      *
-     * <p> This method is invoked by the {@link j86.j86.java.nio.channels.Channel#close
+     * <p> This method is invoked by the {@link j86.java.nio.channels.Channel#close
      * close} method in order to perform the actual work of closing the
      * channel.  This method is only invoked if the channel has not yet been
      * closed, and it is never invoked more than once.

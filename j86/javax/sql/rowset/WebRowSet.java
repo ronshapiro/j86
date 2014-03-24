@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -404,10 +404,10 @@ import org.xml.sax.*;
  * </data>
  * }</PRE>
  *
- * @see j86.j86.javax.sql.rowset.JdbcRowSet
- * @see j86.j86.javax.sql.rowset.CachedRowSet
- * @see j86.j86.javax.sql.rowset.FilteredRowSet
- * @see j86.j86.javax.sql.rowset.JoinRowSet
+ * @see j86.javax.sql.rowset.JdbcRowSet
+ * @see j86.javax.sql.rowset.CachedRowSet
+ * @see j86.javax.sql.rowset.FilteredRowSet
+ * @see j86.javax.sql.rowset.JoinRowSet
  */
 
 public interface WebRowSet extends CachedRowSet {

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.Color;
 import j86.java.awt.Font;
@@ -31,7 +31,7 @@ import j86.java.awt.Toolkit;
 import j86.java.awt.HeadlessException;
 import j86.java.awt.Image;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.java.util.Enumeration;
@@ -40,7 +40,7 @@ import j86.java.util.Vector;
 import j86.java.util.Locale;
 import j86.javax.swing.ImageIcon;
 import j86.javax.swing.SizeRequirements;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * Defines a set of

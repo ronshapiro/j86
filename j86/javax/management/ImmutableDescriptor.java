@@ -27,7 +27,7 @@ package j86.javax.management;
 
 import j86.com.sun.jmx.mbeanserver.Util;
 import j86.java.io.InvalidObjectException;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 import j86.java.util.Arrays;
 import j86.java.util.Comparator;
 import j86.java.util.Map;

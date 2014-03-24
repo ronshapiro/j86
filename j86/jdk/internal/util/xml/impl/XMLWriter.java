@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.jdk.internal.util.xml.impl;
+package j86.jdk.internal.util.xml.impl;
 
 import j86.java.io.BufferedOutputStream;
 import j86.java.io.IOException;
@@ -31,8 +31,8 @@ import j86.java.io.OutputStream;
 import j86.java.io.OutputStreamWriter;
 import j86.java.io.UnsupportedEncodingException;
 import j86.java.io.Writer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
 import j86.jdk.internal.util.xml.XMLStreamException;
 
 /**

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.relation;
+package j86.javax.management.relation;
 
 
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;

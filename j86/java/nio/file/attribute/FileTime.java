@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
 import j86.java.time.Instant;
 import j86.java.time.LocalDateTime;
 import j86.java.time.ZoneOffset;
 import j86.java.util.Objects;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.TimeUnit;
 
 /**
  * Represents the value of a file's time stamp attribute. For example, it may
@@ -41,8 +41,8 @@ import j86.j86.java.util.concurrent.TimeUnit;
  * <p> Instances of this class are immutable.
  *
  * @since 1.7
- * @see j86.j86.java.nio.file.Files#setLastModifiedTime
- * @see j86.j86.java.nio.file.Files#getLastModifiedTime
+ * @see j86.java.nio.file.Files#setLastModifiedTime
+ * @see j86.java.nio.file.Files#getLastModifiedTime
  */
 
 public final class FileTime

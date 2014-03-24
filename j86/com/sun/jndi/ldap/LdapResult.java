@@ -26,9 +26,9 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.java.util.Vector;
-import j86.j86.javax.naming.directory.Attributes;
-import j86.j86.javax.naming.directory.BasicAttributes;
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.BasicAttributes;
+import j86.javax.naming.ldap.Control;
 
 /**
   * %%% public for use by LdapSasl %%%

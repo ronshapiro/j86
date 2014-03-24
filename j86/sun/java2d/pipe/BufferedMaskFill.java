@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Composite;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.loops.MaskFill;
-import j86.j86.sun.java2d.loops.SurfaceType;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.MaskFill;
+import j86.sun.java2d.loops.SurfaceType;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
 
 /**
  * The MaskFill operation is expressed as:

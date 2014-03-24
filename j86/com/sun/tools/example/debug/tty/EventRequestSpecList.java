@@ -34,8 +34,8 @@
 
 package j86.com.sun.tools.example.debug.tty;
 
-import j86.j86.com.sun.jdi.request.EventRequest;
-import j86.j86.com.sun.jdi.event.ClassPrepareEvent;
+import j86.com.sun.jdi.request.EventRequest;
+import j86.com.sun.jdi.event.ClassPrepareEvent;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;

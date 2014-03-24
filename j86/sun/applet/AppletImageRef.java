@@ -27,7 +27,7 @@ package j86.sun.applet;
 
 import j86.java.awt.Toolkit;
 import j86.java.awt.Image;
-import j86.j86.j86.sun.awt.image.URLImageSource;
+import j86.sun.awt.image.URLImageSource;
 import j86.java.net.URL;
 
 class AppletImageRef extends j86.sun.misc.Ref {

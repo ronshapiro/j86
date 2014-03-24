@@ -38,7 +38,7 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.io.IOException;
 import j86.java.text.CharacterIterator;

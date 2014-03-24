@@ -20,27 +20,27 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.transforms;
+package j86.com.sun.org.apache.xml.internal.security.transforms;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 /**
- * Holder of the {@link j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform} steps to
+ * Holder of the {@link j86.com.sun.org.apache.xml.internal.security.transforms.Transform} steps to
  * be performed on the data.
  * The input to the first Transform is the result of dereferencing the
  * <code>URI</code> attribute of the <code>Reference</code> element.
@@ -49,7 +49,7 @@ import org.w3c.dom.NodeList;
  *
  * @author Christian Geuer-Pollmann
  * @see Transform
- * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.Reference
+ * @see j86.com.sun.org.apache.xml.internal.security.signature.Reference
  */
 public class Transforms extends SignatureElementProxy {
 
@@ -102,8 +102,8 @@ public class Transforms extends SignatureElementProxy {
         = "http://www.w3.org/2002/06/xmldsig-filter2";
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(Transforms.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(Transforms.class.getName());
 
     private Element[] transforms;
 
@@ -166,8 +166,8 @@ public class Transforms extends SignatureElementProxy {
      */
     public void addTransform(String transformURI) throws TransformationException {
         try {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transformURI + ")");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transformURI + ")");
             }
 
             Transform transform = new Transform(this.doc, transformURI);
@@ -190,8 +190,8 @@ public class Transforms extends SignatureElementProxy {
     public void addTransform(String transformURI, Element contextElement)
        throws TransformationException {
         try {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transformURI + ")");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transformURI + ")");
             }
 
             Transform transform = new Transform(this.doc, transformURI, contextElement);
@@ -228,8 +228,8 @@ public class Transforms extends SignatureElementProxy {
      * @param transform {@link Transform} object
      */
     private void addTransform(Transform transform) {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transform.getURI() + ")");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Transforms.addTransform(" + transform.getURI() + ")");
         }
 
         Element transformElement = transform.getElement();
@@ -269,8 +269,8 @@ public class Transforms extends SignatureElementProxy {
             for (int i = 0; i < last; i++) {
                 Transform t = this.item(i);
                 String uri = t.getURI();
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Perform the (" + i + ")th " + uri + " transform");
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Perform the (" + i + ")th " + uri + " transform");
                 }
                 checkSecureValidation(t);
                 xmlSignatureInput = t.performTransform(xmlSignatureInput);

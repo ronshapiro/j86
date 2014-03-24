@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 /**
  * This class is an abstraction of certificate revocation lists (CRLs) that

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
 import j86.java.io.*;
-import com.j86.j86.sun.net.httpserver.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.*;
+import com.j86.sun.net.httpserver.*;
+import j86.com.j86.sun.net.httpserver.spi.*;
 
 /**
  * a (filter) input stream which can tell us if bytes are "left over"

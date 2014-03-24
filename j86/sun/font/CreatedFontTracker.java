@@ -29,8 +29,8 @@ import j86.java.io.File;
 import j86.java.io.OutputStream;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
-import j86.j86.java.util.concurrent.Semaphore;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.Semaphore;
+import j86.java.util.concurrent.TimeUnit;
 
 import j86.sun.awt.AppContext;
 

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.security.ssl.krb5;
+package j86.sun.security.ssl.krb5;
 
 import j86.java.io.*;
 import j86.java.security.*;
 import j86.java.util.Arrays;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 import j86.sun.security.krb5.EncryptionKey;
 import j86.sun.security.krb5.EncryptedData;
 import j86.sun.security.krb5.KrbException;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 
 import j86.sun.security.ssl.Debug;
 import j86.sun.security.ssl.HandshakeInStream;

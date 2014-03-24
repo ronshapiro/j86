@@ -24,12 +24,12 @@
  */
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * Fix security hole in ClassLoaderRepository. This class wraps
  * the actual ClassLoaderRepository implementation so that
- * only the methods from {@link j86.j86.javax.management.loading.ClassLoaderRepository}
+ * only the methods from {@link j86.javax.management.loading.ClassLoaderRepository}
  * can be accessed (read-only).
  *
  * @since 1.5

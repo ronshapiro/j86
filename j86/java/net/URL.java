@@ -145,7 +145,7 @@ public final class URL implements j86.java.io.Serializable {
      * all protocol handlers will be in a class called <protocolname>.Handler,
      * and each package in the list is examined in turn for a matching
      * handler.  If none are found (or the property is not specified), the
-     * default package prefix, j86.j86.sun.net.www.protocol, is used.  The search
+     * default package prefix, j86.sun.net.www.protocol, is used.  The search
      * proceeds from the first package in the list to the last and stops
      * when a match is found.
      */
@@ -1150,7 +1150,7 @@ public final class URL implements j86.java.io.Serializable {
 
                 // REMIND: decide whether to allow the "null" class prefix
                 // or not.
-                packagePrefixList += "j86.j86.sun.net.www.protocol";
+                packagePrefixList += "j86.sun.net.www.protocol";
 
                 StringTokenizer packagePrefixIter =
                     new StringTokenizer(packagePrefixList, "|");

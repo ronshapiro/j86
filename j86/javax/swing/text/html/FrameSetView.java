@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.*;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
 
 /**
  * Implements a FrameSetView, intended to support the HTML
@@ -43,7 +43,7 @@ import j86.j86.javax.swing.event.*;
  *
  */
 
-class FrameSetView extends j86.j86.javax.swing.text.BoxView {
+class FrameSetView extends j86.javax.swing.text.BoxView {
 
     String[] children;
     int[] percentChildren;

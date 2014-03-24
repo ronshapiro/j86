@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.util.TooManyListenersException;
 
@@ -40,14 +40,14 @@ import j86.java.awt.Insets;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.java.awt.datatransfer.FlavorMap;
-import j86.j86.java.awt.datatransfer.SystemFlavorMap;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.datatransfer.FlavorMap;
+import j86.java.awt.datatransfer.SystemFlavorMap;
 import j86.javax.swing.Timer;
-import j86.j86.java.awt.peer.ComponentPeer;
-import j86.j86.java.awt.peer.LightweightPeer;
-import j86.j86.j86.java.awt.dnd.peer.DropTargetPeer;
+import j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.dnd.peer.DropTargetPeer;
 
 
 /**
@@ -246,7 +246,7 @@ public class DropTarget implements DropTargetListener, Serializable {
      * Sets the default acceptable actions for this <code>DropTarget</code>
      * <P>
      * @param ops the default actions
-     * @see j86.j86.java.awt.dnd.DnDConstants
+     * @see j86.java.awt.dnd.DnDConstants
      */
 
     public void setDefaultActions(int ops) {

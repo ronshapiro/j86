@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 /**
  * A remote object implementation should implement the

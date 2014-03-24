@@ -29,14 +29,14 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 import j86.sun.security.krb5.Config;
 import j86.sun.security.krb5.Checksum;
 import j86.sun.security.krb5.EncryptedData;
 import j86.sun.security.krb5.KrbException;
 import j86.sun.security.krb5.KrbCryptoException;
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 
 public abstract class CksumType {
 
@@ -49,64 +49,64 @@ public abstract class CksumType {
         switch (cksumTypeConst) {
         case Checksum.CKSUMTYPE_CRC32:
             cksumType = new Crc32CksumType();
-            cksumTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.Crc32CksumType";
+            cksumTypeName = "j86.sun.security.krb5.internal.crypto.Crc32CksumType";
             break;
         case Checksum.CKSUMTYPE_DES_MAC:
             cksumType = new DesMacCksumType();
-            cksumTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.DesMacCksumType";
+            cksumTypeName = "j86.sun.security.krb5.internal.crypto.DesMacCksumType";
             break;
         case Checksum.CKSUMTYPE_DES_MAC_K:
             cksumType = new DesMacKCksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.DesMacKCksumType";
+                "j86.sun.security.krb5.internal.crypto.DesMacKCksumType";
             break;
         case Checksum.CKSUMTYPE_RSA_MD5:
             cksumType = new RsaMd5CksumType();
-            cksumTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.RsaMd5CksumType";
+            cksumTypeName = "j86.sun.security.krb5.internal.crypto.RsaMd5CksumType";
             break;
         case Checksum.CKSUMTYPE_RSA_MD5_DES:
             cksumType = new RsaMd5DesCksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.RsaMd5DesCksumType";
+                "j86.sun.security.krb5.internal.crypto.RsaMd5DesCksumType";
             break;
 
         case Checksum.CKSUMTYPE_HMAC_SHA1_DES3_KD:
             cksumType = new HmacSha1Des3KdCksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.HmacSha1Des3KdCksumType";
+                "j86.sun.security.krb5.internal.crypto.HmacSha1Des3KdCksumType";
             break;
 
         case Checksum.CKSUMTYPE_HMAC_SHA1_96_AES128:
             cksumType = new HmacSha1Aes128CksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.HmacSha1Aes128CksumType";
+                "j86.sun.security.krb5.internal.crypto.HmacSha1Aes128CksumType";
             break;
         case Checksum.CKSUMTYPE_HMAC_SHA1_96_AES256:
             cksumType = new HmacSha1Aes256CksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.HmacSha1Aes256CksumType";
+                "j86.sun.security.krb5.internal.crypto.HmacSha1Aes256CksumType";
             break;
 
         case Checksum.CKSUMTYPE_HMAC_MD5_ARCFOUR:
             cksumType = new HmacMd5ArcFourCksumType();
             cksumTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.HmacMd5ArcFourCksumType";
+                "j86.sun.security.krb5.internal.crypto.HmacMd5ArcFourCksumType";
             break;
 
             // currently we don't support MD4.
         case Checksum.CKSUMTYPE_RSA_MD4_DES_K:
             // cksumType = new RsaMd4DesKCksumType();
             // cksumTypeName =
-            //          "j86.j86.j86.sun.security.krb5.internal.crypto.RsaMd4DesKCksumType";
+            //          "j86.sun.security.krb5.internal.crypto.RsaMd4DesKCksumType";
         case Checksum.CKSUMTYPE_RSA_MD4:
             // cksumType = new RsaMd4CksumType();
             // linux box support rsamd4, how to solve conflict?
             // cksumTypeName =
-            //          "j86.j86.j86.sun.security.krb5.internal.crypto.RsaMd4CksumType";
+            //          "j86.sun.security.krb5.internal.crypto.RsaMd4CksumType";
         case Checksum.CKSUMTYPE_RSA_MD4_DES:
             // cksumType = new RsaMd4DesCksumType();
             // cksumTypeName =
-            //          "j86.j86.j86.sun.security.krb5.internal.crypto.RsaMd4DesCksumType";
+            //          "j86.sun.security.krb5.internal.crypto.RsaMd4DesCksumType";
 
         default:
             throw new KdcErrException(Krb5.KDC_ERR_SUMTYPE_NOSUPP);

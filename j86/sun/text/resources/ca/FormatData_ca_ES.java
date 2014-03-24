@@ -41,9 +41,9 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.ca;
+package j86.sun.text.resources.ca;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_ca_ES extends ParallelListResourceBundle {
     /**

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.metadata;
+package j86.javax.imageio.metadata;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
@@ -1262,7 +1262,7 @@ public abstract class IIOMetadataFormatImpl implements IIOMetadataFormat {
      * Returns an <code>IIOMetadataFormat</code> object describing the
      * standard, plug-in neutral <code>j86.javax.imageio_1.0</code>
      * metadata document format described in the comment of the
-     * <code>j86.j86.javax.imageio.metadata</code> package.
+     * <code>j86.javax.imageio.metadata</code> package.
      *
      * @return a predefined <code>IIOMetadataFormat</code> instance.
      */

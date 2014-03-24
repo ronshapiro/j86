@@ -71,4 +71,4 @@
  *
  * @since JDK1.1
  */
-package j86.j86.java.security.interfaces;
+package j86.java.security.interfaces;

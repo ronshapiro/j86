@@ -43,7 +43,7 @@
  * http://oss.software.ibm.com/cvs/icu/icu/source/data/locales/vi.txt?rev=1.38
  */
 
-package j86.j86.j86.sun.text.resources.vi;
+package j86.sun.text.resources.vi;
 
 import j86.java.util.ListResourceBundle;
 

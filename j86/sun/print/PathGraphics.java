@@ -25,7 +25,7 @@
 
 package j86.sun.print;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Hashtable;
 import j86.sun.font.CharToGlyphMapper;
 import j86.sun.font.CompositeFont;
@@ -45,41 +45,41 @@ import j86.java.awt.Shape;
 
 import j86.java.text.AttributedCharacterIterator;
 
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextLayout;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Arc2D;
-import j86.j86.java.awt.geom.Ellipse2D;
-import j86.j86.java.awt.geom.Line2D;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.RoundRectangle2D;
-import j86.j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Arc2D;
+import j86.java.awt.geom.Ellipse2D;
+import j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.RoundRectangle2D;
+import j86.java.awt.geom.PathIterator;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferInt;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.VolatileImage;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
-import j86.j86.j86.sun.awt.image.ToolkitImage;
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferInt;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.java.awt.image.VolatileImage;
+import j86.sun.awt.image.ByteComponentRaster;
+import j86.sun.awt.image.ToolkitImage;
+import j86.sun.awt.image.SunWritableRaster;
 
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterGraphics;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterGraphics;
+import j86.java.awt.print.PrinterJob;
 
 import j86.java.util.Map;
 
@@ -1386,8 +1386,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1426,8 +1426,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1470,8 +1470,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1531,8 +1531,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1603,8 +1603,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1668,8 +1668,8 @@ public abstract class PathGraphics extends ProxyGraphics2D {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,

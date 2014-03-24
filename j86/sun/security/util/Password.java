@@ -27,7 +27,7 @@ package j86.sun.security.util;
 
 import j86.java.io.*;
 import j86.java.nio.*;
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.charset.*;
 import j86.java.util.Arrays;
 
 /**

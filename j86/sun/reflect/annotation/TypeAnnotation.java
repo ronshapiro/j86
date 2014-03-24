@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.reflect.annotation;
+package j86.sun.reflect.annotation;
 
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.annotation.AnnotationFormatError;
-import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.AnnotationFormatError;
+import j86.java.lang.reflect.AnnotatedElement;
 import j86.java.nio.ByteBuffer;
 import j86.java.util.ArrayList;
 import j86.java.util.List;

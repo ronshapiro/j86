@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 /**
  * Signals that an unrecoverable error has occurred.

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.content.image;
+package j86.sun.net.www.content.image;
 
 import j86.java.net.*;
-import j86.j86.j86.sun.awt.image.*;
+import j86.sun.awt.image.*;
 import j86.java.io.IOException;
 import j86.java.awt.Image;
 import j86.java.awt.Toolkit;

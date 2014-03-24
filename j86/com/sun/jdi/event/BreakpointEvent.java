@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -35,14 +35,14 @@ import j86.java.util.List;
  * is generated before the code at its location is executed.
  * When a location
  * is reached which satisfies a currently enabled
- * {@link j86.j86.com.sun.jdi.request.BreakpointRequest breakpoint request},
+ * {@link j86.com.sun.jdi.request.BreakpointRequest breakpoint request},
  * an {@link EventSet event set}
  * containing an instance of this class will be added
  * to the VM's event queue.
  *
  * @see EventQueue
  * @see VirtualMachine
- * @see j86.j86.com.sun.jdi.request.BreakpointRequest
+ * @see j86.com.sun.jdi.request.BreakpointRequest
  *
  * @author Robert Field
  * @since  1.3

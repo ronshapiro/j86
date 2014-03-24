@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 import j86.java.util.*;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.java.io.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.undo.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.undo.*;
 import j86.sun.swing.SwingUtilities2;
 import static j86.sun.swing.SwingUtilities2.IMPLIED_CR;
 
@@ -539,7 +539,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      *
      * @param t the requested <code>HTML.Tag</code>
      * @return the <code>Iterator</code> for the given HTML tag
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Tag
+     * @see j86.javax.swing.text.html.HTML.Tag
      */
     public Iterator getIterator(HTML.Tag t) {
         if (t.isBlock()) {
@@ -646,7 +646,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      *
      * @param preservesTags  true if unknown tags should be
      *          saved in the model, otherwise tags are dropped
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Tag
+     * @see j86.javax.swing.text.html.HTML.Tag
      */
     public void setPreservesUnknownTags(boolean preservesTags) {
         preservesUnknownTags = preservesTags;
@@ -656,7 +656,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      * Returns the behavior the parser observes when encountering
      * unknown tags.
      *
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Tag
+     * @see j86.javax.swing.text.html.HTML.Tag
      * @return true if unknown tags are to be preserved when parsing
      */
     public boolean getPreservesUnknownTags() {
@@ -763,7 +763,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      * @param attr the attributes to be matched
      * @param tag the value to be matched
      * @return true if there is a match, false otherwise
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Attribute
+     * @see j86.javax.swing.text.html.HTML.Attribute
      */
     static boolean matchNameAttribute(AttributeSet attr, HTML.Tag tag) {
         Object o = attr.getAttribute(StyleConstants.NameAttribute);
@@ -1404,7 +1404,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      * @return the element with the specified <code>Attribute</code>
      *          or <code>null</code> if it can't be found,
      *          or <code>null</code> if <code>id</code> is <code>null</code>
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Attribute
+     * @see j86.javax.swing.text.html.HTML.Attribute
      * @since 1.3
      */
     public Element getElement(String id) {
@@ -1426,7 +1426,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      * @return the element with the specified <code>Attribute</code>
      *          and the specified <code>value</code>, or <code>null</code>
      *          if it can't be found
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Attribute
+     * @see j86.javax.swing.text.html.HTML.Attribute
      * @since 1.3
      */
     public Element getElement(Element e, Object attribute, Object value) {
@@ -1448,7 +1448,7 @@ public class HTMLDocument extends DefaultStyledDocument {
      * @return the element with the specified <code>Attribute</code>
      *          and the specified <code>value</code>, or <code>null</code>
      *          if it can't be found
-     * @see j86.j86.j86.javax.swing.text.html.HTML.Attribute
+     * @see j86.javax.swing.text.html.HTML.Attribute
      */
     private Element getElement(Element e, Object attribute, Object value,
                                boolean searchLeafAttributes) {
@@ -1972,7 +1972,7 @@ public class HTMLDocument extends DefaultStyledDocument {
          * Returns the type of tag this iterator represents.
          *
          * @return the <code>HTML.Tag</code> that this iterator represents.
-         * @see j86.j86.j86.javax.swing.text.html.HTML.Tag
+         * @see j86.javax.swing.text.html.HTML.Tag
          */
         public HTML.Tag getTag() {
             return tag;

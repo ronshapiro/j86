@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.util;
+package j86.sun.invoke.util;
 
-import j86.j86.java.lang.invoke.MethodHandle;
-import j86.j86.java.lang.invoke.MethodHandles;
-import j86.j86.java.lang.invoke.MethodHandles.Lookup;
-import j86.j86.java.lang.invoke.MethodType;
+import j86.java.lang.invoke.MethodHandle;
+import j86.java.lang.invoke.MethodHandles;
+import j86.java.lang.invoke.MethodHandles.Lookup;
+import j86.java.lang.invoke.MethodType;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
@@ -839,7 +839,7 @@ public class ValueConversions {
             dw.copyArrayUnboxing(a, 0, res, 0, length);
             return res;
         }
-        length = j86.j86.j86.java.lang.reflect.Array.getLength(array);
+        length = j86.java.lang.reflect.Array.getLength(array);
         Object[] res;
         if (dw == null) {
             res = Arrays.copyOf(NO_ARGS_ARRAY, length, arrayType.asSubclass(Object[].class));

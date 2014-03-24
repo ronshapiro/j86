@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Objects;
 import j86.java.util.Optional;
@@ -30,17 +30,17 @@ import j86.java.util.OptionalDouble;
 import j86.java.util.OptionalInt;
 import j86.java.util.OptionalLong;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.CountedCompleter;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.function.IntBinaryOperator;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.function.ObjDoubleConsumer;
-import j86.j86.java.util.function.ObjIntConsumer;
-import j86.j86.java.util.function.ObjLongConsumer;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.CountedCompleter;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.function.IntBinaryOperator;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.ObjDoubleConsumer;
+import j86.java.util.function.ObjIntConsumer;
+import j86.java.util.function.ObjLongConsumer;
+import j86.java.util.function.Supplier;
 
 /**
  * Factory for creating instances of {@code TerminalOp} that implement

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.IOException;
 import j86.java.net.ProtocolFamily;
@@ -31,8 +31,8 @@ import j86.java.net.DatagramSocket;
 import j86.java.net.SocketOption;
 import j86.java.net.SocketAddress;
 import j86.java.nio.ByteBuffer;
-import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for datagram-oriented sockets.
@@ -129,9 +129,9 @@ public abstract class DatagramChannel
      * Opens a datagram channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel()
+     * j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel()
      * openDatagramChannel} method of the system-wide default {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
+     * j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
      * connected.
      *
      * <p> The {@link ProtocolFamily ProtocolFamily} of the channel's socket
@@ -158,9 +158,9 @@ public abstract class DatagramChannel
      * that this channel will join.
      *
      * <p> The new channel is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel(ProtocolFamily)
+     * j86.java.nio.channels.spi.SelectorProvider#openDatagramChannel(ProtocolFamily)
      * openDatagramChannel} method of the system-wide default {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
+     * j86.java.nio.channels.spi.SelectorProvider} object.  The channel will not be
      * connected.
      *
      * @param   family

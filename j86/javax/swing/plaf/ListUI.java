@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.plaf;
+package j86.javax.swing.plaf;
 
 import j86.javax.swing.JList;
 import j86.java.awt.Point;

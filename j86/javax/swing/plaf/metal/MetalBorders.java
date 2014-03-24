@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicBorders;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicBorders;
+import j86.javax.swing.text.JTextComponent;
 
 import j86.java.awt.Component;
 import j86.java.awt.Insets;
@@ -924,7 +924,7 @@ public class MetalBorders {
      * Border for a Table Header
      * @since 1.3
      */
-    public static class TableHeaderBorder extends j86.j86.javax.swing.border.AbstractBorder {
+    public static class TableHeaderBorder extends j86.javax.swing.border.AbstractBorder {
         protected Insets editorBorderInsets = new Insets( 2, 2, 2, 0 );
 
         public void paintBorder(Component c, Graphics g, int x, int y, int w, int h) {

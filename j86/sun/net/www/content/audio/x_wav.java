@@ -27,7 +27,7 @@
  * Basic .wav audio handler.
  * @author  Jeff Nisewanger
  */
-package j86.j86.j86.sun.net.www.content.audio;
+package j86.sun.net.www.content.audio;
 
 import j86.java.net.*;
 import j86.java.io.IOException;

@@ -30,10 +30,10 @@ import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadataNode;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
 import j86.com.sun.imageio.plugins.common.I18N;
 

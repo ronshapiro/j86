@@ -31,7 +31,7 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 import j86.sun.security.util.*;
 import j86.java.net.*;
 import j86.java.util.Vector;
@@ -39,8 +39,8 @@ import j86.java.util.Locale;
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.util.Arrays;
-import j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
-import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
+import j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
+import j86.sun.security.krb5.internal.util.KerberosString;
 
 
 /**
@@ -586,7 +586,7 @@ public class PrincipalName implements Cloneable {
      * @param pname the other <code>PrincipalName</code> object.
      * @return true if two have identical values, otherwise, return false.
      */
-    // It is used in <code>j86.j86.j86.sun.security.krb5.internal.ccache</code> package.
+    // It is used in <code>j86.sun.security.krb5.internal.ccache</code> package.
     public boolean match(PrincipalName pname) {
         boolean matched = true;
         //name type is just a hint, no two names can be the same ignoring name type.
@@ -615,7 +615,7 @@ public class PrincipalName implements Cloneable {
      *
      * @param cos a <code>CCacheOutputStream</code> for writing data.
      * @exception IOException if an I/O exception occurs.
-     * @see j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream
+     * @see j86.sun.security.krb5.internal.ccache.CCacheOutputStream
      */
     public void writePrincipal(CCacheOutputStream cos) throws IOException {
         cos.write32(nameType);

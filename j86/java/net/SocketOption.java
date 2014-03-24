@@ -28,10 +28,10 @@ package j86.java.net;
 /**
  * A socket option associated with a socket.
  *
- * <p> In the {@link j86.j86.java.nio.channels channels} package, the {@link
- * j86.j86.java.nio.channels.NetworkChannel} interface defines the {@link
- * j86.j86.java.nio.channels.NetworkChannel#setOption(SocketOption,Object) setOption}
- * and {@link j86.j86.java.nio.channels.NetworkChannel#getOption(SocketOption) getOption}
+ * <p> In the {@link j86.java.nio.channels channels} package, the {@link
+ * j86.java.nio.channels.NetworkChannel} interface defines the {@link
+ * j86.java.nio.channels.NetworkChannel#setOption(SocketOption,Object) setOption}
+ * and {@link j86.java.nio.channels.NetworkChannel#getOption(SocketOption) getOption}
  * methods to set and query the channel's socket options.
  *
  * @param   <T>     The type of the socket option value.

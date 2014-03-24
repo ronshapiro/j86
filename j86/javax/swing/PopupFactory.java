@@ -27,8 +27,8 @@ package j86.javax.swing;
 
 import j86.java.applet.Applet;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.event.WindowEvent;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.List;

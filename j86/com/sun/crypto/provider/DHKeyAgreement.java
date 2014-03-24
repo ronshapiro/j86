@@ -34,12 +34,12 @@ import j86.java.security.Key;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.SecureRandom;
 import j86.java.security.ProviderException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidKeySpecException;
 import j86.javax.crypto.KeyAgreementSpi;
 import j86.javax.crypto.ShortBufferException;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 import j86.sun.security.util.KeyUtil;
 
@@ -126,12 +126,12 @@ extends KeyAgreementSpi {
             throw new InvalidAlgorithmParameterException
                 ("Diffie-Hellman parameters expected");
         }
-        if (!(key instanceof j86.j86.javax.crypto.interfaces.DHPrivateKey)) {
+        if (!(key instanceof j86.javax.crypto.interfaces.DHPrivateKey)) {
             throw new InvalidKeyException("Diffie-Hellman private key "
                                           + "expected");
         }
-        j86.j86.javax.crypto.interfaces.DHPrivateKey dhPrivKey;
-        dhPrivKey = (j86.j86.javax.crypto.interfaces.DHPrivateKey)key;
+        j86.javax.crypto.interfaces.DHPrivateKey dhPrivKey;
+        dhPrivKey = (j86.javax.crypto.interfaces.DHPrivateKey)key;
 
         // check if private key parameters are compatible with
         // initialized ones
@@ -180,12 +180,12 @@ extends KeyAgreementSpi {
     protected Key engineDoPhase(Key key, boolean lastPhase)
         throws InvalidKeyException, IllegalStateException
     {
-        if (!(key instanceof j86.j86.javax.crypto.interfaces.DHPublicKey)) {
+        if (!(key instanceof j86.javax.crypto.interfaces.DHPublicKey)) {
             throw new InvalidKeyException("Diffie-Hellman public key "
                                           + "expected");
         }
-        j86.j86.javax.crypto.interfaces.DHPublicKey dhPubKey;
-        dhPubKey = (j86.j86.javax.crypto.interfaces.DHPublicKey)key;
+        j86.javax.crypto.interfaces.DHPublicKey dhPubKey;
+        dhPubKey = (j86.javax.crypto.interfaces.DHPublicKey)key;
 
         if (init_p == null || init_g == null) {
             throw new IllegalStateException("Not initialized");

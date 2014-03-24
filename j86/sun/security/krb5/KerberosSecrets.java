@@ -25,7 +25,7 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.javax.security.auth.kerberos.KeyTab;
+import j86.javax.security.auth.kerberos.KeyTab;
 import j86.sun.misc.Unsafe;
 
 public class KerberosSecrets {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;

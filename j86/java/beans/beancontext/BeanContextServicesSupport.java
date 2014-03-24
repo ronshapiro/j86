@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
@@ -45,7 +45,7 @@ import j86.java.util.Locale;
 /**
  * <p>
  * This helper class provides a utility implementation of the
- * j86.j86.java.beans.beancontext.BeanContextServices interface.
+ * j86.java.beans.beancontext.BeanContextServices interface.
  * </p>
  * <p>
  * Since this class directly implements the BeanContextServices interface,

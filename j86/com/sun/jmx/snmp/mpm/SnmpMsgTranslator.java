@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.mpm;
+package j86.com.sun.jmx.snmp.mpm;
 
 import j86.com.sun.jmx.snmp.SnmpSecurityParameters;
 import j86.com.sun.jmx.snmp.SnmpMsg;

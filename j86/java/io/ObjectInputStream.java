@@ -26,10 +26,10 @@
 package j86.java.io;
 
 import j86.java.io.ObjectStreamClass.WeakClassKey;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -37,11 +37,11 @@ import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.util.Arrays;
 import j86.java.util.HashMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
 import static j86.java.io.ObjectStreamClass.processQueue;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * An ObjectInputStream deserializes primitive data and objects previously

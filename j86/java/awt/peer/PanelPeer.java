@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.awt.peer;
+package j86.java.awt.peer;
 
 /**
  * The peer interface for {@link Panel}. This is a subinterface of

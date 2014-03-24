@@ -31,9 +31,9 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.sun.security.krb5.internal.*;
-import j86.j86.j86.sun.security.krb5.internal.ccache.CredentialsCache;
-import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
+import j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.ccache.CredentialsCache;
+import j86.sun.security.krb5.internal.crypto.EType;
 import j86.java.io.IOException;
 import j86.java.util.Date;
 import j86.java.util.Locale;
@@ -336,7 +336,7 @@ public class Credentials {
             return null;
         }
 
-        j86.j86.j86.sun.security.krb5.internal.ccache.Credentials tgtCred  =
+        j86.sun.security.krb5.internal.ccache.Credentials tgtCred  =
             ccache.getDefaultCreds();
 
         if (tgtCred == null) {
@@ -384,7 +384,7 @@ public class Credentials {
             cache = CredentialsCache.getInstance();
         }
         if (cache != null) {
-            j86.j86.j86.sun.security.krb5.internal.ccache.Credentials temp =
+            j86.sun.security.krb5.internal.ccache.Credentials temp =
                 cache.getDefaultCreds();
             if (temp != null) {
                 if (DEBUG) {

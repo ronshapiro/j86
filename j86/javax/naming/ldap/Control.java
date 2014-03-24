@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.ldap;
+package j86.javax.naming.ldap;
 
 /**
   * This interface represents an LDAPv3 control as defined in

@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.wrapper;
+package j86.sun.security.jgss.wrapper;
 
 import j86.org.ietf.jgss.*;
 import j86.java.security.Provider;
 import j86.sun.security.jgss.GSSHeader;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.GSSExceptionImpl;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.sun.security.util.DerValue;
 import j86.sun.security.util.ObjectIdentifier;
-import j86.j86.sun.security.jgss.spnego.NegTokenInit;
-import j86.j86.sun.security.jgss.spnego.NegTokenTarg;
-import j86.j86.javax.security.auth.kerberos.DelegationPermission;
+import j86.sun.security.jgss.spnego.NegTokenInit;
+import j86.sun.security.jgss.spnego.NegTokenTarg;
+import j86.javax.security.auth.kerberos.DelegationPermission;
 import com.j86.sun.security.jgss.InquireType;
 import j86.java.io.*;
 

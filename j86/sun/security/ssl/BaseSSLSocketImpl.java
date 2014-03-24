@@ -26,10 +26,10 @@
 package j86.sun.security.ssl;
 
 import j86.java.io.*;
-import j86.j86.java.nio.channels.SocketChannel;
+import j86.java.nio.channels.SocketChannel;
 import j86.java.net.*;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 /**
  * Abstract base class for SSLSocketImpl. Its purpose is to house code with
@@ -40,7 +40,7 @@ import j86.j86.javax.net.ssl.*;
  * Methods are defined final to ensure that they are not accidentally
  * overridden in SSLSocketImpl.
  *
- * @see j86.j86.javax.net.ssl.SSLSocket
+ * @see j86.javax.net.ssl.SSLSocket
  * @see SSLSocketImpl
  *
  */

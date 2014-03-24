@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Index;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
@@ -36,7 +36,7 @@ import j86.java.util.Collections;
 import j86.java.util.HashMap;
 import j86.java.util.List;
 import j86.java.util.Map;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Represents an attribute in a class-file.

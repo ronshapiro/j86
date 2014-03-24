@@ -31,7 +31,7 @@ import j86.java.io.UnsupportedEncodingException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.InvalidKeySpecException;
 import j86.java.util.Arrays;
 import j86.java.util.Locale;
 import j86.javax.crypto.BadPaddingException;
@@ -41,8 +41,8 @@ import j86.javax.crypto.Mac;
 import j86.javax.crypto.NoSuchPaddingException;
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.SecretKeyFactory;
-import j86.j86.javax.crypto.spec.DESKeySpec;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.DESKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * NTLM authentication implemented according to MS-NLMP, version 12.1

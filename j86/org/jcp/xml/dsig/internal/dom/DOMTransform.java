@@ -26,22 +26,22 @@
 /*
  * $Id: DOMTransform.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.io.OutputStream;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.Provider;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMSignContext;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.dom.DOMSignContext;
 
 /**
  * DOM-based abstract implementation of Transform.
@@ -92,7 +92,7 @@ public class DOMTransform extends DOMStructure implements Transform {
             }
         }
         try {
-            spi.init(new j86.j86.javax.xml.crypto.dom.DOMStructure(transElem), context);
+            spi.init(new j86.javax.xml.crypto.dom.DOMStructure(transElem), context);
         } catch (InvalidAlgorithmParameterException iape) {
             throw new MarshalException(iape);
         }
@@ -128,7 +128,7 @@ public class DOMTransform extends DOMStructure implements Transform {
         }
         DOMUtils.setAttribute(transformElem, "Algorithm", getAlgorithm());
 
-        spi.marshalParams(new j86.j86.javax.xml.crypto.dom.DOMStructure(transformElem),
+        spi.marshalParams(new j86.javax.xml.crypto.dom.DOMStructure(transformElem),
                           context);
 
         parent.appendChild(transformElem);

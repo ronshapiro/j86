@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 import j86.java.util.Hashtable;
 import j86.com.sun.jndi.toolkit.dir.HierMemDirCtx;
 

@@ -32,14 +32,14 @@ package j86.java.security;
  *
  * Note: The specialized public key interfaces extend this interface.
  * See, for example, the DSAPublicKey interface in
- * {@code j86.j86.java.security.interfaces}.
+ * {@code j86.java.security.interfaces}.
  *
  * @see Key
  * @see PrivateKey
  * @see Certificate
  * @see Signature#initVerify
- * @see j86.j86.java.security.interfaces.DSAPublicKey
- * @see j86.j86.java.security.interfaces.RSAPublicKey
+ * @see j86.java.security.interfaces.DSAPublicKey
+ * @see j86.java.security.interfaces.RSAPublicKey
  *
  */
 

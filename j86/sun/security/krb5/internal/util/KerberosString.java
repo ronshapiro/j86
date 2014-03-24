@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.util;
+package j86.sun.security.krb5.internal.util;
 
 import j86.java.io.IOException;
 import j86.java.security.AccessController;

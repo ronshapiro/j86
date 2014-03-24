@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.oql;
+package j86.com.sun.tools.hat.internal.oql;
 
 /**
  * This represents a parsed OQL query

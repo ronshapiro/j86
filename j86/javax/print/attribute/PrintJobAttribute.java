@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 /**
  * PrintJobAttribute is a tagging interface which a printing attribute

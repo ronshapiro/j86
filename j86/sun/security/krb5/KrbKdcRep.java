@@ -30,7 +30,7 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 
 abstract class KrbKdcRep {
 

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.net.www.http;
+package j86.sun.net.www.http;
 
 import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.sun.net.*;
-import j86.j86.sun.net.www.*;
+import j86.sun.net.www.*;
 
 /**
  * A <code>ChunkedInputStream</code> provides a stream for reading a body of

@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.jdk.internal.org.objectweb.asm.*;
-import j86.j86.sun.invoke.util.BytecodeDescriptor;
+import j86.sun.invoke.util.BytecodeDescriptor;
 import j86.sun.misc.Unsafe;
 import j86.sun.security.action.GetPropertyAction;
 
 import j86.java.io.FilePermission;
 import j86.java.io.Serializable;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Constructor;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.LinkedHashSet;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 import j86.java.util.PropertyPermission;
 import j86.java.util.Set;
 
@@ -58,7 +58,7 @@ import static j86.jdk.internal.org.objectweb.asm.Opcodes.*;
     private static final String NAME_FACTORY = "get$Lambda";
 
     //Serialization support
-    private static final String NAME_SERIALIZED_LAMBDA = "j86.j86.java.lang.invoke/SerializedLambda";
+    private static final String NAME_SERIALIZED_LAMBDA = "j86.java.lang.invoke/SerializedLambda";
     private static final String NAME_NOT_SERIALIZABLE_EXCEPTION = "j86.java.io/NotSerializableException";
     private static final String DESCR_METHOD_WRITE_REPLACE = "()Lj86.java.lang/Object;";
     private static final String DESCR_METHOD_WRITE_OBJECT = "(Lj86.java.io/ObjectOutputStream;)V";

@@ -26,8 +26,8 @@
 package j86.sun.security.ec;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.*;
+import j86.java.security.spec.*;
 
 /**
  * KeyFactory for EC keys. Keys must be instances of PublicKey or PrivateKey

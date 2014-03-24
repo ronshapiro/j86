@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.BufferedInputStream;
@@ -37,13 +37,13 @@ import j86.java.util.HashSet;
 import j86.java.util.Set;
 import j86.java.util.SortedMap;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.JarInputStream;
-import j86.j86.java.util.jar.JarOutputStream;
-import j86.j86.java.util.jar.Pack200;
-import j86.j86.java.util.zip.CRC32;
-import j86.j86.java.util.zip.CheckedOutputStream;
-import j86.j86.java.util.zip.ZipEntry;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.JarInputStream;
+import j86.java.util.jar.JarOutputStream;
+import j86.java.util.jar.Pack200;
+import j86.java.util.zip.CRC32;
+import j86.java.util.zip.CheckedOutputStream;
+import j86.java.util.zip.ZipEntry;
 
 /*
  * Implementation of the Pack provider.
@@ -199,7 +199,7 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
             }
 
             deflateHint = (keepDeflateHint) ? false :
-                props.getBoolean(j86.j86.java.util.jar.Pack200.Unpacker.DEFLATE_HINT);
+                props.getBoolean(j86.java.util.jar.Pack200.Unpacker.DEFLATE_HINT);
         }
 
         // Checksum apparatus.
@@ -222,13 +222,13 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
         }
 
         private void unpackSegment(InputStream in, JarOutputStream out) throws IOException {
-            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"0");
+            props.setProperty(j86.java.util.jar.Pack200.Unpacker.PROGRESS,"0");
             // Process the output directory or jar output.
             new PackageReader(pkg, in).read();
 
             if (props.getBoolean("unpack.strip.debug"))    pkg.stripAttributeKind("Debug");
             if (props.getBoolean("unpack.strip.compile"))  pkg.stripAttributeKind("Compile");
-            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"50");
+            props.setProperty(j86.java.util.jar.Pack200.Unpacker.PROGRESS,"50");
             pkg.ensureAllClassFiles();
             // Now write out the files.
             Set<Package.Class> classesToWrite = new HashSet<>(pkg.getClasses());
@@ -278,7 +278,7 @@ public class UnpackerImpl extends TLGlobals implements Pack200.Unpacker {
                     Utils.log.info("Writing "+Utils.zeString((ZipEntry)je));
             }
             assert(classesToWrite.isEmpty());
-            props.setProperty(j86.j86.java.util.jar.Pack200.Unpacker.PROGRESS,"100");
+            props.setProperty(j86.java.util.jar.Pack200.Unpacker.PROGRESS,"100");
             pkg.reset();  // reset for the next segment, if any
         }
     }

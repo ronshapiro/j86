@@ -27,10 +27,10 @@ package j86.javax.management;
 
 import j86.com.sun.jmx.mbeanserver.MXBeanProxy;
 
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Proxy;
 import j86.java.util.Arrays;
 import j86.java.util.WeakHashMap;
 

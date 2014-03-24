@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertPathValidatorException;
-import j86.j86.java.security.cert.PKIXCertPathChecker;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertPathValidatorException;
+import j86.java.security.cert.PKIXCertPathChecker;
 import j86.java.util.Set;
 import j86.java.util.Collection;
 import j86.sun.security.util.Debug;

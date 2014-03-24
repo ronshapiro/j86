@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.Font;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.synth.*;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
+import j86.javax.swing.plaf.synth.*;
+import j86.com.sun.java.swing.plaf.gtk.GTKEngine.WidgetType;
 
 /**
  *

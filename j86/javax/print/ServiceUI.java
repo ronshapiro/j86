@@ -35,11 +35,11 @@ import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Window;
 import j86.java.awt.KeyboardFocusManager;
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.AttributeSet;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.j86.javax.print.attribute.standard.Destination;
-import j86.j86.j86.javax.print.attribute.standard.Fidelity;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.AttributeSet;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.standard.Destination;
+import j86.javax.print.attribute.standard.Fidelity;
 
 import j86.sun.print.ServiceDialog;
 import j86.sun.print.SunAlternateMedia;

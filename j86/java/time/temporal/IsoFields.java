@@ -54,35 +54,35 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.temporal;
+package j86.java.time.temporal;
 
 import static j86.java.time.DayOfWeek.THURSDAY;
 import static j86.java.time.DayOfWeek.WEDNESDAY;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.FOREVER;
-import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
-import static j86.j86.java.time.temporal.ChronoUnit.WEEKS;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.FOREVER;
+import static j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.java.time.temporal.ChronoUnit.WEEKS;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.time.DateTimeException;
 import j86.java.time.Duration;
 import j86.java.time.LocalDate;
-import j86.j86.java.time.chrono.ChronoLocalDate;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.ResolverStyle;
+import j86.java.time.chrono.ChronoLocalDate;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.ResolverStyle;
 import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.Objects;
 import j86.java.util.ResourceBundle;
 
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleResources;
 
 /**
  * Fields and units specific to the ISO-8601 calendar system,

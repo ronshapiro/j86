@@ -24,26 +24,26 @@
  */
 
 
-package j86.j86.j86.sun.security.krb5.internal.rcache;
+package j86.sun.security.krb5.internal.rcache;
 
 import j86.java.io.*;
 import j86.java.nio.BufferUnderflowException;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ByteOrder;
-import j86.j86.java.nio.channels.SeekableByteChannel;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.StandardCopyOption;
-import j86.j86.java.nio.file.StandardOpenOption;
-import j86.j86.j86.java.nio.file.attribute.PosixFilePermission;
+import j86.java.nio.channels.SeekableByteChannel;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.StandardCopyOption;
+import j86.java.nio.file.StandardOpenOption;
+import j86.java.nio.file.attribute.PosixFilePermission;
 import j86.java.security.AccessController;
 import j86.java.util.*;
 
 import j86.sun.security.action.GetPropertyAction;
-import j86.j86.sun.security.krb5.internal.KerberosTime;
-import j86.j86.sun.security.krb5.internal.Krb5;
-import j86.j86.sun.security.krb5.internal.KrbApErrException;
-import j86.j86.sun.security.krb5.internal.ReplayCache;
+import j86.sun.security.krb5.internal.KerberosTime;
+import j86.sun.security.krb5.internal.Krb5;
+import j86.sun.security.krb5.internal.KrbApErrException;
+import j86.sun.security.krb5.internal.ReplayCache;
 
 
 /**
@@ -109,7 +109,7 @@ public class DflCache extends ReplayCache {
     static {
         try {
             // Available on Solaris, Linux and Mac. Otherwise, no _euid suffix
-            Class<?> clazz = Class.forName("j86.j86.com.sun.security.auth.module.UnixSystem");
+            Class<?> clazz = Class.forName("j86.com.sun.security.auth.module.UnixSystem");
             uid = (int)(long)(Long)
                     clazz.getMethod("getUid").invoke(clazz.newInstance());
         } catch (Exception e) {

@@ -27,14 +27,14 @@ package j86.java.awt;
 
 import j86.java.util.Timer;
 import j86.java.util.TimerTask;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
 
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AccessController;
 
 import j86.sun.awt.PeerEvent;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * This utility class is used to suspend execution on a thread
@@ -48,7 +48,7 @@ import j86.j86.sun.util.logging.PlatformLogger;
 class WaitDispatchSupport implements SecondaryLoop {
 
     private final static PlatformLogger log =
-        PlatformLogger.getLogger("j86.j86.java.awt.event.WaitDispatchSupport");
+        PlatformLogger.getLogger("j86.java.awt.event.WaitDispatchSupport");
 
     private EventDispatchThread dispatchThread;
     private EventFilter filter;

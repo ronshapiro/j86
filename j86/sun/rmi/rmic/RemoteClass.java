@@ -704,7 +704,7 @@ public class RemoteClass implements j86.sun.rmi.rmic.RMIConstants {
 
         /**
          * Return the string representation of this method appropriate
-         * for the construction of a j86.j86.java.rmi.server.Operation object.
+         * for the construction of a j86.java.rmi.server.Operation object.
          */
         public String getOperationString() {
             return memberDef.toString();

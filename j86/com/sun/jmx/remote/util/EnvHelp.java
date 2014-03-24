@@ -45,12 +45,12 @@ import j86.java.security.AccessController;
 import j86.javax.management.ObjectName;
 import j86.javax.management.MBeanServer;
 import j86.javax.management.InstanceNotFoundException;
-import j86.j86.javax.management.remote.JMXConnectorFactory;
-import j86.j86.javax.management.remote.JMXConnectorServerFactory;
+import j86.javax.management.remote.JMXConnectorFactory;
+import j86.javax.management.remote.JMXConnectorServerFactory;
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 import j86.com.sun.jmx.remote.security.NotificationAccessController;
-import j86.j86.javax.management.remote.JMXConnector;
-import j86.j86.javax.management.remote.JMXConnectorServer;
+import j86.javax.management.remote.JMXConnector;
+import j86.javax.management.remote.JMXConnectorServer;
 
 public class EnvHelp {
 
@@ -241,7 +241,7 @@ public class EnvHelp {
         Throwable ret = t;
 
         try {
-            j86.j86.j86.java.lang.reflect.Method getCause =
+            j86.java.lang.reflect.Method getCause =
                 t.getClass().getMethod("getCause", (Class<?>[]) null);
             ret = (Throwable)getCause.invoke(t, (Object[]) null);
 
@@ -764,5 +764,5 @@ public class EnvHelp {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", "EnvHelp");
+        new ClassLogger("j86.javax.management.remote.misc", "EnvHelp");
 }

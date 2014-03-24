@@ -27,15 +27,15 @@ package j86.com.sun.imageio.plugins.wbmp;
 
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferByte;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferByte;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.WritableRaster;
 
 import j86.java.io.IOException;
 
@@ -44,11 +44,11 @@ import j86.javax.imageio.IIOException;
 import j86.javax.imageio.ImageTypeSpecifier;
 import j86.javax.imageio.ImageWriteParam;
 import j86.javax.imageio.ImageWriter;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.stream.ImageOutputStream;
 
 import j86.com.sun.imageio.plugins.common.I18N;
 

@@ -25,8 +25,8 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.annotation.*;
-import static j86.j86.java.lang.annotation.ElementType.*;
+import j86.java.lang.annotation.*;
+import static j86.java.lang.annotation.ElementType.*;
 
 /**
  * Indicates that the named compiler warnings should be suppressed in the

@@ -39,10 +39,10 @@ import j86.java.util.*;
 
 import j86.javax.swing.*;
 import j86.java.awt.BorderLayout;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.event.*;
+import j86.com.sun.jdi.event.*;
 
 import j86.com.sun.tools.example.debug.bdi.*;
 import j86.com.sun.tools.example.debug.event.*;

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 // java imports
 //
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 
 // jmx imports
@@ -43,10 +43,10 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 // SNMP Runtime import
 //
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibRequest;
-import j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpIncomingRequest;
+import j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.com.sun.jmx.snmp.agent.SnmpMibRequest;
+import j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
+import j86.com.sun.jmx.snmp.internal.SnmpIncomingRequest;
 
 /* NPCTE fix for bugId 4492741, esc 0 */
 import j86.com.sun.jmx.snmp.ThreadContext;

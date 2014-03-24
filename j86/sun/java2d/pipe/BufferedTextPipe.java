@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Composite;
 import j86.sun.font.GlyphList;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 public abstract class BufferedTextPipe extends GlyphListPipe {
 

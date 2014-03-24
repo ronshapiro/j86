@@ -28,7 +28,7 @@ import j86.java.util.Iterator;
 import j86.java.util.Objects;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * Implementing this interface allows an object to be the target of

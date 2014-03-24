@@ -28,8 +28,8 @@ package j86.java.security;
 import j86.java.util.*;
 
 import j86.java.security.Provider.Service;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.jca.*;
@@ -86,9 +86,9 @@ import j86.sun.security.jca.GetInstance.Instance;
  * @see Key
  * @see PublicKey
  * @see PrivateKey
- * @see j86.j86.java.security.spec.KeySpec
- * @see j86.j86.java.security.spec.DSAPublicKeySpec
- * @see j86.j86.java.security.spec.X509EncodedKeySpec
+ * @see j86.java.security.spec.KeySpec
+ * @see j86.java.security.spec.DSAPublicKeySpec
+ * @see j86.java.security.spec.X509EncodedKeySpec
  *
  * @since 1.2
  */

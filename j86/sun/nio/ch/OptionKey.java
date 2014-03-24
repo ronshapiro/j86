@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 /**
  * Represents the level/name of a socket option

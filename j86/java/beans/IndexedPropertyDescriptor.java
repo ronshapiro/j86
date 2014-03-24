@@ -25,8 +25,8 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.reflect.Method;
 
 /**
  * An IndexedPropertyDescriptor describes a property that acts like an

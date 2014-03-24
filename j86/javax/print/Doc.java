@@ -29,7 +29,7 @@ import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.java.io.Reader;
 
-import j86.j86.javax.print.attribute.DocAttributeSet;
+import j86.javax.print.attribute.DocAttributeSet;
 
 
 /**
@@ -53,9 +53,9 @@ import j86.j86.javax.print.attribute.DocAttributeSet;
  * <LI>
  * Obtain the printing attributes that specify additional characteristics of
  * the doc or that specify processing instructions to be applied to the doc.
- * Printing attributes are defined in package {@link j86.j86.javax.print.attribute
- * j86.j86.javax.print.attribute}. The doc returns its printing attributes stored in
- * an {@link j86.j86.javax.print.attribute.DocAttributeSet javax.print.attribute.DocAttributeSet}.
+ * Printing attributes are defined in package {@link j86.javax.print.attribute
+ * j86.javax.print.attribute}. The doc returns its printing attributes stored in
+ * an {@link j86.javax.print.attribute.DocAttributeSet javax.print.attribute.DocAttributeSet}.
  * </UL>
  * <P>
  * Each method in an implementation of interface Doc is permitted always to

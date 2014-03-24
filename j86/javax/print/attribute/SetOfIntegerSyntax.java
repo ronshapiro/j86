@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 import j86.java.io.Serializable;
 import j86.java.util.Vector;

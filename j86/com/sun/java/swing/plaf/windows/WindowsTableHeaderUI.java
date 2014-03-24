@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.javax.swing.table.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.table.*;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
-import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.*;
-import j86.j86.sun.swing.table.*;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.com.sun.java.swing.plaf.windows.XPStyle.*;
+import j86.sun.swing.table.*;
 import j86.sun.swing.SwingUtilities2;
 
 
@@ -119,7 +119,7 @@ public class WindowsTableHeaderUI extends BasicTableHeaderUI {
              */
             Icon sortIcon;
             if (WindowsLookAndFeel.isOnVista()
-                && ((sortIcon = getIcon()) instanceof j86.j86.javax.swing.plaf.UIResource
+                && ((sortIcon = getIcon()) instanceof j86.javax.swing.plaf.UIResource
                     || sortIcon == null)) {
                 contentTop += 1;
                 setIcon(null);

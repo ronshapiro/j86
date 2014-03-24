@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.*;
 
 import j86.java.util.Locale;
 
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
-import static j86.j86.sun.security.pkcs11.TemplateManager.*;
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.sun.security.pkcs11.TemplateManager.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * RSA Cipher implementation class. We currently only support

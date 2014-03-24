@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.awt.Shape;
 

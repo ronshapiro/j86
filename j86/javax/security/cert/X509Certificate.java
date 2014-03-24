@@ -28,8 +28,8 @@ package j86.javax.security.cert;
 
 import j86.java.io.InputStream;
 import j86.java.lang.Class;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.Security;
 
 import j86.java.math.BigInteger;
@@ -117,12 +117,12 @@ import j86.java.util.Date;
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code j86.j86.java.security.cert}.</em></p>
+ * {@code j86.java.security.cert}.</em></p>
  *
  * @author Hemma Prafullchandra
  * @since 1.4
  * @see Certificate
- * @see j86.j86.java.security.cert.X509Extension
+ * @see j86.java.security.cert.X509Extension
  * @see j86.java.security.Security security properties
  */
 public abstract class X509Certificate extends Certificate {

@@ -44,7 +44,7 @@ import j86.javax.sound.midi.Sequence;
 import j86.javax.sound.midi.ShortMessage;
 import j86.javax.sound.midi.SysexMessage;
 import j86.javax.sound.midi.Track;
-import j86.j86.javax.sound.midi.spi.MidiFileWriter;
+import j86.javax.sound.midi.spi.MidiFileWriter;
 
 
 /**

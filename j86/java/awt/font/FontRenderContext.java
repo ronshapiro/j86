@@ -27,11 +27,11 @@
  * @author Charlton Innovations, Inc.
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.RenderingHints;
 import static j86.java.awt.RenderingHints.*;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.AffineTransform;
 
 /**
 *   The <code>FontRenderContext</code> class is a container for the
@@ -60,7 +60,7 @@ import j86.j86.java.awt.geom.AffineTransform;
 *   @see j86.java.awt.RenderingHints#KEY_TEXT_ANTIALIASING
 *   @see j86.java.awt.RenderingHints#KEY_FRACTIONALMETRICS
 *   @see j86.java.awt.Graphics2D#getFontRenderContext()
-*   @see j86.j86.java.awt.font.LineMetrics
+*   @see j86.java.awt.font.LineMetrics
 */
 
 public class FontRenderContext {
@@ -172,7 +172,7 @@ public class FontRenderContext {
      * @return  <code>true</code> if this <code>FontRenderContext</code>
      *          object has a non-identity AffineTransform attribute.
      *          <code>false</code> otherwise.
-     * @see     j86.j86.java.awt.font.FontRenderContext#getTransform
+     * @see     j86.java.awt.font.FontRenderContext#getTransform
      * @since   1.6
      */
     public boolean isTransformed() {
@@ -186,7 +186,7 @@ public class FontRenderContext {
     /**
      * Returns the integer type of the affine transform for this
      * <code>FontRenderContext</code> as specified by
-     * {@link j86.j86.java.awt.geom.AffineTransform#getType()}
+     * {@link j86.java.awt.geom.AffineTransform#getType()}
      * @return the type of the transform.
      * @see AffineTransform
      * @since 1.6

@@ -58,7 +58,7 @@ import j86.sun.security.util.*;
  * @author Amit Kapoor
  * @author Hemma Prafullchandra
  */
-public class Extension implements j86.j86.java.security.cert.Extension {
+public class Extension implements j86.java.security.cert.Extension {
 
     protected ObjectIdentifier  extensionId = null;
     protected boolean           critical = false;

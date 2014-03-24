@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.url.ldaps;
+package j86.com.sun.jndi.url.ldaps;
 
 import j86.com.sun.jndi.url.ldap.*;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.io.InputStream;
 import j86.java.io.FileInputStream;

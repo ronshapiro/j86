@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.java.util.Hashtable;
 
@@ -35,11 +35,11 @@ import j86.javax.naming.CannotProceedException;
 import j86.javax.naming.OperationNotSupportedException;
 import j86.javax.naming.Context;
 
-import j86.j86.javax.naming.directory.DirContext;
-import j86.j86.javax.naming.directory.Attributes;
-import j86.j86.javax.naming.directory.SearchControls;
-import j86.j86.javax.naming.directory.SearchResult;
-import j86.j86.javax.naming.directory.ModificationItem;
+import j86.javax.naming.directory.DirContext;
+import j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.SearchControls;
+import j86.javax.naming.directory.SearchResult;
+import j86.javax.naming.directory.ModificationItem;
 
 /**
   * This class is the continuation context for invoking DirContext methods.

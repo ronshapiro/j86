@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.net.ftp;
+package j86.sun.net.ftp;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -62,7 +62,7 @@ public abstract class FtpClientProvider {
     }
 
     private static boolean loadProviderFromProperty() {
-        String cm = System.getProperty("j86.j86.sun.net.ftpClientProvider");
+        String cm = System.getProperty("j86.sun.net.ftpClientProvider");
         if (cm == null) {
             return false;
         }
@@ -148,7 +148,7 @@ public abstract class FtpClientProvider {
                             if (loadProviderAsService()) {
                                 return provider;
                             }
-                            provider = new j86.j86.j86.sun.net.ftp.impl.DefaultFtpClientProvider();
+                            provider = new j86.sun.net.ftp.impl.DefaultFtpClientProvider();
                             return provider;
                         }
                     });

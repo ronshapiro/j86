@@ -27,7 +27,7 @@ package j86.sun.rmi.transport;
 import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.UID;
 import j86.sun.rmi.server.MarshalInputStream;
 import j86.sun.rmi.runtime.Log;
 

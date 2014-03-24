@@ -35,7 +35,7 @@ import j86.java.util.*;
 import j86.java.security.AccessControlException;
 import j86.java.security.Permission;
 
-import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.java.rmi.server.RMIClassLoader;
 
 /**
  * MarshalInputStream is an extension of ObjectInputStream.  When resolving
@@ -55,7 +55,7 @@ import j86.j86.java.rmi.server.RMIClassLoader;
 public class MarshalInputStream extends ObjectInputStream {
 
     /**
-     * Value of "j86.j86.java.rmi.server.useCodebaseOnly" property,
+     * Value of "j86.java.rmi.server.useCodebaseOnly" property,
      * as cached at class initialization time.
      *
      * The default value is true. That is, the value is true
@@ -66,7 +66,7 @@ public class MarshalInputStream extends ObjectInputStream {
     private static final boolean useCodebaseOnlyProperty =
         ! j86.java.security.AccessController.doPrivileged(
             new j86.sun.security.action.GetPropertyAction(
-                "j86.j86.java.rmi.server.useCodebaseOnly", "true"))
+                "j86.java.rmi.server.useCodebaseOnly", "true"))
             .equalsIgnoreCase("false");
 
     /** table to hold sun classes to which access is explicitly permitted */
@@ -82,7 +82,7 @@ public class MarshalInputStream extends ObjectInputStream {
 
     /**
      * if true, load classes (if not available locally) only from the
-     * URL specified by the "j86.j86.java.rmi.server.codebase" property.
+     * URL specified by the "j86.java.rmi.server.codebase" property.
      */
     private boolean useCodebaseOnly = useCodebaseOnlyProperty;
 
@@ -199,9 +199,9 @@ public class MarshalInputStream extends ObjectInputStream {
             skipDefaultResolveClass ? null : latestUserDefinedLoader();
 
         /*
-         * If the "j86.j86.java.rmi.server.useCodebaseOnly" property was true or
+         * If the "j86.java.rmi.server.useCodebaseOnly" property was true or
          * useCodebaseOnly() was called or the annotation is not a String,
-         * load from the local loader using the "j86.j86.java.rmi.server.codebase"
+         * load from the local loader using the "j86.java.rmi.server.codebase"
          * URL.  Otherwise, load from a loader using the codebase URL in
          * the annotation.
          */
@@ -313,7 +313,7 @@ public class MarshalInputStream extends ObjectInputStream {
 
     /**
      * Disable code downloading except from the URL specified by the
-     * "j86.j86.java.rmi.server.codebase" property.
+     * "j86.java.rmi.server.codebase" property.
      */
     void useCodebaseOnly() {
         useCodebaseOnly = true;

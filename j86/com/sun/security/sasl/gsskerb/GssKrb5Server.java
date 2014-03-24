@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.gsskerb;
+package j86.com.sun.security.sasl.gsskerb;
 
 import j86.javax.security.sasl.*;
 import j86.java.io.*;
 import j86.java.util.Map;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 // JAAS
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 
 // JGSS
 import j86.org.ietf.jgss.*;

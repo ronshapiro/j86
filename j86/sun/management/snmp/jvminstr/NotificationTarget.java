@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 import j86.java.net.InetAddress;
 

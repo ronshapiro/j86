@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jstatd;
+package j86.sun.tools.jstatd;
 
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.*;
-import j86.j86.java.rmi.registry.Registry;
-import j86.j86.java.rmi.registry.LocateRegistry;
+import j86.java.rmi.server.*;
+import j86.java.rmi.registry.Registry;
+import j86.java.rmi.registry.LocateRegistry;
 import j86.java.net.MalformedURLException;
-import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.monitor.remote.*;
 
 /**
  * Application providing remote access to the jvmstat instrumentation
@@ -136,7 +136,7 @@ public class Jstatd {
 
         try {
             // use 1.5.0 dynamically generated subs.
-            System.setProperty("j86.j86.java.rmi.server.ignoreSubClasses", "true");
+            System.setProperty("j86.java.rmi.server.ignoreSubClasses", "true");
             RemoteHostImpl remoteHost = new RemoteHostImpl();
             RemoteHost stub = (RemoteHost) UnicastRemoteObject.exportObject(
                     remoteHost, 0);

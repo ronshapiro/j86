@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.motif;
+package j86.com.sun.java.swing.plaf.motif;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.MouseAdapter;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseAdapter;
+import j86.java.awt.event.MouseEvent;
 import j86.java.beans.*;
 import j86.java.io.File;
 import j86.java.io.IOException;
 import j86.java.util.*;
-import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.awt.shell.ShellFolder;
 import j86.sun.swing.SwingUtilities2;
 
 /**

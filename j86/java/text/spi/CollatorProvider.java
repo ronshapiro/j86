@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.text.spi;
+package j86.java.text.spi;
 
 import j86.java.text.Collator;
 import j86.java.util.Locale;
-import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
@@ -53,7 +53,7 @@ public abstract class CollatorProvider extends LocaleServiceProvider {
      * <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.text.Collator#getInstance(j86.java.util.Locale)
      */

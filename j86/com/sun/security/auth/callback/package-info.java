@@ -24,4 +24,4 @@
  */
 
 @jdk.Exported
-package j86.j86.com.sun.security.auth.callback;
+package j86.com.sun.security.auth.callback;

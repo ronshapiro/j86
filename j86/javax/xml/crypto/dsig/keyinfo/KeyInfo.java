@@ -25,7 +25,7 @@
 /*
  * $Id: KeyInfo.java,v 1.7 2005/05/10 16:35:34 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
+package j86.javax.xml.crypto.dsig.keyinfo;
 
 import j86.java.util.List;
 import j86.javax.xml.crypto.MarshalException;
@@ -88,7 +88,7 @@ public interface KeyInfo extends XMLStructure {
      * <p>If there is a public subclass representing the type of
      * <code>XMLStructure</code>, it is returned as an instance of that
      * class (ex: an <code>X509Data</code> element would be returned as an
-     * instance of {@link j86.j86.j86.javax.xml.crypto.dsig.keyinfo.X509Data}).
+     * instance of {@link j86.javax.xml.crypto.dsig.keyinfo.X509Data}).
      *
      * @return an unmodifiable list of one or more <code>XMLStructure</code>s
      *    in this <code>KeyInfo</code>. Never returns <code>null</code> or an

@@ -25,7 +25,7 @@
 /*
  * $Id: DOMCryptoContext.java,v 1.3 2005/05/09 18:33:26 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dom;
+package j86.javax.xml.crypto.dom;
 
 import j86.javax.xml.crypto.KeySelector;
 import j86.javax.xml.crypto.URIDereferencer;

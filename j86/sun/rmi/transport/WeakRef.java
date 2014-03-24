@@ -24,14 +24,14 @@
  */
 package j86.sun.rmi.transport;
 
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 import j86.sun.rmi.runtime.Log;
 
 /**
  * WeakRef objects are used by the RMI runtime to hold potentially weak
  * references to exported remote objects in the local object table.
  *
- * This class extends the functionality of j86.j86.java.lang.ref.WeakReference in
+ * This class extends the functionality of j86.java.lang.ref.WeakReference in
  * several ways.  The methods pin() and unpin() can be used to set
  * whether the contained reference is strong or weak (it is weak upon
  * construction).  The hashCode() and equals() methods are overridden so

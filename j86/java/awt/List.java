@@ -27,8 +27,8 @@ package j86.java.awt;
 import j86.java.util.Vector;
 import j86.java.util.Locale;
 import j86.java.util.EventListener;
-import j86.j86.java.awt.peer.ListPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.ListPeer;
+import j86.java.awt.event.*;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
@@ -100,10 +100,10 @@ import j86.javax.accessibility.*;
  * user interface to use an external gesture (such as clicking on a
  * button) to trigger the action.
  * @author      Sami Shaio
- * @see         j86.j86.java.awt.event.ItemEvent
- * @see         j86.j86.java.awt.event.ItemListener
- * @see         j86.j86.java.awt.event.ActionEvent
- * @see         j86.j86.java.awt.event.ActionListener
+ * @see         j86.java.awt.event.ItemEvent
+ * @see         j86.java.awt.event.ItemListener
+ * @see         j86.java.awt.event.ActionEvent
+ * @see         j86.java.awt.event.ActionListener
  * @since       JDK1.0
  */
 public class List extends Component implements ItemSelectable, Accessible {
@@ -859,8 +859,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * @see           #getItemListeners
      * @see           #select
      * @see           #deselect
-     * @see           j86.j86.java.awt.event.ItemEvent
-     * @see           j86.j86.java.awt.event.ItemListener
+     * @see           j86.java.awt.event.ItemEvent
+     * @see           j86.java.awt.event.ItemListener
      * @since         JDK1.1
      */
     public synchronized void addItemListener(ItemListener l) {
@@ -882,8 +882,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * @param           l the item listener
      * @see             #addItemListener
      * @see             #getItemListeners
-     * @see             j86.j86.java.awt.event.ItemEvent
-     * @see             j86.j86.java.awt.event.ItemListener
+     * @see             j86.java.awt.event.ItemEvent
+     * @see             j86.java.awt.event.ItemListener
      * @since           JDK1.1
      */
     public synchronized void removeItemListener(ItemListener l) {
@@ -903,8 +903,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      *
      * @see             #addItemListener
      * @see             #removeItemListener
-     * @see             j86.j86.java.awt.event.ItemEvent
-     * @see             j86.j86.java.awt.event.ItemListener
+     * @see             j86.java.awt.event.ItemEvent
+     * @see             j86.java.awt.event.ItemListener
      * @since 1.4
      */
     public synchronized ItemListener[] getItemListeners() {
@@ -925,8 +925,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * @param         l the action listener
      * @see           #removeActionListener
      * @see           #getActionListeners
-     * @see           j86.j86.java.awt.event.ActionEvent
-     * @see           j86.j86.java.awt.event.ActionListener
+     * @see           j86.java.awt.event.ActionEvent
+     * @see           j86.java.awt.event.ActionListener
      * @since         JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -949,8 +949,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * @param           l     the action listener
      * @see             #addActionListener
      * @see             #getActionListeners
-     * @see             j86.j86.java.awt.event.ActionEvent
-     * @see             j86.j86.java.awt.event.ActionListener
+     * @see             j86.java.awt.event.ActionEvent
+     * @see             j86.java.awt.event.ActionListener
      * @since           JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -970,8 +970,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      *
      * @see             #addActionListener
      * @see             #removeActionListener
-     * @see             j86.j86.java.awt.event.ActionEvent
-     * @see             j86.j86.java.awt.event.ActionListener
+     * @see             j86.java.awt.event.ActionEvent
+     * @see             j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -1057,8 +1057,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param        e the event
-     * @see          j86.j86.java.awt.event.ActionEvent
-     * @see          j86.j86.java.awt.event.ItemEvent
+     * @see          j86.java.awt.event.ActionEvent
+     * @see          j86.java.awt.event.ItemEvent
      * @see          #processActionEvent
      * @see          #processItemEvent
      * @since        JDK1.1
@@ -1092,8 +1092,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param       e the item event
-     * @see         j86.j86.java.awt.event.ItemEvent
-     * @see         j86.j86.java.awt.event.ItemListener
+     * @see         j86.java.awt.event.ItemEvent
+     * @see         j86.java.awt.event.ItemListener
      * @see         #addItemListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1
@@ -1123,8 +1123,8 @@ public class List extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param       e the action event
-     * @see         j86.j86.java.awt.event.ActionEvent
-     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.event.ActionEvent
+     * @see         j86.java.awt.event.ActionListener
      * @see         #addActionListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1

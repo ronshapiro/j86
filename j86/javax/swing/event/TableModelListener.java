@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventListener;
 
@@ -32,7 +32,7 @@ import j86.java.util.EventListener;
  * to changes in a TableModel.
  *
  * @author Alan Chung
- * @see j86.j86.javax.swing.table.TableModel
+ * @see j86.javax.swing.table.TableModel
  */
 
 public interface TableModelListener extends j86.java.util.EventListener

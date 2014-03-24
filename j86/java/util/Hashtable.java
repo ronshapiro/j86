@@ -26,10 +26,10 @@
 package j86.java.util;
 
 import j86.java.io.*;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.BiFunction;
+import j86.java.util.concurrent.ThreadLocalRandom;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.BiFunction;
 
 /**
  * This class implements a hash table, which maps keys to values. Any
@@ -112,7 +112,7 @@ import j86.j86.java.util.function.BiFunction;
  * thread-safe implementation is not needed, it is recommended to use
  * {@link HashMap} in place of {@code Hashtable}.  If a thread-safe
  * highly-concurrent implementation is desired, then it is recommended
- * to use {@link j86.j86.java.util.concurrent.ConcurrentHashMap} in place of
+ * to use {@link j86.java.util.concurrent.ConcurrentHashMap} in place of
  * {@code Hashtable}.
  *
  * @author  Arthur van Hoff

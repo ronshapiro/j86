@@ -64,7 +64,7 @@ com/sun/imageio/
 javax/
 j86.com.sun.java.swing/
 META-INF/services/
-j86.com.sun.j86.j86.java.util.jar.pack/
+j86.com.sun.j86.java.util.jar.pack/
 com/sun/corba/
 com/sun/jndi/
 ! rt.jar

@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.ext;
+package j86.com.sun.jndi.ldap.ext;
 
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
 
-import j86.j86.javax.net.ssl.SSLSession;
-import j86.j86.javax.net.ssl.SSLSocket;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
-import j86.j86.javax.net.ssl.SSLPeerUnverifiedException;
-import j86.j86.javax.net.ssl.HostnameVerifier;
+import j86.javax.net.ssl.SSLSession;
+import j86.javax.net.ssl.SSLSocket;
+import j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.SSLPeerUnverifiedException;
+import j86.javax.net.ssl.HostnameVerifier;
 import j86.sun.security.util.HostnameChecker;
 
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.ldap.*;
 import j86.com.sun.jndi.ldap.Connection;
 
 /**
@@ -394,7 +394,7 @@ final public class StartTlsResponseImpl extends StartTlsResponse {
     private boolean verify(String hostname, SSLSession session)
         throws SSLPeerUnverifiedException {
 
-        j86.j86.java.security.cert.Certificate[] certs = null;
+        j86.java.security.cert.Certificate[] certs = null;
 
         // if IPv6 strip off the "[]"
         if (hostname != null && hostname.startsWith("[") &&
@@ -417,8 +417,8 @@ final public class StartTlsResponseImpl extends StartTlsResponse {
                 // get the subject's certificate
                 certs = session.getPeerCertificates();
                 X509Certificate peerCert;
-                if (certs[0] instanceof j86.j86.java.security.cert.X509Certificate) {
-                    peerCert = (j86.j86.java.security.cert.X509Certificate) certs[0];
+                if (certs[0] instanceof j86.java.security.cert.X509Certificate) {
+                    peerCert = (j86.java.security.cert.X509Certificate) certs[0];
                 } else {
                     throw new SSLPeerUnverifiedException(
                             "Received a non X509Certificate from the server");

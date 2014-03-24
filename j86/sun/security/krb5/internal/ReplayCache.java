@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.sun.security.action.GetPropertyAction;
-import j86.j86.j86.sun.security.krb5.internal.rcache.AuthTimeWithHash;
-import j86.j86.j86.sun.security.krb5.internal.rcache.MemoryCache;
-import j86.j86.j86.sun.security.krb5.internal.rcache.DflCache;
+import j86.sun.security.krb5.internal.rcache.AuthTimeWithHash;
+import j86.sun.security.krb5.internal.rcache.MemoryCache;
+import j86.sun.security.krb5.internal.rcache.DflCache;
 
 import j86.java.security.AccessController;
 

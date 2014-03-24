@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.regex;
+package j86.java.util.regex;
 
 import j86.java.util.HashMap;
 import j86.java.util.Locale;

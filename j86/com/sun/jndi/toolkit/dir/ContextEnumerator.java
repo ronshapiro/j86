@@ -25,7 +25,7 @@
 package j86.com.sun.jndi.toolkit.dir;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.SearchControls;
+import j86.javax.naming.directory.SearchControls;
 import j86.java.util.*;
 
 /**

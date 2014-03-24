@@ -25,9 +25,9 @@
 
 package j86.sun.print;
 
-import j86.j86.javax.print.attribute.EnumSyntax;
-import j86.j86.j86.javax.print.attribute.standard.MediaTray;
-import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.EnumSyntax;
+import j86.javax.print.attribute.standard.MediaTray;
+import j86.javax.print.attribute.standard.Media;
 import j86.java.util.ArrayList;
 
 class CustomMediaTray extends MediaTray {

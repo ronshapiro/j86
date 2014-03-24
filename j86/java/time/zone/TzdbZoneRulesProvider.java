@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.zone;
+package j86.java.time.zone;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.BufferedInputStream;
@@ -76,7 +76,7 @@ import j86.java.util.NavigableMap;
 import j86.java.util.Objects;
 import j86.java.util.Set;
 import j86.java.util.TreeMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Loads time-zone rules for 'TZDB'.

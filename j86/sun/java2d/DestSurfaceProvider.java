@@ -25,7 +25,7 @@
 
 package j86.sun.java2d;
 
-import j86.j86.j86.sun.java2d.pipe.hw.*;
+import j86.sun.java2d.pipe.hw.*;
 
 /**
  * Classes implementing this interface provide access to their

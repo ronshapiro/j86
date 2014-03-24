@@ -29,8 +29,8 @@ import j86.java.util.*;
 
 import j86.java.applet.Applet;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.print.*;
+import j86.java.awt.event.*;
+import j86.java.awt.print.*;
 
 import j86.java.beans.*;
 
@@ -41,18 +41,18 @@ import j86.java.io.IOException;
 
 import j86.javax.accessibility.*;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.table.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.table.*;
+import j86.javax.swing.border.*;
 
 import j86.java.text.NumberFormat;
 import j86.java.text.DateFormat;
 import j86.java.text.MessageFormat;
 
-import j86.j86.javax.print.attribute.*;
+import j86.javax.print.attribute.*;
 import j86.javax.print.PrintService;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.swing.SwingUtilities2.Section;
@@ -212,8 +212,8 @@ import j86.sun.swing.SwingLazyValue;
  *
  * @author Philip Milne
  * @author Shannon Hickey (printing support)
- * @see j86.j86.javax.swing.table.DefaultTableModel
- * @see j86.j86.javax.swing.table.TableRowSorter
+ * @see j86.javax.swing.table.DefaultTableModel
+ * @see j86.javax.swing.table.TableRowSorter
  */
 /* The first versions of the JTable, contained in Swing-0.1 through
  * Swing-0.4, were written by Alan Chung.
@@ -645,7 +645,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param numRows           the number of rows the table holds
      * @param numColumns        the number of columns the table holds
-     * @see j86.j86.javax.swing.table.DefaultTableModel
+     * @see j86.javax.swing.table.DefaultTableModel
      */
     public JTable(int numRows, int numColumns) {
         this(new DefaultTableModel(numRows, numColumns));
@@ -1830,7 +1830,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param autoCreateRowSorter whether or not a {@code RowSorter}
      *        should be automatically created
-     * @see j86.j86.javax.swing.table.TableRowSorter
+     * @see j86.javax.swing.table.TableRowSorter
      * @beaninfo
      *        bound: true
      *    preferred: true
@@ -1906,7 +1906,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *
      * @param sorter the <code>RowSorter</code>; <code>null</code> turns
      *        sorting off
-     * @see j86.j86.javax.swing.table.TableRowSorter
+     * @see j86.javax.swing.table.TableRowSorter
      * @beaninfo
      *        bound: true
      *  description: The table's RowSorter
@@ -2613,7 +2613,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      *         the row isn't visible
      * @throws IndexOutOfBoundsException if sorting is enabled and passed an
      *         index outside the number of rows of the <code>TableModel</code>
-     * @see j86.j86.javax.swing.table.TableRowSorter
+     * @see j86.javax.swing.table.TableRowSorter
      * @since 1.6
      */
     public int convertRowIndexToView(int modelRowIndex) {
@@ -2634,7 +2634,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * @throws IndexOutOfBoundsException if sorting is enabled and passed an
      *         index outside the range of the <code>JTable</code> as
      *         determined by the method <code>getRowCount</code>
-     * @see j86.j86.javax.swing.table.TableRowSorter
+     * @see j86.javax.swing.table.TableRowSorter
      * @see #getRowCount
      * @since 1.6
      */
@@ -5318,14 +5318,14 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
     /**
      * Creates default cell renderers for objects, numbers, doubles, dates,
      * booleans, and icons.
-     * @see j86.j86.javax.swing.table.DefaultTableCellRenderer
+     * @see j86.javax.swing.table.DefaultTableCellRenderer
      *
      */
     protected void createDefaultRenderers() {
         defaultRenderersByColumnClass = new UIDefaults(8, 0.75f);
 
         // Objects
-        setLazyRenderer(Object.class, "j86.j86.javax.swing.table.DefaultTableCellRenderer$UIResource");
+        setLazyRenderer(Object.class, "j86.javax.swing.table.DefaultTableCellRenderer$UIResource");
 
         // Numbers
         setLazyRenderer(Number.class, "j86.javax.swing.JTable$NumberRenderer");
@@ -5447,7 +5447,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
     static class GenericEditor extends DefaultCellEditor {
 
         Class[] argTypes = new Class[]{String.class};
-        j86.j86.j86.java.lang.reflect.Constructor constructor;
+        j86.java.lang.reflect.Constructor constructor;
         Object value;
 
         public GenericEditor() {
@@ -5561,7 +5561,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different table model object.
      *
      * @return the default table model object
-     * @see j86.j86.javax.swing.table.DefaultTableModel
+     * @see j86.javax.swing.table.DefaultTableModel
      */
     protected TableModel createDefaultDataModel() {
         return new DefaultTableModel();
@@ -5573,7 +5573,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different column model object.
      *
      * @return the default column model object
-     * @see j86.j86.javax.swing.table.DefaultTableColumnModel
+     * @see j86.javax.swing.table.DefaultTableColumnModel
      */
     protected TableColumnModel createDefaultColumnModel() {
         return new DefaultTableColumnModel();
@@ -5597,7 +5597,7 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * method to return a different table header object.
      *
      * @return the default table header object
-     * @see j86.j86.javax.swing.table.JTableHeader
+     * @see j86.javax.swing.table.JTableHeader
      */
     protected JTableHeader createDefaultTableHeader() {
         return new JTableHeader(columnModel);
@@ -5677,8 +5677,8 @@ public class JTable extends JComponent implements TableModelListener, Scrollable
      * @return the assigned renderer; if <code>null</code>
      *                  returns the default renderer
      *                  for this type of object
-     * @see j86.j86.javax.swing.table.DefaultTableCellRenderer
-     * @see j86.j86.javax.swing.table.TableColumn#setCellRenderer
+     * @see j86.javax.swing.table.DefaultTableCellRenderer
+     * @see j86.javax.swing.table.TableColumn#setCellRenderer
      * @see #setDefaultRenderer
      */
     public TableCellRenderer getCellRenderer(int row, int column) {

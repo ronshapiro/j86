@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.border;
+package j86.javax.swing.border;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -32,12 +32,12 @@ import j86.java.awt.Graphics;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Insets;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.Path2D;
 import j86.java.beans.ConstructorProperties;
 import j86.javax.swing.JComponent;
 import j86.javax.swing.JLabel;
 import j86.javax.swing.UIManager;
-import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
+import j86.javax.swing.plaf.basic.BasicHTML;
 
 /**
  * A class which implements an arbitrary border

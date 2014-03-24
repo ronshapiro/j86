@@ -26,18 +26,18 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.j86.com.sun.jdi.connect.spi.Connection;
-import j86.j86.com.sun.jdi.request.EventRequestManager;
-import j86.j86.com.sun.jdi.request.EventRequest;
-import j86.j86.com.sun.jdi.request.BreakpointRequest;
-import j86.j86.com.sun.jdi.event.EventQueue;
+import j86.com.sun.jdi.connect.spi.Connection;
+import j86.com.sun.jdi.request.EventRequestManager;
+import j86.com.sun.jdi.request.EventRequest;
+import j86.com.sun.jdi.request.BreakpointRequest;
+import j86.com.sun.jdi.event.EventQueue;
 
 import j86.java.util.*;
 import j86.java.text.MessageFormat;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
 
 class VirtualMachineImpl extends MirrorImpl
              implements PathSearchingVirtualMachine, ThreadListener {

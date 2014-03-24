@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 
 // java imports
@@ -40,18 +40,18 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
 
-import j86.j86.java.lang.management.MemoryManagerMXBean;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.MemoryManagerMXBean;
+import j86.java.lang.management.ManagementFactory;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemManagerTableMeta;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableCache;
-import j86.j86.j86.sun.management.snmp.util.SnmpNamedListTableCache;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableHandler;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
-import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
+import j86.sun.management.snmp.jvmmib.JvmMemManagerTableMeta;
+import j86.sun.management.snmp.util.SnmpTableCache;
+import j86.sun.management.snmp.util.SnmpNamedListTableCache;
+import j86.sun.management.snmp.util.SnmpTableHandler;
+import j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmMemManagerTable" table.
@@ -143,14 +143,14 @@ public class JvmMemManagerTableMetaImpl extends JvmMemManagerTableMeta {
                                     validity());
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(Object userData)
         throws SnmpStatusException {
         // null means get the first OID.
         return getNextOid(null,userData);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(SnmpOid oid, Object userData)
         throws SnmpStatusException {
         final boolean dbg = log.isDebugOn();
@@ -182,7 +182,7 @@ public class JvmMemManagerTableMetaImpl extends JvmMemManagerTableMeta {
     }
 
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected boolean contains(SnmpOid oid, Object userData) {
 
         // Get the handler.
@@ -197,7 +197,7 @@ public class JvmMemManagerTableMetaImpl extends JvmMemManagerTableMeta {
         return handler.contains(oid);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     public Object getEntry(SnmpOid oid)
         throws SnmpStatusException {
 

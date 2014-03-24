@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
@@ -35,14 +35,14 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PublicKey;
 import j86.java.security.Security;
-import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
-import j86.j86.java.security.cert.Extension;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.java.security.cert.Extension;
+import j86.java.security.cert.*;
 import j86.java.util.*;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
-import static j86.j86.sun.security.provider.certpath.OCSP.*;
-import static j86.j86.sun.security.provider.certpath.PKIX.*;
+import static j86.sun.security.provider.certpath.OCSP.*;
+import static j86.sun.security.provider.certpath.PKIX.*;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.security.x509.*;
 import static j86.sun.security.x509.PKIXExtensions.*;

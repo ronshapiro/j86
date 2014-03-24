@@ -30,4 +30,4 @@
  *
  * @since JDK1.1
  */
-package j86.j86.java.security.acl;
+package j86.java.security.acl;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.interfaces;
+package j86.javax.crypto.interfaces;
 
 import j86.java.math.BigInteger;
 

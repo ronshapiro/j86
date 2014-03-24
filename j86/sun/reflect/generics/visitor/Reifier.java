@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.visitor;
+package j86.sun.reflect.generics.visitor;
 
 
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.Type;
 import j86.java.util.List;
 import j86.java.util.Iterator;
-import j86.j86.sun.reflect.generics.tree.*;
-import j86.j86.sun.reflect.generics.factory.*;
+import j86.sun.reflect.generics.tree.*;
+import j86.sun.reflect.generics.factory.*;
 
 
 

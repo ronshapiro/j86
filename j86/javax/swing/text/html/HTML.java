@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.io.*;
 import j86.java.util.Hashtable;
-import j86.j86.javax.swing.text.AttributeSet;
-import j86.j86.javax.swing.text.StyleConstants;
-import j86.j86.javax.swing.text.StyleContext;
+import j86.javax.swing.text.AttributeSet;
+import j86.javax.swing.text.StyleConstants;
+import j86.javax.swing.text.StyleContext;
 
 /**
  * Constants used in the <code>HTMLDocument</code>.  These

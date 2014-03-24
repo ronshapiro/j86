@@ -32,18 +32,18 @@ import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.io.InputStream;
 import j86.java.net.Socket;
-import j86.j86.javax.net.ssl.SSLSocket;
+import j86.javax.net.ssl.SSLSocket;
 
 import j86.javax.naming.CommunicationException;
 import j86.javax.naming.ServiceUnavailableException;
 import j86.javax.naming.NamingException;
 import j86.javax.naming.InterruptedNamingException;
 
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.ldap.Control;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.Arrays;
 import j86.sun.misc.IOUtils;
 //import j86.javax.net.SocketFactory;

@@ -33,8 +33,8 @@ import j86.java.util.Arrays;
 
 import j86.java.security.*;
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.GCMParameterSpec;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.GCMParameterSpec;
 
 import j86.java.nio.*;
 

@@ -39,9 +39,9 @@ package j86.javax.naming;
   * @see Context#bind
   * @see Context#rebind
   * @see Context#createSubcontext
-  * @see j86.j86.javax.naming.directory.DirContext#bind
-  * @see j86.j86.javax.naming.directory.DirContext#rebind
-  * @see j86.j86.javax.naming.directory.DirContext#createSubcontext
+  * @see j86.javax.naming.directory.DirContext#bind
+  * @see j86.javax.naming.directory.DirContext#rebind
+  * @see j86.javax.naming.directory.DirContext#createSubcontext
   * @since 1.3
   */
 

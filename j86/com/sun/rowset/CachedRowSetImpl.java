@@ -32,11 +32,11 @@ import j86.java.math.*;
 import j86.java.util.*;
 import j86.java.text.*;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
-import j86.j86.j86.javax.sql.rowset.serial.*;
-import j86.j86.com.sun.rowset.internal.*;
-import j86.j86.com.sun.rowset.providers.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.serial.*;
+import j86.com.sun.rowset.internal.*;
+import j86.com.sun.rowset.providers.*;
 
 /**
  * The standard implementation of the <code>CachedRowSet</code> interface.
@@ -204,7 +204,7 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
     /**
      * The default SyncProvider for the RI CachedRowSetImpl
      */
-    private String DEFAULT_SYNC_PROVIDER = "j86.j86.com.sun.rowset.providers.RIOptimisticProvider";
+    private String DEFAULT_SYNC_PROVIDER = "j86.com.sun.rowset.providers.RIOptimisticProvider";
 
     /**
      * The boolean variable indicating locatorsUpdateValue
@@ -417,14 +417,14 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
      * <code>RowSet</code> object.
      * <pre>
      *     Hashtable env = new Hashtable();
-     *     env.put(j86.j86.j86.javax.sql.rowset.spi.SyncFactory.ROWSET_PROVIDER_NAME,
+     *     env.put(j86.javax.sql.rowset.spi.SyncFactory.ROWSET_PROVIDER_NAME,
      *         "com.foo.provider.Impl");
      *     CachedRowSetImpl crs = new CachedRowSet(env);
      * </pre>
      * <p>
      * Calling this constructor with a <code>null</code> parameter will
      * cause the <code>SyncFactory</code> to provide the reference
-     * optimistic provider <code>j86.j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
+     * optimistic provider <code>j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
      * <p>
      * In addition, the following properties can be associated with the
      * provider to assist in determining the choice of the synchronizaton
@@ -462,7 +462,7 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
         }
 
         String providerName = (String)env.get(
-        j86.j86.j86.javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
+        j86.javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
 
         // set the Reader, this maybe overridden latter
         provider =
@@ -747,7 +747,7 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
 
             /*
              * It seems, from a bug report, that a driver can sometimes return a negative
-             * value for scale.  j86.j86.javax.sql.rowset.RowSetMetaDataImpl will throw an exception
+             * value for scale.  j86.javax.sql.rowset.RowSetMetaDataImpl will throw an exception
              * if we attempt to set a negative value.  As such, we'll check for this case.
              */
             int scale = rsmd.getScale(col);
@@ -862,7 +862,7 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
      *          instance touches the data source.
      * @see #acceptChanges(j86.java.sql.Connection)
      * @see j86.javax.sql.RowSetWriter
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public void acceptChanges() throws SyncProviderException {
         if (onInsertRow == true) {
@@ -933,8 +933,8 @@ public class CachedRowSetImpl extends BaseRowSet implements RowSet, RowSetIntern
      *                   back to the data source
      * @see #acceptChanges
      * @see j86.javax.sql.RowSetWriter
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public void acceptChanges(Connection con) throws SyncProviderException{
       setConnection(con);

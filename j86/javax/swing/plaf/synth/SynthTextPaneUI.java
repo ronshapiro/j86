@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.plaf.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.awt.*;
 
@@ -92,7 +92,7 @@ public class SynthTextPaneUI extends SynthEditorPaneUI {
      * </ol>
      *
      * @param c the editor component
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicTextUI#installUI
+     * @see j86.javax.swing.plaf.basic.BasicTextUI#installUI
      * @see ComponentUI#installUI
      */
     @Override

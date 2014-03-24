@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.io.FileDescriptor;
 import j86.java.io.IOException;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.MappedByteBuffer;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.util.ArrayList;
 import j86.java.util.List;
 import j86.java.security.AccessController;
@@ -972,7 +972,7 @@ public class FileChannelImpl
                 if (!propertyChecked) {
                     String value = AccessController.doPrivileged(
                         new GetPropertyAction(
-                            "j86.j86.j86.sun.nio.ch.disableSystemWideOverlappingFileLockCheck"));
+                            "j86.sun.nio.ch.disableSystemWideOverlappingFileLockCheck"));
                     isSharedFileLockTable = ((value == null) || value.equals("false"));
                     propertyChecked = true;
                 }

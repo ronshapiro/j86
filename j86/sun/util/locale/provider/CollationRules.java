@@ -36,7 +36,7 @@
  *
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 /**
  * CollationRules contains the default en_US collation rules as a base
  * for building other collation tables.

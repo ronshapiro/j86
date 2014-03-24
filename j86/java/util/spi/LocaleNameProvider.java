@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.Locale;
 
@@ -62,7 +62,7 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>languageCode</code> is not in the form of
      *     two or three lower-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayLanguage(java.util.Locale)
      */
@@ -89,7 +89,7 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>scriptCode</code> is not in the form of
      *     four title case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayScript(java.util.Locale)
      * @since 1.7
@@ -118,7 +118,7 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>countryCode</code> is not in the form of
      *     two upper-case letters or three digit letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayCountry(java.util.Locale)
      */
@@ -136,7 +136,7 @@ public abstract class LocaleNameProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>variant</code> or <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayVariant(java.util.Locale)
      */

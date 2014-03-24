@@ -28,9 +28,9 @@ package j86.sun.applet;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.print.*;
-import j86.j86.javax.print.attribute.*;
+import j86.java.awt.event.*;
+import j86.java.awt.print.*;
+import j86.javax.print.attribute.*;
 import j86.java.applet.*;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
@@ -38,11 +38,11 @@ import j86.java.net.SocketPermission;
 import j86.sun.misc.Ref;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.sun.awt.SunToolkit;
 import j86.sun.awt.AppContext;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * A frame to show the applet tag in.

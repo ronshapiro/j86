@@ -68,9 +68,9 @@ public final class SunProvider extends Provider {
                         new j86.java.security.PrivilegedAction<Void>() {
             public Void run() {
                 put("GssApiMechanism.1.2.840.113554.1.2.2",
-                    "j86.j86.sun.security.jgss.krb5.Krb5MechFactory");
+                    "j86.sun.security.jgss.krb5.Krb5MechFactory");
                 put("GssApiMechanism.1.3.6.1.5.5.2",
-                    "j86.j86.sun.security.jgss.spnego.SpNegoMechFactory");
+                    "j86.sun.security.jgss.spnego.SpNegoMechFactory");
                 /*
                   put("GssApiMechanism.1.3.6.1.4.1.42.2.26.1.2",
                   "j86.sun.security.jgss.dummy.DummyMechFactory");

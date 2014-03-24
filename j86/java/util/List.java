@@ -25,7 +25,7 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.UnaryOperator;
+import j86.java.util.function.UnaryOperator;
 
 /**
  * An ordered collection (also known as a <i>sequence</i>).  The user of this

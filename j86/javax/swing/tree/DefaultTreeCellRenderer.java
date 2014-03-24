@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -32,16 +32,16 @@ import j86.java.awt.Font;
 import j86.java.awt.Graphics;
 import j86.java.awt.Insets;
 import j86.java.awt.Rectangle;
-import j86.j86.javax.swing.plaf.ColorUIResource;
-import j86.j86.javax.swing.plaf.FontUIResource;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.j86.javax.swing.plaf.basic.BasicGraphicsUtils;
+import j86.javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.basic.BasicGraphicsUtils;
 import j86.javax.swing.Icon;
 import j86.javax.swing.JLabel;
 import j86.javax.swing.JTree;
 import j86.javax.swing.LookAndFeel;
 import j86.javax.swing.UIManager;
-import j86.j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.border.EmptyBorder;
 import j86.sun.swing.DefaultLookup;
 
 /**
@@ -626,7 +626,7 @@ public class DefaultTreeCellRenderer extends JLabel implements TreeCellRenderer
         if (propertyName == "text"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }

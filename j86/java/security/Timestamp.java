@@ -26,9 +26,9 @@
 package j86.java.security;
 
 import j86.java.io.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertPath;
-import j86.j86.java.security.cert.X509Extension;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertPath;
+import j86.java.security.cert.X509Extension;
 import j86.java.util.Date;
 import j86.java.util.List;
 

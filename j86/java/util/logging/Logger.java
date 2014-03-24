@@ -24,9 +24,9 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
@@ -34,8 +34,8 @@ import j86.java.util.Iterator;
 import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;
 import j86.java.util.ResourceBundle;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.function.Supplier;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 
@@ -219,7 +219,7 @@ public class Logger {
     private static final Handler emptyHandlers[] = new Handler[0];
     private static final int offValue = Level.OFF.intValue();
 
-    static final String SYSTEM_LOGGER_RB_NAME = "j86.j86.sun.util.logging.resources.logging";
+    static final String SYSTEM_LOGGER_RB_NAME = "j86.sun.util.logging.resources.logging";
 
     // This class is immutable and it is important that it remains so.
     private static final class LoggerBundle {
@@ -420,7 +420,7 @@ public class Logger {
         }
     }
 
-    // Until all JDK code converted to call j86.j86.sun.util.logging.PlatformLogger
+    // Until all JDK code converted to call j86.sun.util.logging.PlatformLogger
     // (see 7054233), we need to determine if Logger.getLogger is to add
     // a system logger or user logger.
     //
@@ -429,7 +429,7 @@ public class Logger {
     // These system loggers only set the resource bundle to the given
     // resource bundle name (rather than the default system resource bundle).
     private static class SystemLoggerHelper {
-        static boolean disableCallerCheck = getBooleanProperty("j86.j86.sun.util.logging.disableCallerCheck");
+        static boolean disableCallerCheck = getBooleanProperty("j86.sun.util.logging.disableCallerCheck");
         private static boolean getBooleanProperty(final String key) {
             String s = AccessController.doPrivileged(new PrivilegedAction<String>() {
                 @Override
@@ -564,7 +564,7 @@ public class Logger {
 
     // package-private
     // Add a platform logger to the system context.
-    // i.e. caller of j86.j86.sun.util.logging.PlatformLogger.getLogger
+    // i.e. caller of j86.sun.util.logging.PlatformLogger.getLogger
     static Logger getPlatformLogger(String name) {
         LogManager manager = LogManager.getLogManager();
 
@@ -590,7 +590,7 @@ public class Logger {
      * to have the root logger ("") as its parent.  This means that
      * by default it inherits its effective level and handlers
      * from the root logger. Changing its parent via the
-     * {@link #setParent(j86.j86.java.util.logging.Logger) setParent} method
+     * {@link #setParent(j86.java.util.logging.Logger) setParent} method
      * will still require the security permission specified by that method.
      * <p>
      *
@@ -616,7 +616,7 @@ public class Logger {
      * to have the root logger ("") as its parent.  This means that
      * by default it inherits its effective level and handlers
      * from the root logger.  Changing its parent via the
-     * {@link #setParent(j86.j86.java.util.logging.Logger) setParent} method
+     * {@link #setParent(j86.java.util.logging.Logger) setParent} method
      * will still require the security permission specified by that method.
      * <p>
      * @param   resourceBundleName  name of ResourceBundle to be used for localizing
@@ -1109,7 +1109,7 @@ public class Logger {
      * @param   bundleName     name of resource bundle to localize msg,
      *                         can be null
      * @param   msg     The string message (or a key in the message catalog)
-     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     * @deprecated Use {@link #logrb(j86.java.util.logging.Level, j86.java.lang.String,
      * j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
      * j86.java.lang.Object...)} instead.
      */
@@ -1144,7 +1144,7 @@ public class Logger {
      *                         can be null
      * @param   msg      The string message (or a key in the message catalog)
      * @param   param1    Parameter to the log message.
-     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     * @deprecated Use {@link #logrb(j86.java.util.logging.Level, j86.java.lang.String,
      *   j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
      *   j86.java.lang.Object...)} instead
      */
@@ -1181,7 +1181,7 @@ public class Logger {
      *                         can be null.
      * @param   msg     The string message (or a key in the message catalog)
      * @param   params  Array of parameters to the message
-     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     * @deprecated Use {@link #logrb(j86.java.util.logging.Level, j86.java.lang.String,
      *      j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
      *      j86.java.lang.Object...)} instead.
      */
@@ -1257,7 +1257,7 @@ public class Logger {
      *                         can be null
      * @param   msg     The string message (or a key in the message catalog)
      * @param   thrown  Throwable associated with log message.
-     * @deprecated Use {@link #logrb(j86.j86.java.util.logging.Level, j86.java.lang.String,
+     * @deprecated Use {@link #logrb(j86.java.util.logging.Level, j86.java.lang.String,
      *     j86.java.lang.String, j86.java.util.ResourceBundle, java.lang.String,
      *     j86.java.lang.Throwable)} instead.
      */

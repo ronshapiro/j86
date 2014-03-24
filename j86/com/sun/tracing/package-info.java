@@ -143,7 +143,7 @@
  * <li>{@code <probe>} the probe name as specified by the application</li>
  * </ul>
  * <p>
- * The {@code com.j86.j86.sun.tracing.dtrace} package contains additional
+ * The {@code com.j86.sun.tracing.dtrace} package contains additional
  * annotations that can be used to control the names used for the
  * <code>module</code> and <code>function</code> fields, as well as annotations
  * that can be added to the provider to control probe stability and dependency
@@ -173,8 +173,8 @@
  * following circumstances:
  * <ul>
  * <li>DTrace is not supported on the underlying system.</li>
- * <li>The property {@code com.j86.j86.sun.tracing.dtrace} is set to "disable".</li>
- * <li>The RuntimePermission {@code com.j86.j86.sun.tracing.dtrace.createProvider}
+ * <li>The property {@code com.j86.sun.tracing.dtrace} is set to "disable".</li>
+ * <li>The RuntimePermission {@code com.j86.sun.tracing.dtrace.createProvider}
  * is denied to the process.</li>
  * </ul>
  * <p>

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.defaults;
+package j86.com.sun.jmx.snmp.defaults;
 
 // java import
 //

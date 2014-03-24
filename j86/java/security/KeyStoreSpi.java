@@ -29,12 +29,12 @@ import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.java.security.KeyStore.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateException;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

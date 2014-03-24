@@ -26,7 +26,7 @@
 package j86.sun.swing;
 
 import j86.javax.swing.ImageIcon;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 import j86.java.awt.Image;
 
 /**

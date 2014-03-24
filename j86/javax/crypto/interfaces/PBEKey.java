@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.interfaces;
+package j86.javax.crypto.interfaces;
 
 import j86.java.math.BigInteger;
 
@@ -32,7 +32,7 @@ import j86.java.math.BigInteger;
  *
  * @author Valerie Peng
  *
- * @see j86.j86.javax.crypto.spec.PBEKeySpec
+ * @see j86.javax.crypto.spec.PBEKeySpec
  * @see j86.javax.crypto.SecretKey
  * @since 1.4
  */

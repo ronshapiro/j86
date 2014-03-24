@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.monitor.remote;
+package j86.sun.jvmstat.monitor.remote;
 
 import j86.sun.jvmstat.monitor.*;
 

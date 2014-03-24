@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.j86.javax.swing.text.html.parser;
+package j86.javax.swing.text.html.parser;
 
-import j86.j86.javax.swing.text.SimpleAttributeSet;
-import j86.j86.j86.javax.swing.text.html.HTML;
-import j86.j86.javax.swing.text.ChangedCharSetException;
+import j86.javax.swing.text.SimpleAttributeSet;
+import j86.javax.swing.text.html.HTML;
+import j86.javax.swing.text.ChangedCharSetException;
 import j86.java.io.*;
 import j86.java.util.Hashtable;
 import j86.java.util.Properties;

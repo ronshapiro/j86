@@ -25,17 +25,17 @@
 
 package j86.sun.security.jgss;
 
-import j86.j86.com.sun.security.auth.callback.TextCallbackHandler;
+import j86.com.sun.security.auth.callback.TextCallbackHandler;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.kerberos.KerberosPrincipal;
-import j86.j86.javax.security.auth.kerberos.KerberosTicket;
-import j86.j86.javax.security.auth.kerberos.KerberosKey;
+import j86.javax.security.auth.kerberos.KerberosPrincipal;
+import j86.javax.security.auth.kerberos.KerberosTicket;
+import j86.javax.security.auth.kerberos.KerberosKey;
 import j86.org.ietf.jgss.*;
-import j86.j86.sun.security.jgss.spi.GSSNameSpi;
-import j86.j86.sun.security.jgss.spi.GSSCredentialSpi;
+import j86.sun.security.jgss.spi.GSSNameSpi;
+import j86.sun.security.jgss.spi.GSSCredentialSpi;
 import j86.sun.security.action.GetPropertyAction;
-import j86.j86.sun.security.jgss.krb5.Krb5NameElement;
-import j86.j86.sun.security.jgss.spnego.SpNegoCredElement;
+import j86.sun.security.jgss.krb5.Krb5NameElement;
+import j86.sun.security.jgss.spnego.SpNegoCredElement;
 import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.util.Vector;
@@ -44,9 +44,9 @@ import j86.java.security.AccessController;
 import j86.java.security.AccessControlContext;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.login.LoginContext;
-import j86.j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.login.LoginContext;
+import j86.javax.security.auth.login.LoginException;
 import j86.sun.security.action.GetBooleanAction;
 
 /**
@@ -169,8 +169,8 @@ public class GSSUtil {
      * the same time, it converts any subclasses of KerberosTicket
      * into KerberosTicket instances and any subclasses of KerberosKey into
      * KerberosKey instances. (It is not desirable to expose the customer
-     * to j86.j86.sun.security.jgss.krb5.Krb5InitCredential which extends
-     * KerberosTicket and j86.j86.sun.security.jgss.krb5.Kbr5AcceptCredential which
+     * to j86.sun.security.jgss.krb5.Krb5InitCredential which extends
+     * KerberosTicket and j86.sun.security.jgss.krb5.Kbr5AcceptCredential which
      * extends KerberosKey.)
      */
     private static void populateCredentials(Set<Object> credentials,
@@ -190,7 +190,7 @@ public class GSSUtil {
 
             if (cred instanceof KerberosTicket) {
                 if (!cred.getClass().getName().equals
-                    ("j86.j86.javax.security.auth.kerberos.KerberosTicket")) {
+                    ("j86.javax.security.auth.kerberos.KerberosTicket")) {
                     KerberosTicket tempTkt = (KerberosTicket) cred;
                     cred = new KerberosTicket(tempTkt.getEncoded(),
                                               tempTkt.getClient(),
@@ -207,7 +207,7 @@ public class GSSUtil {
                 credentials.add(cred);
             } else if (cred instanceof KerberosKey) {
                 if (!cred.getClass().getName().equals
-                    ("j86.j86.javax.security.auth.kerberos.KerberosKey")) {
+                    ("j86.javax.security.auth.kerberos.KerberosKey")) {
                     KerberosKey tempKey = (KerberosKey) cred;
                     cred = new KerberosKey(tempKey.getPrincipal(),
                                            tempKey.getEncoded(),
@@ -234,7 +234,7 @@ public class GSSUtil {
 
         CallbackHandler cb = null;
         if (caller instanceof HttpCaller) {
-            cb = new j86.j86.j86.j86.sun.net.www.protocol.http.spnego.NegotiateCallbackHandler(
+            cb = new j86.sun.net.www.protocol.http.spnego.NegotiateCallbackHandler(
                     ((HttpCaller)caller).info());
         } else {
             String defaultHandler =

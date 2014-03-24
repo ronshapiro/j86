@@ -59,19 +59,19 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
-import static j86.j86.java.time.temporal.ChronoField.AMPM_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.AMPM_OF_DAY;
+import static j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
 
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.chrono.JapaneseChronology;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.IsoFields;
-import j86.j86.java.time.temporal.TemporalField;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.chrono.JapaneseChronology;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.IsoFields;
+import j86.java.time.temporal.TemporalField;
 import j86.java.util.AbstractMap.SimpleImmutableEntry;
 import j86.java.util.ArrayList;
 import j86.java.util.Calendar;
@@ -84,12 +84,12 @@ import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.Map.Entry;
 import j86.java.util.ResourceBundle;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
-import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleResources;
+import j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleResources;
 
 /**
  * A provider to obtain the textual form of a date-time field.

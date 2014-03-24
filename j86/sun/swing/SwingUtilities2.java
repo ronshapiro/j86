@@ -26,27 +26,27 @@
 package j86.sun.swing;
 
 import j86.java.security.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.awt.*;
 import static j86.java.awt.RenderingHints.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.font.*;
-import j86.j86.java.awt.geom.*;
-import j86.j86.java.awt.print.PrinterGraphics;
+import j86.java.awt.event.*;
+import j86.java.awt.font.*;
+import j86.java.awt.geom.*;
+import j86.java.awt.print.PrinterGraphics;
 import j86.java.text.CharacterIterator;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedString;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.TreeModelEvent;
-import j86.j86.javax.swing.text.Highlighter;
-import j86.j86.javax.swing.text.JTextComponent;
-import j86.j86.javax.swing.text.DefaultHighlighter;
-import j86.j86.javax.swing.text.DefaultCaret;
-import j86.j86.javax.swing.table.TableCellRenderer;
-import j86.j86.javax.swing.table.TableColumnModel;
-import j86.j86.javax.swing.tree.TreeModel;
-import j86.j86.javax.swing.tree.TreePath;
+import j86.javax.swing.event.TreeModelEvent;
+import j86.javax.swing.text.Highlighter;
+import j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.DefaultHighlighter;
+import j86.javax.swing.text.DefaultCaret;
+import j86.javax.swing.table.TableCellRenderer;
+import j86.javax.swing.table.TableColumnModel;
+import j86.javax.swing.tree.TreeModel;
+import j86.javax.swing.tree.TreePath;
 
 import j86.sun.swing.PrintColorUIResource;
 import j86.sun.swing.ImageIconUIResource;
@@ -60,9 +60,9 @@ import j86.sun.font.FontDesignMetrics;
 import j86.sun.font.FontUtilities;
 import j86.sun.java2d.SunGraphicsEnvironment;
 
-import j86.j86.java.util.concurrent.Callable;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.FutureTask;
+import j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.FutureTask;
 
 /**
  * A collection of utility methods for Swing.
@@ -1100,8 +1100,8 @@ public class SwingUtilities2 {
      * foreground for the specified highlight.
      *
      * Returns true only if the highlight painter for the specified highlight
-     * is the swing painter (whether inner class of j86.j86.javax.swing.text.DefaultHighlighter
-     * or j86.j86.com.sun.java.swing.plaf.windows.WindowsTextUI) and its background color
+     * is the swing painter (whether inner class of j86.javax.swing.text.DefaultHighlighter
+     * or j86.com.sun.java.swing.plaf.windows.WindowsTextUI) and its background color
      * is null or equals to the selection color of the text component.
      *
      * This is a hack for fixing both bugs 4761990 and 5003294
@@ -1109,8 +1109,8 @@ public class SwingUtilities2 {
     public static boolean useSelectedTextColor(Highlighter.Highlight h, JTextComponent c) {
         Highlighter.HighlightPainter painter = h.getPainter();
         String painterClass = painter.getClass().getName();
-        if (painterClass.indexOf("j86.j86.javax.swing.text.DefaultHighlighter") != 0 &&
-                painterClass.indexOf("j86.j86.com.sun.java.swing.plaf.windows.WindowsTextUI") != 0) {
+        if (painterClass.indexOf("j86.javax.swing.text.DefaultHighlighter") != 0 &&
+                painterClass.indexOf("j86.com.sun.java.swing.plaf.windows.WindowsTextUI") != 0) {
             return false;
         }
         try {
@@ -1904,7 +1904,7 @@ public class SwingUtilities2 {
      * @return  the index of the corresponding column in the model
      *
      * @see JTable#convertColumnIndexToModel(int)
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicTableHeaderUI
+     * @see j86.javax.swing.plaf.basic.BasicTableHeaderUI
      */
     public static int convertColumnIndexToModel(TableColumnModel cm,
                                                 int viewColumnIndex) {
@@ -1927,7 +1927,7 @@ public class SwingUtilities2 {
      * @return the index of the corresponding column in the view
      *
      * @see JTable#convertColumnIndexToView(int)
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicTableHeaderUI
+     * @see j86.javax.swing.plaf.basic.BasicTableHeaderUI
      */
     public static int convertColumnIndexToView(TableColumnModel cm,
                                         int modelColumnIndex) {

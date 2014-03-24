@@ -28,8 +28,8 @@ package j86.javax.management;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Objects;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
-import j86.j86.java.util.concurrent.Executor;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.concurrent.Executor;
 
 import j86.com.sun.jmx.remote.util.ClassLogger;
 
@@ -72,7 +72,7 @@ public class NotificationBroadcasterSupport implements NotificationEmitter {
 
     /**
      * Constructs a NotificationBroadcasterSupport where each listener is invoked using
-     * the given {@link j86.j86.java.util.concurrent.Executor}. When {@link #sendNotification
+     * the given {@link j86.java.util.concurrent.Executor}. When {@link #sendNotification
      * sendNotification} is called, a listener is selected if it was added with a null
      * {@link NotificationFilter}, or if {@link NotificationFilter#isNotificationEnabled
      * isNotificationEnabled} returns true for the notification being sent. The call to
@@ -119,7 +119,7 @@ public class NotificationBroadcasterSupport implements NotificationEmitter {
 
     /**
      * <p>Constructs a NotificationBroadcasterSupport with information about the notifications that may be sent,
-     * and where each listener is invoked using the given {@link j86.j86.java.util.concurrent.Executor}.</p>
+     * and where each listener is invoked using the given {@link j86.java.util.concurrent.Executor}.</p>
      *
      * <p>When {@link #sendNotification sendNotification} is called, a
      * listener is selected if it was added with a null {@link

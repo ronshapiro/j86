@@ -41,7 +41,7 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.hu;
+package j86.sun.text.resources.hu;
 
 import j86.java.util.ListResourceBundle;
 

@@ -24,14 +24,14 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java import
 //
 import j86.java.util.Enumeration;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 // jmx imports
 //
 import j86.com.sun.jmx.snmp.SnmpPdu;
@@ -44,8 +44,8 @@ import j86.com.sun.jmx.snmp.SnmpEngine;
 // SNMP Runtime import
 //
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpIncomingRequest;
+import j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.com.sun.jmx.snmp.internal.SnmpIncomingRequest;
 import j86.com.sun.jmx.snmp.ThreadContext;
 
 class SnmpSubBulkRequestHandler extends SnmpSubRequestHandler {

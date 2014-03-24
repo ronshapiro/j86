@@ -37,9 +37,9 @@ import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
 
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 import j86.sun.misc.HexDumpEncoder;
 
 import j86.sun.security.internal.spec.*;
@@ -172,7 +172,7 @@ abstract class Handshaker {
     private volatile DelegatedTask<?> delegatedTask = null;
     private volatile Exception thrown = null;
 
-    // Could probably use a j86.j86.j86.java.util.concurrent.atomic.AtomicReference
+    // Could probably use a j86.java.util.concurrent.atomic.AtomicReference
     // here instead of using this lock.  Consider changing.
     private Object thrownLock = new Object();
 

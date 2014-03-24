@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.rmi.dgc;
+package j86.java.rmi.dgc;
 
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.UID;
 import j86.java.security.SecureRandom;
 
 /**
@@ -65,7 +65,7 @@ public final class VMID implements j86.java.io.Serializable {
      * Create a new VMID.  Each new VMID returned from this constructor
      * is unique for all Java virtual machines under the following
      * conditions: a) the conditions for uniqueness for objects of
-     * the class <code>j86.j86.java.rmi.server.UID</code> are satisfied, and b) an
+     * the class <code>j86.java.rmi.server.UID</code> are satisfied, and b) an
      * address can be obtained for this host that is unique and constant
      * for the lifetime of this object.
      */

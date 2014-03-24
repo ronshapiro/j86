@@ -30,9 +30,9 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.server;
+package j86.com.sun.tools.hat.internal.server;
 
-import j86.j86.com.sun.tools.hat.internal.oql.*;
+import j86.com.sun.tools.hat.internal.oql.*;
 
 /**
  * This handles Object Query Language (OQL) queries.

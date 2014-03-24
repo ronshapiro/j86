@@ -26,10 +26,10 @@
 package j86.sun.security.jgss;
 
 import j86.org.ietf.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.java.util.*;
 import com.j86.sun.security.jgss.*;
-import j86.j86.sun.security.jgss.spnego.SpNegoCredElement;
+import j86.sun.security.jgss.spnego.SpNegoCredElement;
 
 public class GSSCredentialImpl implements ExtendedGSSCredential {
 

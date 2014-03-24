@@ -27,8 +27,8 @@ package j86.sun.swing;
 import j86.java.awt.Color;
 import j86.java.awt.Insets;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.ComponentUI;
 import j86.sun.awt.AppContext;
 
 /**

@@ -20,22 +20,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues;
+package j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues;
 
 import j86.java.math.BigInteger;
 import j86.java.security.Key;
 import j86.java.security.KeyFactory;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.interfaces.DSAPublicKey;
-import j86.j86.java.security.spec.DSAPublicKeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.interfaces.DSAPublicKey;
+import j86.java.security.spec.DSAPublicKeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -83,7 +83,7 @@ public class DSAKeyValue extends SignatureElementProxy implements KeyValueConten
 
         XMLUtils.addReturnToElement(this.constructionElement);
 
-        if (key instanceof j86.j86.java.security.interfaces.DSAPublicKey) {
+        if (key instanceof j86.java.security.interfaces.DSAPublicKey) {
             this.addBigIntegerElement(((DSAPublicKey) key).getParams().getP(), Constants._TAG_P);
             this.addBigIntegerElement(((DSAPublicKey) key).getParams().getQ(), Constants._TAG_Q);
             this.addBigIntegerElement(((DSAPublicKey) key).getParams().getG(), Constants._TAG_G);

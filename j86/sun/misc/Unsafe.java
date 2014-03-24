@@ -26,7 +26,7 @@
 package j86.sun.misc;
 
 import j86.java.security.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
@@ -107,7 +107,7 @@ public final class Unsafe {
      * The results are undefined unless one of the following cases is true:
      * <ul>
      * <li>The offset was obtained from {@link #objectFieldOffset} on
-     * the {@link j86.j86.j86.java.lang.reflect.Field} of some Java field and the object
+     * the {@link j86.java.lang.reflect.Field} of some Java field and the object
      * referred to by <code>o</code> is of a class compatible with that
      * field's class.
      *

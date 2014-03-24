@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.provider.certpath.ldap;
+package j86.sun.security.provider.certpath.ldap;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.IOException;
@@ -34,19 +34,19 @@ import j86.javax.naming.Context;
 import j86.javax.naming.NamingEnumeration;
 import j86.javax.naming.NamingException;
 import j86.javax.naming.NameNotFoundException;
-import j86.j86.javax.naming.directory.Attribute;
-import j86.j86.javax.naming.directory.Attributes;
-import j86.j86.javax.naming.directory.BasicAttributes;
-import j86.j86.javax.naming.directory.DirContext;
-import j86.j86.javax.naming.directory.InitialDirContext;
+import j86.javax.naming.directory.Attribute;
+import j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.BasicAttributes;
+import j86.javax.naming.directory.DirContext;
+import j86.javax.naming.directory.InitialDirContext;
 
 import j86.java.security.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.*;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.misc.HexDumpEncoder;
-import j86.j86.sun.security.provider.certpath.X509CertificatePair;
+import j86.sun.security.provider.certpath.X509CertificatePair;
 import j86.sun.security.util.Cache;
 import j86.sun.security.util.Debug;
 import j86.sun.security.x509.X500Name;
@@ -98,7 +98,7 @@ import j86.sun.security.action.GetPropertyAction;
  * that CRLs could be rather large but are rarely used. This implementation
  * should improve performance in most cases.
  *
- * @see j86.j86.java.security.cert.CertStore
+ * @see j86.java.security.cert.CertStore
  *
  * @since       1.4
  * @author      Steve Hanna

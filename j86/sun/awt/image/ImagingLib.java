@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.AffineTransformOp;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ByteLookupTable;
-import j86.j86.j86.java.awt.image.ConvolveOp;
-import j86.j86.j86.java.awt.image.Kernel;
-import j86.j86.j86.java.awt.image.LookupOp;
-import j86.j86.j86.java.awt.image.LookupTable;
-import j86.j86.j86.java.awt.image.RasterOp;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.AffineTransformOp;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ByteLookupTable;
+import j86.java.awt.image.ConvolveOp;
+import j86.java.awt.image.Kernel;
+import j86.java.awt.image.LookupOp;
+import j86.java.awt.image.LookupTable;
+import j86.java.awt.image.RasterOp;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
@@ -115,19 +115,19 @@ public class ImagingLib {
         //
         try {
             nativeOpClass[LOOKUP_OP] =
-                Class.forName("j86.j86.j86.java.awt.image.LookupOp");
+                Class.forName("j86.java.awt.image.LookupOp");
         } catch (ClassNotFoundException e) {
             System.err.println("Could not find class: "+e);
         }
         try {
             nativeOpClass[AFFINE_OP] =
-                Class.forName("j86.j86.j86.java.awt.image.AffineTransformOp");
+                Class.forName("j86.java.awt.image.AffineTransformOp");
         } catch (ClassNotFoundException e) {
             System.err.println("Could not find class: "+e);
         }
         try {
             nativeOpClass[CONVOLVE_OP] =
-                Class.forName("j86.j86.j86.java.awt.image.ConvolveOp");
+                Class.forName("j86.java.awt.image.ConvolveOp");
         } catch (ClassNotFoundException e) {
             System.err.println("Could not find class: "+e);
         }

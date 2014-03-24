@@ -31,13 +31,13 @@ import j86.java.util.Vector;
 import j86.java.util.Hashtable;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.ldap.*;
 
-import j86.j86.com.sun.jndi.ldap.pool.PooledConnection;
-import j86.j86.com.sun.jndi.ldap.pool.PoolCallback;
-import j86.j86.com.sun.jndi.ldap.sasl.LdapSasl;
-import j86.j86.com.sun.jndi.ldap.sasl.SaslInputStream;
+import j86.com.sun.jndi.ldap.pool.PooledConnection;
+import j86.com.sun.jndi.ldap.pool.PoolCallback;
+import j86.com.sun.jndi.ldap.sasl.LdapSasl;
+import j86.com.sun.jndi.ldap.sasl.SaslInputStream;
 
 /**
  * LDAP (RFC-1777) and LDAPv3 (RFC-2251) compliant client

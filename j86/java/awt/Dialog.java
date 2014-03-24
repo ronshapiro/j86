@@ -24,20 +24,20 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.DialogPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.DialogPeer;
+import j86.java.awt.event.*;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 import j86.java.util.Iterator;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.concurrent.atomic.AtomicLong;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.javax.accessibility.*;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
 import j86.sun.awt.PeerEvent;
-import j86.j86.sun.awt.util.IdentityArrayList;
-import j86.j86.sun.awt.util.IdentityLinkedList;
+import j86.sun.awt.util.IdentityArrayList;
+import j86.sun.awt.util.IdentityLinkedList;
 import j86.sun.security.util.SecurityConstants;
 import j86.java.security.AccessControlException;
 

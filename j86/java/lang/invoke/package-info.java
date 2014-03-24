@@ -24,7 +24,7 @@
  */
 
 /**
- * The {@code j86.j86.java.lang.invoke} package contains dynamic language support provided directly by
+ * The {@code j86.java.lang.invoke} package contains dynamic language support provided directly by
  * the Java core class libraries and virtual machine.
  *
  * <p>
@@ -32,14 +32,14 @@
  * certain types in this package have special relations to dynamic
  * language support in the virtual machine:
  * <ul>
- * <li>The class {@link j86.j86.java.lang.invoke.MethodHandle MethodHandle} contains
+ * <li>The class {@link j86.java.lang.invoke.MethodHandle MethodHandle} contains
  * <a href="MethodHandle.html#sigpoly">signature polymorphic methods</a>
  * which can be linked regardless of their type descriptor.
  * Normally, method linkage requires exact matching of type descriptors.
  * </li>
  *
  * <li>The JVM bytecode format supports immediate constants of
- * the classes {@link j86.j86.java.lang.invoke.MethodHandle MethodHandle} and {@link java.lang.invoke.MethodType MethodType}.
+ * the classes {@link j86.java.lang.invoke.MethodHandle MethodHandle} and {@link java.lang.invoke.MethodType MethodType}.
  * </li>
  * </ul>
  *
@@ -57,7 +57,7 @@
  * the call site must first be <em>linked</em>.
  * Linking is accomplished by calling a <em>bootstrap method</em>
  * which is given the static information content of the call site,
- * and which must produce a {@link j86.j86.java.lang.invoke.MethodHandle method handle}
+ * and which must produce a {@link j86.java.lang.invoke.MethodHandle method handle}
  * that gives the behavior of the call site.
  * <p>
  * Each {@code invokedynamic} instruction statically specifies its own
@@ -66,7 +66,7 @@
  * just like {@code invokevirtual} and the other invoke instructions.
  * <p>
  * Linking starts with resolving the constant pool entry for the
- * bootstrap method, and resolving a {@link j86.j86.java.lang.invoke.MethodType MethodType} object for
+ * bootstrap method, and resolving a {@link j86.java.lang.invoke.MethodType MethodType} object for
  * the type descriptor of the dynamic call site.
  * This resolution process may trigger class loading.
  * It may therefore throw an error if a class fails to load.
@@ -82,8 +82,8 @@
  * <li>optionally, between 1 and 251 additional static arguments taken from the constant pool </li>
  * </ul>
  * Invocation is as if by
- * {@link j86.j86.java.lang.invoke.MethodHandle#invoke MethodHandle.invoke}.
- * The returned result must be a {@link j86.j86.java.lang.invoke.CallSite CallSite} (or a subclass).
+ * {@link j86.java.lang.invoke.MethodHandle#invoke MethodHandle.invoke}.
+ * The returned result must be a {@link j86.java.lang.invoke.CallSite CallSite} (or a subclass).
  * The type of the call site's target must be exactly equal to the type
  * derived from the dynamic call site's type descriptor and passed to
  * the bootstrap method.
@@ -111,7 +111,7 @@
  * <p>
  * In an application which requires dynamic call sites with individually
  * mutable behaviors, their bootstrap methods should produce distinct
- * {@link j86.j86.java.lang.invoke.CallSite CallSite} objects, one for each linkage request.
+ * {@link j86.java.lang.invoke.CallSite CallSite} objects, one for each linkage request.
  * Alternatively, an application can link a single {@code CallSite} object
  * to several {@code invokedynamic} instructions, in which case
  * a change to the target method will become visible at each of
@@ -158,7 +158,7 @@
  * then some or all of the arguments specified here may be collected into a trailing array parameter.
  * (This is not a special rule, but rather a useful consequence of the interaction
  * between {@code CONSTANT_MethodHandle} constants, the modifier bit for variable arity methods,
- * and the {@link j86.j86.java.lang.invoke.MethodHandle#asVarargsCollector asVarargsCollector} transformation.)
+ * and the {@link j86.java.lang.invoke.MethodHandle#asVarargsCollector asVarargsCollector} transformation.)
  * <p>
  * Given these rules, here are examples of legal bootstrap method declarations,
  * given various numbers {@code N} of extra arguments.
@@ -208,4 +208,4 @@
  * @since 1.7
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;

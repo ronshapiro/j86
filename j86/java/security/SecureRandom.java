@@ -26,7 +26,7 @@
 package j86.java.security;
 
 import j86.java.util.*;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 
 import j86.java.security.Provider.Service;
 

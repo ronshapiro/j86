@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 // jmx import
 //

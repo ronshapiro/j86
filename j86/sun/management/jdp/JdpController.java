@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.management.jdp;
+package j86.sun.management.jdp;
 
 import j86.java.io.IOException;
 import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.java.util.UUID;
 
-import j86.j86.java.lang.management.ManagementFactory;
-import j86.j86.java.lang.management.RuntimeMXBean;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.RuntimeMXBean;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Method;
 import j86.sun.management.VMManagement;
 
 /**
@@ -54,9 +54,9 @@ import j86.sun.management.VMManagement;
  * set it in management.config file.  Careless changes of these properties could
  * lead to security or network issues.
  * <ul>
- *     <li>com.j86.j86.sun.management.jdp.ttl         - set ttl for broadcast packet</li>
- *     <li>com.j86.j86.sun.management.jdp.pause       - set broadcast interval in seconds</li>
- *     <li>com.j86.j86.sun.management.jdp.source_addr - an address of interface to use for broadcast</li>
+ *     <li>com.j86.sun.management.jdp.ttl         - set ttl for broadcast packet</li>
+ *     <li>com.j86.sun.management.jdp.pause       - set broadcast interval in seconds</li>
+ *     <li>com.j86.sun.management.jdp.source_addr - an address of interface to use for broadcast</li>
  * </ul>
   </p>
  * <p>null parameters values are filtered out on {@link JdpPacketWriter} level and
@@ -165,12 +165,12 @@ public final class JdpController {
 
         // Limit packet to local subnet by default
         int ttl = getInteger(
-                System.getProperty("com.j86.j86.sun.management.jdp.ttl"), 1,
+                System.getProperty("com.j86.sun.management.jdp.ttl"), 1,
                 "Invalid jdp packet ttl");
 
         // Broadcast once a 5 seconds by default
         int pause = getInteger(
-                System.getProperty("com.j86.j86.sun.management.jdp.pause"), 5,
+                System.getProperty("com.j86.sun.management.jdp.pause"), 5,
                 "Invalid jdp pause");
 
         // Converting seconds to milliseconds
@@ -178,7 +178,7 @@ public final class JdpController {
 
         // Allow OS to choose broadcast source
         InetAddress sourceAddress = getInetAddress(
-                System.getProperty("com.j86.j86.sun.management.jdp.source_addr"), null,
+                System.getProperty("com.j86.sun.management.jdp.source_addr"), null,
                 "Invalid source address provided");
 
         // Generate session id
@@ -199,8 +199,8 @@ public final class JdpController {
         packet.setInstanceName(instanceName);
 
         // Set rmi server hostname if it explicitly specified by user with
-        // j86.j86.java.rmi.server.hostname
-        String rmiHostname = System.getProperty("j86.j86.java.rmi.server.hostname");
+        // j86.java.rmi.server.hostname
+        String rmiHostname = System.getProperty("j86.java.rmi.server.hostname");
         packet.setRmiHostname(rmiHostname);
 
         // Set broadcast interval

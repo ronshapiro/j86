@@ -25,8 +25,8 @@
 
 package j86.sun.tracing;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;
 import j86.java.util.Set;

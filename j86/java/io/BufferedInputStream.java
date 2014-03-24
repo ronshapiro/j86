@@ -24,7 +24,7 @@
  */
 
 package j86.java.io;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
  * A <code>BufferedInputStream</code> adds

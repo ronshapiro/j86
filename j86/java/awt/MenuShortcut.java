@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 
 /**
  * The <code>MenuShortcut</code>class represents a keyboard accelerator
@@ -40,7 +40,7 @@ import j86.j86.java.awt.event.KeyEvent;
  * <code>MenuShortcut ms = new MenuShortcut(KeyEvent.getExtendedKeyCodeForChar('A'), false);</code>
  * <p>
  * Menu shortcuts may also be constructed for a wider set of keycodes
- * using the <code>j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code> call.
+ * using the <code>j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar</code> call.
  * For example, a menu shortcut for "Ctrl+cyrillic ef" is created by
  * <p>
  * <code>MenuShortcut ms = new MenuShortcut(KeyEvent.getExtendedKeyCodeForChar('\u0444'), false);</code>
@@ -70,7 +70,7 @@ public class MenuShortcut implements j86.java.io.Serializable
      * @serial
      * @see #getKey()
      * @see #usesShiftModifier()
-     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.java.awt.event.KeyEvent
      * @since JDK1.1
      */
     int key;
@@ -94,9 +94,9 @@ public class MenuShortcut implements j86.java.io.Serializable
     /**
      * Constructs a new MenuShortcut for the specified virtual keycode.
      * @param key the raw keycode for this MenuShortcut, as would be returned
-     * in the keyCode field of a {@link j86.j86.java.awt.event.KeyEvent KeyEvent} if
+     * in the keyCode field of a {@link j86.java.awt.event.KeyEvent KeyEvent} if
      * this key were pressed.
-     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.java.awt.event.KeyEvent
      **/
     public MenuShortcut(int key) {
         this(key, false);
@@ -105,11 +105,11 @@ public class MenuShortcut implements j86.java.io.Serializable
     /**
      * Constructs a new MenuShortcut for the specified virtual keycode.
      * @param key the raw keycode for this MenuShortcut, as would be returned
-     * in the keyCode field of a {@link j86.j86.java.awt.event.KeyEvent KeyEvent} if
+     * in the keyCode field of a {@link j86.java.awt.event.KeyEvent KeyEvent} if
      * this key were pressed.
      * @param useShiftModifier indicates whether this MenuShortcut is invoked
      * with the SHIFT key down.
-     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.java.awt.event.KeyEvent
      **/
     public MenuShortcut(int key, boolean useShiftModifier) {
         this.key = key;
@@ -119,7 +119,7 @@ public class MenuShortcut implements j86.java.io.Serializable
     /**
      * Returns the raw keycode of this MenuShortcut.
      * @return the raw keycode of this MenuShortcut.
-     * @see j86.j86.java.awt.event.KeyEvent
+     * @see j86.java.awt.event.KeyEvent
      * @since JDK1.1
      */
     public int getKey() {

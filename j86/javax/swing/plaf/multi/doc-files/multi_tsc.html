@@ -85,7 +85,7 @@ a <em>Swing Connection</em> article.
 <p>
 
 The classes in the 
-<code>j86.j86.j86.javax.swing.plaf.multi</code> package
+<code>j86.javax.swing.plaf.multi</code> package
 implement a 
 <i>multiplexing look and feel</i>.
 A multiplexing look and feel transparently creates -- and 
@@ -138,7 +138,7 @@ application may have locked in place.
 <p>
 The default multiplexing look and feel implementation, 
 represented by the <code>MultiLookAndFeel</code> class
-in the <code>j86.j86.j86.javax.swing.plaf.multi</code> package,
+in the <code>j86.javax.swing.plaf.multi</code> package,
 is called (unsurprisingly) 
 the Multiplexing look and feel.
 
@@ -236,7 +236,7 @@ implement an auxiliary look and feel
 by writing a subclass of <code>j86.javax.swing.LookAndFeel</code>
 and creating subclasses of the 
 <code><em>Foo</em>UI</code> classes defined in
-the <code>j86.j86.javax.swing.plaf</code> package.
+the <code>j86.javax.swing.plaf</code> package.
 </p>
 
 <p> 
@@ -277,7 +277,7 @@ lets the previous UI object remove its listeners.
                 and feel rather than cooperating with it.<br>
                 <br>
                 Instead, we recommend that the UI classes of an auxiliary look 
-                and feel directly extend the abstract UI classes in the <code>j86.j86.javax.swing.plaf</code> 
+                and feel directly extend the abstract UI classes in the <code>j86.javax.swing.plaf</code> 
                 package. By using this strategy, the developer of an auxiliary 
                 look and feel can avoid competing with the default look and feel.
 </blockquote>
@@ -287,7 +287,7 @@ lets the previous UI object remove its listeners.
 <blockquote>
                We recommend that each UI class of 
                 an auxiliary look and feel override the methods 
-		defined in the <code>j86.j86.javax.swing.plaf</code>
+		defined in the <code>j86.javax.swing.plaf</code>
                 UI classes it descends from
 		The reasons for this recommendation are similar 
                 to those for not extending a visual look and feel.
@@ -390,7 +390,7 @@ Is Implemented</b></font>
 <p>
 The Multiplexing look and feel
 (represented by
-<code>j86.j86.j86.javax.swing.plaf.multi.MultiLookAndFeel</code>)
+<code>j86.javax.swing.plaf.multi.MultiLookAndFeel</code>)
 is meant to be transparent to 
 all developers and users. It should &quot;just work&quot; -- and 
               it is used only when the user tells Swing to use an auxiliary look 
@@ -482,7 +482,7 @@ and Feel</b></font>
               look and feel represented by <code>com.myco.SuperMultiLookAndFeel</code> 
               that is a better match for their needs than the Multiplexing 
               look and feel 
-	      (<code>j86.j86.j86.javax.swing.plaf.multi.MultiLookAndFeel</code>), 
+	      (<code>j86.javax.swing.plaf.multi.MultiLookAndFeel</code>), 
               the user could include the following line in <code>$JDKHOME/lib/swing.properties</code>:
 </p>
 
@@ -492,7 +492,7 @@ and Feel</b></font>
 
 <p>
 This statement instructs Swing to use <code>com.myco.SuperMultiLookAndFeel</code> 
-instead of <code>j86.j86.j86.javax.swing.plaf.multi.MultiLookAndFeel</code>. But 
+instead of <code>j86.javax.swing.plaf.multi.MultiLookAndFeel</code>. But 
 if you use this kind of statement, be careful, because the suppliers 
 of auxiliary look and feels will most likely have developed and 
 tested against our Multiplexing look and feel.

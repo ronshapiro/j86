@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.calendar;
+package j86.sun.util.calendar;
 
 import j86.java.util.HashMap;
 import j86.java.util.Map;

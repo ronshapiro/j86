@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.awt.datatransfer;
+package j86.sun.awt.datatransfer;
 
 import j86.java.awt.AWTError;
 import j86.java.awt.EventQueue;
 import j86.java.awt.Image;
 import j86.java.awt.Graphics;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.FlavorMap;
-import j86.j86.java.awt.datatransfer.FlavorTable;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.FlavorMap;
+import j86.java.awt.datatransfer.FlavorTable;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 
 import j86.java.io.BufferedReader;
 import j86.java.io.ByteArrayInputStream;
@@ -54,15 +54,15 @@ import j86.java.net.URISyntaxException;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.IllegalCharsetNameException;
-import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.IllegalCharsetNameException;
+import j86.java.nio.charset.UnsupportedCharsetException;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -86,16 +86,16 @@ import j86.java.util.Stack;
 import j86.java.util.TreeMap;
 import j86.java.util.TreeSet;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.ColorModel;
 
 import j86.javax.imageio.ImageIO;
 import j86.javax.imageio.ImageReader;
@@ -103,13 +103,13 @@ import j86.javax.imageio.ImageReadParam;
 import j86.javax.imageio.ImageWriter;
 import j86.javax.imageio.ImageTypeSpecifier;
 
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.spi.ImageWriterSpi;
 
-import j86.j86.javax.imageio.stream.ImageInputStream;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.ImageOutputStream;
 
-import j86.j86.j86.sun.awt.image.ImageRepresentation;
-import j86.j86.j86.sun.awt.image.ToolkitImage;
+import j86.sun.awt.image.ImageRepresentation;
+import j86.sun.awt.image.ToolkitImage;
 
 import j86.java.io.FilePermission;
 
@@ -238,7 +238,7 @@ public abstract class DataTransferer {
      */
     private static DataTransferer transferer;
 
-    private static final PlatformLogger dtLog = PlatformLogger.getLogger("j86.j86.sun.awt.datatransfer.DataTransfer");
+    private static final PlatformLogger dtLog = PlatformLogger.getLogger("j86.sun.awt.datatransfer.DataTransfer");
 
     static {
         Class tCharArrayClass = null, tByteArrayClass = null;

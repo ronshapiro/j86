@@ -32,7 +32,7 @@ import j86.java.security.Principal;
 import j86.java.security.PrivilegedAction;
 import j86.javax.security.auth.Subject;
 
-import j86.j86.javax.management.remote.SubjectDelegationPermission;
+import j86.javax.management.remote.SubjectDelegationPermission;
 
 import j86.com.sun.jmx.remote.util.CacheMap;
 

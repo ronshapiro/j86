@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTException;
 import j86.java.awt.CheckboxMenuItem;
@@ -33,9 +33,9 @@ import j86.java.awt.PopupMenu;
 import j86.java.awt.Menu;
 import j86.java.awt.MenuItem;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.im.spi.InputMethodDescriptor;
 import j86.java.util.Locale;
 import j86.javax.swing.JCheckBoxMenuItem;
 import j86.javax.swing.JComponent;

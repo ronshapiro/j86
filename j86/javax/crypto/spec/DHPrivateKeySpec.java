@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.spec;
+package j86.javax.crypto.spec;
 
 import j86.java.math.BigInteger;
 
@@ -40,7 +40,7 @@ import j86.java.math.BigInteger;
  * @see DHPublicKeySpec
  * @since 1.4
  */
-public class DHPrivateKeySpec implements j86.j86.java.security.spec.KeySpec {
+public class DHPrivateKeySpec implements j86.java.security.spec.KeySpec {
 
     // The private value
     private BigInteger x;

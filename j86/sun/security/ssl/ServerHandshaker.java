@@ -29,14 +29,14 @@ package j86.sun.security.ssl;
 import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.interfaces.*;
-import j86.j86.java.security.spec.ECParameterSpec;
+import j86.java.security.cert.*;
+import j86.java.security.interfaces.*;
+import j86.java.security.spec.ECParameterSpec;
 
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 import j86.javax.security.auth.Subject;
 

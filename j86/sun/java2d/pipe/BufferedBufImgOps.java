@@ -23,25 +23,25 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.j86.java.awt.image.AffineTransformOp;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ByteLookupTable;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.ConvolveOp;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Kernel;
-import j86.j86.j86.java.awt.image.LookupOp;
-import j86.j86.j86.java.awt.image.LookupTable;
-import j86.j86.j86.java.awt.image.RescaleOp;
-import j86.j86.j86.java.awt.image.ShortLookupTable;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.image.AffineTransformOp;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ByteLookupTable;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ConvolveOp;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Kernel;
+import j86.java.awt.image.LookupOp;
+import j86.java.awt.image.LookupTable;
+import j86.java.awt.image.RescaleOp;
+import j86.java.awt.image.ShortLookupTable;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.CompositeType;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import j86.sun.java2d.loops.CompositeType;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
 
 public class BufferedBufImgOps {
 

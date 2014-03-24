@@ -38,14 +38,14 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.NoSuchProviderException;
 import j86.java.security.SignatureException;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509CRL;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.X509CRLEntry;
-import j86.j86.java.security.cert.CRLException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509CRL;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509CRLEntry;
+import j86.java.security.cert.CRLException;
 import j86.java.util.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.provider.X509Factory;
 import j86.sun.security.util.*;
@@ -445,7 +445,7 @@ public class X509CRLImpl extends X509CRL implements DerEncoder {
     /**
      * This static method is the default implementation of the
      * verify(PublicKey key, Provider sigProvider) method in X509CRL.
-     * Called from j86.j86.java.security.cert.X509CRL.verify(PublicKey key,
+     * Called from j86.java.security.cert.X509CRL.verify(PublicKey key,
      * Provider sigProvider)
      */
     public static void verify(X509CRL crl, PublicKey key,
@@ -1181,7 +1181,7 @@ public class X509CRLImpl extends X509CRL implements DerEncoder {
      * Extract the issuer X500Principal from an X509CRL. Parses the encoded
      * form of the CRL to preserve the principal's ASN.1 encoding.
      *
-     * Called by j86.j86.java.security.cert.X509CRL.getIssuerX500Principal().
+     * Called by j86.java.security.cert.X509CRL.getIssuerX500Principal().
      */
     public static X500Principal getIssuerX500Principal(X509CRL crl) {
         try {

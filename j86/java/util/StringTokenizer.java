@@ -77,7 +77,7 @@ import j86.java.lang.*;
  * <tt>StringTokenizer</tt> is a legacy class that is retained for
  * compatibility reasons although its use is discouraged in new code. It is
  * recommended that anyone seeking this functionality use the <tt>split</tt>
- * method of <tt>String</tt> or the j86.j86.java.util.regex package instead.
+ * method of <tt>String</tt> or the j86.java.util.regex package instead.
  * <p>
  * The following example illustrates how the <tt>String.split</tt>
  * method can be used to break up a string into its basic tokens:

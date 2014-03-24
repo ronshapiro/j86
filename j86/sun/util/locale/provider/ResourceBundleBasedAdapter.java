@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
-import j86.j86.sun.util.resources.LocaleData;
+import j86.sun.util.resources.LocaleData;
 
 /**
  * Accessor for LocaleData

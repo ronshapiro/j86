@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.awt.Event;
 import j86.java.awt.Component;
@@ -32,7 +32,7 @@ import j86.java.awt.Toolkit;
 import j86.java.util.Arrays;
 
 import j86.sun.awt.AWTAccessor;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -58,7 +58,7 @@ import j86.sun.security.util.SecurityConstants;
  */
 public abstract class InputEvent extends ComponentEvent {
 
-    private static final PlatformLogger logger = PlatformLogger.getLogger("j86.j86.java.awt.event.InputEvent");
+    private static final PlatformLogger logger = PlatformLogger.getLogger("j86.java.awt.event.InputEvent");
 
     /**
      * The Shift key modifier constant.
@@ -275,8 +275,8 @@ public abstract class InputEvent extends ComponentEvent {
      * @serial
      * @see #getModifiers()
      * @see #getModifiersEx()
-     * @see j86.j86.java.awt.event.KeyEvent
-     * @see j86.j86.java.awt.event.MouseEvent
+     * @see j86.java.awt.event.KeyEvent
+     * @see j86.java.awt.event.MouseEvent
      */
     int modifiers;
 

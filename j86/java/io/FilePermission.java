@@ -68,7 +68,7 @@ import j86.sun.security.util.SecurityConstants;
  *    <DT> readlink
  *    <DD> read link permission. Allows the target of a
  *         <a href="../nio/file/package-summary.html#links">symbolic link</a>
- *         to be read by invoking the {@link j86.j86.java.nio.file.Files#readSymbolicLink
+ *         to be read by invoking the {@link j86.java.nio.file.Files#readSymbolicLink
  *         readSymbolicLink } method.
  * </DL>
  * <P>

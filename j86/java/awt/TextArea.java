@@ -24,9 +24,9 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.peer.TextAreaPeer;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.peer.TextAreaPeer;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;

@@ -24,7 +24,7 @@
  */
 package j86.java.beans;
 
-import j86.j86.com.sun.beans.finder.PersistenceDelegateFinder;
+import j86.com.sun.beans.finder.PersistenceDelegateFinder;
 
 import j86.java.util.HashMap;
 import j86.java.util.IdentityHashMap;
@@ -153,7 +153,7 @@ public class Encoder {
      * If the type is a proxy,
      * a shared internal persistence delegate is returned
      * that encodes a proxy instance by using
-     * the {@link j86.j86.j86.java.lang.reflect.Proxy#newProxyInstance} method.
+     * the {@link j86.java.lang.reflect.Proxy#newProxyInstance} method.
      * <li>
      * If the {@link BeanInfo} for this type has a {@link BeanDescriptor}
      * which defined a "persistenceDelegate" attribute,

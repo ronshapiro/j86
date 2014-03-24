@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.swing.*;
 
 /**

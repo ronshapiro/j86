@@ -25,7 +25,7 @@
 
 package j86.sun.awt;
 
-import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
+import j86.java.awt.peer.KeyboardFocusManagerPeer;
 
 /**
  * {@link KeyboardFocusManagerPeerProvider} is required to be implemented by

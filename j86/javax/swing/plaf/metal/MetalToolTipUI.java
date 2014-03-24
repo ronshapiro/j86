@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.javax.swing.*;
 import j86.javax.swing.BorderFactory;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicToolTipUI;
-import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicToolTipUI;
+import j86.javax.swing.plaf.basic.BasicHTML;
+import j86.javax.swing.text.View;
 
 
 /**

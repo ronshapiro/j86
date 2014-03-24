@@ -32,7 +32,7 @@
  * @author Steven B. Byrne
  */
 
-package j86.j86.j86.sun.net.www.protocol.netdoc;
+package j86.sun.net.www.protocol.netdoc;
 
 import j86.java.net.URL;
 import j86.java.net.URLConnection;

@@ -59,19 +59,19 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.temporal;
+package j86.java.time.temporal;
 
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.java.time.temporal.ChronoField.DAY_OF_YEAR;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.time.DayOfWeek;
 import j86.java.time.LocalDate;
 import j86.java.util.Objects;
-import j86.j86.java.util.function.UnaryOperator;
+import j86.java.util.function.UnaryOperator;
 
 /**
  * Common and useful TemporalAdjusters.

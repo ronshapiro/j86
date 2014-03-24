@@ -34,20 +34,20 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.security.MessageDigest;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
+import j86.com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
 
 /**
  * This class has been modified slightly to use j86.java.security.MessageDigest
  * objects as input, rather than
- * j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm objects.
+ * j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm objects.
  * It also optionally caches the input bytes.
  *
  * @author raul
  * @author Sean Mullan
  */
 public class DigesterOutputStream extends OutputStream {
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal");
 
     private final boolean buffer;
     private UnsyncByteArrayOutputStream bos;
@@ -88,13 +88,13 @@ public class DigesterOutputStream extends OutputStream {
         if (buffer) {
             bos.write(input, offset, len);
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Pre-digested input:");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Pre-digested input:");
             StringBuilder sb = new StringBuilder(len);
             for (int i = offset; i < (offset + len); i++) {
                 sb.append((char)input[i]);
             }
-            log.log(j86.j86.java.util.logging.Level.FINE, sb.toString());
+            log.log(j86.java.util.logging.Level.FINE, sb.toString());
         }
         md.update(input, offset, len);
     }

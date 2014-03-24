@@ -25,9 +25,9 @@
 /*
  * $Id: ExcC14NParameterSpec.java,v 1.7 2005/05/13 18:45:42 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.spec;
+package j86.javax.xml.crypto.dsig.spec;
 
-import j86.j86.javax.xml.crypto.dsig.CanonicalizationMethod;
+import j86.javax.xml.crypto.dsig.CanonicalizationMethod;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.List;

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.java.awt.color.ICC_ColorSpace;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ICC_ColorSpace;
 
 /**
  * A <CODE>ColorModel</CODE> class that works with pixel values that

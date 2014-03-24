@@ -26,10 +26,10 @@
 /*
  * $Id: DOMEnvelopedTransform.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.security.InvalidAlgorithmParameterException;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
 /**
  * DOM-based implementation of Enveloped Signature Transform.

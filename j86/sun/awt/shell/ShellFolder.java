@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.shell;
+package j86.sun.awt.shell;
 
 import j86.javax.swing.*;
 import j86.java.awt.Image;
@@ -31,7 +31,7 @@ import j86.java.awt.Toolkit;
 import j86.java.io.*;
 import j86.java.io.FileNotFoundException;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.Callable;
 
 /**
  * @author Michael Martak

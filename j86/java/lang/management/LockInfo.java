@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.javax.management.openmbean.CompositeData;
+import j86.java.util.concurrent.locks.*;
 import j86.sun.management.LockInfoCompositeData;
 
 /**
@@ -46,8 +46,8 @@ import j86.sun.management.LockInfoCompositeData;
  * <tt>LockInfo</tt> is mapped to a {@link CompositeData CompositeData}
  * as specified in the {@link #from from} method.
  *
- * @see j86.j86.j86.java.util.concurrent.locks.AbstractOwnableSynchronizer
- * @see j86.j86.j86.java.util.concurrent.locks.Condition
+ * @see j86.java.util.concurrent.locks.AbstractOwnableSynchronizer
+ * @see j86.java.util.concurrent.locks.Condition
  *
  * @author  Mandy Chung
  * @since   1.6

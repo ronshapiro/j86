@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedActionException;
@@ -34,23 +34,23 @@ import j86.java.text.DateFormat;
 import j86.java.text.DateFormatSymbols;
 import j86.java.text.DecimalFormatSymbols;
 import j86.java.text.NumberFormat;
-import j86.j86.java.text.spi.BreakIteratorProvider;
-import j86.j86.java.text.spi.CollatorProvider;
-import j86.j86.java.text.spi.DateFormatProvider;
-import j86.j86.java.text.spi.DateFormatSymbolsProvider;
-import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.BreakIteratorProvider;
+import j86.java.text.spi.CollatorProvider;
+import j86.java.text.spi.DateFormatProvider;
+import j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.ServiceLoader;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.spi.CalendarDataProvider;
-import j86.j86.java.util.spi.CalendarNameProvider;
-import j86.j86.java.util.spi.CurrencyNameProvider;
-import j86.j86.java.util.spi.LocaleNameProvider;
-import j86.j86.java.util.spi.LocaleServiceProvider;
-import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.spi.CalendarDataProvider;
+import j86.java.util.spi.CalendarNameProvider;
+import j86.java.util.spi.CurrencyNameProvider;
+import j86.java.util.spi.LocaleNameProvider;
+import j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.TimeZoneNameProvider;
 
 /**
  * LocaleProviderAdapter implementation for the installed SPI implementations.

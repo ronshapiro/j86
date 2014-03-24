@@ -25,7 +25,7 @@
 
 package j86.java.net;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * Interface of methods to get/set socket options.  This interface is

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.connect;
+package j86.com.sun.jdi.connect;
 
 import j86.com.sun.jdi.VirtualMachine;
 import j86.java.util.Map;
@@ -48,7 +48,7 @@ public interface LaunchingConnector extends Connector {
      * Argument map values can be changed, but map entries should not be
      * added or deleted.
      * <p>A target VM launched by a launching connector is not
-     * guaranteed to be stable until after the {@link j86.j86.com.sun.jdi.event.VMStartEvent} has been
+     * guaranteed to be stable until after the {@link j86.com.sun.jdi.event.VMStartEvent} has been
      * received.
      * <p>
      * <b>Important note:</b> If a target VM is launched through this

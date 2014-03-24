@@ -26,7 +26,7 @@
 package j86.javax.security.sasl;
 
 import j86.java.util.Map;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.CallbackHandler;
 
 /**
  * An interface for creating instances of {@code SaslServer}.

@@ -28,8 +28,8 @@ package j86.com.sun.jndi.toolkit.ctx;
 import j86.java.util.Hashtable;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.DirectoryManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.DirectoryManager;
 
 /*
  * Inherit from AtomicContext so that subclasses of PartialCompositeDirContext

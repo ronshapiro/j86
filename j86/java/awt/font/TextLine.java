@@ -28,19 +28,19 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Color;
 import j86.java.awt.Font;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.im.InputMethodHighlight;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.im.InputMethodHighlight;
+import j86.java.awt.image.BufferedImage;
 import j86.java.text.Annotation;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;
@@ -62,7 +62,7 @@ import j86.sun.font.TextLabelFactory;
 import j86.sun.font.TextLineComponent;
 import j86.sun.text.CodePointIterator;
 
-import j86.j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.Line2D;
 
 final class TextLine {
 

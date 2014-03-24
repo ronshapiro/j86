@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.text.spi;
+package j86.java.text.spi;
 
 import j86.java.text.DateFormat;
 import j86.java.util.Locale;
-import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
@@ -57,7 +57,7 @@ public abstract class DateFormatProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a time formatter.
@@ -77,7 +77,7 @@ public abstract class DateFormatProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a date formatter.
@@ -103,7 +103,7 @@ public abstract class DateFormatProvider extends LocaleServiceProvider {
      *     <code>timeStyle</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a date/time formatter.

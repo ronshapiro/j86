@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
 import j86.java.security.GeneralSecurityException;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.CertificateEncodingException;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.interfaces.DSAPublicKey;
+import j86.java.security.cert.CertificateEncodingException;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.interfaces.DSAPublicKey;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.DerOutputStream;
 import j86.sun.security.util.DerValue;

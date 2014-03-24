@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.java.util.Arrays;
-import j86.j86.sun.invoke.empty.Empty;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
-import static j86.j86.java.lang.invoke.LambdaForm.*;
+import j86.sun.invoke.empty.Empty;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import static j86.java.lang.invoke.LambdaForm.*;
 
 /**
  * Construction and caching of often-used invokers.
@@ -286,7 +286,7 @@ class Invokers {
             if (lform != null)  return lform;
         }
         // exactInvokerForm (Object,Object)Object
-        //   link with j86.j86.java.lang.invoke.MethodHandle.invokeBasic(MethodHandle,Object,Object)Object/invokeSpecial
+        //   link with j86.java.lang.invoke.MethodHandle.invokeBasic(MethodHandle,Object,Object)Object/invokeSpecial
         final int THIS_MH      = 0;
         final int CALL_MH      = THIS_MH + (isLinker ? 0 : 1);
         final int ARG_BASE     = CALL_MH + 1;
@@ -400,7 +400,7 @@ class Invokers {
         LambdaForm lform = mtype.form().cachedLambdaForm(which);
         if (lform != null)  return lform;
         // exactInvokerForm (Object,Object)Object
-        //   link with j86.j86.java.lang.invoke.MethodHandle.invokeBasic(MethodHandle,Object,Object)Object/invokeSpecial
+        //   link with j86.java.lang.invoke.MethodHandle.invokeBasic(MethodHandle,Object,Object)Object/invokeSpecial
         final int ARG_BASE     = 0;
         final int OUTARG_LIMIT = ARG_BASE + mtype.parameterCount();
         final int INARG_LIMIT  = OUTARG_LIMIT + 1;

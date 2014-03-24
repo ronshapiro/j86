@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
 import j86.java.text.Collator;
 import j86.java.util.*;
@@ -122,7 +122,7 @@ import j86.javax.swing.SortOrder;
  *            <code>TableModel</code>
  * @see j86.javax.swing.JTable
  * @see j86.javax.swing.RowFilter
- * @see j86.j86.javax.swing.table.DefaultTableModel
+ * @see j86.javax.swing.table.DefaultTableModel
  * @see j86.java.text.Collator
  * @see j86.java.util.Comparator
  * @since 1.6

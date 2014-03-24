@@ -28,8 +28,8 @@ package j86.javax.crypto;
 import j86.java.security.*;
 import j86.java.net.*;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * The JCE security manager.

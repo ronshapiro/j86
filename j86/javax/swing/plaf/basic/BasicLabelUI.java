@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.swing.DefaultLookup;
@@ -31,12 +31,12 @@ import j86.sun.swing.UIAction;
 import j86.sun.awt.AppContext;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.View;
 
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.event.KeyEvent;
 import j86.java.awt.Component;
 import j86.java.awt.Container;
 import j86.java.awt.Dimension;

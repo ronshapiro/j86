@@ -293,22 +293,22 @@ implements Serializable
         if (unresolvedPerms == null)
             return null;
 
-        j86.j86.java.security.cert.Certificate certs[] = null;
+        j86.java.security.cert.Certificate certs[] = null;
 
         Object signers[] = p.getClass().getSigners();
 
         int n = 0;
         if (signers != null) {
             for (int j=0; j < signers.length; j++) {
-                if (signers[j] instanceof j86.j86.java.security.cert.Certificate) {
+                if (signers[j] instanceof j86.java.security.cert.Certificate) {
                     n++;
                 }
             }
-            certs = new j86.j86.java.security.cert.Certificate[n];
+            certs = new j86.java.security.cert.Certificate[n];
             n = 0;
             for (int j=0; j < signers.length; j++) {
-                if (signers[j] instanceof j86.j86.java.security.cert.Certificate) {
-                    certs[n++] = (j86.j86.java.security.cert.Certificate)signers[j];
+                if (signers[j] instanceof j86.java.security.cert.Certificate) {
+                    certs[n++] = (j86.java.security.cert.Certificate)signers[j];
                 }
             }
         }

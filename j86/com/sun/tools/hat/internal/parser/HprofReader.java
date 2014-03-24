@@ -30,13 +30,13 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.parser;
+package j86.com.sun.tools.hat.internal.parser;
 
 import j86.java.io.*;
 import j86.java.util.Date;
 import j86.java.util.Hashtable;
-import j86.j86.com.sun.tools.hat.internal.model.ArrayTypeCodes;
-import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.com.sun.tools.hat.internal.model.ArrayTypeCodes;
+import j86.com.sun.tools.hat.internal.model.*;
 
 /**
  * Object that's used to read a hprof file.
@@ -718,7 +718,7 @@ public class HprofReader extends Reader /* imports */ implements ArrayTypeCodes 
     }
 
     private String toHex(long addr) {
-        return j86.j86.com.sun.tools.hat.internal.util.Misc.toHex(addr);
+        return j86.com.sun.tools.hat.internal.util.Misc.toHex(addr);
     }
 
     //

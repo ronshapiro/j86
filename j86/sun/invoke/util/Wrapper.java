@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.util;
+package j86.sun.invoke.util;
 
 public enum Wrapper {
     BOOLEAN(Boolean.class, boolean.class, 'Z', (Boolean)false, new boolean[0], Format.unsigned(1)),
@@ -341,7 +341,7 @@ public enum Wrapper {
             FROM_WRAP[wi] = w;
             FROM_CHAR[ci] = w;
         }
-        //assert(jdk.j86.j86.sun.invoke.util.WrapperTest.test(false));
+        //assert(jdk.j86.sun.invoke.util.WrapperTest.test(false));
     }
 
     /** What is the primitive type wrapped by this wrapper? */
@@ -587,7 +587,7 @@ public enum Wrapper {
 
     // primitive array support
     public Object makeArray(int len) {
-        return j86.j86.j86.java.lang.reflect.Array.newInstance(primitiveType, len);
+        return j86.java.lang.reflect.Array.newInstance(primitiveType, len);
     }
     public Class<?> arrayType() {
         return emptyArray.getClass();
@@ -598,14 +598,14 @@ public enum Wrapper {
         for (int i = 0; i < length; i++) {
             Object value = values[i+vpos];
             value = convert(value, primitiveType);
-            j86.j86.j86.java.lang.reflect.Array.set(a, i+apos, value);
+            j86.java.lang.reflect.Array.set(a, i+apos, value);
         }
     }
     public void copyArrayBoxing(Object a, int apos, Object[] values, int vpos, int length) {
         if (a.getClass() != arrayType())
             arrayType().cast(a);  // throw NPE or CCE if bad type
         for (int i = 0; i < length; i++) {
-            Object value = j86.j86.j86.java.lang.reflect.Array.get(a, i+apos);
+            Object value = j86.java.lang.reflect.Array.get(a, i+apos);
             //Already done: value = convert(value, primitiveType);
             assert(value.getClass() == wrapperType);
             values[i+vpos] = value;

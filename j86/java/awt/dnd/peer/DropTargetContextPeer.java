@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.dnd.peer;
+package j86.java.awt.dnd.peer;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.dnd.DropTarget;
-import j86.j86.java.awt.dnd.InvalidDnDOperationException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.dnd.DropTarget;
+import j86.java.awt.dnd.InvalidDnDOperationException;
 
 /**
  * <p>

@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.util;
+package j86.jdk.internal.org.objectweb.asm.util;
 
 import j86.java.util.Map;
 

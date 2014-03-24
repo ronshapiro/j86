@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.javax.swing.UIManager;
 import j86.java.awt.Color;
@@ -97,11 +97,11 @@ class DerivedColor extends Color {
     }
 
     /**
-     * Returns the RGB value representing the color in the default sRGB {@link j86.j86.j86.java.awt.image.ColorModel}. (Bits 24-31
+     * Returns the RGB value representing the color in the default sRGB {@link j86.java.awt.image.ColorModel}. (Bits 24-31
      * are alpha, 16-23 are red, 8-15 are green, 0-7 are blue).
      *
      * @return the RGB value of the color in the default sRGB <code>ColorModel</code>.
-     * @see j86.j86.j86.java.awt.image.ColorModel#getRGBdefault
+     * @see j86.java.awt.image.ColorModel#getRGBdefault
      * @see #getRed
      * @see #getGreen
      * @see #getBlue
@@ -173,7 +173,7 @@ class DerivedColor extends Color {
         return src == null ? s : s + " pColor=" + src.getRed() + "," + src.getGreen() + "," + src.getBlue();
     }
 
-    static class UIResource extends DerivedColor implements j86.j86.javax.swing.plaf.UIResource {
+    static class UIResource extends DerivedColor implements j86.javax.swing.plaf.UIResource {
         UIResource(String uiDefaultParentName, float hOffset, float sOffset,
                    float bOffset, int aOffset) {
             super(uiDefaultParentName, hOffset, sOffset, bOffset, aOffset);

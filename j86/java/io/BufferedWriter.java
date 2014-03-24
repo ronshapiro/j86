@@ -57,7 +57,7 @@ package j86.java.io;
  * @see PrintWriter
  * @see FileWriter
  * @see OutputStreamWriter
- * @see j86.j86.java.nio.file.Files#newBufferedWriter
+ * @see j86.java.nio.file.Files#newBufferedWriter
  *
  * @author      Mark Reinhold
  * @since       JDK1.1

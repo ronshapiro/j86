@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.java.io.*;
 import j86.java.security.AccessController;
@@ -33,13 +33,13 @@ import j86.java.text.MessageFormat;
 import j86.java.util.*;
 
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.kerberos.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.kerberos.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 
 import j86.sun.security.krb5.*;
-import j86.j86.sun.security.jgss.krb5.Krb5Util;
+import j86.sun.security.jgss.krb5.Krb5Util;
 import j86.sun.security.krb5.Credentials;
 import j86.sun.misc.HexDumpEncoder;
 
@@ -187,8 +187,8 @@ import j86.sun.misc.HexDumpEncoder;
  *    <dt><b><code>useFirstPass</code></b>:</dt>
  *                   <dd>if, true, this LoginModule retrieves the
  *                   username and password from the module's shared state,
- *                   using "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   using "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys. The retrieved values are used for authentication.
  *                   If authentication fails, no attempt for a retry
  *                   is made, and the failure is reported back to the
@@ -197,8 +197,8 @@ import j86.sun.misc.HexDumpEncoder;
  *    <dt><b><code>tryFirstPass</code></b>:</dt>
  *                   <dd>if, true, this LoginModule retrieves the
  *                   the username and password from the module's shared
- *                   state using "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   state using "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for
  *                   authentication.
  *                   If authentication fails, the module uses the
@@ -211,8 +211,8 @@ import j86.sun.misc.HexDumpEncoder;
  *                   <dd>if, true, this LoginModule stores the username and
  *                   password obtained from the CallbackHandler in the
  *                   modules shared state, using
- *                   "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys.  This is not performed if existing values already
  *                   exist for the username and password in the shared
  *                   state, or if authentication fails.</dd>
@@ -224,7 +224,7 @@ import j86.sun.misc.HexDumpEncoder;
  *                   (login and commit) have completed.</dd>
  * </dl></blockquote>
  * <p>If the principal system property or key is already provided, the value of
- * "j86.j86.javax.security.auth.login.name" in the shared state is ignored.
+ * "j86.javax.security.auth.login.name" in the shared state is ignored.
  * <p>When multiple mechanisms to retrieve a ticket or key is provided, the
  * preference order is:
  * <ol>
@@ -430,8 +430,8 @@ public class Krb5LoginModule implements LoginModule {
     private boolean unboundServer = false;
     private char[] password = null;
 
-    private static final String NAME = "j86.j86.javax.security.auth.login.name";
-    private static final String PWD = "j86.j86.javax.security.auth.login.password";
+    private static final String NAME = "j86.javax.security.auth.login.name";
+    private static final String PWD = "j86.javax.security.auth.login.password";
     private static final ResourceBundle rb = AccessController.doPrivileged(
             new PrivilegedAction<ResourceBundle>() {
                 public ResourceBundle run() {
@@ -458,7 +458,7 @@ public class Krb5LoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     // Unchecked warnings from options.get(String) are safe since we are
     // passing known keys.
     @SuppressWarnings("unchecked")
@@ -484,7 +484,7 @@ public class Krb5LoginModule implements LoginModule {
         ticketCacheName = (String)options.get("ticketCache");
         keyTabName = (String)options.get("keyTab");
         if (keyTabName != null) {
-            keyTabName = j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab.normalize(
+            keyTabName = j86.sun.security.krb5.internal.ktab.KeyTab.normalize(
                          keyTabName);
         }
         princName = (String)options.get("principal");

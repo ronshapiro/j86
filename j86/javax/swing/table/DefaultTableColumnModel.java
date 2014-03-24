@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.java.awt.*;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
@@ -397,7 +397,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
         return selectionModel;
     }
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Sets whether column selection is allowed.  The default is false.
      * @param  flag true if column selection will be allowed, false otherwise
@@ -406,7 +406,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
         columnSelectionAllowed = flag;
     }
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Returns true if column selection is allowed, otherwise false.
      * The default is false.
@@ -416,7 +416,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
         return columnSelectionAllowed;
     }
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Returns an array of selected columns.  If <code>selectionModel</code>
      * is <code>null</code>, returns an empty array.
@@ -447,7 +447,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
         return  new int[0];
     }
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Returns the number of columns selected.
      * @return the number of columns selected
@@ -472,7 +472,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
 // Listener Support Methods
 //
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Adds a listener for table column model events.
      * @param x  a <code>TableColumnModelListener</code> object
@@ -481,7 +481,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
         listenerList.add(TableColumnModelListener.class, x);
     }
 
-    // implements j86.j86.javax.swing.table.TableColumnModel
+    // implements j86.javax.swing.table.TableColumnModel
     /**
      * Removes a listener for table column model events.
      * @param x  a <code>TableColumnModelListener</code> object
@@ -697,7 +697,7 @@ public class DefaultTableColumnModel implements TableColumnModel,
 // Implementing ListSelectionListener interface
 //
 
-    // implements j86.j86.javax.swing.event.ListSelectionListener
+    // implements j86.javax.swing.event.ListSelectionListener
     /**
      * A <code>ListSelectionListener</code> that forwards
      * <code>ListSelectionEvents</code> when there is a column

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.directory;
+package j86.javax.naming.directory;
 
 import j86.javax.naming.NamingException;
 

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.print.event;
+package j86.javax.print.event;
 
 import j86.javax.print.PrintService;
-import j86.j86.javax.print.attribute.AttributeSetUtilities;
-import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.javax.print.attribute.AttributeSetUtilities;
+import j86.javax.print.attribute.PrintServiceAttributeSet;
 
 /**
  *

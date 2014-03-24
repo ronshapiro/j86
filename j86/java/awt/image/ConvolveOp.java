@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
-import j86.j86.java.awt.color.ICC_Profile;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.color.ICC_Profile;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.awt.Rectangle;
 import j86.java.awt.RenderingHints;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.lang.annotation.Native;
-import j86.j86.j86.sun.awt.image.ImagingLib;
+import j86.java.awt.geom.Point2D;
+import j86.java.lang.annotation.Native;
+import j86.sun.awt.image.ImagingLib;
 
 /**
  * This class implements a convolution from the source

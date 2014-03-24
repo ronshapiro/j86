@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.channels.spi;
+package j86.java.nio.channels.spi;
 
 import j86.java.io.IOException;
 import j86.java.net.ProtocolFamily;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Iterator;
@@ -47,11 +47,11 @@ import j86.sun.security.action.GetPropertyAction;
  * the default provider as specified below.
  *
  * <p> The system-wide default provider is used by the static <tt>open</tt>
- * methods of the {@link j86.j86.java.nio.channels.DatagramChannel#open
- * DatagramChannel}, {@link j86.j86.java.nio.channels.Pipe#open Pipe}, {@link
- * j86.j86.java.nio.channels.Selector#open Selector}, {@link
- * j86.j86.java.nio.channels.ServerSocketChannel#open ServerSocketChannel}, and {@link
- * j86.j86.java.nio.channels.SocketChannel#open SocketChannel} classes.  It is also
+ * methods of the {@link j86.java.nio.channels.DatagramChannel#open
+ * DatagramChannel}, {@link j86.java.nio.channels.Pipe#open Pipe}, {@link
+ * j86.java.nio.channels.Selector#open Selector}, {@link
+ * j86.java.nio.channels.ServerSocketChannel#open ServerSocketChannel}, and {@link
+ * j86.java.nio.channels.SocketChannel#open SocketChannel} classes.  It is also
  * used by the {@link j86.java.lang.System#inheritedChannel System.inheritedChannel()}
  * method. A program may make use of a provider other than the default provider
  * by instantiating that provider and then directly invoking the <tt>open</tt>
@@ -85,7 +85,7 @@ public abstract class SelectorProvider {
     }
 
     private static boolean loadProviderFromProperty() {
-        String cn = System.getProperty("j86.j86.j86.java.nio.channels.spi.SelectorProvider");
+        String cn = System.getProperty("j86.java.nio.channels.spi.SelectorProvider");
         if (cn == null)
             return false;
         try {
@@ -136,7 +136,7 @@ public abstract class SelectorProvider {
      * <ol>
      *
      *   <li><p> If the system property
-     *   <tt>j86.j86.j86.java.nio.channels.spi.SelectorProvider</tt> is defined then it is
+     *   <tt>j86.java.nio.channels.spi.SelectorProvider</tt> is defined then it is
      *   taken to be the fully-qualified name of a concrete provider class.
      *   The class is loaded and instantiated; if this process fails then an
      *   unspecified error is thrown.  </p></li>
@@ -144,7 +144,7 @@ public abstract class SelectorProvider {
      *   <li><p> If a provider class has been installed in a jar file that is
      *   visible to the system class loader, and that jar file contains a
      *   provider-configuration file named
-     *   <tt>j86.j86.j86.java.nio.channels.spi.SelectorProvider</tt> in the resource
+     *   <tt>j86.java.nio.channels.spi.SelectorProvider</tt> in the resource
      *   directory <tt>META-INF/services</tt>, then the first class name
      *   specified in that file is taken.  The class is loaded and
      *   instantiated; if this process fails then an unspecified error is
@@ -172,7 +172,7 @@ public abstract class SelectorProvider {
                                 return provider;
                             if (loadProviderAsService())
                                 return provider;
-                            provider = j86.j86.j86.sun.nio.ch.DefaultSelectorProvider.create();
+                            provider = j86.sun.nio.ch.DefaultSelectorProvider.create();
                             return provider;
                         }
                     });
@@ -267,25 +267,25 @@ public abstract class SelectorProvider {
      * inherits a channel representing a network socket.
      *
      * <p> In cases where the inherited channel represents a network socket
-     * then the {@link j86.j86.java.nio.channels.Channel Channel} type returned
+     * then the {@link j86.java.nio.channels.Channel Channel} type returned
      * by this method is determined as follows:
      *
      * <ul>
      *
      *  <li><p> If the inherited channel represents a stream-oriented connected
-     *  socket then a {@link j86.j86.java.nio.channels.SocketChannel SocketChannel} is
+     *  socket then a {@link j86.java.nio.channels.SocketChannel SocketChannel} is
      *  returned. The socket channel is, at least initially, in blocking
      *  mode, bound to a socket address, and connected to a peer.
      *  </p></li>
      *
      *  <li><p> If the inherited channel represents a stream-oriented listening
-     *  socket then a {@link j86.j86.java.nio.channels.ServerSocketChannel
+     *  socket then a {@link j86.java.nio.channels.ServerSocketChannel
      *  ServerSocketChannel} is returned. The server-socket channel is, at
      *  least initially, in blocking mode, and bound to a socket address.
      *  </p></li>
      *
      *  <li><p> If the inherited channel is a datagram-oriented socket
-     *  then a {@link j86.j86.java.nio.channels.DatagramChannel DatagramChannel} is
+     *  then a {@link j86.java.nio.channels.DatagramChannel DatagramChannel} is
      *  returned. The datagram channel is, at least initially, in blocking
      *  mode, and bound to a socket address.
      *  </p></li>

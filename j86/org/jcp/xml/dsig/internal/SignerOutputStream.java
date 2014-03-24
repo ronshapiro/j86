@@ -35,7 +35,7 @@ import j86.java.security.SignatureException;
 /**
  * Derived from Apache sources and changed to use j86.java.security.Signature
  * objects as input instead of
- * j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
+ * j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm objects.
  *
  * @author raul
  * @author Sean Mullan

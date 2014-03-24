@@ -26,7 +26,7 @@
 /*
  * Generic text file handler
  */
-package j86.j86.j86.sun.net.www.content.text;
+package j86.sun.net.www.content.text;
 
 public class Generic extends plain {
     /* nothing to do since Generic is identical to plain! */

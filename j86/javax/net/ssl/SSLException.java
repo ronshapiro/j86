@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.io.IOException;
 

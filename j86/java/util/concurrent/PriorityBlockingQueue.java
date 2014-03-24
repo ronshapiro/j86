@@ -33,10 +33,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.ReentrantLock;
 import j86.java.util.AbstractQueue;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
@@ -47,7 +47,7 @@ import j86.java.util.PriorityQueue;
 import j86.java.util.Queue;
 import j86.java.util.SortedSet;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An unbounded {@linkplain BlockingQueue blocking queue} that uses

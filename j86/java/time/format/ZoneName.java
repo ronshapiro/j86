@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;

@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.toolkit.ctx;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.spi.ResolveResult;
 
 /**
   * Provides implementation of p_* operations using

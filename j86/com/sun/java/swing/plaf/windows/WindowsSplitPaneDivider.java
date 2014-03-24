@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
 import j86.javax.swing.JSplitPane;
 import j86.javax.swing.UIManager;
-import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneUI;
-import j86.j86.j86.javax.swing.plaf.basic.BasicSplitPaneDivider;
+import j86.javax.swing.plaf.basic.BasicSplitPaneUI;
+import j86.javax.swing.plaf.basic.BasicSplitPaneDivider;
 
 
 /**

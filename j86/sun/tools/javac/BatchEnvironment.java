@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.javac;
+package j86.sun.tools.javac;
 
 import j86.sun.tools.java.*;
 import j86.sun.tools.tree.Node;

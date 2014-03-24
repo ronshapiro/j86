@@ -30,7 +30,7 @@ import j86.java.nio.ByteBuffer;
 import j86.java.util.Arrays;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
+import j86.java.security.interfaces.*;
 
 import j86.sun.security.util.*;
 import j86.sun.security.x509.AlgorithmId;

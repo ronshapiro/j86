@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.util.HashMap;
 import j86.java.util.Map;
@@ -132,11 +132,11 @@ public class Method {
      * Creates a new {@link Method}.
      *
      * @param m
-     *            a j86.j86.j86.java.lang.reflect method descriptor
+     *            a j86.java.lang.reflect method descriptor
      * @return a {@link Method} corresponding to the given Java method
      *         declaration.
      */
-    public static Method getMethod(j86.j86.j86.java.lang.reflect.Method m) {
+    public static Method getMethod(j86.java.lang.reflect.Method m) {
         return new Method(m.getName(), Type.getMethodDescriptor(m));
     }
 
@@ -144,11 +144,11 @@ public class Method {
      * Creates a new {@link Method}.
      *
      * @param c
-     *            a j86.j86.j86.java.lang.reflect constructor descriptor
+     *            a j86.java.lang.reflect constructor descriptor
      * @return a {@link Method} corresponding to the given Java constructor
      *         declaration.
      */
-    public static Method getMethod(j86.j86.j86.java.lang.reflect.Constructor<?> c) {
+    public static Method getMethod(j86.java.lang.reflect.Constructor<?> c) {
         return new Method("<init>", Type.getConstructorDescriptor(c));
     }
 

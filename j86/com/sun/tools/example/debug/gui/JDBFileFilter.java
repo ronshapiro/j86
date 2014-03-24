@@ -37,7 +37,7 @@ package j86.com.sun.tools.example.debug.gui;
 import j86.java.io.File;
 import j86.java.util.Hashtable;
 import j86.java.util.Enumeration;
-import j86.j86.javax.swing.filechooser.*;
+import j86.javax.swing.filechooser.*;
 
 //### Renamed from 'ExampleFileFilter.java' provided with Swing demos.
 

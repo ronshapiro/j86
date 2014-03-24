@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.im.spi;
+package j86.java.awt.im.spi;
 
 import j86.java.awt.HeadlessException;
 import j86.java.awt.Window;
-import j86.j86.java.awt.font.TextHitInfo;
-import j86.j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.font.TextHitInfo;
+import j86.java.awt.im.InputMethodRequests;
 import j86.java.text.AttributedCharacterIterator;
 import j86.javax.swing.JFrame;
 
@@ -38,7 +38,7 @@ import j86.javax.swing.JFrame;
  * other services.  This interface is implemented by the input method
  * framework, and input methods call its methods on the instance they
  * receive through
- * {@link j86.j86.j86.java.awt.im.spi.InputMethod#setInputMethodContext}.
+ * {@link j86.java.awt.im.spi.InputMethod#setInputMethodContext}.
  * There should be no other implementors or callers.
  *
  * @since 1.3
@@ -51,7 +51,7 @@ public interface InputMethodContext extends InputMethodRequests {
     /**
      * Creates an input method event from the arguments given
      * and dispatches it to the client component. For arguments,
-     * see {@link j86.j86.java.awt.event.InputMethodEvent#InputMethodEvent}.
+     * see {@link j86.java.awt.event.InputMethodEvent#InputMethodEvent}.
      */
     public void dispatchInputMethodEvent(int id,
                 AttributedCharacterIterator text, int committedCharacterCount,
@@ -127,7 +127,7 @@ public interface InputMethodContext extends InputMethodRequests {
      * Enables or disables notification of the current client window's
      * location and state for the specified input method. When
      * notification is enabled, the input method's {@link
-     * j86.j86.j86.java.awt.im.spi.InputMethod#notifyClientWindowChange
+     * j86.java.awt.im.spi.InputMethod#notifyClientWindowChange
      * notifyClientWindowChange} method is called as described in that
      * method's specification. Notification is automatically disabled
      * when the input method is disposed.

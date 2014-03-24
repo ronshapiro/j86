@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
 import j86.java.util.DoubleSummaryStatistics;
@@ -35,19 +35,19 @@ import j86.java.util.OptionalDouble;
 import j86.java.util.PrimitiveIterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.function.DoubleFunction;
-import j86.j86.java.util.function.DoublePredicate;
-import j86.j86.java.util.function.DoubleSupplier;
-import j86.j86.java.util.function.DoubleToIntFunction;
-import j86.j86.java.util.function.DoubleToLongFunction;
-import j86.j86.java.util.function.DoubleUnaryOperator;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.ObjDoubleConsumer;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.function.DoubleFunction;
+import j86.java.util.function.DoublePredicate;
+import j86.java.util.function.DoubleSupplier;
+import j86.java.util.function.DoubleToIntFunction;
+import j86.java.util.function.DoubleToLongFunction;
+import j86.java.util.function.DoubleUnaryOperator;
+import j86.java.util.function.Function;
+import j86.java.util.function.ObjDoubleConsumer;
+import j86.java.util.function.Supplier;
 
 /**
  * A sequence of primitive double-valued elements supporting sequential and parallel
@@ -66,13 +66,13 @@ import j86.j86.java.util.function.Supplier;
  * }</pre>
  *
  * See the class documentation for {@link Stream} and the package documentation
- * for <a href="package-summary.html">j86.j86.java.util.stream</a> for additional
+ * for <a href="package-summary.html">j86.java.util.stream</a> for additional
  * specification of streams, stream operations, stream pipelines, and
  * parallelism.
  *
  * @since 1.8
  * @see Stream
- * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
+ * @see <a href="package-summary.html">j86.java.util.stream</a>
  */
 public interface DoubleStream extends BaseStream<Double, DoubleStream> {
 
@@ -152,7 +152,7 @@ public interface DoubleStream extends BaseStream<Double, DoubleStream> {
      * Returns a stream consisting of the results of replacing each element of
      * this stream with the contents of a mapped stream produced by applying
      * the provided mapping function to each element.  Each mapped stream is
-     * {@link j86.j86.java.util.stream.BaseStream#close() closed} after its contents
+     * {@link j86.java.util.stream.BaseStream#close() closed} after its contents
      * have been placed into this stream.  (If a mapped stream is {@code null}
      * an empty stream is used, instead.)
      *

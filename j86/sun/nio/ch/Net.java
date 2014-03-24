@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.io.*;
 import j86.java.net.*;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.util.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

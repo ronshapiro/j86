@@ -23,26 +23,26 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.table.*;
-import j86.j86.javax.swing.tree.*;
+import j86.javax.swing.table.*;
+import j86.javax.swing.tree.*;
 import j86.java.awt.Font;
 
 import j86.java.text.SimpleDateFormat;
 
 import j86.java.awt.Component;
 import j86.java.awt.EventQueue;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.awt.Dimension;
 import j86.java.util.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 import j86.javax.management.*;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.TabularData;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.TabularData;
 
 import j86.sun.tools.jconsole.JConsole;
 import j86.sun.tools.jconsole.Messages;
@@ -545,7 +545,7 @@ public class XMBeanNotifications extends JTable implements NotificationListener 
     }
 
     class UserDataCellEditor extends XTextFieldEditor {
-        // implements j86.j86.javax.swing.table.TableCellEditor
+        // implements j86.javax.swing.table.TableCellEditor
         @Override
         public Component getTableCellEditorComponent(
                 JTable table,

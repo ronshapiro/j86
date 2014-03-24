@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.VetoableChangeListener;
 import j86.java.beans.PropertyVetoException;
 
-import j86.j86.java.beans.beancontext.BeanContext;
+import j86.java.beans.beancontext.BeanContext;
 
 /**
  * <p>
@@ -58,7 +58,7 @@ import j86.j86.java.beans.beancontext.BeanContext;
  * @author      Laurence P. G. Cable
  * @since       1.2
  *
- * @see j86.j86.java.beans.beancontext.BeanContext
+ * @see j86.java.beans.beancontext.BeanContext
  * @see j86.java.beans.PropertyChangeEvent
  * @see j86.java.beans.PropertyChangeListener
  * @see j86.java.beans.PropertyVetoException

@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
 import j86.java.net.*;
 import j86.java.io.*;
 import j86.java.nio.*;
 import j86.java.security.*;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.*;
-import j86.j86.javax.net.ssl.*;
-import com.j86.j86.sun.net.httpserver.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.*;
+import j86.java.util.concurrent.*;
+import j86.javax.net.ssl.*;
+import com.j86.sun.net.httpserver.*;
+import j86.com.j86.sun.net.httpserver.spi.*;
 
 public class HttpServerImpl extends HttpServer {
 

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.rtf;
+package j86.javax.swing.text.rtf;
 
 import j86.java.io.*;
 import j86.java.lang.*;

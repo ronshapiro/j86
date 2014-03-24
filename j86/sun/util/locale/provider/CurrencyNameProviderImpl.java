@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.Locale;
 import j86.java.util.Set;
-import j86.j86.java.util.spi.CurrencyNameProvider;
+import j86.java.util.spi.CurrencyNameProvider;
 
 /**
  * Concrete implementation of the
- * {@link j86.j86.java.util.spi.CurrencyNameProvider CurrencyNameProvider} class
+ * {@link j86.java.util.spi.CurrencyNameProvider CurrencyNameProvider} class
  * for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -81,7 +81,7 @@ public class CurrencyNameProviderImpl extends CurrencyNameProvider
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Currency#getSymbol(java.util.Locale)
      */
@@ -103,7 +103,7 @@ public class CurrencyNameProviderImpl extends CurrencyNameProvider
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>currencyCode</code> or
      *     <code>locale</code> is <code>null</code>

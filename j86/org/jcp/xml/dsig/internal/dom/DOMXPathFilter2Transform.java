@@ -33,13 +33,13 @@
 /*
  * $Id: DOMXPathFilter2Transform.java 1203789 2011-11-18 18:46:07Z mullan $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.XPathType;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.XPathType;
+import j86.javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;

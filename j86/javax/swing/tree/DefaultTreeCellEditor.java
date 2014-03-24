@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.FontUIResource;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.io.*;
 import j86.java.util.EventObject;

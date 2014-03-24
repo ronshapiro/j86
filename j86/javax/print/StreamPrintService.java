@@ -42,7 +42,7 @@ import j86.java.io.OutputStream;
  * <p>
  * Note that a <code>StreamPrintService</code> is different from a
  * <code>PrintService</code>, which supports a
- * {@link j86.j86.j86.javax.print.attribute.standard.Destination Destination}
+ * {@link j86.javax.print.attribute.standard.Destination Destination}
  * attribute.  A <code>StreamPrintService</code> always requires an output
  * stream, whereas a <code>PrintService</code> optionally accepts a
  * <code>Destination</code>. A <code>StreamPrintService</code>

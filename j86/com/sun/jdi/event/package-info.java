@@ -25,17 +25,17 @@
 
 /**
  * This package defines JDI events and event processing.
- * An {@link j86.j86.com.sun.jdi.event.Event} is always a member of an
- * {@link j86.j86.com.sun.jdi.event.EventSet}, which
- * is retrieved from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
+ * An {@link j86.com.sun.jdi.event.Event} is always a member of an
+ * {@link j86.com.sun.jdi.event.EventSet}, which
+ * is retrieved from the {@link j86.com.sun.jdi.event.EventQueue}.
  * Examples of Events include
- * {@link j86.j86.com.sun.jdi.event.BreakpointEvent "breakpoints events"},
- * {@link j86.j86.com.sun.jdi.event.ThreadStartEvent "thread creation events"} and
- * {@link j86.j86.com.sun.jdi.event.VMDeathEvent "virtual machine death event"}.
+ * {@link j86.com.sun.jdi.event.BreakpointEvent "breakpoints events"},
+ * {@link j86.com.sun.jdi.event.ThreadStartEvent "thread creation events"} and
+ * {@link j86.com.sun.jdi.event.VMDeathEvent "virtual machine death event"}.
  *  With the exception
  * of termination events, all events received must be requested with an
- * {@link j86.j86.com.sun.jdi.request.EventRequest "EventRequest"}.  The
- * {@link j86.j86.com.sun.jdi.request} package defines event requests and event
+ * {@link j86.com.sun.jdi.request.EventRequest "EventRequest"}.  The
+ * {@link j86.com.sun.jdi.request} package defines event requests and event
  * request management.
  * <p>
  * Methods may be added to the interfaces in the JDI packages in future
@@ -44,4 +44,4 @@
  */
 
 @jdk.Exported
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;

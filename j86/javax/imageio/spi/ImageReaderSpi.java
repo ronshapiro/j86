@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.spi;
+package j86.javax.imageio.spi;
 
 import j86.java.io.IOException;
 import j86.javax.imageio.ImageReader;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * The service provider interface (SPI) for <code>ImageReader</code>s.

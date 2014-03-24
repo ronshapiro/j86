@@ -52,7 +52,7 @@ public class Resources_ko extends j86.java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\t\uC8FC\uCCB4 \uD074\uB798\uC2A4 = {0}\n\t\uC8FC\uCCB4 \uC774\uB984 = {1}"},
 
-        // j86.j86.javax.security.auth.x500
+        // j86.javax.security.auth.x500
         {"provided.null.name", "\uB110 \uC774\uB984\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
         {"provided.null.keyword.map", "\uB110 \uD0A4\uC6CC\uB4DC \uB9F5\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
         {"provided.null.OID.map", "\uB110 OID \uB9F5\uC744 \uC81C\uACF5\uD588\uC2B5\uB2C8\uB2E4."},
@@ -77,10 +77,10 @@ public class Resources_ko extends j86.java.util.ListResourceBundle {
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "{0}\uC758 \uC778\uC2A4\uD134\uC2A4\uAC00 \uC544\uB2CC \uAC1D\uCCB4\uB97C \uCD94\uAC00\uD558\uB824\uACE0 \uC2DC\uB3C4\uD558\uB294 \uC911"},
 
-        // j86.j86.javax.security.auth.login.AppConfigurationEntry
+        // j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // j86.j86.javax.security.auth.login.LoginContext
+        // j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "\uBD80\uC801\uD569\uD55C \uB110 \uC785\uB825\uAC12: \uC774\uB984"},
         {"No.LoginModules.configured.for.name",
          "{0}\uC5D0 \uB300\uD574 \uAD6C\uC131\uB41C LoginModules\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4."},
@@ -146,7 +146,7 @@ public class Resources_ko extends j86.java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass \uB610\uB294 principalName\uC774 \uB110\uC785\uB2C8\uB2E4."},
 
-        // j86.j86.sun.security.pkcs11.SunPKCS11
+        // j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11 \uD1A0\uD070 [{0}] \uBE44\uBC00\uBC88\uD638: "},
 

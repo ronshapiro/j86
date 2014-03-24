@@ -26,7 +26,7 @@
 package j86.sun.security.provider;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.net.URL;
 import j86.java.util.*;
 
@@ -41,8 +41,8 @@ import j86.java.security.Principal;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.UnresolvedPermission;
 import j86.java.security.Security;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
 
 import j86.javax.security.auth.Subject;
 import j86.javax.security.auth.PrivateCredentialPermission;
@@ -423,7 +423,7 @@ public class AuthPolicyFile extends j86.javax.security.auth.Policy {
                                 debug.println("  "+perm);
                             }
                     }
-                } catch (j86.j86.j86.java.lang.reflect.InvocationTargetException ite) {
+                } catch (j86.java.lang.reflect.InvocationTargetException ite) {
                     System.err.println
                         (AUTH_POLICY +
                         rb.getString(".error.adding.Permission.") +

@@ -59,9 +59,9 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.java.time.temporal.ChronoField.EPOCH_DAY;
 
 import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
@@ -71,13 +71,13 @@ import j86.java.io.ObjectOutput;
 import j86.java.io.Serializable;
 import j86.java.time.LocalTime;
 import j86.java.time.ZoneId;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Objects;
 
 /**
@@ -399,7 +399,7 @@ final class ChronoLocalDateTimeImpl<D extends ChronoLocalDate>
     //-----------------------------------------------------------------------
     /**
      * Writes the ChronoLocalDateTime using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(2);              // identifies a ChronoLocalDateTime

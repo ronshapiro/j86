@@ -27,7 +27,7 @@ package j86.java.lang;
 
 import j86.java.io.ObjectStreamField;
 import j86.java.io.UnsupportedEncodingException;
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.Comparator;
@@ -35,9 +35,9 @@ import j86.java.util.Formatter;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
 import j86.java.util.StringJoiner;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
-import j86.j86.java.util.regex.PatternSyntaxException;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
+import j86.java.util.regex.PatternSyntaxException;
 
 /**
  * The {@code String} class represents character strings. All
@@ -104,7 +104,7 @@ import j86.j86.java.util.regex.PatternSyntaxException;
  * @see     j86.java.lang.Object#toString()
  * @see     j86.java.lang.StringBuffer
  * @see     j86.java.lang.StringBuilder
- * @see     j86.j86.java.nio.charset.Charset
+ * @see     j86.java.nio.charset.Charset
  * @since   JDK1.0
  */
 
@@ -282,7 +282,7 @@ public final class String
      * @deprecated This method does not properly convert bytes into characters.
      * As of JDK&nbsp;1.1, the preferred way to do this is via the
      * {@code String} constructors that take a {@link
-     * j86.j86.java.nio.charset.Charset}, charset name, or that use the platform's
+     * j86.java.nio.charset.Charset}, charset name, or that use the platform's
      * default charset.
      *
      * @param  ascii
@@ -301,10 +301,10 @@ public final class String
      *
      * @see  #String(byte[], int)
      * @see  #String(byte[], int, int, j86.java.lang.String)
-     * @see  #String(byte[], int, int, j86.j86.java.nio.charset.Charset)
+     * @see  #String(byte[], int, int, j86.java.nio.charset.Charset)
      * @see  #String(byte[], int, int)
      * @see  #String(byte[], j86.java.lang.String)
-     * @see  #String(byte[], j86.j86.java.nio.charset.Charset)
+     * @see  #String(byte[], j86.java.nio.charset.Charset)
      * @see  #String(byte[])
      */
     @Deprecated
@@ -339,7 +339,7 @@ public final class String
      * @deprecated  This method does not properly convert bytes into
      * characters.  As of JDK&nbsp;1.1, the preferred way to do this is via the
      * {@code String} constructors that take a {@link
-     * j86.j86.java.nio.charset.Charset}, charset name, or that use the platform's
+     * j86.java.nio.charset.Charset}, charset name, or that use the platform's
      * default charset.
      *
      * @param  ascii
@@ -349,10 +349,10 @@ public final class String
      *         The top 8 bits of each 16-bit Unicode code unit
      *
      * @see  #String(byte[], int, int, j86.java.lang.String)
-     * @see  #String(byte[], int, int, j86.j86.java.nio.charset.Charset)
+     * @see  #String(byte[], int, int, j86.java.nio.charset.Charset)
      * @see  #String(byte[], int, int)
      * @see  #String(byte[], j86.java.lang.String)
-     * @see  #String(byte[], j86.j86.java.nio.charset.Charset)
+     * @see  #String(byte[], j86.java.nio.charset.Charset)
      * @see  #String(byte[])
      */
     @Deprecated
@@ -381,7 +381,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the given charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -394,7 +394,7 @@ public final class String
      *         The number of bytes to decode
 
      * @param  charsetName
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -416,13 +416,13 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified subarray of
-     * bytes using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.
+     * bytes using the specified {@linkplain j86.java.nio.charset.Charset charset}.
      * The length of the new {@code String} is a function of the charset, and
      * hence may not be equal to the length of the subarray.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -435,7 +435,7 @@ public final class String
      *         The number of bytes to decode
      *
      * @param  charset
-     *         The {@linkplain j86.j86.java.nio.charset.Charset charset} to be used to
+     *         The {@linkplain j86.java.nio.charset.Charset charset} to be used to
      *         decode the {@code bytes}
      *
      * @throws  IndexOutOfBoundsException
@@ -453,20 +453,20 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified array of bytes
-     * using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.  The
+     * using the specified {@linkplain j86.java.nio.charset.Charset charset}.  The
      * length of the new {@code String} is a function of the charset, and hence
      * may not be equal to the length of the byte array.
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the given charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
      *         The bytes to be decoded into characters
      *
      * @param  charsetName
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  UnsupportedEncodingException
@@ -481,20 +481,20 @@ public final class String
 
     /**
      * Constructs a new {@code String} by decoding the specified array of
-     * bytes using the specified {@linkplain j86.j86.java.nio.charset.Charset charset}.
+     * bytes using the specified {@linkplain j86.java.nio.charset.Charset charset}.
      * The length of the new {@code String} is a function of the charset, and
      * hence may not be equal to the length of the byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
      *         The bytes to be decoded into characters
      *
      * @param  charset
-     *         The {@linkplain j86.j86.java.nio.charset.Charset charset} to be used to
+     *         The {@linkplain j86.java.nio.charset.Charset charset} to be used to
      *         decode the {@code bytes}
      *
      * @since  1.6
@@ -511,7 +511,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the default charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -542,7 +542,7 @@ public final class String
      *
      * <p> The behavior of this constructor when the given bytes are not valid
      * in the default charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param  bytes
@@ -886,11 +886,11 @@ public final class String
      *
      * <p> The behavior of this method when this string cannot be encoded in
      * the given charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetEncoder} class should be used when more control
+     * j86.java.nio.charset.CharsetEncoder} class should be used when more control
      * over the encoding process is required.
      *
      * @param  charsetName
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @return  The resultant byte array
@@ -908,16 +908,16 @@ public final class String
 
     /**
      * Encodes this {@code String} into a sequence of bytes using the given
-     * {@linkplain j86.j86.java.nio.charset.Charset charset}, storing the result into a
+     * {@linkplain j86.java.nio.charset.Charset charset}, storing the result into a
      * new byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement byte array.  The
-     * {@link j86.j86.java.nio.charset.CharsetEncoder} class should be used when more
+     * {@link j86.java.nio.charset.CharsetEncoder} class should be used when more
      * control over the encoding process is required.
      *
      * @param  charset
-     *         The {@linkplain j86.j86.java.nio.charset.Charset} to be used to encode
+     *         The {@linkplain j86.java.nio.charset.Charset} to be used to encode
      *         the {@code String}
      *
      * @return  The resultant byte array
@@ -935,7 +935,7 @@ public final class String
      *
      * <p> The behavior of this method when this string cannot be encoded in
      * the default charset is unspecified.  The {@link
-     * j86.j86.java.nio.charset.CharsetEncoder} class should be used when more control
+     * j86.java.nio.charset.CharsetEncoder} class should be used when more control
      * over the encoding process is required.
      *
      * @return  The resultant byte array
@@ -2086,7 +2086,7 @@ public final class String
      * same result as the expression
      *
      * <blockquote>
-     * {@link j86.j86.java.util.regex.Pattern}.{@link java.util.regex.Pattern#matches(String,CharSequence)
+     * {@link j86.java.util.regex.Pattern}.{@link java.util.regex.Pattern#matches(String,CharSequence)
      * matches(<i>regex</i>, <i>str</i>)}
      * </blockquote>
      *
@@ -2099,7 +2099,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2131,10 +2131,10 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link j86.j86.java.util.regex.Pattern}.{@link
-     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * j86.j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
-     * j86.j86.java.util.regex.Matcher#replaceFirst replaceFirst}(<i>repl</i>)
+     * {@link j86.java.util.regex.Pattern}.{@link
+     * j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
+     * j86.java.util.regex.Matcher#replaceFirst replaceFirst}(<i>repl</i>)
      * </code>
      * </blockquote>
      *
@@ -2142,8 +2142,8 @@ public final class String
      * Note that backslashes ({@code \}) and dollar signs ({@code $}) in the
      * replacement string may cause the results to be different than if it were
      * being treated as a literal replacement string; see
-     * {@link j86.j86.java.util.regex.Matcher#replaceFirst}.
-     * Use {@link j86.j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
+     * {@link j86.java.util.regex.Matcher#replaceFirst}.
+     * Use {@link j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
      * meaning of these characters, if desired.
      *
      * @param   regex
@@ -2156,7 +2156,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2176,10 +2176,10 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link j86.j86.java.util.regex.Pattern}.{@link
-     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * j86.j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
-     * j86.j86.java.util.regex.Matcher#replaceAll replaceAll}(<i>repl</i>)
+     * {@link j86.java.util.regex.Pattern}.{@link
+     * j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.java.util.regex.Pattern#matcher(j86.java.lang.CharSequence) matcher}(<i>str</i>).{@link
+     * j86.java.util.regex.Matcher#replaceAll replaceAll}(<i>repl</i>)
      * </code>
      * </blockquote>
      *
@@ -2187,8 +2187,8 @@ public final class String
      * Note that backslashes ({@code \}) and dollar signs ({@code $}) in the
      * replacement string may cause the results to be different than if it were
      * being treated as a literal replacement string; see
-     * {@link j86.j86.java.util.regex.Matcher#replaceAll Matcher.replaceAll}.
-     * Use {@link j86.j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
+     * {@link j86.java.util.regex.Matcher#replaceAll Matcher.replaceAll}.
+     * Use {@link j86.java.util.regex.Matcher#quoteReplacement} to suppress the special
      * meaning of these characters, if desired.
      *
      * @param   regex
@@ -2201,7 +2201,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2289,9 +2289,9 @@ public final class String
      *
      * <blockquote>
      * <code>
-     * {@link j86.j86.java.util.regex.Pattern}.{@link
-     * j86.j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
-     * j86.j86.java.util.regex.Pattern#split(j86.java.lang.CharSequence,int) split}(<i>str</i>,&nbsp;<i>n</i>)
+     * {@link j86.java.util.regex.Pattern}.{@link
+     * j86.java.util.regex.Pattern#compile compile}(<i>regex</i>).{@link
+     * j86.java.util.regex.Pattern#split(j86.java.lang.CharSequence,int) split}(<i>str</i>,&nbsp;<i>n</i>)
      * </code>
      * </blockquote>
      *
@@ -2308,7 +2308,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51
@@ -2400,7 +2400,7 @@ public final class String
      * @throws  PatternSyntaxException
      *          if the regular expression's syntax is invalid
      *
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      *
      * @since 1.4
      * @spec JSR-51

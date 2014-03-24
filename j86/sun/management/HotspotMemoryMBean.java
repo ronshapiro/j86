@@ -25,7 +25,7 @@
 
 package j86.sun.management;
 
-import j86.j86.sun.management.counter.Counter;
+import j86.sun.management.counter.Counter;
 /**
  * Hotspot internal management interface for the compilation system.
  */

@@ -38,9 +38,9 @@ import j86.java.util.*;
 import j86.java.util.List;  // Must import explicitly due to conflict with javax.awt.List
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.tree.*;
+import j86.javax.swing.tree.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.com.sun.jdi.*;
 import j86.com.sun.tools.example.debug.event.*;

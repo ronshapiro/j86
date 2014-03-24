@@ -548,8 +548,8 @@ public class Object {
      * ignored.
      *
      * @throws Throwable the {@code Exception} raised by this method
-     * @see j86.j86.java.lang.ref.WeakReference
-     * @see j86.j86.java.lang.ref.PhantomReference
+     * @see j86.java.lang.ref.WeakReference
+     * @see j86.java.lang.ref.PhantomReference
      * @jls 12.6 Finalization of Class Instances
      */
     protected void finalize() throws Throwable { }

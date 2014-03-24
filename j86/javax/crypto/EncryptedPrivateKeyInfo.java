@@ -27,7 +27,7 @@ package j86.javax.crypto;
 
 import j86.java.io.*;
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 import j86.sun.security.x509.AlgorithmId;
 import j86.sun.security.util.DerValue;
 import j86.sun.security.util.DerInputStream;
@@ -50,7 +50,7 @@ import j86.sun.security.util.DerOutputStream;
  *
  * @author Valerie Peng
  *
- * @see j86.j86.java.security.spec.PKCS8EncodedKeySpec
+ * @see j86.java.security.spec.PKCS8EncodedKeySpec
  *
  * @since 1.4
  */

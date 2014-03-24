@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
+package j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;

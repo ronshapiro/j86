@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.math.BigInteger;
 import j86.java.security.*;
 import j86.java.util.Collection;
 import j86.java.util.Date;
 import j86.java.util.List;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.x509.X509CertImpl;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.util;
+package j86.sun.invoke.util;
 
 /**
  * Utility routines for dealing with bytecode-level names.

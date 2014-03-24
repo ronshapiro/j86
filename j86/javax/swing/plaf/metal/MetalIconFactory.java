@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.io.Serializable;
 import j86.java.util.Enumeration;
 import j86.java.util.Vector;

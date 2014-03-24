@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.shell;
+package j86.sun.awt.shell;
 
 import j86.java.io.File;
 import j86.java.security.AccessController;

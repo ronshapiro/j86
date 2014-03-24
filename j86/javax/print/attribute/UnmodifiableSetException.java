@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 /**
  * Thrown to indicate that the requested operation cannot be performed

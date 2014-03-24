@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.repository;
+package j86.sun.reflect.generics.repository;
 
 
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.tree.TypeSignature;
-import j86.j86.sun.reflect.generics.parser.SignatureParser;
-import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.java.lang.reflect.Type;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.tree.TypeSignature;
+import j86.sun.reflect.generics.parser.SignatureParser;
+import j86.sun.reflect.generics.visitor.Reifier;
 
 
 

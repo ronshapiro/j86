@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.connect;
+package j86.com.sun.jdi.connect;
 
 /**
  * This exception may be thrown as a result of a timeout
@@ -40,17 +40,17 @@ package j86.j86.com.sun.jdi.connect;
  * timeout connector argument when accepting.
  *
  * <p> In addition, for developers creating {@link
- * j86.j86.j86.com.sun.jdi.connect.spi.TransportService TransportService}
+ * j86.com.sun.jdi.connect.spi.TransportService TransportService}
  * implementations this exception is thrown when
- * {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService#attach attach}
+ * {@link j86.com.sun.jdi.connect.spi.TransportService#attach attach}
  * times out when establishing a connection to a target VM,
- * or {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService#accept
+ * or {@link j86.com.sun.jdi.connect.spi.TransportService#accept
  * accept} times out while waiting for a target VM to connect. </p>
  *
  * @see AttachingConnector#attach
  * @see ListeningConnector#accept
- * @see j86.j86.j86.com.sun.jdi.connect.spi.TransportService#attach
- * @see j86.j86.j86.com.sun.jdi.connect.spi.TransportService#accept
+ * @see j86.com.sun.jdi.connect.spi.TransportService#attach
+ * @see j86.com.sun.jdi.connect.spi.TransportService#accept
  *
  * @since 1.5
  */

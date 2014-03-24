@@ -22,25 +22,25 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.util.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.datatransfer.*;
-import j86.j86.java.awt.im.InputContext;
+import j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
+import j86.java.awt.im.InputContext;
 import j86.java.beans.*;
 import j86.java.io.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.j86.javax.swing.plaf.synth.SynthUI;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.synth.SynthUI;
 import j86.sun.swing.DefaultLookup;
 import j86.sun.awt.AppContext;
-import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
 
 /**
  * <p>
@@ -165,7 +165,7 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
      *
      * @return the keymap
      * @see #getKeymapName
-     * @see j86.j86.javax.swing.text.JTextComponent
+     * @see j86.javax.swing.text.JTextComponent
      */
     protected Keymap createKeymap() {
         String nm = getKeymapName();
@@ -1220,8 +1220,8 @@ public abstract class BasicTextUI extends TextUI implements ViewFactory {
      * Returns the string to be used as the tooltip at the passed in location.
      * This forwards the method onto the root View.
      *
-     * @see j86.j86.javax.swing.text.JTextComponent#getToolTipText
-     * @see j86.j86.javax.swing.text.View#getToolTipText
+     * @see j86.javax.swing.text.JTextComponent#getToolTipText
+     * @see j86.javax.swing.text.View#getToolTipText
      * @since 1.4
      */
     public String getToolTipText(JTextComponent t, Point pt) {

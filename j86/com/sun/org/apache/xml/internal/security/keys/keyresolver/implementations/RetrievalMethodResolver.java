@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.IOException;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
@@ -39,19 +39,19 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -72,8 +72,8 @@ import org.xml.sax.SAXException;
 public class RetrievalMethodResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(RetrievalMethodResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(RetrievalMethodResolver.class.getName());
 
     /**
      * Method engineResolvePublicKey
@@ -110,8 +110,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
                  if (secureValidation) {
                      String error = "Error: It is forbidden to have one RetrievalMethod "
                          + "point to another with secure validation";
-                     if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                         log.log(j86.j86.java.util.logging.Level.FINE, error);
+                     if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                         log.log(j86.java.util.logging.Level.FINE, error);
                      }
                      return null;
                  }
@@ -119,8 +119,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
                  XMLSignatureInput resource2 = resolveInput(rm2, baseURI, secureValidation);
                  Element e2 = obtainReferenceElement(resource2);
                  if (e2 == element) {
-                     if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                         log.log(j86.j86.java.util.logging.Level.FINE, "Error: Can't have RetrievalMethods pointing to each other");
+                     if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                         log.log(j86.java.util.logging.Level.FINE, "Error: Can't have RetrievalMethods pointing to each other");
                      }
                      return null;
                  }
@@ -128,24 +128,24 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
 
              return resolveKey(e, baseURI, storage);
          } catch (XMLSecurityException ex) {
-             if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                 log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", ex);
+             if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                 log.log(j86.java.util.logging.Level.FINE, "XMLSecurityException", ex);
              }
          } catch (CertificateException ex) {
-             if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                 log.log(j86.j86.java.util.logging.Level.FINE, "CertificateException", ex);
+             if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                 log.log(j86.java.util.logging.Level.FINE, "CertificateException", ex);
              }
          } catch (IOException ex) {
-             if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                 log.log(j86.j86.java.util.logging.Level.FINE, "IOException", ex);
+             if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                 log.log(j86.java.util.logging.Level.FINE, "IOException", ex);
              }
          } catch (ParserConfigurationException e) {
-             if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                 log.log(j86.j86.java.util.logging.Level.FINE, "ParserConfigurationException", e);
+             if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                 log.log(j86.java.util.logging.Level.FINE, "ParserConfigurationException", e);
              }
          } catch (SAXException e) {
-             if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                 log.log(j86.j86.java.util.logging.Level.FINE, "SAXException", e);
+             if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                 log.log(j86.java.util.logging.Level.FINE, "SAXException", e);
              }
          }
          return null;
@@ -180,8 +180,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
                 if (secureValidation) {
                     String error = "Error: It is forbidden to have one RetrievalMethod "
                         + "point to another with secure validation";
-                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                        log.log(j86.j86.java.util.logging.Level.FINE, error);
+                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.java.util.logging.Level.FINE, error);
                     }
                     return null;
                 }
@@ -189,8 +189,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
                 XMLSignatureInput resource2 = resolveInput(rm2, baseURI, secureValidation);
                 Element e2 = obtainReferenceElement(resource2);
                 if (e2 == element) {
-                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                        log.log(j86.j86.java.util.logging.Level.FINE, "Error: Can't have RetrievalMethods pointing to each other");
+                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.java.util.logging.Level.FINE, "Error: Can't have RetrievalMethods pointing to each other");
                     }
                     return null;
                 }
@@ -198,24 +198,24 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
 
             return resolveCertificate(e, baseURI, storage);
         } catch (XMLSecurityException ex) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", ex);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "XMLSecurityException", ex);
             }
         } catch (CertificateException ex) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "CertificateException", ex);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "CertificateException", ex);
             }
         } catch (IOException ex) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "IOException", ex);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "IOException", ex);
             }
         } catch (ParserConfigurationException e) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "ParserConfigurationException", e);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "ParserConfigurationException", e);
             }
         } catch (SAXException e) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "SAXException", e);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "SAXException", e);
             }
         }
         return null;
@@ -232,8 +232,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
     private static X509Certificate resolveCertificate(
         Element e, String baseURI, StorageResolver storage
     ) throws KeyResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Now we have a {" + e.getNamespaceURI() + "}"
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Now we have a {" + e.getNamespaceURI() + "}"
                 + e.getLocalName() + " Element");
         }
         // An element has been provided
@@ -254,8 +254,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
     private static PublicKey resolveKey(
         Element e, String baseURI, StorageResolver storage
     ) throws KeyResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Now we have a {" + e.getNamespaceURI() + "}"
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Now we have a {" + e.getNamespaceURI() + "}"
                 + e.getLocalName() + " Element");
         }
         // An element has been provided
@@ -279,8 +279,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
             byte inputBytes[] = resource.getBytes();
             e = getDocFromBytes(inputBytes);
             // otherwise, we parse the resource, create an Element and delegate
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "we have to parse " + inputBytes.length + " bytes");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "we have to parse " + inputBytes.length + " bytes");
             }
         }
         return e;
@@ -311,8 +311,8 @@ public class RetrievalMethodResolver extends KeyResolverSpi {
         ResourceResolver resRes = ResourceResolver.getInstance(uri, baseURI, secureValidation);
         XMLSignatureInput resource = resRes.resolve(uri, baseURI, secureValidation);
         if (transforms != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "We have Transforms");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "We have Transforms");
             }
             resource = transforms.performTransforms(resource);
         }

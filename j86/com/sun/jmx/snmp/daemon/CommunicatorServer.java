@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 
 
@@ -33,7 +33,7 @@ package j86.j86.j86.com.sun.jmx.snmp.daemon;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 import j86.java.net.InetAddress;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 import j86.java.util.NoSuchElementException;
 
@@ -59,7 +59,7 @@ import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 // Now using JSR 160 instead. => this is an additional
 // dependency to JSR 160.
 //
-import j86.j86.javax.management.remote.MBeanServerForwarder;
+import j86.javax.management.remote.MBeanServerForwarder;
 
 /**
  * Defines generic behavior for the server part of a connector or an adaptor.

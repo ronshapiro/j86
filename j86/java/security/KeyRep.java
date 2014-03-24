@@ -28,12 +28,12 @@ package j86.java.security;
 import j86.java.io.*;
 import j86.java.util.Locale;
 
-import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
-import j86.j86.java.security.spec.X509EncodedKeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.spec.X509EncodedKeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 
 import j86.javax.crypto.SecretKeyFactory;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * Standardized representation for serialized Key objects.
@@ -48,9 +48,9 @@ import j86.j86.javax.crypto.spec.SecretKeySpec;
  *
  * @see Key
  * @see KeyFactory
- * @see j86.j86.javax.crypto.spec.SecretKeySpec
- * @see j86.j86.java.security.spec.X509EncodedKeySpec
- * @see j86.j86.java.security.spec.PKCS8EncodedKeySpec
+ * @see j86.javax.crypto.spec.SecretKeySpec
+ * @see j86.java.security.spec.X509EncodedKeySpec
+ * @see j86.java.security.spec.PKCS8EncodedKeySpec
  *
  * @since 1.5
  */

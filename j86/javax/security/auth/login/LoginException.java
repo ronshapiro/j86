@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
 /**
  * This is the basic login exception.
  *
- * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.javax.security.auth.login.LoginContext
  */
 
 public class LoginException extends j86.java.security.GeneralSecurityException {

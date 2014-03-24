@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.javax.management.ObjectName;
 import j86.com.sun.jmx.snmp.SnmpStatusException;
 import j86.com.sun.jmx.snmp.SnmpOid;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.agent.SnmpMibTable;
 
 /**
  * This interface ensures the synchronization between Metadata table objects

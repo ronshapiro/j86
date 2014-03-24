@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.CheckboxPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.CheckboxPeer;
+import j86.java.awt.event.*;
 import j86.java.util.EventListener;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
@@ -422,8 +422,8 @@ public class Checkbox extends Component implements ItemSelectable, Accessible {
      * @see           #removeItemListener
      * @see           #getItemListeners
      * @see           #setState
-     * @see           j86.j86.java.awt.event.ItemEvent
-     * @see           j86.j86.java.awt.event.ItemListener
+     * @see           j86.java.awt.event.ItemEvent
+     * @see           j86.java.awt.event.ItemListener
      * @since         JDK1.1
      */
     public synchronized void addItemListener(ItemListener l) {
@@ -444,8 +444,8 @@ public class Checkbox extends Component implements ItemSelectable, Accessible {
      * @param         l    the item listener
      * @see           #addItemListener
      * @see           #getItemListeners
-     * @see           j86.j86.java.awt.event.ItemEvent
-     * @see           j86.j86.java.awt.event.ItemListener
+     * @see           j86.java.awt.event.ItemEvent
+     * @see           j86.java.awt.event.ItemListener
      * @since         JDK1.1
      */
     public synchronized void removeItemListener(ItemListener l) {
@@ -465,8 +465,8 @@ public class Checkbox extends Component implements ItemSelectable, Accessible {
      *
      * @see           #addItemListener
      * @see           #removeItemListener
-     * @see           j86.j86.java.awt.event.ItemEvent
-     * @see           j86.j86.java.awt.event.ItemListener
+     * @see           j86.java.awt.event.ItemEvent
+     * @see           j86.java.awt.event.ItemListener
      * @since 1.4
      */
     public synchronized ItemListener[] getItemListeners() {
@@ -538,7 +538,7 @@ public class Checkbox extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param         e the event
-     * @see           j86.j86.java.awt.event.ItemEvent
+     * @see           j86.java.awt.event.ItemEvent
      * @see           #processItemEvent
      * @since         JDK1.1
      */
@@ -568,8 +568,8 @@ public class Checkbox extends Component implements ItemSelectable, Accessible {
      * exception.
      *
      * @param       e the item event
-     * @see         j86.j86.java.awt.event.ItemEvent
-     * @see         j86.j86.java.awt.event.ItemListener
+     * @see         j86.java.awt.event.ItemEvent
+     * @see         j86.java.awt.event.ItemListener
      * @see         #addItemListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1

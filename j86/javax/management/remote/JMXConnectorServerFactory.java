@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 
 import j86.com.sun.jmx.remote.util.ClassLogger;
@@ -200,7 +200,7 @@ public class JMXConnectorServerFactory {
         "com.sun.jmx.remote.protocol";
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc","JMXConnectorServerFactory");
+        new ClassLogger("j86.javax.management.remote.misc","JMXConnectorServerFactory");
 
     /** There are no instances of this class.  */
     private JMXConnectorServerFactory() {

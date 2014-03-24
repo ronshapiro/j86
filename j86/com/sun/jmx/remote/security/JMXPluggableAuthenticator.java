@@ -35,16 +35,16 @@ import j86.java.util.Collections;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.Properties;
-import j86.j86.javax.management.remote.JMXPrincipal;
-import j86.j86.javax.management.remote.JMXAuthenticator;
+import j86.javax.management.remote.JMXPrincipal;
+import j86.javax.management.remote.JMXAuthenticator;
 import j86.javax.security.auth.AuthPermission;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.AppConfigurationEntry;
-import j86.j86.javax.security.auth.login.Configuration;
-import j86.j86.javax.security.auth.login.LoginContext;
-import j86.j86.javax.security.auth.login.LoginException;
-import j86.j86.javax.security.auth.spi.LoginModule;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.javax.security.auth.login.Configuration;
+import j86.javax.security.auth.login.LoginContext;
+import j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.spi.LoginModule;
 import j86.com.sun.jmx.remote.util.ClassLogger;
 import j86.com.sun.jmx.remote.util.EnvHelp;
 
@@ -65,7 +65,7 @@ import j86.com.sun.jmx.remote.util.EnvHelp;
  * {@link FileLoginModule} is configured (<code>FileLoginConfig</code>).</p>
  *
  * <p>To override the default configuration use the
- * <code>com.j86.j86.sun.management.jmxremote.login.config</code> management property
+ * <code>com.j86.sun.management.jmxremote.login.config</code> management property
  * described in the JRE/lib/management/management.properties file.
  * Set this property to the name of a JAAS configuration entry and ensure that
  * the entry is loaded by the installed {@link Configuration}. In addition,
@@ -251,7 +251,7 @@ public final class JMXPluggableAuthenticator implements JMXAuthenticator {
     private static final String PASSWORD_FILE_PROP =
         "jmx.remote.x.password.file";
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", LOGIN_CONFIG_NAME);
+        new ClassLogger("j86.javax.management.remote.misc", LOGIN_CONFIG_NAME);
 
 /**
  * This callback handler supplies the username and password (which was

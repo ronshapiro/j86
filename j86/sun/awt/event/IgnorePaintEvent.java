@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.awt.event;
+package j86.sun.awt.event;
 
 import j86.java.awt.Component;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.PaintEvent;
+import j86.java.awt.event.PaintEvent;
 
 /**
  * PaintEvents that are effectively ignored.  This class is used only for

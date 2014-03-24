@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.mailto;
+package j86.sun.net.www.protocol.mailto;
 
 import j86.java.net.URL;
 import j86.java.net.InetAddress;
 import j86.java.net.SocketPermission;
 import j86.java.io.*;
 import j86.java.security.Permission;
-import j86.j86.sun.net.www.*;
-import j86.j86.sun.net.smtp.SmtpClient;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.*;
+import j86.sun.net.smtp.SmtpClient;
+import j86.sun.net.www.ParseUtil;
 
 
 /**

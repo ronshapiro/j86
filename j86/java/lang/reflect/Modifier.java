@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.java.security.AccessController;
 import j86.sun.reflect.LangReflectAccess;
@@ -46,14 +46,14 @@ import j86.sun.reflect.ReflectionFactory;
 public class Modifier {
 
     /*
-     * Bootstrapping protocol between j86.java.lang and j86.j86.java.lang.reflect
+     * Bootstrapping protocol between j86.java.lang and j86.java.lang.reflect
      *  packages
      */
     static {
         j86.sun.reflect.ReflectionFactory factory =
             AccessController.doPrivileged(
                 new ReflectionFactory.GetReflectionFactoryAction());
-        factory.setLangReflectAccess(new j86.j86.j86.java.lang.reflect.ReflectAccess());
+        factory.setLangReflectAccess(new j86.java.lang.reflect.ReflectAccess());
     }
 
     /**

@@ -24,15 +24,15 @@
  */
 package j86.java.util;
 
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.stream.Collector;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.stream.Collector;
 
 /**
  * A state object for collecting statistics such as count, min, max, sum, and
  * average.
  *
  * <p>This class is designed to work with (though does not require)
- * {@linkplain j86.j86.java.util.stream streams}. For example, you can compute
+ * {@linkplain j86.java.util.stream streams}. For example, you can compute
  * summary statistics on a stream of doubles with:
  * <pre> {@code
  * DoubleSummaryStatistics stats = doubleStream.collect(DoubleSummaryStatistics::new,
@@ -41,8 +41,8 @@ import j86.j86.java.util.stream.Collector;
  * }</pre>
  *
  * <p>{@code DoubleSummaryStatistics} can be used as a
- * {@linkplain j86.j86.java.util.stream.Stream#collect(Collector) reduction}
- * target for a {@linkplain j86.j86.java.util.stream.Stream stream}. For example:
+ * {@linkplain j86.java.util.stream.Stream#collect(Collector) reduction}
+ * target for a {@linkplain j86.java.util.stream.Stream stream}. For example:
  *
  * <pre> {@code
  * DoubleSummaryStatistics stats = people.stream()
@@ -53,9 +53,9 @@ import j86.j86.java.util.stream.Collector;
  * maximum, sum, and average of their weights.
  *
  * @implNote This implementation is not thread safe. However, it is safe to use
- * {@link j86.j86.java.util.stream.Collectors#summarizingDouble(j86.java.util.function.ToDoubleFunction)
+ * {@link j86.java.util.stream.Collectors#summarizingDouble(j86.java.util.function.ToDoubleFunction)
  * Collectors.toDoubleStatistics()} on a parallel stream, because the parallel
- * implementation of {@link j86.j86.java.util.stream.Stream#collect Stream.collect()}
+ * implementation of {@link j86.java.util.stream.Stream#collect Stream.collect()}
  * provides the necessary partitioning, isolation, and merging of results for
  * safe and efficient parallel execution.
  * @since 1.8

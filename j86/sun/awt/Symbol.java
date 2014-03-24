@@ -27,7 +27,7 @@ package j86.sun.awt;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.charset.*;
 
 public class Symbol extends Charset {
     public Symbol () {

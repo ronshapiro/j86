@@ -29,7 +29,7 @@ import j86.java.util.*;
 
 import j86.java.security.*;
 import j86.java.security.Provider.Service;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 import j86.sun.security.jca.*;
 import j86.sun.security.jca.GetInstance.Instance;
@@ -49,7 +49,7 @@ import j86.sun.security.jca.GetInstance.Instance;
  *
  * <P> Application developers should refer to their provider's documentation
  * to find out which key specifications are supported by the
- * {@link #generateSecret(j86.j86.java.security.spec.KeySpec) generateSecret} and
+ * {@link #generateSecret(j86.java.security.spec.KeySpec) generateSecret} and
  * {@link #getKeySpec(j86.javax.crypto.SecretKey, j86.java.lang.Class) getKeySpec}
  * methods.
  * For example, the DES secret-key factory supplied by the "SunJCE" provider
@@ -74,9 +74,9 @@ import j86.sun.security.jca.GetInstance.Instance;
  * @author Jan Luehe
  *
  * @see SecretKey
- * @see j86.j86.javax.crypto.spec.DESKeySpec
- * @see j86.j86.javax.crypto.spec.DESedeKeySpec
- * @see j86.j86.javax.crypto.spec.PBEKeySpec
+ * @see j86.javax.crypto.spec.DESKeySpec
+ * @see j86.javax.crypto.spec.DESedeKeySpec
+ * @see j86.javax.crypto.spec.PBEKeySpec
  * @since 1.4
  */
 

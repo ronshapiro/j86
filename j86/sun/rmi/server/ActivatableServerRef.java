@@ -29,8 +29,8 @@ import j86.java.io.IOException;
 import j86.java.io.NotSerializableException;
 import j86.java.io.ObjectOutput;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.*;
-import j86.j86.java.rmi.activation.ActivationID;
+import j86.java.rmi.server.*;
+import j86.java.rmi.activation.ActivationID;
 import j86.sun.rmi.transport.LiveRef;
 
 /**

@@ -27,7 +27,7 @@ package j86.sun.print;
 
 import j86.javax.print.AttributeException;
 import j86.javax.print.PrintException;
-import j86.j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.Attribute;
 
 class PrintJobAttributeException extends PrintException
     implements AttributeException {

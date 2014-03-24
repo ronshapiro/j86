@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.net.spi.nameservice.dns;
+package j86.sun.net.spi.nameservice.dns;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.NamingManager;
 import j86.java.util.*;
-import j86.j86.sun.net.util.IPAddressUtil;
-import j86.j86.sun.net.dns.ResolverConfiguration;
-import j86.j86.j86.sun.net.spi.nameservice.*;
+import j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.dns.ResolverConfiguration;
+import j86.sun.net.spi.nameservice.*;
 import j86.java.security.AccessController;
 import j86.sun.security.action.*;
 
@@ -231,7 +231,7 @@ public final class DNSNameService implements NameService {
 
         // default domain
         String domain = AccessController.doPrivileged(
-            new GetPropertyAction("j86.j86.j86.sun.net.spi.nameservice.domain"));
+            new GetPropertyAction("j86.sun.net.spi.nameservice.domain"));
         if (domain != null && domain.length() > 0) {
             domainList = new LinkedList<String>();
             domainList.add(domain);
@@ -239,7 +239,7 @@ public final class DNSNameService implements NameService {
 
         // name servers
         String nameservers = AccessController.doPrivileged(
-            new GetPropertyAction("j86.j86.j86.sun.net.spi.nameservice.nameservers"));
+            new GetPropertyAction("j86.sun.net.spi.nameservice.nameservers"));
         if (nameservers != null && nameservers.length() > 0) {
             nameProviderUrl = createProviderURL(nameservers);
             if (nameProviderUrl.length() == 0) {

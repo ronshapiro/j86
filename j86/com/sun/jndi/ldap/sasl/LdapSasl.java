@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.sasl;
+package j86.com.sun.jndi.ldap.sasl;
 
 import j86.java.io.*;
 import j86.java.util.Vector;
@@ -34,9 +34,9 @@ import j86.javax.naming.AuthenticationException;
 import j86.javax.naming.AuthenticationNotSupportedException;
 import j86.javax.naming.NamingException;
 
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.ldap.Control;
 
-import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.CallbackHandler;
 import j86.javax.security.sasl.*;
 import j86.com.sun.jndi.ldap.Connection;
 import j86.com.sun.jndi.ldap.LdapClient;

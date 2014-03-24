@@ -26,7 +26,7 @@
 package j86.sun.security.util;
 
 import j86.java.util.*;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 /**
  * Abstract base class and factory for caches. A cache is a key-value mapping.

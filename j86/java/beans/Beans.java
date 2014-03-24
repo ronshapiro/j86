@@ -25,7 +25,7 @@
 
 package j86.java.beans;
 
-import j86.j86.com.sun.beans.finder.ClassFinder;
+import j86.com.sun.beans.finder.ClassFinder;
 
 import j86.java.applet.Applet;
 import j86.java.applet.AppletContext;
@@ -34,7 +34,7 @@ import j86.java.applet.AudioClip;
 
 import j86.java.awt.Image;
 
-import j86.j86.java.beans.beancontext.BeanContext;
+import j86.java.beans.beancontext.BeanContext;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
@@ -42,7 +42,7 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectStreamClass;
 import j86.java.io.StreamCorruptedException;
 
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Modifier;
 
 import j86.java.net.URL;
 
@@ -550,7 +550,7 @@ class BeansAppletContext implements AppletContext {
                 return (Image) o;
             }
             // Otherwise it must be an ImageProducer.
-            Image img = target.createImage((j86.j86.j86.java.awt.image.ImageProducer)o);
+            Image img = target.createImage((j86.java.awt.image.ImageProducer)o);
             imageCache.put(url, img);
             return img;
 

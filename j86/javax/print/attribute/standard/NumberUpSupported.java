@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.SetOfIntegerSyntax;
-import j86.j86.javax.print.attribute.SupportedValuesAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.SetOfIntegerSyntax;
+import j86.javax.print.attribute.SupportedValuesAttribute;
 
 /**
  * Class NumberUpSupported is a printing attribute class, a set of integers,
@@ -35,7 +35,7 @@ import j86.j86.javax.print.attribute.SupportedValuesAttribute;
  * <B>IPP Compatibility:</B> The NumberUpSupported attribute's canonical array
  * form gives the lower and upper bound for each range of number-up to be
  * included in an IPP "number-up-supported" attribute. See class {@link
- * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+ * j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
  * explanation of canonical array form. The category name returned by
  * <CODE>getName()</CODE> gives the IPP attribute name.
  * <P>
@@ -52,7 +52,7 @@ public final class NumberUpSupported    extends SetOfIntegerSyntax
      * Construct a new number up supported attribute with the given members.
      * The supported values for NumberUp are specified in "array form;" see
      * class
-     * {@link j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax}
+     * {@link j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax}
      * for an explanation of array form.
      *
      * @param  members  Set members in array form.

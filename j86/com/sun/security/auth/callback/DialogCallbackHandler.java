@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.callback;
+package j86.com.sun.security.auth.callback;
 
 /* JAAS imports */
-import j86.j86.javax.security.auth.callback.Callback;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.callback.ConfirmationCallback;
-import j86.j86.javax.security.auth.callback.NameCallback;
-import j86.j86.javax.security.auth.callback.PasswordCallback;
-import j86.j86.javax.security.auth.callback.TextOutputCallback;
-import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.ConfirmationCallback;
+import j86.javax.security.auth.callback.NameCallback;
+import j86.javax.security.auth.callback.PasswordCallback;
+import j86.javax.security.auth.callback.TextOutputCallback;
+import j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /* Java imports */
 import j86.java.awt.Component;
@@ -51,7 +51,7 @@ import j86.javax.swing.JTextField;
  * authentication questions.
  * This can be used by a JAAS application to instantiate a
  * CallbackHandler
- * @see j86.j86.javax.security.auth.callback
+ * @see j86.javax.security.auth.callback
  * @deprecated This class will be removed in a future release.
  */
 @jdk.Exported(false)

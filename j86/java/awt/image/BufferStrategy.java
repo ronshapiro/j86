@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.awt.BufferCapabilities;
 import j86.java.awt.Graphics;
@@ -160,7 +160,7 @@ public abstract class BufferStrategy {
      *
      * @return Whether or not the drawing buffer was lost since the last call
      * to <code>getDrawGraphics</code>.
-     * @see j86.j86.j86.java.awt.image.VolatileImage
+     * @see j86.java.awt.image.VolatileImage
      */
     public abstract boolean contentsLost();
 
@@ -175,7 +175,7 @@ public abstract class BufferStrategy {
      *
      * @return Whether or not the drawing buffer was restored since the last
      *         call to <code>getDrawGraphics</code>.
-     * @see j86.j86.j86.java.awt.image.VolatileImage
+     * @see j86.java.awt.image.VolatileImage
      */
     public abstract boolean contentsRestored();
 

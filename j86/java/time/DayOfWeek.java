@@ -61,21 +61,21 @@
  */
 package j86.java.time;
 
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoField.DAY_OF_WEEK;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
 
-import j86.j86.java.time.format.DateTimeFormatterBuilder;
-import j86.j86.java.time.format.TextStyle;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
-import j86.j86.java.time.temporal.WeekFields;
+import j86.java.time.format.DateTimeFormatterBuilder;
+import j86.java.time.format.TextStyle;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.WeekFields;
 import j86.java.util.Locale;
 
 /**

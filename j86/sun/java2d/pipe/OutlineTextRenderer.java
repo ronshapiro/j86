@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.TextLayout;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.font.GlyphList;
 import j86.sun.awt.SunHints;
 
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.font.TextLayout;
 
 /**
  * A delegate pipe of SG2D for drawing "large" text with

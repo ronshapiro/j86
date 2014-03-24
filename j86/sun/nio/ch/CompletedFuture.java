@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.ExecutionException;
 import j86.java.io.IOException;
 
 /**

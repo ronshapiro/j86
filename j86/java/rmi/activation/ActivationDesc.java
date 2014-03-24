@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 import j86.java.io.Serializable;
 import j86.java.rmi.MarshalledObject;
@@ -47,7 +47,7 @@ import j86.java.rmi.MarshalledObject;
  *
  * @author      Ann Wollrath
  * @since       1.2
- * @see         j86.j86.java.rmi.activation.Activatable
+ * @see         j86.java.rmi.activation.Activatable
  */
 public final class ActivationDesc implements Serializable {
 

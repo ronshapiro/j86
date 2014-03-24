@@ -25,14 +25,14 @@
 /*
  * $Id: RetrievalMethod.java,v 1.8 2005/05/10 16:35:35 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
+package j86.javax.xml.crypto.dsig.keyinfo;
 
 import j86.javax.xml.crypto.Data;
 import j86.javax.xml.crypto.URIReference;
 import j86.javax.xml.crypto.URIReferenceException;
 import j86.javax.xml.crypto.XMLCryptoContext;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.javax.xml.crypto.dsig.Transform;
+import j86.javax.xml.crypto.dsig.Transform;
 import j86.java.util.List;
 
 /**

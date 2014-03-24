@@ -38,18 +38,18 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.text.DecimalFormat;
 import j86.java.text.DecimalFormatSymbols;
 import j86.java.text.NumberFormat;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.Currency;
 import j86.java.util.Locale;
 import j86.java.util.Set;
 
 /**
- * Concrete implementation of the  {@link j86.j86.java.text.spi.NumberFormatProvider
+ * Concrete implementation of the  {@link j86.java.text.spi.NumberFormatProvider
  * NumberFormatProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -97,7 +97,7 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a currency formatter
      * @see j86.java.text.NumberFormat#getCurrencyInstance(j86.java.util.Locale)
@@ -121,7 +121,7 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a number format for integer values
      * @see j86.java.text.NumberFormat#getIntegerInstance(j86.java.util.Locale)
@@ -139,7 +139,7 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a general-purpose number formatter
      * @see j86.java.text.NumberFormat#getNumberInstance(j86.java.util.Locale)
@@ -157,7 +157,7 @@ public class NumberFormatProviderImpl extends NumberFormatProvider implements Av
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a percent formatter
      * @see j86.java.text.NumberFormat#getPercentInstance(j86.java.util.Locale)

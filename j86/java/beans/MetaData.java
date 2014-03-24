@@ -24,7 +24,7 @@
  */
 package j86.java.beans;
 
-import j86.j86.com.sun.beans.finder.PrimitiveWrapperMap;
+import j86.com.sun.beans.finder.PrimitiveWrapperMap;
 
 import j86.java.awt.AWTKeyStroke;
 import j86.java.awt.BorderLayout;
@@ -35,15 +35,15 @@ import j86.java.awt.GridBagConstraints;
 import j86.java.awt.Insets;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.font.TextAttribute;
 
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.InvocationTargetException;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -52,12 +52,12 @@ import j86.java.util.*;
 
 import j86.javax.swing.Box;
 import j86.javax.swing.JLayeredPane;
-import j86.j86.javax.swing.border.MatteBorder;
-import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.border.MatteBorder;
+import j86.javax.swing.plaf.ColorUIResource;
 
 import j86.sun.swing.PrintColorUIResource;
 
-import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 /*
  * Like the <code>Intropector</code>, the <code>MetaData</code> class
@@ -155,10 +155,10 @@ static final class ArrayPersistenceDelegate extends PersistenceDelegate {
 static final class ProxyPersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) {
         Class<?> type = oldInstance.getClass();
-        j86.j86.j86.java.lang.reflect.Proxy p = (java.lang.reflect.Proxy)oldInstance;
+        j86.java.lang.reflect.Proxy p = (java.lang.reflect.Proxy)oldInstance;
         // This unappealing hack is not required but makes the
         // representation of EventHandlers much more concise.
-        j86.j86.j86.java.lang.reflect.InvocationHandler ih = java.lang.reflect.Proxy.getInvocationHandler(p);
+        j86.java.lang.reflect.InvocationHandler ih = java.lang.reflect.Proxy.getInvocationHandler(p);
         if (ih instanceof EventHandler) {
             EventHandler eh = (EventHandler)ih;
             Vector<Object> args = new Vector<>();
@@ -178,7 +178,7 @@ static final class ProxyPersistenceDelegate extends PersistenceDelegate {
                                   args.toArray());
         }
         return new Expression(oldInstance,
-                              j86.j86.j86.java.lang.reflect.Proxy.class,
+                              j86.java.lang.reflect.Proxy.class,
                               "newProxyInstance",
                               new Object[]{type.getClassLoader(),
                                            type.getInterfaces(),
@@ -230,7 +230,7 @@ static final class j86.java.lang_Class_PersistenceDelegate extends PersistenceDe
 }
 
 // Fields
-static final class j86.j86.j86.java.lang.reflect_Field_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.lang.reflect_Field_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -245,7 +245,7 @@ static final class j86.j86.j86.java.lang.reflect_Field_PersistenceDelegate exten
 }
 
 // Methods
-static final class j86.j86.j86.java.lang.reflect_Method_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.java.lang.reflect_Method_PersistenceDelegate extends PersistenceDelegate {
     protected boolean mutatesTo(Object oldInstance, Object newInstance) {
         return oldInstance.equals(newInstance);
     }
@@ -704,7 +704,7 @@ static final class j86.java.util_Hashtable_PersistenceDelegate extends java_util
 
 
 // Beans
-static final class j86.j86.java.beans.beancontext_BeanContextSupport_PersistenceDelegate extends j86.java.util_Collection_PersistenceDelegate {}
+static final class j86.java.beans.beancontext_BeanContextSupport_PersistenceDelegate extends j86.java.util_Collection_PersistenceDelegate {}
 
 // AWT
 
@@ -881,7 +881,7 @@ static class StaticFieldsPersistenceDelegate extends PersistenceDelegate {
 static final class j86.java.awt_SystemColor_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
 
 // TextAttribute
-static final class j86.j86.java.awt.font_TextAttribute_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
+static final class j86.java.awt.font_TextAttribute_PersistenceDelegate extends StaticFieldsPersistenceDelegate {}
 
 // MenuShortcut
 static final class j86.java.awt_MenuShortcut_PersistenceDelegate extends PersistenceDelegate {
@@ -1152,14 +1152,14 @@ static final class j86.javax.swing_DefaultComboBoxModel_PersistenceDelegate exte
 
 
 // DefaultMutableTreeNode
-static final class j86.j86.javax.swing.tree_DefaultMutableTreeNode_PersistenceDelegate extends DefaultPersistenceDelegate {
+static final class j86.javax.swing.tree_DefaultMutableTreeNode_PersistenceDelegate extends DefaultPersistenceDelegate {
     protected void initialize(Class<?> type, Object oldInstance, Object
                               newInstance, Encoder out) {
         super.initialize(type, oldInstance, newInstance, out);
-        j86.j86.javax.swing.tree.DefaultMutableTreeNode m =
-            (j86.j86.javax.swing.tree.DefaultMutableTreeNode)oldInstance;
-        j86.j86.javax.swing.tree.DefaultMutableTreeNode n =
-            (j86.j86.javax.swing.tree.DefaultMutableTreeNode)newInstance;
+        j86.javax.swing.tree.DefaultMutableTreeNode m =
+            (j86.javax.swing.tree.DefaultMutableTreeNode)oldInstance;
+        j86.javax.swing.tree.DefaultMutableTreeNode n =
+            (j86.javax.swing.tree.DefaultMutableTreeNode)newInstance;
         for (int i = n.getChildCount(); i < m.getChildCount(); i++) {
             invokeStatement(oldInstance, "add", new
                 Object[]{m.getChildAt(i)}, out);
@@ -1230,7 +1230,7 @@ static final class j86.javax.swing_JMenu_PersistenceDelegate extends DefaultPers
  *
  * @author Sergey A. Malenkov
  */
-static final class j86.j86.javax.swing.border_MatteBorder_PersistenceDelegate extends PersistenceDelegate {
+static final class j86.javax.swing.border_MatteBorder_PersistenceDelegate extends PersistenceDelegate {
     protected Expression instantiate(Object oldInstance, Encoder out) {
         MatteBorder border = (MatteBorder) oldInstance;
         Insets insets = border.getBorderInsets();
@@ -1300,11 +1300,11 @@ static final class j86.sun.swing_PrintColorUIResource_PersistenceDelegate extend
                                          new PrimitivePersistenceDelegate());
 
         // it is possible because MatteBorder is assignable from MatteBorderUIResource
-        internalPersistenceDelegates.put("j86.j86.javax.swing.plaf.BorderUIResource$MatteBorderUIResource",
-                                         new j86.j86.javax.swing.border_MatteBorder_PersistenceDelegate());
+        internalPersistenceDelegates.put("j86.javax.swing.plaf.BorderUIResource$MatteBorderUIResource",
+                                         new j86.javax.swing.border_MatteBorder_PersistenceDelegate());
 
         // it is possible because FontUIResource is supported by j86.java.awt_Font_PersistenceDelegate
-        internalPersistenceDelegates.put("j86.j86.javax.swing.plaf.FontUIResource",
+        internalPersistenceDelegates.put("j86.javax.swing.plaf.FontUIResource",
                                          new j86.java.awt_Font_PersistenceDelegate());
 
         // it is possible because KeyStroke is supported by j86.java.awt_AWTKeyStroke_PersistenceDelegate
@@ -1338,7 +1338,7 @@ static final class j86.sun.swing_PrintColorUIResource_PersistenceDelegate extend
         }
         // Handle proxies lazily for backward compatibility with 1.2.
         try {
-            if (j86.j86.j86.java.lang.reflect.Proxy.isProxyClass(type)) {
+            if (j86.java.lang.reflect.Proxy.isProxyClass(type)) {
                 if (proxyPersistenceDelegate == null) {
                     proxyPersistenceDelegate = new ProxyPersistenceDelegate();
                 }

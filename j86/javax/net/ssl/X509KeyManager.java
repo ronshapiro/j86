@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.security.PrivateKey;
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.net.Socket;
 
 /**

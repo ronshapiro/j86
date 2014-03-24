@@ -23,23 +23,23 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.List;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 
-import j86.j86.sun.invoke.util.ValueConversions;
-import j86.j86.sun.invoke.util.VerifyAccess;
-import j86.j86.sun.invoke.util.Wrapper;
+import j86.sun.invoke.util.ValueConversions;
+import j86.sun.invoke.util.VerifyAccess;
+import j86.sun.invoke.util.Wrapper;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.security.util.SecurityConstants;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -119,9 +119,9 @@ public class MethodHandles {
      * <a href="MethodHandleInfo.html#directmh">direct method handle</a>.
      * The result is as if the user had obtained a lookup object capable enough
      * to crack the target method handle, called
-     * {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#revealDirect Lookup.revealDirect}
+     * {@link j86.java.lang.invoke.MethodHandles.Lookup#revealDirect Lookup.revealDirect}
      * on the target to obtain its symbolic reference, and then called
-     * {@link j86.j86.java.lang.invoke.MethodHandleInfo#reflectAs MethodHandleInfo.reflectAs}
+     * {@link j86.java.lang.invoke.MethodHandleInfo#reflectAs MethodHandleInfo.reflectAs}
      * to resolve the symbolic reference to a member.
      * <p>
      * If there is a security manager, its {@code checkPermission} method
@@ -181,55 +181,55 @@ public class MethodHandles {
      *     <th>bytecode behavior</th>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findGetter lookup.findGetter(C.class,"f",FT.class)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findGetter lookup.findGetter(C.class,"f",FT.class)}</td>
      *     <td>{@code FT f;}</td><td>{@code (T) this.f;}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findStaticGetter lookup.findStaticGetter(C.class,"f",FT.class)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findStaticGetter lookup.findStaticGetter(C.class,"f",FT.class)}</td>
      *     <td>{@code static}<br>{@code FT f;}</td><td>{@code (T) C.f;}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findSetter lookup.findSetter(C.class,"f",FT.class)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findSetter lookup.findSetter(C.class,"f",FT.class)}</td>
      *     <td>{@code FT f;}</td><td>{@code this.f = x;}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findStaticSetter lookup.findStaticSetter(C.class,"f",FT.class)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findStaticSetter lookup.findStaticSetter(C.class,"f",FT.class)}</td>
      *     <td>{@code static}<br>{@code FT f;}</td><td>{@code C.f = arg;}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findVirtual lookup.findVirtual(C.class,"m",MT)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findVirtual lookup.findVirtual(C.class,"m",MT)}</td>
      *     <td>{@code T m(A*);}</td><td>{@code (T) this.m(arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findStatic lookup.findStatic(C.class,"m",MT)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findStatic lookup.findStatic(C.class,"m",MT)}</td>
      *     <td>{@code static}<br>{@code T m(A*);}</td><td>{@code (T) C.m(arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findSpecial lookup.findSpecial(C.class,"m",MT,this.class)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findSpecial lookup.findSpecial(C.class,"m",MT,this.class)}</td>
      *     <td>{@code T m(A*);}</td><td>{@code (T) super.m(arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#findConstructor lookup.findConstructor(C.class,MT)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#findConstructor lookup.findConstructor(C.class,MT)}</td>
      *     <td>{@code C(A*);}</td><td>{@code new C(arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflectGetter lookup.unreflectGetter(aField)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#unreflectGetter lookup.unreflectGetter(aField)}</td>
      *     <td>({@code static})?<br>{@code FT f;}</td><td>{@code (FT) aField.get(thisOrNull);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflectSetter lookup.unreflectSetter(aField)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#unreflectSetter lookup.unreflectSetter(aField)}</td>
      *     <td>({@code static})?<br>{@code FT f;}</td><td>{@code aField.set(thisOrNull, arg);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect lookup.unreflect(aMethod)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect lookup.unreflect(aMethod)}</td>
      *     <td>({@code static})?<br>{@code T m(A*);}</td><td>{@code (T) aMethod.invoke(thisOrNull, arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflectConstructor lookup.unreflectConstructor(aConstructor)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#unreflectConstructor lookup.unreflectConstructor(aConstructor)}</td>
      *     <td>{@code C(A*);}</td><td>{@code (C) aConstructor.newInstance(arg*);}</td>
      * </tr>
      * <tr>
-     *     <td>{@link j86.j86.java.lang.invoke.MethodHandles.Lookup#unreflect lookup.unreflect(aMethod)}</td>
+     *     <td>{@link j86.java.lang.invoke.MethodHandles.Lookup#unreflect lookup.unreflect(aMethod)}</td>
      *     <td>({@code static})?<br>{@code T m(A*);}</td><td>{@code (T) aMethod.invoke(thisOrNull, arg*);}</td>
      * </tr>
      * </table>
@@ -283,7 +283,7 @@ public class MethodHandles {
      * Access checks are applied in the factory methods of {@code Lookup},
      * when a method handle is created.
      * This is a key difference from the Core Reflection API, since
-     * {@link j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
+     * {@link j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
      * performs access checking against every caller, on every call.
      * <p>
      * All access checks start from a {@code Lookup} object, which
@@ -516,28 +516,28 @@ public class MethodHandles {
         /** A single-bit mask representing {@code public} access,
          *  which may contribute to the result of {@link #lookupModes lookupModes}.
          *  The value, {@code 0x01}, happens to be the same as the value of the
-         *  {@code public} {@linkplain j86.j86.j86.java.lang.reflect.Modifier#PUBLIC modifier bit}.
+         *  {@code public} {@linkplain j86.java.lang.reflect.Modifier#PUBLIC modifier bit}.
          */
         public static final int PUBLIC = Modifier.PUBLIC;
 
         /** A single-bit mask representing {@code private} access,
          *  which may contribute to the result of {@link #lookupModes lookupModes}.
          *  The value, {@code 0x02}, happens to be the same as the value of the
-         *  {@code private} {@linkplain j86.j86.j86.java.lang.reflect.Modifier#PRIVATE modifier bit}.
+         *  {@code private} {@linkplain j86.java.lang.reflect.Modifier#PRIVATE modifier bit}.
          */
         public static final int PRIVATE = Modifier.PRIVATE;
 
         /** A single-bit mask representing {@code protected} access,
          *  which may contribute to the result of {@link #lookupModes lookupModes}.
          *  The value, {@code 0x04}, happens to be the same as the value of the
-         *  {@code protected} {@linkplain j86.j86.j86.java.lang.reflect.Modifier#PROTECTED modifier bit}.
+         *  {@code protected} {@linkplain j86.java.lang.reflect.Modifier#PROTECTED modifier bit}.
          */
         public static final int PROTECTED = Modifier.PROTECTED;
 
         /** A single-bit mask representing {@code package} access (default access),
          *  which may contribute to the result of {@link #lookupModes lookupModes}.
          *  The value is {@code 0x08}, which does not correspond meaningfully to
-         *  any particular {@linkplain j86.j86.j86.java.lang.reflect.Modifier modifier bit}.
+         *  any particular {@linkplain j86.java.lang.reflect.Modifier modifier bit}.
          */
         public static final int PACKAGE = Modifier.STATIC;
 
@@ -575,10 +575,10 @@ public class MethodHandles {
          *  and {@linkplain #PACKAGE PACKAGE (0x08)}.
          *  <p>
          *  A freshly-created lookup object
-         *  on the {@linkplain j86.j86.java.lang.invoke.MethodHandles#lookup() caller's class}
+         *  on the {@linkplain j86.java.lang.invoke.MethodHandles#lookup() caller's class}
          *  has all possible bits set, since the caller class can access all its own members.
          *  A lookup object on a new lookup class
-         *  {@linkplain j86.j86.java.lang.invoke.MethodHandles.Lookup#in created from a previous lookup object}
+         *  {@linkplain j86.java.lang.invoke.MethodHandles.Lookup#in created from a previous lookup object}
          *  may have some mode bits set to zero.
          *  The purpose of this is to restrict access via the new lookup object,
          *  so that it can access only names which can be reached by the original
@@ -669,7 +669,7 @@ public class MethodHandles {
 
         private static void checkUnprivilegedlookupClass(Class<?> lookupClass, int allowedModes) {
             String name = lookupClass.getName();
-            if (name.startsWith("j86.j86.java.lang.invoke."))
+            if (name.startsWith("j86.java.lang.invoke."))
                 throw newIllegalArgumentException("illegal lookupClass: "+lookupClass);
 
             // For caller-sensitive MethodHandles.lookup()
@@ -699,8 +699,8 @@ public class MethodHandles {
          * access (public, package, private, and protected) is allowed.
          * In this case, no suffix is added.
          * This is true only of an object obtained originally from
-         * {@link j86.j86.java.lang.invoke.MethodHandles#lookup MethodHandles.lookup}.
-         * Objects created by {@link j86.j86.java.lang.invoke.MethodHandles.Lookup#in Lookup.in}
+         * {@link j86.java.lang.invoke.MethodHandles#lookup MethodHandles.lookup}.
+         * Objects created by {@link j86.java.lang.invoke.MethodHandles.Lookup#in Lookup.in}
          * always have restricted access, and will display a suffix.
          * <p>
          * (It may seem strange that protected access should be
@@ -749,8 +749,8 @@ public class MethodHandles {
          * be initialized, if it has not already been initialized.
          * <p><b>Example:</b>
          * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle MH_asList = publicLookup().findStatic(Arrays.class,
   "asList", methodType(List.class, Object[].class));
@@ -801,14 +801,14 @@ assertEquals("[x, y]", MH_asList.invoke("x", "y").toString());
          * if the class is {@code MethodHandle} and the name string is
          * {@code invokeExact} or {@code invoke}, the resulting
          * method handle is equivalent to one produced by
-         * {@link j86.j86.java.lang.invoke.MethodHandles#exactInvoker MethodHandles.exactInvoker} or
-         * {@link j86.j86.java.lang.invoke.MethodHandles#invoker MethodHandles.invoker}
+         * {@link j86.java.lang.invoke.MethodHandles#exactInvoker MethodHandles.exactInvoker} or
+         * {@link j86.java.lang.invoke.MethodHandles#invoker MethodHandles.invoker}
          * with the same {@code type} argument.
          *
          * <b>Example:</b>
          * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle MH_concat = publicLookup().findVirtual(String.class,
   "concat", methodType(String.class, String.class));
@@ -883,8 +883,8 @@ assertEquals("", (String) MH_newString.invokeExact());
          * be initialized, if it has not already been initialized.
          * <p><b>Example:</b>
          * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle MH_newArrayList = publicLookup().findConstructor(
   ArrayList.class, methodType(void.class, Collection.class));
@@ -943,8 +943,8 @@ assertEquals("[x, y, z]", pb.command().toString());
          * to access instance initialization methods in a safe manner.)</em>
          * <p><b>Example:</b>
          * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 static class Listie extends ArrayList {
   public String toString() { return "[wee Listie]"; }
@@ -1108,8 +1108,8 @@ assertEquals(""+l, (String) MH_this.invokeExact(subl)); // Listie method
          * <p>
          * This is equivalent to the following code:
          * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle mh0 = lookup().findVirtual(defc, name, type);
 MethodHandle mh1 = mh0.bindTo(receiver);
@@ -1896,7 +1896,7 @@ return invoker;
      * method handle values, as long as they are compatible with the type of {@code X}.
      * <p style="font-size:smaller;">
      * <em>(Note:  The invoker method is not available via the Core Reflection API.
-     * An attempt to call {@linkplain j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
+     * An attempt to call {@linkplain j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
      * on the declared {@code invokeExact} or {@code invoke} method will raise an
      * {@link j86.java.lang.UnsupportedOperationException UnsupportedOperationException}.)</em>
      * <p>
@@ -1935,7 +1935,7 @@ return invoker;
      * of the same arity as the general type.
      * <p style="font-size:smaller;">
      * <em>(Note:  The invoker method is not available via the Core Reflection API.
-     * An attempt to call {@linkplain j86.j86.j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
+     * An attempt to call {@linkplain j86.java.lang.reflect.Method#invoke java.lang.reflect.Method.invoke}
      * on the declared {@code invokeExact} or {@code invoke} method will raise an
      * {@link j86.java.lang.UnsupportedOperationException UnsupportedOperationException}.)</em>
      * <p>
@@ -2040,8 +2040,8 @@ return invoker;
      * incoming arguments which are not mentioned in the reordering array
      * are may be any type, as determined only by {@code newType}.
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodType intfn1 = methodType(int.class, int.class);
 MethodType intfn2 = methodType(int.class, int.class, int.class);
@@ -2225,8 +2225,8 @@ assert((int)twice.invokeExact(21) == 42);
      * <p>
      * <b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle cat = lookup().findVirtual(String.class,
   "concat", methodType(String.class, String.class));
@@ -2283,8 +2283,8 @@ assertEquals("yz", (String) d0.invokeExact(123, "x", "y", "z"));
      * <p>
      * <b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle cat = lookup().findVirtual(String.class,
   "concat", methodType(String.class, String.class));
@@ -2349,8 +2349,8 @@ assertEquals("xz", (String) d12.invokeExact("x", 12, true, "z"));
      * which do not correspond to argument positions in the target.
      * <p><b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle cat = lookup().findVirtual(String.class,
   "concat", methodType(String.class, String.class));
@@ -2442,8 +2442,8 @@ assertEquals("XY", (String) f2.invokeExact("x", "y")); // XY
      * {@code pos} must also be less than or equal to the target's arity.
      * <p><b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle deepToString = publicLookup()
   .findStatic(Arrays.class, "deepToString", methodType(String.class, Object[].class));
@@ -2547,8 +2547,8 @@ assertEquals("[top, [[up, down, strange], charm], bottom]",
      * return type of the target.
      * <p><b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle cat = lookup().findVirtual(String.class,
   "concat", methodType(String.class, String.class));
@@ -2638,8 +2638,8 @@ System.out.println((int) f0.invokeExact("x", "y")); // 2
      * target.)
      * <p><b>Example:</b>
      * <blockquote><pre>{@code
-import static j86.j86.java.lang.invoke.MethodHandles.*;
-import static j86.j86.java.lang.invoke.MethodType.*;
+import static j86.java.lang.invoke.MethodHandles.*;
+import static j86.java.lang.invoke.MethodType.*;
 ...
 MethodHandle trace = publicLookup().findVirtual(j86.java.io.PrintStream.class,
   "println", methodType(void.class, String.class))

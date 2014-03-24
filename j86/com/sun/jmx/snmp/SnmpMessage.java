@@ -30,7 +30,7 @@ package j86.com.sun.jmx.snmp;
 
 // java imports
 //
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 import j86.java.net.InetAddress;
 

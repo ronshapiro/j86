@@ -148,8 +148,8 @@ public class Reference implements Cloneable, j86.java.io.Serializable {
       * @param factoryLocation
       *         The possibly null location from which to load
       *         the factory (e.g. URL)
-      * @see j86.j86.javax.naming.spi.ObjectFactory
-      * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+      * @see j86.javax.naming.spi.ObjectFactory
+      * @see j86.javax.naming.spi.NamingManager#getObjectInstance
       */
     public Reference(String className, String factory, String factoryLocation) {
         this(className);
@@ -168,8 +168,8 @@ public class Reference implements Cloneable, j86.java.io.Serializable {
       * @param factoryLocation  The possibly null location from which
       *                         to load the factory (e.g. URL)
       * @param addr     The non-null address of the object.
-      * @see j86.j86.javax.naming.spi.ObjectFactory
-      * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+      * @see j86.javax.naming.spi.ObjectFactory
+      * @see j86.javax.naming.spi.NamingManager#getObjectInstance
       */
     public Reference(String className, RefAddr addr,
                      String factory, String factoryLocation) {

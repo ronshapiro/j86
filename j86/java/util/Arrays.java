@@ -25,21 +25,21 @@
 
 package j86.java.util;
 
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.java.util.concurrent.ForkJoinPool;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.function.IntBinaryOperator;
-import j86.j86.java.util.function.IntFunction;
-import j86.j86.java.util.function.IntToDoubleFunction;
-import j86.j86.java.util.function.IntToLongFunction;
-import j86.j86.java.util.function.IntUnaryOperator;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.stream.DoubleStream;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.LongStream;
-import j86.j86.java.util.stream.Stream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.lang.reflect.Array;
+import j86.java.util.concurrent.ForkJoinPool;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.function.IntBinaryOperator;
+import j86.java.util.function.IntFunction;
+import j86.java.util.function.IntToDoubleFunction;
+import j86.java.util.function.IntToLongFunction;
+import j86.java.util.function.IntUnaryOperator;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.stream.DoubleStream;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.LongStream;
+import j86.java.util.stream.Stream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * This class contains various methods for manipulating arrays (such as

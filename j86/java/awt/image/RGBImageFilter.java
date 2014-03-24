@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
-import j86.j86.j86.java.awt.image.ImageConsumer;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ImageConsumer;
+import j86.java.awt.image.ColorModel;
 
 /**
  * This class provides an easy way to create an ImageFilter which modifies

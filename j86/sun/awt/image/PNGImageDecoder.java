@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.util.zip.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.util.zip.*;
+import j86.java.awt.image.*;
 import j86.java.awt.Color;
 
 /** PNG - Portable Network Graphics - image file reader.

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.Attributes;
 import j86.java.util.Hashtable;
 
 /**

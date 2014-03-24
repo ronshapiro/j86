@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.*;

@@ -26,9 +26,9 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.BreakpointRequest;
+import j86.com.sun.jdi.request.BreakpointRequest;
 import j86.java.util.*;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 public class ThreadReferenceImpl extends ObjectReferenceImpl
              implements ThreadReference, VMListener {

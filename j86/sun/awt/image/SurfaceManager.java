@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Color;
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.Image;
 import j86.java.awt.ImageCapabilities;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.VolatileImage;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.VolatileImage;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.util.Iterator;
 import j86.sun.java2d.SurfaceData;
 import j86.sun.java2d.SurfaceDataProxy;
-import j86.j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.CompositeType;
 
 /**
  * The abstract base class that manages the various SurfaceData objects that

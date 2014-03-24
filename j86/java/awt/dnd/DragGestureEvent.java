@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.awt.Component;
 import j86.java.awt.Cursor;
@@ -32,9 +32,9 @@ import j86.java.awt.Cursor;
 import j86.java.awt.Image;
 import j86.java.awt.Point;
 
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputEvent;
 
-import j86.j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.Transferable;
 
 import j86.java.util.EventObject;
 
@@ -64,10 +64,10 @@ import j86.java.io.ObjectOutputStream;
  * </ul>
  * Assigning the value different from listed above will cause an unspecified behavior.
  *
- * @see j86.j86.java.awt.dnd.DragGestureRecognizer
- * @see j86.j86.java.awt.dnd.DragGestureListener
- * @see j86.j86.java.awt.dnd.DragSource
- * @see j86.j86.java.awt.dnd.DnDConstants
+ * @see j86.java.awt.dnd.DragGestureRecognizer
+ * @see j86.java.awt.dnd.DragGestureListener
+ * @see j86.java.awt.dnd.DragSource
+ * @see j86.java.awt.dnd.DnDConstants
  */
 
 public class DragGestureEvent extends EventObject {
@@ -93,7 +93,7 @@ public class DragGestureEvent extends EventObject {
      * @throws IllegalArgumentException if the act parameter does not comply with
      *                                  the values given in the class
      *                                  description for {@link DragGestureEvent}
-     * @see j86.j86.java.awt.dnd.DnDConstants
+     * @see j86.java.awt.dnd.DnDConstants
      */
 
     public DragGestureEvent(DragGestureRecognizer dgr, int act, Point ori,

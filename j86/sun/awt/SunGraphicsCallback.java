@@ -27,7 +27,7 @@ package j86.sun.awt;
 
 import j86.java.awt.*;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 public abstract class SunGraphicsCallback {
     public static final int HEAVYWEIGHTS = 0x1;

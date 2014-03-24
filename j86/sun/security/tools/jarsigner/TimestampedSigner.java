@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.jarsigner;
+package j86.sun.security.tools.jarsigner;
 
 import j86.java.io.IOException;
 import j86.java.net.URI;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
 
 import j86.com.sun.jarsigner.*;
 import j86.sun.security.pkcs.PKCS7;

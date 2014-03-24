@@ -25,9 +25,9 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
 import j86.java.io.IOException;
 
 /**

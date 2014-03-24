@@ -28,7 +28,7 @@ package j86.java.net;
 import j86.java.io.FileDescriptor;
 import j86.java.io.FileInputStream;
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.FileChannel;
+import j86.java.nio.channels.FileChannel;
 
 import j86.sun.net.ConnectionResetException;
 
@@ -64,7 +64,7 @@ class SocketInputStream extends FileInputStream
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file input stream.</p>
      *
      * The {@code getChannel} method of {@code SocketInputStream}

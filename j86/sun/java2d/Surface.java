@@ -28,7 +28,7 @@ package j86.sun.java2d;
 /**
  * This is a tag interface for a surface.
  * @see j86.sun.java2d.SurfaceData
- * @see j86.j86.j86.sun.java2d.pipe.hw.AccelSurface
+ * @see j86.sun.java2d.pipe.hw.AccelSurface
  */
 public interface Surface {
 }

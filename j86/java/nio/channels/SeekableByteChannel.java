@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.io.IOException;
@@ -47,7 +47,7 @@ import j86.java.io.IOException;
  * so that method invocations on the implementation class can be chained.
  *
  * @since 1.7
- * @see j86.j86.java.nio.file.Files#newByteChannel
+ * @see j86.java.nio.file.Files#newByteChannel
  */
 
 public interface SeekableByteChannel
@@ -69,7 +69,7 @@ public interface SeekableByteChannel
      *
      * <p> Bytes are written starting at this channel's current position, unless
      * the channel is connected to an entity such as a file that is opened with
-     * the {@link j86.j86.java.nio.file.StandardOpenOption#APPEND APPEND} option, in
+     * the {@link j86.java.nio.file.StandardOpenOption#APPEND APPEND} option, in
      * which case the position is first advanced to the end. The entity to which
      * the channel is connected is grown, if necessary, to accommodate the
      * written bytes, and then the position is updated with the number of bytes
@@ -106,7 +106,7 @@ public interface SeekableByteChannel
      *
      * <p> Setting the channel's position is not recommended when connected to
      * an entity, typically a file, that is opened with the {@link
-     * j86.j86.java.nio.file.StandardOpenOption#APPEND APPEND} option. When opened for
+     * j86.java.nio.file.StandardOpenOption#APPEND APPEND} option. When opened for
      * append, the position is first advanced to the end before writing.
      *
      * @param  newPosition
@@ -148,7 +148,7 @@ public interface SeekableByteChannel
      *
      * <p> An implementation of this interface may prohibit truncation when
      * connected to an entity, typically a file, opened with the {@link
-     * j86.j86.java.nio.file.StandardOpenOption#APPEND APPEND} option.
+     * j86.java.nio.file.StandardOpenOption#APPEND APPEND} option.
      *
      * @param  size
      *         The new size, a non-negative byte count

@@ -26,11 +26,11 @@
 package j86.sun.security.ssl;
 
 import j86.java.io.IOException;
-import j86.j86.java.security.spec.ECParameterSpec;
+import j86.java.security.spec.ECParameterSpec;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 
-import j86.j86.javax.net.ssl.SSLProtocolException;
+import j86.javax.net.ssl.SSLProtocolException;
 
 final class SupportedEllipticCurvesExtension extends HelloExtension {
 

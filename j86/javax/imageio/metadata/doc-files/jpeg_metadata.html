@@ -980,7 +980,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "app2ICC" EMPTY&gt;
           &lt;!-- An ICC profile APP2 marker segment --&gt; 
-          &lt;!-- Optional User object: j86.j86.java.awt.color.ICC_Profile --&gt;
+          &lt;!-- Optional User object: j86.java.awt.color.ICC_Profile --&gt;
 
     &lt;!ELEMENT "markerSequence" (dqt | dht | dri | com | unknown | 
       app14Adobe | sof | sos)*&gt;
@@ -993,7 +993,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "dqtable" EMPTY&gt;
           &lt;!-- A single quantization table --&gt; 
-          &lt;!-- User object: j86.j86.javax.imageio.plugins.jpeg.JPEGQTable --&gt;
+          &lt;!-- User object: j86.javax.imageio.plugins.jpeg.JPEGQTable --&gt;
           &lt;!ATTLIST "dqtable" "elementPrecision" #CDATA "0"&gt;
             &lt;!-- The number of bits in each table element (0 = 8, 1 = 16) 
                  --&gt; 
@@ -1007,7 +1007,7 @@ format, performs a <code>reset</code> followed by a merge of the new tree.
 
         &lt;!ELEMENT "dhtable" EMPTY&gt;
           &lt;!-- A single Huffman table --&gt; 
-          &lt;!-- User object: j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable --&gt;
+          &lt;!-- User object: j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable --&gt;
           &lt;!ATTLIST "dhtable" "class" ("0" | "1") #REQUIRED&gt;
             &lt;!-- Indicates whether this is a DC (0) or an AC (1) table --&gt; 
           &lt;!ATTLIST "dhtable" "htableId" ("0" | "1" | "2" | "3") #REQUIRED&gt;

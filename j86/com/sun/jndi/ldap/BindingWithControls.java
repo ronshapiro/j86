@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.ldap.*;
 
 class BindingWithControls extends Binding implements HasControls {
     private Control[] controls;

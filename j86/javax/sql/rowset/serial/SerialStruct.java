@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.serial;
+package j86.javax.sql.rowset.serial;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -33,7 +33,7 @@ import j86.java.util.Arrays;
 import j86.java.util.Map;
 import j86.java.util.Vector;
 
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 /**
  * A serialized mapping in the Java programming language of an SQL

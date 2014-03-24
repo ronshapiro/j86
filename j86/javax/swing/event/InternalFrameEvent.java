@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.awt.AWTEvent;
 import j86.javax.swing.JInternalFrame;
@@ -46,8 +46,8 @@ import j86.javax.swing.JInternalFrame;
  * has been added to the <code>j86.java.beans</code> package.
  * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see j86.j86.java.awt.event.WindowEvent
- * @see j86.j86.java.awt.event.WindowListener
+ * @see j86.java.awt.event.WindowEvent
+ * @see j86.java.awt.event.WindowListener
  * @see JInternalFrame
  * @see InternalFrameListener
  *

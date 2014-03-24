@@ -31,14 +31,14 @@ import j86.java.util.Hashtable;
 import j86.java.util.Locale;
 import j86.java.util.StringTokenizer;
 
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.ldap.Control;
 import j86.javax.naming.NamingException;
 import j86.javax.naming.CommunicationException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.com.sun.jndi.ldap.pool.PoolCleaner;
-import j86.j86.com.sun.jndi.ldap.pool.Pool;
+import j86.com.sun.jndi.ldap.pool.PoolCleaner;
+import j86.com.sun.jndi.ldap.pool.Pool;
 
 /**
  * Contains utilities for managing connection pools of LdapClient.

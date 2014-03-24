@@ -33,7 +33,7 @@ import j86.java.util.List;
 import j86.java.util.Hashtable;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.IOException;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 
 /**
  *
@@ -64,7 +64,7 @@ public class CodeSource implements j86.java.io.Serializable {
     /*
      * The code signers. Certificate chains are concatenated.
      */
-    private transient j86.j86.java.security.cert.Certificate certs[] = null;
+    private transient j86.java.security.cert.Certificate certs[] = null;
 
     // cached SocketPermission used for matchLocation
     private transient SocketPermission sp;
@@ -81,7 +81,7 @@ public class CodeSource implements j86.java.io.Serializable {
      * @param certs the certificate(s). It may be null. The contents of the
      * array are copied to protect against subsequent modification.
      */
-    public CodeSource(URL url, j86.j86.java.security.cert.Certificate certs[]) {
+    public CodeSource(URL url, j86.java.security.cert.Certificate certs[]) {
         this.location = url;
 
         // Copy the supplied certs
@@ -182,20 +182,20 @@ public class CodeSource implements j86.java.io.Serializable {
      *
      * @return A copy of the certificates array, or null if there is none.
      */
-    public final j86.j86.java.security.cert.Certificate[] getCertificates() {
+    public final j86.java.security.cert.Certificate[] getCertificates() {
         if (certs != null) {
             return certs.clone();
 
         } else if (signers != null) {
             // Convert the code signers to certs
-            ArrayList<j86.j86.java.security.cert.Certificate> certChains =
+            ArrayList<j86.java.security.cert.Certificate> certChains =
                         new ArrayList<>();
             for (int i = 0; i < signers.length; i++) {
                 certChains.addAll(
                     signers[i].getSignerCertPath().getCertificates());
             }
             certs = certChains.toArray(
-                        new j86.j86.java.security.cert.Certificate[certChains.size()]);
+                        new j86.java.security.cert.Certificate[certChains.size()]);
             return certs.clone();
 
         } else {
@@ -207,7 +207,7 @@ public class CodeSource implements j86.java.io.Serializable {
      * Returns the code signers associated with this CodeSource.
      * <p>
      * If this CodeSource object was created using the
-     * {@link #CodeSource(URL url, j86.j86.java.security.cert.Certificate[] certs)}
+     * {@link #CodeSource(URL url, j86.java.security.cert.Certificate[] certs)}
      * constructor then its certificate chains are extracted and used to
      * create an array of CodeSigner objects. Note that only X.509 certificates
      * are examined - all other certificate types are ignored.
@@ -509,7 +509,7 @@ public class CodeSource implements j86.java.io.Serializable {
             oos.writeInt(certs.length);
             // write out each cert, including its type
             for (int i = 0; i < certs.length; i++) {
-                j86.j86.java.security.cert.Certificate cert = certs[i];
+                j86.java.security.cert.Certificate cert = certs[i];
                 try {
                     oos.writeUTF(cert.getType());
                     byte[] encoded = cert.getEncoded();
@@ -544,7 +544,7 @@ public class CodeSource implements j86.java.io.Serializable {
             // we know of 3 different cert types: X.509, PGP, SDSI, which
             // could all be present in the stream at the same time
             cfs = new Hashtable<String, CertificateFactory>(3);
-            this.certs = new j86.j86.java.security.cert.Certificate[size];
+            this.certs = new j86.java.security.cert.Certificate[size];
         }
 
         for (int i = 0; i < size; i++) {
@@ -598,7 +598,7 @@ public class CodeSource implements j86.java.io.Serializable {
      * @return An array of code signers or null if none are generated.
      */
     private CodeSigner[] convertCertArrayToSignerArray(
-        j86.j86.java.security.cert.Certificate[] certs) {
+        j86.java.security.cert.Certificate[] certs) {
 
         if (certs == null) {
             return null;
@@ -614,7 +614,7 @@ public class CodeSource implements j86.java.io.Serializable {
             int i = 0;
             List<CodeSigner> signers = new ArrayList<>();
             while (i < certs.length) {
-                List<j86.j86.java.security.cert.Certificate> certChain =
+                List<j86.java.security.cert.Certificate> certChain =
                         new ArrayList<>();
                 certChain.add(certs[i++]); // first cert is an end-entity cert
                 int j = i;

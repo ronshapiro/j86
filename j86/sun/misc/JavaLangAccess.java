@@ -25,14 +25,14 @@
 
 package j86.sun.misc;
 
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.j86.java.lang.reflect.Executable;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.Executable;
 import j86.java.security.AccessControlContext;
 import j86.java.util.Map;
 
 import j86.sun.reflect.ConstantPool;
-import j86.j86.sun.reflect.annotation.AnnotationType;
-import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.sun.reflect.annotation.AnnotationType;
+import j86.sun.nio.ch.Interruptible;
 
 public interface JavaLangAccess {
     /** Return the constant pool for a class. */

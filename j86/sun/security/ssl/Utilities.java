@@ -25,9 +25,9 @@
 
 package j86.sun.security.ssl;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 import j86.java.util.*;
-import j86.j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.util.IPAddressUtil;
 
 /**
  * A utility class to share the static methods.

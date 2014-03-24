@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.algorithms;
+package j86.com.sun.org.apache.xml.internal.security.algorithms;
 
 import j86.java.security.Key;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
 import org.w3c.dom.Element;
 
 public abstract class SignatureAlgorithmSpi {
@@ -145,7 +145,7 @@ public abstract class SignatureAlgorithmSpi {
 
     /**
      * Proxy method for {@link j86.java.security.Signature#setParameter(
-     * j86.j86.java.security.spec.AlgorithmParameterSpec)}
+     * j86.java.security.spec.AlgorithmParameterSpec)}
      * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param params

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.motif;
+package j86.com.sun.java.swing.plaf.motif;
 
 import j86.sun.swing.SwingUtilities2;
 
@@ -35,11 +35,11 @@ import j86.java.awt.FontMetrics;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Component;
 import j86.java.awt.Insets;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.java.awt.Container;
 
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.text.View;
 
 /*
  * @author Jeff Dinkins

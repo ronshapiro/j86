@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.rtf;
+package j86.javax.swing.text.rtf;
 
 import j86.java.lang.*;
 import j86.java.util.*;
@@ -30,7 +30,7 @@ import j86.java.io.*;
 import j86.java.awt.Font;
 import j86.java.awt.Color;
 
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * Takes a sequence of RTF tokens and text and appends the text

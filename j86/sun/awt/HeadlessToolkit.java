@@ -26,13 +26,13 @@
 package j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.dnd.*;
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.im.InputMethodHighlight;
-import j86.j86.j86.java.awt.image.*;
-import j86.j86.java.awt.datatransfer.Clipboard;
-import j86.j86.java.awt.peer.*;
+import j86.java.awt.dnd.*;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.event.*;
+import j86.java.awt.im.InputMethodHighlight;
+import j86.java.awt.image.*;
+import j86.java.awt.datatransfer.Clipboard;
+import j86.java.awt.peer.*;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.net.URL;
 import j86.java.util.Map;

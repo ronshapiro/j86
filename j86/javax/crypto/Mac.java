@@ -29,7 +29,7 @@ import j86.java.util.*;
 
 import j86.java.security.*;
 import j86.java.security.Provider.Service;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.java.nio.ByteBuffer;
 

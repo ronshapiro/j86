@@ -25,10 +25,10 @@
 
 package com.j86.sun.tracing;
 
-import j86.j86.java.lang.annotation.Target;
-import j86.j86.java.lang.annotation.Retention;
-import j86.j86.java.lang.annotation.RetentionPolicy;
-import j86.j86.java.lang.annotation.ElementType;
+import j86.java.lang.annotation.Target;
+import j86.java.lang.annotation.Retention;
+import j86.java.lang.annotation.RetentionPolicy;
+import j86.java.lang.annotation.ElementType;
 
 /**
  * An annotation used to override the name of a probe.

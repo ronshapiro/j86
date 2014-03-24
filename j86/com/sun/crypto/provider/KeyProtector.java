@@ -38,14 +38,14 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.NoSuchProviderException;
 import j86.java.security.UnrecoverableKeyException;
 import j86.java.security.AlgorithmParameters;
-import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.spec.PKCS8EncodedKeySpec;
 
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.CipherSpi;
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.IllegalBlockSizeException;
 import j86.javax.crypto.SealedObject;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 import j86.sun.security.x509.AlgorithmId;
 import j86.sun.security.util.ObjectIdentifier;
 

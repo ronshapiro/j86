@@ -23,35 +23,35 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.jarsigner;
+package j86.sun.security.tools.jarsigner;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.util.zip.*;
-import j86.j86.java.util.jar.*;
+import j86.java.util.zip.*;
+import j86.java.util.jar.*;
 import j86.java.math.BigInteger;
 import j86.java.net.URI;
 import j86.java.net.URISyntaxException;
 import j86.java.text.Collator;
 import j86.java.text.MessageFormat;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
 import j86.java.security.*;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Constructor;
 
 import j86.com.sun.jarsigner.ContentSigner;
 import j86.com.sun.jarsigner.ContentSignerParameters;
 import j86.java.net.SocketTimeoutException;
 import j86.java.net.URL;
 import j86.java.net.URLClassLoader;
-import j86.j86.java.security.cert.CertPath;
-import j86.j86.java.security.cert.CertPathValidator;
-import j86.j86.java.security.cert.CertificateExpiredException;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.CertificateNotYetValidException;
-import j86.j86.java.security.cert.PKIXParameters;
-import j86.j86.java.security.cert.TrustAnchor;
+import j86.java.security.cert.CertPath;
+import j86.java.security.cert.CertPathValidator;
+import j86.java.security.cert.CertificateExpiredException;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertificateNotYetValidException;
+import j86.java.security.cert.PKIXParameters;
+import j86.java.security.cert.TrustAnchor;
 import j86.java.util.Map.Entry;
 import j86.sun.security.tools.KeyStoreUtil;
 import j86.sun.security.tools.PathList;
@@ -81,7 +81,7 @@ public class Main {
     // for i18n
     private static final j86.java.util.ResourceBundle rb =
         j86.java.util.ResourceBundle.getBundle
-        ("j86.j86.sun.security.tools.jarsigner.Resources");
+        ("j86.sun.security.tools.jarsigner.Resources");
     private static final Collator collator = Collator.getInstance();
     static {
         // this is for case insensitive string comparisions
@@ -1726,7 +1726,7 @@ public class Main {
         } catch (IOException ioe) {
             throw new RuntimeException(rb.getString("keystore.load.") +
                                         ioe.getMessage());
-        } catch (j86.j86.java.security.cert.CertificateException ce) {
+        } catch (j86.java.security.cert.CertificateException ce) {
             throw new RuntimeException(rb.getString("certificate.exception.") +
                                         ce.getMessage());
         } catch (NoSuchProviderException pe) {
@@ -1744,7 +1744,7 @@ public class Main {
 
     X509Certificate getTsaCert(String alias) {
 
-        j86.j86.java.security.cert.Certificate cs = null;
+        j86.java.security.cert.Certificate cs = null;
 
         try {
             cs = store.getCertificate(alias);
@@ -1803,7 +1803,7 @@ public class Main {
                     }
                 }
             }
-        } catch (j86.j86.java.security.cert.CertificateParsingException e) {
+        } catch (j86.java.security.cert.CertificateParsingException e) {
             // shouldn't happen
         }
 
@@ -1838,7 +1838,7 @@ public class Main {
         Key key = null;
 
         try {
-            j86.j86.java.security.cert.Certificate[] cs = null;
+            j86.java.security.cert.Certificate[] cs = null;
             if (altCertChain != null) {
                 try (FileInputStream fis = new FileInputStream(altCertChain)) {
                     cs = CertificateFactory.getInstance("X.509").

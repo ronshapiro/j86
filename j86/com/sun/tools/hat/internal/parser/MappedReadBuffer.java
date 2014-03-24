@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.parser;
+package j86.com.sun.tools.hat.internal.parser;
 
 import j86.java.io.IOException;
 import j86.java.io.RandomAccessFile;
 import j86.java.nio.MappedByteBuffer;
-import j86.j86.java.nio.channels.FileChannel;
+import j86.java.nio.channels.FileChannel;
 
 /**
  * Implementation of ReadBuffer using mapped file buffer

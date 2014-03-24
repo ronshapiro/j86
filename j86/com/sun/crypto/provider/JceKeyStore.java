@@ -36,9 +36,9 @@ import j86.java.security.PrivateKey;
 import j86.java.security.KeyStoreSpi;
 import j86.java.security.KeyStoreException;
 import j86.java.security.UnrecoverableKeyException;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertificateException;
 import j86.javax.crypto.SealedObject;
 
 /**

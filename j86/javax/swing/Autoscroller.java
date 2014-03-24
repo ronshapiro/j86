@@ -26,7 +26,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 /**
  * Autoscroller is responsible for generating synthetic mouse dragged

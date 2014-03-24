@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.util.Iterator;
 
 import j86.java.util.TooManyListenersException;
 
-import j86.j86.java.beans.beancontext.BeanContext;
+import j86.java.beans.beancontext.BeanContext;
 
-import j86.j86.java.beans.beancontext.BeanContextServiceProvider;
+import j86.java.beans.beancontext.BeanContextServiceProvider;
 
-import j86.j86.java.beans.beancontext.BeanContextServicesListener;
+import j86.java.beans.beancontext.BeanContextServicesListener;
 
 
 /**

@@ -32,8 +32,8 @@ package j86.java.net;
  * class is its field name.
  *
  * <p> In this release, the socket options defined here are used by {@link
- * j86.j86.java.nio.channels.NetworkChannel network} channels in the {@link
- * j86.j86.java.nio.channels channels} package.
+ * j86.java.nio.channels.NetworkChannel network} channels in the {@link
+ * j86.java.nio.channels channels} package.
  *
  * @since 1.7
  */
@@ -202,7 +202,7 @@ public final class StandardSocketOptions {
      * any unsent data before the connection is closed.
      *
      * <p> This socket option is intended for use with sockets that are configured
-     * in {@link j86.j86.java.nio.channels.SelectableChannel#isBlocking() blocking} mode
+     * in {@link j86.java.nio.channels.SelectableChannel#isBlocking() blocking} mode
      * only. The behavior of the {@code close} method when this option is
      * enabled on a non-blocking socket is not defined.
      *
@@ -267,7 +267,7 @@ public final class StandardSocketOptions {
      * the socket option can be queried or changed prior to binding the socket
      * is system dependent.
      *
-     * @see j86.j86.java.nio.channels.MulticastChannel
+     * @see j86.java.nio.channels.MulticastChannel
      * @see MulticastSocket#setInterface
      */
     public static final SocketOption<NetworkInterface> IP_MULTICAST_IF =
@@ -294,7 +294,7 @@ public final class StandardSocketOptions {
      * the socket is bound. Whether the socket option can be queried or changed
      * prior to binding the socket is system dependent.
      *
-     * @see j86.j86.java.nio.channels.MulticastChannel
+     * @see j86.java.nio.channels.MulticastChannel
      * @see MulticastSocket#setTimeToLive
      */
     public static final SocketOption<Integer> IP_MULTICAST_TTL =
@@ -319,7 +319,7 @@ public final class StandardSocketOptions {
      * bound. Whether the socket option can be queried or changed prior to
      * binding the socket is system dependent.
      *
-     * @see j86.j86.java.nio.channels.MulticastChannel
+     * @see j86.java.nio.channels.MulticastChannel
      *  @see MulticastSocket#setLoopbackMode
      */
     public static final SocketOption<Boolean> IP_MULTICAST_LOOP =

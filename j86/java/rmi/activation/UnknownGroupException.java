@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 /**
  * An <code>UnknownGroupException</code> is thrown by methods of classes and
- * interfaces in the <code>j86.j86.java.rmi.activation</code> package when the
+ * interfaces in the <code>j86.java.rmi.activation</code> package when the
  * <code>ActivationGroupID</code> parameter to the method is determined to be
  * invalid, i.e., not known by the <code>ActivationSystem</code>.  An
  * <code>UnknownGroupException</code> is also thrown if the
@@ -36,11 +36,11 @@ package j86.j86.java.rmi.activation;
  *
  * @author  Ann Wollrath
  * @since   1.2
- * @see     j86.j86.java.rmi.activation.Activatable
- * @see     j86.j86.java.rmi.activation.ActivationGroup
- * @see     j86.j86.java.rmi.activation.ActivationGroupID
- * @see     j86.j86.java.rmi.activation.ActivationMonitor
- * @see     j86.j86.java.rmi.activation.ActivationSystem
+ * @see     j86.java.rmi.activation.Activatable
+ * @see     j86.java.rmi.activation.ActivationGroup
+ * @see     j86.java.rmi.activation.ActivationGroupID
+ * @see     j86.java.rmi.activation.ActivationMonitor
+ * @see     j86.java.rmi.activation.ActivationSystem
  */
 public class UnknownGroupException extends ActivationException {
 

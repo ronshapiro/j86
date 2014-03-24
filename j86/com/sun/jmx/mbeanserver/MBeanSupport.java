@@ -38,7 +38,7 @@ import j86.javax.management.NotCompliantMBeanException;
 import j86.javax.management.ObjectName;
 import j86.javax.management.ReflectionException;
 import j86.com.sun.jmx.mbeanserver.MXBeanMappingFactory;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Base class for MBeans.  There is one instance of this class for

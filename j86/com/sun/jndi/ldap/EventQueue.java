@@ -28,11 +28,11 @@ package j86.com.sun.jndi.ldap;
 import j86.java.util.Vector;
 import j86.java.util.EventObject;
 
-import j86.j86.javax.naming.event.NamingEvent;
-import j86.j86.javax.naming.event.NamingExceptionEvent;
-import j86.j86.javax.naming.event.NamingListener;
-import j86.j86.javax.naming.ldap.UnsolicitedNotificationEvent;
-import j86.j86.javax.naming.ldap.UnsolicitedNotificationListener;
+import j86.javax.naming.event.NamingEvent;
+import j86.javax.naming.event.NamingExceptionEvent;
+import j86.javax.naming.event.NamingListener;
+import j86.javax.naming.ldap.UnsolicitedNotificationEvent;
+import j86.javax.naming.ldap.UnsolicitedNotificationListener;
 
 /**
  * Package private class used by EventSupport to dispatch events.

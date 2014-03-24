@@ -31,16 +31,16 @@ import j86.java.util.Vector;
 import j86.java.io.*;
 import j86.java.util.StringTokenizer;
 import j86.java.net.URL;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
 import j86.java.net.URLConnection;
 import j86.java.security.Permission;
-import j86.j86.java.util.jar.*;
+import j86.java.util.jar.*;
 import j86.java.net.JarURLConnection;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * ExtCheck reports on clashes between a specified (target)

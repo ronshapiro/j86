@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
 import j86.java.awt.RenderingHints;
 
 /**

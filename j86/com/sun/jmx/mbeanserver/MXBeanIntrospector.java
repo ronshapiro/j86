@@ -27,12 +27,12 @@ package j86.com.sun.jmx.mbeanserver;
 
 import j86.com.sun.jmx.mbeanserver.MBeanIntrospector.MBeanInfoMap;
 import j86.com.sun.jmx.mbeanserver.MBeanIntrospector.PerInterfaceMap;
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.j86.java.lang.reflect.GenericArrayType;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.GenericArrayType;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
 import j86.javax.management.Descriptor;
 import j86.javax.management.ImmutableDescriptor;
 import j86.javax.management.MBeanAttributeInfo;
@@ -40,11 +40,11 @@ import j86.javax.management.MBeanException;
 import j86.javax.management.MBeanOperationInfo;
 import j86.javax.management.MBeanParameterInfo;
 import j86.javax.management.NotCompliantMBeanException;
-import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanParameterInfo;
-import j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
-import j86.j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanParameterInfo;
+import j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
+import j86.javax.management.openmbean.OpenType;
 
 /**
  * Introspector for MXBeans.  There is exactly one instance of this class.

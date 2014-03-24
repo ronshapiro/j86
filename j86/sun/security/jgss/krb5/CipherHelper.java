@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 import j86.javax.crypto.CipherInputStream;
 import j86.javax.crypto.CipherOutputStream;
 import j86.java.io.InputStream;
@@ -40,10 +40,10 @@ import j86.java.security.MessageDigest;
 import j86.java.security.GeneralSecurityException;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.sun.security.krb5.*;
-import j86.j86.j86.sun.security.krb5.internal.crypto.Des3;
-import j86.j86.j86.sun.security.krb5.internal.crypto.Aes128;
-import j86.j86.j86.sun.security.krb5.internal.crypto.Aes256;
-import j86.j86.j86.sun.security.krb5.internal.crypto.ArcFourHmac;
+import j86.sun.security.krb5.internal.crypto.Des3;
+import j86.sun.security.krb5.internal.crypto.Aes128;
+import j86.sun.security.krb5.internal.crypto.Aes256;
+import j86.sun.security.krb5.internal.crypto.ArcFourHmac;
 
 class CipherHelper {
 

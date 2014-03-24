@@ -26,8 +26,8 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.event.EventQueue;
-import j86.j86.com.sun.jdi.event.EventSet;
+import j86.com.sun.jdi.event.EventQueue;
+import j86.com.sun.jdi.event.EventSet;
 
 import j86.java.util.*;
 

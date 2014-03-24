@@ -26,8 +26,8 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.*;
-import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.spi.*;
 import j86.java.net.*;
 import j86.java.io.*;
 import j86.java.util.Map;

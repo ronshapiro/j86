@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.sun.swing.DefaultLookup;
 import j86.sun.swing.UIAction;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
 
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
@@ -42,7 +42,7 @@ import j86.java.awt.Dimension;
 import j86.java.awt.Point;
 import j86.java.awt.Insets;
 import j86.java.awt.Graphics;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 /**
  * A default L&amp;F implementation of ScrollPaneUI.
@@ -528,8 +528,8 @@ public class BasicScrollPaneUI
      *
      * @see j86.javax.swing.JScrollPane#isWheelScrollingEnabled
      * @see #createMouseWheelListener
-     * @see j86.j86.java.awt.event.MouseWheelListener
-     * @see j86.j86.java.awt.event.MouseWheelEvent
+     * @see j86.java.awt.event.MouseWheelListener
+     * @see j86.java.awt.event.MouseWheelEvent
      * @since 1.4
      */
     protected class MouseWheelHandler implements MouseWheelListener {

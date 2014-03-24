@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;
 
 /**
  * Indicates that an annotation type is automatically inherited.  If

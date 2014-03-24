@@ -26,7 +26,7 @@
 package com.j86.sun.management;
 
 import j86.sun.management.VMOptionCompositeData;
-import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeData;
 
 /**
  * Information about a VM option including its value and

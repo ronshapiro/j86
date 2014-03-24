@@ -28,7 +28,7 @@ package j86.sun.security.ssl;
 import j86.java.io.IOException;
 import j86.java.io.PrintStream;
 import j86.java.util.*;
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 /**
  * This file contains all the classes relevant to TLS Extensions for the

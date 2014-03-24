@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when an exception occurs in the target VM.
  * When an enabled ExceptionRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
- * {@link j86.j86.com.sun.jdi.event.ExceptionEvent ExceptionEvent} will be placed
- * on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.com.sun.jdi.event.ExceptionEvent ExceptionEvent} will be placed
+ * on the {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ExceptionRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see j86.j86.com.sun.jdi.event.ExceptionEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.ExceptionEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field
@@ -61,7 +61,7 @@ public interface ExceptionRequest extends EventRequest {
      * <p>
      * Note that at the time an exception is thrown, it is not always
      * possible to determine whether it is truly caught. See
-     * {@link j86.j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
+     * {@link j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
      * details.
      * @return
      * boolean true if caught exceptions will be reported, false
@@ -75,7 +75,7 @@ public interface ExceptionRequest extends EventRequest {
      * <p>
      * Note that at the time an exception is thrown, it is not always
      * possible to determine whether it is truly uncaught. See
-     * {@link j86.j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
+     * {@link j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
      * details.
      * @return
      * boolean true if caught exceptions will be reported, false

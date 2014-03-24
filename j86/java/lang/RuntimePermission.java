@@ -313,7 +313,7 @@ import j86.java.util.StringTokenizer;
  * <tr>
  *   <td>preferences</td>
  *   <td>Represents the permission required to get access to the
- *   j86.j86.java.util.prefs.Preferences implementations user or system root
+ *   j86.java.util.prefs.Preferences implementations user or system root
  *   which in turn allows retrieval or update operations within the
  *   Preferences persistent backing store.) </td>
  *   <td>This permission allows the user to read from or write to the

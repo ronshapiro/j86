@@ -24,22 +24,22 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.im.InputContext;
-import j86.j86.j86.java.awt.image.BufferStrategy;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.java.awt.peer.ComponentPeer;
-import j86.j86.java.awt.peer.WindowPeer;
+import j86.java.awt.event.*;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.im.InputContext;
+import j86.java.awt.image.BufferStrategy;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.WindowPeer;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.OptionalDataException;
 import j86.java.io.Serializable;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.AccessController;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
@@ -48,18 +48,18 @@ import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Set;
 import j86.java.util.Vector;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
 import j86.javax.accessibility.*;
 import j86.sun.awt.AWTAccessor;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.CausedFocusEvent;
 import j86.sun.awt.SunToolkit;
-import j86.j86.sun.awt.util.IdentityArrayList;
+import j86.sun.awt.util.IdentityArrayList;
 import j86.sun.java2d.Disposer;
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * A {@code Window} object is a top-level window with no borders and no

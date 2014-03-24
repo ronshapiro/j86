@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.IOException;
 import j86.java.net.Socket;
 import j86.java.net.SocketOption;
 import j86.java.net.SocketAddress;
 import j86.java.nio.ByteBuffer;
-import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for stream-oriented connecting sockets.
@@ -132,9 +132,9 @@ public abstract class SocketChannel
      * Opens a socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openSocketChannel
+     * j86.java.nio.channels.spi.SelectorProvider#openSocketChannel
      * openSocketChannel} method of the system-wide default {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.  </p>
+     * j86.java.nio.channels.spi.SelectorProvider} object.  </p>
      *
      * @return  A new socket channel
      *

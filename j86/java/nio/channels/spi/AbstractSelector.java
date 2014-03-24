@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.channels.spi;
+package j86.java.nio.channels.spi;
 
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.SelectionKey;
-import j86.j86.java.nio.channels.Selector;
+import j86.java.nio.channels.SelectionKey;
+import j86.java.nio.channels.Selector;
 import j86.java.util.HashSet;
 import j86.java.util.Set;
-import j86.j86.j86.sun.nio.ch.Interruptible;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.sun.nio.ch.Interruptible;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
 
 
 /**
@@ -122,7 +122,7 @@ public abstract class AbstractSelector
      * <p> An implementation of this method must arrange for any other thread
      * that is blocked in a selection operation upon this selector to return
      * immediately as if by invoking the {@link
-     * j86.j86.java.nio.channels.Selector#wakeup wakeup} method. </p>
+     * j86.java.nio.channels.Selector#wakeup wakeup} method. </p>
      *
      * @throws  IOException
      *          If an I/O error occurs while closing the selector

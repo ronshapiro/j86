@@ -27,21 +27,21 @@ package j86.javax.imageio;
 
 import j86.java.awt.Point;
 import j86.java.awt.Transparency;
-import j86.j86.j86.java.awt.image.BandedSampleModel;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.ComponentColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.PixelInterleavedSampleModel;
-import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BandedSampleModel;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.ComponentColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.java.awt.image.PixelInterleavedSampleModel;
+import j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.WritableRaster;
 import j86.java.util.Hashtable;
 
 /**
@@ -879,20 +879,20 @@ public class ImageTypeSpecifier {
      * <code>bufferedImageType</code> is not one of the standard
      * types, or is equal to <code>TYPE_CUSTOM</code>.
      *
-     * @see j86.j86.j86.java.awt.image.BufferedImage
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_ARGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_ARGB_PRE
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_BGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_3BYTE_BGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR_PRE
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_565_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_555_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_GRAY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_GRAY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_BINARY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_INDEXED
+     * @see j86.java.awt.image.BufferedImage
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_ARGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_ARGB_PRE
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_BGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_3BYTE_BGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR_PRE
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_565_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_555_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_GRAY
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_GRAY
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_BINARY
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_INDEXED
      */
     public static
         ImageTypeSpecifier createFromBufferedImageType(int bufferedImageType) {
@@ -942,21 +942,21 @@ public class ImageTypeSpecifier {
      * @return an <code>int</code> representing a
      * <code>BufferedImage</code> type.
      *
-     * @see j86.j86.j86.java.awt.image.BufferedImage
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_CUSTOM
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_ARGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_ARGB_PRE
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_INT_BGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_3BYTE_BGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR_PRE
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_565_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_555_RGB
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_GRAY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_USHORT_GRAY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_BINARY
-     * @see j86.j86.j86.java.awt.image.BufferedImage#TYPE_BYTE_INDEXED
+     * @see j86.java.awt.image.BufferedImage
+     * @see j86.java.awt.image.BufferedImage#TYPE_CUSTOM
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_ARGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_ARGB_PRE
+     * @see j86.java.awt.image.BufferedImage#TYPE_INT_BGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_3BYTE_BGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR
+     * @see j86.java.awt.image.BufferedImage#TYPE_4BYTE_ABGR_PRE
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_565_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_555_RGB
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_GRAY
+     * @see j86.java.awt.image.BufferedImage#TYPE_USHORT_GRAY
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_BINARY
+     * @see j86.java.awt.image.BufferedImage#TYPE_BYTE_INDEXED
      */
     public int getBufferedImageType() {
         BufferedImage bi = createBufferedImage(1, 1);

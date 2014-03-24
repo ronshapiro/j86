@@ -27,11 +27,11 @@ package j86.javax.swing;
 
 import j86.sun.awt.AWTAccessor;
 
-import j86.j86.javax.swing.plaf.LayerUI;
-import j86.j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.LayerUI;
+import j86.javax.swing.border.Border;
 import j86.javax.accessibility.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.IOException;
@@ -46,7 +46,7 @@ import j86.java.security.PrivilegedAction;
  * receive notifications of all {@code AWTEvent}s generated within its borders.
  * <p>
  * {@code JLayer} delegates the handling of painting and input events to a
- * {@link j86.j86.javax.swing.plaf.LayerUI} object, which performs the actual decoration.
+ * {@link j86.javax.swing.plaf.LayerUI} object, which performs the actual decoration.
  * <p>
  * The custom painting implemented in the {@code LayerUI} and events notification
  * work for the JLayer itself and all its subcomponents.
@@ -58,7 +58,7 @@ import j86.java.security.PrivilegedAction;
  * over compound component or catch input events from its subcomponents.
  * <pre>
  * import j86.javax.swing.*;
- * import j86.j86.javax.swing.plaf.LayerUI;
+ * import j86.javax.swing.plaf.LayerUI;
  * import j86.java.awt.*;
  *
  * public class JLayerSample {
@@ -140,9 +140,9 @@ import j86.java.security.PrivilegedAction;
  * @see #JLayer(Component)
  * @see #setView(Component)
  * @see #getView()
- * @see j86.j86.javax.swing.plaf.LayerUI
+ * @see j86.javax.swing.plaf.LayerUI
  * @see #JLayer(Component, LayerUI)
- * @see #setUI(j86.j86.javax.swing.plaf.LayerUI)
+ * @see #setUI(j86.javax.swing.plaf.LayerUI)
  * @see #getUI()
  * @since 1.7
  *
@@ -165,7 +165,7 @@ public final class JLayer<V extends Component>
 
     /**
      * Creates a new {@code JLayer} object with a {@code null} view component
-     * and default {@link j86.j86.javax.swing.plaf.LayerUI}.
+     * and default {@link j86.javax.swing.plaf.LayerUI}.
      *
      * @see #setView
      * @see #setUI
@@ -176,7 +176,7 @@ public final class JLayer<V extends Component>
 
     /**
      * Creates a new {@code JLayer} object
-     * with default {@link j86.j86.javax.swing.plaf.LayerUI}.
+     * with default {@link j86.javax.swing.plaf.LayerUI}.
      *
      * @param view the component to be decorated by this {@code JLayer}
      *
@@ -188,10 +188,10 @@ public final class JLayer<V extends Component>
 
     /**
      * Creates a new {@code JLayer} object with the specified view component
-     * and {@link j86.j86.javax.swing.plaf.LayerUI} object.
+     * and {@link j86.javax.swing.plaf.LayerUI} object.
      *
      * @param view the component to be decorated
-     * @param ui the {@link j86.j86.javax.swing.plaf.LayerUI} delegate
+     * @param ui the {@link j86.javax.swing.plaf.LayerUI} delegate
      * to be used by this {@code JLayer}
      */
     public JLayer(V view, LayerUI<V> ui) {
@@ -236,10 +236,10 @@ public final class JLayer<V extends Component>
     }
 
     /**
-     * Sets the {@link j86.j86.javax.swing.plaf.LayerUI} which will perform painting
+     * Sets the {@link j86.javax.swing.plaf.LayerUI} which will perform painting
      * and receive input events for this {@code JLayer}.
      *
-     * @param ui the {@link j86.j86.javax.swing.plaf.LayerUI} for this {@code JLayer}
+     * @param ui the {@link j86.javax.swing.plaf.LayerUI} for this {@code JLayer}
      */
     public void setUI(LayerUI<? super V> ui) {
         this.layerUI = ui;
@@ -247,7 +247,7 @@ public final class JLayer<V extends Component>
     }
 
     /**
-     * Returns the {@link j86.j86.javax.swing.plaf.LayerUI} for this {@code JLayer}.
+     * Returns the {@link j86.javax.swing.plaf.LayerUI} for this {@code JLayer}.
      *
      * @return the {@code LayerUI} for this {@code JLayer}
      */
@@ -395,7 +395,7 @@ public final class JLayer<V extends Component>
 
     /**
      * Delegates its functionality to the
-     * {@link j86.j86.javax.swing.plaf.LayerUI#paintImmediately(int, int, int, int, JLayer)} method,
+     * {@link j86.javax.swing.plaf.LayerUI#paintImmediately(int, int, int, int, JLayer)} method,
      * if {@code LayerUI} is set.
      *
      * @param x  the x value of the region to be painted
@@ -417,7 +417,7 @@ public final class JLayer<V extends Component>
     }
 
     /**
-     * Delegates all painting to the {@link j86.j86.javax.swing.plaf.LayerUI} object.
+     * Delegates all painting to the {@link j86.javax.swing.plaf.LayerUI} object.
      *
      * @param g the {@code Graphics} to render to
      */
@@ -437,7 +437,7 @@ public final class JLayer<V extends Component>
     /**
      * This method is empty, because all painting is done by
      * {@link #paint(Graphics)} and
-     * {@link j86.j86.javax.swing.plaf.LayerUI#update(Graphics, JComponent)} methods
+     * {@link j86.javax.swing.plaf.LayerUI#update(Graphics, JComponent)} methods
      */
     protected void paintComponent(Graphics g) {
     }
@@ -520,7 +520,7 @@ public final class JLayer<V extends Component>
      * Returns the bitmap of event mask to receive by this {@code JLayer}
      * and its {@code LayerUI}.
      * <p>
-     * It means that {@link j86.j86.javax.swing.plaf.LayerUI#eventDispatched(AWTEvent, JLayer)} method
+     * It means that {@link j86.javax.swing.plaf.LayerUI#eventDispatched(AWTEvent, JLayer)} method
      * will only receive events that match the event mask.
      * <p>
      * By default {@code JLayer} receives no events.
@@ -532,7 +532,7 @@ public final class JLayer<V extends Component>
     }
 
     /**
-     * Delegates its functionality to the {@link j86.j86.javax.swing.plaf.LayerUI#updateUI(JLayer)} method,
+     * Delegates its functionality to the {@link j86.javax.swing.plaf.LayerUI#updateUI(JLayer)} method,
      * if {@code LayerUI} is set.
      */
     public void updateUI() {
@@ -673,7 +673,7 @@ public final class JLayer<V extends Component>
     }
 
     /**
-     * Delegates its functionality to the {@link j86.j86.javax.swing.plaf.LayerUI#doLayout(JLayer)} method,
+     * Delegates its functionality to the {@link j86.javax.swing.plaf.LayerUI#doLayout(JLayer)} method,
      * if {@code LayerUI} is set.
      */
     public void doLayout() {

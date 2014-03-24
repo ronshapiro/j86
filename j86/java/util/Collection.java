@@ -25,9 +25,9 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.stream.Stream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.function.Predicate;
+import j86.java.util.stream.Stream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * The root interface in the <i>collection hierarchy</i>.  A collection

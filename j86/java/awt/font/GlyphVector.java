@@ -27,18 +27,18 @@
  * @author Charlton Innovations, Inc.
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Font;
 import j86.java.awt.Polygon;        // remind - need a floating point version
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.font.GlyphMetrics;
-import j86.j86.java.awt.font.GlyphJustificationInfo;
+import j86.java.awt.font.GlyphMetrics;
+import j86.java.awt.font.GlyphJustificationInfo;
 
 /**
  * A <code>GlyphVector</code> object is a collection of glyphs

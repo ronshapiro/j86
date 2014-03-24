@@ -45,7 +45,7 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package j86.j86.j86.sun.security.pkcs11.wrapper;
+package j86.sun.security.pkcs11.wrapper;
 
 /**
  * This interface holds constants of the PKCS#11 v2.11 standard.

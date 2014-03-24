@@ -35,7 +35,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 /**
  * <p>Interface for enabling iteration over sets of <int index, int value>,

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventListener;
 
@@ -35,7 +35,7 @@ import j86.java.util.EventListener;
  href="http://docs.oracle.com/javase/tutorial/uiswing/events/treeselectionlistener.html">How to Write a Tree Selection Listener</a>,
  * a section in <em>The Java Tutorial.</em>
  *
- * @see j86.j86.javax.swing.tree.TreeSelectionModel
+ * @see j86.javax.swing.tree.TreeSelectionModel
  * @see j86.javax.swing.JTree
  *
  * @author Scott Violet

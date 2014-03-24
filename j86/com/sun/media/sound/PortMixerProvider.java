@@ -26,7 +26,7 @@
 package j86.com.sun.media.sound;
 
 import j86.javax.sound.sampled.Mixer;
-import j86.j86.javax.sound.sampled.spi.MixerProvider;
+import j86.javax.sound.sampled.spi.MixerProvider;
 
 
 /**

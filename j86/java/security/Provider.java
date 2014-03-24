@@ -28,11 +28,11 @@ package j86.java.security;
 import j86.java.io.*;
 import j86.java.util.*;
 import static j86.java.util.Locale.ENGLISH;
-import j86.j86.java.lang.ref.*;
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Function;
+import j86.java.lang.ref.*;
+import j86.java.lang.reflect.*;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Function;
 
 /**
  * This class represents a "provider" for the
@@ -1315,7 +1315,7 @@ public abstract class Provider extends Properties {
         addEngine("CertPathBuilder",                    false, null);
         addEngine("CertPathValidator",                  false, null);
         addEngine("CertStore",                          false,
-                            "j86.j86.java.security.cert.CertStoreParameters");
+                            "j86.java.security.cert.CertStoreParameters");
         // JCE
         addEngine("Cipher",                             true,  null);
         addEngine("ExemptionMechanism",                 false, null);
@@ -1337,7 +1337,7 @@ public abstract class Provider extends Properties {
                             "j86.java.security.Policy$Parameters");
         // CONFIGURATION
         addEngine("Configuration",                      false,
-                            "j86.j86.javax.security.auth.login.Configuration$Parameters");
+                            "j86.javax.security.auth.login.Configuration$Parameters");
         // XML DSig
         addEngine("XMLSignatureFactory",                false, null);
         addEngine("KeyInfoFactory",                     false, null);

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.io.*;
-import j86.j86.java.awt.datatransfer.*;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.java.awt.datatransfer.*;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * A transferable implementation for the default data transfer of some Swing
@@ -60,7 +60,7 @@ class BasicTransferable implements Transferable, UIResource {
             stringFlavors[1] = DataFlavor.stringFlavor;
 
         } catch (ClassNotFoundException cle) {
-            System.err.println("error initializing j86.j86.j86.javax.swing.plaf.basic.BasicTranserable");
+            System.err.println("error initializing j86.javax.swing.plaf.basic.BasicTranserable");
         }
     }
 

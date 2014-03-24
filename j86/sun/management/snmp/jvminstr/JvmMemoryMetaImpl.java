@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
@@ -36,15 +36,15 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemoryMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemManagerTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemGCTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemPoolTableMeta;
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemMgrPoolRelTableMeta;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.jvmmib.JvmMemoryMeta;
+import j86.sun.management.snmp.jvmmib.JvmMemManagerTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmMemGCTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmMemPoolTableMeta;
+import j86.sun.management.snmp.jvmmib.JvmMemMgrPoolRelTableMeta;
+import j86.sun.management.snmp.util.MibLogger;
 
 /**
  * The class is used for representing SNMP metadata for the "JvmMemory" group.

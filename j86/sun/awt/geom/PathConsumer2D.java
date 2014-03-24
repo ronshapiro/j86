@@ -23,34 +23,34 @@
  * questions.
  */
 
-package j86.j86.sun.awt.geom;
+package j86.sun.awt.geom;
 
 public interface PathConsumer2D {
     /**
-     * @see j86.j86.java.awt.geom.Path2D.Float.moveTo
+     * @see j86.java.awt.geom.Path2D.Float.moveTo
      */
     public void moveTo(float x, float y);
 
     /**
-     * @see j86.j86.java.awt.geom.Path2D.Float.lineTo
+     * @see j86.java.awt.geom.Path2D.Float.lineTo
      */
     public void lineTo(float x, float y);
 
     /**
-     * @see j86.j86.java.awt.geom.Path2D.Float.quadTo
+     * @see j86.java.awt.geom.Path2D.Float.quadTo
      */
     public void quadTo(float x1, float y1,
                        float x2, float y2);
 
     /**
-     * @see j86.j86.java.awt.geom.Path2D.Float.curveTo
+     * @see j86.java.awt.geom.Path2D.Float.curveTo
      */
     public void curveTo(float x1, float y1,
                         float x2, float y2,
                         float x3, float y3);
 
     /**
-     * @see j86.j86.java.awt.geom.Path2D.Float.closePath
+     * @see j86.java.awt.geom.Path2D.Float.closePath
      */
     public void closePath();
 
@@ -59,7 +59,7 @@ public interface PathConsumer2D {
      * iteration of the path segments is completely done.  This
      * method serves to trigger the end of path processing in the
      * consumer that would normally be triggered when a
-     * {@link j86.j86.java.awt.geom.PathIterator PathIterator}
+     * {@link j86.java.awt.geom.PathIterator PathIterator}
      * returns {@code true} from its {@code done} method.
      */
     public void pathDone();
@@ -71,7 +71,7 @@ public interface PathConsumer2D {
      * of the above methods.
      * The specific pointer it returns is a pointer to a
      * PathConsumerVec structure as defined in the include file
-     * src/share/native/j86.j86.sun.java2d.pipe/PathConsumer2D.h
+     * src/share/native/j86.sun.java2d.pipe/PathConsumer2D.h
      * @return a native pointer to a PathConsumerVec structure.
      */
     public long getNativeConsumer();

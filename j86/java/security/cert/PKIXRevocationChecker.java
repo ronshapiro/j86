@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.net.URI;
 import j86.java.util.ArrayList;

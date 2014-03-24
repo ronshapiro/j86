@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 
 
@@ -374,7 +374,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this};
-        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent"};
+        String[] signature = {"j86.com.sun.jmx.snmp.agent.SnmpMibAgent"};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));
@@ -420,7 +420,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, oids};
-        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent",
+        String[] signature = {"j86.com.sun.jmx.snmp.agent.SnmpMibAgent",
         oids.getClass().getName()};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
@@ -467,7 +467,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, contextName};
-        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String"};
+        String[] signature = {"j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String"};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));
@@ -516,7 +516,7 @@ public abstract class SnmpMibAgent
         // Then update the reference to the new adaptor server.
         //
         Object[] params = {this, contextName, oids};
-        String[] signature = {"j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String", oids.getClass().getName()};
+        String[] signature = {"j86.com.sun.jmx.snmp.agent.SnmpMibAgent", "j86.java.lang.String", oids.getClass().getName()};
         try {
             adaptor = (SnmpMibHandler)(server.invoke(name, "addMib", params,
                                                      signature));

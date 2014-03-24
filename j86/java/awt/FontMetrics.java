@@ -26,9 +26,9 @@
 package j86.java.awt;
 
 import j86.java.awt.Graphics2D;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.LineMetrics;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.LineMetrics;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.text.CharacterIterator;
 
 /**

@@ -106,7 +106,7 @@ package j86.java.util;
  * <p>The {@code Queue} interface does not define the <i>blocking queue
  * methods</i>, which are common in concurrent programming.  These methods,
  * which wait for elements to appear or for space to become available, are
- * defined in the {@link j86.j86.java.util.concurrent.BlockingQueue} interface, which
+ * defined in the {@link j86.java.util.concurrent.BlockingQueue} interface, which
  * extends this interface.
  *
  * <p>{@code Queue} implementations generally do not allow insertion
@@ -132,11 +132,11 @@ package j86.java.util;
  * @see j86.java.util.Collection
  * @see LinkedList
  * @see PriorityQueue
- * @see j86.j86.java.util.concurrent.LinkedBlockingQueue
- * @see j86.j86.java.util.concurrent.BlockingQueue
- * @see j86.j86.java.util.concurrent.ArrayBlockingQueue
- * @see j86.j86.java.util.concurrent.LinkedBlockingQueue
- * @see j86.j86.java.util.concurrent.PriorityBlockingQueue
+ * @see j86.java.util.concurrent.LinkedBlockingQueue
+ * @see j86.java.util.concurrent.BlockingQueue
+ * @see j86.java.util.concurrent.ArrayBlockingQueue
+ * @see j86.java.util.concurrent.LinkedBlockingQueue
+ * @see j86.java.util.concurrent.PriorityBlockingQueue
  * @since 1.5
  * @author Doug Lea
  * @param <E> the type of elements held in this collection

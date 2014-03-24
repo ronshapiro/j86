@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.text.spi;
+package j86.java.text.spi;
 
 import j86.java.text.NumberFormat;
 import j86.java.util.Locale;
-import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
@@ -53,7 +53,7 @@ public abstract class NumberFormatProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a currency formatter
      * @see j86.java.text.NumberFormat#getCurrencyInstance(j86.java.util.Locale)
@@ -74,7 +74,7 @@ public abstract class NumberFormatProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a number format for integer values
      * @see j86.java.text.NumberFormat#getIntegerInstance(j86.java.util.Locale)
@@ -89,7 +89,7 @@ public abstract class NumberFormatProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a general-purpose number formatter
      * @see j86.java.text.NumberFormat#getNumberInstance(j86.java.util.Locale)
@@ -104,7 +104,7 @@ public abstract class NumberFormatProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a percent formatter
      * @see j86.java.text.NumberFormat#getPercentInstance(j86.java.util.Locale)

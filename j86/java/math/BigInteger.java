@@ -35,7 +35,7 @@ import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectStreamField;
 import j86.java.util.Arrays;
 import j86.java.util.Random;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
+import j86.java.util.concurrent.ThreadLocalRandom;
 import j86.sun.misc.DoubleConsts;
 import j86.sun.misc.FloatConsts;
 

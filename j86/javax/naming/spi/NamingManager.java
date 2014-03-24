@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
@@ -645,7 +645,7 @@ public class NamingManager {
      *          reason.
      * @exception NamingException If some other naming exception was encountered.
      * @see j86.javax.naming.InitialContext
-     * @see j86.j86.javax.naming.directory.InitialDirContext
+     * @see j86.javax.naming.directory.InitialDirContext
      */
     public static Context getInitialContext(Hashtable<?,?> env)
         throws NamingException {

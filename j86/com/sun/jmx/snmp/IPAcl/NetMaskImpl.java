@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.io.Serializable;
@@ -35,14 +35,14 @@ import j86.java.net.UnknownHostException;
 import j86.java.net.InetAddress;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.Group;
+import j86.java.security.acl.Group;
 
 
 /**
  * This class is used to represent a subnet mask (a group of hosts matching the same
  * IP mask).
  *
- * @see j86.j86.java.security.acl.Group
+ * @see j86.java.security.acl.Group
  */
 
 class NetMaskImpl extends PrincipalImpl implements Group, Serializable {

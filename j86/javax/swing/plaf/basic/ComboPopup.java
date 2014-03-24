@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
-import j86.j86.java.awt.event.MouseListener;
-import j86.j86.java.awt.event.MouseMotionListener;
-import j86.j86.java.awt.event.KeyListener;
+import j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseMotionListener;
+import j86.java.awt.event.KeyListener;
 import j86.javax.swing.JList;
 
 

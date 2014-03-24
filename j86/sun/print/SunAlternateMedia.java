@@ -25,8 +25,8 @@
 
 package j86.sun.print;
 
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
-import j86.j86.j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.standard.Media;
 
 /*
  * An implementation class used by services which can distinguish media

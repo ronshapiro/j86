@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.io.File;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.Callable;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.event.*;
 import j86.java.beans.*;
 
-import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.awt.shell.ShellFolder;
 
 /**
  * Basic implementation of a file list.

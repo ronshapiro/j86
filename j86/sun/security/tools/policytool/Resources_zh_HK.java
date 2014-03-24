@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.policytool;
+package j86.sun.security.tools.policytool;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>

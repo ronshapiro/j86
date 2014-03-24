@@ -38,7 +38,7 @@ package j86.javax.naming;
   * @author Scott Seligman
   *
   * @see Context
-  * @see j86.j86.javax.naming.directory.DirContext
+  * @see j86.javax.naming.directory.DirContext
   * @see CompositeName
   * @see CompoundName
   * @see NameParser

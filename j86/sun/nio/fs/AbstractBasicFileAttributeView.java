@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
-import j86.j86.j86.java.nio.file.attribute.*;
+import j86.java.nio.file.attribute.*;
 import j86.java.util.*;
 import j86.java.io.IOException;
 

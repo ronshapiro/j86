@@ -74,9 +74,9 @@
  * of the copyright holder.
  */
 
-package j86.j86.j86.sun.text.resources.uk;
+package j86.sun.text.resources.uk;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_uk extends ParallelListResourceBundle {
     /**

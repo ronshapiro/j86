@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs12;
+package j86.sun.security.pkcs12;
 
 import j86.java.io.*;
 import j86.java.security.AccessController;
@@ -41,25 +41,25 @@ import j86.java.security.UnrecoverableEntryException;
 import j86.java.security.UnrecoverableKeyException;
 import j86.java.security.SecureRandom;
 import j86.java.security.Security;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.PKCS8EncodedKeySpec;
 import j86.java.util.*;
 
 import j86.java.security.AlgorithmParameters;
-import j86.j86.javax.crypto.spec.PBEParameterSpec;
-import j86.j86.javax.crypto.spec.PBEKeySpec;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.PBEParameterSpec;
+import j86.javax.crypto.spec.PBEKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 import j86.javax.crypto.SecretKeyFactory;
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.Mac;
 import j86.javax.security.auth.DestroyFailedException;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.DerInputStream;

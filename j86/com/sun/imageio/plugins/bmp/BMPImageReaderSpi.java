@@ -26,10 +26,10 @@
 package j86.com.sun.imageio.plugins.bmp;
 
 import j86.java.util.Locale;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
-import j86.j86.javax.imageio.spi.IIORegistry;
-import j86.j86.javax.imageio.spi.ServiceRegistry;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.spi.IIORegistry;
+import j86.javax.imageio.spi.ServiceRegistry;
 import j86.java.io.IOException;
 import j86.javax.imageio.ImageReader;
 import j86.javax.imageio.IIOException;

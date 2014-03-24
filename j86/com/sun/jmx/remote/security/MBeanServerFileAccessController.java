@@ -39,7 +39,7 @@ import j86.java.util.Map;
 import j86.java.util.Properties;
 import j86.java.util.Set;
 import j86.java.util.StringTokenizer;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Pattern;
 import j86.javax.management.MBeanServer;
 import j86.javax.management.ObjectName;
 import j86.javax.security.auth.Subject;
@@ -72,7 +72,7 @@ import j86.javax.security.auth.Subject;
  * <pre>
  * monitorRole  readonly
  * controlRole  readwrite \
- *              create j86.j86.javax.management.timer.*,j86.javax.management.monitor.* \
+ *              create j86.javax.management.timer.*,j86.javax.management.monitor.* \
  *              unregister
  * </pre>
  *

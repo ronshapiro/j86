@@ -28,7 +28,7 @@ package j86.sun.tools.jstat;
 import j86.java.io.*;
 import j86.java.net.*;
 import j86.java.util.*;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 import j86.sun.jvmstat.monitor.Monitor;
 import j86.sun.jvmstat.monitor.VmIdentifier;
 

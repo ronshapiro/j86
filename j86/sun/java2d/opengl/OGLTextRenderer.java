@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
 import j86.java.awt.Composite;
 import j86.sun.font.GlyphList;
 import j86.sun.java2d.SunGraphics2D;
-import j86.j86.sun.java2d.loops.GraphicsPrimitive;
-import j86.j86.sun.java2d.pipe.BufferedTextPipe;
-import j86.j86.sun.java2d.pipe.RenderQueue;
+import j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.sun.java2d.pipe.BufferedTextPipe;
+import j86.sun.java2d.pipe.RenderQueue;
 
 class OGLTextRenderer extends BufferedTextPipe {
 

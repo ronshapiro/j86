@@ -26,8 +26,8 @@
 package j86.sun.tools.jconsole;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
 
 @SuppressWarnings("serial")
 public class HTMLPane extends JEditorPane {

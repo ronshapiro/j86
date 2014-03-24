@@ -29,11 +29,11 @@ import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.security.*;
 
-import j86.j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.MessageHeader;
 import j86.java.util.Base64;
 
 /**
- * This is OBSOLETE. DO NOT USE THIS. Use j86.j86.java.util.jar.Manifest
+ * This is OBSOLETE. DO NOT USE THIS. Use j86.java.util.jar.Manifest
  * instead. It has to stay here because some apps (namely HJ and HJV)
  * call directly into it.
  *

@@ -30,16 +30,16 @@ package j86.javax.swing;
 
 
 import j86.java.util.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
-import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.concurrent.locks.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.Serializable;
 import j86.java.io.*;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.javax.swing.event.EventListenerList;
+import j86.javax.swing.event.EventListenerList;
 
 
 

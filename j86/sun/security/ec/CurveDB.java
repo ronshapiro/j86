@@ -27,10 +27,10 @@ package j86.sun.security.ec;
 
 import j86.java.math.BigInteger;
 
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 import j86.java.util.*;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Pattern;
 
 /**
  * Repository for well-known Elliptic Curve parameters. It is used by both

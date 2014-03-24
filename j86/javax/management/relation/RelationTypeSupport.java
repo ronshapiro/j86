@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.relation;
+package j86.javax.management.relation;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
 import static j86.com.sun.jmx.mbeanserver.Util.cast;
@@ -42,7 +42,7 @@ import j86.java.util.HashSet;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 /**
  * A RelationTypeSupport object implements the RelationType interface.

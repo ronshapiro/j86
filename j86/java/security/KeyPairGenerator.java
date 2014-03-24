@@ -27,7 +27,7 @@ package j86.java.security;
 
 import j86.java.util.*;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.java.security.Provider.Service;
 
@@ -81,7 +81,7 @@ import j86.sun.security.jca.GetInstance.Instance;
  * <li><b>Algorithm-Specific Initialization</b>
  * <p>For situations where a set of algorithm-specific parameters already
  * exists (e.g., so-called <i>community parameters</i> in DSA), there are two
- * {@link #initialize(j86.j86.java.security.spec.AlgorithmParameterSpec)
+ * {@link #initialize(j86.java.security.spec.AlgorithmParameterSpec)
  * initialize} methods that have an {@code AlgorithmParameterSpec}
  * argument. One also has a {@code SecureRandom} argument, while the
  * the other uses the {@code SecureRandom}
@@ -121,7 +121,7 @@ import j86.sun.security.jca.GetInstance.Instance;
  *
  * @author Benjamin Renaud
  *
- * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.spec.AlgorithmParameterSpec
  */
 
 public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
@@ -379,7 +379,7 @@ public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
      * abstract class.
      * This method calls the KeyPairGeneratorSpi
      * {@link KeyPairGeneratorSpi#initialize(
-     * j86.j86.java.security.spec.AlgorithmParameterSpec,
+     * j86.java.security.spec.AlgorithmParameterSpec,
      * j86.java.security.SecureRandom) initialize} method,
      * passing it {@code params} and a source of randomness (obtained
      * from the highest-priority installed provider or system-provided if none
@@ -407,7 +407,7 @@ public abstract class KeyPairGenerator extends KeyPairGeneratorSpi {
      * abstract class.
      * This method calls the KeyPairGeneratorSpi {@link
      * KeyPairGeneratorSpi#initialize(
-     * j86.j86.java.security.spec.AlgorithmParameterSpec,
+     * j86.java.security.spec.AlgorithmParameterSpec,
      * j86.java.security.SecureRandom) initialize} method,
      * passing it {@code params} and {@code random}.
      * That {@code initialize}

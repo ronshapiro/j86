@@ -26,8 +26,8 @@
 package j86.sun.management;
 
 import com.j86.sun.management.DiagnosticCommandMBean;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.Permission;
 import j86.java.util.*;
 import j86.javax.management.*;

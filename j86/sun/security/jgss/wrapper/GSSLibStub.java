@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.wrapper;
+package j86.sun.security.jgss.wrapper;
 
 import j86.java.util.Hashtable;
 import j86.org.ietf.jgss.Oid;

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.management.jdp;
+package j86.sun.management.jdp;
 
 /**
  * An Exception thrown if a JDP implementation encounters a problem.

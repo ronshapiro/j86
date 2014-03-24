@@ -59,17 +59,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.temporal;
+package j86.java.time.temporal;
 
-import static j86.j86.java.time.temporal.ChronoField.EPOCH_DAY;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.java.time.temporal.ChronoField.EPOCH_DAY;
+import static j86.java.time.temporal.ChronoField.NANO_OF_DAY;
+import static j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
 
 import j86.java.time.LocalDate;
 import j86.java.time.LocalTime;
 import j86.java.time.ZoneId;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.Chronology;
 
 /**
  * Common implementations of {@code TemporalQuery}.
@@ -196,7 +196,7 @@ public final class TemporalQueries {
      * {@code ZoneOffset} returns null (does not represent a date)<br>
      * {@code Instant} returns null (does not represent a date)<br>
      * <p>
-     * The method {@link j86.j86.java.time.chrono.Chronology#from(TemporalAccessor)} can be used as a
+     * The method {@link j86.java.time.chrono.Chronology#from(TemporalAccessor)} can be used as a
      * {@code TemporalQuery} via a method reference, {@code Chronology::from}.
      * That method is equivalent to this query, except that it throws an
      * exception if a chronology cannot be obtained.

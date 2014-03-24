@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.sun.security.krb5.*;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
-import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.util.KerberosString;
 import j86.sun.security.util.DerOutputStream;
 import j86.sun.security.util.DerValue;
 

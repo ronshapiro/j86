@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.HttpsURLConnection
+ * NOTE:  this file was copied from j86.javax.net.ssl.HttpsURLConnection
  */
 
 package com.j86.sun.net.ssl;
@@ -33,7 +33,7 @@ import j86.java.net.URL;
 import j86.java.net.HttpURLConnection;
 import j86.java.io.IOException;
 import j86.javax.net.SocketFactory;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.SSLSocketFactory;
 
 import j86.javax.security.cert.X509Certificate;
 
@@ -43,7 +43,7 @@ import j86.javax.security.cert.X509Certificate;
  * details.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.HttpsURLConnection}.
+ *      replaced by {@link j86.javax.net.ssl.HttpsURLConnection}.
  */
 @Deprecated
 abstract public

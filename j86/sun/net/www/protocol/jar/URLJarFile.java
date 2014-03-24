@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.jar;
+package j86.sun.net.www.protocol.jar;
 
 import j86.java.io.*;
 import j86.java.net.*;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.StandardCopyOption;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.StandardCopyOption;
 import j86.java.util.*;
-import j86.j86.java.util.jar.*;
-import j86.j86.java.util.zip.ZipFile;
-import j86.j86.java.util.zip.ZipEntry;
+import j86.java.util.jar.*;
+import j86.java.util.zip.ZipFile;
+import j86.java.util.zip.ZipEntry;
 import j86.java.security.CodeSigner;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.Certificate;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /* URL jar file is a common JarFile subtype used for JarURLConnection */
 public class URLJarFile extends JarFile {
@@ -122,7 +122,7 @@ public class URLJarFile extends JarFile {
      * @param name the JAR file entry name
      * @return the <code>ZipEntry</code> for the given entry name or
      *         <code>null</code> if not found
-     * @see j86.j86.java.util.zip.ZipEntry
+     * @see j86.java.util.zip.ZipEntry
      */
     public ZipEntry getEntry(String name) {
         ZipEntry ze = super.getEntry(name);
@@ -269,7 +269,7 @@ public class URLJarFile extends JarFile {
             return null;
         }
 
-        public j86.j86.java.security.cert.Certificate[] getCertificates() {
+        public j86.java.security.cert.Certificate[] getCertificates() {
             Certificate[] certs = je.getCertificates();
             return certs == null? null: certs.clone();
         }

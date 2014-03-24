@@ -59,10 +59,10 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.zone;
+package j86.java.time.zone;
 
-import static j86.j86.java.time.temporal.TemporalAdjusters.nextOrSame;
-import static j86.j86.java.time.temporal.TemporalAdjusters.previousOrSame;
+import static j86.java.time.temporal.TemporalAdjusters.nextOrSame;
+import static j86.java.time.temporal.TemporalAdjusters.previousOrSame;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -76,7 +76,7 @@ import j86.java.time.LocalDateTime;
 import j86.java.time.LocalTime;
 import j86.java.time.Month;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.chrono.IsoChronology;
+import j86.java.time.chrono.IsoChronology;
 import j86.java.util.Objects;
 
 /**
@@ -243,10 +243,10 @@ public final class ZoneOffsetTransitionRule implements Serializable {
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.zone.Ser">dedicated serialized form</a>.
      * @serialData
      * Refer to the serialized form of
-     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
+     * <a href="../../../serialized-form.html#j86.java.time.zone.ZoneRules">ZoneRules.writeReplace</a>
      * for the encoding of epoch seconds and offsets.
      * <pre style="font-size:1.0em">{@code
      *

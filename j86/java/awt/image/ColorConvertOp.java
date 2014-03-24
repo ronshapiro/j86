@@ -34,17 +34,17 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.awt.Point;
 import j86.java.awt.Graphics2D;
-import j86.j86.java.awt.color.*;
-import j86.j86.sun.java2d.cmm.ColorTransform;
-import j86.j86.sun.java2d.cmm.CMSManager;
-import j86.j86.sun.java2d.cmm.ProfileDeferralMgr;
-import j86.j86.sun.java2d.cmm.PCMM;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.color.*;
+import j86.sun.java2d.cmm.ColorTransform;
+import j86.sun.java2d.cmm.CMSManager;
+import j86.sun.java2d.cmm.ProfileDeferralMgr;
+import j86.sun.java2d.cmm.PCMM;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
 import j86.java.awt.RenderingHints;
 
 /**

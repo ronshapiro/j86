@@ -36,8 +36,8 @@ import j86.java.security.Security;
 import j86.java.security.Provider;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.spec.InvalidKeySpecException;
-import j86.j86.java.security.spec.PKCS8EncodedKeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.PKCS8EncodedKeySpec;
 
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.x509.*;

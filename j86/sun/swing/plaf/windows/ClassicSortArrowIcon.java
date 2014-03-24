@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.swing.plaf.windows;
+package j86.sun.swing.plaf.windows;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -30,7 +30,7 @@ import j86.java.awt.Graphics;
 import j86.java.io.Serializable;
 import j86.javax.swing.Icon;
 import j86.javax.swing.UIManager;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * Classic sort icons.

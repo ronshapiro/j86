@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
 import j86.javax.naming.*;
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 import j86.com.sun.rowset.*;
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
 
 /**
  * The facility called by the <code>RIOptimisticProvider</code> object
@@ -53,9 +53,9 @@ import j86.j86.j86.javax.sql.rowset.spi.*;
  * reader by invoking the <code>SyncProvider.getRowSetReader()</code> method.
  *
  * @author Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class CachedRowSetReader implements RowSetReader, Serializable {
 

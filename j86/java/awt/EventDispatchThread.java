@@ -25,14 +25,14 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.event.MouseEvent;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.WindowEvent;
 
 import j86.java.util.ArrayList;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
-import j86.j86.sun.awt.dnd.SunDragSourceContextPeer;
+import j86.sun.awt.dnd.SunDragSourceContextPeer;
 import j86.sun.awt.EventQueueDelegate;
 
 /**
@@ -56,7 +56,7 @@ import j86.sun.awt.EventQueueDelegate;
  */
 class EventDispatchThread extends Thread {
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.EventDispatchThread");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.java.awt.event.EventDispatchThread");
 
     private EventQueue theQueue;
     private volatile boolean doDispatch = true;

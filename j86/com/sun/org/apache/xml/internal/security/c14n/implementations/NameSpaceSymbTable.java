@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;

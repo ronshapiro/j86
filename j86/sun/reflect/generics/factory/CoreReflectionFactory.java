@@ -23,26 +23,26 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.factory;
+package j86.sun.reflect.generics.factory;
 
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.GenericDeclaration;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.j86.java.lang.reflect.TypeVariable;
-import j86.j86.j86.java.lang.reflect.WildcardType;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.GenericDeclaration;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.TypeVariable;
+import j86.java.lang.reflect.WildcardType;
 
 
-import j86.j86.sun.reflect.generics.reflectiveObjects.*;
-import j86.j86.sun.reflect.generics.scope.Scope;
-import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
+import j86.sun.reflect.generics.reflectiveObjects.*;
+import j86.sun.reflect.generics.scope.Scope;
+import j86.sun.reflect.generics.tree.FieldTypeSignature;
 
 
 /**
  * Factory for reflective generic type objects for use by
- * core reflection (j86.j86.j86.java.lang.reflect).
+ * core reflection (j86.java.lang.reflect).
  */
 public class CoreReflectionFactory implements GenericsFactory {
     private GenericDeclaration decl;

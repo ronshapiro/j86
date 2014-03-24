@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pisces;
+package j86.sun.java2d.pisces;
 
-import j86.j86.sun.awt.geom.PathConsumer2D;
+import j86.sun.awt.geom.PathConsumer2D;
 
 final class Renderer implements PathConsumer2D {
 

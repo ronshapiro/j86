@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.swing.plaf.synth;
+package j86.sun.swing.plaf.synth;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.io.*;
 import j86.java.util.*;
@@ -33,14 +33,14 @@ import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.filechooser.FileFilter;
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.j86.javax.swing.plaf.synth.*;
-import j86.j86.javax.swing.plaf.ActionMapUIResource;
+import j86.javax.swing.event.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.filechooser.FileFilter;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.synth.*;
+import j86.javax.swing.plaf.ActionMapUIResource;
 
-import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.awt.shell.ShellFolder;
 import j86.sun.swing.*;
 
 /**

@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.TrustManagerFactorySpi
+ * NOTE:  this file was copied from j86.javax.net.ssl.TrustManagerFactorySpi
  */
 
 package com.j86.sun.net.ssl;
@@ -40,7 +40,7 @@ import j86.java.security.*;
  * of a particular trust manager factory.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.TrustManagerFactorySpi}.
+ *      replaced by {@link j86.javax.net.ssl.TrustManagerFactorySpi}.
  */
 @Deprecated
 public abstract class TrustManagerFactorySpi {

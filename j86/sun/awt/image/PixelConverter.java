@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
+package j86.sun.awt.image;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
 
 /**
  * This class provides utilities for converting between the standard

@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.algorithms.implementations;
 
 import j86.java.io.IOException;
 import j86.java.security.InvalidAlgorithmParameterException;
@@ -32,13 +32,13 @@ import j86.java.security.PublicKey;
 import j86.java.security.SecureRandom;
 import j86.java.security.Signature;
 import j86.java.security.SignatureException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  *
@@ -48,8 +48,8 @@ import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 public abstract class SignatureECDSA extends SignatureAlgorithmSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(SignatureECDSA.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(SignatureECDSA.class.getName());
 
     /** @inheritDoc */
     public abstract String engineGetURI();
@@ -189,8 +189,8 @@ public abstract class SignatureECDSA extends SignatureAlgorithmSpi {
 
         String algorithmID = JCEMapper.translateURItoJCEID(this.engineGetURI());
 
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Created SignatureECDSA using " + algorithmID);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Created SignatureECDSA using " + algorithmID);
         }
         String provider = JCEMapper.getProviderId();
         try {
@@ -225,8 +225,8 @@ public abstract class SignatureECDSA extends SignatureAlgorithmSpi {
         try {
             byte[] jcebytes = SignatureECDSA.convertXMLDSIGtoASN1(signature);
 
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Called ECDSA.verify() on " + Base64.encode(signature));
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Called ECDSA.verify() on " + Base64.encode(signature));
             }
 
             return this.signatureAlgorithm.verify(jcebytes);
@@ -259,8 +259,8 @@ public abstract class SignatureECDSA extends SignatureAlgorithmSpi {
             } catch (Exception e) {
                 // this shouldn't occur, but if it does, restore previous
                 // Signature
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Exception when reinstantiating Signature:" + e);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Exception when reinstantiating Signature:" + e);
                 }
                 this.signatureAlgorithm = sig;
             }

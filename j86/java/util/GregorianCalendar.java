@@ -42,15 +42,15 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.time.Instant;
 import j86.java.time.ZonedDateTime;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.sun.util.calendar.BaseCalendar;
-import j86.j86.sun.util.calendar.CalendarDate;
-import j86.j86.sun.util.calendar.CalendarSystem;
-import j86.j86.sun.util.calendar.CalendarUtils;
-import j86.j86.sun.util.calendar.Era;
-import j86.j86.sun.util.calendar.Gregorian;
-import j86.j86.sun.util.calendar.JulianCalendar;
-import j86.j86.sun.util.calendar.ZoneInfo;
+import j86.java.time.temporal.ChronoField;
+import j86.sun.util.calendar.BaseCalendar;
+import j86.sun.util.calendar.CalendarDate;
+import j86.sun.util.calendar.CalendarSystem;
+import j86.sun.util.calendar.CalendarUtils;
+import j86.sun.util.calendar.Era;
+import j86.sun.util.calendar.Gregorian;
+import j86.sun.util.calendar.JulianCalendar;
+import j86.sun.util.calendar.ZoneInfo;
 
 /**
  * <code>GregorianCalendar</code> is a concrete subclass of
@@ -498,7 +498,7 @@ public class GregorianCalendar extends Calendar {
     @SuppressWarnings("FieldNameHidesFieldInSuperclass")
     static final long serialVersionUID = -8125100834729963327L;
 
-    // Reference to the j86.j86.sun.util.calendar.Gregorian instance (singleton).
+    // Reference to the j86.sun.util.calendar.Gregorian instance (singleton).
     private static final Gregorian gcal =
                                 CalendarSystem.getGregorianCalendar();
 
@@ -545,7 +545,7 @@ public class GregorianCalendar extends Calendar {
     private transient int gregorianCutoverYearJulian = 1582;
 
     /**
-     * gdate always has a j86.j86.sun.util.calendar.Gregorian.Date instance to
+     * gdate always has a j86.sun.util.calendar.Gregorian.Date instance to
      * avoid overhead of creating it. The assumption is that most
      * applications will need only Gregorian calendar calculations.
      */

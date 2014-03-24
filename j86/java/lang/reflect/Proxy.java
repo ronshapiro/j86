@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Arrays;
 import j86.java.util.IdentityHashMap;
 import j86.java.util.Map;
 import j86.java.util.Objects;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.function.BiFunction;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.function.BiFunction;
 import j86.sun.misc.ProxyGenerator;
 import j86.sun.misc.VM;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -75,7 +75,7 @@ import j86.sun.security.util.SecurityConstants;
  * A method invocation on a proxy instance through one of its proxy
  * interfaces will be dispatched to the {@link InvocationHandler#invoke
  * invoke} method of the instance's invocation handler, passing the proxy
- * instance, a {@code j86.j86.j86.java.lang.reflect.Method} object identifying
+ * instance, a {@code j86.java.lang.reflect.Method} object identifying
  * the method that was invoked, and an array of type {@code Object}
  * containing the arguments.  The invocation handler processes the
  * encoded method invocation as appropriate and the result that it
@@ -95,7 +95,7 @@ import j86.sun.security.util.SecurityConstants;
  * of class names that begin with the string {@code "$Proxy"}
  * should be, however, reserved for proxy classes.
  *
- * <li>A proxy class extends {@code j86.j86.j86.java.lang.reflect.Proxy}.
+ * <li>A proxy class extends {@code j86.java.lang.reflect.Proxy}.
  *
  * <li>A proxy class implements exactly the interfaces specified at its
  * creation, in the same order.

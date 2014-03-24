@@ -29,7 +29,7 @@ import j86.java.io.IOException;
 import j86.java.util.ArrayList;
 import j86.java.util.List;
 
-import j86.j86.javax.net.ssl.SSLProtocolException;
+import j86.javax.net.ssl.SSLProtocolException;
 
 final class SupportedEllipticPointFormatsExtension extends HelloExtension {
 

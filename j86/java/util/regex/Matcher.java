@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.regex;
+package j86.java.util.regex;
 
 import j86.java.util.Objects;
 
@@ -1084,7 +1084,7 @@ public final class Matcher implements MatchResult {
      *
      * @return <tt>true</tt> iff this matcher is using transparent bounds,
      *         <tt>false</tt> otherwise.
-     * @see j86.j86.java.util.regex.Matcher#useTransparentBounds(boolean)
+     * @see j86.java.util.regex.Matcher#useTransparentBounds(boolean)
      * @since 1.5
      */
     public boolean hasTransparentBounds() {
@@ -1114,7 +1114,7 @@ public final class Matcher implements MatchResult {
      * @param  b a boolean indicating whether to use opaque or transparent
      *         regions
      * @return this matcher
-     * @see j86.j86.java.util.regex.Matcher#hasTransparentBounds
+     * @see j86.java.util.regex.Matcher#hasTransparentBounds
      * @since 1.5
      */
     public Matcher useTransparentBounds(boolean b) {
@@ -1135,7 +1135,7 @@ public final class Matcher implements MatchResult {
      *
      * @return <tt>true</tt> iff this matcher is using anchoring bounds,
      *         <tt>false</tt> otherwise.
-     * @see j86.j86.java.util.regex.Matcher#useAnchoringBounds(boolean)
+     * @see j86.java.util.regex.Matcher#useAnchoringBounds(boolean)
      * @since 1.5
      */
     public boolean hasAnchoringBounds() {
@@ -1160,7 +1160,7 @@ public final class Matcher implements MatchResult {
      *
      * @param  b a boolean indicating whether or not to use anchoring bounds.
      * @return this matcher
-     * @see j86.j86.java.util.regex.Matcher#hasAnchoringBounds
+     * @see j86.java.util.regex.Matcher#hasAnchoringBounds
      * @since 1.5
      */
     public Matcher useAnchoringBounds(boolean b) {
@@ -1178,7 +1178,7 @@ public final class Matcher implements MatchResult {
      */
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("j86.j86.java.util.regex.Matcher");
+        sb.append("j86.java.util.regex.Matcher");
         sb.append("[pattern=" + pattern());
         sb.append(" region=");
         sb.append(regionStart() + "," + regionEnd());

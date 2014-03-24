@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.List;
@@ -64,7 +64,7 @@ import j86.java.util.ResourceBundle;
  */
 
 public class Level implements j86.java.io.Serializable {
-    private static final String defaultBundle = "j86.j86.sun.util.logging.resources.logging";
+    private static final String defaultBundle = "j86.sun.util.logging.resources.logging";
 
     /**
      * @serial  The non-localized name of the level.

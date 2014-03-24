@@ -28,7 +28,7 @@ package j86.javax.print;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
-import j86.j86.javax.print.attribute.AttributeSet;
+import j86.javax.print.attribute.AttributeSet;
 
 import j86.sun.awt.AppContext;
 import j86.java.util.ServiceLoader;

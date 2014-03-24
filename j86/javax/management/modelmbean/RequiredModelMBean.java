@@ -29,16 +29,16 @@
  */
 
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 /* java imports */
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
 import j86.java.io.FileOutputStream;
 import j86.java.io.PrintStream;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -46,7 +46,7 @@ import j86.java.security.PrivilegedAction;
 import j86.java.util.Date;
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Map;
 import j86.java.util.Set;
 
@@ -79,12 +79,12 @@ import j86.javax.management.ReflectionException;
 import j86.javax.management.RuntimeErrorException;
 import j86.javax.management.RuntimeOperationsException;
 import j86.javax.management.ServiceNotFoundException;
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 import j86.sun.misc.JavaSecurityAccess;
 import j86.sun.misc.SharedSecrets;
 
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class is the implementation of a ModelMBean. An appropriate
@@ -2840,7 +2840,7 @@ public class RequiredModelMBean
     /**
      * Return the Class Loader Repository used to perform class loading.
      * Subclasses may wish to redefine this method in order to return
-     * the appropriate {@link j86.j86.javax.management.loading.ClassLoaderRepository}
+     * the appropriate {@link j86.javax.management.loading.ClassLoaderRepository}
      * that should be used in this object.
      *
      * @return the Class Loader Repository.

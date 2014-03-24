@@ -211,7 +211,7 @@ abstract public class HttpURLConnection extends URLConnection {
 
     /* Default chunk size (including chunk header) if not specified;
      * we want to keep this in sync with the one defined in
-     * j86.j86.j86.sun.net.www.http.ChunkedOutputStream
+     * j86.sun.net.www.http.ChunkedOutputStream
      */
     private static final int DEFAULT_CHUNK_SIZE = 4096;
 

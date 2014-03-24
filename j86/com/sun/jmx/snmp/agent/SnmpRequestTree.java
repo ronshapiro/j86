@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.java.util.Vector;
 import j86.java.util.Hashtable;
@@ -30,7 +30,7 @@ import j86.java.util.Enumeration;
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Arrays;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 import j86.com.sun.jmx.snmp.SnmpVarBind;

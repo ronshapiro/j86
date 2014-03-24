@@ -39,7 +39,7 @@
 package j86.java.text;
 
 import j86.java.io.InvalidObjectException;
-import j86.j86.java.text.spi.DateFormatProvider;
+import j86.java.text.spi.DateFormatProvider;
 import j86.java.util.Calendar;
 import j86.java.util.Date;
 import j86.java.util.GregorianCalendar;
@@ -49,9 +49,9 @@ import j86.java.util.Map;
 import j86.java.util.MissingResourceException;
 import j86.java.util.ResourceBundle;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.spi.LocaleServiceProvider;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.java.util.spi.LocaleServiceProvider;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleServiceProviderPool;
 
 /**
  * {@code DateFormat} is an abstract class for date/time formatting subclasses which
@@ -602,7 +602,7 @@ public abstract class DateFormat extends Format {
      * localized instances.
      * The returned array represents the union of locales supported by the Java
      * runtime and by installed
-     * {@link j86.j86.java.text.spi.DateFormatProvider DateFormatProvider} implementations.
+     * {@link j86.java.text.spi.DateFormatProvider DateFormatProvider} implementations.
      * It must contain at least a <code>Locale</code> instance equal to
      * {@link j86.java.util.Locale#US Locale.US}.
      *

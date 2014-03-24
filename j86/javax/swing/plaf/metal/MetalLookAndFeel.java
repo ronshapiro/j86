@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.text.DefaultEditorKit;
 
 import j86.java.awt.Color;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.event.KeyEvent;
+import j86.java.lang.reflect.*;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -240,24 +240,24 @@ public class MetalLookAndFeel extends BasicLookAndFeel
      * Populates {@code table} with mappings from {@code uiClassID} to
      * the fully qualified name of the ui class. {@code
      * MetalLookAndFeel} registers an entry for each of the classes in
-     * the package {@code j86.j86.j86.javax.swing.plaf.metal} that are named
+     * the package {@code j86.javax.swing.plaf.metal} that are named
      * MetalXXXUI. The string {@code XXX} is one of Swing's uiClassIDs. For
      * the {@code uiClassIDs} that do not have a class in metal, the
-     * corresponding class in {@code j86.j86.j86.javax.swing.plaf.basic} is
+     * corresponding class in {@code j86.javax.swing.plaf.basic} is
      * used. For example, metal does not have a class named {@code
      * "MetalColorChooserUI"}, as such, {@code
-     * j86.j86.j86.javax.swing.plaf.basic.BasicColorChooserUI} is used.
+     * j86.javax.swing.plaf.basic.BasicColorChooserUI} is used.
      *
      * @param table the {@code UIDefaults} instance the entries are
      *        added to
      * @throws NullPointerException if {@code table} is {@code null}
      *
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicLookAndFeel#initClassDefaults
+     * @see j86.javax.swing.plaf.basic.BasicLookAndFeel#initClassDefaults
      */
     protected void initClassDefaults(UIDefaults table)
     {
         super.initClassDefaults(table);
-        final String metalPackageName = "j86.j86.j86.javax.swing.plaf.metal.";
+        final String metalPackageName = "j86.javax.swing.plaf.metal.";
 
         Object[] uiDefaults = {
                    "ButtonUI", metalPackageName + "MetalButtonUI",
@@ -457,14 +457,14 @@ public class MetalLookAndFeel extends BasicLookAndFeel
         Integer zero = Integer.valueOf(0);
 
         Object textFieldBorder =
-            new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+            new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders",
                                           "getTextFieldBorder");
 
         Object dialogBorder = new MetalLazyValue(
-                          "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$DialogBorder");
+                          "j86.javax.swing.plaf.metal.MetalBorders$DialogBorder");
 
         Object questionDialogBorder = new MetalLazyValue(
-                  "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$QuestionDialogBorder");
+                  "j86.javax.swing.plaf.metal.MetalBorders$QuestionDialogBorder");
 
         Object fieldInputMap = new UIDefaults.LazyInputMap(new Object[] {
                            "ctrl C", DefaultEditorKit.copyAction,
@@ -613,53 +613,53 @@ public class MetalLookAndFeel extends BasicLookAndFeel
                    "control shift O", "toggle-componentOrientation"/*DefaultEditorKit.toggleComponentOrientation*/
         });
 
-        Object scrollPaneBorder = new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders$ScrollPaneBorder");
+        Object scrollPaneBorder = new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders$ScrollPaneBorder");
         Object buttonBorder =
-                    new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+                    new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders",
                                           "getButtonBorder");
 
         Object toggleButtonBorder =
-            new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+            new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders",
                                           "getToggleButtonBorder");
 
         Object titledBorderBorder =
             new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           new Object[] {controlShadow});
 
         Object desktopIconBorder =
             new SwingLazyValue(
-                          "j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+                          "j86.javax.swing.plaf.metal.MetalBorders",
                           "getDesktopIconBorder");
 
         Object menuBarBorder =
             new SwingLazyValue(
-                          "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$MenuBarBorder");
+                          "j86.javax.swing.plaf.metal.MetalBorders$MenuBarBorder");
 
         Object popupMenuBorder =
             new SwingLazyValue(
-                         "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$PopupMenuBorder");
+                         "j86.javax.swing.plaf.metal.MetalBorders$PopupMenuBorder");
         Object menuItemBorder =
             new SwingLazyValue(
-                         "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$MenuItemBorder");
+                         "j86.javax.swing.plaf.metal.MetalBorders$MenuItemBorder");
 
         Object menuItemAcceleratorDelimiter = "-";
-        Object toolBarBorder = new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders$ToolBarBorder");
+        Object toolBarBorder = new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders$ToolBarBorder");
 
         Object progressBarBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           new Object[] {controlDarkShadow, new Integer(1)});
 
         Object toolTipBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           new Object[] {primaryControlDarkShadow});
 
         Object toolTipBorderInactive = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           new Object[] {controlDarkShadow});
 
         Object focusCellHighlightBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           new Object[] {focusColor});
 
         Object tabbedPaneTabAreaInsets = new InsetsUIResource(4, 2, 0, 6);
@@ -793,7 +793,7 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "Checkbox.select", controlShadow,
             "CheckBox.font", controlTextValue,
             "CheckBox.focus", focusColor,
-            "CheckBox.icon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getCheckBoxIcon"),
+            "CheckBox.icon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getCheckBoxIcon"),
             "CheckBox.focusInputMap",
                new UIDefaults.LazyInputMap(new Object[] {
                             "SPACE", "pressed",
@@ -805,7 +805,7 @@ public class MetalLookAndFeel extends BasicLookAndFeel
 
             "RadioButton.disabledText", inactiveControlTextColor,
             "RadioButton.select", controlShadow,
-            "RadioButton.icon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getRadioButtonIcon"),
+            "RadioButton.icon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getRadioButtonIcon"),
             "RadioButton.font", controlTextValue,
             "RadioButton.focus", focusColor,
             "RadioButton.focusInputMap",
@@ -830,18 +830,18 @@ public class MetalLookAndFeel extends BasicLookAndFeel
 
 
             // File View
-            "FileView.directoryIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
-            "FileView.fileIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeLeafIcon"),
-            "FileView.computerIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeComputerIcon"),
-            "FileView.hardDriveIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeHardDriveIcon"),
-            "FileView.floppyDriveIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFloppyDriveIcon"),
+            "FileView.directoryIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
+            "FileView.fileIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeLeafIcon"),
+            "FileView.computerIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeComputerIcon"),
+            "FileView.hardDriveIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeHardDriveIcon"),
+            "FileView.floppyDriveIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFloppyDriveIcon"),
 
             // File Chooser
-            "FileChooser.detailsViewIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserDetailViewIcon"),
-            "FileChooser.homeFolderIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserHomeFolderIcon"),
-            "FileChooser.listViewIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserListViewIcon"),
-            "FileChooser.newFolderIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserNewFolderIcon"),
-            "FileChooser.upFolderIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserUpFolderIcon"),
+            "FileChooser.detailsViewIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserDetailViewIcon"),
+            "FileChooser.homeFolderIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserHomeFolderIcon"),
+            "FileChooser.listViewIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserListViewIcon"),
+            "FileChooser.newFolderIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserNewFolderIcon"),
+            "FileChooser.upFolderIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getFileChooserUpFolderIcon"),
 
             "FileChooser.usesSingleFilePane", Boolean.TRUE,
             "FileChooser.ancestorInputMap",
@@ -872,8 +872,8 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "Slider.focusInsets", zeroInsets,
             "Slider.trackWidth", new Integer( 7 ),
             "Slider.majorTickLength", new Integer( 6 ),
-            "Slider.horizontalThumbIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getHorizontalSliderThumbIcon"),
-            "Slider.verticalThumbIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getVerticalSliderThumbIcon"),
+            "Slider.horizontalThumbIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getHorizontalSliderThumbIcon"),
+            "Slider.verticalThumbIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getVerticalSliderThumbIcon"),
             "Slider.focusInputMap",
                new UIDefaults.LazyInputMap(new Object[] {
                        "RIGHT", "positiveUnitIncrement",
@@ -925,30 +925,30 @@ public class MetalLookAndFeel extends BasicLookAndFeel
               }),
 
             // Internal Frame Defaults
-            "InternalFrame.icon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getInternalFrameDefaultMenuIcon"),
-            "InternalFrame.border", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders$InternalFrameBorder"),
-            "InternalFrame.optionDialogBorder", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders$OptionDialogBorder"),
-            "InternalFrame.paletteBorder", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalBorders$PaletteBorder"),
+            "InternalFrame.icon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getInternalFrameDefaultMenuIcon"),
+            "InternalFrame.border", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders$InternalFrameBorder"),
+            "InternalFrame.optionDialogBorder", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders$OptionDialogBorder"),
+            "InternalFrame.paletteBorder", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalBorders$PaletteBorder"),
             "InternalFrame.paletteTitleHeight", new Integer(11),
-            "InternalFrame.paletteCloseIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory$PaletteCloseIcon"),
+            "InternalFrame.paletteCloseIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory$PaletteCloseIcon"),
             "InternalFrame.closeIcon",
                   new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getInternalFrameCloseIcon",
                                      internalFrameIconArgs),
             "InternalFrame.maximizeIcon",
                   new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getInternalFrameMaximizeIcon",
                                      internalFrameIconArgs),
             "InternalFrame.iconifyIcon",
                   new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getInternalFrameMinimizeIcon",
                                      internalFrameIconArgs),
             "InternalFrame.minimizeIcon",
                   new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getInternalFrameAltMaximizeIcon",
                                      internalFrameIconArgs),
             "InternalFrame.titleFont",  windowTitleValue,
@@ -1248,7 +1248,7 @@ public class MetalLookAndFeel extends BasicLookAndFeel
 
             "TableHeader.font", userTextValue,
             "TableHeader.cellBorder", new SwingLazyValue(
-                                          "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$TableHeaderBorder"),
+                                          "j86.javax.swing.plaf.metal.MetalBorders$TableHeaderBorder"),
 
             // MenuBar
             "MenuBar.border", menuBarBorder,
@@ -1270,8 +1270,8 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "Menu.acceleratorFont", subTextValue,
             "Menu.acceleratorForeground", acceleratorForeground,
             "Menu.acceleratorSelectionForeground", acceleratorSelectedForeground,
-            "Menu.checkIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemCheckIcon"),
-            "Menu.arrowIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuArrowIcon"),
+            "Menu.checkIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemCheckIcon"),
+            "Menu.arrowIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuArrowIcon"),
 
             // Menu Item
             "MenuItem.border", menuItemBorder,
@@ -1284,8 +1284,8 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "MenuItem.acceleratorForeground", acceleratorForeground,
             "MenuItem.acceleratorSelectionForeground", acceleratorSelectedForeground,
             "MenuItem.acceleratorDelimiter", menuItemAcceleratorDelimiter,
-            "MenuItem.checkIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemCheckIcon"),
-            "MenuItem.arrowIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
+            "MenuItem.checkIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemCheckIcon"),
+            "MenuItem.arrowIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
                  // Menu Item Auditory Cue Mapping
             "MenuItem.commandSound", "sounds/MenuItemCommand.wav",
 
@@ -1346,8 +1346,8 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "CheckBoxMenuItem.acceleratorFont", subTextValue,
             "CheckBoxMenuItem.acceleratorForeground", acceleratorForeground,
             "CheckBoxMenuItem.acceleratorSelectionForeground", acceleratorSelectedForeground,
-            "CheckBoxMenuItem.checkIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getCheckBoxMenuItemIcon"),
-            "CheckBoxMenuItem.arrowIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
+            "CheckBoxMenuItem.checkIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getCheckBoxMenuItemIcon"),
+            "CheckBoxMenuItem.arrowIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
             "CheckBoxMenuItem.commandSound", "sounds/MenuItemCommand.wav",
 
             "RadioButtonMenuItem.border", menuItemBorder,
@@ -1359,8 +1359,8 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "RadioButtonMenuItem.acceleratorFont", subTextValue,
             "RadioButtonMenuItem.acceleratorForeground", acceleratorForeground,
             "RadioButtonMenuItem.acceleratorSelectionForeground", acceleratorSelectedForeground,
-            "RadioButtonMenuItem.checkIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getRadioButtonMenuItemIcon"),
-            "RadioButtonMenuItem.arrowIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
+            "RadioButtonMenuItem.checkIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getRadioButtonMenuItemIcon"),
+            "RadioButtonMenuItem.arrowIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getMenuItemArrowIcon"),
             "RadioButtonMenuItem.commandSound", "sounds/MenuItemCommand.wav",
 
             "Spinner.ancestorInputMap",
@@ -1403,15 +1403,15 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "Tree.font", userTextValue,
             "Tree.textBackground", getWindowBackground(),
             "Tree.selectionBorderColor", focusColor,
-            "Tree.openIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
-            "Tree.closedIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
-            "Tree.leafIcon", new SwingLazyValue("j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeLeafIcon"),
+            "Tree.openIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
+            "Tree.closedIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeFolderIcon"),
+            "Tree.leafIcon", new SwingLazyValue("j86.javax.swing.plaf.metal.MetalIconFactory", "getTreeLeafIcon"),
             "Tree.expandedIcon", new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getTreeControlIcon",
                                      new Object[] {Boolean.valueOf(MetalIconFactory.DARK)}),
             "Tree.collapsedIcon", new SwingLazyValue(
-                                     "j86.j86.j86.javax.swing.plaf.metal.MetalIconFactory",
+                                     "j86.javax.swing.plaf.metal.MetalIconFactory",
                                      "getTreeControlIcon",
                                      new Object[] {Boolean.valueOf( MetalIconFactory.LIGHT )}),
 
@@ -1495,10 +1495,10 @@ public class MetalLookAndFeel extends BasicLookAndFeel
             "ToolBar.dockingForeground", primaryControlDarkShadow,
             "ToolBar.floatingForeground", primaryControl,
             "ToolBar.rolloverBorder", new MetalLazyValue(
-                         "j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+                         "j86.javax.swing.plaf.metal.MetalBorders",
                          "getToolBarRolloverBorder"),
             "ToolBar.nonrolloverBorder", new MetalLazyValue(
-                         "j86.j86.j86.javax.swing.plaf.metal.MetalBorders",
+                         "j86.javax.swing.plaf.metal.MetalBorders",
                          "getToolBarNonrolloverBorder"),
             "ToolBar.ancestorInputMap",
                new UIDefaults.LazyInputMap(new Object[] {
@@ -1514,16 +1514,16 @@ public class MetalLookAndFeel extends BasicLookAndFeel
 
             // RootPane
             "RootPane.frameBorder", new MetalLazyValue(
-                      "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$FrameBorder"),
+                      "j86.javax.swing.plaf.metal.MetalBorders$FrameBorder"),
             "RootPane.plainDialogBorder", dialogBorder,
             "RootPane.informationDialogBorder", dialogBorder,
             "RootPane.errorDialogBorder", new MetalLazyValue(
-                      "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$ErrorDialogBorder"),
+                      "j86.javax.swing.plaf.metal.MetalBorders$ErrorDialogBorder"),
             "RootPane.colorChooserDialogBorder", questionDialogBorder,
             "RootPane.fileChooserDialogBorder", questionDialogBorder,
             "RootPane.questionDialogBorder", questionDialogBorder,
             "RootPane.warningDialogBorder", new MetalLazyValue(
-                    "j86.j86.j86.javax.swing.plaf.metal.MetalBorders$WarningDialogBorder"),
+                    "j86.javax.swing.plaf.metal.MetalBorders$WarningDialogBorder"),
             // These bindings are only enabled when there is a default
             // button set on the rootpane.
             "RootPane.defaultButtonWindowKeyBindings", new Object[] {
@@ -1577,7 +1577,7 @@ public class MetalLookAndFeel extends BasicLookAndFeel
      * @return the look and feel defaults
      *
      * @see #createDefaultTheme
-     * @see j86.j86.j86.javax.swing.plaf.basic.BasicLookAndFeel#getDefaults()
+     * @see j86.javax.swing.plaf.basic.BasicLookAndFeel#getDefaults()
      * @see MetalTheme#addCustomEntriesToTable(UIDefaults)
      */
     public UIDefaults getDefaults() {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.AWTException;
 import j86.java.awt.Component;
@@ -33,13 +33,13 @@ import j86.java.awt.GraphicsDevice;
 import j86.java.awt.ImageCapabilities;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.VolatileImage;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.VolatileImage;
+import j86.java.awt.image.WritableRaster;
 
 public class BufferedImageGraphicsConfig
     extends GraphicsConfiguration

@@ -20,24 +20,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 import javax.xml.XMLConstants;
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer;
+import j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

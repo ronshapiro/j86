@@ -25,7 +25,7 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 
 /**
  * An informative annotation type used to indicate that an interface
@@ -33,7 +33,7 @@ import j86.j86.java.lang.annotation.*;
  * defined by the Java Language Specification.
  *
  * Conceptually, a functional interface has exactly one abstract
- * method.  Since {@linkplain j86.j86.j86.java.lang.reflect.Method#isDefault()
+ * method.  Since {@linkplain j86.java.lang.reflect.Method#isDefault()
  * default methods} have an implementation, they are not abstract.  If
  * an interface declares an abstract method overriding one of the
  * public methods of {@code j86.java.lang.Object}, that also does

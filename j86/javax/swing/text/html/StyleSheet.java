@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.java.util.*;
@@ -32,9 +32,9 @@ import j86.java.net.*;
 import j86.javax.swing.Icon;
 import j86.javax.swing.ImageIcon;
 import j86.javax.swing.UIManager;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.ChangeListener;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.ChangeListener;
+import j86.javax.swing.text.*;
 
 /**
  * Support for defining the visual characteristics of
@@ -77,8 +77,8 @@ import j86.j86.javax.swing.text.*;
  * <pre><code>
  * &nbsp;
  * &nbsp; import j86.java.util.*;
- * &nbsp; import j86.j86.javax.swing.text.*;
- * &nbsp; import j86.j86.j86.javax.swing.text.html.*;
+ * &nbsp; import j86.javax.swing.text.*;
+ * &nbsp; import j86.javax.swing.text.html.*;
  * &nbsp;
  * &nbsp; public class ShowStyles {
  * &nbsp;
@@ -396,7 +396,7 @@ public class StyleSheet extends StyleContext {
             }
             if (!linkedStyleSheets.contains(ss)) {
                 int index = 0;
-                if (ss instanceof j86.j86.javax.swing.plaf.UIResource
+                if (ss instanceof j86.javax.swing.plaf.UIResource
                     && linkedStyleSheets.size() > 1) {
                     index = linkedStyleSheets.size() - 1;
                 }

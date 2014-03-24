@@ -26,7 +26,7 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ColorModel;
 
 import j86.sun.awt.AWTAccessor;
 import j86.sun.awt.AppContext;
@@ -492,7 +492,7 @@ public abstract class GraphicsDevice {
      * @return number of bytes available in accelerated memory.
      * A negative return value indicates that the amount of accelerated memory
      * on this GraphicsDevice is indeterminate.
-     * @see j86.j86.j86.java.awt.image.VolatileImage#flush
+     * @see j86.java.awt.image.VolatileImage#flush
      * @see ImageCapabilities#isAccelerated
      * @since 1.4
      */

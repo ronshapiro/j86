@@ -25,7 +25,7 @@
 package j86.sun.swing;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 import j86.java.util.*;
 
 /**

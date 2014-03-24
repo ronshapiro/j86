@@ -25,7 +25,7 @@
 package j86.java.applet;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ColorModel;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.net.URL;
@@ -486,7 +486,7 @@ public class Applet extends Panel {
      * @see     j86.java.applet.Applet#init()
      * @see     j86.java.applet.Applet#stop()
      * @see     j86.java.awt.Component#isShowing()
-     * @see     j86.j86.java.awt.event.ComponentListener#componentShown(java.awt.event.ComponentEvent)
+     * @see     j86.java.awt.event.ComponentListener#componentShown(java.awt.event.ComponentEvent)
      */
     public void start() {
     }

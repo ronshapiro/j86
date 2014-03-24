@@ -59,15 +59,15 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.ERA;
 
 import j86.java.time.DateTimeException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 
 /**
  * An era in the Hijrah calendar system.

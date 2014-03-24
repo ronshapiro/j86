@@ -66,17 +66,17 @@
  * </p>
  * <p>
  * Printing and parsing is based around the
- * {@link j86.j86.java.time.format.DateTimeFormatter DateTimeFormatter} class.
+ * {@link j86.java.time.format.DateTimeFormatter DateTimeFormatter} class.
  * Instances are generally obtained from
- * {@link j86.j86.java.time.format.DateTimeFormatter DateTimeFormatter}, however
- * {@link j86.j86.java.time.format.DateTimeFormatterBuilder DateTimeFormatterBuilder}
+ * {@link j86.java.time.format.DateTimeFormatter DateTimeFormatter}, however
+ * {@link j86.java.time.format.DateTimeFormatterBuilder DateTimeFormatterBuilder}
  * can be used if more power is needed.
  * </p>
  * <p>
  * Localization occurs by calling
- * {@link j86.j86.java.time.format.DateTimeFormatter#withLocale(j86.java.util.Locale) withLocale(Locale)}
+ * {@link j86.java.time.format.DateTimeFormatter#withLocale(j86.java.util.Locale) withLocale(Locale)}
  * on the formatter. Further customization is possible using
- * {@link j86.j86.java.time.format.DecimalStyle DecimalStyle}.
+ * {@link j86.java.time.format.DecimalStyle DecimalStyle}.
  * </p>
  *
  * <h3>Package specification</h3>
@@ -92,4 +92,4 @@
  * </p>
  * @since JDK1.8
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;

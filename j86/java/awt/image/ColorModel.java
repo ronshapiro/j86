@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.java.awt.color.ICC_ColorSpace;
-import j86.j86.sun.java2d.cmm.CMSManager;
-import j86.j86.sun.java2d.cmm.ColorTransform;
-import j86.j86.sun.java2d.cmm.PCMM;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ICC_ColorSpace;
+import j86.sun.java2d.cmm.CMSManager;
+import j86.sun.java2d.cmm.ColorTransform;
+import j86.sun.java2d.cmm.PCMM;
 import j86.java.awt.Toolkit;
 import j86.java.util.Collections;
 import j86.java.util.Map;
@@ -148,7 +148,7 @@ import j86.java.util.WeakHashMap;
  * @see j86.java.awt.Image
  * @see BufferedImage
  * @see RenderedImage
- * @see j86.j86.java.awt.color.ColorSpace
+ * @see j86.java.awt.color.ColorSpace
  * @see SampleModel
  * @see Raster
  * @see DataBuffer
@@ -178,7 +178,7 @@ public abstract class ColorModel implements Transparency{
 
     /**
      * This is copied from j86.java.awt.Toolkit since we need the library
-     * loaded in j86.j86.j86.java.awt.image also:
+     * loaded in j86.java.awt.image also:
      *
      * WARNING: This is a temporary workaround for a problem in the
      * way the AWT loads native libraries. A number of classes in the

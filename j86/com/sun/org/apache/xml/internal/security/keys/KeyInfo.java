@@ -20,41 +20,41 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.keys;
+package j86.com.sun.org.apache.xml.internal.security.keys;
 
 import j86.java.security.PrivateKey;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.EncryptedKey;
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.XMLEncryptionException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyName;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyValue;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.MgmtData;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.PGPData;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.SPKIData;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.encryption.EncryptedKey;
+import j86.com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
+import j86.com.sun.org.apache.xml.internal.security.encryption.XMLEncryptionException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.DEREncodedKeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.KeyInfoReference;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.KeyName;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.KeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.MgmtData;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.PGPData;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.SPKIData;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.keyvalues.RSAKeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -95,8 +95,8 @@ import org.w3c.dom.NodeList;
 public class KeyInfo extends SignatureElementProxy {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(KeyInfo.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(KeyInfo.class.getName());
 
     // We need at least one StorageResolver otherwise
     // the KeyResolvers would not be called.
@@ -826,27 +826,27 @@ public class KeyInfo extends SignatureElementProxy {
         PublicKey pk = this.getPublicKeyFromInternalResolvers();
 
         if (pk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a key using the per-KeyInfo key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a key using the per-KeyInfo key resolvers");
             }
 
             return pk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a key using the per-KeyInfo key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a key using the per-KeyInfo key resolvers");
         }
 
         pk = this.getPublicKeyFromStaticResolvers();
 
         if (pk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a key using the system-wide key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a key using the system-wide key resolvers");
             }
 
             return pk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a key using the system-wide key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a key using the system-wide key resolvers");
         }
 
         return null;
@@ -892,8 +892,8 @@ public class KeyInfo extends SignatureElementProxy {
      */
     PublicKey getPublicKeyFromInternalResolvers() throws KeyResolverException {
         for (KeyResolverSpi keyResolver : internalKeyResolvers) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
             }
             keyResolver.setSecureValidation(secureValidation);
             Node currentChild = this.constructionElement.getFirstChild();
@@ -929,28 +929,28 @@ public class KeyInfo extends SignatureElementProxy {
         X509Certificate cert = this.getX509CertificateFromInternalResolvers();
 
         if (cert != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a X509Certificate using the per-KeyInfo key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a X509Certificate using the per-KeyInfo key resolvers");
             }
 
             return cert;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a X509Certificate using the per-KeyInfo key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a X509Certificate using the per-KeyInfo key resolvers");
         }
 
         // Then use the system-wide Resolvers
         cert = this.getX509CertificateFromStaticResolvers();
 
         if (cert != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a X509Certificate using the system-wide key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a X509Certificate using the system-wide key resolvers");
             }
 
             return cert;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a X509Certificate using the system-wide key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a X509Certificate using the system-wide key resolvers");
         }
 
         return null;
@@ -966,8 +966,8 @@ public class KeyInfo extends SignatureElementProxy {
      */
     X509Certificate getX509CertificateFromStaticResolvers()
         throws KeyResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE,
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE,
                 "Start getX509CertificateFromStaticResolvers() with " + KeyResolver.length()
                 + " resolvers"
             );
@@ -1015,16 +1015,16 @@ public class KeyInfo extends SignatureElementProxy {
      */
     X509Certificate getX509CertificateFromInternalResolvers()
         throws KeyResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE,
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE,
                 "Start getX509CertificateFromInternalResolvers() with "
                 + this.lengthInternalKeyResolver() + " resolvers"
             );
         }
         String uri = this.getBaseURI();
         for (KeyResolverSpi keyResolver : internalKeyResolvers) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
             }
             keyResolver.setSecureValidation(secureValidation);
             X509Certificate cert = applyCurrentResolver(uri, keyResolver);
@@ -1045,27 +1045,27 @@ public class KeyInfo extends SignatureElementProxy {
         SecretKey sk = this.getSecretKeyFromInternalResolvers();
 
         if (sk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a secret key using the per-KeyInfo key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a secret key using the per-KeyInfo key resolvers");
             }
 
             return sk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the per-KeyInfo key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the per-KeyInfo key resolvers");
         }
 
         sk = this.getSecretKeyFromStaticResolvers();
 
         if (sk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a secret key using the system-wide key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a secret key using the system-wide key resolvers");
             }
 
             return sk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the system-wide key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the system-wide key resolvers");
         }
 
         return null;
@@ -1113,8 +1113,8 @@ public class KeyInfo extends SignatureElementProxy {
 
     SecretKey getSecretKeyFromInternalResolvers() throws KeyResolverException {
         for (KeyResolverSpi keyResolver : internalKeyResolvers) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
             }
             keyResolver.setSecureValidation(secureValidation);
             Node currentChild = this.constructionElement.getFirstChild();
@@ -1148,24 +1148,24 @@ public class KeyInfo extends SignatureElementProxy {
         PrivateKey pk = this.getPrivateKeyFromInternalResolvers();
 
         if (pk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a private key using the per-KeyInfo key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a private key using the per-KeyInfo key resolvers");
             }
             return pk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the per-KeyInfo key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a secret key using the per-KeyInfo key resolvers");
         }
 
         pk = this.getPrivateKeyFromStaticResolvers();
         if (pk != null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I could find a private key using the system-wide key resolvers");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I could find a private key using the system-wide key resolvers");
             }
             return pk;
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I couldn't find a private key using the system-wide key resolvers");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I couldn't find a private key using the system-wide key resolvers");
         }
 
         return null;
@@ -1212,8 +1212,8 @@ public class KeyInfo extends SignatureElementProxy {
      */
     PrivateKey getPrivateKeyFromInternalResolvers() throws KeyResolverException {
         for (KeyResolverSpi keyResolver : internalKeyResolvers) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Try " + keyResolver.getClass().getName());
             }
             keyResolver.setSecureValidation(secureValidation);
             Node currentChild = this.constructionElement.getFirstChild();

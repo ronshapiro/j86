@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sound.sampled.spi;
+package j86.javax.sound.sampled.spi;
 
 import j86.java.io.InputStream;
 

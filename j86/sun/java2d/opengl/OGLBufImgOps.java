@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
-import j86.j86.j86.java.awt.image.AffineTransformOp;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ConvolveOp;
-import j86.j86.j86.java.awt.image.LookupOp;
-import j86.j86.j86.java.awt.image.RescaleOp;
+import j86.java.awt.image.AffineTransformOp;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ConvolveOp;
+import j86.java.awt.image.LookupOp;
+import j86.java.awt.image.RescaleOp;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.pipe.BufferedBufImgOps;
-import static j86.j86.sun.java2d.opengl.OGLContext.OGLContextCaps.*;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.pipe.BufferedBufImgOps;
+import static j86.sun.java2d.opengl.OGLContext.OGLContextCaps.*;
 
 class OGLBufImgOps extends BufferedBufImgOps {
 

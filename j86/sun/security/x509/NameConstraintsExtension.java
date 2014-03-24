@@ -27,11 +27,11 @@ package j86.sun.security.x509;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.*;
 import j86.sun.security.pkcs.PKCS9Attribute;

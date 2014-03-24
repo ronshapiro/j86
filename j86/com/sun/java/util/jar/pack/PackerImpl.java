@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.Attribute.Layout;
+import j86.com.sun.j86.java.util.jar.pack.Attribute.Layout;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.BufferedInputStream;
 import j86.java.io.ByteArrayInputStream;
@@ -43,10 +43,10 @@ import j86.java.util.ListIterator;
 import j86.java.util.Map;
 import j86.java.util.SortedMap;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.JarInputStream;
-import j86.j86.java.util.jar.Pack200;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarInputStream;
+import j86.java.util.jar.Pack200;
 
 
 /*

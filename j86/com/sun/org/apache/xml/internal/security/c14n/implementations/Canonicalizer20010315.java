@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
@@ -35,11 +35,11 @@ import j86.java.util.TreeSet;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.helper.C14nHelper;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -253,7 +253,7 @@ public abstract class Canonicalizer20010315 extends CanonicalizerBase {
      * Returns the Attr[]s to be output for the given element.
      * <br>
      * IMPORTANT: This method expects to work on a modified DOM tree, i.e. a DOM which has
-     * been prepared using {@link j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
+     * been prepared using {@link j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils#circumventBug2650(
      * org.w3c.dom.Document)}.
      *
      * @param element

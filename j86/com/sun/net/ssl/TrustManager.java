@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.TrustManager
+ * NOTE:  this file was copied from j86.javax.net.ssl.TrustManager
  */
 
 package com.j86.sun.net.ssl;
@@ -35,7 +35,7 @@ package com.j86.sun.net.ssl;
  * authentication material.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.TrustManager}.
+ *      replaced by {@link j86.javax.net.ssl.TrustManager}.
  */
 @Deprecated
 public interface TrustManager {

@@ -41,18 +41,18 @@ package j86.java.text;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.java.text.spi.DecimalFormatSymbolsProvider;
 import j86.java.util.ArrayList;
 import j86.java.util.Currency;
 import j86.java.util.List;
 import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;
 import j86.java.util.ResourceBundle;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 /**
  * This class represents the set of symbols (such as the decimal separator,
@@ -76,7 +76,7 @@ public class DecimalFormatSymbols implements Cloneable, Serializable {
      * This constructor can only construct instances for the locales
      * supported by the Java runtime environment, not for those
      * supported by installed
-     * {@link j86.j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      * <p>This is equivalent to calling
@@ -94,7 +94,7 @@ public class DecimalFormatSymbols implements Cloneable, Serializable {
      * This constructor can only construct instances for the locales
      * supported by the Java runtime environment, not for those
      * supported by installed
-     * {@link j86.j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      * If the specified locale contains the {@link j86.java.util.Locale#UNICODE_LOCALE_EXTENSION}
@@ -119,7 +119,7 @@ public class DecimalFormatSymbols implements Cloneable, Serializable {
      * localized instances.
      * The returned array represents the union of locales supported by the Java
      * runtime and by installed
-     * {@link j86.j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DecimalFormatSymbolsProvider DecimalFormatSymbolsProvider}
      * implementations.  It must contain at least a <code>Locale</code>
      * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
@@ -138,7 +138,7 @@ public class DecimalFormatSymbols implements Cloneable, Serializable {
      * locale.  This method provides access to <code>DecimalFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link j86.j86.java.text.spi.DecimalFormatSymbolsProvider
+     * {@link j86.java.text.spi.DecimalFormatSymbolsProvider
      * DecimalFormatSymbolsProvider} implementations.
      * <p>This is equivalent to calling
      * {@link #getInstance(Locale)
@@ -157,7 +157,7 @@ public class DecimalFormatSymbols implements Cloneable, Serializable {
      * locale.  This method provides access to <code>DecimalFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link j86.j86.java.text.spi.DecimalFormatSymbolsProvider
+     * {@link j86.java.text.spi.DecimalFormatSymbolsProvider
      * DecimalFormatSymbolsProvider} implementations.
      * If the specified locale contains the {@link j86.java.util.Locale#UNICODE_LOCALE_EXTENSION}
      * for the numbering system, the instance is initialized with the specified numbering

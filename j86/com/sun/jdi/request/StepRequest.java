@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a step occurs in the target VM.
  * When an enabled StepRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
- * {@link j86.j86.com.sun.jdi.event.StepEvent StepEvent} will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.com.sun.jdi.event.StepEvent StepEvent} will be placed on the
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing StepRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see j86.j86.com.sun.jdi.event.StepEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.StepEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

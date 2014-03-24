@@ -52,7 +52,7 @@ public class Resources_sv extends j86.java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tIdentitetshavareklass = {0}\n\tIdentitetshavarenamn = {1}"},
 
-        // j86.j86.javax.security.auth.x500
+        // j86.javax.security.auth.x500
         {"provided.null.name", "angav null-namn"},
         {"provided.null.keyword.map", "nullnyckelordsmappning tillhandah\u00F6lls"},
         {"provided.null.OID.map", "null-OID-mappning tillhandah\u00F6lls"},
@@ -77,10 +77,10 @@ public class Resources_sv extends j86.java.util.ListResourceBundle {
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "f\u00F6rs\u00F6ker l\u00E4gga till ett objekt som inte \u00E4r en instans av {0}"},
 
-        // j86.j86.javax.security.auth.login.AppConfigurationEntry
+        // j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // j86.j86.javax.security.auth.login.LoginContext
+        // j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Ogiltiga null-indata: namn"},
         {"No.LoginModules.configured.for.name",
          "Inga inloggningsmoduler har konfigurerats f\u00F6r {0}"},
@@ -146,7 +146,7 @@ public class Resources_sv extends j86.java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "null-principalClass eller -principalName"},
 
-        // j86.j86.sun.security.pkcs11.SunPKCS11
+        // j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11-tecken [{0}] L\u00F6senord: "},
 

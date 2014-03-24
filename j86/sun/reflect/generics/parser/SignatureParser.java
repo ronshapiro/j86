@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.parser;
+package j86.sun.reflect.generics.parser;
 
-import j86.j86.j86.java.lang.reflect.GenericSignatureFormatError;
+import j86.java.lang.reflect.GenericSignatureFormatError;
 import j86.java.util.*;
-import j86.j86.sun.reflect.generics.tree.*;
+import j86.sun.reflect.generics.tree.*;
 
 /**
  * Parser for type signatures, as defined in the Java Virtual
  * Machine Specification (JVMS) chapter 4.
  * Converts the signatures into an abstract syntax tree (AST) representation.
- * See the package j86.j86.sun.reflect.generics.tree for details of the AST.
+ * See the package j86.sun.reflect.generics.tree for details of the AST.
  */
 public class SignatureParser {
     // The input is conceptually a character stream (though currently it's

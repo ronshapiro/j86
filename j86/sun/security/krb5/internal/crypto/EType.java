@@ -29,9 +29,9 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 import j86.sun.security.krb5.Config;
 import j86.sun.security.krb5.EncryptedData;
 import j86.sun.security.krb5.EncryptionKey;
@@ -77,38 +77,38 @@ public abstract class EType {
         switch (eTypeConst) {
         case EncryptedData.ETYPE_NULL:
             eType = new NullEType();
-            eTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.NullEType";
+            eTypeName = "j86.sun.security.krb5.internal.crypto.NullEType";
             break;
         case EncryptedData.ETYPE_DES_CBC_CRC:
             eType = new DesCbcCrcEType();
-            eTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.DesCbcCrcEType";
+            eTypeName = "j86.sun.security.krb5.internal.crypto.DesCbcCrcEType";
             break;
         case EncryptedData.ETYPE_DES_CBC_MD5:
             eType = new DesCbcMd5EType();
-            eTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.DesCbcMd5EType";
+            eTypeName = "j86.sun.security.krb5.internal.crypto.DesCbcMd5EType";
             break;
 
         case EncryptedData.ETYPE_DES3_CBC_HMAC_SHA1_KD:
             eType = new Des3CbcHmacSha1KdEType();
             eTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.Des3CbcHmacSha1KdEType";
+                "j86.sun.security.krb5.internal.crypto.Des3CbcHmacSha1KdEType";
             break;
 
         case EncryptedData.ETYPE_AES128_CTS_HMAC_SHA1_96:
             eType = new Aes128CtsHmacSha1EType();
             eTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType";
+                "j86.sun.security.krb5.internal.crypto.Aes128CtsHmacSha1EType";
             break;
 
         case EncryptedData.ETYPE_AES256_CTS_HMAC_SHA1_96:
             eType = new Aes256CtsHmacSha1EType();
             eTypeName =
-                "j86.j86.j86.sun.security.krb5.internal.crypto.Aes256CtsHmacSha1EType";
+                "j86.sun.security.krb5.internal.crypto.Aes256CtsHmacSha1EType";
             break;
 
         case EncryptedData.ETYPE_ARCFOUR_HMAC:
             eType = new ArcFourHmacEType();
-            eTypeName = "j86.j86.j86.sun.security.krb5.internal.crypto.ArcFourHmacEType";
+            eTypeName = "j86.sun.security.krb5.internal.crypto.ArcFourHmacEType";
             break;
 
         default:

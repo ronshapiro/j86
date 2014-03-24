@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.java.util.*;
 import j86.java.io.IOException;
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 import j86.com.sun.security.auth.UnixPrincipal;
 import j86.com.sun.security.auth.UnixNumericUserPrincipal;
 import j86.com.sun.security.auth.UnixNumericGroupPrincipal;

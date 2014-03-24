@@ -25,14 +25,14 @@
 
 package j86.java.util;
 
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.util.regex.*;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.Files;
+import j86.java.util.regex.*;
 import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.nio.*;
-import j86.j86.java.nio.channels.*;
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.channels.*;
+import j86.java.nio.charset.*;
 import j86.java.text.*;
 import j86.java.util.Locale;
 
@@ -555,7 +555,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified input stream. Bytes from the stream are converted
      * into characters using the underlying platform's
-     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source An input stream to be scanned
      */
@@ -602,7 +602,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified file. Bytes from the file are converted into
      * characters using the underlying platform's
-     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source A file to be scanned
      * @throws FileNotFoundException if source is not found
@@ -653,7 +653,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified file. Bytes from the file are converted into
      * characters using the underlying platform's
-     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param   source
      *          the path to the file to be scanned
@@ -706,7 +706,7 @@ public final class Scanner implements Iterator<String>, Closeable {
      * Constructs a new <code>Scanner</code> that produces values scanned
      * from the specified channel. Bytes from the source are converted into
      * characters using the underlying platform's
-     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}.
+     * {@linkplain j86.java.nio.charset.Charset#defaultCharset() default charset}.
      *
      * @param  source A channel to scan
      */

@@ -33,7 +33,7 @@ import j86.javax.sound.sampled.AudioFormat;
 import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.AudioSystem;
 import j86.javax.sound.sampled.AudioFormat.Encoding;
-import j86.j86.javax.sound.sampled.spi.FormatConversionProvider;
+import j86.javax.sound.sampled.spi.FormatConversionProvider;
 
 /**
  * This class is used to convert between 8,16,24,32 bit signed/unsigned

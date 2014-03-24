@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ColorSpace;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.ImageCapabilities;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.security.AccessController;
@@ -40,11 +40,11 @@ import j86.java.security.PrivilegedAction;
 import j86.java.util.Hashtable;
 import j86.java.util.Vector;
 
-import j86.j86.j86.sun.awt.image.BytePackedRaster;
-import j86.j86.j86.sun.awt.image.ShortComponentRaster;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
-import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
-import j86.j86.j86.sun.awt.image.OffScreenImageSource;
+import j86.sun.awt.image.BytePackedRaster;
+import j86.sun.awt.image.ShortComponentRaster;
+import j86.sun.awt.image.ByteComponentRaster;
+import j86.sun.awt.image.IntegerComponentRaster;
+import j86.sun.awt.image.OffScreenImageSource;
 
 /**
  *

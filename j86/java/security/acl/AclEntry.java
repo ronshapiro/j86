@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.acl;
+package j86.java.security.acl;
 
 import j86.java.util.Enumeration;
 import j86.java.security.Principal;
@@ -47,7 +47,7 @@ import j86.java.security.Principal;
  * {@link #setNegativePermissions() setNegativePermissions}
  * method is called on it.
  *
- * @see j86.j86.java.security.acl.Acl
+ * @see j86.java.security.acl.Acl
  *
  * @author      Satish Dharmaraj
  */

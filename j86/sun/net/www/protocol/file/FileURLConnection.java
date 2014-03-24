@@ -29,7 +29,7 @@
  * @author      Steven B. Byrne
  */
 
-package j86.j86.j86.sun.net.www.protocol.file;
+package j86.sun.net.www.protocol.file;
 
 import j86.java.net.URL;
 import j86.java.net.FileNameMap;
@@ -37,7 +37,7 @@ import j86.java.io.*;
 import j86.java.text.Collator;
 import j86.java.security.Permission;
 import j86.sun.net.*;
-import j86.j86.sun.net.www.*;
+import j86.sun.net.www.*;
 import j86.java.util.*;
 import j86.java.text.SimpleDateFormat;
 

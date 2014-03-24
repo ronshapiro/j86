@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.pool;
+package j86.com.sun.jndi.ldap.pool;
 
 /**
  * Represents a callback used to release or remove a PooledConnection back

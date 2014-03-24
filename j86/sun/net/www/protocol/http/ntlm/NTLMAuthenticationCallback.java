@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.net.www.protocol.http.ntlm;
+package j86.sun.net.www.protocol.http.ntlm;
 
 import j86.java.net.URL;
 

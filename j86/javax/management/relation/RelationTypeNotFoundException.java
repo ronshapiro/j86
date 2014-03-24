@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.relation;
+package j86.javax.management.relation;
 
 /**
  * This exception is raised when there is no relation type with given name in

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pisces;
+package j86.sun.java2d.pisces;
 
 import j86.java.util.Arrays;
 import static j86.java.lang.Math.PI;
@@ -234,7 +234,7 @@ final class Helpers {
         }
     }
 
-    // Most of these are copied from classes in j86.j86.java.awt.geom because we need
+    // Most of these are copied from classes in j86.java.awt.geom because we need
     // float versions of these functions, and Line2D, CubicCurve2D,
     // QuadCurve2D don't provide them.
     /**

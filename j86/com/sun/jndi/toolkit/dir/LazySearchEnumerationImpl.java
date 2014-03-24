@@ -41,8 +41,8 @@
 package j86.com.sun.jndi.toolkit.dir;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.DirectoryManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.DirectoryManager;
 
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Hashtable;

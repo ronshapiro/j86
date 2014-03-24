@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.io.*;
 
@@ -51,7 +51,7 @@ import j86.java.io.*;
  *         (defaults to no <tt>Filter</tt>). </li>
  * <li>   &lt;handler-name&gt;.formatter
  *        specifies the name of a <tt>Formatter</tt> class to use
- *        (defaults to <tt>j86.j86.java.util.logging.SimpleFormatter</tt>). </li>
+ *        (defaults to <tt>j86.java.util.logging.SimpleFormatter</tt>). </li>
  * <li>   &lt;handler-name&gt;.encoding
  *        the name of the character set encoding to use (defaults to
  *        the default platform encoding). </li>
@@ -59,14 +59,14 @@ import j86.java.io.*;
  * <p>
  * For example, the properties for {@code StreamHandler} would be:
  * <ul>
- * <li>   j86.j86.java.util.logging.StreamHandler.level=INFO </li>
- * <li>   j86.j86.java.util.logging.StreamHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.java.util.logging.StreamHandler.level=INFO </li>
+ * <li>   j86.java.util.logging.StreamHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * @since 1.4

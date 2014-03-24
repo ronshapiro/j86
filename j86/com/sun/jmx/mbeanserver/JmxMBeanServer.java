@@ -36,7 +36,7 @@ import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.util.List;
 import j86.java.util.Set;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.Attribute;
 import j86.javax.management.AttributeList;
@@ -62,7 +62,7 @@ import j86.javax.management.OperationsException;
 import j86.javax.management.QueryExp;
 import j86.javax.management.ReflectionException;
 import j86.javax.management.RuntimeOperationsException;
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * This is the base class for MBean manipulation on the agent side. It
@@ -214,7 +214,7 @@ public final class JmxMBeanServer
      *        {@link MBeanServerInterceptor} will be enabled (default is
      *        <code>false</code>).
      * @param fairLock If {@code true}, the MBean repository will use a {@link
-     *        j86.j86.j86.java.util.concurrent.locks.ReentrantReadWriteLock#ReentrantReadWriteLock(boolean)
+     *        j86.java.util.concurrent.locks.ReentrantReadWriteLock#ReentrantReadWriteLock(boolean)
      *        fair locking} policy.
      */
     JmxMBeanServer(String domain, MBeanServer outer,
@@ -282,7 +282,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates and registers an MBean in the MBean server.
      * The MBean server will use its
-     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
+     * {@link j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
      * to load the class of the MBean.
      * An object name is associated to the MBean.
      * If the object name given is null, the MBean can automatically
@@ -386,7 +386,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates and registers an MBean in the MBean server.
      * The MBean server will use its
-     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
+     * {@link j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}
      * to load the class of the MBean.
      * An object name is associated to the MBean.
      * If the object name given is null, the MBean can automatically
@@ -923,7 +923,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server (using its
-     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
+     * {@link j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
      * The object's class should have a public constructor.
      * It returns a reference to the newly created object.
      * The newly created object is not registered in the MBean server.
@@ -993,7 +993,7 @@ public final class JmxMBeanServer
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server (using its
-     * {@link j86.j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
+     * {@link j86.javax.management.loading.ClassLoaderRepository Default Loader Repository}).
      * The object's class should have a public constructor.
      * The call returns a reference to the newly created object.
      * The newly created object is not registered in the MBean server.

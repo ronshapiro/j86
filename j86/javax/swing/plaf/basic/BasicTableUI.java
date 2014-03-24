@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.datatransfer.*;
-import j86.j86.java.awt.dnd.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
+import j86.java.awt.dnd.*;
+import j86.java.awt.event.*;
 import j86.java.util.Enumeration;
 import j86.java.util.EventObject;
 import j86.java.util.Hashtable;
 import j86.java.util.TooManyListenersException;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.table.*;
-import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.table.*;
+import j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
 import j86.sun.swing.SwingUtilities2;
 
 

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package com.j86.j86.sun.net.httpserver;
+package com.j86.sun.net.httpserver;
 
 import j86.java.net.*;
 import j86.java.io.*;
 import j86.java.nio.*;
 import j86.java.security.*;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.*;
-import j86.j86.javax.net.ssl.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.HttpServerProvider;
+import j86.java.util.concurrent.*;
+import j86.javax.net.ssl.*;
+import j86.com.j86.sun.net.httpserver.spi.HttpServerProvider;
 
 /**
  * This class implements a simple HTTP server. A HttpServer is bound to an IP address
@@ -48,7 +48,7 @@ import j86.com.j86.j86.sun.net.httpserver.spi.HttpServerProvider;
  * are created by calling {@link #createContext(String,HttpHandler)}.
  * Any request for which no handler can be found is rejected with a 404 response.
  * Management of threads can be done external to this object by providing a
- * {@link j86.j86.java.util.concurrent.Executor} object. If none is provided a default
+ * {@link j86.java.util.concurrent.Executor} object. If none is provided a default
  * implementation is used.
  * <p>
  * <a name="mapping_description"></a>
@@ -152,7 +152,7 @@ public abstract class HttpServer {
     public abstract void start () ;
 
     /**
-     * sets this server's {@link j86.j86.java.util.concurrent.Executor} object. An
+     * sets this server's {@link j86.java.util.concurrent.Executor} object. An
      * Executor must be established before {@link #start()} is called.
      * All HTTP requests are handled in tasks given to the executor.
      * If this method is not called (before start()) or if it is

@@ -26,15 +26,15 @@
 /*
  * $Id: DOMKeyInfoFactory.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.math.BigInteger;
 import j86.java.security.KeyException;
 import j86.java.security.PublicKey;
 import j86.java.util.List;
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.keyinfo.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -128,11 +128,11 @@ public final class DOMKeyInfoFactory extends KeyInfoFactory {
         if (xmlStructure == null) {
             throw new NullPointerException("xmlStructure cannot be null");
         }
-        if (!(xmlStructure instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
+        if (!(xmlStructure instanceof j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("xmlStructure must be of type DOMStructure");
         }
         Node node =
-            ((j86.j86.javax.xml.crypto.dom.DOMStructure) xmlStructure).getNode();
+            ((j86.javax.xml.crypto.dom.DOMStructure) xmlStructure).getNode();
         node.normalize();
 
         Element element = null;

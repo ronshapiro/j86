@@ -24,8 +24,8 @@
  */
 package j86.sun.rmi.transport;
 
-import j86.j86.java.lang.ref.PhantomReference;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.PhantomReference;
+import j86.java.lang.ref.ReferenceQueue;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.HashMap;
@@ -36,10 +36,10 @@ import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.rmi.ConnectException;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.dgc.DGC;
-import j86.j86.java.rmi.dgc.Lease;
-import j86.j86.java.rmi.dgc.VMID;
-import j86.j86.java.rmi.server.ObjID;
+import j86.java.rmi.dgc.DGC;
+import j86.java.rmi.dgc.Lease;
+import j86.java.rmi.dgc.VMID;
+import j86.java.rmi.server.ObjID;
 import j86.sun.misc.GC;
 import j86.sun.rmi.runtime.NewThreadAction;
 import j86.sun.rmi.server.UnicastRef;
@@ -70,7 +70,7 @@ import j86.sun.security.action.GetLongAction;
  * collector, indicating that the server no longer needs to keep the
  * remote object alive for this client.
  *
- * @see j86.j86.java.rmi.dgc.DGC, j86.sun.rmi.transport.DGCImpl
+ * @see j86.java.rmi.dgc.DGC, j86.sun.rmi.transport.DGCImpl
  *
  * @author  Ann Wollrath
  * @author  Peter Jones
@@ -86,7 +86,7 @@ final class DGCClient {
     /** lease duration to request (usually ignored by server) */
     private static final long leaseValue =              // default 10 minutes
         AccessController.doPrivileged(
-            new GetLongAction("j86.j86.java.rmi.dgc.leaseValue",
+            new GetLongAction("j86.java.rmi.dgc.leaseValue",
                               600000)).longValue();
 
     /** maximum interval between retries of failed clean calls */

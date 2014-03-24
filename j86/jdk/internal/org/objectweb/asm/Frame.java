@@ -945,11 +945,11 @@ final class Frame {
                 push(OBJECT | cw.addType("j86.java.lang/String"));
                 break;
             case ClassWriter.MTYPE:
-                push(OBJECT | cw.addType("j86.j86.java.lang.invoke/MethodType"));
+                push(OBJECT | cw.addType("j86.java.lang.invoke/MethodType"));
                 break;
             // case ClassWriter.HANDLE_BASE + [1..9]:
             default:
-                push(OBJECT | cw.addType("j86.j86.java.lang.invoke/MethodHandle"));
+                push(OBJECT | cw.addType("j86.java.lang.invoke/MethodHandle"));
             }
             break;
         case Opcodes.ALOAD:

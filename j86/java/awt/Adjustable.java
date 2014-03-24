@@ -25,9 +25,9 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * The interface for objects which have an adjustable numeric value

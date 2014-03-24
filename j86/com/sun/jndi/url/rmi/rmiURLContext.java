@@ -28,7 +28,7 @@ package j86.com.sun.jndi.url.rmi;
 import j86.java.util.Hashtable;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.spi.ResolveResult;
 import j86.com.sun.jndi.toolkit.url.GenericURLContext;
 import j86.com.sun.jndi.rmi.registry.RegistryContext;
 

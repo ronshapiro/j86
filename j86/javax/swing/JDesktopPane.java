@@ -29,7 +29,7 @@ import j86.java.util.List;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
 import j86.java.util.Iterator;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.awt.Component;

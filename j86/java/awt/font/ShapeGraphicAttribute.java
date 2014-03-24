@@ -38,15 +38,15 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Shape;
 import j86.java.awt.Graphics;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>ShapeGraphicAttribute</code> class is an implementation of

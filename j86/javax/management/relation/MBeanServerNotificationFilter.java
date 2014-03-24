@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.relation;
+package j86.javax.management.relation;
 
 import static j86.com.sun.jmx.mbeanserver.Util.cast;
 import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
@@ -45,7 +45,7 @@ import j86.javax.management.NotificationFilterSupport;
 import j86.javax.management.ObjectName;
 
 import j86.java.util.List;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 
 /**

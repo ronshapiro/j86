@@ -26,7 +26,7 @@ package j86.java.awt;
 
 import j86.java.util.List;
 import j86.java.util.ArrayList;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * A FocusTraversalPolicy that determines traversal order based on the order

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.StandardCharsets;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.StandardCharsets;
 import j86.java.util.Vector;
 import j86.java.util.HashSet;
-import static j86.j86.java.util.zip.ZipConstants64.*;
-import static j86.j86.java.util.zip.ZipUtils.*;
+import static j86.java.util.zip.ZipConstants64.*;
+import static j86.java.util.zip.ZipUtils.*;
 
 /**
  * This class implements an output stream filter for writing files in the
@@ -111,7 +111,7 @@ class ZipOutputStream extends DeflaterOutputStream implements ZipConstants {
     /**
      * Creates a new ZIP output stream.
      *
-     * <p>The UTF-8 {@link j86.j86.java.nio.charset.Charset charset} is used
+     * <p>The UTF-8 {@link j86.java.nio.charset.Charset charset} is used
      * to encode the entry names and comments.
      *
      * @param out the actual output stream
@@ -125,7 +125,7 @@ class ZipOutputStream extends DeflaterOutputStream implements ZipConstants {
      *
      * @param out the actual output stream
      *
-     * @param charset the {@linkplain j86.j86.java.nio.charset.Charset charset}
+     * @param charset the {@linkplain j86.java.nio.charset.Charset charset}
      *                to be used to encode the entry names and comments
      *
      * @since 1.7

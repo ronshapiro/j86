@@ -26,11 +26,11 @@
 package j86.com.sun.crypto.provider;
 
 import j86.java.security.InvalidKeyException;
-import j86.j86.java.security.spec.KeySpec;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.KeySpec;
+import j86.java.security.spec.InvalidKeySpecException;
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.SecretKeyFactorySpi;
-import j86.j86.javax.crypto.spec.PBEKeySpec;
+import j86.javax.crypto.spec.PBEKeySpec;
 
 /**
  * This class implements a key factory for PBE keys derived using
@@ -88,12 +88,12 @@ abstract class PBKDF2Core extends SecretKeyFactorySpi {
      */
     protected KeySpec engineGetKeySpec(SecretKey key, Class<?> keySpecCl)
         throws InvalidKeySpecException {
-        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
+        if (key instanceof j86.javax.crypto.interfaces.PBEKey) {
             // Check if requested key spec is amongst the valid ones
             if ((keySpecCl != null)
                 && PBEKeySpec.class.isAssignableFrom(keySpecCl)) {
-                j86.j86.javax.crypto.interfaces.PBEKey pKey =
-                    (j86.j86.javax.crypto.interfaces.PBEKey) key;
+                j86.javax.crypto.interfaces.PBEKey pKey =
+                    (j86.javax.crypto.interfaces.PBEKey) key;
                 return new PBEKeySpec
                     (pKey.getPassword(), pKey.getSalt(),
                      pKey.getIterationCount(), pKey.getEncoded().length*8);
@@ -129,9 +129,9 @@ abstract class PBKDF2Core extends SecretKeyFactorySpi {
                 return key;
             }
             // Check if key implements the PBEKey
-            if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
-                j86.j86.javax.crypto.interfaces.PBEKey pKey =
-                    (j86.j86.javax.crypto.interfaces.PBEKey) key;
+            if (key instanceof j86.javax.crypto.interfaces.PBEKey) {
+                j86.javax.crypto.interfaces.PBEKey pKey =
+                    (j86.javax.crypto.interfaces.PBEKey) key;
                 try {
                     PBEKeySpec spec =
                         new PBEKeySpec(pKey.getPassword(),

@@ -34,7 +34,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 /**
  * <p>Class enabling iteration of the values in a Trie.</p>

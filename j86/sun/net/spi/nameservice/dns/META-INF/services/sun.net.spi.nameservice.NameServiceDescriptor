@@ -1,2 +1,2 @@
 # dns service provider descriptor
-j86.j86.j86.j86.sun.net.spi.nameservice.dns.DNSNameServiceDescriptor
+j86.sun.net.spi.nameservice.dns.DNSNameServiceDescriptor

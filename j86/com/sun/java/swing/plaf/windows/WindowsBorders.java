@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 
 import j86.java.awt.Component;
 import j86.java.awt.Insets;
 import j86.java.awt.Color;
 import j86.java.awt.Graphics;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
-import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 /**
  * Factory object that can vend Borders appropriate for the Windows 95 L & F.

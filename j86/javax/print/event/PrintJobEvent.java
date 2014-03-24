@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.event;
+package j86.javax.print.event;
 
 import j86.javax.print.DocPrintJob;
 

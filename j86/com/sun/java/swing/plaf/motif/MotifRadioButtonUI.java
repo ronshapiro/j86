@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.motif;
+package j86.com.sun.java.swing.plaf.motif;
 
 import j86.sun.awt.AppContext;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicRadioButtonUI;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.basic.BasicRadioButtonUI;
 
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 import j86.java.awt.*;
 

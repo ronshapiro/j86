@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.cs;
+package j86.sun.nio.cs;
 
 
 public interface HistoricallyNamedCharset {

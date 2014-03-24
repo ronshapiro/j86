@@ -59,9 +59,9 @@
  * authorization of the copyright holder.
  */
 
-package j86.j86.j86.sun.text.resources.ga;
+package j86.sun.text.resources.ga;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_ga_IE extends ParallelListResourceBundle {
     protected final Object[][] getContents() {

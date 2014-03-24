@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;
 
 import j86.java.io.*;
 import j86.java.util.Date;
@@ -61,7 +61,7 @@ import j86.sun.security.util.*;
  * application depends on the default JGSS Kerberos mechanism to access the
  * KerberosTicket. In that case, however, the application will need an
  * appropriate
- * {@link j86.j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
+ * {@link j86.javax.security.auth.kerberos.ServicePermission ServicePermission}.
  * <p>
  * Note that this class is applicable to both ticket granting tickets and
  * other regular service tickets. A ticket granting ticket is just a
@@ -69,7 +69,7 @@ import j86.sun.security.util.*;
  *
  * @see j86.javax.security.auth.Subject
  * @see j86.javax.security.auth.PrivateCredentialPermission
- * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.javax.security.auth.login.LoginContext
  * @see j86.org.ietf.jgss.GSSCredential
  * @see j86.org.ietf.jgss.GSSManager
  *

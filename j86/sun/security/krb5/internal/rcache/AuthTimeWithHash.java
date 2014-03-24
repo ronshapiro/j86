@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.rcache;
+package j86.sun.security.krb5.internal.rcache;
 
 import j86.java.util.Objects;
 

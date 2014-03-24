@@ -24,13 +24,13 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.FocusEvent;
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.WindowEvent;
 
-import j86.j86.java.awt.peer.KeyboardFocusManagerPeer;
-import j86.j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.peer.KeyboardFocusManagerPeer;
+import j86.java.awt.peer.LightweightPeer;
 
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeSupport;
@@ -38,9 +38,9 @@ import j86.java.beans.PropertyVetoException;
 import j86.java.beans.VetoableChangeListener;
 import j86.java.beans.VetoableChangeSupport;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -53,7 +53,7 @@ import j86.java.util.Set;
 import j86.java.util.StringTokenizer;
 import j86.java.util.WeakHashMap;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
@@ -99,9 +99,9 @@ import j86.sun.awt.AWTAccessor;
  * @see Window
  * @see Frame
  * @see Dialog
- * @see j86.j86.java.awt.event.FocusEvent
- * @see j86.j86.java.awt.event.WindowEvent
- * @see j86.j86.java.awt.event.KeyEvent
+ * @see j86.java.awt.event.FocusEvent
+ * @see j86.java.awt.event.WindowEvent
+ * @see j86.java.awt.event.KeyEvent
  * @since 1.4
  */
 public abstract class KeyboardFocusManager
@@ -589,7 +589,7 @@ public abstract class KeyboardFocusManager
      * active Windows.
      *
      * @see Component#requestFocus()
-     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_LOST
+     * @see j86.java.awt.event.FocusEvent#FOCUS_LOST
      * @since 1.8
      */
     public void clearFocusOwner() {
@@ -618,7 +618,7 @@ public abstract class KeyboardFocusManager
      *
      * @see KeyboardFocusManager#clearFocusOwner
      * @see Component#requestFocus()
-     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_LOST
+     * @see j86.java.awt.event.FocusEvent#FOCUS_LOST
      * @throws SecurityException if the calling thread does not have
      *         "replaceKeyboardFocusManager" permission
      */

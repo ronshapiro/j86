@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.j86.j86.sun.net.httpserver;
+package com.j86.sun.net.httpserver;
 
 import j86.java.util.*;
 

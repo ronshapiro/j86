@@ -37,7 +37,7 @@ import j86.java.util.List;
 import j86.java.security.Permission;
 import j86.java.security.AccessController;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.MessageHeader;
 
 /**
  * The abstract class {@code URLConnection} is the superclass
@@ -304,7 +304,7 @@ public abstract class URLConnection {
      */
     public static synchronized FileNameMap getFileNameMap() {
         if ((fileNameMap == null) && !fileNameMapLoaded) {
-            fileNameMap = j86.j86.sun.net.www.MimeTable.loadTable();
+            fileNameMap = j86.sun.net.www.MimeTable.loadTable();
             fileNameMapLoaded = true;
         }
 
@@ -706,7 +706,7 @@ public abstract class URLConnection {
      *     factory's {@code createContentHandler} method returns
      *     {@code null}, then the application loads the class named:
      *     <blockquote><pre>
-     *         j86.j86.sun.net.www.content.&lt;<i>contentType</i>&gt;
+     *         j86.sun.net.www.content.&lt;<i>contentType</i>&gt;
      *     </pre></blockquote>
      *     where &lt;<i>contentType</i>&gt; is formed by taking the
      *     content-type string, replacing all slash characters with a
@@ -1277,12 +1277,12 @@ public abstract class URLConnection {
             return contentType;
     }
 
-    private static final String contentClassPrefix = "j86.j86.sun.net.www.content";
+    private static final String contentClassPrefix = "j86.sun.net.www.content";
     private static final String contentPathProp = "java.content.handler.pkgs";
 
     /**
      * Looks for a content handler in a user-defineable set of places.
-     * By default it looks in j86.j86.sun.net.www.content, but users can define a
+     * By default it looks in j86.sun.net.www.content, but users can define a
      * vertical-bar delimited set of class prefixes to search through in
      * addition by defining the java.content.handler.pkgs property.
      * The class name must be of the form:
@@ -1356,7 +1356,7 @@ public abstract class URLConnection {
      * Returns a vertical bar separated list of package prefixes for potential
      * content handlers.  Tries to get the java.content.handler.pkgs property
      * to use as a set of package prefixes to search.  Whether or not
-     * that property has been defined, the j86.j86.sun.net.www.content is always
+     * that property has been defined, the j86.sun.net.www.content is always
      * the last one on the returned package list.
      */
     private String getContentHandlerPkgPrefixes() {

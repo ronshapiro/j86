@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.JTextComponent;
 
 import j86.java.awt.Component;
 import j86.java.awt.Insets;

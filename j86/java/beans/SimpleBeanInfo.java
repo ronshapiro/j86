@@ -117,7 +117,7 @@ public class SimpleBeanInfo implements BeanInfo {
     public j86.java.awt.Image loadImage(final String resourceName) {
         try {
             final Class<?> c = getClass();
-            j86.j86.j86.java.awt.image.ImageProducer ip = (java.awt.image.ImageProducer)
+            j86.java.awt.image.ImageProducer ip = (java.awt.image.ImageProducer)
                 j86.java.security.AccessController.doPrivileged(
                 new j86.java.security.PrivilegedAction<Object>() {
                     public Object run() {

@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.j86.sun.net.www.protocol.https;
+package j86.sun.net.www.protocol.https;
 
 import j86.java.io.IOException;
 import j86.java.io.UnsupportedEncodingException;
@@ -38,28 +38,28 @@ import j86.java.net.UnknownHostException;
 import j86.java.net.InetSocketAddress;
 import j86.java.net.Proxy;
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
 import j86.java.security.AccessController;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
-import j86.j86.javax.net.ssl.*;
-import j86.j86.j86.sun.net.www.http.HttpClient;
-import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.javax.net.ssl.*;
+import j86.sun.net.www.http.HttpClient;
+import j86.sun.net.www.protocol.http.HttpURLConnection;
 import j86.sun.security.action.*;
 
 import j86.sun.security.util.HostnameChecker;
 import j86.sun.security.ssl.SSLSocketImpl;
 
-import j86.j86.sun.util.logging.PlatformLogger;
-import static j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
+import j86.sun.util.logging.PlatformLogger;
+import static j86.sun.net.www.protocol.http.HttpURLConnection.TunnelState.*;
 
 
 /**
  * This class provides HTTPS client URL support, building on the standard
- * "j86.j86.sun.net.www" HTTP protocol handler.  HTTPS is the same protocol as HTTP,
+ * "j86.sun.net.www" HTTP protocol handler.  HTTPS is the same protocol as HTTP,
  * but differs in the transport layer which it uses:  <UL>
  *
  *      <LI>There's a <em>Secure Sockets Layer</em> between TCP
@@ -115,7 +115,7 @@ final class HttpsClient extends HttpClient
 
     // default HostnameVerifier class canonical name
     private static final String defaultHVCanonicalName =
-            "j86.j86.javax.net.ssl.HttpsURLConnection.DefaultHostnameVerifier";
+            "j86.javax.net.ssl.HttpsURLConnection.DefaultHostnameVerifier";
 
     /** Returns the default HTTPS port (443) */
     @Override
@@ -617,8 +617,8 @@ final class HttpsClient extends HttpClient
 
                 X509Certificate peerCert;
                 if (peerCerts[0] instanceof
-                        j86.j86.java.security.cert.X509Certificate) {
-                    peerCert = (j86.j86.java.security.cert.X509Certificate)peerCerts[0];
+                        j86.java.security.cert.X509Certificate) {
+                    peerCert = (j86.java.security.cert.X509Certificate)peerCerts[0];
                 } else {
                     throw new SSLPeerUnverifiedException("");
                 }
@@ -635,7 +635,7 @@ final class HttpsClient extends HttpClient
             // anonymous ciphers; we can't check the standard policy
             //
             // ignore
-        } catch (j86.j86.java.security.cert.CertificateException cpe) {
+        } catch (j86.java.security.cert.CertificateException cpe) {
             // ignore
         }
 
@@ -685,7 +685,7 @@ final class HttpsClient extends HttpClient
      * Returns the certificate chain the client sent to the
      * server, or null if the client did not authenticate.
      */
-    public j86.j86.java.security.cert.Certificate [] getLocalCertificates() {
+    public j86.java.security.cert.Certificate [] getLocalCertificates() {
         return session.getLocalCertificates();
     }
 
@@ -694,7 +694,7 @@ final class HttpsClient extends HttpClient
      * authenticated itself, or throw a SSLPeerUnverifiedException
      * if the server did not authenticate.
      */
-    j86.j86.java.security.cert.Certificate [] getServerCertificates()
+    j86.java.security.cert.Certificate [] getServerCertificates()
             throws SSLPeerUnverifiedException
     {
         return session.getPeerCertificates();
@@ -724,7 +724,7 @@ final class HttpsClient extends HttpClient
         } catch (AbstractMethodError e) {
             // if the provider does not support it, fallback to peer certs.
             // return the X500Principal of the end-entity cert.
-            j86.j86.java.security.cert.Certificate[] certs =
+            j86.java.security.cert.Certificate[] certs =
                         session.getPeerCertificates();
             principal = ((X509Certificate)certs[0]).getSubjectX500Principal();
         }
@@ -744,7 +744,7 @@ final class HttpsClient extends HttpClient
             principal = null;
             // if the provider does not support it, fallback to local certs.
             // return the X500Principal of the end-entity cert.
-            j86.j86.java.security.cert.Certificate[] certs =
+            j86.java.security.cert.Certificate[] certs =
                         session.getLocalCertificates();
             if (certs != null) {
                 principal = ((X509Certificate)certs[0]).getSubjectX500Principal();

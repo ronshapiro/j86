@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
 import j86.sun.misc.Unsafe;
-import j86.j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.ExecutionException;
 
 /**
  * Base implementation of a task (typically native) that polls a memory location

@@ -38,22 +38,22 @@ monitoring and management of the running Java virtual machine.
 A platform MXBean is a <i>managed bean</i> that
 conforms to the <a href="../../../j86.javax.management/package-summary.html">JMX</a>
 Instrumentation Specification and only uses a set of basic data types.
-Each platform MXBean is a {@link j86.j86.java.lang.management.PlatformManagedObject}
+Each platform MXBean is a {@link j86.java.lang.management.PlatformManagedObject}
 with a unique
-{@linkplain j86.j86.java.lang.management.PlatformManagedObject#getObjectName name}.
+{@linkplain j86.java.lang.management.PlatformManagedObject#getObjectName name}.
 <p>
 <h4>ManagementFactory</h4>
 
-<p>The {@link j86.j86.java.lang.management.ManagementFactory} class is the management
+<p>The {@link j86.java.lang.management.ManagementFactory} class is the management
 factory class for the Java platform.  This class provides a set of
 static factory methods to obtain the MXBeans for the Java platform
 to allow an application to access the MXBeans directly.
 
 <p>A <em>platform MBeanServer</em> can be accessed with the
-{@link j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
+{@link j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
  getPlatformMBeanServer} method.  On the first call to this method,
 it creates the platform MBeanServer and registers all platform MXBeans
-including {@linkplain j86.j86.java.lang.management.PlatformManagedObject
+including {@linkplain j86.java.lang.management.PlatformManagedObject
 platform MXBeans}.
 Each platform MXBean is registered with a unique name defined in
 the specification of the management interface.
@@ -67,7 +67,7 @@ virtual machine can interoperate
 without requiring classes used by the platform MXBean interfaces.
 The data types being transmitted between the JMX connector
 server and the connector client are JMX
-{@linkplain j86.j86.javax.management.openmbean.OpenType open types} and
+{@linkplain j86.javax.management.openmbean.OpenType open types} and
 this allows interoperation across versions.
 A data type used by the MXBean interfaces are mapped to an
 open type when being accessed via MBeanServer interface.
@@ -90,9 +90,9 @@ Java virtual machine and the runtime in the following ways:
    String vendor = mxbean.getVmVendor();
 </pre>
 <p>Or by calling the
-        {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
+        {@link j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
                getPlatformMXBean} or
-        {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBeans(Class)
+        {@link j86.java.lang.management.ManagementFactory#getPlatformMXBeans(Class)
                getPlatformMXBeans} method:
 <pre>
    RuntimeMXBean mxbean = ManagementFactory.getPlatformMXBean(RuntimeMXBean.class);
@@ -113,7 +113,7 @@ Java virtual machine and the runtime in the following ways:
 
    // Get a MBean proxy for RuntimeMXBean interface
    RuntimeMXBean proxy =
-       {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBean(MBeanServerConnection, Class)
+       {@link j86.java.lang.management.ManagementFactory#getPlatformMXBean(MBeanServerConnection, Class)
        ManagementFactory.getPlatformMXBean}(mbs,
                                            RuntimeMXBean.class);
    // Get standard attribute "VmVendor"
@@ -124,7 +124,7 @@ Java virtual machine and the runtime in the following ways:
    An alternative way to create an MXBean proxy is:
 <pre>
    RuntimeMXBean proxy =
-       {@link j86.j86.java.lang.management.ManagementFactory#newPlatformMXBeanProxy
+       {@link j86.java.lang.management.ManagementFactory#newPlatformMXBeanProxy
               ManagementFactory.newPlatformMXBeanProxy}(mbs,
                                                 ManagementFactory.RUNTIME_MXBEAN_NAME,
                                                 RuntimeMXBean.class);
@@ -135,15 +135,15 @@ Java virtual machine and the runtime in the following ways:
 <b>2. Indirect access to an MXBean interface via MBeanServer</b><p>
 <ul>
 <li>Go through the
-    {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
+    {@link j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
     platform MBeanServer} to access MXBeans locally or
     a specific {@code MBeanServerConnection} to access
     MXBeans remotely.
     The attributes and operations of an MXBean use only
     <em>JMX open types</em> which include basic data types,
-    {@link j86.j86.javax.management.openmbean.CompositeData CompositeData},
-    and {@link j86.j86.javax.management.openmbean.TabularData TabularData}
-    defined in {@link j86.j86.javax.management.openmbean.OpenType OpenType}.<p>
+    {@link j86.javax.management.openmbean.CompositeData CompositeData},
+    and {@link j86.javax.management.openmbean.TabularData TabularData}
+    defined in {@link j86.javax.management.openmbean.OpenType OpenType}.<p>
 <pre>
    MBeanServerConnection mbs;
 
@@ -236,7 +236,7 @@ from the platform extension:
 or method in any class or interface in this package will cause a {@link
 j86.java.lang.NullPointerException NullPointerException} to be thrown.
 
-<p> The j86.j86.java.lang.management API is thread-safe.
+<p> The j86.java.lang.management API is thread-safe.
 
 @see <a href="../../../j86.javax.management/package-summary.html">
      JMX Specification.</a>

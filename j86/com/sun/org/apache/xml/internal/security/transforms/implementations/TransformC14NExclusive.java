@@ -20,19 +20,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
 import j86.java.io.OutputStream;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclOmitComments;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclOmitComments;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.transforms.params.InclusiveNamespaces;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 /**

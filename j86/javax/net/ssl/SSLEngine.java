@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ReadOnlyBufferException;
@@ -79,8 +79,8 @@ import j86.java.nio.ReadOnlyBufferException;
  * the peer.  By separating the SSL/TLS abstraction from the I/O
  * transport mechanism, the <code>SSLEngine</code> can be used for a
  * wide variety of I/O types, such as {@link
- * j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel#configureBlocking(boolean)
- * non-blocking I/O (polling)}, {@link j86.j86.java.nio.channels.Selector
+ * j86.java.nio.channels.spi.AbstractSelectableChannel#configureBlocking(boolean)
+ * non-blocking I/O (polling)}, {@link j86.java.nio.channels.Selector
  * selectable non-blocking I/O}, {@link j86.java.net.Socket Socket} and the
  * traditional Input/OutputStreams, local {@link j86.java.nio.ByteBuffer
  * ByteBuffers} or byte arrays, <A
@@ -519,9 +519,9 @@ public abstract class SSLEngine {
      * file formats that, for example, group data into segments
      * consisting of one or more fixed-length headers followed by a
      * variable-length body.  See
-     * {@link j86.j86.java.nio.channels.GatheringByteChannel} for more
+     * {@link j86.java.nio.channels.GatheringByteChannel} for more
      * information on gathering, and {@link
-     * j86.j86.java.nio.channels.GatheringByteChannel#write(ByteBuffer[],
+     * j86.java.nio.channels.GatheringByteChannel#write(ByteBuffer[],
      * int, int)} for more information on the subsequence
      * behavior.
      * <P>
@@ -581,8 +581,8 @@ public abstract class SSLEngine {
      *          subsequence specified is null.
      * @throws  IllegalStateException if the client/server mode
      *          has not yet been set.
-     * @see     j86.j86.java.nio.channels.GatheringByteChannel
-     * @see     j86.j86.java.nio.channels.GatheringByteChannel#write(
+     * @see     j86.java.nio.channels.GatheringByteChannel
+     * @see     j86.java.nio.channels.GatheringByteChannel#write(
      *              ByteBuffer[], int, int)
      */
     public abstract SSLEngineResult wrap(ByteBuffer [] srcs, int offset,
@@ -673,9 +673,9 @@ public abstract class SSLEngine {
      * file formats that, for example, group data into segments
      * consisting of one or more fixed-length headers followed by a
      * variable-length body.  See
-     * {@link j86.j86.java.nio.channels.ScatteringByteChannel} for more
+     * {@link j86.java.nio.channels.ScatteringByteChannel} for more
      * information on scattering, and {@link
-     * j86.j86.java.nio.channels.ScatteringByteChannel#read(ByteBuffer[],
+     * j86.java.nio.channels.ScatteringByteChannel#read(ByteBuffer[],
      * int, int)} for more information on the subsequence
      * behavior.
      * <P>
@@ -740,8 +740,8 @@ public abstract class SSLEngine {
      *          subsequence specified is null.
      * @throws  IllegalStateException if the client/server mode
      *          has not yet been set.
-     * @see     j86.j86.java.nio.channels.ScatteringByteChannel
-     * @see     j86.j86.java.nio.channels.ScatteringByteChannel#read(
+     * @see     j86.java.nio.channels.ScatteringByteChannel
+     * @see     j86.java.nio.channels.ScatteringByteChannel#read(
      *              ByteBuffer[], int, int)
      */
     public abstract SSLEngineResult unwrap(ByteBuffer src,

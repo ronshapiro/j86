@@ -25,7 +25,7 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.MemoryUsage;
 import j86.java.util.Iterator;
 import j86.java.util.Map;
 import j86.java.util.HashMap;

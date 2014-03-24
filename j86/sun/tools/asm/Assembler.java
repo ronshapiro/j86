@@ -32,7 +32,7 @@ import j86.java.io.DataOutputStream;
 import j86.java.io.PrintStream;
 import j86.java.util.Vector;
 // JCOV
-import j86.j86.sun.tools.javac.*;
+import j86.sun.tools.javac.*;
 import j86.java.io.File;
 import j86.java.io.BufferedInputStream;
 import j86.java.io.DataInputStream;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 /**
  * The management interface for the operating system on which

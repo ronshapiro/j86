@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.event;
+package j86.javax.print.event;
 
 /**
   * An abstract adapter class for receiving print job events.
@@ -31,7 +31,7 @@ package j86.j86.javax.print.event;
   * This class exists as a convenience for creating listener objects.
   * Extend this class to create a {@link PrintJobEvent} listener and override
   * the methods for the events of interest.  Unlike the
-  * {@link j86.j86.java.awt.event.ComponentListener ComponentListener}
+  * {@link j86.java.awt.event.ComponentListener ComponentListener}
   * interface, this abstract interface provides null methods so that you
   * only need to define the methods you need, rather than all of the methods.
   *

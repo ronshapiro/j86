@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.FramePeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.FramePeer;
+import j86.java.awt.event.*;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.List;
@@ -37,7 +37,7 @@ import j86.java.io.IOException;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
 import j86.sun.awt.AWTAccessor;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.javax.accessibility.*;
 
 /**
@@ -665,9 +665,9 @@ public class Frame extends Window implements MenuContainer {
      * screen</b> (the {@link #isShowing} method returns
      * {@code true}), the developer should examine the
      * return value of the  {@link
-     * j86.j86.java.awt.event.WindowEvent#getNewState} method of
+     * j86.java.awt.event.WindowEvent#getNewState} method of
      * the {@code WindowEvent} received through the
-     * {@link j86.j86.java.awt.event.WindowStateListener} to
+     * {@link j86.java.awt.event.WindowStateListener} to
      * determine that the state has actually been
      * changed.
      * <p><b>If the frame is not visible on the
@@ -678,7 +678,7 @@ public class Frame extends Window implements MenuContainer {
      * setVisible(true)} method is invoked, the frame
      * will attempt to apply this state. Receiving any
      * {@link
-     * j86.j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
+     * j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
      * events is not guaranteed in this case also.
      *
      * @param state either <code>Frame.NORMAL</code> or
@@ -719,9 +719,9 @@ public class Frame extends Window implements MenuContainer {
      * screen</b> (the {@link #isShowing} method returns
      * {@code true}), the developer should examine the
      * return value of the {@link
-     * j86.j86.java.awt.event.WindowEvent#getNewState} method of
+     * j86.java.awt.event.WindowEvent#getNewState} method of
      * the {@code WindowEvent} received through the
-     * {@link j86.j86.java.awt.event.WindowStateListener} to
+     * {@link j86.java.awt.event.WindowStateListener} to
      * determine that the state has actually been
      * changed.
      * <p><b>If the frame is not visible on the
@@ -732,7 +732,7 @@ public class Frame extends Window implements MenuContainer {
      * setVisible(true)} method is invoked, the frame
      * will attempt to apply this state. Receiving any
      * {@link
-     * j86.j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
+     * j86.java.awt.event.WindowEvent#WINDOW_STATE_CHANGED}
      * events is not guaranteed in this case also.
      *
      * @param state a bitwise mask of frame state constants

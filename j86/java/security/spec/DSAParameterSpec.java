@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 import j86.java.math.BigInteger;
 
@@ -39,7 +39,7 @@ import j86.java.math.BigInteger;
  */
 
 public class DSAParameterSpec implements AlgorithmParameterSpec,
-j86.j86.java.security.interfaces.DSAParams {
+j86.java.security.interfaces.DSAParams {
 
     BigInteger p;
     BigInteger q;

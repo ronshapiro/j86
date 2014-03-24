@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.spnego;
+package j86.sun.security.jgss.spnego;
 
 import com.j86.sun.security.jgss.ExtendedGSSContext;
 import com.j86.sun.security.jgss.InquireType;
@@ -31,7 +31,7 @@ import j86.java.io.*;
 import j86.java.security.Provider;
 import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.sun.security.util.*;
 
 /**

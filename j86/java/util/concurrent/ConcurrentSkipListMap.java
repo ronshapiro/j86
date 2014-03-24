@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 import j86.java.io.Serializable;
 import j86.java.util.AbstractCollection;
 import j86.java.util.AbstractMap;
@@ -52,12 +52,12 @@ import j86.java.util.Set;
 import j86.java.util.SortedMap;
 import j86.java.util.SortedSet;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.concurrent.ConcurrentNavigableMap;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentNavigableMap;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
 
 /**
  * A scalable concurrent {@link ConcurrentNavigableMap} implementation.

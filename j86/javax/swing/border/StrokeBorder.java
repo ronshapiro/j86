@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.border;
+package j86.javax.swing.border;
 
 import j86.java.awt.BasicStroke;
 import j86.java.awt.Component;
@@ -31,7 +31,7 @@ import j86.java.awt.Graphics2D;
 import j86.java.awt.Insets;
 import j86.java.awt.Paint;
 import j86.java.awt.RenderingHints;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.beans.ConstructorProperties;
 
 /**

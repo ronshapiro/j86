@@ -31,7 +31,7 @@ import j86.java.util.StringTokenizer;
 import j86.java.util.Arrays;
 import j86.java.util.NoSuchElementException;
 
-import j86.j86.com.sun.jmx.snmp.internal.SnmpTools;
+import j86.com.sun.jmx.snmp.internal.SnmpTools;
 
 /**
  * This class is handling an <CODE>SnmpEngineId</CODE> data. It copes with binary as well as <CODE>String</CODE> representation of an engine Id. A string format engine is an hex string starting with 0x.

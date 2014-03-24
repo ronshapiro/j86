@@ -34,10 +34,10 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.java.awt.color;
+package j86.java.awt.color;
 
-import j86.j86.sun.java2d.cmm.Profile;
-import j86.j86.sun.java2d.cmm.ProfileDeferralInfo;
+import j86.sun.java2d.cmm.Profile;
+import j86.sun.java2d.cmm.ProfileDeferralInfo;
 
 /**
  *

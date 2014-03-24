@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.datatransfer;
+package j86.java.awt.datatransfer;
 
 import j86.java.io.IOException;
 

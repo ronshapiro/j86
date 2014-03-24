@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.jdk.internal.util.xml.impl;
+package j86.jdk.internal.util.xml.impl;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 import j86.jdk.internal.org.xml.sax.InputSource;
 import j86.jdk.internal.org.xml.sax.SAXException;
 import j86.jdk.internal.org.xml.sax.XMLReader;
-import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
 import j86.jdk.internal.util.xml.SAXParser;
 
 public class SAXParserImpl extends SAXParser {

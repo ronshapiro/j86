@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -269,7 +269,7 @@ public final class SimpleType<T> extends OpenType<T> {
      * Returns a string representation of this <code>SimpleType</code> instance.
      * <p>
      * The string representation consists of
-     * the name of this class (ie <code>j86.j86.javax.management.openmbean.SimpleType</code>) and the type name
+     * the name of this class (ie <code>j86.javax.management.openmbean.SimpleType</code>) and the type name
      * for this instance (which is the java class name of the values this <code>SimpleType</code> instance represents).
      * <p>
      * As <code>SimpleType</code> instances are immutable, the string representation for this instance is calculated once,

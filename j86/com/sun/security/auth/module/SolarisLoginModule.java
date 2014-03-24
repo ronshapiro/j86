@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.java.util.*;
 import j86.java.io.IOException;
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 import j86.com.sun.security.auth.SolarisPrincipal;
 import j86.com.sun.security.auth.SolarisNumericUserPrincipal;
 import j86.com.sun.security.auth.SolarisNumericGroupPrincipal;
@@ -46,7 +46,7 @@ import j86.com.sun.security.auth.SolarisNumericGroupPrincipal;
  * If set to true in the login Configuration,
  * debug messages will be output to the output stream, System.out.
  * @deprecated  As of JDK1.4, replaced by
- * <code>j86.j86.com.sun.security.auth.module.UnixLoginModule</code>.
+ * <code>j86.com.sun.security.auth.module.UnixLoginModule</code>.
  *             This LoginModule is entirely deprecated and
  *             is here to allow for a smooth transition to the new
  *             UnixLoginModule.

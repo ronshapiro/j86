@@ -24,14 +24,14 @@
  */
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.ImageFilter;
-import j86.j86.j86.java.awt.image.FilteredImageSource;
-import j86.j86.j86.java.awt.image.AreaAveragingScaleFilter;
-import j86.j86.j86.java.awt.image.ReplicateScaleFilter;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageFilter;
+import j86.java.awt.image.FilteredImageSource;
+import j86.java.awt.image.AreaAveragingScaleFilter;
+import j86.java.awt.image.ReplicateScaleFilter;
 
-import j86.j86.j86.sun.awt.image.SurfaceManager;
+import j86.sun.awt.image.SurfaceManager;
 
 
 /**
@@ -70,7 +70,7 @@ public abstract class Image {
      * @return    the width of this image, or <code>-1</code>
      *                   if the width is not yet known.
      * @see       j86.java.awt.Image#getHeight
-     * @see       j86.j86.j86.java.awt.image.ImageObserver
+     * @see       j86.java.awt.image.ImageObserver
      */
     public abstract int getWidth(ImageObserver observer);
 
@@ -82,7 +82,7 @@ public abstract class Image {
      * @return    the height of this image, or <code>-1</code>
      *                   if the height is not yet known.
      * @see       j86.java.awt.Image#getWidth
-     * @see       j86.j86.j86.java.awt.image.ImageObserver
+     * @see       j86.java.awt.image.ImageObserver
      */
     public abstract int getHeight(ImageObserver observer);
 
@@ -92,7 +92,7 @@ public abstract class Image {
      * methods that perform image conversion and scaling.
      * @return     the image producer that produces the pixels
      *                                  for this image.
-     * @see        j86.j86.j86.java.awt.image.ImageProducer
+     * @see        j86.java.awt.image.ImageProducer
      */
     public abstract ImageProducer getSource();
 
@@ -125,7 +125,7 @@ public abstract class Image {
      * @param       observer   an object waiting for this image to be loaded.
      * @return      the value of the named property.
      * @throws      NullPointerException if the property name is null.
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver
      * @see         j86.java.awt.Image#UndefinedProperty
      */
     public abstract Object getProperty(String name, ImageObserver observer);
@@ -204,7 +204,7 @@ public abstract class Image {
      * The <code>Image</code> object is free to substitute a different filter
      * that performs the same algorithm yet integrates more efficiently
      * into the imaging infrastructure supplied by the toolkit.
-     * @see        j86.j86.j86.java.awt.image.ReplicateScaleFilter
+     * @see        j86.java.awt.image.ReplicateScaleFilter
      * @since      JDK1.1
      */
     public static final int SCALE_REPLICATE = 8;
@@ -214,7 +214,7 @@ public abstract class Image {
      * image object is free to substitute a different filter that
      * performs the same algorithm yet integrates more efficiently
      * into the image infrastructure supplied by the toolkit.
-     * @see j86.j86.j86.java.awt.image.AreaAveragingScaleFilter
+     * @see j86.java.awt.image.AreaAveragingScaleFilter
      * @since JDK1.1
      */
     public static final int SCALE_AREA_AVERAGING = 16;
@@ -245,7 +245,7 @@ public abstract class Image {
      * including their primary copy which is typically stored on
      * the display hardware where resources are scarce.
      * These objects can later be restored using their
-     * {@link j86.j86.j86.java.awt.image.VolatileImage#validate validate}
+     * {@link j86.java.awt.image.VolatileImage#validate validate}
      * method.
      * <li>
      * Image objects created by the Toolkit and Component classes which are
@@ -280,7 +280,7 @@ public abstract class Image {
      * @return an <code>ImageCapabilities</code> object that contains
      * the capabilities of this <code>Image</code> on the specified
      * GraphicsConfiguration.
-     * @see j86.j86.j86.java.awt.image.VolatileImage#getCapabilities()
+     * @see j86.java.awt.image.VolatileImage#getCapabilities()
      * VolatileImage.getCapabilities()
      * @since 1.5
      */

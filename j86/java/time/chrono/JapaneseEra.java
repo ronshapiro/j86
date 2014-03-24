@@ -59,10 +59,10 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.chrono.JapaneseDate.MEIJI_6_ISODATE;
-import static j86.j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.chrono.JapaneseDate.MEIJI_6_ISODATE;
+import static j86.java.time.temporal.ChronoField.ERA;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -73,14 +73,14 @@ import j86.java.io.ObjectStreamException;
 import j86.java.io.Serializable;
 import j86.java.time.DateTimeException;
 import j86.java.time.LocalDate;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Arrays;
 import j86.java.util.Objects;
 
-import j86.j86.sun.util.calendar.CalendarDate;
+import j86.sun.util.calendar.CalendarDate;
 
 /**
  * An era in the Japanese Imperial calendar system.
@@ -102,7 +102,7 @@ public final class JapaneseEra
     // i.e., getValue() + ERA_OFFSET == 0-based index
     static final int ERA_OFFSET = 2;
 
-    static final j86.j86.sun.util.calendar.Era[] ERA_CONFIG;
+    static final j86.sun.util.calendar.Era[] ERA_CONFIG;
 
     /**
      * The singleton instance for the 'Meiji' era (1868-01-01 - 1912-07-29)
@@ -178,7 +178,7 @@ public final class JapaneseEra
      *
      * @return the Sun private Era instance for this {@code JapaneseEra}.
      */
-    j86.j86.sun.util.calendar.Era getPrivateEra() {
+    j86.sun.util.calendar.Era getPrivateEra() {
         return ERA_CONFIG[ordinal(eraValue)];
     }
 
@@ -256,7 +256,7 @@ public final class JapaneseEra
         return null;
     }
 
-    static JapaneseEra toJapaneseEra(j86.j86.sun.util.calendar.Era privateEra) {
+    static JapaneseEra toJapaneseEra(j86.sun.util.calendar.Era privateEra) {
         for (int i = ERA_CONFIG.length - 1; i >= 0; i--) {
             if (ERA_CONFIG[i].equals(privateEra)) {
                 return KNOWN_ERAS[i];
@@ -265,7 +265,7 @@ public final class JapaneseEra
         return null;
     }
 
-    static j86.j86.sun.util.calendar.Era privateEraFrom(LocalDate isoDate) {
+    static j86.sun.util.calendar.Era privateEraFrom(LocalDate isoDate) {
         for (int i = KNOWN_ERAS.length - 1; i > 0; i--) {
             JapaneseEra era = KNOWN_ERAS[i];
             if (isoDate.compareTo(era.since) >= 0) {
@@ -366,7 +366,7 @@ public final class JapaneseEra
     //-----------------------------------------------------------------------
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(5);        // identifies a JapaneseEra

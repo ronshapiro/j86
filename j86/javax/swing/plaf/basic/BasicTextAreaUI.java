@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.beans.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.InputEvent;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.DocumentEvent;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.text.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * Provides the look and feel for a plain text editor.  In this

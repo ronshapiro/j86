@@ -29,7 +29,7 @@
  * others. All Rights Reserved.                                                *
  *******************************************************************************
  */
-package j86.j86.sun.util.locale;
+package j86.sun.util.locale;
 
 import j86.java.util.Collections;
 import j86.java.util.Map;
@@ -40,8 +40,8 @@ import j86.java.util.SortedSet;
 import j86.java.util.TreeMap;
 import j86.java.util.TreeSet;
 
-import j86.j86.sun.util.locale.InternalLocaleBuilder.CaseInsensitiveChar;
-import j86.j86.sun.util.locale.InternalLocaleBuilder.CaseInsensitiveString;
+import j86.sun.util.locale.InternalLocaleBuilder.CaseInsensitiveChar;
+import j86.sun.util.locale.InternalLocaleBuilder.CaseInsensitiveString;
 
 
 public class LocaleExtensions {

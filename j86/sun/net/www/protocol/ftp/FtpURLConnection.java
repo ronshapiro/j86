@@ -27,7 +27,7 @@
  * FTP stream opener.
  */
 
-package j86.j86.j86.sun.net.www.protocol.ftp;
+package j86.sun.net.www.protocol.ftp;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
@@ -47,15 +47,15 @@ import j86.java.util.StringTokenizer;
 import j86.java.util.Iterator;
 import j86.java.security.Permission;
 import j86.sun.net.NetworkClient;
-import j86.j86.sun.net.www.MessageHeader;
-import j86.j86.sun.net.www.MeteredStream;
-import j86.j86.sun.net.www.URLConnection;
-import j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection;
-import j86.j86.sun.net.ftp.FtpClient;
-import j86.j86.sun.net.ftp.FtpProtocolException;
+import j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.MeteredStream;
+import j86.sun.net.www.URLConnection;
+import j86.sun.net.www.protocol.http.HttpURLConnection;
+import j86.sun.net.ftp.FtpClient;
+import j86.sun.net.ftp.FtpProtocolException;
 import j86.sun.net.ProgressSource;
 import j86.sun.net.ProgressMonitor;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 import j86.sun.security.action.GetPropertyAction;
 
 
@@ -76,7 +76,7 @@ import j86.sun.security.action.GetPropertyAction;
  * ...<p>
  * is.close();</code>
  *
- * @see j86.j86.sun.net.ftp.FtpClient
+ * @see j86.sun.net.ftp.FtpClient
  */
 public class FtpURLConnection extends URLConnection {
 
@@ -222,7 +222,7 @@ public class FtpURLConnection extends URLConnection {
                         }
                     });
             if (sel != null) {
-                URI uri = j86.j86.sun.net.www.ParseUtil.toURI(url);
+                URI uri = j86.sun.net.www.ParseUtil.toURI(url);
                 Iterator<Proxy> it = sel.select(uri).iterator();
                 while (it.hasNext()) {
                     p = it.next();
@@ -302,10 +302,10 @@ public class FtpURLConnection extends URLConnection {
         }
         try {
             ftp.login(user, password.toCharArray());
-        } catch (j86.j86.sun.net.ftp.FtpProtocolException e) {
+        } catch (j86.sun.net.ftp.FtpProtocolException e) {
             ftp.close();
             // Backward compatibility
-            throw new j86.j86.sun.net.ftp.FtpLoginException("Invalid username/password");
+            throw new j86.sun.net.ftp.FtpLoginException("Invalid username/password");
         }
         connected = true;
     }

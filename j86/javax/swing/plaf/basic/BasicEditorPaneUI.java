@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.j86.javax.swing.text.html.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.text.html.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
 
 
 /**
@@ -265,7 +265,7 @@ public class BasicEditorPaneUI extends BasicTextUI {
 
     /**
      * Attribute key to reference the default font.
-     * used in j86.j86.javax.swing.text.StyleContext.getFont
+     * used in j86.javax.swing.text.StyleContext.getFont
      * to resolve the default font.
      */
     private static final String FONT_ATTRIBUTE_KEY = "FONT_ATTRIBUTE_KEY";

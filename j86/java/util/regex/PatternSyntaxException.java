@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.regex;
+package j86.java.util.regex;
 
 import j86.sun.security.action.GetPropertyAction;
 

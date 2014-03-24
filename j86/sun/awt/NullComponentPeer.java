@@ -40,18 +40,18 @@ import j86.java.awt.Insets;
 import j86.java.awt.MenuBar;
 import j86.java.awt.Point;
 import j86.java.awt.Event;
-import j86.j86.java.awt.event.PaintEvent;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.VolatileImage;
-import j86.j86.java.awt.peer.CanvasPeer;
-import j86.j86.java.awt.peer.LightweightPeer;
-import j86.j86.java.awt.peer.PanelPeer;
-import j86.j86.java.awt.peer.ComponentPeer;
-import j86.j86.java.awt.peer.ContainerPeer;
+import j86.java.awt.event.PaintEvent;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.VolatileImage;
+import j86.java.awt.peer.CanvasPeer;
+import j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.peer.PanelPeer;
+import j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.ContainerPeer;
 import j86.java.awt.Rectangle;
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 
 
 /**
@@ -261,14 +261,14 @@ public class NullComponentPeer implements LightweightPeer,
     }
 
     /**
-     * @see j86.j86.java.awt.peer.ComponentPeer#isReparentSupported
+     * @see j86.java.awt.peer.ComponentPeer#isReparentSupported
      */
     public boolean isReparentSupported() {
         return false;
     }
 
     /**
-     * @see j86.j86.java.awt.peer.ComponentPeer#reparent
+     * @see j86.java.awt.peer.ComponentPeer#reparent
      */
     public void reparent(ContainerPeer newNativeParent) {
         throw new UnsupportedOperationException();

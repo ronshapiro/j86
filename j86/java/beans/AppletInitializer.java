@@ -27,7 +27,7 @@ package j86.java.beans;
 
 import j86.java.applet.Applet;
 
-import j86.j86.java.beans.beancontext.BeanContext;
+import j86.java.beans.beancontext.BeanContext;
 
 /**
  * <p>

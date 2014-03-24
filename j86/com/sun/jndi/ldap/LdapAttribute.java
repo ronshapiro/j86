@@ -29,7 +29,7 @@ import j86.java.io.IOException;
 import j86.java.util.Hashtable;
 import j86.java.util.Vector;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 
 /**
   * This subclass is used by LDAP to implement the schema calls.

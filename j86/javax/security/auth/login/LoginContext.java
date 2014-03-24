@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.LinkedList;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
 import j86.java.text.MessageFormat;
 import j86.javax.security.auth.Subject;
 import j86.javax.security.auth.AuthPermission;
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 import j86.java.security.AccessController;
 import j86.java.security.AccessControlContext;
 import j86.sun.security.util.PendingException;
@@ -187,9 +187,9 @@ import j86.sun.security.util.ResourcesMgr;
  * @see j86.java.security.Security
  * @see j86.javax.security.auth.AuthPermission
  * @see j86.javax.security.auth.Subject
- * @see j86.j86.javax.security.auth.callback.CallbackHandler
- * @see j86.j86.javax.security.auth.login.Configuration
- * @see j86.j86.javax.security.auth.spi.LoginModule
+ * @see j86.javax.security.auth.callback.CallbackHandler
+ * @see j86.javax.security.auth.login.Configuration
+ * @see j86.javax.security.auth.spi.LoginModule
  * @see j86.java.security.Security security properties
  */
 public class LoginContext {

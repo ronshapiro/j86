@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.annotation.AnnotationFormatError;
-import j86.j86.java.lang.annotation.Repeatable;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.AnnotationFormatError;
+import j86.java.lang.annotation.Repeatable;
 import j86.java.util.Arrays;
 import j86.java.util.LinkedHashMap;
 import j86.java.util.Map;
 import j86.java.util.Objects;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.stream.Collectors;
-import j86.j86.sun.reflect.annotation.AnnotationSupport;
-import j86.j86.sun.reflect.annotation.AnnotationType;
+import j86.java.util.function.Function;
+import j86.java.util.stream.Collectors;
+import j86.sun.reflect.annotation.AnnotationSupport;
+import j86.sun.reflect.annotation.AnnotationType;
 
 /**
  * Represents an annotated element of the program currently running in this
@@ -220,18 +220,18 @@ import j86.j86.sun.reflect.annotation.AnnotationType;
  * {@code @Repeatable} annotation whose value element indicates a type
  * <i>TC</i>, but <i>TC</i> does not declare a {@code value()} method
  * with a return type of <i>T</i>{@code []}, then an exception of type
- * {@link j86.j86.java.lang.annotation.AnnotationFormatError} is thrown.
+ * {@link j86.java.lang.annotation.AnnotationFormatError} is thrown.
  *
  * <p>Finally, attempting to read a member whose definition has evolved
  * incompatibly will result in a {@link
- * j86.j86.java.lang.annotation.AnnotationTypeMismatchException} or an
- * {@link j86.j86.java.lang.annotation.IncompleteAnnotationException}.
+ * j86.java.lang.annotation.AnnotationTypeMismatchException} or an
+ * {@link j86.java.lang.annotation.IncompleteAnnotationException}.
  *
  * @see j86.java.lang.EnumConstantNotPresentException
  * @see j86.java.lang.TypeNotPresentException
  * @see AnnotationFormatError
- * @see j86.j86.java.lang.annotation.AnnotationTypeMismatchException
- * @see j86.j86.java.lang.annotation.IncompleteAnnotationException
+ * @see j86.java.lang.annotation.AnnotationTypeMismatchException
+ * @see j86.java.lang.annotation.IncompleteAnnotationException
  * @since 1.5
  * @author Josh Bloch
  */

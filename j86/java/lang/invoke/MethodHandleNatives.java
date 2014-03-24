@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.java.lang.invoke.MethodHandles.Lookup;
-import j86.j86.j86.java.lang.reflect.Field;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.java.lang.invoke.MethodHandles.Lookup;
+import j86.java.lang.reflect.Field;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * The JVM interface for the method handles package is all here.

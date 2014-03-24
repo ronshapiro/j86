@@ -26,16 +26,16 @@
 package j86.com.sun.rowset;
 
 import j86.java.sql.SQLException;
-import j86.j86.javax.sql.rowset.CachedRowSet;
-import j86.j86.javax.sql.rowset.FilteredRowSet;
-import j86.j86.javax.sql.rowset.JdbcRowSet;
-import j86.j86.javax.sql.rowset.JoinRowSet;
-import j86.j86.javax.sql.rowset.WebRowSet;
-import j86.j86.javax.sql.rowset.RowSetFactory;
+import j86.javax.sql.rowset.CachedRowSet;
+import j86.javax.sql.rowset.FilteredRowSet;
+import j86.javax.sql.rowset.JdbcRowSet;
+import j86.javax.sql.rowset.JoinRowSet;
+import j86.javax.sql.rowset.WebRowSet;
+import j86.javax.sql.rowset.RowSetFactory;
 
 /**
  * This is the implementation specific class for the
- * <code>j86.j86.j86.javax.sql.rowset.spi.RowSetFactory</code>. This is the platform
+ * <code>j86.javax.sql.rowset.spi.RowSetFactory</code>. This is the platform
  * default implementation for the Java SE platform.
  *
  * @author Lance Andersen

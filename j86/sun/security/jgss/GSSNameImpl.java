@@ -26,7 +26,7 @@
 package j86.sun.security.jgss;
 
 import j86.org.ietf.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.java.util.Set;
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;

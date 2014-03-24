@@ -38,7 +38,7 @@ import j86.java.util.Locale;
  * <code>getDefaultWriteParam</code> method of its
  * <code>ImageWriter</code> implementation.  For example, the built-in
  * JPEG writer plug-in will return instances of
- * <code>j86.j86.javax.imageio.plugins.jpeg.JPEGImageWriteParam</code>.
+ * <code>j86.javax.imageio.plugins.jpeg.JPEGImageWriteParam</code>.
  *
  * <p> The region of the image to be written is determined by first
  * intersecting the actual bounds of the image with the rectangle

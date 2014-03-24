@@ -25,10 +25,10 @@
 
 package j86.sun.java2d;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.PhantomReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.PhantomReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.ArrayList;
 import j86.java.util.Hashtable;
 
@@ -135,7 +135,7 @@ public class Disposer implements Runnable {
         if (target instanceof DisposerTarget) {
             target = ((DisposerTarget)target).getDisposerReferent();
         }
-        j86.j86.java.lang.ref.Reference ref;
+        j86.java.lang.ref.Reference ref;
         if (refType == PHANTOM) {
             ref = new PhantomReference(target, queue);
         } else {

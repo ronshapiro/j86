@@ -26,7 +26,7 @@
 package j86.sun.misc;
 
 import j86.java.util.Arrays;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 
 /**
  * A class for converting between ASCII and decimal representations of a single

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.awt.Component;
 
-import j86.j86.java.awt.event.MouseEvent;
-import j86.j86.java.awt.event.MouseListener;
-import j86.j86.java.awt.event.MouseMotionListener;
+import j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseMotionListener;
 
 /**
  * This abstract subclass of <code>DragGestureRecognizer</code>
@@ -57,9 +57,9 @@ import j86.j86.java.awt.event.MouseMotionListener;
  *
  * @author Laurence P. G. Cable
  *
- * @see j86.j86.java.awt.dnd.DragGestureListener
- * @see j86.j86.java.awt.dnd.DragGestureEvent
- * @see j86.j86.java.awt.dnd.DragSource
+ * @see j86.java.awt.dnd.DragGestureListener
+ * @see j86.java.awt.dnd.DragGestureEvent
+ * @see j86.java.awt.dnd.DragSource
  */
 
 public abstract class MouseDragGestureRecognizer extends DragGestureRecognizer implements MouseListener, MouseMotionListener {

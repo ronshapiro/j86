@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 import j86.sun.security.krb5.EncryptedData;
-import j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk.ArcFourCrypto;
+import j86.sun.security.krb5.internal.crypto.dk.ArcFourCrypto;
 import j86.sun.security.krb5.KrbCryptoException;
 import j86.java.security.GeneralSecurityException;
 

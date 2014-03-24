@@ -26,11 +26,11 @@
 /*
  * $Id: DOMSignedInfo.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.*;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
@@ -44,9 +44,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
 
 /**
  * DOM-based implementation of SignedInfo.
@@ -60,8 +60,8 @@ public final class DOMSignedInfo extends DOMStructure implements SignedInfo {
      */
     public static final int MAXIMUM_REFERENCE_COUNT = 30;
 
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal.dom");
 
     /** Signature - NOT Recommended RSAwithMD5 */
     private static final String ALGO_ID_SIGNATURE_NOT_RECOMMENDED_RSA_MD5 =
@@ -224,8 +224,8 @@ public final class DOMSignedInfo extends DOMStructure implements SignedInfo {
         try {
             os.close();
         } catch (IOException e) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, e.getMessage(), e);
             }
             // Impossible
         }
@@ -242,14 +242,14 @@ public final class DOMSignedInfo extends DOMStructure implements SignedInfo {
         byte[] signedInfoBytes = bos.toByteArray();
 
         // this whole block should only be done if logging is enabled
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Canonicalized SignedInfo:");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Canonicalized SignedInfo:");
             StringBuilder sb = new StringBuilder(signedInfoBytes.length);
             for (int i = 0; i < signedInfoBytes.length; i++) {
                 sb.append((char)signedInfoBytes[i]);
             }
-            log.log(j86.j86.java.util.logging.Level.FINE, sb.toString());
-            log.log(j86.j86.java.util.logging.Level.FINE, "Data to be signed/verified:" + Base64.encode(signedInfoBytes));
+            log.log(j86.java.util.logging.Level.FINE, sb.toString());
+            log.log(j86.java.util.logging.Level.FINE, "Data to be signed/verified:" + Base64.encode(signedInfoBytes));
         }
 
         this.canonData = new ByteArrayInputStream(signedInfoBytes);

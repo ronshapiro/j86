@@ -36,7 +36,7 @@ package j86.com.sun.tools.example.trace;
 
 import j86.com.sun.jdi.VirtualMachine;
 import j86.com.sun.jdi.Bootstrap;
-import j86.j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.*;
 
 import j86.java.util.Map;
 import j86.java.util.List;

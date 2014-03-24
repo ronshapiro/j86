@@ -36,10 +36,10 @@
 
 package j86.sun.font;
 
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 import j86.java.text.AttributedCharacterIterator.Attribute;
 
-import static j86.j86.java.awt.font.TextAttribute.*;
+import static j86.java.awt.font.TextAttribute.*;
 
 public enum EAttribute {
     EFAMILY(FAMILY),

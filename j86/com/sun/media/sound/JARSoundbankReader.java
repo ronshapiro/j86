@@ -34,9 +34,9 @@ import j86.java.net.URLClassLoader;
 import j86.java.util.ArrayList;
 import j86.javax.sound.midi.InvalidMidiDataException;
 import j86.javax.sound.midi.Soundbank;
-import j86.j86.javax.sound.midi.spi.SoundbankReader;
+import j86.javax.sound.midi.spi.SoundbankReader;
 
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * JarSoundbankReader is used to read soundbank object from jar files.

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.nio.ByteBuffer;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
-import j86.j86.j86.sun.nio.ch.DirectBuffer;
+import j86.java.security.interfaces.*;
+import j86.sun.nio.ch.DirectBuffer;
 
 import j86.sun.security.util.*;
 import j86.sun.security.x509.AlgorithmId;
@@ -39,8 +39,8 @@ import j86.sun.security.x509.AlgorithmId;
 import j86.sun.security.rsa.RSASignature;
 import j86.sun.security.rsa.RSAPadding;
 
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 import j86.sun.security.util.KeyUtil;
 
 /**

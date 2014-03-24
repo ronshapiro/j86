@@ -25,7 +25,7 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.java.io.Serializable;
 import j86.java.util.EventListener;
 

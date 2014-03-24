@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.management.counter.perf;
+package j86.sun.management.counter.perf;
 
 import j86.java.io.UnsupportedEncodingException;
 

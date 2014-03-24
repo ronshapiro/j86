@@ -30,12 +30,12 @@ package j86.java.util;
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-import j86.j86.java.util.concurrent.ForkJoinPool;
-import j86.j86.java.util.concurrent.CountedCompleter;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.IntBinaryOperator;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.concurrent.ForkJoinPool;
+import j86.java.util.concurrent.CountedCompleter;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.IntBinaryOperator;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.DoubleBinaryOperator;
 
 /**
  * ForkJoin tasks to perform Arrays.parallelPrefix operations.

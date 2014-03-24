@@ -30,8 +30,8 @@ import j86.java.net.URL;
 import j86.java.security.CodeSource;
 import j86.java.util.Enumeration;
 import j86.java.util.List;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.JarFile;
 
 public interface JavaUtilJarAccess {
     public boolean jarFileHasClassPathAttribute(JarFile jar) throws IOException;

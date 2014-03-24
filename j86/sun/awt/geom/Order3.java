@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.awt.geom;
+package j86.sun.awt.geom;
 
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.QuadCurve2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.QuadCurve2D;
 import j86.java.util.Vector;
 
 final class Order3 extends Curve {

@@ -28,8 +28,8 @@ package j86.com.sun.jndi.ldap;
 import j86.java.util.Locale;
 import j86.java.util.Arrays; // JDK 1.2
 import j86.java.io.OutputStream;
-import j86.j86.javax.naming.ldap.Control;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.javax.naming.ldap.Control;
+import j86.java.lang.reflect.Method;
 import j86.javax.net.SocketFactory;
 
 /**

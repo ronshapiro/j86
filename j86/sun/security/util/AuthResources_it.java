@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_it extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Impossibile espandere correttamente {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (file o directory inesistente)"},
@@ -78,11 +78,11 @@ public class AuthResources_it extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Errore di configurazione:\n\triga {0}: propriet\u00E0 di sistema [{1}] espansa a valore vuoto"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","Nome utente: "},
         {"password.","Password: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Immettere le informazioni per il keystore"},
         {"Keystore.alias.","Alias keystore: "},
@@ -90,7 +90,7 @@ public class AuthResources_it extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Password chiave privata (opzionale): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Nome utente Kerberos [{0}]: "},
         {"Kerberos.password.for.username.",

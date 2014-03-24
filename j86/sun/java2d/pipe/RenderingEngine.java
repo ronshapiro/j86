@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Shape;
 import j86.java.awt.BasicStroke;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.AffineTransform;
 
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AccessController;
 import j86.java.util.ServiceLoader;
 import j86.sun.security.action.GetPropertyAction;
 
-import j86.j86.sun.awt.geom.PathConsumer2D;
+import j86.sun.awt.geom.PathConsumer2D;
 
 /**
  * This class abstracts a number of features for which the Java 2D

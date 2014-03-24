@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.resources;
+package j86.sun.util.resources;
 
 import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;

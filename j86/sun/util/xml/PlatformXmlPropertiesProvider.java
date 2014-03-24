@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.util.xml;
+package j86.sun.util.xml;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.charset.*;
 import j86.java.util.Map.Entry;
 import org.xml.sax.*;
 import org.w3c.dom.*;
@@ -36,7 +36,7 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.*;
 import javax.xml.transform.stream.*;
 
-import j86.j86.sun.util.spi.XmlPropertiesProvider;
+import j86.sun.util.spi.XmlPropertiesProvider;
 
 /**
  * A {@code XmlPropertiesProvider} implementation that uses the JAXP API

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.java2d.pipe.hw;
+package j86.sun.java2d.pipe.hw;
 
 
 /**

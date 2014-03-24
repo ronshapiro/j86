@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.decoder;
+package j86.com.sun.beans.decoder;
 
 import j86.java.beans.XMLDecoder;
 

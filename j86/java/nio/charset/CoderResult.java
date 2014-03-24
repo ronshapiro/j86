@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.nio.charset;
+package j86.java.nio.charset;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.nio.*;
 import j86.java.util.Map;
 import j86.java.util.HashMap;

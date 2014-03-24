@@ -25,12 +25,12 @@
 /*
  * $Id: SignatureMethod.java,v 1.5 2005/05/10 16:03:46 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.AlgorithmMethod;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * A representation of the XML <code>SignatureMethod</code> element

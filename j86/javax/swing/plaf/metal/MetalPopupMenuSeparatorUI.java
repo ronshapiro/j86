@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.javax.swing.*;
 import j86.java.awt.Color;
@@ -31,7 +31,7 @@ import j86.java.awt.Dimension;
 import j86.java.awt.Graphics;
 import j86.java.awt.Insets;
 import j86.java.awt.Rectangle;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 
 /**

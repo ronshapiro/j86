@@ -28,7 +28,7 @@ package j86.javax.sql;
 import j86.java.sql.SQLException;
 import j86.java.io.PrintWriter;
 import j86.java.sql.SQLFeatureNotSupportedException;
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.logging.Logger;
 
 /**
  * Interface that defines the methods which are common between <code>DataSource</code>,
@@ -123,7 +123,7 @@ public interface CommonDataSource {
      *
      * @return the parent Logger for this data source
      * @throws SQLFeatureNotSupportedException if the data source does not use
-     * {@code j86.j86.java.util.logging}
+     * {@code j86.java.util.logging}
      * @since 1.7
      */
     public Logger getParentLogger() throws SQLFeatureNotSupportedException;

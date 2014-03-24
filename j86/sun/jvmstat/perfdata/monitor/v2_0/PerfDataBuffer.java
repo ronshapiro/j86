@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.v2_0;
+package j86.sun.jvmstat.perfdata.monitor.v2_0;
 
 import j86.sun.jvmstat.monitor.*;
 import j86.sun.jvmstat.perfdata.monitor.*;
 import j86.java.util.*;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 import j86.java.nio.*;
 
 /**

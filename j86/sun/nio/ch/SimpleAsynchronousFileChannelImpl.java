@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.nio.channels.*;
-import j86.j86.java.util.concurrent.*;
+import j86.java.nio.channels.*;
+import j86.java.util.concurrent.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

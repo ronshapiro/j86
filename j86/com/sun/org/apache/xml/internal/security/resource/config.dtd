@@ -6,14 +6,14 @@
 target        CDATA  #IMPLIED>
 <!ELEMENT CanonicalizationMethods (CanonicalizationMethod+)>
 
-<!ATTLIST CanonicalizationMethods  JAVACLASS CDATA  #FIXED 'j86.j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer' >
+<!ATTLIST CanonicalizationMethods  JAVACLASS CDATA  #FIXED 'j86.com.sun.org.apache.xml.internal.security.c14n.Canonicalizer' >
 <!ELEMENT CanonicalizationMethod EMPTY>
 
 <!ATTLIST CanonicalizationMethod  URI       CDATA  #REQUIRED
                                     JAVACLASS CDATA  #REQUIRED >
 <!ELEMENT TransformAlgorithms (TransformAlgorithm+)>
 
-<!ATTLIST TransformAlgorithms  JAVACLASS CDATA  #FIXED 'j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform' >
+<!ATTLIST TransformAlgorithms  JAVACLASS CDATA  #FIXED 'j86.com.sun.org.apache.xml.internal.security.transforms.Transform' >
 <!ELEMENT TransformAlgorithm EMPTY>
 
 <!ATTLIST TransformAlgorithm  URI       CDATA  #REQUIRED
@@ -62,7 +62,7 @@ target        CDATA  #IMPLIED>
 <!ATTLIST Resolver  JAVACLASS   CDATA  #REQUIRED
                       DESCRIPTION CDATA  #IMPLIED >
 <!ELEMENT KeyResolvers (KeyResolver+)>
-<!ATTLIST KeyResolvers  JAVACLASS CDATA  #FIXED 'j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyResolver' >
+<!ATTLIST KeyResolvers  JAVACLASS CDATA  #FIXED 'j86.com.sun.org.apache.xml.internal.security.keys.KeyResolver' >
 
 <!ELEMENT KeyResolver EMPTY>
 

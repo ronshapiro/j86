@@ -26,9 +26,9 @@
 package j86.java.io;
 
 import j86.java.util.*;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.j86.sun.nio.cs.StreamDecoder;
-import j86.j86.j86.sun.nio.cs.StreamEncoder;
+import j86.java.nio.charset.Charset;
+import j86.sun.nio.cs.StreamDecoder;
+import j86.sun.nio.cs.StreamEncoder;
 
 /**
  * Methods to access the character-based console device, if any, associated

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.javax.swing.*;
 import j86.java.awt.Color;
@@ -36,16 +36,16 @@ import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.Insets;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.event.*;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.*;
 
 import j86.java.beans.PropertyChangeListener;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 
 /**
  * A Metal Look and Feel implementation of ToolBarUI.  This implementation
@@ -287,8 +287,8 @@ public class MetalToolBarUI extends BasicToolBarUI
      * @param c JComponent painting on
      * @throws NullPointerException if <code>g</code> or <code>c</code> is
      *         null
-     * @see j86.j86.javax.swing.plaf.ComponentUI#update
-     * @see j86.j86.javax.swing.plaf.ComponentUI#paint
+     * @see j86.javax.swing.plaf.ComponentUI#update
+     * @see j86.javax.swing.plaf.ComponentUI#paint
      * @since 1.5
      */
     public void update(Graphics g, JComponent c) {

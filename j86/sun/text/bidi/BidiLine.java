@@ -37,7 +37,7 @@
  * (ported from C code written by Markus W. Scherer)
  */
 
-package j86.j86.sun.text.bidi;
+package j86.sun.text.bidi;
 
 import j86.java.text.Bidi;
 import j86.java.util.Arrays;

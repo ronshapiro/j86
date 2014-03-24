@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -370,7 +370,7 @@ public class OpenMBeanInfoSupport
      * OpenMBeanInfoSupport} instance.</p>
      *
      * <p>The string representation consists of the name of this class
-     * (ie {@code j86.j86.javax.management.openmbean.OpenMBeanInfoSupport}),
+     * (ie {@code j86.javax.management.openmbean.OpenMBeanInfoSupport}),
      * the MBean class name, the string representation of infos on
      * attributes, constructors, operations and notifications of the
      * described MBean and the string representation of the descriptor.</p>

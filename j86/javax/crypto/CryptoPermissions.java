@@ -30,7 +30,7 @@ import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
 import j86.java.util.Vector;
 import j86.java.util.NoSuchElementException;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.io.Serializable;
 import j86.java.io.InputStream;
 import j86.java.io.InputStreamReader;

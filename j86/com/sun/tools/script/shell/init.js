@@ -355,7 +355,7 @@ if (typeof(load) == 'undefined') {
  * @private
  */
 function javaByteArray(len) {
-    return j86.j86.j86.java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, len);
+    return j86.java.lang.reflect.Array.newInstance(java.lang.Byte.TYPE, len);
 }
 
 var curDir = new File('.');
@@ -882,7 +882,7 @@ if (typeof(printf) == 'undefined') {
      * @param args variadic argument list
      */
     this.printf = function (format, args/*, more args*/) {  
-        var array = j86.j86.j86.java.lang.reflect.Array.newInstance(java.lang.Object, 
+        var array = j86.java.lang.reflect.Array.newInstance(java.lang.Object, 
                     arguments.length - 1);
         for (var i = 0; i < array.length; i++) {
             array[i] = arguments[i+1];

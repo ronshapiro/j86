@@ -30,18 +30,18 @@ import j86.java.awt.Font;
 import j86.java.awt.Image;
 import j86.java.awt.*;
 import j86.java.text.*;
-import j86.j86.java.awt.geom.*;
+import j86.java.awt.geom.*;
 import j86.java.beans.Transient;
 
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.plaf.LabelUI;
+import j86.javax.swing.plaf.LabelUI;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.j86.javax.swing.text.html.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.text.html.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.java.util.*;
 
 
@@ -504,8 +504,8 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      * @see #setDisplayedMnemonic(int)
      */
     public void setDisplayedMnemonic(char aChar) {
-        int vk = j86.j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar(aChar);
-        if (vk != j86.j86.java.awt.event.KeyEvent.VK_UNDEFINED) {
+        int vk = j86.java.awt.event.KeyEvent.getExtendedKeyCodeForChar(aChar);
+        if (vk != j86.java.awt.event.KeyEvent.VK_UNDEFINED) {
             setDisplayedMnemonic(vk);
         }
     }
@@ -885,7 +885,7 @@ public class JLabel extends JComponent implements SwingConstants, Accessible
      * This is overridden to return false if the current Icon's Image is
      * not equal to the passed in Image <code>img</code>.
      *
-     * @see     j86.j86.j86.java.awt.image.ImageObserver
+     * @see     j86.java.awt.image.ImageObserver
      * @see     j86.java.awt.Component#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public boolean imageUpdate(Image img, int infoflags,

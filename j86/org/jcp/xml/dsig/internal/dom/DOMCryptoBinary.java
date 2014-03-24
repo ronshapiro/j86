@@ -26,15 +26,15 @@
 /*
  * $Id: DOMCryptoBinary.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.math.BigInteger;
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
 import org.w3c.dom.Node;
 import org.w3c.dom.Text;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * A DOM-based representation of the XML <code>CryptoBinary</code> simple type

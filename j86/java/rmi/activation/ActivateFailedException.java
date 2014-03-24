@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 /**
  * This exception is thrown by the RMI runtime when activation

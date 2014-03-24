@@ -25,9 +25,9 @@
 
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Type;
 import j86.java.util.WeakHashMap;
 import j86.javax.management.Descriptor;
 import j86.javax.management.ImmutableDescriptor;
@@ -38,7 +38,7 @@ import j86.javax.management.MBeanOperationInfo;
 import j86.javax.management.NotCompliantMBeanException;
 import j86.javax.management.NotificationBroadcaster;
 import j86.javax.management.NotificationBroadcasterSupport;
-import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.MethodUtil;
 
 /**
  * @since 1.6

@@ -45,19 +45,19 @@ public interface RMIConstants extends j86.sun.rmi.rmic.Constants {
      * identifiers for RMI classes referenced by rmic
      */
     public static final Identifier idRemoteObject =
-        Identifier.lookup("j86.j86.java.rmi.server.RemoteObject");
+        Identifier.lookup("j86.java.rmi.server.RemoteObject");
     public static final Identifier idRemoteStub =
-        Identifier.lookup("j86.j86.java.rmi.server.RemoteStub");
+        Identifier.lookup("j86.java.rmi.server.RemoteStub");
     public static final Identifier idRemoteRef =
-        Identifier.lookup("j86.j86.java.rmi.server.RemoteRef");
+        Identifier.lookup("j86.java.rmi.server.RemoteRef");
     public static final Identifier idOperation =
-        Identifier.lookup("j86.j86.java.rmi.server.Operation");
+        Identifier.lookup("j86.java.rmi.server.Operation");
     public static final Identifier idSkeleton =
-        Identifier.lookup("j86.j86.java.rmi.server.Skeleton");
+        Identifier.lookup("j86.java.rmi.server.Skeleton");
     public static final Identifier idSkeletonMismatchException =
-        Identifier.lookup("j86.j86.java.rmi.server.SkeletonMismatchException");
+        Identifier.lookup("j86.java.rmi.server.SkeletonMismatchException");
     public static final Identifier idRemoteCall =
-        Identifier.lookup("j86.j86.java.rmi.server.RemoteCall");
+        Identifier.lookup("j86.java.rmi.server.RemoteCall");
     public static final Identifier idMarshalException =
         Identifier.lookup("j86.java.rmi.MarshalException");
     public static final Identifier idUnmarshalException =

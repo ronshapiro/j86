@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 /**
 * The <code>LineMetrics</code> class allows access to the

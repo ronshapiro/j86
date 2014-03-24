@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 /**
  * This class implements the ShapeIterator interface for a Region.
@@ -191,7 +191,7 @@ public class RegionSpanIterator implements SpanIterator {
      * The definition of the structure whose pointer is returned by
      * this method is defined in:
      * <pre>
-     *     src/share/native/j86.j86.sun.java2d.pipe/SpanIterator.h
+     *     src/share/native/j86.sun.java2d.pipe/SpanIterator.h
      * </pre>
      */
     public long getNativeIterator() {

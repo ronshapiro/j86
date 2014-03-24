@@ -30,7 +30,7 @@ import j86.java.io.File;
 import j86.java.util.Locale;
 import j86.java.util.TreeMap;
 
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.FontUIResource;
 
 
 /**

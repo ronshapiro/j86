@@ -26,8 +26,8 @@
 package j86.sun.management;
 
 import j86.sun.misc.Perf;
-import j86.j86.sun.management.counter.*;
-import j86.j86.j86.sun.management.counter.perf.*;
+import j86.sun.management.counter.*;
+import j86.sun.management.counter.perf.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.io.IOException;
 import j86.java.net.InetAddress;

@@ -25,7 +25,7 @@
 
 package j86.javax.management;
 
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * <p>Keeps the list of Class Loaders registered in the MBean Server.
@@ -64,7 +64,7 @@ public class DefaultLoaderRepository {
      */
     public static Class<?> loadClass(String className)
         throws ClassNotFoundException {
-        return j86.j86.javax.management.loading.DefaultLoaderRepository.loadClass(className);
+        return j86.javax.management.loading.DefaultLoaderRepository.loadClass(className);
     }
 
 
@@ -84,7 +84,7 @@ public class DefaultLoaderRepository {
      */
     public static Class<?> loadClassWithout(ClassLoader loader,String className)
         throws ClassNotFoundException {
-        return j86.j86.javax.management.loading.DefaultLoaderRepository.loadClassWithout(loader, className);
+        return j86.javax.management.loading.DefaultLoaderRepository.loadClassWithout(loader, className);
     }
 
  }

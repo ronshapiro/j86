@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.awt.im;
+package j86.java.awt.im;
 
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.font.TextHitInfo;
+import j86.java.awt.font.TextHitInfo;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;
 
@@ -55,7 +55,7 @@ import j86.java.text.AttributedCharacterIterator.Attribute;
  * </ul>
  *
  * @see j86.java.awt.Component#getInputMethodRequests
- * @see j86.j86.java.awt.event.InputMethodListener
+ * @see j86.java.awt.event.InputMethodListener
  *
  * @author JavaSoft Asia/Pacific
  * @since 1.2

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 /**
  * The management interface for the runtime system of
@@ -309,7 +309,7 @@ public interface RuntimeMXBean extends PlatformManagedObject {
      * <p>
      * <b>MBeanServer access</b>:<br>
      * The mapped type of {@code Map<String,String>} is
-     * {@link j86.j86.javax.management.openmbean.TabularData TabularData}
+     * {@link j86.javax.management.openmbean.TabularData TabularData}
      * with two items in each row as follows:
      * <blockquote>
      * <table border summary="Name and Type for each item">

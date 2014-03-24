@@ -30,17 +30,17 @@ import j86.java.net.ServerSocket;
 import j86.java.net.SocketImpl;
 import j86.java.net.SocketImplFactory;
 import j86.java.net.SocketException;
-import j86.j86.java.nio.channels.SocketChannel;
-import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.java.nio.channels.SocketChannel;
+import j86.java.nio.channels.ServerSocketChannel;
 import j86.java.io.IOException;
 import j86.java.io.FileDescriptor;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.AccessibleObject;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.AccessibleObject;
+import j86.java.lang.reflect.InvocationTargetException;
 
-import j86.j86.sun.net.sdp.SdpSupport;
+import j86.sun.net.sdp.SdpSupport;
 
 /**
  * This class consists exclusively of static methods that Sockets or Channels to
@@ -163,7 +163,7 @@ public final class Sdp {
      * Opens a socket channel to a SDP socket.
      *
      * <p> The channel will be associated with the system-wide default
-     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
+     * {@link j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
      *
      * @return  a new SocketChannel
      *
@@ -175,14 +175,14 @@ public final class Sdp {
      */
     public static SocketChannel openSocketChannel() throws IOException {
         FileDescriptor fd = SdpSupport.createSocket();
-        return j86.j86.j86.sun.nio.ch.Secrets.newSocketChannel(fd);
+        return j86.sun.nio.ch.Secrets.newSocketChannel(fd);
     }
 
     /**
      * Opens a socket channel to a SDP socket.
      *
      * <p> The channel will be associated with the system-wide default
-     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
+     * {@link j86.java.nio.channels.spi.SelectorProvider SelectorProvider}.
      *
      * @return  a new ServerSocketChannel
      *
@@ -196,6 +196,6 @@ public final class Sdp {
         throws IOException
     {
         FileDescriptor fd = SdpSupport.createSocket();
-        return j86.j86.j86.sun.nio.ch.Secrets.newServerSocketChannel(fd);
+        return j86.sun.nio.ch.Secrets.newServerSocketChannel(fd);
     }
 }

@@ -23,25 +23,25 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.datatransfer.*;
+import j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
 import j86.java.beans.*;
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.Comparator;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.plaf.TreeUI;
-import j86.j86.javax.swing.tree.*;
-import j86.j86.javax.swing.text.Position;
-import j86.j86.j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.TreeUI;
+import j86.javax.swing.tree.*;
+import j86.javax.swing.text.Position;
+import j86.javax.swing.plaf.basic.DragRecognitionSupport.BeforeDrag;
 import j86.sun.awt.AWTAccessor;
 import j86.sun.swing.SwingUtilities2;
 

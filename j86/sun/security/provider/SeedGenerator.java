@@ -71,9 +71,9 @@ import j86.java.io.*;
 import j86.java.util.Properties;
 import j86.java.util.Enumeration;
 import j86.java.net.*;
-import j86.j86.java.nio.file.DirectoryStream;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.file.DirectoryStream;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
 import j86.java.util.Random;
 import j86.sun.security.util.Debug;
 

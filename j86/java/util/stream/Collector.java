@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Collections;
 import j86.java.util.EnumSet;
 import j86.java.util.Objects;
 import j86.java.util.Set;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.Function;
+import j86.java.util.function.Supplier;
 
 /**
  * A <a href="package-summary.html#Reduction">mutable reduction operation</a> that

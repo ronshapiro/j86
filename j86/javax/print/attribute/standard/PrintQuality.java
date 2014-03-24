@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.EnumSyntax;
-import j86.j86.javax.print.attribute.DocAttribute;
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
-import j86.j86.javax.print.attribute.PrintJobAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.EnumSyntax;
+import j86.javax.print.attribute.DocAttribute;
+import j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class PrintQuality is a printing attribute class, an enumeration,

@@ -33,13 +33,13 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
-import j86.j86.java.util.function.Supplier;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.concurrent.Executor;
+package j86.java.util.concurrent;
+import j86.java.util.function.Supplier;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.BiFunction;
+import j86.java.util.concurrent.Executor;
 
 /**
  * A stage of a possibly asynchronous computation, that performs an

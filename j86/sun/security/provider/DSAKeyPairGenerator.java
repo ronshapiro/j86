@@ -29,10 +29,10 @@ import j86.java.math.BigInteger;
 
 import j86.java.security.*;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.interfaces.DSAParams;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.java.security.spec.DSAParameterSpec;
+import j86.java.security.interfaces.DSAParams;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.spec.DSAParameterSpec;
 
 import j86.sun.security.jca.JCAUtil;
 
@@ -46,7 +46,7 @@ import j86.sun.security.jca.JCAUtil;
  *
  */
 public class DSAKeyPairGenerator extends KeyPairGenerator
-implements j86.j86.java.security.interfaces.DSAKeyPairGenerator {
+implements j86.java.security.interfaces.DSAKeyPairGenerator {
 
     /* Length for prime P and subPrime Q in bits */
     private int plen;

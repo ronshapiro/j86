@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
-import j86.j86.java.util.logging.*;
+import j86.java.util.logging.*;
 import j86.java.util.*;
 
 import j86.java.sql.*;
@@ -127,12 +127,12 @@ import j86.javax.naming.*;
  *   #
  *
  *   # Optimistic synchronization provider
- *   rowset.provider.classname.0=j86.j86.com.sun.rowset.providers.RIOptimisticProvider
+ *   rowset.provider.classname.0=j86.com.sun.rowset.providers.RIOptimisticProvider
  *   rowset.provider.vendor.0=Oracle Corporation
  *   rowset.provider.version.0=1.0
  *
  *   # XML Provider using standard XML schema
- *   rowset.provider.classname.1=j86.j86.com.sun.rowset.providers.RIXMLProvider
+ *   rowset.provider.classname.1=j86.com.sun.rowset.providers.RIXMLProvider
  *   rowset.provider.vendor.1=Oracle Corporation
  *   rowset.provider.version.1=1.0
  * </PRE>
@@ -192,11 +192,11 @@ import j86.javax.naming.*;
  *    CachedRowSet crs = new j86.com.sun.rowset.CachedRowSetImpl(env);
  * </PRE>
  * Further details on these mechanisms are available in the
- * <code>j86.j86.j86.javax.sql.rowset.spi</code> package specification.
+ * <code>j86.javax.sql.rowset.spi</code> package specification.
  *
  * @author  Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class SyncFactory {
 
@@ -544,7 +544,7 @@ public class SyncFactory {
 
         if (impl == null) {
             // Requested SyncProvider is unavailable. Return default provider.
-            return new j86.j86.com.sun.rowset.providers.RIOptimisticProvider();
+            return new j86.com.sun.rowset.providers.RIOptimisticProvider();
         }
 
         // Attempt to invoke classname from registered SyncProvider list
@@ -563,7 +563,7 @@ public class SyncFactory {
             if (c != null) {
                 return (SyncProvider) c.newInstance();
             } else {
-                return new j86.j86.com.sun.rowset.providers.RIOptimisticProvider();
+                return new j86.com.sun.rowset.providers.RIOptimisticProvider();
             }
 
         } catch (IllegalAccessException e) {

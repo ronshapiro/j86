@@ -74,16 +74,16 @@
  * <p>
  * Each date time instance is composed of fields that are conveniently
  * made available by the APIs.  For lower level access to the fields refer
- * to the {@code j86.j86.java.time.temporal} package.
+ * to the {@code j86.java.time.temporal} package.
  * Each class includes support for printing and parsing all manner of dates and times.
- * Refer to the {@code j86.j86.java.time.format} package for customization options.
+ * Refer to the {@code j86.java.time.format} package for customization options.
  * </p>
  * <p>
- * The {@code j86.j86.java.time.chrono} package contains the calendar neutral API
- * {@link j86.j86.java.time.chrono.ChronoLocalDate ChronoLocalDate},
- * {@link j86.j86.java.time.chrono.ChronoLocalDateTime ChronoLocalDateTime},
- * {@link j86.j86.java.time.chrono.ChronoZonedDateTime ChronoZonedDateTime} and
- * {@link j86.j86.java.time.chrono.Era Era}.
+ * The {@code j86.java.time.chrono} package contains the calendar neutral API
+ * {@link j86.java.time.chrono.ChronoLocalDate ChronoLocalDate},
+ * {@link j86.java.time.chrono.ChronoLocalDateTime ChronoLocalDateTime},
+ * {@link j86.java.time.chrono.ChronoZonedDateTime ChronoZonedDateTime} and
+ * {@link j86.java.time.chrono.Era Era}.
  * This is intended for use by applications that need to use localized calendars.
  * It is recommended that applications use the ISO-8601 date and time classes from
  * this package across system boundaries, such as to the database or across the network.
@@ -257,7 +257,7 @@
  * <p>
  * There are, however, some limited use cases where users believe they need to store and use
  * dates in arbitrary calendar systems throughout the application.
- * This is supported by {@link j86.j86.java.time.chrono.ChronoLocalDate}, however it is vital to read
+ * This is supported by {@link j86.java.time.chrono.ChronoLocalDate}, however it is vital to read
  * all the associated warnings in the Javadoc of that interface before using it.
  * In summary, applications that require general interoperation between multiple calendar systems
  * typically need to be written in a very different way to those only using the ISO calendar,
@@ -265,11 +265,11 @@
  * </p>
  * <p>
  * The API is also designed for user extensibility, as there are many ways of calculating time.
- * The {@linkplain j86.j86.java.time.temporal.TemporalField field} and {@linkplain java.time.temporal.TemporalUnit unit}
- * API, accessed via {@link j86.j86.java.time.temporal.TemporalAccessor TemporalAccessor} and
- * {@link j86.j86.java.time.temporal.Temporal Temporal} provide considerable flexibility to applications.
- * In addition, the {@link j86.j86.java.time.temporal.TemporalQuery TemporalQuery} and
- * {@link j86.j86.java.time.temporal.TemporalAdjuster TemporalAdjuster} interfaces provide day-to-day
+ * The {@linkplain j86.java.time.temporal.TemporalField field} and {@linkplain java.time.temporal.TemporalUnit unit}
+ * API, accessed via {@link j86.java.time.temporal.TemporalAccessor TemporalAccessor} and
+ * {@link j86.java.time.temporal.Temporal Temporal} provide considerable flexibility to applications.
+ * In addition, the {@link j86.java.time.temporal.TemporalQuery TemporalQuery} and
+ * {@link j86.java.time.temporal.TemporalAdjuster TemporalAdjuster} interfaces provide day-to-day
  * power, allowing code to read close to business requirements:
  * </p>
  * <pre>

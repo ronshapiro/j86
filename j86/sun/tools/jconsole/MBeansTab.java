@@ -27,18 +27,18 @@ package j86.sun.tools.jconsole;
 
 import j86.java.awt.BorderLayout;
 import j86.java.awt.EventQueue;
-import j86.j86.java.awt.event.MouseAdapter;
-import j86.j86.java.awt.event.MouseEvent;
-import j86.j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseAdapter;
+import j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseListener;
 import j86.java.beans.*;
 import j86.java.io.*;
 import j86.java.util.Set;
 import j86.javax.management.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.tree.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.tree.*;
 import j86.sun.tools.jconsole.ProxyClient.SnapshotMBeanServerConnection;
-import j86.j86.sun.tools.jconsole.inspector.*;
+import j86.sun.tools.jconsole.inspector.*;
 
 import com.j86.sun.tools.jconsole.JConsoleContext;
 

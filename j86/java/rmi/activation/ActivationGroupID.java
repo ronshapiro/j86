@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.UID;
 
 /**
  * The identifier for a registered activation group serves several

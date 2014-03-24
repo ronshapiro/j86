@@ -29,7 +29,7 @@ import j86.java.util.*;
 
 import j86.java.security.AlgorithmConstraints;
 import j86.java.security.KeyStore;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 
 /**
  * Validator abstract base class. Concrete classes are instantiated by calling

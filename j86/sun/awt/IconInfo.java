@@ -24,10 +24,10 @@
  */
 package j86.sun.awt;
 import j86.java.awt.*;
-import j86.j86.java.awt.color.*;
-import j86.j86.j86.java.awt.image.*;
-import j86.j86.j86.sun.awt.image.ToolkitImage;
-import j86.j86.j86.sun.awt.image.ImageRepresentation;
+import j86.java.awt.color.*;
+import j86.java.awt.image.*;
+import j86.sun.awt.image.ToolkitImage;
+import j86.sun.awt.image.ImageRepresentation;
 import j86.java.util.Arrays;
 
 public class IconInfo {

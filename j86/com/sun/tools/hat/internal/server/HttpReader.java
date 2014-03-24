@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.server;
+package j86.com.sun.tools.hat.internal.server;
 
 /**
  * Reads a single HTTP query from a socket, and starts up a QueryHandler
@@ -49,9 +49,9 @@ import j86.java.io.BufferedWriter;
 import j86.java.io.PrintWriter;
 import j86.java.io.OutputStreamWriter;
 
-import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
-import j86.j86.com.sun.tools.hat.internal.oql.OQLEngine;
-import j86.j86.com.sun.tools.hat.internal.util.Misc;
+import j86.com.sun.tools.hat.internal.model.Snapshot;
+import j86.com.sun.tools.hat.internal.oql.OQLEngine;
+import j86.com.sun.tools.hat.internal.util.Misc;
 
 public class HttpReader implements Runnable {
 

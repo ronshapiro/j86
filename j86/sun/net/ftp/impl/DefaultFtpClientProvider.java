@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.net.ftp.impl;
+package j86.sun.net.ftp.impl;
 
 /**
  * Default FtpClientProvider.
- * Uses j86.j86.sun.net.ftp.FtpCLient.
+ * Uses j86.sun.net.ftp.FtpCLient.
  */
-public class DefaultFtpClientProvider extends j86.j86.sun.net.ftp.FtpClientProvider {
+public class DefaultFtpClientProvider extends j86.sun.net.ftp.FtpClientProvider {
 
     @Override
-    public j86.j86.sun.net.ftp.FtpClient createFtpClient() {
-        return j86.j86.j86.sun.net.ftp.impl.FtpClient.create();
+    public j86.sun.net.ftp.FtpClient createFtpClient() {
+        return j86.sun.net.ftp.impl.FtpClient.create();
     }
 
 }

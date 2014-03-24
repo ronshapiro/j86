@@ -31,11 +31,11 @@ package j86.sun.font;
 
 import j86.java.awt.Font;
 
-import j86.j86.java.awt.font.GlyphJustificationInfo;
-import j86.j86.java.awt.font.LineMetrics;
+import j86.java.awt.font.GlyphJustificationInfo;
+import j86.java.awt.font.LineMetrics;
 
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * An extension of TextLabel that maintains information

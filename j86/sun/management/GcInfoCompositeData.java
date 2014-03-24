@@ -25,22 +25,22 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.MemoryUsage;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.management.MemoryUsage;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Field;
 import j86.java.util.Iterator;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
 import j86.java.util.List;
 import j86.java.util.Collections;
 import j86.java.io.InvalidObjectException;
-import j86.j86.javax.management.openmbean.CompositeType;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataSupport;
-import j86.j86.javax.management.openmbean.TabularData;
-import j86.j86.javax.management.openmbean.SimpleType;
-import j86.j86.javax.management.openmbean.OpenType;
-import j86.j86.javax.management.openmbean.OpenDataException;
+import j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataSupport;
+import j86.javax.management.openmbean.TabularData;
+import j86.javax.management.openmbean.SimpleType;
+import j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.OpenDataException;
 import com.j86.sun.management.GcInfo;
 import com.j86.sun.management.GarbageCollectionNotificationInfo;
 import j86.java.security.AccessController;

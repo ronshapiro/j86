@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.ActionMapUIResource;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.HierarchyEvent;
-import j86.j86.java.awt.event.HierarchyListener;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.event.WindowListener;
-import j86.j86.java.awt.event.WindowStateListener;
+import j86.javax.swing.plaf.ActionMapUIResource;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.HierarchyEvent;
+import j86.java.awt.event.HierarchyListener;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowListener;
+import j86.java.awt.event.WindowStateListener;
 
 import j86.java.awt.*;
 
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
-import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.*;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import j86.com.sun.java.swing.plaf.windows.XPStyle.*;
 
 /**
  * Windows rendition of the component.

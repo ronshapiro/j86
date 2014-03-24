@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.dns;
+package j86.sun.net.dns;
 
 import j86.java.util.List;
 
@@ -53,7 +53,7 @@ public abstract class ResolverConfiguration {
     public static ResolverConfiguration open() {
         synchronized (lock) {
             if (provider == null) {
-                provider = new j86.j86.sun.net.dns.ResolverConfigurationImpl();
+                provider = new j86.sun.net.dns.ResolverConfigurationImpl();
             }
             return provider;
         }

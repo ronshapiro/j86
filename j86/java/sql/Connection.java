@@ -26,7 +26,7 @@
 package j86.java.sql;
 
 import j86.java.util.Properties;
-import j86.j86.java.util.concurrent.Executor;
+import j86.java.util.concurrent.Executor;
 
 /**
  * <P>A connection (session) with a specific

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.Arrays;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.x509.*;
 import j86.sun.security.util.*;

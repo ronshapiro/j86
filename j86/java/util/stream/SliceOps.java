@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.CountedCompleter;
-import j86.j86.java.util.function.IntFunction;
+import j86.java.util.concurrent.CountedCompleter;
+import j86.java.util.function.IntFunction;
 
 /**
  * Factory for instances of a short-circuiting stateful intermediate operations

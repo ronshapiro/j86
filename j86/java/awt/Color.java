@@ -26,10 +26,10 @@
 package j86.java.awt;
 
 import j86.java.beans.ConstructorProperties;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.color.ColorSpace;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.color.ColorSpace;
 
 /**
  * The <code>Color</code> class is used to encapsulate colors in the default
@@ -404,7 +404,7 @@ public class Color implements Paint, j86.java.io.Serializable {
      * defaulted to 255.
      *
      * @param rgb the combined RGB components
-     * @see j86.j86.j86.java.awt.image.ColorModel#getRGBdefault
+     * @see j86.java.awt.image.ColorModel#getRGBdefault
      * @see #getRed
      * @see #getGreen
      * @see #getBlue
@@ -424,7 +424,7 @@ public class Color implements Paint, j86.java.io.Serializable {
      * @param rgba the combined RGBA components
      * @param hasalpha <code>true</code> if the alpha bits are valid;
      *        <code>false</code> otherwise
-     * @see j86.j86.j86.java.awt.image.ColorModel#getRGBdefault
+     * @see j86.java.awt.image.ColorModel#getRGBdefault
      * @see #getRed
      * @see #getGreen
      * @see #getBlue
@@ -593,7 +593,7 @@ public class Color implements Paint, j86.java.io.Serializable {
      * blue).
      * @return the RGB value of the color in the default sRGB
      *         <code>ColorModel</code>.
-     * @see j86.j86.j86.java.awt.image.ColorModel#getRGBdefault
+     * @see j86.java.awt.image.ColorModel#getRGBdefault
      * @see #getRed
      * @see #getGreen
      * @see #getBlue
@@ -833,7 +833,7 @@ public class Color implements Paint, j86.java.io.Serializable {
      *                            saturation, and brightness.
      * @see       j86.java.awt.Color#getRGB()
      * @see       j86.java.awt.Color#Color(int)
-     * @see       j86.j86.j86.java.awt.image.ColorModel#getRGBdefault()
+     * @see       j86.java.awt.image.ColorModel#getRGBdefault()
      * @since     JDK1.0
      */
     public static int HSBtoRGB(float hue, float saturation, float brightness) {
@@ -901,7 +901,7 @@ public class Color implements Paint, j86.java.io.Serializable {
      *                     the indicated red, green, and blue components.
      * @see       j86.java.awt.Color#getRGB()
      * @see       j86.java.awt.Color#Color(int)
-     * @see       j86.j86.j86.java.awt.image.ColorModel#getRGBdefault()
+     * @see       j86.java.awt.image.ColorModel#getRGBdefault()
      * @since     JDK1.0
      */
     public static float[] RGBtoHSB(int r, int g, int b, float[] hsbvals) {

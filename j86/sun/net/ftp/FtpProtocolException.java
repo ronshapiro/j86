@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.net.ftp;
+package j86.sun.net.ftp;
 
 /**
  * Thrown to indicate that the FTP server reported an error.

@@ -33,16 +33,16 @@ package j86.java.rmi;
  * preserve RMI's "at most once" call semantics.
  *
  * A <code>NoSuchObjectException</code> is also thrown by the method
- * <code>j86.j86.java.rmi.server.RemoteObject.toStub</code> and by the
+ * <code>j86.java.rmi.server.RemoteObject.toStub</code> and by the
  * <code>unexportObject</code> methods of
- * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> and
- * <code>j86.j86.java.rmi.activation.Activatable</code> and
+ * <code>j86.java.rmi.server.UnicastRemoteObject</code> and
+ * <code>j86.java.rmi.activation.Activatable</code> and
  *
  * @author  Ann Wollrath
  * @since   JDK1.1
- * @see     j86.j86.java.rmi.server.RemoteObject#toStub(Remote)
- * @see     j86.j86.java.rmi.server.UnicastRemoteObject#unexportObject(Remote,boolean)
- * @see     j86.j86.java.rmi.activation.Activatable#unexportObject(Remote,boolean)
+ * @see     j86.java.rmi.server.RemoteObject#toStub(Remote)
+ * @see     j86.java.rmi.server.UnicastRemoteObject#unexportObject(Remote,boolean)
+ * @see     j86.java.rmi.activation.Activatable#unexportObject(Remote,boolean)
  */
 public class NoSuchObjectException extends RemoteException {
 

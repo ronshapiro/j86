@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.www;
+package j86.sun.net.www;
 import j86.java.io.*;
 import j86.java.net.FileNameMap;
 import j86.java.util.Hashtable;
@@ -67,7 +67,7 @@ public class MimeTable implements FileNameMap {
     }
 
 
-    private static final String filePreamble = "j86.j86.sun.net.www MIME content-types table";
+    private static final String filePreamble = "j86.sun.net.www MIME content-types table";
     private static final String fileMagic = "#" + filePreamble;
 
     MimeTable() {

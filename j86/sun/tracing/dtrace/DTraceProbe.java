@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.tracing.dtrace;
+package j86.sun.tracing.dtrace;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 
 import j86.sun.tracing.ProbeSkeleton;
 

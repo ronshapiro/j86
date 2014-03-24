@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.java.util.Hashtable;
 
@@ -33,8 +33,8 @@ import j86.javax.naming.Reference;
 import j86.javax.naming.Referenceable;
 import j86.javax.naming.NamingException;
 import j86.javax.naming.CannotProceedException;
-import j86.j86.javax.naming.directory.DirContext;
-import j86.j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.DirContext;
+import j86.javax.naming.directory.Attributes;
 
 import j86.com.sun.naming.internal.ResourceManager;
 import j86.com.sun.naming.internal.FactoryEnumeration;

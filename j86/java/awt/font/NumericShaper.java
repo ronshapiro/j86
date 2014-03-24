@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectOutputStream;

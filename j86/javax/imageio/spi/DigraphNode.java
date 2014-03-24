@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.spi;
+package j86.javax.imageio.spi;
 
 import j86.java.io.Serializable;
 import j86.java.util.HashSet;

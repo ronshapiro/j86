@@ -22,21 +22,21 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.*;
 import j86.java.awt.*;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.BreakIterator;
-import j86.j86.java.awt.font.*;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.font.*;
+import j86.java.awt.geom.AffineTransform;
 import j86.javax.swing.JComponent;
-import j86.j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.event.DocumentEvent;
 import j86.sun.font.BidiUtils;
 
 /**
- * A flow strategy that uses j86.j86.java.awt.font.LineBreakMeasureer to
- * produce j86.j86.java.awt.font.TextLayout for i18n capable rendering.
+ * A flow strategy that uses j86.java.awt.font.LineBreakMeasureer to
+ * produce j86.java.awt.font.TextLayout for i18n capable rendering.
  * If the child view being placed into the flow is of type
  * GlyphView and can be rendered by TextLayout, a GlyphPainter
  * that uses TextLayout is plugged into the GlyphView.
@@ -47,7 +47,7 @@ class TextLayoutStrategy extends FlowView.FlowStrategy {
 
     /**
      * Constructs a layout strategy for paragraphs based
-     * upon j86.j86.java.awt.font.LineBreakMeasurer.
+     * upon j86.java.awt.font.LineBreakMeasurer.
      */
     public TextLayoutStrategy() {
         text = new AttributedSegment();

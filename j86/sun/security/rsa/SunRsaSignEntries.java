@@ -63,8 +63,8 @@ public final class SunRsaSignEntries {
 
         // attributes for supported key classes
 
-        String rsaKeyClasses = "j86.j86.java.security.interfaces.RSAPublicKey" +
-                "|j86.j86.java.security.interfaces.RSAPrivateKey";
+        String rsaKeyClasses = "j86.java.security.interfaces.RSAPublicKey" +
+                "|j86.java.security.interfaces.RSAPrivateKey";
         map.put("Signature.MD2withRSA SupportedKeyClasses", rsaKeyClasses);
         map.put("Signature.MD5withRSA SupportedKeyClasses", rsaKeyClasses);
         map.put("Signature.SHA1withRSA SupportedKeyClasses", rsaKeyClasses);

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 /**
  * Certificate is not yet valid exception. This is thrown whenever

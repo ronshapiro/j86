@@ -53,7 +53,7 @@ import j86.java.util.*;
  * @author Benjamin Renaud
  * @deprecated This class is no longer used. Its functionality has been
  * replaced by {@code j86.java.security.KeyStore}, the
- * {@code j86.j86.java.security.cert} package, and
+ * {@code j86.java.security.cert} package, and
  * {@code j86.java.security.Principal}.
  */
 @Deprecated

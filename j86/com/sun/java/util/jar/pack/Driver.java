@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.BufferedOutputStream;
@@ -35,8 +35,8 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.PrintStream;
 import j86.java.text.MessageFormat;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.HashMap;
@@ -48,17 +48,17 @@ import j86.java.util.Properties;
 import j86.java.util.ResourceBundle;
 import j86.java.util.SortedMap;
 import j86.java.util.TreeMap;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.JarOutputStream;
-import j86.j86.java.util.jar.Pack200;
-import j86.j86.java.util.zip.GZIPInputStream;
-import j86.j86.java.util.zip.GZIPOutputStream;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarOutputStream;
+import j86.java.util.jar.Pack200;
+import j86.java.util.zip.GZIPInputStream;
+import j86.java.util.zip.GZIPOutputStream;
 
 /** Command line interface for Pack200.
  */
 class Driver {
         private static final ResourceBundle RESOURCE =
-                ResourceBundle.getBundle("j86.com.sun.j86.j86.java.util.jar.pack.DriverResource");
+                ResourceBundle.getBundle("j86.com.sun.j86.java.util.jar.pack.DriverResource");
 
     public static void main(String[] ava) throws IOException {
         List<String> av = new ArrayList<>(Arrays.asList(ava));

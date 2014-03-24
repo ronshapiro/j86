@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.java.io.Serializable;
 import j86.java.util.Arrays;

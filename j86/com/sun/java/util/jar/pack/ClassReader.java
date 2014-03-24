@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.ClassEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.SignatureEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MemberEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.ClassEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.SignatureEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.MemberEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
+import j86.com.sun.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.java.util.jar.pack.Package.InnerClass;
 import j86.java.io.DataInputStream;
 import j86.java.io.FilterInputStream;
 import j86.java.io.IOException;
@@ -42,7 +42,7 @@ import j86.java.io.InputStream;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.Map;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Reader for a class file that is being incorporated into a package.

@@ -29,7 +29,7 @@ import j86.java.util.*;
 
 import j86.java.security.*;
 import j86.java.security.Provider.Service;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 import j86.sun.security.jca.*;
 import j86.sun.security.jca.GetInstance.Instance;
@@ -70,7 +70,7 @@ import j86.sun.security.jca.GetInstance.Instance;
  * <li><b>Algorithm-Specific Initialization</b>
  * <p>For situations where a set of algorithm-specific parameters already
  * exists, there are two
- * {@link #init(j86.j86.java.security.spec.AlgorithmParameterSpec) init}
+ * {@link #init(j86.java.security.spec.AlgorithmParameterSpec) init}
  * methods that have an <code>AlgorithmParameterSpec</code>
  * argument. One also has a <code>SecureRandom</code> argument, while the
  * other uses the SecureRandom implementation

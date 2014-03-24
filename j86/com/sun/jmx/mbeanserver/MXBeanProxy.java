@@ -27,7 +27,7 @@ package j86.com.sun.jmx.mbeanserver;
 
 import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.util.Map;
 
 import j86.javax.management.Attribute;

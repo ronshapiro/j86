@@ -33,7 +33,7 @@
 /*
  * $Id: XMLObject.java,v 1.5 2005/05/10 16:03:48 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.java.util.List;
 import j86.javax.xml.crypto.XMLStructure;
@@ -95,7 +95,7 @@ public interface XMLObject extends XMLStructure {
      *<p>If there is a public subclass representing the type of
      * <code>XMLStructure</code>, it is returned as an instance of that class
      * (ex: a <code>SignatureProperties</code> element would be returned
-     * as an instance of {@link j86.j86.javax.xml.crypto.dsig.SignatureProperties}).
+     * as an instance of {@link j86.javax.xml.crypto.dsig.SignatureProperties}).
      *
      * @return an unmodifiable list of <code>XMLStructure</code>s (may be empty
      *    but never <code>null</code>)

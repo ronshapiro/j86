@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.SetOfIntegerSyntax;
-import j86.j86.javax.print.attribute.SupportedValuesAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.SetOfIntegerSyntax;
+import j86.javax.print.attribute.SupportedValuesAttribute;
 
 /**
  * Class JobKOctetsSupported is a printing attribute class, a set of integers,
@@ -39,7 +39,7 @@ import j86.j86.javax.print.attribute.SupportedValuesAttribute;
  * <B>IPP Compatibility:</B> The JobKOctetsSupported attribute's canonical array
  * form gives the lower and upper bound for the range of values to be included
  * in an IPP "job-k-octets-supported" attribute. See class {@link
- * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+ * j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
  * explanation of canonical array form. The category name returned by
  * <CODE>getName()</CODE> gives the IPP attribute name.
  * <P>

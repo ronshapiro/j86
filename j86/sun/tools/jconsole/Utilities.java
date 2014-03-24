@@ -29,10 +29,10 @@ import j86.java.awt.*;
 
 import j86.javax.accessibility.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.tree.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.tree.*;
 
-import j86.j86.sun.tools.jconsole.inspector.*;
+import j86.sun.tools.jconsole.inspector.*;
 
 import static j86.java.lang.Math.*;
 
@@ -41,7 +41,7 @@ import static j86.java.lang.Math.*;
  */
 public class Utilities {
     private static final String windowsLaF =
-        "j86.j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
+        "j86.com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
 
     public static void updateTransparency(JComponent comp) {
         LookAndFeel laf = UIManager.getLookAndFeel();

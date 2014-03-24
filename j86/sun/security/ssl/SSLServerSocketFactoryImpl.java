@@ -29,7 +29,7 @@ import j86.java.io.IOException;
 import j86.java.net.InetAddress;
 import j86.java.net.ServerSocket;
 
-import j86.j86.javax.net.ssl.SSLServerSocketFactory;
+import j86.javax.net.ssl.SSLServerSocketFactory;
 
 /**
  * This class creates SSL server sockets.

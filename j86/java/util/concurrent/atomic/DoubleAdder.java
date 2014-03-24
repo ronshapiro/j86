@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
+package j86.java.util.concurrent.atomic;
 import j86.java.io.Serializable;
 
 /**
@@ -244,7 +244,7 @@ public class DoubleAdder extends Striped64 implements Serializable {
 
     /**
      * Returns a
-     * <a href="../../../../serialized-form.html#j86.j86.j86.java.util.concurrent.atomic.DoubleAdder.SerializationProxy">
+     * <a href="../../../../serialized-form.html#j86.java.util.concurrent.atomic.DoubleAdder.SerializationProxy">
      * SerializationProxy</a>
      * representing the state of this instance.
      *

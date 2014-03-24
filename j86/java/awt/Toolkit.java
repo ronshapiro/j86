@@ -30,19 +30,19 @@ import j86.java.util.MissingResourceException;
 import j86.java.util.Properties;
 import j86.java.util.ResourceBundle;
 import j86.java.util.StringTokenizer;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.peer.*;
-import j86.j86.java.awt.im.InputMethodHighlight;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.awt.datatransfer.Clipboard;
-import j86.j86.java.awt.dnd.DragSource;
-import j86.j86.java.awt.dnd.DragGestureRecognizer;
-import j86.j86.java.awt.dnd.DragGestureEvent;
-import j86.j86.java.awt.dnd.DragGestureListener;
-import j86.j86.java.awt.dnd.InvalidDnDOperationException;
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.event.*;
+import j86.java.awt.peer.*;
+import j86.java.awt.im.InputMethodHighlight;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.datatransfer.Clipboard;
+import j86.java.awt.dnd.DragSource;
+import j86.java.awt.dnd.DragGestureRecognizer;
+import j86.java.awt.dnd.DragGestureEvent;
+import j86.java.awt.dnd.DragGestureListener;
+import j86.java.awt.dnd.InvalidDnDOperationException;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
 import j86.java.net.URL;
 import j86.java.io.File;
 import j86.java.io.FileInputStream;
@@ -106,7 +106,7 @@ import j86.sun.util.CoreResourceBundleControl;
  * class directly. The methods defined by <code>Toolkit</code> are
  * the "glue" that joins the platform-independent classes in the
  * <code>j86.java.awt</code> package with their counterparts in
- * <code>j86.j86.java.awt.peer</code>. Some methods defined by
+ * <code>j86.java.awt.peer</code>. Some methods defined by
  * <code>Toolkit</code> query the native operating system directly.
  *
  * @author      Sami Shaio
@@ -125,7 +125,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Desktop
-     * @see       j86.j86.java.awt.peer.DesktopPeer
+     * @see       j86.java.awt.peer.DesktopPeer
      * @since 1.6
      */
     protected abstract DesktopPeer createDesktopPeer(Desktop target)
@@ -141,7 +141,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Button
-     * @see       j86.j86.java.awt.peer.ButtonPeer
+     * @see       j86.java.awt.peer.ButtonPeer
      */
     protected abstract ButtonPeer createButton(Button target)
         throws HeadlessException;
@@ -155,7 +155,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.TextField
-     * @see       j86.j86.java.awt.peer.TextFieldPeer
+     * @see       j86.java.awt.peer.TextFieldPeer
      */
     protected abstract TextFieldPeer createTextField(TextField target)
         throws HeadlessException;
@@ -169,7 +169,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Label
-     * @see       j86.j86.java.awt.peer.LabelPeer
+     * @see       j86.java.awt.peer.LabelPeer
      */
     protected abstract LabelPeer createLabel(Label target)
         throws HeadlessException;
@@ -183,7 +183,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.List
-     * @see       j86.j86.java.awt.peer.ListPeer
+     * @see       j86.java.awt.peer.ListPeer
      */
     protected abstract ListPeer createList(j86.java.awt.List target)
         throws HeadlessException;
@@ -197,7 +197,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Checkbox
-     * @see       j86.j86.java.awt.peer.CheckboxPeer
+     * @see       j86.java.awt.peer.CheckboxPeer
      */
     protected abstract CheckboxPeer createCheckbox(Checkbox target)
         throws HeadlessException;
@@ -211,7 +211,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Scrollbar
-     * @see       j86.j86.java.awt.peer.ScrollbarPeer
+     * @see       j86.java.awt.peer.ScrollbarPeer
      */
     protected abstract ScrollbarPeer createScrollbar(Scrollbar target)
         throws HeadlessException;
@@ -225,7 +225,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.ScrollPane
-     * @see       j86.j86.java.awt.peer.ScrollPanePeer
+     * @see       j86.java.awt.peer.ScrollPanePeer
      * @since     JDK1.1
      */
     protected abstract ScrollPanePeer createScrollPane(ScrollPane target)
@@ -240,7 +240,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.TextArea
-     * @see       j86.j86.java.awt.peer.TextAreaPeer
+     * @see       j86.java.awt.peer.TextAreaPeer
      */
     protected abstract TextAreaPeer createTextArea(TextArea target)
         throws HeadlessException;
@@ -254,7 +254,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Choice
-     * @see       j86.j86.java.awt.peer.ChoicePeer
+     * @see       j86.java.awt.peer.ChoicePeer
      */
     protected abstract ChoicePeer createChoice(Choice target)
         throws HeadlessException;
@@ -268,7 +268,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Frame
-     * @see       j86.j86.java.awt.peer.FramePeer
+     * @see       j86.java.awt.peer.FramePeer
      */
     protected abstract FramePeer createFrame(Frame target)
         throws HeadlessException;
@@ -279,7 +279,7 @@ public abstract class Toolkit {
      * @param     target the canvas to be implemented.
      * @return    this toolkit's implementation of <code>Canvas</code>.
      * @see       j86.java.awt.Canvas
-     * @see       j86.j86.java.awt.peer.CanvasPeer
+     * @see       j86.java.awt.peer.CanvasPeer
      */
     protected abstract CanvasPeer       createCanvas(Canvas target);
 
@@ -289,7 +289,7 @@ public abstract class Toolkit {
      * @param     target the panel to be implemented.
      * @return    this toolkit's implementation of <code>Panel</code>.
      * @see       j86.java.awt.Panel
-     * @see       j86.j86.java.awt.peer.PanelPeer
+     * @see       j86.java.awt.peer.PanelPeer
      */
     protected abstract PanelPeer        createPanel(Panel target);
 
@@ -302,7 +302,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Window
-     * @see       j86.j86.java.awt.peer.WindowPeer
+     * @see       j86.java.awt.peer.WindowPeer
      */
     protected abstract WindowPeer createWindow(Window target)
         throws HeadlessException;
@@ -316,7 +316,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Dialog
-     * @see       j86.j86.java.awt.peer.DialogPeer
+     * @see       j86.java.awt.peer.DialogPeer
      */
     protected abstract DialogPeer createDialog(Dialog target)
         throws HeadlessException;
@@ -330,7 +330,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.MenuBar
-     * @see       j86.j86.java.awt.peer.MenuBarPeer
+     * @see       j86.java.awt.peer.MenuBarPeer
      */
     protected abstract MenuBarPeer createMenuBar(MenuBar target)
         throws HeadlessException;
@@ -344,7 +344,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.Menu
-     * @see       j86.j86.java.awt.peer.MenuPeer
+     * @see       j86.java.awt.peer.MenuPeer
      */
     protected abstract MenuPeer createMenu(Menu target)
         throws HeadlessException;
@@ -358,7 +358,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.PopupMenu
-     * @see       j86.j86.java.awt.peer.PopupMenuPeer
+     * @see       j86.java.awt.peer.PopupMenuPeer
      * @since     JDK1.1
      */
     protected abstract PopupMenuPeer createPopupMenu(PopupMenu target)
@@ -373,7 +373,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.MenuItem
-     * @see       j86.j86.java.awt.peer.MenuItemPeer
+     * @see       j86.java.awt.peer.MenuItemPeer
      */
     protected abstract MenuItemPeer createMenuItem(MenuItem target)
         throws HeadlessException;
@@ -387,7 +387,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.FileDialog
-     * @see       j86.j86.java.awt.peer.FileDialogPeer
+     * @see       j86.java.awt.peer.FileDialogPeer
      */
     protected abstract FileDialogPeer createFileDialog(FileDialog target)
         throws HeadlessException;
@@ -401,7 +401,7 @@ public abstract class Toolkit {
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @see       j86.java.awt.CheckboxMenuItem
-     * @see       j86.j86.java.awt.peer.CheckboxMenuItemPeer
+     * @see       j86.java.awt.peer.CheckboxMenuItemPeer
      */
     protected abstract CheckboxMenuItemPeer createCheckboxMenuItem(
         CheckboxMenuItem target) throws HeadlessException;
@@ -411,7 +411,7 @@ public abstract class Toolkit {
      * <code>MouseInfo</code> operations.
      * @return    this toolkit's implementation of  helper for <code>MouseInfo</code>
      * @throws    UnsupportedOperationException if this operation is not implemented
-     * @see       j86.j86.java.awt.peer.MouseInfoPeer
+     * @see       j86.java.awt.peer.MouseInfoPeer
      * @see       j86.java.awt.MouseInfo
      * @since 1.5
      */
@@ -443,7 +443,7 @@ public abstract class Toolkit {
      *            <code>BOLD</code>, <code>ITALIC</code>, or a combination
      * @return    this toolkit's implementation of <code>Font</code>
      * @see       j86.java.awt.Font
-     * @see       j86.j86.java.awt.peer.FontPeer
+     * @see       j86.java.awt.peer.FontPeer
      * @see       j86.java.awt.GraphicsEnvironment#getAllFonts
      * @deprecated  see j86.java.awt.GraphicsEnvironment#getAllFonts
      */
@@ -632,7 +632,7 @@ public abstract class Toolkit {
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
-     * @see       j86.j86.j86.java.awt.image.ColorModel
+     * @see       j86.java.awt.image.ColorModel
      * @see       j86.java.awt.Component#getColorModel
      */
     public abstract ColorModel getColorModel()
@@ -663,7 +663,7 @@ public abstract class Toolkit {
      * @return    the screen metrics of the specified font in this toolkit
      * @deprecated  As of JDK version 1.2, replaced by the <code>Font</code>
      *          method <code>getLineMetrics</code>.
-     * @see j86.j86.java.awt.font.LineMetrics
+     * @see j86.java.awt.font.LineMetrics
      * @see j86.java.awt.Font#getLineMetrics
      * @see j86.java.awt.GraphicsEnvironment#getScreenDevices
      */
@@ -1052,10 +1052,10 @@ public abstract class Toolkit {
      * @return    <code>true</code> if the image has already been
      *                 fully prepared; <code>false</code> otherwise.
      * @see       j86.java.awt.Component#prepareImage(java.awt.Image,
-     *                 j86.j86.j86.java.awt.image.ImageObserver)
+     *                 j86.java.awt.image.ImageObserver)
      * @see       j86.java.awt.Component#prepareImage(java.awt.Image,
-     *                 int, int, j86.j86.j86.java.awt.image.ImageObserver)
-     * @see       j86.j86.j86.java.awt.image.ImageObserver
+     *                 int, int, j86.java.awt.image.ImageObserver)
+     * @see       j86.java.awt.image.ImageObserver
      */
     public abstract boolean prepareImage(Image image, int width, int height,
                                          ImageObserver observer);
@@ -1091,12 +1091,12 @@ public abstract class Toolkit {
      *                 <code>ImageObserver</code> flags for the
      *                 image data that is currently available.
      * @see       j86.java.awt.Toolkit#prepareImage(java.awt.Image,
-     *                 int, int, j86.j86.j86.java.awt.image.ImageObserver)
+     *                 int, int, j86.java.awt.image.ImageObserver)
      * @see       j86.java.awt.Component#checkImage(java.awt.Image,
-     *                 j86.j86.j86.java.awt.image.ImageObserver)
+     *                 j86.java.awt.image.ImageObserver)
      * @see       j86.java.awt.Component#checkImage(java.awt.Image,
-     *                 int, int, j86.j86.j86.java.awt.image.ImageObserver)
-     * @see       j86.j86.j86.java.awt.image.ImageObserver
+     *                 int, int, j86.java.awt.image.ImageObserver)
+     * @see       j86.java.awt.image.ImageObserver
      */
     public abstract int checkImage(Image image, int width, int height,
                                    ImageObserver observer);
@@ -1106,8 +1106,8 @@ public abstract class Toolkit {
      * @param     producer the image producer to be used.
      * @return    an image with the specified image producer.
      * @see       j86.java.awt.Image
-     * @see       j86.j86.j86.java.awt.image.ImageProducer
-     * @see       j86.java.awt.Component#createImage(j86.j86.java.awt.image.ImageProducer)
+     * @see       j86.java.awt.image.ImageProducer
+     * @see       j86.java.awt.Component#createImage(j86.java.awt.image.ImageProducer)
      */
     public abstract Image createImage(ImageProducer producer);
 
@@ -1263,7 +1263,7 @@ public abstract class Toolkit {
      * <li>DataFlavor.stringFlavor</li>
      * <li>DataFlavor.plainTextFlavor (<b>deprecated</b>)</li>
      * </ul>
-     * As with <code>j86.j86.java.awt.datatransfer.StringSelection</code>, if the
+     * As with <code>j86.java.awt.datatransfer.StringSelection</code>, if the
      * requested flavor is <code>DataFlavor.plainTextFlavor</code>, or an
      * equivalent flavor, a Reader is returned. <b>Note:</b> The behavior of
      * the system Clipboard's <code>getTransferData()</code> method for <code>
@@ -1282,10 +1282,10 @@ public abstract class Toolkit {
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      * returns true
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
-     * @see       j86.j86.java.awt.datatransfer.Clipboard
-     * @see       j86.j86.java.awt.datatransfer.StringSelection
-     * @see       j86.j86.java.awt.datatransfer.DataFlavor#stringFlavor
-     * @see       j86.j86.java.awt.datatransfer.DataFlavor#plainTextFlavor
+     * @see       j86.java.awt.datatransfer.Clipboard
+     * @see       j86.java.awt.datatransfer.StringSelection
+     * @see       j86.java.awt.datatransfer.DataFlavor#stringFlavor
+     * @see       j86.java.awt.datatransfer.DataFlavor#plainTextFlavor
      * @see       j86.java.io.Reader
      * @see       j86.java.awt.AWTPermission
      * @since     JDK1.1
@@ -1309,7 +1309,7 @@ public abstract class Toolkit {
      * selection ensures that a Java application will interact correctly with
      * native applications and other Java applications running simultaneously
      * on the system. Note that <code>j86.java.awt.TextComponent</code> and
-     * <code>j86.j86.javax.swing.text.JTextComponent</code> already adhere to this
+     * <code>j86.javax.swing.text.JTextComponent</code> already adhere to this
      * policy. When using these classes, and their subclasses, developers need
      * not write any additional code.
      * <p>
@@ -1329,12 +1329,12 @@ public abstract class Toolkit {
      * @exception HeadlessException if GraphicsEnvironment.isHeadless()
      *            returns true
      *
-     * @see j86.j86.java.awt.datatransfer.Clipboard
-     * @see j86.j86.java.awt.event.FocusListener
-     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_GAINED
-     * @see j86.j86.java.awt.event.FocusEvent#FOCUS_LOST
+     * @see j86.java.awt.datatransfer.Clipboard
+     * @see j86.java.awt.event.FocusListener
+     * @see j86.java.awt.event.FocusEvent#FOCUS_GAINED
+     * @see j86.java.awt.event.FocusEvent#FOCUS_LOST
      * @see TextComponent
-     * @see j86.j86.javax.swing.text.JTextComponent
+     * @see j86.javax.swing.text.JTextComponent
      * @see AWTPermission
      * @see GraphicsEnvironment#isHeadless
      * @since 1.4
@@ -1380,10 +1380,10 @@ public abstract class Toolkit {
      * Returns whether the given locking key on the keyboard is currently in
      * its "on" state.
      * Valid key codes are
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_CAPS_LOCK VK_CAPS_LOCK},
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_NUM_LOCK VK_NUM_LOCK},
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_SCROLL_LOCK VK_SCROLL_LOCK}, and
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_KANA_LOCK VK_KANA_LOCK}.
+     * {@link j86.java.awt.event.KeyEvent#VK_CAPS_LOCK VK_CAPS_LOCK},
+     * {@link j86.java.awt.event.KeyEvent#VK_NUM_LOCK VK_NUM_LOCK},
+     * {@link j86.java.awt.event.KeyEvent#VK_SCROLL_LOCK VK_SCROLL_LOCK}, and
+     * {@link j86.java.awt.event.KeyEvent#VK_KANA_LOCK VK_KANA_LOCK}.
      *
      * @exception j86.java.lang.IllegalArgumentException if <code>keyCode</code>
      * is not one of the valid key codes
@@ -1410,10 +1410,10 @@ public abstract class Toolkit {
     /**
      * Sets the state of the given locking key on the keyboard.
      * Valid key codes are
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_CAPS_LOCK VK_CAPS_LOCK},
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_NUM_LOCK VK_NUM_LOCK},
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_SCROLL_LOCK VK_SCROLL_LOCK}, and
-     * {@link j86.j86.java.awt.event.KeyEvent#VK_KANA_LOCK VK_KANA_LOCK}.
+     * {@link j86.java.awt.event.KeyEvent#VK_CAPS_LOCK VK_CAPS_LOCK},
+     * {@link j86.java.awt.event.KeyEvent#VK_NUM_LOCK VK_NUM_LOCK},
+     * {@link j86.java.awt.event.KeyEvent#VK_SCROLL_LOCK VK_SCROLL_LOCK}, and
+     * {@link j86.java.awt.event.KeyEvent#VK_KANA_LOCK VK_KANA_LOCK}.
      * <p>
      * Depending on the platform, setting the state of a locking key may
      * involve event processing and therefore may not be immediately
@@ -1567,9 +1567,9 @@ public abstract class Toolkit {
      * may still be unsupported and/or unavailable for a particular
      * frame.
      * <li>The developer should consider examining the value of the
-     * {@link j86.j86.java.awt.event.WindowEvent#getNewState} method of the
+     * {@link j86.java.awt.event.WindowEvent#getNewState} method of the
      * {@code WindowEvent} received through the {@link
-     * j86.j86.java.awt.event.WindowStateListener}, rather than assuming
+     * j86.java.awt.event.WindowStateListener}, rather than assuming
      * that the state given to the {@code setExtendedState()} method
      * will be definitely applied. For more information see the
      * documentation for the {@link Frame#setExtendedState} method.
@@ -1637,8 +1637,8 @@ public abstract class Toolkit {
      * that the name of the library is "awt".  -br.
      *
      * If you change loadLibraries(), please add the change to
-     * j86.j86.j86.java.awt.image.ColorModel.loadLibraries(). Unfortunately,
-     * classes can be loaded in j86.j86.j86.java.awt.image that depend on
+     * j86.java.awt.image.ColorModel.loadLibraries(). Unfortunately,
+     * classes can be loaded in j86.java.awt.image that depend on
      * libawt and there is no way to call Toolkit.loadLibraries()
      * directly.  -hung
      */
@@ -2051,8 +2051,8 @@ public abstract class Toolkit {
      * @see      SecurityManager#checkPermission
      * @see      j86.java.awt.AWTEvent
      * @see      j86.java.awt.AWTPermission
-     * @see      j86.j86.java.awt.event.AWTEventListener
-     * @see      j86.j86.java.awt.event.AWTEventListenerProxy
+     * @see      j86.java.awt.event.AWTEventListener
+     * @see      j86.java.awt.event.AWTEventListenerProxy
      * @since    1.2
      */
     public void addAWTEventListener(AWTEventListener listener, long eventMask) {
@@ -2120,8 +2120,8 @@ public abstract class Toolkit {
      * @see      SecurityManager#checkPermission
      * @see      j86.java.awt.AWTEvent
      * @see      j86.java.awt.AWTPermission
-     * @see      j86.j86.java.awt.event.AWTEventListener
-     * @see      j86.j86.java.awt.event.AWTEventListenerProxy
+     * @see      j86.java.awt.event.AWTEventListener
+     * @see      j86.java.awt.event.AWTEventListenerProxy
      * @since    1.2
      */
     public void removeAWTEventListener(AWTEventListener listener) {
@@ -2190,8 +2190,8 @@ public abstract class Toolkit {
      * @see      SecurityManager#checkPermission
      * @see      j86.java.awt.AWTEvent
      * @see      j86.java.awt.AWTPermission
-     * @see      j86.j86.java.awt.event.AWTEventListener
-     * @see      j86.j86.java.awt.event.AWTEventListenerProxy
+     * @see      j86.java.awt.event.AWTEventListener
+     * @see      j86.java.awt.event.AWTEventListenerProxy
      * @since 1.4
      */
     public AWTEventListener[] getAWTEventListeners() {
@@ -2242,8 +2242,8 @@ public abstract class Toolkit {
      * @see      SecurityManager#checkPermission
      * @see      j86.java.awt.AWTEvent
      * @see      j86.java.awt.AWTPermission
-     * @see      j86.j86.java.awt.event.AWTEventListener
-     * @see      j86.j86.java.awt.event.AWTEventListenerProxy
+     * @see      j86.java.awt.event.AWTEventListener
+     * @see      j86.java.awt.event.AWTEventListenerProxy
      * @since 1.4
      */
     public AWTEventListener[] getAWTEventListeners(long eventMask) {
@@ -2455,7 +2455,7 @@ public abstract class Toolkit {
      * @see       j86.java.awt.GraphicsEnvironment#isHeadless
      * @since 1.3
      */
-    public abstract Map<j86.j86.java.awt.font.TextAttribute,?>
+    public abstract Map<j86.java.awt.font.TextAttribute,?>
         mapInputMethodHighlight(InputMethodHighlight highlight)
         throws HeadlessException;
 

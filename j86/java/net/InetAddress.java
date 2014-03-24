@@ -43,8 +43,8 @@ import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectOutputStream.PutField;
 import j86.sun.security.action.*;
 import j86.sun.net.InetAddressCachePolicy;
-import j86.j86.sun.net.util.IPAddressUtil;
-import j86.j86.j86.sun.net.spi.nameservice.*;
+import j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.spi.nameservice.*;
 
 /**
  * This class represents an Internet Protocol (IP) address.
@@ -953,7 +953,7 @@ class InetAddress implements j86.java.io.Serializable {
 
         // get name service if provided and requested
         String provider = null;;
-        String propPrefix = "j86.j86.j86.sun.net.spi.nameservice.provider.";
+        String propPrefix = "j86.sun.net.spi.nameservice.provider.";
         int n = 1;
         nameServices = new ArrayList<NameService>();
         provider = AccessController.doPrivileged(

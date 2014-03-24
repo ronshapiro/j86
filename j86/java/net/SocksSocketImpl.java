@@ -31,7 +31,7 @@ import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.sun.net.SocksProxy;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 /* import j86.org.ietf.jgss.*; */
 
 /**

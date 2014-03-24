@@ -28,14 +28,14 @@ package j86.sun.java2d;
 import j86.java.awt.Composite;
 import j86.java.awt.CompositeContext;
 import j86.java.awt.AlphaComposite;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.sun.awt.image.BufImgSurfaceData;
-import j86.j86.sun.java2d.loops.XORComposite;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.loops.Blit;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.sun.awt.image.BufImgSurfaceData;
+import j86.sun.java2d.loops.XORComposite;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.Blit;
 
 public class SunCompositeContext implements CompositeContext {
     ColorModel srcCM;

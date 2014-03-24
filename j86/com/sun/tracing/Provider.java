@@ -64,7 +64,7 @@ public interface Provider {
      * @param method a method declared in the provider.
      * @return the specified probe represented by that method, or null.
      */
-    Probe getProbe(j86.j86.j86.java.lang.reflect.Method method);
+    Probe getProbe(j86.java.lang.reflect.Method method);
 
     /**
      * Disposes system resources associated with this provider.

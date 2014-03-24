@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.Locale;
 import j86.java.util.Set;
-import j86.j86.java.util.spi.LocaleNameProvider;
+import j86.java.util.spi.LocaleNameProvider;
 
 /**
  * Concrete implementation of the
- * {@link j86.j86.java.util.spi.LocaleNameProvider LocaleNameProvider} class
+ * {@link j86.java.util.spi.LocaleNameProvider LocaleNameProvider} class
  * for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -81,7 +81,7 @@ public class LocaleNameProviderImpl extends LocaleNameProvider implements Availa
      * @exception IllegalArgumentException if <code>languageCode</code> is not in the form of
      *     two lower-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayLanguage(java.util.Locale)
      */
@@ -111,7 +111,7 @@ public class LocaleNameProviderImpl extends LocaleNameProvider implements Availa
      * @exception IllegalArgumentException if <code>scriptCode</code> is not in the form of
      *     four title case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayScript(java.util.Locale)
      */
@@ -138,7 +138,7 @@ public class LocaleNameProviderImpl extends LocaleNameProvider implements Availa
      * @exception IllegalArgumentException if <code>countryCode</code> is not in the form of
      *     two upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayCountry(java.util.Locale)
      */
@@ -159,7 +159,7 @@ public class LocaleNameProviderImpl extends LocaleNameProvider implements Availa
      * @exception NullPointerException if <code>variant</code> or <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Locale#getDisplayVariant(java.util.Locale)
      */

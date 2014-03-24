@@ -51,8 +51,8 @@ import j86.javax.management.ObjectName;
 import j86.javax.management.QueryEval;
 import j86.javax.management.QueryExp;
 
-import j86.j86.javax.management.remote.NotificationResult;
-import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.management.remote.NotificationResult;
+import j86.javax.management.remote.TargetedNotification;
 
 import j86.com.sun.jmx.remote.util.EnvHelp;
 import j86.com.sun.jmx.remote.util.ClassLogger;
@@ -837,7 +837,7 @@ public class ArrayNotificationBuffer implements NotificationBuffer {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc",
+        new ClassLogger("j86.javax.management.remote.misc",
                         "ArrayNotificationBuffer");
 
     private final MBeanServer mBeanServer;

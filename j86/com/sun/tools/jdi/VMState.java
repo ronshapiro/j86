@@ -27,7 +27,7 @@ package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.*;
 
 class VMState {

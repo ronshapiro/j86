@@ -25,9 +25,9 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.MemoryManagerMXBean;
-import j86.j86.java.lang.management.MemoryPoolMXBean;
-import j86.j86.java.lang.management.GarbageCollectorMXBean;
+import j86.java.lang.management.MemoryManagerMXBean;
+import j86.java.lang.management.MemoryPoolMXBean;
+import j86.java.lang.management.GarbageCollectorMXBean;
 
 /**
  * ManagementFactory class provides the methods that the HotSpot VM

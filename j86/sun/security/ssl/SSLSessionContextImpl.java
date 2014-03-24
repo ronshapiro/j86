@@ -30,8 +30,8 @@ import j86.java.util.Enumeration;
 import j86.java.util.Vector;
 import j86.java.util.Locale;
 
-import j86.j86.javax.net.ssl.SSLSession;
-import j86.j86.javax.net.ssl.SSLSessionContext;
+import j86.javax.net.ssl.SSLSession;
+import j86.javax.net.ssl.SSLSessionContext;
 
 import j86.sun.security.util.Cache;
 
@@ -204,7 +204,7 @@ final class SSLSessionContextImpl implements SSLSessionContext {
                 @Override
                 public String run() {
                     return System.getProperty(
-                        "j86.j86.javax.net.ssl.sessionCacheSize");
+                        "j86.javax.net.ssl.sessionCacheSize");
                 }
             });
             cacheLimit = (s != null) ? Integer.valueOf(s).intValue() : 0;

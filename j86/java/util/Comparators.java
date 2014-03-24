@@ -25,11 +25,11 @@
 package j86.java.util;
 
 import j86.java.io.Serializable;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.ToDoubleFunction;
-import j86.j86.java.util.function.ToIntFunction;
-import j86.j86.java.util.function.ToLongFunction;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.Function;
+import j86.java.util.function.ToDoubleFunction;
+import j86.java.util.function.ToIntFunction;
+import j86.java.util.function.ToLongFunction;
 
 /**
  * Package private supporting class for {@link Comparator}.

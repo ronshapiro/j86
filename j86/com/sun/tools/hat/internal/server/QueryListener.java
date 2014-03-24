@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.server;
+package j86.com.sun.tools.hat.internal.server;
 
 /**
  *
@@ -52,8 +52,8 @@ import j86.java.io.OutputStream;
 import j86.java.io.OutputStreamWriter;
 import j86.java.io.BufferedOutputStream;
 
-import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
-import j86.j86.com.sun.tools.hat.internal.oql.OQLEngine;
+import j86.com.sun.tools.hat.internal.model.Snapshot;
+import j86.com.sun.tools.hat.internal.oql.OQLEngine;
 
 public class QueryListener implements Runnable {
 

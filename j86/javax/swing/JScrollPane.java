@@ -25,9 +25,9 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
 import j86.javax.accessibility.*;
 
 import j86.java.awt.Component;
@@ -1312,8 +1312,8 @@ public class JScrollPane extends JComponent implements ScrollPaneConstants, Acce
      *                      automatically for a MouseWheelEvent,
      *                      <code>false</code> otherwise.
      * @see #isWheelScrollingEnabled
-     * @see j86.j86.java.awt.event.MouseWheelEvent
-     * @see j86.j86.java.awt.event.MouseWheelListener
+     * @see j86.java.awt.event.MouseWheelEvent
+     * @see j86.java.awt.event.MouseWheelListener
      * @since 1.4
      * @beaninfo
      *       bound: true

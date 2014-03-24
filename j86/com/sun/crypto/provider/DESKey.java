@@ -28,7 +28,7 @@ package j86.com.sun.crypto.provider;
 import j86.java.security.KeyRep;
 import j86.java.security.InvalidKeyException;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.DESKeySpec;
+import j86.javax.crypto.spec.DESKeySpec;
 
 /**
  * This class represents a DES key.

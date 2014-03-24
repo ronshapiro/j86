@@ -25,15 +25,15 @@
 
 #warn This file is preprocessed before being compiled
 
-package j86.j86.java.nio.charset;
+package j86.java.nio.charset;
 
 import j86.java.nio.Buffer;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
 import j86.java.nio.BufferOverflowException;
 import j86.java.nio.BufferUnderflowException;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.java.nio.charset.CoderMalfunctionError;                  // javadoc
+import j86.java.lang.ref.WeakReference;
+import j86.java.nio.charset.CoderMalfunctionError;                  // javadoc
 import j86.java.util.Arrays;
 
 

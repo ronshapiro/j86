@@ -38,15 +38,15 @@ import j86.java.awt.GridBagConstraints;
 import j86.java.awt.GridLayout;
 import j86.java.awt.Insets;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.java.awt.event.FocusEvent;
-import j86.j86.java.awt.event.FocusListener;
-import j86.j86.java.awt.event.ItemEvent;
-import j86.j86.java.awt.event.ItemListener;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.FocusListener;
+import j86.java.awt.event.ItemEvent;
+import j86.java.awt.event.ItemListener;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.print.PrinterJob;
 import j86.java.io.File;
 import j86.java.io.FilePermission;
 import j86.java.io.IOException;
@@ -57,23 +57,23 @@ import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Vector;
 import j86.javax.print.*;
-import j86.j86.javax.print.attribute.*;
-import j86.j86.j86.javax.print.attribute.standard.*;
+import j86.javax.print.attribute.*;
+import j86.javax.print.attribute.standard.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.border.EmptyBorder;
-import j86.j86.javax.swing.border.TitledBorder;
-import j86.j86.javax.swing.event.ChangeEvent;
-import j86.j86.javax.swing.event.ChangeListener;
-import j86.j86.javax.swing.event.DocumentEvent;
-import j86.j86.javax.swing.event.DocumentListener;
-import j86.j86.javax.swing.event.PopupMenuEvent;
-import j86.j86.javax.swing.event.PopupMenuListener;
-import j86.j86.javax.swing.text.NumberFormatter;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.border.TitledBorder;
+import j86.javax.swing.event.ChangeEvent;
+import j86.javax.swing.event.ChangeListener;
+import j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.event.DocumentListener;
+import j86.javax.swing.event.PopupMenuEvent;
+import j86.javax.swing.event.PopupMenuListener;
+import j86.javax.swing.text.NumberFormatter;
 import j86.sun.print.SunPageSelection;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.java.net.URISyntaxException;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 
 
 /**
@@ -537,7 +537,7 @@ public class ServiceDialog extends JDialog implements ActionListener {
 
         try {
             if (_keyEventClazz == null) {
-                _keyEventClazz= Class.forName("j86.j86.java.awt.event.KeyEvent",
+                _keyEventClazz= Class.forName("j86.java.awt.event.KeyEvent",
                                  true, (ServiceDialog.class).getClassLoader());
             }
             Field field = _keyEventClazz.getDeclaredField(vkString);

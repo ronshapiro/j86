@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 import j86.java.util.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicLong;
 import j86.java.io.*;
 
 import j86.sun.misc.JavaLangAccess;
@@ -547,7 +547,7 @@ public class LogRecord implements j86.java.io.Serializable {
             } else {
                 if (!isLoggerImpl) {
                     // skip reflection call
-                    if (!cname.startsWith("j86.j86.j86.java.lang.reflect.") && !cname.startsWith("j86.sun.reflect.")) {
+                    if (!cname.startsWith("j86.java.lang.reflect.") && !cname.startsWith("j86.sun.reflect.")) {
                        // We've found the relevant frame.
                        setSourceClassName(cname);
                        setSourceMethodName(frame.getMethodName());
@@ -562,8 +562,8 @@ public class LogRecord implements j86.java.io.Serializable {
 
     private boolean isLoggerImplFrame(String cname) {
         // the log record could be created for a platform logger
-        return (cname.equals("j86.j86.java.util.logging.Logger") ||
-                cname.startsWith("j86.j86.java.util.logging.LoggingProxyImpl") ||
-                cname.startsWith("j86.j86.sun.util.logging."));
+        return (cname.equals("j86.java.util.logging.Logger") ||
+                cname.startsWith("j86.java.util.logging.LoggingProxyImpl") ||
+                cname.startsWith("j86.sun.util.logging."));
     }
 }

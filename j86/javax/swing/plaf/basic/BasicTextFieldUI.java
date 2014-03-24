@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.FocusEvent;
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.InputEvent;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.io.Reader;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.plaf.*;
 import j86.sun.swing.DefaultLookup;
 
 /**

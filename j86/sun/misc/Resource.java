@@ -31,7 +31,7 @@ import j86.java.io.IOException;
 import j86.java.io.InterruptedIOException;
 import j86.java.io.InputStream;
 import j86.java.security.CodeSigner;
-import j86.j86.java.util.jar.Manifest;
+import j86.java.util.jar.Manifest;
 import j86.java.nio.ByteBuffer;
 import j86.java.util.Arrays;
 import j86.sun.nio.ByteBuffered;
@@ -174,7 +174,7 @@ public abstract class Resource {
     /**
      * Returns theCertificates for the Resource, or null if none.
      */
-    public j86.j86.java.security.cert.Certificate[] getCertificates() {
+    public j86.java.security.cert.Certificate[] getCertificates() {
         return null;
     }
 

@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
 
 import j86.java.awt.*;
 
@@ -139,6 +139,6 @@ implements ListCellRenderer, Serializable {
      * has been added to the <code>j86.java.beans</code> package.
      * Please see {@link j86.java.beans.XMLEncoder}.
      */
-    public static class UIResource extends BasicComboBoxRenderer implements j86.j86.javax.swing.plaf.UIResource {
+    public static class UIResource extends BasicComboBoxRenderer implements j86.javax.swing.plaf.UIResource {
     }
 }

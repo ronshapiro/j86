@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputEvent;
 import j86.java.util.EventObject;
 import j86.java.net.URL;
-import j86.j86.javax.swing.text.Element;
+import j86.javax.swing.text.Element;
 
 
 /**

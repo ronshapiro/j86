@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.sun.swing.DefaultLookup;
 import j86.sun.swing.UIAction;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
 import j86.java.util.Arrays;
 import j86.java.util.ArrayList;
 
@@ -372,7 +372,7 @@ public class BasicMenuUI extends BasicMenuItemUI
          * Delegates the mouse event to the MenuSelectionManager.
          *
          * @param e the mouse event
-         * @see j86.j86.java.awt.event.MouseMotionListener#mouseDragged
+         * @see j86.java.awt.event.MouseMotionListener#mouseDragged
          */
         public void mouseDragged(MouseEvent e) {
             getHandler().mouseDragged(e);
@@ -535,7 +535,7 @@ public class BasicMenuUI extends BasicMenuItemUI
          * Delegates the mouse event to the MenuSelectionManager.
          *
          * @param e the mouse event
-         * @see j86.j86.java.awt.event.MouseMotionListener#mouseDragged
+         * @see j86.java.awt.event.MouseMotionListener#mouseDragged
          */
         public void mouseDragged(MouseEvent e) {
             JMenu menu = (JMenu)menuItem;

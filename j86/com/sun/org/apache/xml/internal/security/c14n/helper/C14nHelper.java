@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper;
+package j86.com.sun.org.apache.xml.internal.security.c14n.helper;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

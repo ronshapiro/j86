@@ -25,9 +25,9 @@
 package j86.com.sun.jndi.toolkit.url;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.ResolveResult;
-import j86.j86.javax.naming.spi.DirectoryManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.spi.DirectoryManager;
 
 import j86.java.util.Hashtable;
 

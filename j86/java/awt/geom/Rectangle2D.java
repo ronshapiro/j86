@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.io.Serializable;
 
@@ -503,8 +503,8 @@ public abstract class Rectangle2D extends RectangularShape {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see j86.j86.java.awt.geom.Rectangle2D.Float
-     * @see j86.j86.java.awt.geom.Rectangle2D.Double
+     * @see j86.java.awt.geom.Rectangle2D.Float
+     * @see j86.java.awt.geom.Rectangle2D.Double
      * @see j86.java.awt.Rectangle
      * @since 1.2
      */

@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.proxy;
+package j86.sun.rmi.transport.proxy;
 
 import j86.java.io.IOException;
 import j86.java.net.Socket;
 import j86.java.net.ServerSocket;
 import j86.java.net.URL;
-import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.java.rmi.server.RMISocketFactory;
 
 /**
  * RMIHttpToPortSocketFactory creates a socket connection to the

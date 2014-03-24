@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.plaf;
+package j86.javax.swing.plaf;
 
 import j86.java.awt.Font;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 
 
 /**
@@ -43,7 +43,7 @@ import j86.j86.javax.swing.plaf.UIResource;
  * has been added to the <code>j86.java.beans</code> package.
  * Please see {@link j86.java.beans.XMLEncoder}.
  *
- * @see j86.j86.javax.swing.plaf.UIResource
+ * @see j86.javax.swing.plaf.UIResource
  * @author Hans Muller
  *
  */

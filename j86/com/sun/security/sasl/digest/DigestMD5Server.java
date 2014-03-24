@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.digest;
+package j86.com.sun.security.sasl.digest;
 
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.io.ByteArrayOutputStream;
@@ -35,10 +35,10 @@ import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Arrays;
 
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.security.sasl.*;
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 
 /**
   * An implementation of the DIGEST-MD5 server SASL mechanism.
@@ -74,10 +74,10 @@ import j86.j86.javax.security.auth.callback.*;
   *    specifies max send buf size; default is 65536 (min of this and client's max
   *    recv size)
   *
-  * j86.j86.com.sun.security.sasl.digest.utf8:
+  * j86.com.sun.security.sasl.digest.utf8:
   *    "true" means to use UTF-8 charset; "false" to use ISO-8859-1 encoding;
   *    default is "true".
-  * j86.j86.com.sun.security.sasl.digest.realm:
+  * j86.com.sun.security.sasl.digest.realm:
   *    space-separated list of realms; default is server name (fqdn parameter)
   *
   * @author Rosanna Lee
@@ -97,11 +97,11 @@ final class DigestMD5Server extends DigestMD5Base implements SaslServer {
 
     /* "true" means use UTF8; "false" ISO 8859-1; default is "true" */
     private static final String UTF8_PROPERTY =
-        "j86.j86.com.sun.security.sasl.digest.utf8";
+        "j86.com.sun.security.sasl.digest.utf8";
 
     /* List of space-separated realms used for authentication */
     private static final String REALM_PROPERTY =
-        "j86.j86.com.sun.security.sasl.digest.realm";
+        "j86.com.sun.security.sasl.digest.realm";
 
     /* Directives encountered in responses sent by the client. */
     private static final String[] DIRECTIVE_KEY = {

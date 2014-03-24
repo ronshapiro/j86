@@ -28,10 +28,10 @@ package j86.com.sun.crypto.provider;
 import j86.java.security.SecureRandom;
 import j86.java.security.InvalidParameterException;
 import j86.java.security.InvalidAlgorithmParameterException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.javax.crypto.KeyGeneratorSpi;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 /**
  * This class generates a secret key for use with the HMAC-SHA1 algorithm.

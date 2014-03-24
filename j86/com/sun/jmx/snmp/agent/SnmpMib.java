@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.java.io.Serializable;
 import j86.java.util.Enumeration;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 
 import j86.javax.management.ObjectName;

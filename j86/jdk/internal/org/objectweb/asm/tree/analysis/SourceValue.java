@@ -56,11 +56,11 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
 import j86.java.util.Set;
 
-import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
 
 /**
  * A {@link Value} that is represented by its type in a two types type system.

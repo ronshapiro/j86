@@ -23,23 +23,23 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.annotation;
+package j86.sun.reflect.annotation;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 import j86.java.util.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.BufferUnderflowException;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.sun.reflect.ConstantPool;
 
-import j86.j86.sun.reflect.generics.parser.SignatureParser;
-import j86.j86.sun.reflect.generics.tree.TypeSignature;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
-import j86.j86.sun.reflect.generics.visitor.Reifier;
-import j86.j86.sun.reflect.generics.scope.ClassScope;
+import j86.sun.reflect.generics.parser.SignatureParser;
+import j86.sun.reflect.generics.tree.TypeSignature;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.sun.reflect.generics.visitor.Reifier;
+import j86.sun.reflect.generics.scope.ClassScope;
 
 /**
  * Parser for Java programming language annotations.  Translates

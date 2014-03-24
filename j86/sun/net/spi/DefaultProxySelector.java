@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.spi;
+package j86.sun.net.spi;
 
 import j86.java.net.InetSocketAddress;
 import j86.java.net.Proxy;

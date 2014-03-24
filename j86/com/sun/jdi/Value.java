@@ -45,7 +45,7 @@ package j86.com.sun.jdi;
  *                 VirtualMachine.mirrorOf(double)}
  *   <TD>- created in the target VM by the JDI client
  * <TR>
- *   <TD>{@link j86.j86.com.sun.jdi.event.ModificationWatchpointEvent#valueToBe()
+ *   <TD>{@link j86.com.sun.jdi.event.ModificationWatchpointEvent#valueToBe()
  *                 ModificationWatchpointEvent.valueToBe()}
  *   <TD>- returned with an event
  * </TABLE></BLOCKQUOTE>

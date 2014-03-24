@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.math.BigInteger;
 import j86.java.security.*;

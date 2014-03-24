@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 
 import j86.com.sun.jmx.remote.util.ClassLogger;
@@ -729,5 +729,5 @@ public class JMXServiceURL implements Serializable {
     private transient String toString;
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", "JMXServiceURL");
+        new ClassLogger("j86.javax.management.remote.misc", "JMXServiceURL");
 }

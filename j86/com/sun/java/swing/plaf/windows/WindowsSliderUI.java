@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseEvent;
 
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.javax.swing.*;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
-import static j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 
 /**

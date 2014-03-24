@@ -33,9 +33,9 @@ import j86.jdk.internal.org.xml.sax.Attributes;
 import j86.jdk.internal.org.xml.sax.InputSource;
 import j86.jdk.internal.org.xml.sax.SAXException;
 import j86.jdk.internal.org.xml.sax.SAXParseException;
-import j86.j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
-import j86.j86.jdk.internal.util.xml.impl.SAXParserImpl;
-import j86.j86.jdk.internal.util.xml.impl.XMLStreamWriterImpl;
+import j86.jdk.internal.org.xml.sax.helpers.DefaultHandler;
+import j86.jdk.internal.util.xml.impl.SAXParserImpl;
+import j86.jdk.internal.util.xml.impl.XMLStreamWriterImpl;
 
 /**
  * A class used to aid in Properties load and save in XML. This class is

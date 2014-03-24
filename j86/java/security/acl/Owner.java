@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.java.security.acl;
+package j86.java.security.acl;
 
 import j86.java.security.Principal;
 
 /**
  * Interface for managing owners of Access Control Lists (ACLs) or ACL
  * configurations. (Note that the Acl interface in the
- * {@code  j86.j86.java.security.acl} package extends this Owner
+ * {@code  j86.java.security.acl} package extends this Owner
  * interface.) The initial owner Principal should be specified as an
  * argument to the constructor of the class implementing this interface.
  *
- * @see j86.j86.java.security.acl.Acl
+ * @see j86.java.security.acl.Acl
  *
  */
 public interface Owner {

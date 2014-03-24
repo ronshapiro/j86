@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.awt.AlphaComposite;
 import j86.java.util.HashMap;
 

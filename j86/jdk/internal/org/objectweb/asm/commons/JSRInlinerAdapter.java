@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.util.AbstractMap;
 import j86.java.util.ArrayList;
@@ -72,16 +72,16 @@ import j86.jdk.internal.org.objectweb.asm.Label;
 import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
 import j86.jdk.internal.org.objectweb.asm.Opcodes;
 import j86.jdk.internal.org.objectweb.asm.Type;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.InsnList;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.InsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.LabelNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.LocalVariableNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.InsnList;
+import j86.jdk.internal.org.objectweb.asm.tree.InsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.LabelNode;
+import j86.jdk.internal.org.objectweb.asm.tree.LocalVariableNode;
+import j86.jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.jdk.internal.org.objectweb.asm.tree.TableSwitchInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 
 /**
  * A {@link j86.jdk.internal.org.objectweb.asm.MethodVisitor} that removes JSR instructions and

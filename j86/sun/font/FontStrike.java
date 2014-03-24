@@ -26,9 +26,9 @@
 package j86.sun.font;
 
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
 
 public abstract class FontStrike {
 

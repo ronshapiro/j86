@@ -130,8 +130,8 @@ final class SunEntries {
         map.put("Signature.SHA256withDSA",
                 "j86.sun.security.provider.DSA$SHA256withDSA");
 
-        String dsaKeyClasses = "j86.j86.java.security.interfaces.DSAPublicKey" +
-                "|j86.j86.java.security.interfaces.DSAPrivateKey";
+        String dsaKeyClasses = "j86.java.security.interfaces.DSAPublicKey" +
+                "|j86.java.security.interfaces.DSAPrivateKey";
         map.put("Signature.SHA1withDSA SupportedKeyClasses", dsaKeyClasses);
         map.put("Signature.NONEwithDSA SupportedKeyClasses", dsaKeyClasses);
         map.put("Signature.SHA224withDSA SupportedKeyClasses", dsaKeyClasses);
@@ -248,7 +248,7 @@ final class SunEntries {
          * CertPathBuilder
          */
         map.put("CertPathBuilder.PKIX",
-            "j86.j86.sun.security.provider.certpath.SunCertPathBuilder");
+            "j86.sun.security.provider.certpath.SunCertPathBuilder");
         map.put("CertPathBuilder.PKIX ValidationAlgorithm",
             "RFC3280");
 
@@ -256,7 +256,7 @@ final class SunEntries {
          * CertPathValidator
          */
         map.put("CertPathValidator.PKIX",
-            "j86.j86.sun.security.provider.certpath.PKIXCertPathValidator");
+            "j86.sun.security.provider.certpath.PKIXCertPathValidator");
         map.put("CertPathValidator.PKIX ValidationAlgorithm",
             "RFC3280");
 
@@ -264,12 +264,12 @@ final class SunEntries {
          * CertStores
          */
         map.put("CertStore.LDAP",
-            "j86.j86.j86.sun.security.provider.certpath.ldap.LDAPCertStore");
+            "j86.sun.security.provider.certpath.ldap.LDAPCertStore");
         map.put("CertStore.LDAP LDAPSchema", "RFC2587");
         map.put("CertStore.Collection",
-            "j86.j86.sun.security.provider.certpath.CollectionCertStore");
+            "j86.sun.security.provider.certpath.CollectionCertStore");
         map.put("CertStore.com.sun.security.IndexedCollection",
-            "j86.j86.sun.security.provider.certpath.IndexedCollectionCertStore");
+            "j86.sun.security.provider.certpath.IndexedCollectionCertStore");
 
         /*
          * KeySize

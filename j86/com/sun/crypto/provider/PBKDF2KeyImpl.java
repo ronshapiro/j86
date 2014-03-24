@@ -28,15 +28,15 @@ package j86.com.sun.crypto.provider;
 import j86.java.io.ObjectStreamException;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 import j86.java.util.Arrays;
 import j86.java.security.KeyRep;
 import j86.java.security.GeneralSecurityException;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.spec.InvalidKeySpecException;
+import j86.java.security.spec.InvalidKeySpecException;
 import j86.javax.crypto.Mac;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.PBEKeySpec;
+import j86.javax.crypto.spec.PBEKeySpec;
 
 /**
  * This class represents a PBE key derived using PBKDF2 defined
@@ -48,7 +48,7 @@ import j86.j86.javax.crypto.spec.PBEKeySpec;
  * @author Valerie Peng
  *
  */
-final class PBKDF2KeyImpl implements j86.j86.javax.crypto.interfaces.PBEKey {
+final class PBKDF2KeyImpl implements j86.javax.crypto.interfaces.PBEKey {
 
     static final long serialVersionUID = -2234868909660948157L;
 

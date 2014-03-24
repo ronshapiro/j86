@@ -27,7 +27,7 @@ package j86.com.sun.tools.jdi;
 
 import j86.com.sun.tools.jdi.*;
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.*;
 import j86.com.sun.jdi.InternalException;
 import j86.java.util.Collections;
 import j86.java.util.Collection;

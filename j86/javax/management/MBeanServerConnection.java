@@ -43,7 +43,7 @@ public interface MBeanServerConnection {
     /**
      * <p>Instantiates and registers an MBean in the MBean server.  The
      * MBean server will use its {@link
-     * j86.j86.javax.management.loading.ClassLoaderRepository Default Loader
+     * j86.javax.management.loading.ClassLoaderRepository Default Loader
      * Repository} to load the class of the MBean.  An object name is
      * associated with the MBean.  If the object name given is null, the
      * MBean must provide its own name by implementing the {@link
@@ -195,7 +195,7 @@ public interface MBeanServerConnection {
     /**
      * Instantiates and registers an MBean in the MBean server.  The
      * MBean server will use its {@link
-     * j86.j86.javax.management.loading.ClassLoaderRepository Default Loader
+     * j86.javax.management.loading.ClassLoaderRepository Default Loader
      * Repository} to load the class of the MBean.  An object name is
      * associated with the MBean.  If the object name given is null, the
      * MBean must provide its own name by implementing the {@link

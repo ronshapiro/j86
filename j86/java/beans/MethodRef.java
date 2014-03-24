@@ -25,11 +25,11 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Method;
 
-import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 final class MethodRef {
     private String signature;

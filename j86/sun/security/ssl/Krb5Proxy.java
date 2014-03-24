@@ -30,7 +30,7 @@ import j86.java.security.Permission;
 import j86.java.security.Principal;
 import j86.javax.crypto.SecretKey;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.login.LoginException;
 
 /**
  * An interface to a subset of the Kerberos APIs to avoid a static dependency

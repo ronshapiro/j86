@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.j86.javax.swing.text.html.parser;
+package j86.javax.swing.text.html.parser;
 
-import j86.j86.javax.swing.text.SimpleAttributeSet;
-import j86.j86.j86.javax.swing.text.html.HTMLEditorKit;
-import j86.j86.j86.javax.swing.text.html.HTML;
-import j86.j86.javax.swing.text.ChangedCharSetException;
+import j86.javax.swing.text.SimpleAttributeSet;
+import j86.javax.swing.text.html.HTMLEditorKit;
+import j86.javax.swing.text.html.HTML;
+import j86.javax.swing.text.ChangedCharSetException;
 
 import j86.java.util.*;
 import j86.java.io.*;
@@ -100,7 +100,7 @@ import j86.java.net.*;
  *
  * @author      Sunita Mani
  */
-public class DocumentParser extends j86.j86.j86.j86.javax.swing.text.html.parser.Parser {
+public class DocumentParser extends j86.javax.swing.text.html.parser.Parser {
 
     private int inbody;
     private int intitle;

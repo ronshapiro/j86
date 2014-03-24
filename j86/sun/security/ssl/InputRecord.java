@@ -31,7 +31,7 @@ import j86.java.nio.*;
 
 import j86.javax.crypto.BadPaddingException;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 import j86.sun.misc.HexDumpEncoder;
 

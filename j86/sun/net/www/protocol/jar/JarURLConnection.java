@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.jar;
+package j86.sun.net.www.protocol.jar;
 
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
@@ -36,9 +36,9 @@ import j86.java.net.UnknownServiceException;
 import j86.java.util.Enumeration;
 import j86.java.util.Map;
 import j86.java.util.List;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.Manifest;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.Manifest;
 import j86.java.security.Permission;
 
 /**

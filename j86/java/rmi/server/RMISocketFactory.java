@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.io.*;
 import j86.java.net.*;
@@ -42,7 +42,7 @@ import j86.java.net.*;
  * number of the server.  If the firewall does not allow this type of
  * communication, then HTTP to a cgi-bin script on the server is used
  * to POST the RMI call. The HTTP tunneling mechanisms are disabled by
- * default. This behavior is controlled by the {@code j86.j86.java.rmi.server.disableHttp}
+ * default. This behavior is controlled by the {@code j86.java.rmi.server.disableHttp}
  * property, whose default value is {@code true}. Setting this property's
  * value to {@code false} will enable the HTTP tunneling mechanisms.
  *
@@ -79,7 +79,7 @@ import j86.java.net.*;
  *     RMISocketFactory.setSocketFactory(new LoopbackSocketFactory());
  * }</pre>
  *
- * Set the {@code j86.j86.java.rmi.server.hostname} system property
+ * Set the {@code j86.java.rmi.server.hostname} system property
  * to {@code 127.0.0.1} to ensure that the generated stubs connect to the right
  * network interface.
  *
@@ -181,7 +181,7 @@ public abstract class RMISocketFactory
     public synchronized static RMISocketFactory getDefaultSocketFactory() {
         if (defaultSocketFactory == null) {
             defaultSocketFactory =
-                new j86.j86.sun.rmi.transport.proxy.RMIMasterSocketFactory();
+                new j86.sun.rmi.transport.proxy.RMIMasterSocketFactory();
         }
         return defaultSocketFactory;
     }
@@ -202,7 +202,7 @@ public abstract class RMISocketFactory
      *          <code>checkSetFactory</code> method doesn't allow the
      *          operation.
      * @see #getFailureHandler
-     * @see j86.j86.java.rmi.server.RMIFailureHandler#failure(Exception)
+     * @see j86.java.rmi.server.RMIFailureHandler#failure(Exception)
      * @since JDK1.1
      */
     public synchronized static void setFailureHandler(RMIFailureHandler fh)

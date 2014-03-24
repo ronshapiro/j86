@@ -32,9 +32,9 @@ import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 import j86.java.security.AccessController;
 import j86.java.security.Permission;
 import j86.java.util.ArrayList;
-import j86.j86.java.util.logging.Level;
-import j86.j86.javax.management.loading.ClassLoaderRepository;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.java.util.logging.Level;
+import j86.javax.management.loading.ClassLoaderRepository;
+import j86.sun.reflect.misc.ReflectUtil;
 
 
 /**

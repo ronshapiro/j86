@@ -38,7 +38,7 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 /*
  * one info for each side of each glyph

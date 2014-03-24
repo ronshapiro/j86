@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.javax.swing.DefaultDesktopManager;
 import j86.javax.swing.JInternalFrame;
@@ -34,7 +34,7 @@ import j86.java.awt.Container;
 import j86.java.awt.Dimension;
 import j86.java.beans.PropertyVetoException;
 import j86.java.util.Vector;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * This class implements a DesktopManager which more closely follows
@@ -52,7 +52,7 @@ import j86.j86.java.lang.ref.WeakReference;
  * @author Thomas Ball
  */
 public class WindowsDesktopManager extends DefaultDesktopManager
-        implements j86.java.io.Serializable, j86.j86.javax.swing.plaf.UIResource {
+        implements j86.java.io.Serializable, j86.javax.swing.plaf.UIResource {
 
     /* The frame which is currently selected/activated.
      * We store this value to enforce MDI's single-selection model.

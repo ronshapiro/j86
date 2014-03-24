@@ -628,7 +628,7 @@ class MemberDefinition implements Constants {
         // the `method' has not been already compiled or
         // `this' has been already compiled.
         if (method.reportDeprecated(env) && !isDeprecated()
-               && this instanceof j86.j86.sun.tools.javac.SourceMember) {
+               && this instanceof j86.sun.tools.javac.SourceMember) {
             reportError(env, "warn.override.is.deprecated",
                         clazz, method);
         }

@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.ReentrantLock;
 import j86.java.util.AbstractQueue;
 import j86.java.util.Collection;
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An optionally-bounded {@linkplain BlockingQueue blocking queue} based on
@@ -650,7 +650,7 @@ public class LinkedBlockingQueue<E> extends AbstractQueue<E>
         try {
             int size = count.get();
             if (a.length < size)
-                a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
+                a = (T[])j86.java.lang.reflect.Array.newInstance
                     (a.getClass().getComponentType(), size);
 
             int k = 0;

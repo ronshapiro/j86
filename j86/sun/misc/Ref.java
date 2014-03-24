@@ -24,7 +24,7 @@
  */
 
 package j86.sun.misc;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 
 
 /**

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pisces;
+package j86.sun.java2d.pisces;
 
 import j86.java.util.Map;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
-import j86.j86.sun.java2d.pipe.AATileGenerator;
+import j86.sun.java2d.pipe.AATileGenerator;
 
 final class PiscesTileGenerator implements AATileGenerator {
     public static final int TILE_SIZE = PiscesCache.TILE_SIZE;

@@ -46,14 +46,14 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.StringTokenizer;
 import j86.java.util.TreeMap;
 import j86.java.util.Vector;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.FontUIResource;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.FontConfiguration;
 import j86.sun.awt.SunToolkit;
 import j86.sun.java2d.FontSupport;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * The base implementation of the {@link FontManager} interface. It implements

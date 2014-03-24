@@ -43,7 +43,7 @@ import j86.javax.sound.sampled.AudioFormat;
 import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.UnsupportedAudioFileException;
 import j86.javax.sound.sampled.AudioFileFormat.Type;
-import j86.j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.sampled.spi.AudioFileReader;
 
 /**
  * MIDI File Audio Renderer/Reader

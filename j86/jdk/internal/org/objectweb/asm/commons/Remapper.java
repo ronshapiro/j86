@@ -57,13 +57,13 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.jdk.internal.org.objectweb.asm.Handle;
 import j86.jdk.internal.org.objectweb.asm.Type;
-import j86.j86.jdk.internal.org.objectweb.asm.signature.SignatureReader;
-import j86.j86.jdk.internal.org.objectweb.asm.signature.SignatureVisitor;
-import j86.j86.jdk.internal.org.objectweb.asm.signature.SignatureWriter;
+import j86.jdk.internal.org.objectweb.asm.signature.SignatureReader;
+import j86.jdk.internal.org.objectweb.asm.signature.SignatureVisitor;
+import j86.jdk.internal.org.objectweb.asm.signature.SignatureWriter;
 
 /**
  * A class responsible for remapping types and names. Subclasses can override

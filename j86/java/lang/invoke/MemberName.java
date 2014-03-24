@@ -23,23 +23,23 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.sun.invoke.util.BytecodeDescriptor;
-import j86.j86.sun.invoke.util.VerifyAccess;
+import j86.sun.invoke.util.BytecodeDescriptor;
+import j86.sun.invoke.util.VerifyAccess;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Member;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Member;
+import j86.java.lang.reflect.Modifier;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.Iterator;
 import j86.java.util.List;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
 import j86.java.util.Objects;
 
 /**
@@ -62,7 +62,7 @@ import j86.java.util.Objects;
  * This representation is stateless and only decriptive.
  * It provides no private information and no capability to use the member.
  * <p>
- * By contrast, a {@linkplain j86.j86.j86.java.lang.reflect.Method} contains fuller information
+ * By contrast, a {@linkplain j86.java.lang.reflect.Method} contains fuller information
  * about the internals of a method (except its bytecodes) and also
  * allows invocation.  A MemberName is much lighter than a Method,
  * since it contains about 7 fields to the 16 of Method (plus its sub-arrays),
@@ -238,7 +238,7 @@ import j86.java.util.Objects;
     }
 
     /** Return the modifier flags of this member.
-     *  @see j86.j86.j86.java.lang.reflect.Modifier
+     *  @see j86.java.lang.reflect.Modifier
      */
     public int getModifiers() {
         return (flags & RECOGNIZED_MODIFIERS);

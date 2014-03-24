@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.sasl;
+package j86.com.sun.jndi.ldap.sasl;
 
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 import j86.javax.security.sasl.RealmCallback;
 import j86.javax.security.sasl.RealmChoiceCallback;
 import j86.java.io.IOException;

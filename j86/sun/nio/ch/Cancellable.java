@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 /**
  * Implemented by asynchronous channels that require notification when an I/O

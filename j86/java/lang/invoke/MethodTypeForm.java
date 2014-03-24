@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.sun.invoke.util.Wrapper;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
- import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.sun.invoke.util.Wrapper;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+ import static j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * Shared information for a group of method types, which differ

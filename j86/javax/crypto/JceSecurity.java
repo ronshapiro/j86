@@ -26,7 +26,7 @@
 package j86.javax.crypto;
 
 import j86.java.util.*;
-import j86.j86.java.util.jar.*;
+import j86.java.util.jar.*;
 import j86.java.io.*;
 import j86.java.net.URL;
 import j86.java.security.*;

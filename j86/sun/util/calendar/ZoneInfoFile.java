@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.calendar;
+package j86.sun.util.calendar;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.BufferedInputStream;
@@ -49,8 +49,8 @@ import j86.java.util.Map.Entry;
 import j86.java.util.Objects;
 import j86.java.util.Set;
 import j86.java.util.SimpleTimeZone;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.zip.CRC32;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.zip.CRC32;
 import j86.sun.security.action.GetPropertyAction;
 
 /**

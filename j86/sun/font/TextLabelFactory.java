@@ -31,7 +31,7 @@ package j86.sun.font;
 
 import j86.java.awt.Font;
 
-import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.FontRenderContext;
 import j86.java.text.Bidi;
 
   /**

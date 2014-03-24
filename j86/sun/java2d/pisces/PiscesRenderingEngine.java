@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pisces;
+package j86.sun.java2d.pisces;
 
 import j86.java.awt.Shape;
 import j86.java.awt.BasicStroke;
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
 
-import j86.j86.sun.awt.geom.PathConsumer2D;
-import j86.j86.sun.java2d.pipe.Region;
-import j86.j86.sun.java2d.pipe.RenderingEngine;
-import j86.j86.sun.java2d.pipe.AATileGenerator;
+import j86.sun.awt.geom.PathConsumer2D;
+import j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.RenderingEngine;
+import j86.sun.java2d.pipe.AATileGenerator;
 
 public class PiscesRenderingEngine extends RenderingEngine {
     private static enum NormMode {OFF, ON_NO_AA, ON_WITH_AA}

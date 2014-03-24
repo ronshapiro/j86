@@ -25,8 +25,8 @@
 
 package j86.sun.reflect;
 
-import j86.j86.java.lang.annotation.*;
-import static j86.j86.java.lang.annotation.ElementType.*;
+import j86.java.lang.annotation.*;
+import static j86.java.lang.annotation.ElementType.*;
 
 /**
  * A method annotated @CallerSensitive is sensitive to its calling class,

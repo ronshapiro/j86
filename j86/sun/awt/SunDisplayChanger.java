@@ -34,7 +34,7 @@ import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * This class is used to aid in keeping track of DisplayChangedListeners and

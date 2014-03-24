@@ -25,11 +25,11 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.event.*;
+import j86.java.awt.image.*;
 import j86.java.io.Serializable;
 import j86.java.util.EventListener;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 /**
  * The default implementation of a <code>Button</code> component's data model.

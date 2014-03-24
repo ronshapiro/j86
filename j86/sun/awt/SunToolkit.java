@@ -27,31 +27,31 @@ package j86.sun.awt;
 
 import j86.java.awt.*;
 import static j86.java.awt.RenderingHints.*;
-import j86.j86.java.awt.dnd.*;
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
-import j86.j86.java.awt.peer.*;
-import j86.j86.java.awt.event.WindowEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.dnd.*;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.peer.*;
+import j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.image.*;
 import j86.java.awt.TrayIcon;
 import j86.java.awt.SystemTray;
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputEvent;
 import j86.java.net.URL;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.Lock;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.Lock;
+import j86.java.util.concurrent.locks.ReentrantLock;
 
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 import j86.sun.misc.SoftCache;
 import j86.sun.font.FontDesignMetrics;
-import j86.j86.sun.awt.im.InputContext;
-import j86.j86.j86.sun.awt.image.*;
+import j86.sun.awt.im.InputContext;
+import j86.sun.awt.image.*;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.security.action.GetBooleanAction;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.AccessController;
 
 public abstract class SunToolkit extends Toolkit
@@ -1061,16 +1061,16 @@ public abstract class SunToolkit extends Toolkit
 
     /**
      * Returns a new input method window, with behavior as specified in
-     * {@link j86.j86.j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
+     * {@link j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow}.
      * If the inputContext is not null, the window should return it from its
      * getInputContext() method. The window needs to implement
-     * j86.j86.sun.awt.im.InputMethodWindow.
+     * j86.sun.awt.im.InputMethodWindow.
      * <p>
      * SunToolkit subclasses can override this method to return better input
      * method windows.
      */
     public Window createInputMethodWindow(String title, InputContext context) {
-        return new j86.j86.sun.awt.im.SimpleInputMethodWindow(title, context);
+        return new j86.sun.awt.im.SimpleInputMethodWindow(title, context);
     }
 
     /**

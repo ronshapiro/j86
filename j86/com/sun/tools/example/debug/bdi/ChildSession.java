@@ -35,10 +35,10 @@
 package j86.com.sun.tools.example.debug.bdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.LaunchingConnector;
-import j86.j86.com.sun.jdi.connect.Connector;
-import j86.j86.com.sun.jdi.connect.VMStartException;
-import j86.j86.com.sun.jdi.connect.IllegalConnectorArgumentsException;
+import j86.com.sun.jdi.connect.LaunchingConnector;
+import j86.com.sun.jdi.connect.Connector;
+import j86.com.sun.jdi.connect.VMStartException;
+import j86.com.sun.jdi.connect.IllegalConnectorArgumentsException;
 import j86.java.io.*;
 import j86.java.util.Map;
 import j86.javax.swing.SwingUtilities;

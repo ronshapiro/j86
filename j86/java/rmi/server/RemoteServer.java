@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.rmi.*;
 import j86.sun.rmi.server.UnicastServerRef;
@@ -74,7 +74,7 @@ public abstract class RemoteServer extends RemoteObject
      * @since   JDK1.1
      */
     public static String getClientHost() throws ServerNotActiveException {
-        return j86.j86.sun.rmi.transport.tcp.TCPTransport.getClientHost();
+        return j86.sun.rmi.transport.tcp.TCPTransport.getClientHost();
     }
 
     /**
@@ -83,7 +83,7 @@ public abstract class RemoteServer extends RemoteObject
      *
      * <p>If there is a security manager, its
      * <code>checkPermission</code> method will be invoked with a
-     * <code>j86.j86.java.util.logging.LoggingPermission("control")</code>
+     * <code>j86.java.util.logging.LoggingPermission("control")</code>
      * permission; this could result in a <code>SecurityException</code>.
      *
      * @param   out the output stream to which RMI calls should be logged

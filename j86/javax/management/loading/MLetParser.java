@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MLET_LOGGER;
 
@@ -38,7 +38,7 @@ import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.List;
 import j86.java.util.Map;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 /**
  * This class is used for parsing URLs.

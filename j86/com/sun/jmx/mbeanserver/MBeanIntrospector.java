@@ -28,12 +28,12 @@ package j86.com.sun.jmx.mbeanserver;
 
 import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Type;
 import j86.java.util.Arrays;
 import j86.java.util.List;
 import j86.java.util.WeakHashMap;
@@ -51,7 +51,7 @@ import j86.javax.management.MBeanOperationInfo;
 import j86.javax.management.NotCompliantMBeanException;
 import j86.javax.management.NotificationBroadcaster;
 import j86.javax.management.ReflectionException;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * An introspector for MBeans of a certain type.  There is one instance

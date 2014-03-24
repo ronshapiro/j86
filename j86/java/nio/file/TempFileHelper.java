@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 import j86.java.util.Set;
 import j86.java.util.EnumSet;
 import j86.java.security.SecureRandom;
 import static j86.java.security.AccessController.*;
 import j86.java.io.IOException;
-import j86.j86.j86.java.nio.file.attribute.FileAttribute;
-import j86.j86.j86.java.nio.file.attribute.PosixFilePermission;
-import j86.j86.j86.java.nio.file.attribute.PosixFilePermissions;
-import static j86.j86.j86.java.nio.file.attribute.PosixFilePermission.*;
+import j86.java.nio.file.attribute.FileAttribute;
+import j86.java.nio.file.attribute.PosixFilePermission;
+import j86.java.nio.file.attribute.PosixFilePermissions;
+import static j86.java.nio.file.attribute.PosixFilePermission.*;
 import j86.sun.security.action.GetPropertyAction;
 
 

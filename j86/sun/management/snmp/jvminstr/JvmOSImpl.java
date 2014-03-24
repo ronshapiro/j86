@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
 import j86.java.io.Serializable;
-import j86.j86.java.lang.management.ManagementFactory;
-import j86.j86.java.lang.management.OperatingSystemMXBean;
+import j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.OperatingSystemMXBean;
 
 // jmx imports
 //
@@ -38,9 +38,9 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmOSMBean;
+import j86.sun.management.snmp.jvmmib.JvmOSMBean;
 
 /**
  * The class is used for implementing the "JvmOS" group.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.util.Arrays;
 
@@ -276,7 +276,7 @@ public abstract class Certificate implements j86.java.io.Serializable {
                         (new j86.java.io.ByteArrayInputStream(data));
             } catch (CertificateException e) {
                 throw new j86.java.io.NotSerializableException
-                                ("j86.j86.java.security.cert.Certificate: " +
+                                ("j86.java.security.cert.Certificate: " +
                                 type +
                                 ": " +
                                 e.getMessage());
@@ -298,7 +298,7 @@ public abstract class Certificate implements j86.java.io.Serializable {
             return new CertificateRep(type, getEncoded());
         } catch (CertificateException e) {
             throw new j86.java.io.NotSerializableException
-                                ("j86.j86.java.security.cert.Certificate: " +
+                                ("j86.java.security.cert.Certificate: " +
                                 type +
                                 ": " +
                                 e.getMessage());

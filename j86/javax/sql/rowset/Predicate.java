@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.javax.sql.*;
 import j86.java.sql.*;

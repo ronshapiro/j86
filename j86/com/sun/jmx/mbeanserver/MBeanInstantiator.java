@@ -30,9 +30,9 @@ import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Modifier;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.Permission;
@@ -40,7 +40,7 @@ import j86.java.security.Permissions;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.ProtectionDomain;
 import j86.java.util.Map;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.InstanceNotFoundException;
 import j86.javax.management.MBeanException;
@@ -52,8 +52,8 @@ import j86.javax.management.ReflectionException;
 import j86.javax.management.RuntimeErrorException;
 import j86.javax.management.RuntimeMBeanException;
 import j86.javax.management.RuntimeOperationsException;
-import j86.j86.sun.reflect.misc.ConstructorUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ConstructorUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Implements the MBeanInstantiator interface. Provides methods for
@@ -465,7 +465,7 @@ public class MBeanInstantiator {
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean Interceptor
-     * (using its {@link j86.j86.javax.management.loading.ClassLoaderRepository}).
+     * (using its {@link j86.javax.management.loading.ClassLoaderRepository}).
      * <P>The object's class should have a public constructor.
      * <P>It returns a reference to the newly created object.
      * <P>The newly created object is not registered in the MBean Interceptor.
@@ -532,7 +532,7 @@ public class MBeanInstantiator {
     /**
      * Instantiates an object using the list of all class loaders registered
      * in the MBean server
-     * (using its {@link j86.j86.javax.management.loading.ClassLoaderRepository}).
+     * (using its {@link j86.javax.management.loading.ClassLoaderRepository}).
      * <P>The object's class should have a public constructor.
      * <P>The call returns a reference to the newly created object.
      * <P>The newly created object is not registered in the MBean Interceptor.

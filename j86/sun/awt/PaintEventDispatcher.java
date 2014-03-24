@@ -26,7 +26,7 @@ package j86.sun.awt;
 
 import j86.java.awt.Component;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.PaintEvent;
+import j86.java.awt.event.PaintEvent;
 
 /**
  * PaintEventDispatcher is responsible for dispatching PaintEvents.  There

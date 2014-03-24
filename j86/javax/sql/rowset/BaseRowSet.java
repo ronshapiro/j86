@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -32,7 +32,7 @@ import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.io.Serializable;
 
-import j86.j86.j86.javax.sql.rowset.serial.*;
+import j86.javax.sql.rowset.serial.*;
 
 /**
  * An abstract class providing a <code>RowSet</code> object with its basic functionality.
@@ -1047,8 +1047,8 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *         <code>Connection.TRANSACTION_READ_COMMITTED</code>,
      *         <code>Connection.TRANSACTION_REPEATABLE_READ</code>, or
      *         <code>Connection.TRANSACTION_SERIALIZABLE</code>
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      * @see #setTransactionIsolation
 
      */
@@ -1076,8 +1076,8 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *              <code>Connection.TRANSACTION_SERIALIZABLE</code>
      * @throws SQLException if the given parameter is not one of the Connection
      *          constants
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      * @see #getTransactionIsolation
      */
     public void setTransactionIsolation(int level) throws SQLException {
@@ -2766,7 +2766,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      *         the <code>Ref</code> object returns a <code>null</code> base type
      *         name.
      * @see #getParams
-     * @see j86.j86.j86.javax.sql.rowset.serial.SerialRef
+     * @see j86.javax.sql.rowset.serial.SerialRef
      */
     public void setRef (int parameterIndex, Ref ref) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2810,7 +2810,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs or the
      *                         parameter index is out of bounds
      * @see #getParams
-     * @see j86.j86.j86.javax.sql.rowset.serial.SerialBlob
+     * @see j86.javax.sql.rowset.serial.SerialBlob
      */
     public void setBlob (int parameterIndex, Blob x) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2855,7 +2855,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs; the parameter index is out of
      *     bounds or the <code>Clob</code> is null
      * @see #getParams
-     * @see j86.j86.j86.javax.sql.rowset.serial.SerialBlob
+     * @see j86.javax.sql.rowset.serial.SerialBlob
      */
     public void setClob (int parameterIndex, Clob x) throws SQLException {
         checkParamIndex(parameterIndex);
@@ -2903,7 +2903,7 @@ public abstract class BaseRowSet implements Serializable, Cloneable {
      * @throws SQLException if an error occurs; the parameter index is out of
      *        bounds or the <code>ARRAY</code> is null
      * @see #getParams
-     * @see j86.j86.j86.javax.sql.rowset.serial.SerialArray
+     * @see j86.javax.sql.rowset.serial.SerialArray
      */
     public void setArray (int parameterIndex, Array array) throws SQLException {
         checkParamIndex(parameterIndex);

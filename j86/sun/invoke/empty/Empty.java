@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.empty;
+package j86.sun.invoke.empty;
 
 /**
  * An empty class in an empty package.

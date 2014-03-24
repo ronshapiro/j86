@@ -31,8 +31,8 @@ import j86.java.util.Random;
 import j86.java.util.StringTokenizer;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.NamingManager;
 
 /**
  * This class discovers the location of Kerberos services by querying DNS,

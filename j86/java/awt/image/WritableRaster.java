@@ -33,7 +33,7 @@
  ******************************************************************
  ******************************************************************/
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Point;
 
@@ -269,7 +269,7 @@ public class WritableRaster extends Raster {
      * However, explicit bounds checking is not guaranteed.
      * A ClassCastException will be thrown if the input object is not null
      * and references anything other than an array of TransferType.
-     * @see j86.j86.j86.java.awt.image.SampleModel#setDataElements(int, int, Object, DataBuffer)
+     * @see j86.java.awt.image.SampleModel#setDataElements(int, int, Object, DataBuffer)
      * @param x        The X coordinate of the pixel location.
      * @param y        The Y coordinate of the pixel location.
      * @param inData   An object reference to an array of type defined by
@@ -340,7 +340,7 @@ public class WritableRaster extends Raster {
      * However, explicit bounds checking is not guaranteed.
      * A ClassCastException will be thrown if the input object is not null
      * and references anything other than an array of TransferType.
-     * @see j86.j86.j86.java.awt.image.SampleModel#setDataElements(int, int, int, int, Object, DataBuffer)
+     * @see j86.java.awt.image.SampleModel#setDataElements(int, int, int, int, Object, DataBuffer)
      * @param x        The X coordinate of the upper left pixel location.
      * @param y        The Y coordinate of the upper left pixel location.
      * @param w        Width of the pixel rectangle.

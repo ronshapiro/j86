@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.server;
+package j86.com.sun.tools.hat.internal.server;
 
-import j86.j86.com.sun.tools.hat.internal.model.JavaClass;
-import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
+import j86.com.sun.tools.hat.internal.model.JavaClass;
+import j86.com.sun.tools.hat.internal.model.Snapshot;
 
 import j86.java.util.LinkedList;
 import j86.java.io.InputStream;

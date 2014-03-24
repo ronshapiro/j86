@@ -25,16 +25,16 @@
 
 package j86.sun.rmi.transport;
 
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.UID;
 import j86.java.security.AccessController;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.HashMap;
 import j86.java.util.List;
 import j86.java.util.Map;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.ScheduledExecutorService;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.ScheduledExecutorService;
+import j86.java.util.concurrent.TimeUnit;
 import j86.sun.rmi.runtime.RuntimeUtil;
 import j86.sun.security.action.GetLongAction;
 

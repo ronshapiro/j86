@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.awt.AWTEvent;
 import j86.java.awt.Component;
 import j86.java.awt.EventQueue;
-import j86.j86.java.awt.font.TextHitInfo;
+import j86.java.awt.font.TextHitInfo;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.CharacterIterator;
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * Input method events contain information about text that is being

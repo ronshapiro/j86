@@ -27,9 +27,9 @@ package j86.com.sun.naming.internal;
 
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.HashMap;
 import j86.java.util.Hashtable;
 import j86.java.util.Map;
@@ -82,7 +82,7 @@ public final class ResourceManager {
         Context.URL_PKG_PREFIXES,
         Context.STATE_FACTORIES,
         // The following shouldn't create a runtime dependence on ldap package.
-        j86.j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
+        j86.javax.naming.ldap.LdapContext.CONTROL_FACTORIES
     };
 
     private static final VersionHelper helper =
@@ -320,11 +320,11 @@ public final class ResourceManager {
      * @return An enumeration of factory classes/objects; null if none.
      * @exception NamingException If encounter problem while reading the provider
      * property file.
-     * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
-     * @see j86.j86.javax.naming.spi.NamingManager#getStateToBind
-     * @see j86.j86.javax.naming.spi.DirectoryManager#getObjectInstance
-     * @see j86.j86.javax.naming.spi.DirectoryManager#getStateToBind
-     * @see j86.j86.javax.naming.ldap.ControlFactory#getControlInstance
+     * @see j86.javax.naming.spi.NamingManager#getObjectInstance
+     * @see j86.javax.naming.spi.NamingManager#getStateToBind
+     * @see j86.javax.naming.spi.DirectoryManager#getObjectInstance
+     * @see j86.javax.naming.spi.DirectoryManager#getStateToBind
+     * @see j86.javax.naming.ldap.ControlFactory#getControlInstance
      */
     public static FactoryEnumeration getFactories(String propName,
         Hashtable<?,?> env, Context ctx) throws NamingException {
@@ -407,8 +407,8 @@ public final class ResourceManager {
      * @exception NamingException If encounter problem while reading the provider
      * property file, or problem instantiating the factory.
      *
-     * @see j86.j86.javax.naming.spi.NamingManager#getURLContext
-     * @see j86.j86.javax.naming.spi.NamingManager#getURLObject
+     * @see j86.javax.naming.spi.NamingManager#getURLContext
+     * @see j86.javax.naming.spi.NamingManager#getURLObject
      */
     public static Object getFactory(String propName, Hashtable<?,?> env,
             Context ctx, String classSuffix, String defaultPkgPrefix)

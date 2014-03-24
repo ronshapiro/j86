@@ -29,8 +29,8 @@ import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.java.security.cert.Certificate;
 
 import j86.sun.security.action.*;
 

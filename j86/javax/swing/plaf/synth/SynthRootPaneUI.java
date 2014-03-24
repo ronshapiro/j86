@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicRootPaneUI;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicRootPaneUI;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

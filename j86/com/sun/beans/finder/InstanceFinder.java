@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
 /**
  * This is utility class that provides basic functionality

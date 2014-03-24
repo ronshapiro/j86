@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
-import j86.j86.sun.java2d.pipe.RenderBuffer;
-import j86.j86.sun.java2d.pipe.RenderQueue;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
+import j86.sun.java2d.pipe.RenderBuffer;
+import j86.sun.java2d.pipe.RenderQueue;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 

@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.util.*;
-import j86.j86.j86.javax.swing.plaf.synth.*;
+import j86.javax.swing.plaf.synth.*;
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.awt.image.BufferedImage;
+import j86.java.lang.reflect.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.sun.swing.plaf.synth.*;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
-import j86.j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
+import j86.javax.swing.plaf.*;
+import j86.sun.swing.plaf.synth.*;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ArrowType;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ExpanderStyle;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.Orientation;
+import j86.com.sun.java.swing.plaf.gtk.GTKConstants.ShadowType;
 
 /**
  */

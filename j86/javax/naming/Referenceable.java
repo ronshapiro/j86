@@ -42,7 +42,7 @@ package j86.javax.naming;
   * @author R. Vasudevan
   *
   * @see Context#bind
-  * @see j86.j86.javax.naming.spi.NamingManager#getObjectInstance
+  * @see j86.javax.naming.spi.NamingManager#getObjectInstance
   * @see Reference
   * @since 1.3
   */

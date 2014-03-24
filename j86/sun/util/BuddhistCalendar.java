@@ -31,7 +31,7 @@ import j86.java.util.GregorianCalendar;
 import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.TimeZone;
-import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.sun.util.locale.provider.CalendarDataUtility;
 
 public class BuddhistCalendar extends GregorianCalendar {
 

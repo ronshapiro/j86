@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * The <code>PathIterator</code> interface provides the mechanism

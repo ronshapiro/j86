@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 /**
  * This class represents a public or private key in encoded format.

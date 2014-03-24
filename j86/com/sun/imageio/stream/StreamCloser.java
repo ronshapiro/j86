@@ -28,7 +28,7 @@ package j86.com.sun.imageio.stream;
 import j86.java.io.IOException;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * This class provide means to properly close hanging

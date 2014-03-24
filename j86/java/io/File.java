@@ -33,8 +33,8 @@ import j86.java.util.List;
 import j86.java.util.ArrayList;
 import j86.java.security.AccessController;
 import j86.java.security.SecureRandom;
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.FileSystems;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.FileSystems;
 import j86.sun.security.action.GetPropertyAction;
 
 /**
@@ -129,16 +129,16 @@ import j86.sun.security.action.GetPropertyAction;
  * created, the abstract pathname represented by a <code>File</code> object
  * will never change.
  *
- * <h3>Interoperability with {@code j86.j86.java.nio.file} package</h3>
+ * <h3>Interoperability with {@code j86.java.nio.file} package</h3>
  *
- * <p> The <a href="../../j86.j86.java.nio.file/package-summary.html">{@code java.nio.file}</a>
+ * <p> The <a href="../../j86.java.nio.file/package-summary.html">{@code java.nio.file}</a>
  * package defines interfaces and classes for the Java virtual machine to access
  * files, file attributes, and file systems. This API may be used to overcome
  * many of the limitations of the {@code j86.java.io.File} class.
  * The {@link #toPath toPath} method may be used to obtain a {@link
  * Path} that uses the abstract path represented by a {@code File} object to
  * locate a file. The resulting {@code Path} may be used with the {@link
- * j86.j86.java.nio.file.Files} class to provide more efficient and extensive access to
+ * j86.java.nio.file.Files} class to provide more efficient and extensive access to
  * additional file operations, file attributes, and I/O exceptions to help
  * diagnose errors when an operation on a file fails.
  *
@@ -826,7 +826,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that the file is not a directory, or where several attributes of the
      * same file are required at the same time, then the {@link
-     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return <code>true</code> if and only if the file denoted by this
@@ -859,7 +859,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that the file is not a normal file, or where several attributes of the
      * same file are required at the same time, then the {@link
-     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  <code>true</code> if and only if the file denoted by this
@@ -919,7 +919,7 @@ public class File
      * where {@code 0L} is returned, or where several attributes of the
      * same file are required at the same time, or where the time of last
      * access or the creation time are required, then the {@link
-     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  A <code>long</code> value representing the time the file was
@@ -950,7 +950,7 @@ public class File
      * <p> Where it is required to distinguish an I/O exception from the case
      * that {@code 0L} is returned, or where several attributes of the same file
      * are required at the same time, then the {@link
-     * j86.j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
+     * j86.java.nio.file.Files#readAttributes(Path,Class,LinkOption[])
      * Files.readAttributes} method may be used.
      *
      * @return  The length, in bytes, of the file denoted by this abstract
@@ -986,7 +986,7 @@ public class File
      * <P>
      * Note: this method should <i>not</i> be used for file-locking, as
      * the resulting protocol cannot be made to work reliably. The
-     * {@link j86.j86.java.nio.channels.FileLock FileLock}
+     * {@link j86.java.nio.channels.FileLock FileLock}
      * facility should be used instead.
      *
      * @return  <code>true</code> if the named file does not exist and was
@@ -1017,8 +1017,8 @@ public class File
      * this pathname denotes a directory, then the directory must be empty in
      * order to be deleted.
      *
-     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
-     * j86.j86.java.nio.file.Files#delete(Path) delete} method to throw an {@link IOException}
+     * <p> Note that the {@link j86.java.nio.file.Files} class defines the {@link
+     * j86.java.nio.file.Files#delete(Path) delete} method to throw an {@link IOException}
      * when a file cannot be deleted. This is useful for error reporting and to
      * diagnose why a file cannot be deleted.
      *
@@ -1056,7 +1056,7 @@ public class File
      * <P>
      * Note: this method should <i>not</i> be used for file-locking, as
      * the resulting protocol cannot be made to work reliably. The
-     * {@link j86.j86.java.nio.channels.FileLock FileLock}
+     * {@link j86.java.nio.channels.FileLock FileLock}
      * facility should be used instead.
      *
      * @throws  SecurityException
@@ -1094,8 +1094,8 @@ public class File
      * will appear in any specific order; they are not, in particular,
      * guaranteed to appear in alphabetical order.
      *
-     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
-     * j86.j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method to
+     * <p> Note that the {@link j86.java.nio.file.Files} class defines the {@link
+     * j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method to
      * open a directory and iterate over the names of the files in the directory.
      * This may use less resources when working with very large directories, and
      * may be more responsive when working with remote directories.
@@ -1149,7 +1149,7 @@ public class File
      *          SecurityManager#checkRead(String)} method denies read access to
      *          the directory
      *
-     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,String)
+     * @see j86.java.nio.file.Files#newDirectoryStream(Path,String)
      */
     public String[] list(FilenameFilter filter) {
         String names[] = list();
@@ -1184,8 +1184,8 @@ public class File
      * will appear in any specific order; they are not, in particular,
      * guaranteed to appear in alphabetical order.
      *
-     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
-     * j86.j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method
+     * <p> Note that the {@link j86.java.nio.file.Files} class defines the {@link
+     * j86.java.nio.file.Files#newDirectoryStream(Path) newDirectoryStream} method
      * to open a directory and iterate over the names of the files in the
      * directory. This may use less resources when working with very large
      * directories.
@@ -1242,7 +1242,7 @@ public class File
      *          the directory
      *
      * @since  1.2
-     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,String)
+     * @see j86.java.nio.file.Files#newDirectoryStream(Path,String)
      */
     public File[] listFiles(FilenameFilter filter) {
         String ss[] = list();
@@ -1280,7 +1280,7 @@ public class File
      *          the directory
      *
      * @since  1.2
-     * @see j86.j86.java.nio.file.Files#newDirectoryStream(Path,java.nio.file.DirectoryStream.Filter)
+     * @see j86.java.nio.file.Files#newDirectoryStream(Path,java.nio.file.DirectoryStream.Filter)
      */
     public File[] listFiles(FileFilter filter) {
         String ss[] = list();
@@ -1365,8 +1365,8 @@ public class File
      * already exists.  The return value should always be checked to make sure
      * that the rename operation was successful.
      *
-     * <p> Note that the {@link j86.j86.java.nio.file.Files} class defines the {@link
-     * j86.j86.java.nio.file.Files#move move} method to move or rename a file in a
+     * <p> Note that the {@link j86.java.nio.file.Files} class defines the {@link
+     * j86.java.nio.file.Files#move move} method to move or rename a file in a
      * platform independent manner.
      *
      * @param  dest  The new abstract pathname for the named file
@@ -1471,7 +1471,7 @@ public class File
      * machine with special privileges that allow it to modify files that
      * disallow write operations.
      *
-     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1545,7 +1545,7 @@ public class File
      * machine with special privileges that allow it to read files that are
      * marked as unreadable.
      *
-     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1625,7 +1625,7 @@ public class File
      * machine with special privileges that allow it to execute files that are
      * not marked executable.
      *
-     * <p> The {@link j86.j86.java.nio.file.Files} class defines methods that operate on
+     * <p> The {@link j86.java.nio.file.Files} class defines methods that operate on
      * file attributes including file permissions. This may be used when finer
      * manipulation of file permissions is required.
      *
@@ -1770,7 +1770,7 @@ public class File
      *          filesystem roots.
      *
      * @since  1.2
-     * @see j86.j86.java.nio.file.FileStore
+     * @see j86.java.nio.file.FileStore
      */
     public static File[] listRoots() {
         return fs.listRoots();
@@ -2035,7 +2035,7 @@ public class File
      * createTempFile(prefix,&nbsp;suffix,&nbsp;null)}</code>.
      *
      * <p> The {@link
-     * j86.j86.java.nio.file.Files#createTempFile(String,String,j86.java.nio.file.attribute.FileAttribute[])
+     * j86.java.nio.file.Files#createTempFile(String,String,j86.java.nio.file.attribute.FileAttribute[])
      * Files.createTempFile} method provides an alternative method to create an
      * empty file in the temporary-file directory. Files created by that method
      * may have more restrictive access permissions to files created by this
@@ -2062,7 +2062,7 @@ public class File
      *          method does not allow a file to be created
      *
      * @since 1.2
-     * @see j86.j86.java.nio.file.Files#createTempDirectory(String,FileAttribute[])
+     * @see j86.java.nio.file.Files#createTempDirectory(String,FileAttribute[])
      */
     public static File createTempFile(String prefix, String suffix)
         throws IOException
@@ -2195,20 +2195,20 @@ public class File
     /** use serialVersionUID from JDK 1.0.2 for interoperability */
     private static final long serialVersionUID = 301077366599181567L;
 
-    // -- Integration with j86.j86.java.nio.file --
+    // -- Integration with j86.java.nio.file --
 
     private volatile transient Path filePath;
 
     /**
-     * Returns a {@link Path j86.j86.java.nio.file.Path} object constructed from the
+     * Returns a {@link Path j86.java.nio.file.Path} object constructed from the
      * this abstract path. The resulting {@code Path} is associated with the
-     * {@link j86.j86.java.nio.file.FileSystems#getDefault default-filesystem}.
+     * {@link j86.java.nio.file.FileSystems#getDefault default-filesystem}.
      *
      * <p> The first invocation of this method works as if invoking it were
      * equivalent to evaluating the expression:
      * <blockquote><pre>
-     * {@link j86.j86.java.nio.file.FileSystems#getDefault FileSystems.getDefault}().{@link
-     * j86.j86.java.nio.file.FileSystem#getPath getPath}(this.{@link #getPath getPath}());
+     * {@link j86.java.nio.file.FileSystems#getDefault FileSystems.getDefault}().{@link
+     * j86.java.nio.file.FileSystem#getPath getPath}(this.{@link #getPath getPath}());
      * </pre></blockquote>
      * Subsequent invocations of this method return the same {@code Path}.
      *
@@ -2218,9 +2218,9 @@ public class File
      *
      * @return  a {@code Path} constructed from this abstract path
      *
-     * @throws  j86.j86.java.nio.file.InvalidPathException
+     * @throws  j86.java.nio.file.InvalidPathException
      *          if a {@code Path} object cannot be constructed from the abstract
-     *          path (see {@link j86.j86.java.nio.file.FileSystem#getPath FileSystem.getPath})
+     *          path (see {@link j86.java.nio.file.FileSystem#getPath FileSystem.getPath})
      *
      * @since   1.7
      * @see Path#toFile

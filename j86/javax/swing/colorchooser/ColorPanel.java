@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.javax.swing.colorchooser;
+package j86.javax.swing.colorchooser;
 
 import j86.java.awt.Color;
 import j86.java.awt.ContainerOrderFocusTraversalPolicy;
 import j86.java.awt.GridBagConstraints;
 import j86.java.awt.GridBagLayout;
 import j86.java.awt.Insets;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
 import j86.javax.swing.ButtonGroup;
 import j86.javax.swing.JLabel;
 import j86.javax.swing.JPanel;
 import j86.javax.swing.JRadioButton;
-import j86.j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.border.EmptyBorder;
 import j86.javax.swing.JSpinner.DefaultEditor;
 
 final class ColorPanel extends JPanel implements ActionListener {

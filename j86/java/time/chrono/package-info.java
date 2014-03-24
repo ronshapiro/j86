@@ -67,17 +67,17 @@
  * <p>
  * The main API is based around the calendar system defined in ISO-8601.
  * However, there are other calendar systems, and this package provides basic support for them.
- * The alternate calendars are provided in the {@link j86.j86.java.time.chrono} package.
+ * The alternate calendars are provided in the {@link j86.java.time.chrono} package.
  * </p>
  * <p>
- * A calendar system is defined by the {@link j86.j86.java.time.chrono.Chronology} interface,
- * while a date in a calendar system is defined by the {@link j86.j86.java.time.chrono.ChronoLocalDate} interface.
+ * A calendar system is defined by the {@link j86.java.time.chrono.Chronology} interface,
+ * while a date in a calendar system is defined by the {@link j86.java.time.chrono.ChronoLocalDate} interface.
  * </p>
  * <p>
  * It is intended that applications use the main API whenever possible, including code to read and write
  * from a persistent data store, such as a database, and to send dates and times across a network.
  * The "chrono" classes are then used at the user interface level to deal with localized input/output.
- * See {@link j86.j86.java.time.chrono.ChronoLocalDate ChronoLocalDate}
+ * See {@link j86.java.time.chrono.ChronoLocalDate ChronoLocalDate}
  * for a full discussion of the issues.
  * </p>
  * <p>
@@ -89,10 +89,10 @@
  * The supported calendar systems includes:
  * </p>
  * <ul>
- * <li>{@link j86.j86.java.time.chrono.HijrahChronology Hijrah calendar}</li>
- * <li>{@link j86.j86.java.time.chrono.JapaneseChronology Japanese calendar}</li>
- * <li>{@link j86.j86.java.time.chrono.MinguoChronology Minguo calendar}</li>
- * <li>{@link j86.j86.java.time.chrono.ThaiBuddhistChronology Thai Buddhist calendar}</li>
+ * <li>{@link j86.java.time.chrono.HijrahChronology Hijrah calendar}</li>
+ * <li>{@link j86.java.time.chrono.JapaneseChronology Japanese calendar}</li>
+ * <li>{@link j86.java.time.chrono.MinguoChronology Minguo calendar}</li>
+ * <li>{@link j86.java.time.chrono.ThaiBuddhistChronology Thai Buddhist calendar}</li>
  * </ul>
  *
  * <h3>Example</h3>
@@ -168,4 +168,4 @@
  * </p>
  * @since JDK1.8
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;

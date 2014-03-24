@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.NotSerializableException;
@@ -139,7 +139,7 @@ public abstract class CertPath implements Serializable {
     /**
      * Returns the type of {@code Certificate}s in this certification
      * path. This is the same string that would be returned by
-     * {@link j86.j86.java.security.cert.Certificate#getType() cert.getType()}
+     * {@link j86.java.security.cert.Certificate#getType() cert.getType()}
      * for all {@code Certificate}s in the certification path.
      *
      * @return the type of {@code Certificate}s in this certification
@@ -288,7 +288,7 @@ public abstract class CertPath implements Serializable {
         } catch (CertificateException ce) {
             NotSerializableException nse =
                 new NotSerializableException
-                    ("j86.j86.java.security.cert.CertPath: " + type);
+                    ("j86.java.security.cert.CertPath: " + type);
             nse.initCause(ce);
             throw nse;
         }
@@ -334,7 +334,7 @@ public abstract class CertPath implements Serializable {
             } catch (CertificateException ce) {
                 NotSerializableException nse =
                     new NotSerializableException
-                        ("j86.j86.java.security.cert.CertPath: " + type);
+                        ("j86.java.security.cert.CertPath: " + type);
                 nse.initCause(ce);
                 throw nse;
             }

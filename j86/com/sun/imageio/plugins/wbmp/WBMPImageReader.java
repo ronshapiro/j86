@@ -26,19 +26,19 @@
 package j86.com.sun.imageio.plugins.wbmp;
 
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.DataBufferByte;
-import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.DataBufferByte;
+import j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 
 import j86.javax.imageio.IIOException;
 import j86.javax.imageio.ImageReader;
 import j86.javax.imageio.ImageReadParam;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.stream.ImageInputStream;
 
 import j86.java.io.*;
 import j86.java.util.ArrayList;

@@ -24,10 +24,10 @@
  */
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.LongConsumer;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.LongConsumer;
 
 /**
  * Static classes and methods for operating on or creating instances of
@@ -1233,9 +1233,9 @@ public final class Spliterators {
      * permit limited parallelism.
      *
      * <p>An extending class need only
-     * implement {@link #tryAdvance(j86.j86.java.util.function.Consumer) tryAdvance}.
+     * implement {@link #tryAdvance(j86.java.util.function.Consumer) tryAdvance}.
      * The extending class should override
-     * {@link #forEachRemaining(j86.j86.java.util.function.Consumer) forEach} if it can
+     * {@link #forEachRemaining(j86.java.util.function.Consumer) forEach} if it can
      * provide a more performant implementation.
      *
      * @apiNote
@@ -1356,9 +1356,9 @@ public final class Spliterators {
      * permit limited parallelism.
      *
      * <p>To implement a spliterator an extending class need only
-     * implement {@link #tryAdvance(j86.j86.java.util.function.IntConsumer)}
+     * implement {@link #tryAdvance(j86.java.util.function.IntConsumer)}
      * tryAdvance}.  The extending class should override
-     * {@link #forEachRemaining(j86.j86.java.util.function.IntConsumer)} forEach} if it
+     * {@link #forEachRemaining(j86.java.util.function.IntConsumer)} forEach} if it
      * can provide a more performant implementation.
      *
      * @apiNote
@@ -1466,9 +1466,9 @@ public final class Spliterators {
      * to permit limited parallelism.
      *
      * <p>To implement a spliterator an extending class need only
-     * implement {@link #tryAdvance(j86.j86.java.util.function.LongConsumer)}
+     * implement {@link #tryAdvance(j86.java.util.function.LongConsumer)}
      * tryAdvance}.  The extending class should override
-     * {@link #forEachRemaining(j86.j86.java.util.function.LongConsumer)} forEach} if it
+     * {@link #forEachRemaining(j86.java.util.function.LongConsumer)} forEach} if it
      * can provide a more performant implementation.
      *
      * @apiNote
@@ -1576,9 +1576,9 @@ public final class Spliterators {
      * {@code trySplit} to permit limited parallelism.
      *
      * <p>To implement a spliterator an extending class need only
-     * implement {@link #tryAdvance(j86.j86.java.util.function.DoubleConsumer)}
+     * implement {@link #tryAdvance(j86.java.util.function.DoubleConsumer)}
      * tryAdvance}.  The extending class should override
-     * {@link #forEachRemaining(j86.j86.java.util.function.DoubleConsumer)} forEach} if
+     * {@link #forEachRemaining(j86.java.util.function.DoubleConsumer)} forEach} if
      * it can provide a more performant implementation.
      *
      * @apiNote

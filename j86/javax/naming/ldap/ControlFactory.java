@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.ldap;
+package j86.javax.naming.ldap;
 
 import j86.javax.naming.NamingException;
 import j86.javax.naming.Context;

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 
 /**
  * The management interface for the logging facility. It is recommended
- * to use the {@link j86.j86.java.lang.management.PlatformLoggingMXBean} management
+ * to use the {@link j86.java.lang.management.PlatformLoggingMXBean} management
  * interface that implements all attributes defined in this
  * {@code LoggingMXBean}.  The
- * {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
+ * {@link j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
  * ManagementFactory.getPlatformMXBean} method can be used to obtain
  * the {@code PlatformLoggingMXBean} object representing the management
  * interface for logging.
@@ -40,23 +40,23 @@ package j86.j86.java.util.logging;
  * This instance is an {@link j86.javax.management.MXBean MXBean} that
  * can be obtained by calling the {@link LogManager#getLoggingMXBean}
  * method or from the
- * {@linkplain j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
+ * {@linkplain j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
  * platform <tt>MBeanServer</tt>}.
  * <p>
  * The {@link j86.javax.management.ObjectName ObjectName} that uniquely identifies
  * the management interface for logging within the {@code MBeanServer} is:
  * <pre>
- *    {@link LogManager#LOGGING_MXBEAN_NAME j86.j86.java.util.logging:type=Logging}
+ *    {@link LogManager#LOGGING_MXBEAN_NAME j86.java.util.logging:type=Logging}
  * </pre>
  * <p>
  * The instance registered in the platform {@code MBeanServer}
- * is also a {@link j86.j86.java.lang.management.PlatformLoggingMXBean}.
+ * is also a {@link j86.java.lang.management.PlatformLoggingMXBean}.
  *
  * @author  Ron Mann
  * @author  Mandy Chung
  * @since   1.5
  *
- * @see j86.j86.java.lang.management.PlatformLoggingMXBean
+ * @see j86.java.lang.management.PlatformLoggingMXBean
  */
 public interface LoggingMXBean {
 

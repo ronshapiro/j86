@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.Component;
 import j86.java.awt.Container;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.InputMethodEvent;
-import j86.j86.java.awt.event.InputMethodListener;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.java.awt.font.TextHitInfo;
-import j86.j86.java.awt.im.InputMethodRequests;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.event.InputMethodEvent;
+import j86.java.awt.event.InputMethodListener;
+import j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextHitInfo;
+import j86.java.awt.im.InputMethodRequests;
+import j86.java.lang.ref.WeakReference;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;
 import j86.java.text.AttributedString;

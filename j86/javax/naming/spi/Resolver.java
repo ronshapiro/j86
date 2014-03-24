@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.javax.naming.Context;
 import j86.javax.naming.Name;

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.spec;
+package j86.javax.crypto.spec;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.MGF1ParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.MGF1ParameterSpec;
 
 /**
  * This class specifies the set of parameters used with OAEP Padding,
@@ -67,7 +67,7 @@ import j86.j86.java.security.spec.MGF1ParameterSpec;
  *     parameters for mgf -- MGF1ParameterSpec.SHA1
  *     source of encoding input -- PSource.PSpecified.DEFAULT
  *
- * @see j86.j86.java.security.spec.MGF1ParameterSpec
+ * @see j86.java.security.spec.MGF1ParameterSpec
  * @see PSource
  *
  * @author Valerie Peng

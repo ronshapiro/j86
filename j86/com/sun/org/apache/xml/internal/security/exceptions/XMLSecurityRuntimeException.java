@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.exceptions;
+package j86.com.sun.org.apache.xml.internal.security.exceptions;
 
 import j86.java.io.PrintStream;
 import j86.java.io.PrintWriter;
 import j86.java.text.MessageFormat;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.I18n;
 
 /**
  * The mother of all runtime Exceptions in this bundle. It allows exceptions to have

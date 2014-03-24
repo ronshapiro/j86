@@ -25,11 +25,11 @@
 
 package j86.javax.imageio;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
 import j86.java.util.List;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadata;
 
 /**
  * A simple container class to aggregate an image, a set of
@@ -50,7 +50,7 @@ import j86.j86.javax.imageio.metadata.IIOMetadata;
  *
  * @see ImageReader#readAll(int, ImageReadParam)
  * @see ImageReader#readAll(j86.java.util.Iterator)
- * @see ImageWriter#write(j86.j86.javax.imageio.metadata.IIOMetadata,
+ * @see ImageWriter#write(j86.javax.imageio.metadata.IIOMetadata,
  *                        IIOImage, ImageWriteParam)
  * @see ImageWriter#write(IIOImage)
  * @see ImageWriter#writeToSequence(IIOImage, ImageWriteParam)

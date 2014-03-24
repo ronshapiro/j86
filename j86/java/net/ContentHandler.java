@@ -46,7 +46,7 @@ import j86.java.io.IOException;
  * <p>
  * If no content handler could be found, URLConnection will
  * look for a content handler in a user-defineable set of places.
- * By default it looks in j86.j86.sun.net.www.content, but users can define a
+ * By default it looks in j86.sun.net.www.content, but users can define a
  * vertical-bar delimited set of class prefixes to search through in
  * addition by defining the java.content.handler.pkgs property.
  * The class name must be of the form:

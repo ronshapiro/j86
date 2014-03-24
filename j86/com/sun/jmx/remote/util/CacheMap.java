@@ -25,7 +25,7 @@
 
 package j86.com.sun.jmx.remote.util;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Iterator;
 import j86.java.util.LinkedList;
 import j86.java.util.List;

@@ -25,8 +25,8 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 
 /**
  * The <code>CompositeContext</code> interface defines the encapsulated
@@ -52,7 +52,7 @@ public interface CompositeContext {
      * source. Note that <code>dstIn</code> and
      * <code>dstOut</code> must be compatible with the
      * <code>dstColorModel</code> passed to the
-     * {@link Composite#createContext(j86.j86.j86.java.awt.image.ColorModel, java.awt.image.ColorModel, java.awt.RenderingHints) createContext}
+     * {@link Composite#createContext(j86.java.awt.image.ColorModel, java.awt.image.ColorModel, java.awt.RenderingHints) createContext}
      * method of the <code>Composite</code> interface.
      * @param src the first source for the compositing operation
      * @param dstIn the second source for the compositing operation

@@ -26,7 +26,7 @@
 package j86.sun.rmi.transport;
 
 import j86.java.io.IOException;
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.UID;
 import j86.sun.rmi.server.MarshalOutputStream;
 
 /**

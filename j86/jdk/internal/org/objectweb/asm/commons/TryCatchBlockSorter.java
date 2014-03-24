@@ -57,15 +57,15 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.util.Collections;
 import j86.java.util.Comparator;
 
 import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
 import j86.jdk.internal.org.objectweb.asm.Opcodes;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
+import j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode;
 
 /**
  * A {@link MethodVisitor} adapter to sort the exception handlers. The handlers

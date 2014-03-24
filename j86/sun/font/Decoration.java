@@ -40,12 +40,12 @@ import j86.java.awt.RenderingHints;
 import j86.java.awt.Shape;
 import j86.java.awt.Stroke;
 
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 
-import j86.j86.java.awt.geom.Area;
-import j86.j86.java.awt.geom.Line2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Area;
+import j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.GeneralPath;
 
 import static j86.sun.font.AttributeValues.*;
 import static j86.sun.font.EAttribute.*;

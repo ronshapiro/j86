@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MBEANSERVER_LOGGER;
 import j86.java.util.Iterator;
 import j86.java.util.List;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.javax.management.MBeanServer;
 import j86.javax.management.MBeanServerFactory;
 

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.editors;
+package j86.com.sun.beans.editors;
 
 import j86.java.awt.Component;
 import j86.java.awt.Graphics;

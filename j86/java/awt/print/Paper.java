@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>Paper</code> class describes the physical characteristics of

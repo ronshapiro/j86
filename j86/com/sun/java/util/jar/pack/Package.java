@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.j86.java.util.jar.Pack200;
-import j86.com.sun.j86.j86.java.util.jar.pack.Attribute.Layout;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.ClassEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Index;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.LiteralEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.java.util.jar.Pack200;
+import j86.com.sun.j86.java.util.jar.pack.Attribute.Layout;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.ClassEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Index;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.LiteralEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Entry;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.SequenceInputStream;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Modifier;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
@@ -53,8 +53,8 @@ import j86.java.util.List;
 import j86.java.util.ListIterator;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.java.util.jar.JarFile;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import j86.java.util.jar.JarFile;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Define the main data structure transmitted by pack/unpack.

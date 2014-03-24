@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
    // ISSUE: this class depends on nothing in AWT -- move to j86.java.util?
 
 import j86.java.beans.Transient;

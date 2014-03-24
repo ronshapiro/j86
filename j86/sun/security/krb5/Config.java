@@ -46,9 +46,9 @@ import j86.java.security.PrivilegedExceptionAction;
 import j86.java.util.Arrays;
 import j86.java.util.List;
 import j86.java.util.Locale;
-import j86.j86.sun.net.dns.ResolverConfiguration;
-import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
-import j86.j86.sun.security.krb5.internal.Krb5;
+import j86.sun.net.dns.ResolverConfiguration;
+import j86.sun.security.krb5.internal.crypto.EType;
+import j86.sun.security.krb5.internal.Krb5;
 
 /**
  * This class maintains key-value pairs of Kerberos configurable constants
@@ -67,7 +67,7 @@ public class Config {
      */
     private Hashtable<String,Object> stanzaTable = new Hashtable<>();
 
-    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     // these are used for hexdecimal calculation.
     private static final int BASE16_0 = 1;

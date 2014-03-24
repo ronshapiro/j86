@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 import j86.com.sun.jmx.mbeanserver.MXBeanLookup;
 import j86.com.sun.jmx.mbeanserver.MXBeanMapping;
 import j86.com.sun.jmx.mbeanserver.MXBeanMappingFactory;
 import j86.com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Proxy;
 
 /**
    <p>An {@link InvocationHandler} that forwards getter methods to a

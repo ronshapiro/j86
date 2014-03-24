@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.tcp;
+package j86.sun.rmi.transport.tcp;
 
 import j86.java.io.DataInputStream;
 import j86.java.io.DataOutputStream;
 import j86.java.io.IOException;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.net.Socket;
 import j86.java.rmi.ConnectIOException;
 import j86.java.rmi.RemoteException;
@@ -38,9 +38,9 @@ import j86.java.util.ArrayList;
 import j86.java.util.List;
 import j86.java.util.ListIterator;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.ScheduledExecutorService;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.ScheduledExecutorService;
+import j86.java.util.concurrent.TimeUnit;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.runtime.NewThreadAction;
 import j86.sun.rmi.runtime.RuntimeUtil;
@@ -93,13 +93,13 @@ public class TCPChannel implements Channel {
     /** client-side connection handshake read timeout */
     private static final int handshakeTimeout =         // default 1 minute
         AccessController.doPrivileged(
-            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.handshakeTimeout",
+            new GetIntegerAction("j86.sun.rmi.transport.tcp.handshakeTimeout",
                                  60000));
 
     /** client-side connection response read timeout (after handshake) */
     private static final int responseTimeout =          // default infinity
         AccessController.doPrivileged(
-            new GetIntegerAction("j86.j86.sun.rmi.transport.tcp.responseTimeout", 0));
+            new GetIntegerAction("j86.sun.rmi.transport.tcp.responseTimeout", 0));
 
     /** thread pool for scheduling delayed tasks */
     private static final ScheduledExecutorService scheduler =

@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
-import j86.j86.java.beans.beancontext.BeanContextServiceRevokedEvent;
+import j86.java.beans.beancontext.BeanContextServiceRevokedEvent;
 
 import j86.java.util.EventListener;
 

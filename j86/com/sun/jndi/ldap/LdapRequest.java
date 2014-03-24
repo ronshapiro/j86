@@ -26,8 +26,8 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.java.io.IOException;
-import j86.j86.java.util.concurrent.BlockingQueue;
-import j86.j86.java.util.concurrent.LinkedBlockingQueue;
+import j86.java.util.concurrent.BlockingQueue;
+import j86.java.util.concurrent.LinkedBlockingQueue;
 import j86.javax.naming.CommunicationException;
 
 final class LdapRequest {

@@ -36,15 +36,15 @@ package j86.java.rmi;
  * can extend other remote implementation classes.  RMI provides some
  * convenience classes that remote object implementations can extend which
  * facilitate remote object creation.  These classes are
- * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> and
- * <code>j86.j86.java.rmi.activation.Activatable</code>.
+ * <code>j86.java.rmi.server.UnicastRemoteObject</code> and
+ * <code>j86.java.rmi.activation.Activatable</code>.
  *
  * <p>For complete details on RMI, see the <a
  href=../../../platform/rmi/spec/rmiTOC.html>RMI Specification</a> which describes the RMI API and system.
  *
  * @since   JDK1.1
  * @author  Ann Wollrath
- * @see     j86.j86.java.rmi.server.UnicastRemoteObject
- * @see     j86.j86.java.rmi.activation.Activatable
+ * @see     j86.java.rmi.server.UnicastRemoteObject
+ * @see     j86.java.rmi.activation.Activatable
  */
 public interface Remote {}

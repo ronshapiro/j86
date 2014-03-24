@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.java.io.IOException;
 import j86.java.rmi.MarshalledObject;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.Unreferenced;
+import j86.java.rmi.server.Unreferenced;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.Permission;
@@ -44,11 +44,11 @@ import j86.java.util.Map;
 import j86.java.util.Set;
 
 import j86.javax.management.*;
-import j86.j86.javax.management.remote.JMXServerErrorException;
-import j86.j86.javax.management.remote.NotificationResult;
-import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.management.remote.JMXServerErrorException;
+import j86.javax.management.remote.NotificationResult;
+import j86.javax.management.remote.TargetedNotification;
 import j86.javax.security.auth.Subject;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 import static j86.com.sun.jmx.mbeanserver.Util.cast;
 import j86.com.sun.jmx.remote.internal.ServerCommunicatorAdmin;
@@ -1767,7 +1767,7 @@ public class RMIConnectionImpl implements RMIConnection, Unreferenced {
     }
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.j86.javax.management.remote.rmi", "RMIConnectionImpl");
+        new ClassLogger("j86.javax.management.remote.rmi", "RMIConnectionImpl");
 
     private static final class CombinedClassLoader extends ClassLoader {
 

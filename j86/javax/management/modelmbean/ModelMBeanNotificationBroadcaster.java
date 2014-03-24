@@ -28,7 +28,7 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 import j86.javax.management.Attribute;
 import j86.javax.management.AttributeChangeNotification;

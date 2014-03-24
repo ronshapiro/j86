@@ -26,9 +26,9 @@
 package j86.com.sun.crypto.provider;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 /**
  * This class represents password-based encryption as defined by the PKCS #5
@@ -182,13 +182,13 @@ abstract class PBES2Core extends CipherSpi {
         // TBD: consolidate the salt, ic and IV parameter checks below
 
         // Extract salt and iteration count from the key, if present
-        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
-            salt = ((j86.j86.javax.crypto.interfaces.PBEKey)key).getSalt();
+        if (key instanceof j86.javax.crypto.interfaces.PBEKey) {
+            salt = ((j86.javax.crypto.interfaces.PBEKey)key).getSalt();
             if (salt != null && salt.length < 8) {
                 throw new InvalidAlgorithmParameterException(
                     "Salt must be at least 8 bytes long");
             }
-            iCount = ((j86.j86.javax.crypto.interfaces.PBEKey)key).getIterationCount();
+            iCount = ((j86.javax.crypto.interfaces.PBEKey)key).getIterationCount();
             if (iCount == 0) {
                 iCount = DEFAULT_COUNT;
             } else if (iCount < 0) {

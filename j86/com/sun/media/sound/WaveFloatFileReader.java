@@ -37,7 +37,7 @@ import j86.javax.sound.sampled.AudioFormat.Encoding;
 import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.AudioSystem;
 import j86.javax.sound.sampled.UnsupportedAudioFileException;
-import j86.j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.sampled.spi.AudioFileReader;
 
 /**
  * Floating-point encoded (format 3) WAVE file loader.

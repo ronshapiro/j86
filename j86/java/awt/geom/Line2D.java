@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.awt.Shape;
 import j86.java.awt.Rectangle;
@@ -374,8 +374,8 @@ public abstract class Line2D implements Shape, Cloneable {
      * the information necessary to satisfy the various accessory
      * methods below.
      *
-     * @see j86.j86.java.awt.geom.Line2D.Float
-     * @see j86.j86.java.awt.geom.Line2D.Double
+     * @see j86.java.awt.geom.Line2D.Float
+     * @see j86.java.awt.geom.Line2D.Double
      * @since 1.2
      */
     protected Line2D() {

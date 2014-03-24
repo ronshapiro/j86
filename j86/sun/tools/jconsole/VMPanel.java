@@ -26,14 +26,14 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.*;
 import j86.java.util.List;
 import j86.java.util.Timer;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 
 import com.j86.sun.tools.jconsole.JConsolePlugin;

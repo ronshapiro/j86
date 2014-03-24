@@ -24,7 +24,7 @@
  */
 
 package j86.java.lang;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 /**
  * This class extends <tt>ThreadLocal</tt> to provide inheritance of values

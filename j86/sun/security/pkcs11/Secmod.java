@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.java.security.*;
 import j86.java.security.KeyStore.*;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 
 /**
@@ -63,7 +63,7 @@ public final class Secmod {
     private final static Secmod INSTANCE;
 
     static {
-        j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11.loadNative();
+        j86.sun.security.pkcs11.wrapper.PKCS11.loadNative();
         INSTANCE = new Secmod();
     }
 

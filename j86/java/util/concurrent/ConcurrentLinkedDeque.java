@@ -33,7 +33,7 @@
  * at http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.util.AbstractCollection;
 import j86.java.util.ArrayList;
@@ -44,7 +44,7 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.Queue;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An unbounded concurrent {@linkplain Deque deque} based on linked nodes.

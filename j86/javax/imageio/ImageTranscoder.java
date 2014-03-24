@@ -25,7 +25,7 @@
 
 package j86.javax.imageio;
 
-import j86.j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadata;
 
 /**
  * An interface providing metadata transcoding capability.

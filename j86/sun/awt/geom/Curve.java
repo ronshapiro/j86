@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.awt.geom;
+package j86.sun.awt.geom;
 
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.QuadCurve2D;
-import j86.j86.java.awt.geom.CubicCurve2D;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.IllegalPathStateException;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.QuadCurve2D;
+import j86.java.awt.geom.CubicCurve2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.IllegalPathStateException;
 import j86.java.util.Vector;
 
 public abstract class Curve {

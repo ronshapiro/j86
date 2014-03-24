@@ -26,8 +26,8 @@
 package j86.sun.rmi.log;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.java.rmi.server.RMIClassLoader;
+import j86.java.lang.reflect.Constructor;
+import j86.java.rmi.server.RMIClassLoader;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.sun.security.action.GetBooleanAction;

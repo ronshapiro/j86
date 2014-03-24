@@ -33,25 +33,25 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
-import j86.j86.java.util.function.Supplier;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.java.util.concurrent.ForkJoinPool;
-import j86.j86.java.util.concurrent.ForkJoinTask;
-import j86.j86.java.util.concurrent.Executor;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
-import j86.j86.java.util.concurrent.ExecutionException;
-import j86.j86.java.util.concurrent.TimeoutException;
-import j86.j86.java.util.concurrent.CancellationException;
-import j86.j86.java.util.concurrent.CompletionException;
-import j86.j86.java.util.concurrent.CompletionStage;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+package j86.java.util.concurrent;
+import j86.java.util.function.Supplier;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.BiFunction;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.ForkJoinPool;
+import j86.java.util.concurrent.ForkJoinTask;
+import j86.java.util.concurrent.Executor;
+import j86.java.util.concurrent.ThreadLocalRandom;
+import j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.TimeoutException;
+import j86.java.util.concurrent.CancellationException;
+import j86.java.util.concurrent.CompletionException;
+import j86.java.util.concurrent.CompletionStage;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A {@link Future} that may be explicitly completed (setting its

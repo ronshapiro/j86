@@ -33,7 +33,7 @@ package j86.com.sun.jdi;
  * (for example, {@link IntegerValue}), types (for example,
  * {@link ReferenceType}), dynamic application state (for example,
  * {@link StackFrame}), and even debugger-specific constructs (for example,
- * {@link j86.j86.com.sun.jdi.request.BreakpointRequest}).
+ * {@link j86.com.sun.jdi.request.BreakpointRequest}).
  * The {@link VirtualMachine} itself is also
  * considered a mirror, representing the composite state of the
  * target VM.

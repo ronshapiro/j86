@@ -28,16 +28,16 @@ package j86.sun.rmi.server;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInput;
 import j86.java.io.ObjectOutput;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.rmi.MarshalException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.ServerException;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.Operation;
-import j86.j86.java.rmi.server.RemoteCall;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.Operation;
+import j86.java.rmi.server.RemoteCall;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RemoteRef;
 import j86.java.security.AccessController;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.transport.Connection;
@@ -48,7 +48,7 @@ import j86.sun.security.action.GetBooleanAction;
 /**
  * NOTE: There is a JDK-internal dependency on the existence of this
  * class's getLiveRef method (as it is inherited by UnicastRef2) in
- * the implementation of j86.j86.j86.javax.management.remote.rmi.RMIConnector.
+ * the implementation of j86.javax.management.remote.rmi.RMIConnector.
  */
 @SuppressWarnings("deprecation")
 public class UnicastRef implements RemoteRef {
@@ -89,7 +89,7 @@ public class UnicastRef implements RemoteRef {
      *
      * NOTE: There is a JDK-internal dependency on the existence of
      * this method (as it is inherited by UnicastRef) in the
-     * implementation of j86.j86.j86.javax.management.remote.rmi.RMIConnector.
+     * implementation of j86.javax.management.remote.rmi.RMIConnector.
      **/
     public LiveRef getLiveRef() {
         return ref;
@@ -460,7 +460,7 @@ public class UnicastRef implements RemoteRef {
 
     /**
      * Log the details of an outgoing call.  The method parameter is either of
-     * type j86.j86.j86.java.lang.reflect.Method or j86.j86.java.rmi.server.Operation.
+     * type j86.java.lang.reflect.Method or j86.java.rmi.server.Operation.
      */
     void logClientCall(Object obj, Object method) {
         clientCallLog.log(Log.VERBOSE, "outbound call: " +

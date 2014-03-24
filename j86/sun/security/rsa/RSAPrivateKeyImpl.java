@@ -29,7 +29,7 @@ import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
+import j86.java.security.interfaces.*;
 
 import j86.sun.security.util.*;
 import j86.sun.security.pkcs.PKCS8Key;

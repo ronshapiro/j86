@@ -58,7 +58,7 @@ questions.
 	note below).
 
        <li>User-defined connector protocols are also possible using the 
-	{@link j86.j86.javax.management.remote.JMXConnectorFactory
+	{@link j86.javax.management.remote.JMXConnectorFactory
 	JMXConnectorFactory} and, optionally, the Generic Connector
 	(not part of this bundle, see note below).</p>
       </ul>
@@ -74,7 +74,7 @@ questions.
       <h3>Connector addresses</h3>
 
       <p>Typically, a connector server has an address, represented by the
-	class {@link j86.j86.javax.management.remote.JMXServiceURL
+	class {@link j86.javax.management.remote.JMXServiceURL
 	JMXServiceURL}.  An address for the RMI Connector can look
 	like this:</p>
 
@@ -90,16 +90,16 @@ questions.
       <p>The example above shows only one form of address.
         An address for the RMI Connector can take several forms,
 	as detailed in the documentation for the package
-	<code>{@link j86.j86.j86.javax.management.remote.rmi}</code>.</p>
+	<code>{@link j86.javax.management.remote.rmi}</code>.</p>
 
       <h3>Creating a connector server</h3>
 
       <p>A connector server is created by constructing an instance of
 	a subclass of {@link
-	j86.j86.javax.management.remote.JMXConnectorServer
+	j86.javax.management.remote.JMXConnectorServer
 	JMXConnectorServer}.  Usually, this instance is created
         using the method {@link
-        j86.j86.javax.management.remote.JMXConnectorServerFactory#newJMXConnectorServer(JMXServiceURL,
+        j86.javax.management.remote.JMXConnectorServerFactory#newJMXConnectorServer(JMXServiceURL,
         j86.java.util.Map, j86.javax.management.MBeanServer)
 	JMXConnectorServerFactory.newJMXConnectorServer}.</p>
 
@@ -113,14 +113,14 @@ questions.
       <p>A connector client is usually created by supplying the
 	<code>JMXServiceURL</code> of the connector server to connect to 
         to the {@link
-	j86.j86.javax.management.remote.JMXConnectorFactory#connect(JMXServiceURL)
+	j86.javax.management.remote.JMXConnectorFactory#connect(JMXServiceURL)
 	JMXConnectorFactory.connect} method.</p>
 
       <p>For more specialized uses, a connector client can be created
 	by directly instantiating a class that implements the {@link
-	j86.j86.javax.management.remote.JMXConnector JMXConnector} interface,
+	j86.javax.management.remote.JMXConnector JMXConnector} interface,
 	for example the class {@link
-	j86.j86.j86.javax.management.remote.rmi.RMIConnector
+	j86.javax.management.remote.rmi.RMIConnector
 	RMIConnector}.</p>
 
       <h3>Additional client or server parameters</h3>
@@ -138,13 +138,13 @@ questions.
       <p>Every connection opened by a connector server has a string
 	identifier, called its <b>connection id</b>.  This identifier
 	appears in the {@link
-	j86.j86.javax.management.remote.JMXConnectionNotification
+	j86.javax.management.remote.JMXConnectionNotification
 	JMXConnectionNotification} events emitted by the connector
 	server, in the list returned by {@link
-	j86.j86.javax.management.remote.JMXConnectorServerMBean#getConnectionIds()
+	j86.javax.management.remote.JMXConnectorServerMBean#getConnectionIds()
 	getConnectionIds()}, and in the value
 	returned by the client's {@link
-	j86.j86.javax.management.remote.JMXConnector#getConnectionId()
+	j86.javax.management.remote.JMXConnector#getConnectionId()
 	getConnectionId()} method.</p>
 
       <p>As an example, a connection ID can look something like this:</p>
@@ -169,7 +169,7 @@ rmi://192.18.1.9 username 1
 
       <p>The <code><em>Protocol</em></code> is a protocol that would
 	be recognized by {@link
-	j86.j86.javax.management.remote.JMXConnectorFactory
+	j86.javax.management.remote.JMXConnectorFactory
 	JMXConnectorFactory}.</p>
 
       <p>The <code><em>ClientAddress</em></code> is the
@@ -183,7 +183,7 @@ rmi://192.18.1.9 username 1
 
       <p>The <code><em>ClientId</em></code> is the identity of the
 	client entity, typically a string returned by {@link
-	j86.j86.javax.management.remote.JMXPrincipal#getName()
+	j86.javax.management.remote.JMXPrincipal#getName()
 	JMXPrincipal.getName()}.  This string must not contain
 	spaces.</p>
 

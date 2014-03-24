@@ -25,18 +25,18 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
-import j86.j86.j86.sun.awt.image.IntegerInterleavedRaster;
-import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.lang.ref.WeakReference;
+import j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.IntegerInterleavedRaster;
+import j86.sun.awt.image.ByteInterleavedRaster;
 
 abstract class TexturePaintContext implements PaintContext {
     public static ColorModel xrgbmodel =

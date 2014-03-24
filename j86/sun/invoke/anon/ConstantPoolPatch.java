@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.anon;
+package j86.sun.invoke.anon;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
@@ -32,7 +32,7 @@ import j86.java.util.HashSet;
 import j86.java.util.IdentityHashMap;
 import j86.java.util.Map;
 
-import static j86.j86.sun.invoke.anon.ConstantPoolVisitor.*;
+import static j86.sun.invoke.anon.ConstantPoolVisitor.*;
 
 /** A class and its patched constant pool.
  *

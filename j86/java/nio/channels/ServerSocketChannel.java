@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.IOException;
 import j86.java.net.ServerSocket;
 import j86.java.net.SocketOption;
 import j86.java.net.SocketAddress;
-import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.java.nio.channels.spi.SelectorProvider;
 
 /**
  * A selectable channel for stream-oriented listening sockets.
@@ -90,9 +90,9 @@ public abstract class ServerSocketChannel
      * Opens a server-socket channel.
      *
      * <p> The new channel is created by invoking the {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider#openServerSocketChannel
+     * j86.java.nio.channels.spi.SelectorProvider#openServerSocketChannel
      * openServerSocketChannel} method of the system-wide default {@link
-     * j86.j86.j86.java.nio.channels.spi.SelectorProvider} object.
+     * j86.java.nio.channels.spi.SelectorProvider} object.
      *
      * <p> The new channel's socket is initially unbound; it must be bound to a
      * specific address via one of its socket's {@link

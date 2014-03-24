@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
-import j86.j86.j86.javax.swing.plaf.basic.DefaultMenuLayout;
+import j86.javax.swing.plaf.basic.DefaultMenuLayout;
 import j86.javax.swing.JPopupMenu;
 import j86.java.awt.Container;
 import j86.java.awt.Dimension;

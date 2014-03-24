@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 /**
  * @author Michael McMahon

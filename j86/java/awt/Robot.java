@@ -25,18 +25,18 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.DataBufferInt;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.java.awt.peer.RobotPeer;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.DataBufferInt;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.peer.RobotPeer;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.sun.awt.ComponentFactory;
 import j86.sun.awt.SunToolkit;
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.SunWritableRaster;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -254,7 +254,7 @@ public class Robot {
      * @see InputEvent#getMaskForButton(int)
      * @see Toolkit#areExtraMouseButtonsEnabled()
      * @see j86.java.awt.MouseInfo#getNumberOfButtons()
-     * @see j86.j86.java.awt.event.MouseEvent
+     * @see j86.java.awt.event.MouseEvent
      */
     public synchronized void mousePress(int buttons) {
         checkButtonsArgument(buttons);
@@ -311,7 +311,7 @@ public class Robot {
      * @see InputEvent#getMaskForButton(int)
      * @see Toolkit#areExtraMouseButtonsEnabled()
      * @see j86.java.awt.MouseInfo#getNumberOfButtons()
-     * @see j86.j86.java.awt.event.MouseEvent
+     * @see j86.java.awt.event.MouseEvent
      */
     public synchronized void mouseRelease(int buttons) {
         checkButtonsArgument(buttons);
@@ -351,7 +351,7 @@ public class Robot {
      * @throws  IllegalArgumentException if <code>keycode</code> is not
      *          a valid key
      * @see     #keyRelease(int)
-     * @see     j86.j86.java.awt.event.KeyEvent
+     * @see     j86.java.awt.event.KeyEvent
      */
     public synchronized void keyPress(int keycode) {
         checkKeycodeArgument(keycode);
@@ -370,7 +370,7 @@ public class Robot {
      * @throws  IllegalArgumentException if <code>keycode</code> is not a
      *          valid key
      * @see  #keyPress(int)
-     * @see     j86.j86.java.awt.event.KeyEvent
+     * @see     j86.java.awt.event.KeyEvent
      */
     public synchronized void keyRelease(int keycode) {
         checkKeycodeArgument(keycode);

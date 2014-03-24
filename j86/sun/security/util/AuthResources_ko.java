@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_ko extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "{0}\uC744(\uB97C) \uC81C\uB300\uB85C \uD655\uC7A5\uD560 \uC218 \uC5C6\uC2B5\uB2C8\uB2E4."},
         {"extra.config.No.such.file.or.directory.",
                 "{0}(\uD574\uB2F9 \uD30C\uC77C \uB610\uB294 \uB514\uB809\uD1A0\uB9AC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4.)"},
@@ -78,11 +78,11 @@ public class AuthResources_ko extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "\uAD6C\uC131 \uC624\uB958:\n\t{0} \uD589: \uC2DC\uC2A4\uD15C \uC18D\uC131 [{1}]\uC774(\uAC00) \uBE48 \uAC12\uC73C\uB85C \uD655\uC7A5\uB418\uC5C8\uC2B5\uB2C8\uB2E4."},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","\uC0AC\uC6A9\uC790 \uC774\uB984: "},
         {"password.","\uBE44\uBC00\uBC88\uD638: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "\uD0A4 \uC800\uC7A5\uC18C \uC815\uBCF4\uB97C \uC785\uB825\uD558\uC2ED\uC2DC\uC624."},
         {"Keystore.alias.","\uD0A4 \uC800\uC7A5\uC18C \uBCC4\uCE6D: "},
@@ -90,7 +90,7 @@ public class AuthResources_ko extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "\uC804\uC6A9 \uD0A4 \uBE44\uBC00\uBC88\uD638(\uC120\uD0DD \uC0AC\uD56D): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos \uC0AC\uC6A9\uC790 \uC774\uB984 [{0}]: "},
         {"Kerberos.password.for.username.",

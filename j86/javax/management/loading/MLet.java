@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 // Java import
 import j86.com.sun.jmx.defaults.JmxProperties;
@@ -40,11 +40,11 @@ import j86.java.io.InputStream;
 import j86.java.io.ObjectInput;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutput;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Constructor;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
 import j86.java.net.URLStreamHandlerFactory;
-import j86.j86.java.nio.file.Files;
+import j86.java.nio.file.Files;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
@@ -52,7 +52,7 @@ import j86.java.util.Arrays;
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;
 import j86.java.util.List;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Map;
 import j86.java.util.Set;
 import j86.java.util.StringTokenizer;

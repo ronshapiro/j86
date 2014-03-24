@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
+package j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;
@@ -32,11 +32,11 @@ import j86.java.io.IOException;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
-import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
-import j86.j86.sun.rmi.rmic.newrmic.IndentingWriter;
+import j86.sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.sun.rmi.rmic.newrmic.IndentingWriter;
 
-import static j86.j86.sun.rmi.rmic.newrmic.Constants.*;
-import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.sun.rmi.rmic.newrmic.Constants.*;
+import static j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * Writes the source code for the stub class and (optionally) skeleton
@@ -75,7 +75,7 @@ class StubSkeletonWriter {
     private final RemoteClass.Method[] remoteMethods;
 
     /**
-     * Names to use for the j86.j86.j86.java.lang.reflect.Method static fields in
+     * Names to use for the j86.java.lang.reflect.Method static fields in
      * the generated stub class corresponding to each remote method.
      **/
     private final String[] methodFieldNames;
@@ -192,7 +192,7 @@ class StubSkeletonWriter {
                 p.pln();
 
                 /*
-                 * Initialize j86.j86.j86.java.lang.reflect.Method fields for each remote
+                 * Initialize j86.java.lang.reflect.Method fields for each remote
                  * method in a static initializer.
                  */
                 p.plnI("static {");
@@ -210,7 +210,7 @@ class StubSkeletonWriter {
                     p.plnI(REMOTE_REF + ".class.getMethod(\"invoke\",");
                     p.plnI("new j86.java.lang.Class[] {");
                     p.pln(REMOTE + ".class,");
-                    p.pln("j86.j86.j86.java.lang.reflect.Method.class,");
+                    p.pln("j86.java.lang.reflect.Method.class,");
                     p.pln("j86.java.lang.Object[].class,");
                     p.pln("long.class");
                     p.pOln("});");
@@ -782,14 +782,14 @@ class StubSkeletonWriter {
     }
 
     /**
-     * Writes declaration for j86.j86.j86.java.lang.reflect.Method static fields
+     * Writes declaration for j86.java.lang.reflect.Method static fields
      * corresponding to each remote method in a stub.
      **/
     private void writeMethodFieldDeclarations(IndentingWriter p)
         throws IOException
     {
         for (String name : methodFieldNames) {
-            p.pln("private static j86.j86.j86.java.lang.reflect.Method " + name + ";");
+            p.pln("private static j86.java.lang.reflect.Method " + name + ";");
         }
     }
 

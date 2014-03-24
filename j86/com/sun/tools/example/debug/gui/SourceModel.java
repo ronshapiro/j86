@@ -38,7 +38,7 @@ import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.jdi.request.*;
 
 import j86.javax.swing.*;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs10;
+package j86.sun.security.pkcs10;
 
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;

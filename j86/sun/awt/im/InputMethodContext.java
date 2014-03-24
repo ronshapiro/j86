@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTEvent;
 import j86.java.awt.Component;
@@ -32,11 +32,11 @@ import j86.java.awt.HeadlessException;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Toolkit;
 import j86.java.awt.Window;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.InputMethodEvent;
-import j86.j86.java.awt.font.TextHitInfo;
-import j86.j86.java.awt.im.InputMethodRequests;
-import j86.j86.j86.java.awt.im.spi.InputMethod;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.InputMethodEvent;
+import j86.java.awt.font.TextHitInfo;
+import j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.im.spi.InputMethod;
 import j86.java.security.AccessController;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;
@@ -56,8 +56,8 @@ import j86.sun.security.action.GetPropertyAction;
  */
 
 public class InputMethodContext
-       extends j86.j86.sun.awt.im.InputContext
-       implements j86.j86.j86.java.awt.im.spi.InputMethodContext {
+       extends j86.sun.awt.im.InputContext
+       implements j86.java.awt.im.spi.InputMethodContext {
 
     private boolean dispatchingCommittedText;
 
@@ -73,10 +73,10 @@ public class InputMethodContext
         // check whether we should use below-the-spot input
         // get property from command line
         String inputStyle = AccessController.doPrivileged
-                (new GetPropertyAction("j86.j86.java.awt.im.style", null));
+                (new GetPropertyAction("j86.java.awt.im.style", null));
         // get property from awt.properties file
         if (inputStyle == null) {
-            inputStyle = Toolkit.getProperty("j86.j86.java.awt.im.style", null);
+            inputStyle = Toolkit.getProperty("j86.java.awt.im.style", null);
         }
         belowTheSpotInputRequested = "below-the-spot".equals(inputStyle);
     }
@@ -102,7 +102,7 @@ public class InputMethodContext
                && client.getInputMethodRequests() != null;
     }
 
-    // implements j86.j86.j86.java.awt.im.spi.InputMethodContext.dispatchInputMethodEvent
+    // implements j86.java.awt.im.spi.InputMethodContext.dispatchInputMethodEvent
     public void dispatchInputMethodEvent(int id,
                 AttributedCharacterIterator text, int committedCharacterCount,
                 TextHitInfo caret, TextHitInfo visiblePosition) {
@@ -331,13 +331,13 @@ public class InputMethodContext
         }
     }
 
-    // implements j86.j86.j86.java.awt.im.spi.InputMethodContext.createInputMethodWindow
+    // implements j86.java.awt.im.spi.InputMethodContext.createInputMethodWindow
     public Window createInputMethodWindow(String title, boolean attachToInputContext) {
         InputContext context = attachToInputContext ? this : null;
         return createInputMethodWindow(title, context, false);
     }
 
-    // implements j86.j86.j86.java.awt.im.spi.InputMethodContext.createInputMethodJFrame
+    // implements j86.java.awt.im.spi.InputMethodContext.createInputMethodJFrame
     public JFrame createInputMethodJFrame(String title, boolean attachToInputContext) {
         InputContext context = attachToInputContext ? this : null;
         return (JFrame)createInputMethodWindow(title, context, true);
@@ -360,7 +360,7 @@ public class InputMethodContext
     }
 
     /**
-     * @see j86.j86.j86.java.awt.im.spi.InputMethodContext#enableClientWindowNotification
+     * @see j86.java.awt.im.spi.InputMethodContext#enableClientWindowNotification
      */
     public void enableClientWindowNotification(InputMethod inputMethod, boolean enable) {
         super.enableClientWindowNotification(inputMethod, enable);

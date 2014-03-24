@@ -26,7 +26,7 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.jdi.request.*;
 import j86.com.sun.tools.jdi.JDWP;
 
 import j86.java.util.*;
@@ -718,7 +718,7 @@ class EventRequestManagerImpl extends MirrorImpl
      */
     EventRequestManagerImpl(VirtualMachine vm) {
         super(vm);
-        j86.j86.j86.java.lang.reflect.Field[] ekinds =
+        j86.java.lang.reflect.Field[] ekinds =
             JDWP.EventKind.class.getDeclaredFields();
         int highest = 0;
         for (int i = 0; i < ekinds.length; ++i) {

@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.*;
 import j86.java.io.*;
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 import j86.java.text.Bidi;
 
 import j86.javax.swing.UIManager;
-import j86.j86.javax.swing.undo.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.tree.TreeNode;
+import j86.javax.swing.undo.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.tree.TreeNode;
 
 import j86.sun.font.BidiUtils;
 import j86.sun.swing.SwingUtilities2;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 // java import
 import j86.java.awt.*;

@@ -31,10 +31,10 @@
  * ===========================================================================
  *
  */
-package j86.j86.j86.sun.security.krb5.internal.ccache;
+package j86.sun.security.krb5.internal.ccache;
 
 import j86.sun.security.krb5.*;
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
 import j86.java.io.IOException;
@@ -43,7 +43,7 @@ import j86.java.io.FileInputStream;
 import j86.java.io.FileOutputStream;
 import j86.java.io.BufferedReader;
 import j86.java.io.InputStreamReader;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 /**
  * CredentialsCache stores credentials(tickets, session keys, etc) in a
@@ -406,7 +406,7 @@ public class FileCredentialsCache extends CredentialsCache
                 (osname.startsWith("Linux"))) {
                 try {
                     Class<?> c = Class.forName
-                        ("j86.j86.com.sun.security.auth.module.UnixSystem");
+                        ("j86.com.sun.security.auth.module.UnixSystem");
                     Constructor<?> constructor = c.getConstructor();
                     Object obj = constructor.newInstance();
                     Method method = c.getMethod("getUid");

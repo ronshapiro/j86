@@ -25,7 +25,7 @@
 
 package j86.sun.awt;
 
-import j86.j86.java.awt.event.FocusEvent;
+import j86.java.awt.event.FocusEvent;
 import j86.java.awt.Component;
 
 /**

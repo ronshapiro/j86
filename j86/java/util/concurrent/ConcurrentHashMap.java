@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.io.ObjectStreamField;
 import j86.java.io.Serializable;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
 import j86.java.util.AbstractMap;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
@@ -51,26 +51,26 @@ import j86.java.util.Map;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Set;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.concurrent.ForkJoinPool;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.IntBinaryOperator;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.function.ToDoubleBiFunction;
-import j86.j86.java.util.function.ToDoubleFunction;
-import j86.j86.java.util.function.ToIntBiFunction;
-import j86.j86.java.util.function.ToIntFunction;
-import j86.j86.java.util.function.ToLongBiFunction;
-import j86.j86.java.util.function.ToLongFunction;
-import j86.j86.java.util.stream.Stream;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ForkJoinPool;
+import j86.java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.concurrent.locks.LockSupport;
+import j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.function.Function;
+import j86.java.util.function.IntBinaryOperator;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.ToDoubleBiFunction;
+import j86.java.util.function.ToDoubleFunction;
+import j86.java.util.function.ToIntBiFunction;
+import j86.java.util.function.ToIntFunction;
+import j86.java.util.function.ToLongBiFunction;
+import j86.java.util.function.ToLongFunction;
+import j86.java.util.stream.Stream;
 
 /**
  * A hash table supporting full concurrency of retrievals and
@@ -135,7 +135,7 @@ import j86.j86.java.util.stream.Stream;
  *
  * <p>A ConcurrentHashMap can be used as scalable frequency map (a
  * form of histogram or multiset) by using {@link
- * j86.j86.j86.java.util.concurrent.atomic.LongAdder} values and initializing via
+ * j86.java.util.concurrent.atomic.LongAdder} values and initializing via
  * {@link #computeIfAbsent computeIfAbsent}. For example, to add a count
  * to a {@code ConcurrentHashMap<String,LongAdder> freqs}, you can use
  * {@code freqs.computeIfAbsent(k -> new LongAdder()).increment();}
@@ -4436,7 +4436,7 @@ public class ConcurrentHashMap<K,V> extends AbstractMap<K,V>
                 throw new OutOfMemoryError(oomeMsg);
             int m = (int)sz;
             T[] r = (a.length >= m) ? a :
-                (T[])j86.j86.j86.java.lang.reflect.Array
+                (T[])j86.java.lang.reflect.Array
                 .newInstance(a.getClass().getComponentType(), m);
             int n = r.length;
             int i = 0;

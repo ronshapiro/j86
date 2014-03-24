@@ -38,26 +38,26 @@ import j86.java.awt.HeadlessException;
 import j86.java.awt.KeyboardFocusManager;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Area;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.java.awt.print.Book;
-import j86.j86.java.awt.print.Pageable;
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Paper;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterAbortException;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Area;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.print.Book;
+import j86.java.awt.print.Pageable;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Paper;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterAbortException;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterJob;
 import j86.java.awt.Window;
 import j86.java.io.File;
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
 import j86.java.util.Enumeration;
 import j86.java.util.Locale;
-import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
+import j86.sun.awt.image.ByteInterleavedRaster;
 
 import j86.javax.print.Doc;
 import j86.javax.print.DocFlavor;
@@ -68,31 +68,31 @@ import j86.javax.print.PrintServiceLookup;
 import j86.javax.print.ServiceUI;
 import j86.javax.print.StreamPrintService;
 import j86.javax.print.StreamPrintServiceFactory;
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.AttributeSet;
-import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.Size2DSyntax;
-import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
-import j86.j86.j86.javax.print.attribute.standard.Copies;
-import j86.j86.j86.javax.print.attribute.standard.Destination;
-import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
-import j86.j86.j86.javax.print.attribute.standard.Fidelity;
-import j86.j86.j86.javax.print.attribute.standard.JobName;
-import j86.j86.j86.javax.print.attribute.standard.JobSheets;
-import j86.j86.j86.javax.print.attribute.standard.Media;
-import j86.j86.j86.javax.print.attribute.standard.MediaPrintableArea;
-import j86.j86.j86.javax.print.attribute.standard.MediaSize;
-import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
-import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
-import j86.j86.j86.javax.print.attribute.standard.PageRanges;
-import j86.j86.j86.javax.print.attribute.standard.PrinterState;
-import j86.j86.j86.javax.print.attribute.standard.PrinterStateReason;
-import j86.j86.j86.javax.print.attribute.standard.PrinterStateReasons;
-import j86.j86.j86.javax.print.attribute.standard.PrinterIsAcceptingJobs;
-import j86.j86.j86.javax.print.attribute.standard.RequestingUserName;
-import j86.j86.j86.javax.print.attribute.standard.SheetCollate;
-import j86.j86.j86.javax.print.attribute.standard.Sides;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.AttributeSet;
+import j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.Size2DSyntax;
+import j86.javax.print.attribute.standard.Chromaticity;
+import j86.javax.print.attribute.standard.Copies;
+import j86.javax.print.attribute.standard.Destination;
+import j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.javax.print.attribute.standard.Fidelity;
+import j86.javax.print.attribute.standard.JobName;
+import j86.javax.print.attribute.standard.JobSheets;
+import j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.standard.MediaPrintableArea;
+import j86.javax.print.attribute.standard.MediaSize;
+import j86.javax.print.attribute.standard.MediaSizeName;
+import j86.javax.print.attribute.standard.OrientationRequested;
+import j86.javax.print.attribute.standard.PageRanges;
+import j86.javax.print.attribute.standard.PrinterState;
+import j86.javax.print.attribute.standard.PrinterStateReason;
+import j86.javax.print.attribute.standard.PrinterStateReasons;
+import j86.javax.print.attribute.standard.PrinterIsAcceptingJobs;
+import j86.javax.print.attribute.standard.RequestingUserName;
+import j86.javax.print.attribute.standard.SheetCollate;
+import j86.javax.print.attribute.standard.Sides;
 
 import j86.sun.print.PageableDoc;
 import j86.sun.print.ServiceDialog;
@@ -860,7 +860,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
         }
 
         /* A security check has already been performed in the
-         * j86.j86.java.awt.print.printerJob.getPrinterJob method.
+         * j86.java.awt.print.printerJob.getPrinterJob method.
          * So by the time we get here, it is OK for the current thread
          * to print either to a file (from a Dialog we control!) or
          * to a chosen printer.
@@ -1313,11 +1313,11 @@ public abstract class RasterPrinterJob extends PrinterJob {
 
     /**
      * Prints a set of pages.
-     * @exception j86.j86.java.awt.print.PrinterException an error in the print system
+     * @exception j86.java.awt.print.PrinterException an error in the print system
      *                                          caused the job to be aborted
-     * @see j86.j86.java.awt.print.Book
-     * @see j86.j86.java.awt.print.Pageable
-     * @see j86.j86.java.awt.print.Printable
+     * @see j86.java.awt.print.Book
+     * @see j86.java.awt.print.Pageable
+     * @see j86.java.awt.print.Printable
      */
     public void print() throws PrinterException {
         print(attributes);
@@ -1947,7 +1947,7 @@ public abstract class RasterPrinterJob extends PrinterJob {
      * Print a page from the provided document.
      * @return int Printable.PAGE_EXISTS if the page existed and was drawn and
      *             Printable.NO_SUCH_PAGE if the page did not exist.
-     * @see j86.j86.java.awt.print.Printable
+     * @see j86.java.awt.print.Printable
      */
     protected int printPage(Pageable document, int pageIndex)
         throws PrinterException

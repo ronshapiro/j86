@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.IntegerSyntax;
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
-import j86.j86.javax.print.attribute.PrintJobAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.IntegerSyntax;
+import j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class JobKOctets is an integer valued printing attribute class that specifies
@@ -96,15 +96,15 @@ import j86.j86.javax.print.attribute.PrintJobAttribute;
  * <TD>Number of bytes read from the file at the given URL address</TD>
  * </TR>
  * <TR>
- * <TD>j86.j86.j86.j86.java.awt.image.renderable.RenderableImage</TD>
+ * <TD>j86.java.awt.image.renderable.RenderableImage</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * <TR>
- * <TD>j86.j86.java.awt.print.Printable</TD>
+ * <TD>j86.java.awt.print.Printable</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * <TR>
- * <TD>j86.j86.java.awt.print.Pageable</TD>
+ * <TD>j86.java.awt.print.Pageable</TD>
  * <TD>Implementation dependent&#42;</TD>
  * </TR>
  * </TABLE>

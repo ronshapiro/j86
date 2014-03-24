@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -33,7 +33,7 @@ import j86.com.sun.jdi.*;
  *
  * @see EventQueue
  * @see VirtualMachine
- * @see j86.j86.com.sun.jdi.request.ModificationWatchpointRequest
+ * @see j86.com.sun.jdi.request.ModificationWatchpointRequest
  *
  * @author Robert Field
  * @since  1.3

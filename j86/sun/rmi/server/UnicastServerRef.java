@@ -29,22 +29,22 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInput;
 import j86.java.io.ObjectOutput;
 import j86.java.io.PrintStream;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.java.rmi.MarshalException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.ServerError;
 import j86.java.rmi.ServerException;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.ExportException;
-import j86.j86.java.rmi.server.RemoteCall;
-import j86.j86.java.rmi.server.RemoteRef;
-import j86.j86.java.rmi.server.RemoteStub;
-import j86.j86.java.rmi.server.ServerNotActiveException;
-import j86.j86.java.rmi.server.ServerRef;
-import j86.j86.java.rmi.server.Skeleton;
-import j86.j86.java.rmi.server.SkeletonNotFoundException;
+import j86.java.rmi.server.ExportException;
+import j86.java.rmi.server.RemoteCall;
+import j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.RemoteStub;
+import j86.java.rmi.server.ServerNotActiveException;
+import j86.java.rmi.server.ServerRef;
+import j86.java.rmi.server.Skeleton;
+import j86.java.rmi.server.SkeletonNotFoundException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Collections;
@@ -55,7 +55,7 @@ import j86.java.util.WeakHashMap;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.transport.LiveRef;
 import j86.sun.rmi.transport.Target;
-import j86.j86.sun.rmi.transport.tcp.TCPTransport;
+import j86.sun.rmi.transport.tcp.TCPTransport;
 import j86.sun.security.action.GetBooleanAction;
 
 /**
@@ -73,7 +73,7 @@ public class UnicastServerRef extends UnicastRef
 {
     /** value of server call log property */
     public static final boolean logCalls = AccessController.doPrivileged(
-        new GetBooleanAction("j86.j86.java.rmi.server.logCalls"));
+        new GetBooleanAction("j86.java.rmi.server.logCalls"));
 
     /** server call log */
     public static final Log callLog =
@@ -446,7 +446,7 @@ public class UnicastServerRef extends UnicastRef
 
     /**
      * Log the details of an incoming call.  The method parameter is either of
-     * type j86.j86.j86.java.lang.reflect.Method or j86.j86.java.rmi.server.Operation.
+     * type j86.java.lang.reflect.Method or j86.java.rmi.server.Operation.
      */
     private void logCall(Remote obj, Object method) {
         if (callLog.isLoggable(Log.VERBOSE)) {

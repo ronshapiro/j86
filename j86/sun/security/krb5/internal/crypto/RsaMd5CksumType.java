@@ -27,11 +27,11 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 import j86.sun.security.krb5.Checksum;
 import j86.sun.security.krb5.KrbCryptoException;
-import j86.j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.*;
 import j86.java.security.MessageDigest;
 import j86.java.security.Provider;
 import j86.java.security.Security;

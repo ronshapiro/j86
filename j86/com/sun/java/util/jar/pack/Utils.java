@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.BufferedOutputStream;
@@ -34,15 +34,15 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.util.Collections;
 import j86.java.util.Date;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.JarInputStream;
-import j86.j86.java.util.jar.JarOutputStream;
-import j86.j86.java.util.zip.ZipEntry;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarInputStream;
+import j86.java.util.jar.JarOutputStream;
+import j86.java.util.zip.ZipEntry;
+import j86.sun.util.logging.PlatformLogger;
 
 class Utils {
-    static final String COM_PREFIX = "j86.com.sun.j86.j86.java.util.jar.pack.";
+    static final String COM_PREFIX = "j86.com.sun.j86.java.util.jar.pack.";
     static final String METAINF    = "META-INF";
 
     /*
@@ -204,7 +204,7 @@ class Utils {
     }
 
     static final Pack200Logger log
-        = new Pack200Logger("j86.j86.java.util.jar.Pack200");
+        = new Pack200Logger("j86.java.util.jar.Pack200");
 
     // Returns the Max Version String of this implementation
     static String getVersionString() {

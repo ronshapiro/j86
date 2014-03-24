@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
+package j86.sun.security.krb5.internal.crypto.dk;
 
 import j86.java.security.*;
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 import j86.java.util.*;
 import j86.sun.security.krb5.EncryptedData;
 import j86.sun.security.krb5.KrbCryptoException;
 import j86.sun.security.krb5.Confounder;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 
 /**
  * Support for ArcFour in Kerberos

@@ -24,17 +24,17 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 
 
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.Acl;
-import j86.j86.java.security.acl.AclEntry;
-import j86.j86.java.security.acl.NotOwnerException;
+import j86.java.security.acl.Acl;
+import j86.java.security.acl.AclEntry;
+import j86.java.security.acl.NotOwnerException;
 
 import j86.java.io.Serializable;
-import j86.j86.java.security.acl.Permission;
+import j86.java.security.acl.Permission;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 
@@ -49,7 +49,7 @@ import j86.java.util.Enumeration;
  * If positive, the permissions are to be granted to the associated principal.
  * If negative, the permissions are to be denied.
  *
- * @see j86.j86.java.security.acl.Acl
+ * @see j86.java.security.acl.Acl
  */
 
 class AclImpl extends OwnerImpl implements Acl, Serializable {
@@ -145,7 +145,7 @@ class AclImpl extends OwnerImpl implements Acl, Serializable {
    * @exception NotOwnerException if the caller principal is not an owner
    *   of this Acl.
    * @see j86.java.security.Principal
-   * @see j86.j86.java.security.acl.AclEntry
+   * @see j86.java.security.acl.AclEntry
    */
   @Override
   public boolean removeEntry(Principal caller, AclEntry entry)
@@ -229,7 +229,7 @@ class AclImpl extends OwnerImpl implements Acl, Serializable {
    */
   @Override
   public boolean checkPermission(Principal user,
-                                 j86.j86.java.security.acl.Permission perm) {
+                                 j86.java.security.acl.Permission perm) {
         for (Enumeration<AclEntry> e = entryList.elements();e.hasMoreElements();){
           AclEntry ent = e.nextElement();
           if (ent.getPrincipal().equals(user))
@@ -256,7 +256,7 @@ class AclImpl extends OwnerImpl implements Acl, Serializable {
    * @see j86.java.security.Permission
    */
   public boolean checkPermission(Principal user, String community,
-                                 j86.j86.java.security.acl.Permission perm) {
+                                 j86.java.security.acl.Permission perm) {
         for (Enumeration<AclEntry> e = entryList.elements();e.hasMoreElements();){
           AclEntryImpl ent = (AclEntryImpl) e.nextElement();
           if (ent.getPrincipal().equals(user))

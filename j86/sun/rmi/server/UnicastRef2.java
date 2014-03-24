@@ -33,7 +33,7 @@ import j86.sun.rmi.transport.LiveRef;
 /**
  * NOTE: There is a JDK-internal dependency on the existence of this
  * class and its getLiveRef method (inherited from UnicastRef) in the
- * implementation of j86.j86.j86.javax.management.remote.rmi.RMIConnector.
+ * implementation of j86.javax.management.remote.rmi.RMIConnector.
  **/
 public class UnicastRef2 extends UnicastRef {
     private static final long serialVersionUID = 1829537514995881838L;

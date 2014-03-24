@@ -26,11 +26,11 @@
 /*
  * $Id: DOMManifest.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.*;
 
 import j86.java.security.Provider;
 import j86.java.util.*;

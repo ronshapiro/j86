@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.javax.net.ssl;
+package j86.javax.net.ssl;
 
 import j86.java.net.IDN;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.charset.CodingErrorAction;
-import j86.j86.java.nio.charset.StandardCharsets;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharacterCodingException;
+import j86.java.nio.charset.CodingErrorAction;
+import j86.java.nio.charset.StandardCharsets;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharacterCodingException;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Pattern;
 
 /**
  * Instances of this class represent a server name of type
@@ -290,13 +290,13 @@ public final class SNIHostName extends SNIServerName {
      * will accept hostnames "www.example.com" and "www.example.org".
      *
      * @param  regex
-     *         the <a href="{@docRoot}/j86.j86.java.util.regex/Pattern.html#sum">
+     *         the <a href="{@docRoot}/j86.java.util.regex/Pattern.html#sum">
      *         regular expression pattern</a>
      *         representing the hostname(s) to match
      * @return a {@code SNIMatcher} object for {@code SNIHostName}s
      * @throws NullPointerException if {@code regex} is
      *         {@code null}
-     * @throws j86.j86.java.util.regex.PatternSyntaxException if the regular expression's
+     * @throws j86.java.util.regex.PatternSyntaxException if the regular expression's
      *         syntax is invalid
      */
     public static SNIMatcher createSNIMatcher(String regex) {
@@ -330,7 +330,7 @@ public final class SNIHostName extends SNIServerName {
          * Creates an SNIHostNameMatcher object.
          *
          * @param  regex
-         *         the <a href="{@docRoot}/j86.j86.java.util.regex/Pattern.html#sum">
+         *         the <a href="{@docRoot}/j86.java.util.regex/Pattern.html#sum">
          *         regular expression pattern</a>
          *         representing the hostname(s) to match
          * @throws NullPointerException if {@code regex} is

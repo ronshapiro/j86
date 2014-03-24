@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies the set of parameters used to generate an RSA

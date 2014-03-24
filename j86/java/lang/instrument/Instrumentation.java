@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.lang.instrument;
+package j86.java.lang.instrument;
 
 import  j86.java.io.File;
 import  j86.java.io.IOException;
-import  j86.j86.java.util.jar.JarFile;
+import  j86.java.util.jar.JarFile;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -59,7 +59,7 @@ import  j86.j86.java.util.jar.JarFile;
  * </ol>
  * <p>
  * These mechanisms are described in the
- * {@linkplain j86.j86.java.lang.instrument package specification}.
+ * {@linkplain j86.java.lang.instrument package specification}.
  * <p>
  * Once an agent acquires an <code>Instrumentation</code> instance,
  * the agent may call methods on the instance at any time.
@@ -74,7 +74,7 @@ public interface Instrumentation {
      * The transformer is called when classes are loaded, when they are
      * {@linkplain #redefineClasses redefined}. and if <code>canRetransform</code> is true,
      * when they are {@linkplain #retransformClasses retransformed}.
-     * See {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform
+     * See {@link j86.java.lang.instrument.ClassFileTransformer#transform
      * ClassFileTransformer.transform} for the order
      * of transform calls.
      * If a transformer throws
@@ -133,7 +133,7 @@ public interface Instrumentation {
      * Retransformation will only be supported if the
      * <code>Can-Retransform-Classes</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple calls to this
      * method will always return the same answer.
@@ -154,7 +154,7 @@ public interface Instrumentation {
      * When classes are initially loaded or when they are
      * {@linkplain #redefineClasses redefined},
      * the initial class file bytes can be transformed with the
-     * {@link j86.j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer}.
+     * {@link j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer}.
      * This function reruns the transformation process
      * (whether or not a transformation has previously occurred).
      * This retransformation follows these steps:
@@ -163,17 +163,17 @@ public interface Instrumentation {
      *    </li>
      *    <li>for each transformer that was added with <code>canRetransform</code>
      *      false, the bytes returned by
-     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      during the last class load or redefine are
      *      reused as the output of the transformation; note that this is
      *      equivalent to reapplying the previous transformation, unaltered;
      *      except that
-     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      is not called
      *    </li>
      *    <li>for each transformer that was added with <code>canRetransform</code>
      *      true, the
-     *      {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform}
+     *      {@link j86.java.lang.instrument.ClassFileTransformer#transform transform}
      *      method is called in these transformers
      *    </li>
      *    <li>the transformed class file bytes are installed as the new
@@ -183,7 +183,7 @@ public interface Instrumentation {
      * <P>
      *
      * The order of transformation is described in the
-     * {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform transform} method.
+     * {@link j86.java.lang.instrument.ClassFileTransformer#transform transform} method.
      * This same order is used in the automatic reapplication of retransformation
      * incapable transforms.
      * <P>
@@ -236,7 +236,7 @@ public interface Instrumentation {
      *
      * @param classes array of classes to retransform;
      *                a zero-length array is allowed, in this case, this method does nothing
-     * @throws j86.j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
+     * @throws j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
      * ({@link #isModifiableClass} would return <code>false</code>)
      * @throws j86.java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
      * retransformation ({@link #isRetransformClassesSupported} is false) or the retransformation attempted
@@ -251,7 +251,7 @@ public interface Instrumentation {
      *
      * @see #isRetransformClassesSupported
      * @see #addTransformer
-     * @see j86.j86.java.lang.instrument.ClassFileTransformer
+     * @see j86.java.lang.instrument.ClassFileTransformer
      * @since 1.6
      */
     void
@@ -265,7 +265,7 @@ public interface Instrumentation {
      * Redefinition will only be supported if the
      * <code>Can-Redefine-Classes</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple calls to this
      * method will always return the same answer.
@@ -323,7 +323,7 @@ public interface Instrumentation {
      *
      * @param definitions array of classes to redefine with corresponding definitions;
      *                    a zero-length array is allowed, in this case, this method does nothing
-     * @throws j86.j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
+     * @throws j86.java.lang.instrument.UnmodifiableClassException if a specified class cannot be modified
      * ({@link #isModifiableClass} would return <code>false</code>)
      * @throws j86.java.lang.UnsupportedOperationException if the current configuration of the JVM does not allow
      * redefinition ({@link #isRedefineClassesSupported} is false) or the redefinition attempted
@@ -339,7 +339,7 @@ public interface Instrumentation {
      *
      * @see #isRedefineClassesSupported
      * @see #addTransformer
-     * @see j86.j86.java.lang.instrument.ClassFileTransformer
+     * @see j86.java.lang.instrument.ClassFileTransformer
      */
     void
     redefineClasses(ClassDefinition... definitions)
@@ -419,7 +419,7 @@ public interface Instrumentation {
      *
      * <p> When the virtual machine's built-in class loader, known as the "bootstrap
      * class loader", unsuccessfully searches for a class, the entries in the {@link
-     * j86.j86.java.util.jar.JarFile JAR file} will be searched as well.
+     * j86.java.util.jar.JarFile JAR file} will be searched as well.
      *
      * <p> This method may be used multiple times to add multiple JAR files to be
      * searched in the order that this method was invoked.
@@ -457,7 +457,7 @@ public interface Instrumentation {
      *
      * @see     #appendToSystemClassLoaderSearch
      * @see     j86.java.lang.ClassLoader
-     * @see     j86.j86.java.util.jar.JarFile
+     * @see     j86.java.util.jar.JarFile
      *
      * @since 1.6
      */
@@ -471,7 +471,7 @@ public interface Instrumentation {
      * When the system class loader for delegation (see
      * {@link j86.java.lang.ClassLoader#getSystemClassLoader getSystemClassLoader()})
      * unsuccessfully searches for a class, the entries in the {@link
-     * j86.j86.java.util.jar.JarFile JarFile} will be searched as well.
+     * j86.java.util.jar.JarFile JarFile} will be searched as well.
      *
      * <p> This method may be used multiple times to add multiple JAR files to be
      * searched in the order that this method was invoked.
@@ -488,7 +488,7 @@ public interface Instrumentation {
      * it implements a method named <code>appendToClassPathForInstrumentation</code>
      * which takes a single parameter of type <code>j86.java.lang.String</code>. The
      * method is not required to have <code>public</code> access. The name of
-     * the JAR file is obtained by invoking the {@link j86.j86.java.util.zip.ZipFile#getName
+     * the JAR file is obtained by invoking the {@link j86.java.util.zip.ZipFile#getName
      * getName()} method on the <code>jarfile</code> and this is provided as the
      * parameter to the <code>appendToClassPathForInstrumentation</code> method.
      *
@@ -518,7 +518,7 @@ public interface Instrumentation {
      *
      * @see     #appendToBootstrapClassLoaderSearch
      * @see     j86.java.lang.ClassLoader#getSystemClassLoader
-     * @see     j86.j86.java.util.jar.JarFile
+     * @see     j86.java.util.jar.JarFile
      * @since 1.6
      */
     void
@@ -533,7 +533,7 @@ public interface Instrumentation {
      * Setting a native method prefix will only be supported if the
      * <code>Can-Set-Native-Method-Prefix</code> manifest attribute is set to
      * <code>true</code> in the agent JAR file (as described in the
-     * {@linkplain j86.j86.java.lang.instrument package specification}) and the JVM supports
+     * {@linkplain j86.java.lang.instrument package specification}) and the JVM supports
      * this capability.
      * During a single instantiation of a single JVM, multiple
      * calls to this method will always return the same answer.
@@ -550,7 +550,7 @@ public interface Instrumentation {
      * native method resolution by allowing retry
      * with a prefix applied to the name.
      * When used with the
-     * {@link j86.j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer},
+     * {@link j86.java.lang.instrument.ClassFileTransformer ClassFileTransformer},
      * it enables native methods to be
      * instrumented.
      * <p>

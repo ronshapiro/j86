@@ -26,15 +26,15 @@
 /*
  */
 
-package j86.j86.j86.java.nio.channels.spi;
+package j86.java.nio.channels.spi;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.java.nio.channels.*;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.nio.channels.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.sun.nio.ch.Interruptible;
 
 
 /**
@@ -74,7 +74,7 @@ import j86.j86.j86.sun.nio.ch.Interruptible;
  * {@link #end end} method will throw the appropriate exception.
  *
  * <p> This class performs the synchronization required to implement the {@link
- * j86.j86.java.nio.channels.Channel} specification.  Implementations of the {@link
+ * j86.java.nio.channels.Channel} specification.  Implementations of the {@link
  * #implCloseChannel implCloseChannel} method need not synchronize against
  * other threads that might be attempting to close the channel.  </p>
  *

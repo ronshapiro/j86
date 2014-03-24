@@ -33,15 +33,15 @@ Unicode characters.
 
 <blockquote><table cellspacing=1 cellpadding=0 summary="Summary of charsets, decoders, and encoders in this package">
  <tr><th><p align="left">Class name</p></th><th><p align="left">Description</p></th></tr>
-  <tr><td valign=top><tt>{@link j86.j86.java.nio.charset.Charset}</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.charset.Charset}</tt></td>
       <td>A named mapping between characters<br>and bytes</td></tr>
-  <tr><td valign=top><tt>{@link j86.j86.java.nio.charset.CharsetDecoder}</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.charset.CharsetDecoder}</tt></td>
       <td>Decodes bytes into characters</td></tr>
-  <tr><td valign=top><tt>{@link j86.j86.java.nio.charset.CharsetEncoder}&nbsp;&nbsp;</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.charset.CharsetEncoder}&nbsp;&nbsp;</tt></td>
       <td>Encodes characters into bytes</td></tr>
-  <tr><td valign=top><tt>{@link j86.j86.java.nio.charset.CoderResult}&nbsp;&nbsp;</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.charset.CoderResult}&nbsp;&nbsp;</tt></td>
       <td>Describes coder results</td></tr>
-  <tr><td valign=top><tt>{@link j86.j86.java.nio.charset.CodingErrorAction}&nbsp;&nbsp;</tt></td>
+  <tr><td valign=top><tt>{@link j86.java.nio.charset.CodingErrorAction}&nbsp;&nbsp;</tt></td>
       <td>Describes actions to take when<br>coding errors are detected</td></tr>
 
 </table></blockquote>
@@ -54,7 +54,7 @@ characters, and an <i>encoder</i> is an engine which transforms characters into
 bytes.  Encoders and decoders operate on byte and character buffers.  They are
 collectively referred to as <i>coders</i>.
 
-<p> The {@link j86.j86.java.nio.charset.Charset} class defines methods for creating
+<p> The {@link j86.java.nio.charset.Charset} class defines methods for creating
 coders for a given charset and for retrieving the various names associated with
 a charset.  It also defines static methods for testing whether a particular
 charset is supported, for locating charset instances by name, and for
@@ -72,8 +72,8 @@ classes in order to allow explicit charset objects to be specified in the
 construction of instances of those classes.
 
 <p> Support for new charsets can be made available via the interface defined in
-the {@link j86.j86.j86.java.nio.charset.spi.CharsetProvider} class in the <tt>{@link
-j86.j86.j86.java.nio.charset.spi}</tt> package.
+the {@link j86.java.nio.charset.spi.CharsetProvider} class in the <tt>{@link
+j86.java.nio.charset.spi}</tt> package.
 
 <p> Unless otherwise noted, passing a <tt>null</tt> argument to a constructor
 or method in any class or interface in this package will cause a {@link

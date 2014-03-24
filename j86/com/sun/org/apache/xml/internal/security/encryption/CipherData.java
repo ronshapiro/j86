@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
+package j86.com.sun.org.apache.xml.internal.security.encryption;
 
 /**
  * <code>CipherData</code> provides encrypted data. It must either contain the

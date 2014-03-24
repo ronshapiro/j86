@@ -23,26 +23,26 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Font;
 import j86.java.awt.Shape;
 import j86.java.awt.BasicStroke;
 import j86.java.awt.Polygon;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.RoundRectangle2D;
-import j86.j86.java.awt.geom.Ellipse2D;
-import j86.j86.java.awt.geom.Arc2D;
-import j86.j86.java.awt.geom.IllegalPathStateException;
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.font.GlyphVector;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.RoundRectangle2D;
+import j86.java.awt.geom.Ellipse2D;
+import j86.java.awt.geom.Arc2D;
+import j86.java.awt.geom.IllegalPathStateException;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.font.GlyphVector;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.FontInfo;
-import j86.j86.sun.java2d.loops.DrawPolygons;
-import j86.j86.sun.java2d.loops.FillParallelogram;
-import j86.j86.sun.java2d.loops.DrawParallelogram;
+import j86.sun.java2d.loops.FontInfo;
+import j86.sun.java2d.loops.DrawPolygons;
+import j86.sun.java2d.loops.FillParallelogram;
+import j86.sun.java2d.loops.DrawParallelogram;
 import j86.sun.awt.SunHints;
 
 public class LoopPipe
@@ -333,7 +333,7 @@ public class LoopPipe
             // REMIND: Region.filter produces a Java-only iterator
             // with no native counterpart...
         } else {
-            j86.j86.sun.java2d.loops.FillSpans fs = sg2d.loops.fillSpansLoop;
+            j86.sun.java2d.loops.FillSpans fs = sg2d.loops.fillSpansLoop;
             if (fs != null) {
                 fs.FillSpans(sg2d, sg2d.getSurfaceData(), si);
                 return;

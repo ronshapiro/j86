@@ -25,7 +25,7 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 
 /**
  * Indicates that a method declaration is intended to override a

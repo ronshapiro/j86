@@ -25,14 +25,14 @@
 
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.j86.java.lang.reflect.AnnotatedElement;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.j86.java.lang.reflect.UndeclaredThrowableException;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.reflect.AnnotatedElement;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.UndeclaredThrowableException;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.HashMap;
@@ -50,13 +50,13 @@ import j86.javax.management.MBeanInfo;
 import j86.javax.management.NotCompliantMBeanException;
 
 import j86.com.sun.jmx.remote.util.EnvHelp;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.AccessController;
 import j86.javax.management.AttributeNotFoundException;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.javax.management.openmbean.CompositeData;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class contains the methods for performing all the tests needed to verify

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.annotation;
+package j86.sun.reflect.annotation;
 
 import j86.sun.misc.JavaLangAccess;
 
-import j86.j86.java.lang.annotation.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.annotation.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

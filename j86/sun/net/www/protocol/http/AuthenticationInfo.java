@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
@@ -31,7 +31,7 @@ import j86.java.net.PasswordAuthentication;
 import j86.java.net.URL;
 import j86.java.util.HashMap;
 
-import j86.j86.sun.net.www.HeaderParser;
+import j86.sun.net.www.HeaderParser;
 
 
 /**

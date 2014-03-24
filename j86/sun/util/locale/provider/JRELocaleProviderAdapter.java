@@ -23,31 +23,31 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.io.File;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.java.text.spi.BreakIteratorProvider;
-import j86.j86.java.text.spi.CollatorProvider;
-import j86.j86.java.text.spi.DateFormatProvider;
-import j86.j86.java.text.spi.DateFormatSymbolsProvider;
-import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.BreakIteratorProvider;
+import j86.java.text.spi.CollatorProvider;
+import j86.java.text.spi.DateFormatProvider;
+import j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.HashSet;
 import j86.java.util.Locale;
 import j86.java.util.Set;
 import j86.java.util.StringTokenizer;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.spi.CalendarDataProvider;
-import j86.j86.java.util.spi.CalendarNameProvider;
-import j86.j86.java.util.spi.CurrencyNameProvider;
-import j86.j86.java.util.spi.LocaleNameProvider;
-import j86.j86.java.util.spi.LocaleServiceProvider;
-import j86.j86.java.util.spi.TimeZoneNameProvider;
-import j86.j86.sun.util.resources.LocaleData;
-import j86.j86.sun.util.spi.CalendarProvider;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.spi.CalendarDataProvider;
+import j86.java.util.spi.CalendarNameProvider;
+import j86.java.util.spi.CurrencyNameProvider;
+import j86.java.util.spi.LocaleNameProvider;
+import j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.TimeZoneNameProvider;
+import j86.sun.util.resources.LocaleData;
+import j86.sun.util.spi.CalendarProvider;
 
 /**
  * LocaleProviderAdapter implementation for the legacy JRE locale data.
@@ -128,7 +128,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     private volatile CalendarProvider calendarProvider = null;
 
     /*
-     * Getter methods for j86.j86.java.text.spi.* providers
+     * Getter methods for j86.java.text.spi.* providers
      */
     @Override
     public BreakIteratorProvider getBreakIteratorProvider() {
@@ -214,7 +214,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     }
 
     /**
-     * Getter methods for j86.j86.java.util.spi.* providers
+     * Getter methods for j86.java.util.spi.* providers
      */
     @Override
     public CurrencyNameProvider getCurrencyNameProvider() {
@@ -289,7 +289,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
     }
 
     /**
-     * Getter methods for j86.j86.sun.util.spi.* providers
+     * Getter methods for j86.sun.util.spi.* providers
      */
     @Override
     public CalendarProvider getCalendarProvider() {
@@ -333,7 +333,7 @@ public class JRELocaleProviderAdapter extends LocaleProviderAdapter implements R
 
     /**
      * Returns a list of the installed locales. Currently, this simply returns
-     * the list of locales for which a j86.j86.sun.text.resources.FormatData bundle
+     * the list of locales for which a j86.sun.text.resources.FormatData bundle
      * exists. This bundle family happens to be the one with the broadest
      * locale coverage in the JRE.
      */

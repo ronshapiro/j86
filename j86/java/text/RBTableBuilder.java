@@ -43,7 +43,7 @@ import j86.sun.text.UCompactIntArray;
 import j86.sun.text.IntHashtable;
 import j86.sun.text.ComposedCharIter;
 import j86.sun.text.CollatorUtilities;
-import j86.j86.sun.text.normalizer.NormalizerImpl;
+import j86.sun.text.normalizer.NormalizerImpl;
 
 /**
  * This class contains all the code to parse a RuleBasedCollator pattern

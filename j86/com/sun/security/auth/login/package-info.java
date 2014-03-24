@@ -24,4 +24,4 @@
  */
 
 @jdk.Exported
-package j86.j86.com.sun.security.auth.login;
+package j86.com.sun.security.auth.login;

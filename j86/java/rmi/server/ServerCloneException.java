@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 /**
  * A <code>ServerCloneException</code> is thrown if a remote exception occurs
@@ -42,7 +42,7 @@ package j86.j86.java.rmi.server;
  *
  * @author  Ann Wollrath
  * @since   JDK1.1
- * @see     j86.j86.java.rmi.server.UnicastRemoteObject#clone()
+ * @see     j86.java.rmi.server.UnicastRemoteObject#clone()
  */
 public class ServerCloneException extends CloneNotSupportedException {
 

@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.tree;
+package j86.jdk.internal.org.objectweb.asm.tree;
 
 import j86.java.util.List;
 
@@ -95,7 +95,7 @@ public class TryCatchBlockNode {
      * list is a list of {@link TypeAnnotationNode} objects. May be
      * <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label visible
      */
     public List<TypeAnnotationNode> visibleTypeAnnotations;
@@ -105,7 +105,7 @@ public class TryCatchBlockNode {
      * This list is a list of {@link TypeAnnotationNode} objects. May be
      * <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label invisible
      */
     public List<TypeAnnotationNode> invisibleTypeAnnotations;

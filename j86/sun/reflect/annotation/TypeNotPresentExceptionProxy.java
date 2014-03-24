@@ -23,8 +23,8 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.annotation;
-import j86.j86.java.lang.annotation.*;
+package j86.sun.reflect.annotation;
+import j86.java.lang.annotation.*;
 
 /**
  * ExceptionProxy for TypeNotPresentException.

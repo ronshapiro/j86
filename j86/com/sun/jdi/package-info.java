@@ -32,7 +32,7 @@
  * is typically created by using the
  * {@link j86.com.sun.jdi.VirtualMachineManager} to create
  * a connection to the target virtual machine (see the
- * {@link j86.j86.com.sun.jdi.connect} package).  In turn the
+ * {@link j86.com.sun.jdi.connect} package).  In turn the
  * {@link j86.com.sun.jdi.VirtualMachineManager} is typically created by calling
  * {@link j86.com.sun.jdi.Bootstrap#virtualMachineManager()}.
  * <p>

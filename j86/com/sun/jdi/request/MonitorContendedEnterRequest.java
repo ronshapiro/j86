@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -31,15 +31,15 @@ import j86.com.sun.jdi.*;
  * Request for notification of a thread in the target VM
  * attempting to enter a monitor already acquired by another thread.
  * When an enabled MonitorContededEnterRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
- * {@link j86.j86.com.sun.jdi.event.MonitorContendedEnterEvent MonitorContendedEnterEvent}
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.com.sun.jdi.event.MonitorContendedEnterEvent MonitorContendedEnterEvent}
  * will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing MonitorContendedEnterEvents is
  * managed by the {@link EventRequestManager}
  *
- * @see j86.j86.com.sun.jdi.event.MonitorContendedEnterEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.MonitorContendedEnterEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Swamy Venkataramanappa

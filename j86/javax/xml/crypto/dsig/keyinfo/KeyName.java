@@ -25,7 +25,7 @@
 /*
  * $Id: KeyName.java,v 1.4 2005/05/10 16:35:35 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
+package j86.javax.xml.crypto.dsig.keyinfo;
 
 import j86.javax.xml.crypto.XMLStructure;
 

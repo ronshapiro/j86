@@ -25,8 +25,8 @@
 
 package j86.sun.misc;
 
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.ReferenceQueue;
 
 import j86.java.util.Iterator;
 import j86.java.util.Map;
@@ -40,7 +40,7 @@ import j86.java.util.NoSuchElementException;
 /**
  * A memory-sensitive implementation of the <code>Map</code> interface.
  *
- * <p> A <code>SoftCache</code> object uses {@link j86.j86.java.lang.ref.SoftReference
+ * <p> A <code>SoftCache</code> object uses {@link j86.java.lang.ref.SoftReference
  * soft references} to implement a memory-sensitive hash map.  If the garbage
  * collector determines at a certain point in time that a value object in a
  * <code>SoftCache</code> entry is no longer strongly reachable, then it may
@@ -98,7 +98,7 @@ import j86.java.util.NoSuchElementException;
  * @author      Mark Reinhold
  * @since       1.2
  * @see         j86.java.util.HashMap
- * @see         j86.j86.java.lang.ref.SoftReference
+ * @see         j86.java.lang.ref.SoftReference
  */
 
 

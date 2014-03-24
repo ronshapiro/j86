@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
-import j86.j86.javax.swing.undo.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.undo.*;
+import j86.javax.swing.text.*;
 
 /**
  * Interface for document change notifications.  This provides
@@ -36,7 +36,7 @@ import j86.j86.javax.swing.text.*;
  * removed).
  *
  * @author  Timothy Prinzing
- * @see j86.j86.javax.swing.text.Document
+ * @see j86.javax.swing.text.Document
  * @see DocumentListener
  */
 public interface DocumentEvent {

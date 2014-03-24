@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.sun.invoke.util.Wrapper;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.sun.invoke.util.Wrapper;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Objects;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.sun.invoke.util.BytecodeDescriptor;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import j86.j86.sun.invoke.util.VerifyType;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.sun.invoke.util.BytecodeDescriptor;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import j86.sun.invoke.util.VerifyType;
 
 /**
  * A method type represents the arguments and return type accepted and

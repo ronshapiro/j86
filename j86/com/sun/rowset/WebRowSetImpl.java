@@ -34,11 +34,11 @@ import j86.java.text.*;
 
 import org.xml.sax.*;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
 
-import j86.j86.com.sun.rowset.providers.*;
-import j86.j86.com.sun.rowset.internal.*;
+import j86.com.sun.rowset.providers.*;
+import j86.com.sun.rowset.internal.*;
 
 /**
  * The standard implementation of the <code>WebRowSet</code> interface. See the interface
@@ -115,7 +115,7 @@ public class WebRowSetImpl extends CachedRowSetImpl implements WebRowSet {
         }
 
         String providerName =
-            (String)env.get(j86.j86.j86.javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
+            (String)env.get(j86.javax.sql.rowset.spi.SyncFactory.ROWSET_SYNC_PROVIDER);
 
         // set the Reader, this maybe overridden latter
         provider = SyncFactory.getInstance(providerName);

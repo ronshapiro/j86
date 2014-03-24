@@ -160,7 +160,7 @@
       </uiproperties>
    </style>
    <components>
-      <uiComponent opaque="false" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+      <uiComponent opaque="false" type="j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -5817,7 +5817,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="ComboBox.arrowButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="ArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="ComboBox.arrowButton" type="j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="ArrowButtonUI" subregion="true">
                <stateTypes>
                   <stateType key="Enabled"/>
                   <stateType key="MouseOver"/>
@@ -8790,7 +8790,7 @@
             </uiIconRegion>
          </regions>
       </uiComponent>
-      <uiComponent opaque="false" type="j86.j86.j86.javax.swing.plaf.synth.SynthInternalFrameTitlePane" name="InternalFrameTitlePane" ui="ComponentUI" subregion="false">
+      <uiComponent opaque="false" type="j86.javax.swing.plaf.synth.SynthInternalFrameTitlePane" name="InternalFrameTitlePane" ui="ComponentUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>
@@ -16930,7 +16930,7 @@
          <foregroundStates/>
          <borderStates/>
          <regions>
-            <uiComponent opaque="false" componentName="ScrollBar.button" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="ScrollBar.button" type="j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -19637,7 +19637,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="Spinner.previousButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="Spinner.previousButton" type="j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -20439,7 +20439,7 @@
                <borderStates/>
                <regions/>
             </uiComponent>
-            <uiComponent opaque="false" componentName="Spinner.nextButton" type="j86.j86.j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
+            <uiComponent opaque="false" componentName="Spinner.nextButton" type="j86.javax.swing.plaf.synth.SynthArrowButton" name="ArrowButton" ui="SynthArrowButtonUI" subregion="true">
                <stateTypes/>
                <contentMargins top="0" bottom="0" left="0" right="0"/>
                <style>
@@ -23088,7 +23088,7 @@
             </uiComponent>
          </regions>
       </uiComponent>
-      <uiComponent opaque="true" type="j86.j86.javax.swing.table.JTableHeader" name="TableHeader" ui="TableHeaderUI" subregion="false">
+      <uiComponent opaque="true" type="j86.javax.swing.table.JTableHeader" name="TableHeader" ui="TableHeaderUI" subregion="false">
          <stateTypes/>
          <contentMargins top="0" bottom="0" left="0" right="0"/>
          <style>

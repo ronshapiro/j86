@@ -40,7 +40,7 @@ package j86.sun.misc;
 import j86.java.io.IOException;
 import j86.java.net.URLClassLoader;
 import j86.java.util.*;
-import j86.j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarFile;
 
 public class ClassLoaderUtil {
 

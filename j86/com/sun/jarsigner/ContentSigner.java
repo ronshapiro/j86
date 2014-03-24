@@ -27,7 +27,7 @@ package j86.com.sun.jarsigner;
 
 import j86.java.io.IOException;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateException;
 
 /**
  * This class defines a content signing service.

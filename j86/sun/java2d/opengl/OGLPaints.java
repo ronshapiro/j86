@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
 import j86.java.awt.GradientPaint;
 import j86.java.awt.LinearGradientPaint;
@@ -32,14 +32,14 @@ import j86.java.awt.MultipleGradientPaint.ColorSpaceType;
 import j86.java.awt.MultipleGradientPaint.CycleMethod;
 import j86.java.awt.RadialGradientPaint;
 import j86.java.awt.TexturePaint;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.CompositeType;
-import static j86.j86.sun.java2d.pipe.BufferedPaints.*;
-import static j86.j86.sun.java2d.opengl.OGLContext.OGLContextCaps.*;
+import j86.sun.java2d.loops.CompositeType;
+import static j86.sun.java2d.pipe.BufferedPaints.*;
+import static j86.sun.java2d.opengl.OGLContext.OGLContextCaps.*;
 
 abstract class OGLPaints {
 

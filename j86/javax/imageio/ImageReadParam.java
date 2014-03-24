@@ -26,7 +26,7 @@
 package j86.javax.imageio;
 
 import j86.java.awt.Dimension;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 
 /**
  * A class describing how a stream is to be decoded.  Instances of

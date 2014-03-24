@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.sun.swing.SwingUtilities2;
 
 import j86.java.awt.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.*;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.*;
 
 /**
  * A collection of static utility methods used for rendering the Windows look

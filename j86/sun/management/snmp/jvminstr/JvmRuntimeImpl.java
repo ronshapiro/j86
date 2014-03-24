@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
 import j86.com.sun.jmx.mbeanserver.Util;
 import j86.java.io.Serializable;
-import j86.j86.java.lang.management.RuntimeMXBean;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.RuntimeMXBean;
+import j86.java.lang.management.ManagementFactory;
 import j86.java.util.List;
 import j86.java.util.Map;
 
@@ -41,11 +41,11 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRuntimeMBean;
-import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmRTBootClassPathSupport;
-import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
+import j86.sun.management.snmp.jvmmib.JvmRuntimeMBean;
+import j86.sun.management.snmp.jvmmib.EnumJvmRTBootClassPathSupport;
+import j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmRuntime" group.

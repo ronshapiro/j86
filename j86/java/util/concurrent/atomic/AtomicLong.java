@@ -33,14 +33,14 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
-import j86.j86.java.util.function.LongUnaryOperator;
-import j86.j86.java.util.function.LongBinaryOperator;
+package j86.java.util.concurrent.atomic;
+import j86.java.util.function.LongUnaryOperator;
+import j86.java.util.function.LongBinaryOperator;
 import j86.sun.misc.Unsafe;
 
 /**
  * A {@code long} value that may be updated atomically.  See the
- * {@link j86.j86.j86.java.util.concurrent.atomic} package specification for
+ * {@link j86.java.util.concurrent.atomic} package specification for
  * description of the properties of atomic variables. An
  * {@code AtomicLong} is used in applications such as atomically
  * incremented sequence numbers, and cannot be used as a replacement

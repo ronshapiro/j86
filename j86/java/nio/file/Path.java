@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 import j86.java.io.File;
 import j86.java.io.IOException;
@@ -77,7 +77,7 @@ import j86.java.util.Iterator;
  *
  * <a name="interop"></a><h2>Interoperability</h2>
  * <p> Paths associated with the default {@link
- * j86.j86.j86.java.nio.file.spi.FileSystemProvider provider} are generally interoperable
+ * j86.java.nio.file.spi.FileSystemProvider provider} are generally interoperable
  * with the {@link j86.java.io.File java.io.File} class. Paths created by other
  * providers are unlikely to be interoperable with the abstract path names
  * represented by {@code j86.java.io.File}. The {@link java.io.File#toPath toPath}

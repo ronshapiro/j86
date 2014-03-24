@@ -32,8 +32,8 @@ import j86.java.util.Properties;
 
 import j86.com.sun.jdi.Bootstrap;
 import j86.com.sun.jdi.VirtualMachine;
-import j86.j86.com.sun.jdi.connect.*;
-import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.spi.*;
 
 /*
  * An AttachingConnector that connects to a debuggee by specifying the process

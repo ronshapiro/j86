@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.HostnameVerifier
+ * NOTE:  this file was copied from j86.javax.net.ssl.HostnameVerifier
  */
 
 package com.j86.sun.net.ssl;
@@ -36,8 +36,8 @@ package com.j86.sun.net.ssl;
  * the server name from the certificate mismatch.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.HostnameVerifier} and
- *      {@link j86.j86.javax.net.ssl.CertificateHostnameVerifier}.
+ *      replaced by {@link j86.javax.net.ssl.HostnameVerifier} and
+ *      {@link j86.javax.net.ssl.CertificateHostnameVerifier}.
  */
 @Deprecated
 public interface HostnameVerifier {

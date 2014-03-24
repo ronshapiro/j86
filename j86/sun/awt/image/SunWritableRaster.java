@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Image;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferByte;
-import j86.j86.j86.java.awt.image.DataBufferUShort;
-import j86.j86.j86.java.awt.image.DataBufferInt;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferByte;
+import j86.java.awt.image.DataBufferUShort;
+import j86.java.awt.image.DataBufferInt;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.WritableRaster;
 
 import j86.sun.java2d.StateTrackable.State;
 import j86.sun.java2d.SurfaceData;

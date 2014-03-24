@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Component;
 import j86.java.awt.Container;
@@ -39,9 +39,9 @@ import j86.javax.swing.Icon;
 import j86.javax.swing.JComponent;
 import j86.javax.swing.JSeparator;
 import j86.javax.swing.JToolBar;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.j86.javax.swing.plaf.basic.BasicToolBarUI;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.basic.BasicToolBarUI;
+import j86.sun.swing.plaf.synth.SynthIcon;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

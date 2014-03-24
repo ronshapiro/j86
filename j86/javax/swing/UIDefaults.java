@@ -26,11 +26,11 @@
 package j86.javax.swing;
 
 
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.Enumeration;
@@ -44,15 +44,15 @@ import j86.java.awt.Font;
 import j86.java.awt.Color;
 import j86.java.awt.Insets;
 import j86.java.awt.Dimension;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.security.AccessController;
 import j86.java.security.AccessControlContext;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.util.CoreResourceBundleControl;
 
@@ -1144,7 +1144,7 @@ public class UIDefaults extends Hashtable<Object,Object>
                         types[i]=Integer.TYPE;
                     } else if (args[i] instanceof j86.java.lang.Boolean) {
                         types[i]=Boolean.TYPE;
-                    } else if (args[i] instanceof j86.j86.javax.swing.plaf.ColorUIResource) {
+                    } else if (args[i] instanceof j86.javax.swing.plaf.ColorUIResource) {
                         /* PENDING(ges) Currently the Reflection APIs do not
                            search superclasses of parameters supplied for
                            constructor/method lookup.  Since we only have

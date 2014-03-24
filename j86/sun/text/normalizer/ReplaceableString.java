@@ -35,7 +35,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 /**
  * <code>ReplaceableString</code> is an adapter class that implements the

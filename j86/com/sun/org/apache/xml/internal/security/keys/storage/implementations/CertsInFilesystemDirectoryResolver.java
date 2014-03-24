@@ -20,36 +20,36 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.storage.implementations;
 
 import j86.java.io.File;
 import j86.java.io.FileInputStream;
 import j86.java.io.FileNotFoundException;
 import j86.java.io.IOException;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.CertificateExpiredException;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.CertificateNotYetValidException;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateExpiredException;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertificateNotYetValidException;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
 
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverException;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * This {@link StorageResolverSpi} makes all raw (binary) {@link X509Certificate}s
  * which reside as files in a single directory available to the
- * {@link j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
+ * {@link j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver}.
  */
 public class CertsInFilesystemDirectoryResolver extends StorageResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(
             CertsInFilesystemDirectoryResolver.class.getName()
         );
 
@@ -120,20 +120,20 @@ public class CertsInFilesystemDirectoryResolver extends StorageResolverSpi {
                 dn = cert.getSubjectX500Principal().getName();
                 added = true;
             } catch (FileNotFoundException ex) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
                 }
             } catch (CertificateNotYetValidException ex) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
                 }
             } catch (CertificateExpiredException ex) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
                 }
             } catch (CertificateException ex) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
                 }
             } finally {
                 try {
@@ -141,14 +141,14 @@ public class CertsInFilesystemDirectoryResolver extends StorageResolverSpi {
                         fis.close();
                     }
                 } catch (IOException ex) {
-                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                        log.log(j86.j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
+                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.java.util.logging.Level.FINE, "Could not add certificate from file " + filename, ex);
                     }
                 }
             }
 
-            if (added && log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Added certificate: " + dn);
+            if (added && log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Added certificate: " + dn);
             }
         }
     }
@@ -213,7 +213,7 @@ public class CertsInFilesystemDirectoryResolver extends StorageResolverSpi {
         for (Iterator<Certificate> i = krs.getIterator(); i.hasNext(); ) {
             X509Certificate cert = (X509Certificate) i.next();
             byte[] ski =
-                j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI.getSKIBytesFromCert(cert);
+                j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI.getSKIBytesFromCert(cert);
 
             System.out.println();
             System.out.println("Base64(SKI())=                 \""

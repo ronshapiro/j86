@@ -26,24 +26,24 @@
 package j86.sun.rmi.server;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.net.ServerSocket;
 import j86.java.rmi.MarshalledObject;
 import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.activation.Activatable;
-import j86.j86.java.rmi.activation.ActivationDesc;
-import j86.j86.java.rmi.activation.ActivationException;
-import j86.j86.java.rmi.activation.ActivationGroup;
-import j86.j86.java.rmi.activation.ActivationGroupID;
-import j86.j86.java.rmi.activation.ActivationID;
-import j86.j86.java.rmi.activation.UnknownObjectException;
-import j86.j86.java.rmi.server.RMIClassLoader;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.RMISocketFactory;
-import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.activation.Activatable;
+import j86.java.rmi.activation.ActivationDesc;
+import j86.java.rmi.activation.ActivationException;
+import j86.java.rmi.activation.ActivationGroup;
+import j86.java.rmi.activation.ActivationGroupID;
+import j86.java.rmi.activation.ActivationID;
+import j86.java.rmi.activation.UnknownObjectException;
+import j86.java.rmi.server.RMIClassLoader;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RMISocketFactory;
+import j86.java.rmi.server.UnicastRemoteObject;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
@@ -57,7 +57,7 @@ import j86.sun.rmi.registry.RegistryImpl;
  *
  * @author      Ann Wollrath
  * @since       1.2
- * @see         j86.j86.java.rmi.activation.ActivationGroup
+ * @see         j86.java.rmi.activation.ActivationGroup
  */
 public class ActivationGroupImpl extends ActivationGroup {
 

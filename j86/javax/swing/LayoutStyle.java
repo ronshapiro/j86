@@ -25,7 +25,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.Container;
-import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.ComponentUI;
 import j86.sun.awt.AppContext;
 
 /**

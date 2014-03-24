@@ -36,7 +36,7 @@ import j86.java.net.SocketPermission;
 import j86.java.net.NetPermission;
 import j86.java.util.Hashtable;
 import j86.java.net.InetAddress;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.net.URL;
 
 import j86.sun.reflect.CallerSensitive;
@@ -144,7 +144,7 @@ import j86.sun.security.util.SecurityConstants;
  * <code>j86.java.lang.RuntimePermission</code>,
  * <code>j86.java.util.PropertyPermission</code>,
  * <code>j86.java.awt.AWTPermission</code>,
- * <code>j86.j86.j86.java.lang.reflect.ReflectPermission</code>, and
+ * <code>j86.java.lang.reflect.ReflectPermission</code>, and
  * <code>j86.java.io.SerializablePermission</code>.
  *
  * <p>All but the first two (FilePermission and SocketPermission) are
@@ -1695,7 +1695,7 @@ class SecurityManager {
      *             directly.  This method will be changed in a future release
      *             to check the permission {@code j86.java.security.AllPermission}.
      *
-     * @see j86.j86.j86.java.lang.reflect.Member
+     * @see j86.java.lang.reflect.Member
      * @since JDK1.1
      * @see        #checkPermission(j86.java.security.Permission) checkPermission
      */

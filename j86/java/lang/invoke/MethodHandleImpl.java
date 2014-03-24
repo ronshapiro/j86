@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.HashMap;
-import j86.j86.sun.invoke.empty.Empty;
-import j86.j86.sun.invoke.util.ValueConversions;
-import j86.j86.sun.invoke.util.VerifyType;
-import j86.j86.sun.invoke.util.Wrapper;
+import j86.sun.invoke.empty.Empty;
+import j86.sun.invoke.util.ValueConversions;
+import j86.sun.invoke.util.VerifyType;
+import j86.sun.invoke.util.Wrapper;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import static j86.j86.java.lang.invoke.LambdaForm.*;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import static j86.java.lang.invoke.LambdaForm.*;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * Trusted implementation code for MethodHandle.
@@ -470,7 +470,7 @@ import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
             int len = ((Object[])av).length;
             if (len == n)  return;
         } else {
-            int len = j86.j86.j86.java.lang.reflect.Array.getLength(av);
+            int len = j86.java.lang.reflect.Array.getLength(av);
             if (len == n)  return;
         }
         // fall through to error:

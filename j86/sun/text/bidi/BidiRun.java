@@ -37,7 +37,7 @@
  * (ported from C code written by Markus W. Scherer)
  */
 
-package j86.j86.sun.text.bidi;
+package j86.sun.text.bidi;
 
 /**
  * A BidiRun represents a sequence of characters at the same embedding level.

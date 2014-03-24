@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.print.event;
+package j86.javax.print.event;
 
 /**
   * Implementations of this listener interface are attached to a

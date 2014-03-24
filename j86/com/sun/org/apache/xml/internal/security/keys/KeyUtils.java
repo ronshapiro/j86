@@ -20,19 +20,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.keys;
+package j86.com.sun.org.apache.xml.internal.security.keys;
 
 import j86.java.io.PrintStream;
 import j86.java.security.PublicKey;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyName;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.KeyValue;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.MgmtData;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.KeyName;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.KeyValue;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.MgmtData;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
 
 /**
- * Utility class for for <CODE>j86.j86.com.sun.org.apache.xml.internal.security.keys</CODE> package.
+ * Utility class for for <CODE>j86.com.sun.org.apache.xml.internal.security.keys</CODE> package.
  *
  * @author $Author: coheigea $
  */

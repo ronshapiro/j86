@@ -28,10 +28,10 @@ package j86.sun.swing;
 import static j86.sun.swing.SwingUtilities2.BASICMENUITEMUI_MAX_TEXT_OFFSET;
 
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.plaf.basic.BasicHTML;
+import j86.javax.swing.text.View;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
 

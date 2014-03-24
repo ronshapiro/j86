@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.ComboBoxUI;
-import j86.j86.j86.javax.swing.plaf.basic.BasicComboPopup;
+import j86.javax.swing.plaf.ComboBoxUI;
+import j86.javax.swing.plaf.basic.BasicComboPopup;
 import j86.java.awt.*;
 
 

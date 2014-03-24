@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.anon;
+package j86.sun.invoke.anon;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.nio.BufferUnderflowException;
 import j86.java.nio.ByteBuffer;
 
-import static j86.j86.sun.invoke.anon.ConstantPoolVisitor.*;
+import static j86.sun.invoke.anon.ConstantPoolVisitor.*;
 
 /** A constant pool parser.
  */

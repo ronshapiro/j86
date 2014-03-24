@@ -37,8 +37,8 @@ package j86.javax.xml.crypto;
  * and state specific to the XML cryptographic structure it is used with.
  * The results are unpredictable if an <code>XMLCryptoContext</code> is
  * used with multiple structures (for example, you should not use the same
- * {@link j86.j86.javax.xml.crypto.dsig.XMLValidateContext} instance to validate two
- * different {@link j86.j86.javax.xml.crypto.dsig.XMLSignature} objects).
+ * {@link j86.javax.xml.crypto.dsig.XMLValidateContext} instance to validate two
+ * different {@link j86.javax.xml.crypto.dsig.XMLSignature} objects).
  *
  * @author Sean Mullan
  * @author JSR 105 Expert Group

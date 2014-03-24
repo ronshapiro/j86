@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.sun.security.krb5.*;
 import j86.java.io.IOException;
@@ -41,7 +41,7 @@ import j86.java.io.IOException;
  */
 public class CredentialsUtil {
 
-    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     /**
      * Used by a middle server to acquire credentials on behalf of a

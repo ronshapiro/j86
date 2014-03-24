@@ -26,7 +26,7 @@
 package j86.javax.crypto;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 import j86.java.nio.ByteBuffer;
 

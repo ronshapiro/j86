@@ -25,22 +25,22 @@
 
 package j86.sun.font;
 
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
 
 import j86.java.awt.FontMetrics;
 import j86.java.awt.Font;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.TextLayout;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
 import j86.sun.java2d.Disposer;
 import j86.sun.java2d.DisposerRecord;

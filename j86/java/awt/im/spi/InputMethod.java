@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.im.spi;
+package j86.java.awt.im.spi;
 
 import j86.java.util.Locale;
 import j86.java.awt.AWTEvent;
@@ -40,7 +40,7 @@ import j86.java.lang.Character.Subset;
  * <p>
  * Subclasses of InputMethod can be loaded by the input method framework; they
  * can then be selected either through the API
- * ({@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod})
+ * ({@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod})
  * or the user interface (the input method selection menu).
  *
  * @since 1.3
@@ -71,10 +71,10 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
+     * <li>by {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
      * <li>when switching to this input method through the user interface if the user
      *     specified a locale or if the previously selected input method's
-     *     {@link j86.j86.j86.java.awt.im.spi.InputMethod#getLocale getLocale} method
+     *     {@link j86.java.awt.im.spi.InputMethod#getLocale getLocale} method
      *     returns a non-null value.
      * </ul>
      *
@@ -89,7 +89,7 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#getLocale InputContext.getLocale} and
+     * <li>by {@link j86.java.awt.im.InputContext#getLocale InputContext.getLocale} and
      * <li>when switching from this input method to a different one through the
      *     user interface.
      * </ul>
@@ -107,7 +107,7 @@ public interface InputMethod {
      * <ul>
      * <li>immediately after instantiating this input method,
      * <li>when switching to this input method from a different one, and
-     * <li>by {@link j86.j86.java.awt.im.InputContext#setCharacterSubsets InputContext.setCharacterSubsets}.
+     * <li>by {@link j86.java.awt.im.InputContext#setCharacterSubsets InputContext.setCharacterSubsets}.
      * </ul>
      *
      * @param subsets the subsets of the Unicode character set from which
@@ -136,12 +136,12 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#setCompositionEnabled InputContext.setCompositionEnabled},
+     * <li>by {@link j86.java.awt.im.InputContext#setCompositionEnabled InputContext.setCompositionEnabled},
      * <li>when switching to this input method from a different one using the
      *     user interface or
-     *     {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
+     *     {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
      *     if the previously selected input method's
-     *     {@link j86.j86.j86.java.awt.im.spi.InputMethod#isCompositionEnabled isCompositionEnabled}
+     *     {@link j86.java.awt.im.spi.InputMethod#isCompositionEnabled isCompositionEnabled}
      *     method returns without throwing an exception.
      * </ul>
      *
@@ -160,10 +160,10 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#isCompositionEnabled InputContext.isCompositionEnabled} and
+     * <li>by {@link j86.java.awt.im.InputContext#isCompositionEnabled InputContext.isCompositionEnabled} and
      * <li>when switching from this input method to a different one using the
      *     user interface or
-     *     {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
+     *     {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
      * </ul>
      *
      * @return <code>true</code> if this input method is enabled for
@@ -177,7 +177,7 @@ public interface InputMethod {
     /**
      * Starts the reconversion operation. The input method obtains the
      * text to be reconverted from the current client component using the
-     * {@link j86.j86.java.awt.im.InputMethodRequests#getSelectedText InputMethodRequests.getSelectedText}
+     * {@link j86.java.awt.im.InputMethodRequests#getSelectedText InputMethodRequests.getSelectedText}
      * method. It can use other <code>InputMethodRequests</code>
      * methods to request additional information required for the
      * reconversion operation. The composed and committed text
@@ -187,7 +187,7 @@ public interface InputMethod {
      * client component as committed text.
      * <p>
      * This method is called by
-     * {@link j86.j86.java.awt.im.InputContext#reconvert() InputContext.reconvert}.
+     * {@link j86.java.awt.im.InputContext#reconvert() InputContext.reconvert}.
      *
      * @throws UnsupportedOperationException if the input method does not
      * support the reconversion operation.
@@ -208,7 +208,7 @@ public interface InputMethod {
      * subclasses.
      * This includes instances of the AWT classes KeyEvent and MouseEvent.
      * <p>
-     * This method is called by {@link j86.j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}.
+     * This method is called by {@link j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}.
      *
      * @param event the event being dispatched to the input method
      * @exception NullPointerException if <code>event</code> is null
@@ -223,7 +223,7 @@ public interface InputMethod {
      * InputMethodContext#enableClientWindowNotification
      * InputMethodContext.enableClientWindowNotification}). Calls
      * to this method are temporarily suspended if the input context's
-     * {@link j86.j86.java.awt.im.InputContext#removeNotify removeNotify}
+     * {@link j86.java.awt.im.InputContext#removeNotify removeNotify}
      * method is called, and resume when the input method is activated
      * for a new client component. It is called in the following
      * situations:
@@ -260,11 +260,11 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
+     * <li>by {@link j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
      *     when a client component receives a FOCUS_GAINED event,
      * <li>when switching to this input method from a different one using the
      *     user interface or
-     *     {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
+     *     {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
      * </ul>
      * The method is only called when the input method is inactive.
      * A newly instantiated input method is assumed to be inactive.
@@ -274,7 +274,7 @@ public interface InputMethod {
     /**
      * Deactivates the input method.
      * The isTemporary argument has the same meaning as in
-     * {@link j86.j86.java.awt.event.FocusEvent#isTemporary FocusEvent.isTemporary}.
+     * {@link j86.java.awt.event.FocusEvent#isTemporary FocusEvent.isTemporary}.
      * <p>
      * If an input method provides its own windows, only windows that relate
      * to the current composition (such as a lookup choice window) should be
@@ -288,11 +288,11 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
+     * <li>by {@link j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
      *     when a client component receives a FOCUS_LOST event,
      * <li>when switching from this input method to a different one using the
      *     user interface or
-     *     {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
+     *     {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod},
      * <li>before {@link #removeNotify removeNotify} if the current client component is
      *     removed.
      * </ul>
@@ -321,7 +321,7 @@ public interface InputMethod {
      * removed from its containment hierarchy, or that input method
      * support has been disabled for the component.
      * <p>
-     * This method is called by {@link j86.j86.java.awt.im.InputContext#removeNotify InputContext.removeNotify}.
+     * This method is called by {@link j86.java.awt.im.InputContext#removeNotify InputContext.removeNotify}.
      * <p>
      * The method is only called when the input method is inactive.
      */
@@ -341,12 +341,12 @@ public interface InputMethod {
      * <p>
      * This method is called
      * <ul>
-     * <li>by {@link j86.j86.java.awt.im.InputContext#endComposition InputContext.endComposition},
-     * <li>by {@link j86.j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
+     * <li>by {@link j86.java.awt.im.InputContext#endComposition InputContext.endComposition},
+     * <li>by {@link j86.java.awt.im.InputContext#dispatchEvent InputContext.dispatchEvent}
      *     when switching to a different client component
      * <li>when switching from this input method to a different one using the
      *     user interface or
-     *     {@link j86.j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
+     *     {@link j86.java.awt.im.InputContext#selectInputMethod InputContext.selectInputMethod}.
      * </ul>
      */
     public void endComposition();
@@ -356,7 +356,7 @@ public interface InputMethod {
      * In particular, the input method should dispose windows and close files that are no
      * longer needed.
      * <p>
-     * This method is called by {@link j86.j86.java.awt.im.InputContext#dispose InputContext.dispose}.
+     * This method is called by {@link j86.java.awt.im.InputContext#dispose InputContext.dispose}.
      * <p>
      * The method is only called when the input method is inactive.
      * No method of this interface is called on this instance after dispose.
@@ -373,7 +373,7 @@ public interface InputMethod {
      * provided.
      * <p>
      * This method is called by
-     * {@link j86.j86.java.awt.im.InputContext#getInputMethodControlObject InputContext.getInputMethodControlObject}.
+     * {@link j86.java.awt.im.InputContext#getInputMethodControlObject InputContext.getInputMethodControlObject}.
      *
      * @return a control object from this input method, or null
      */

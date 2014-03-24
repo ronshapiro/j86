@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.sun.security.util.Debug;
 
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Set;
-import j86.j86.java.security.cert.CertPath;
-import j86.j86.java.security.cert.CertPathValidatorException;
-import j86.j86.java.security.cert.PKIXCertPathChecker;
-import j86.j86.java.security.cert.PKIXReason;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertPath;
+import j86.java.security.cert.CertPathValidatorException;
+import j86.java.security.cert.PKIXCertPathChecker;
+import j86.java.security.cert.PKIXReason;
+import j86.java.security.cert.X509Certificate;
 
 /**
  * This class is initialized with a list of <code>PKIXCertPathChecker</code>s

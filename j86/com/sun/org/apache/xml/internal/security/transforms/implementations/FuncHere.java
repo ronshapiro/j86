@@ -20,13 +20,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
 import javax.xml.transform.TransformerException;
 
 import com.sun.org.apache.xml.internal.dtm.DTM;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import com.sun.org.apache.xpath.internal.NodeSetDTM;
 import com.sun.org.apache.xpath.internal.XPathContext;
 import com.sun.org.apache.xpath.internal.functions.Function;

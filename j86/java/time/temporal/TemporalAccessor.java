@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.temporal;
+package j86.java.time.temporal;
 
 import j86.java.time.DateTimeException;
 import j86.java.util.Objects;
@@ -79,7 +79,7 @@ import j86.java.util.Objects;
  * See {@link ChronoField} for the standard set of fields.
  * <p>
  * Two pieces of date/time information cannot be represented by numbers,
- * the {@linkplain j86.j86.java.time.chrono.Chronology chronology} and the
+ * the {@linkplain j86.java.time.chrono.Chronology chronology} and the
  * {@linkplain j86.java.time.ZoneId time-zone}.
  * These can be accessed via {@linkplain #query(TemporalQuery) queries} using
  * the static methods defined on {@link TemporalQuery}.
@@ -92,7 +92,7 @@ import j86.java.util.Objects;
  * around instances of concrete types, such as {@code LocalDate}.
  * There are many reasons for this, part of which is that implementations
  * of this interface may be in calendar systems other than ISO.
- * See {@link j86.j86.java.time.chrono.ChronoLocalDate} for a fuller discussion of the issues.
+ * See {@link j86.java.time.chrono.ChronoLocalDate} for a fuller discussion of the issues.
  *
  * @implSpec
  * This interface places no restrictions on the mutability of implementations,

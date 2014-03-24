@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -39,19 +39,19 @@ import j86.com.sun.jdi.*;
  * <P>
  * On VM termination, a single unsolicited VMDeathEvent
  * will always be sent with a
- * {@link j86.j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
- * of {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE SUSPEND_NONE}.
+ * {@link j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
+ * of {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE SUSPEND_NONE}.
  * Additional VMDeathEvents will be sent in the same event set if they are
  * requested with a
- * {@link j86.j86.com.sun.jdi.request.VMDeathRequest VMDeathRequest}.
+ * {@link j86.com.sun.jdi.request.VMDeathRequest VMDeathRequest}.
  * <P>
  * The VM is still intact and can be queried at the point this
  * event was initiated but immediately thereafter it is not
  * considered intact and cannot be queried.
  * Note: If the enclosing {@link EventSet} has a
- * {@link j86.j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
+ * {@link j86.com.sun.jdi.request.EventRequest#suspendPolicy() suspend policy}
  * other than
- * {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL}
+ * {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_ALL SUSPEND_ALL}
  * the initiating point may be long past.
  * <P>
  * All VMDeathEvents will be in a single {@link EventSet},
@@ -60,8 +60,8 @@ import j86.com.sun.jdi.*;
  * performs suspensions - in this case to allow proper shutdown.
  *
  * @see VMDisconnectEvent
- * @see j86.j86.com.sun.jdi.request.EventRequestManager#createVMDeathRequest
- * @see j86.j86.com.sun.jdi.request.VMDeathRequest
+ * @see j86.com.sun.jdi.request.EventRequestManager#createVMDeathRequest
+ * @see j86.com.sun.jdi.request.VMDeathRequest
  * @see EventQueue
  * @see VirtualMachine
  *

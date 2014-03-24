@@ -54,12 +54,12 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.chrono.ThaiBuddhistChronology.YEARS_DIFFERENCE;
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.chrono.ThaiBuddhistChronology.YEARS_DIFFERENCE;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.YEAR;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -73,15 +73,15 @@ import j86.java.time.LocalDate;
 import j86.java.time.LocalTime;
 import j86.java.time.Period;
 import j86.java.time.ZoneId;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Objects;
 
 /**
@@ -486,7 +486,7 @@ public final class ThaiBuddhistDate
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre>
      *  out.writeByte(10);                // identifies a ThaiBuddhistDate

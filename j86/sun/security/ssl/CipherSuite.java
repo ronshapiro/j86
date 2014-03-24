@@ -35,8 +35,8 @@ import j86.java.security.KeyManagementException;
 
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 
 import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
 import static j86.sun.security.ssl.CipherSuite.PRF.*;

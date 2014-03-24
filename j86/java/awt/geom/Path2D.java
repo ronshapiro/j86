@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.awt.Shape;
 import j86.java.awt.Rectangle;
-import j86.j86.sun.awt.geom.Curve;
+import j86.sun.awt.geom.Curve;
 import j86.java.io.Serializable;
 import j86.java.io.StreamCorruptedException;
 import j86.java.util.Arrays;

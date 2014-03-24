@@ -24,7 +24,7 @@
  */
 package j86.java.beans;
 
-import j86.j86.com.sun.beans.decoder.DocumentHandler;
+import j86.com.sun.beans.decoder.DocumentHandler;
 
 import j86.java.io.Closeable;
 import j86.java.io.InputStream;

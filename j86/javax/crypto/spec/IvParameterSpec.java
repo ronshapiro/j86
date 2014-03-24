@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.spec;
+package j86.javax.crypto.spec;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies an <i>initialization vector</i> (IV).

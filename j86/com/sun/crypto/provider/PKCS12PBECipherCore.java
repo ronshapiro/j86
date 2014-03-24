@@ -27,10 +27,10 @@ package j86.com.sun.crypto.provider;
 
 import j86.java.math.BigInteger;
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 import j86.java.util.Arrays;
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 /**
  * This class implements password-base encryption algorithm with
@@ -258,9 +258,9 @@ final class PKCS12PBECipherCore {
         char[] passwdChars = null;
         salt = null;
         iCount = 0;
-        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
-            j86.j86.javax.crypto.interfaces.PBEKey pbeKey =
-                (j86.j86.javax.crypto.interfaces.PBEKey) key;
+        if (key instanceof j86.javax.crypto.interfaces.PBEKey) {
+            j86.javax.crypto.interfaces.PBEKey pbeKey =
+                (j86.javax.crypto.interfaces.PBEKey) key;
             passwdChars = pbeKey.getPassword();
             salt = pbeKey.getSalt(); // maybe null if unspecified
             iCount = pbeKey.getIterationCount(); // maybe 0 if unspecified

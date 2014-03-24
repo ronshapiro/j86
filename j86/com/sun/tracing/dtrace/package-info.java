@@ -79,4 +79,4 @@
  * @see <a href="http://docs.sun.com/app/docs/doc/817-6223/6mlkidlnp?a=view">Solaris Dynamic Tracing Guide, Chapter 39: Stability</a>
  */
 
-package com.j86.j86.sun.tracing.dtrace;
+package com.j86.sun.tracing.dtrace;

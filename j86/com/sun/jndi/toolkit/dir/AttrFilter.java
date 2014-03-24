@@ -25,7 +25,7 @@
 package j86.com.sun.jndi.toolkit.dir;
 
 import j86.javax.naming.NamingException;
-import j86.j86.javax.naming.directory.Attributes;
+import j86.javax.naming.directory.Attributes;
 
 /**
   * Is implemented by classes that can perform filter checks on

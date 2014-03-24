@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
 import j86.javax.sql.RowSet;
 import j86.java.sql.SQLException;
@@ -52,7 +52,7 @@ import j86.java.sql.SQLException;
  * <code>RowSet</code> object (an implementation of the
  * <code>CachedRowSet</code> interface or one of its subinterfaces). For information
  * on the subinterfaces, see the
- * <a href="../package-summary.html"><code>j86.j86.javax.sql.rowset</code></a> package
+ * <a href="../package-summary.html"><code>j86.javax.sql.rowset</code></a> package
  * description. The reference implementation for <code>SyncResolver</code> implements
  * the <code>CachedRowSet</code> interface, but other implementations
  * may choose to implement the <code>JdbcRowSet</code> interface to satisfy

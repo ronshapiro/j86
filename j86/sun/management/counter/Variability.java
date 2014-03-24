@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.management.counter;
+package j86.sun.management.counter;
 
 /**
  * Provides a typesafe enumeration for the Variability attribute for

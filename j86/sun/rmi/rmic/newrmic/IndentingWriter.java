@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.rmi.rmic.newrmic;
+package j86.sun.rmi.rmic.newrmic;
 
 import j86.java.io.Writer;
 import j86.java.io.BufferedWriter;

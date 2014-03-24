@@ -41,10 +41,10 @@ package j86.java.util;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.IOException;
-import j86.j86.sun.util.calendar.CalendarSystem;
-import j86.j86.sun.util.calendar.CalendarUtils;
-import j86.j86.sun.util.calendar.BaseCalendar;
-import j86.j86.sun.util.calendar.Gregorian;
+import j86.sun.util.calendar.CalendarSystem;
+import j86.sun.util.calendar.CalendarUtils;
+import j86.sun.util.calendar.BaseCalendar;
+import j86.sun.util.calendar.Gregorian;
 
 /**
  * <code>SimpleTimeZone</code> is a concrete subclass of <code>TimeZone</code>

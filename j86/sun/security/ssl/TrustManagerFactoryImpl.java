@@ -28,8 +28,8 @@ package j86.sun.security.ssl;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.javax.net.ssl.*;
+import j86.java.security.cert.*;
+import j86.javax.net.ssl.*;
 
 import j86.sun.security.validator.Validator;
 
@@ -144,23 +144,23 @@ abstract class TrustManagerFactoryImpl extends TrustManagerFactorySpi {
             @Override
             public Void run() throws Exception {
                 props.put("trustStore", System.getProperty(
-                                "j86.j86.javax.net.ssl.trustStore"));
+                                "j86.javax.net.ssl.trustStore"));
                 props.put("javaHome", System.getProperty(
                                         "java.home"));
                 props.put("trustStoreType", System.getProperty(
-                                "j86.j86.javax.net.ssl.trustStoreType",
+                                "j86.javax.net.ssl.trustStoreType",
                                 KeyStore.getDefaultType()));
                 props.put("trustStoreProvider", System.getProperty(
-                                "j86.j86.javax.net.ssl.trustStoreProvider", ""));
+                                "j86.javax.net.ssl.trustStoreProvider", ""));
                 props.put("trustStorePasswd", System.getProperty(
-                                "j86.j86.javax.net.ssl.trustStorePassword", ""));
+                                "j86.javax.net.ssl.trustStorePassword", ""));
                 return null;
             }
         });
 
         /*
          * Try:
-         *      j86.j86.javax.net.ssl.trustStore  (if this variable exists, stop)
+         *      j86.javax.net.ssl.trustStore  (if this variable exists, stop)
          *      jssecacerts
          *      cacerts
          *

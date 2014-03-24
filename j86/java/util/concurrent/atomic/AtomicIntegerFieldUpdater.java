@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
-import j86.j86.java.util.function.IntUnaryOperator;
-import j86.j86.java.util.function.IntBinaryOperator;
+package j86.java.util.concurrent.atomic;
+import j86.java.util.function.IntUnaryOperator;
+import j86.java.util.function.IntBinaryOperator;
 import j86.sun.misc.Unsafe;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Modifier;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
@@ -385,13 +385,13 @@ public abstract class AtomicIntegerFieldUpdater<T> {
                         }
                     });
                 modifiers = field.getModifiers();
-                j86.j86.sun.reflect.misc.ReflectUtil.ensureMemberAccess(
+                j86.sun.reflect.misc.ReflectUtil.ensureMemberAccess(
                     caller, tclass, null, modifiers);
                 ClassLoader cl = tclass.getClassLoader();
                 ClassLoader ccl = caller.getClassLoader();
                 if ((ccl != null) && (ccl != cl) &&
                     ((cl == null) || !isAncestor(cl, ccl))) {
-                  j86.j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(tclass);
+                  j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(tclass);
                 }
             } catch (PrivilegedActionException pae) {
                 throw new RuntimeException(pae.getException());

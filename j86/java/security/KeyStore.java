@@ -27,15 +27,15 @@ package j86.java.security;
 
 import j86.java.io.*;
 import j86.java.net.URI;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.java.util.*;
 import j86.javax.crypto.SecretKey;
 
 import j86.javax.security.auth.DestroyFailedException;
-import j86.j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.callback.*;
 
 /**
  * This class represents a storage facility for cryptographic
@@ -170,7 +170,7 @@ import j86.j86.javax.security.auth.callback.*;
  *
  * @see j86.java.security.PrivateKey
  * @see j86.javax.crypto.SecretKey
- * @see j86.j86.java.security.cert.Certificate
+ * @see j86.java.security.cert.Certificate
  *
  * @since 1.2
  */
@@ -1592,7 +1592,7 @@ public class KeyStore {
      * needed.
      *
      * @see KeyStore
-     * @see j86.j86.javax.net.ssl.KeyStoreBuilderParameters
+     * @see j86.javax.net.ssl.KeyStoreBuilderParameters
      * @since 1.5
      */
     public static abstract class Builder {

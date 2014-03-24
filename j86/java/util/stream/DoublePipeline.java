@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.DoubleSummaryStatistics;
 import j86.java.util.Objects;
@@ -30,18 +30,18 @@ import j86.java.util.OptionalDouble;
 import j86.java.util.PrimitiveIterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.DoubleBinaryOperator;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.function.DoubleFunction;
-import j86.j86.java.util.function.DoublePredicate;
-import j86.j86.java.util.function.DoubleToIntFunction;
-import j86.j86.java.util.function.DoubleToLongFunction;
-import j86.j86.java.util.function.DoubleUnaryOperator;
-import j86.j86.java.util.function.IntFunction;
-import j86.j86.java.util.function.ObjDoubleConsumer;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.DoubleBinaryOperator;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.function.DoubleFunction;
+import j86.java.util.function.DoublePredicate;
+import j86.java.util.function.DoubleToIntFunction;
+import j86.java.util.function.DoubleToLongFunction;
+import j86.java.util.function.DoubleUnaryOperator;
+import j86.java.util.function.IntFunction;
+import j86.java.util.function.ObjDoubleConsumer;
+import j86.java.util.function.Supplier;
 
 /**
  * Abstract base class for an intermediate pipeline stage or pipeline source

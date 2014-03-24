@@ -25,7 +25,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.util.Locale;
 import j86.java.util.Vector;
@@ -100,7 +100,7 @@ import j86.javax.accessibility.*;
  *
  * @see JRootPane
  * @see #setDefaultCloseOperation
- * @see j86.j86.java.awt.event.WindowListener#windowClosing
+ * @see j86.java.awt.event.WindowListener#windowClosing
  * @see j86.javax.swing.RootPaneContainer
  *
  * @beaninfo

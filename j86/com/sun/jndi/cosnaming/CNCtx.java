@@ -26,8 +26,8 @@
 package j86.com.sun.jndi.cosnaming;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.NamingManager;
-import j86.j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.spi.ResolveResult;
 
 import j86.java.util.Hashtable;
 import j86.java.net.MalformedURLException;

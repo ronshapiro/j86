@@ -69,7 +69,7 @@ public abstract class ProxySelector {
 
     static {
         try {
-            Class<?> c = Class.forName("j86.j86.sun.net.spi.DefaultProxySelector");
+            Class<?> c = Class.forName("j86.sun.net.spi.DefaultProxySelector");
             if (c != null && ProxySelector.class.isAssignableFrom(c)) {
                 theProxySelector = (ProxySelector) c.newInstance();
             }

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
 /**
  * Defines the permissions for use with the permissions component of an ACL

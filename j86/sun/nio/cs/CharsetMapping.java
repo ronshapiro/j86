@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.cs;
+package j86.sun.nio.cs;
 
 import j86.java.io.InputStream;
 import j86.java.io.InputStreamReader;
 import j86.java.io.OutputStream;
 import j86.java.io.BufferedReader;
 import j86.java.io.IOException;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
 import j86.java.util.*;
 import j86.java.security.*;
 

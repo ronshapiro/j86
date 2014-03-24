@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.multi;
+package j86.javax.swing.plaf.multi;
 
 import j86.java.util.Vector;
-import j86.j86.javax.swing.plaf.ListUI;
+import j86.javax.swing.plaf.ListUI;
 import j86.javax.swing.JList;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.ComponentUI;
 import j86.javax.swing.JComponent;
 import j86.java.awt.Graphics;
 import j86.java.awt.Dimension;

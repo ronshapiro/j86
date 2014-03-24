@@ -30,14 +30,14 @@
  * @COPYRIGHT_MINI_LEGAL_NOTICE_PLACEHOLDER@
  */
 
-package j86.j86.sun.management.jmxremote;
+package j86.sun.management.jmxremote;
 
 import j86.java.rmi.AccessException;
 import j86.java.rmi.NotBoundException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
 
 import j86.sun.rmi.registry.RegistryImpl;
 

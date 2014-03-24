@@ -39,7 +39,7 @@ import j86.java.util.Map;
  */
 
 @jdk.Exported
-public interface ThreadMXBean extends j86.j86.java.lang.management.ThreadMXBean {
+public interface ThreadMXBean extends j86.java.lang.management.ThreadMXBean {
     /**
      * Returns the total CPU time for each thread whose ID is
      * in the input array {@code ids} in nanoseconds.

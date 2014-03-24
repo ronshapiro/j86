@@ -26,7 +26,7 @@
 package j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 
 /**
  * A class to encapsulate a custom image-based cursor.

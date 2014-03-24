@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>j86.j86.javax.management.openmbean package</title>
+<title>j86.javax.management.openmbean package</title>
 <!--
 Copyright (c) 2001, 2011, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -40,22 +40,22 @@ questions.
       MBeanInfo} with information about the MBean itself, and its
       attributes, operations, constructors, and notifications.  In an
       Open MBean, this <code>MBeanInfo</code> implements the {@link
-      j86.j86.javax.management.openmbean.OpenMBeanInfo OpenMBeanInfo}
+      j86.javax.management.openmbean.OpenMBeanInfo OpenMBeanInfo}
       interface, usually by being an instance of {@link
-      j86.j86.javax.management.openmbean.OpenMBeanInfoSupport
+      j86.javax.management.openmbean.OpenMBeanInfoSupport
       OpenMBeanInfoSupport}.</p>
 
     <p>The attribute information returned by {@link
       j86.javax.management.MBeanInfo#getAttributes()
       MBeanInfo.getAttributes} for an Open MBean is an array of
       objects implementing {@link
-      j86.j86.javax.management.openmbean.OpenMBeanAttributeInfo
+      j86.javax.management.openmbean.OpenMBeanAttributeInfo
       OpenMBeanAttributeInfo}, usually instances of {@link
-      j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport
+      j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport
       OpenMBeanAttributeInfoSupport}.  In addition to the usual
       information about attributes, an
       <code>OpenMBeanAttributeInfo</code> specifies the {@link
-      j86.j86.javax.management.openmbean.OpenType OpenType} of the attribute.
+      j86.javax.management.openmbean.OpenType OpenType} of the attribute.
       The possible <code>OpenType</code> values are predefined, which
       is what ensures that remote managers will understand them.</p>
 
@@ -66,14 +66,14 @@ questions.
       type, as returned by {@link
       j86.javax.management.MBeanAttributeInfo#getType() getType()}, and
       its <code>OpenType</code>, as returned by {@link
-      j86.j86.javax.management.openmbean.OpenMBeanAttributeInfo#getOpenType()
+      j86.javax.management.openmbean.OpenMBeanAttributeInfo#getOpenType()
       getOpenType()}.  For example, if the Java language type is
       <code>j86.java.lang.String</code>, the <code>OpenType</code> will be
-      {@link j86.j86.javax.management.openmbean.SimpleType#STRING
+      {@link j86.javax.management.openmbean.SimpleType#STRING
       SimpleType.String}.  If the Java language type is {@link
-      j86.j86.javax.management.openmbean.CompositeData}, the
+      j86.javax.management.openmbean.CompositeData}, the
       <code>OpenType</code> will be a {@link
-      j86.j86.javax.management.openmbean.CompositeType CompositeType} that
+      j86.javax.management.openmbean.CompositeType CompositeType} that
       describes the items in the <code>CompositeData</code> instances
       for the attribute.</p>
 
@@ -87,7 +87,7 @@ questions.
       constructors of {@code OpenMBeanAttributeInfoSupport} or
       {@code OpenMBeanParameterInfoSupport}, for example
       {@link
-      j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport#OpenMBeanParameterInfoSupport(
+      j86.javax.management.openmbean.OpenMBeanParameterInfoSupport#OpenMBeanParameterInfoSupport(
       String, String, OpenType, Object, Object[])}; or the values are
       specified in a {@link j86.javax.management.Descriptor Descriptor} given
       as a parameter to one of the constructors.</p>
@@ -98,17 +98,17 @@ questions.
     <ul>
 
       <li>{@code defaultValue} defines the value returned by
-	{@link j86.j86.javax.management.openmbean.OpenMBeanParameterInfo#getDefaultValue()
+	{@link j86.javax.management.openmbean.OpenMBeanParameterInfo#getDefaultValue()
 	getDefaultValue()};
 
       <li>{@code minValue} defines the value returned by {@link
-	j86.j86.javax.management.openmbean.OpenMBeanParameterInfo#getMinValue() getMinValue()};
+	j86.javax.management.openmbean.OpenMBeanParameterInfo#getMinValue() getMinValue()};
 
       <li>{@code maxValue} defines the value returned by {@link
-	j86.j86.javax.management.openmbean.OpenMBeanParameterInfo#getMaxValue() getMaxValue()};
+	j86.javax.management.openmbean.OpenMBeanParameterInfo#getMaxValue() getMaxValue()};
 
       <li>{@code legalValues} defines the values returned by {@link
-	j86.j86.javax.management.openmbean.OpenMBeanParameterInfo#getLegalValues() getLegalValues()}.
+	j86.javax.management.openmbean.OpenMBeanParameterInfo#getLegalValues() getLegalValues()}.
 
     </ul>
 

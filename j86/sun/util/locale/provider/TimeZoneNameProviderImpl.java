@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.Locale;
 import j86.java.util.Set;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.spi.TimeZoneNameProvider;
+import j86.java.util.spi.TimeZoneNameProvider;
 
 /**
  * Concrete implementation of the
- * {@link j86.j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider} class
+ * {@link j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider} class
  * for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -87,7 +87,7 @@ public class TimeZoneNameProviderImpl extends TimeZoneNameProvider {
      *     given locale, or null if it's not available.
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or <code>locale</code> isn't one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>ID</code> or <code>locale</code>
      *     is null

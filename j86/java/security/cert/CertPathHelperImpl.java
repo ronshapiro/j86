@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.util.*;
 
-import j86.j86.sun.security.provider.certpath.CertPathHelper;
+import j86.sun.security.provider.certpath.CertPathHelper;
 
 import j86.sun.security.x509.GeneralNameInterface;
 

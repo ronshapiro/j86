@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.pool;
+package j86.com.sun.jndi.ldap.pool;
 
 import j86.java.util.ArrayList; // JDK 1.2
 import j86.java.util.List;
 import j86.java.util.Iterator;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.SoftReference;
 
 import j86.javax.naming.NamingException;
 import j86.javax.naming.InterruptedNamingException;

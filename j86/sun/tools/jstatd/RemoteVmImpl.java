@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jstatd;
+package j86.sun.tools.jstatd;
 
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.monitor.remote.*;
 
 /**
  * Concrete implementation of the RemoteVm interface for the HotSpot PerfData

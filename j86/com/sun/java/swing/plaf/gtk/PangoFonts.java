@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.java.awt.geom.AffineTransform;
+import j86.javax.swing.plaf.FontUIResource;
 import j86.java.util.StringTokenizer;
 
 import j86.sun.font.FontConfigManager;

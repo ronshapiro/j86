@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.PathIterator;
 import j86.sun.java2d.SunGraphics2D;
 
 /**

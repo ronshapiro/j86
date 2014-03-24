@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.sql.rowset.serial;
+package j86.javax.sql.rowset.serial;
 
 import j86.java.sql.*;
 import j86.java.util.Arrays;

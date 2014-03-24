@@ -25,7 +25,7 @@
 
 package j86.java.awt;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * The <code>Transparency</code> interface defines the common transparency

@@ -20,12 +20,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver;
+package j86.com.sun.org.apache.xml.internal.security.utils.resolver;
 
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 import org.w3c.dom.Attr;
 
 /**
@@ -36,8 +36,8 @@ import org.w3c.dom.Attr;
 public abstract class ResourceResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(ResourceResolverSpi.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(ResourceResolverSpi.class.getName());
 
     /** Field properties */
     protected j86.java.util.Map<String, String> properties = null;
@@ -216,8 +216,8 @@ public abstract class ResourceResolverSpi {
                 && (ch1 == ':') && (ch2 == '/')
                 && (ch3 != '/'));
 
-            if (isDosFilename && log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Found DOS filename: " + str);
+            if (isDosFilename && log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Found DOS filename: " + str);
             }
         }
 

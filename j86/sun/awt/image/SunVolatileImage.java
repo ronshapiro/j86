@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Color;
@@ -33,14 +33,14 @@ import j86.java.awt.Graphics2D;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.ImageCapabilities;
 import j86.java.awt.Transparency;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.VolatileImage;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceManagerFactory;
 import j86.sun.java2d.DestSurfaceProvider;
 import j86.sun.java2d.Surface;
-import static j86.j86.j86.sun.java2d.pipe.hw.AccelSurface.*;
+import static j86.sun.java2d.pipe.hw.AccelSurface.*;
 
 /**
  * This class is the base implementation of the VolatileImage

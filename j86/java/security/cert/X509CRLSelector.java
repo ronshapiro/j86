@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 import j86.java.util.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.DerInputStream;

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.proxy;
+package j86.sun.rmi.transport.proxy;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.IOException;

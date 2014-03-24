@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.io.Serializable;
 
@@ -678,8 +678,8 @@ public abstract class Arc2D extends RectangularShape {
      * type of {@link #OPEN}.  It is provided only to enable
      * serialization of subclasses.
      *
-     * @see j86.j86.java.awt.geom.Arc2D.Float
-     * @see j86.j86.java.awt.geom.Arc2D.Double
+     * @see j86.java.awt.geom.Arc2D.Float
+     * @see j86.java.awt.geom.Arc2D.Double
      */
     protected Arc2D() {
         this(OPEN);
@@ -694,8 +694,8 @@ public abstract class Arc2D extends RectangularShape {
      *
      * @param type The closure type of this arc:
      * {@link #OPEN}, {@link #CHORD}, or {@link #PIE}.
-     * @see j86.j86.java.awt.geom.Arc2D.Float
-     * @see j86.j86.java.awt.geom.Arc2D.Double
+     * @see j86.java.awt.geom.Arc2D.Float
+     * @see j86.java.awt.geom.Arc2D.Double
      * @since 1.2
      */
     protected Arc2D(int type) {

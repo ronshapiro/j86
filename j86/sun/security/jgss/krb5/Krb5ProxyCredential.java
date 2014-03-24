@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.org.ietf.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.java.util.Date;
-import j86.j86.sun.security.krb5.internal.Ticket;
+import j86.sun.security.krb5.internal.Ticket;
 
 /**
  * Implements the krb5 proxy credential element used in constrained

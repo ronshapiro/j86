@@ -38,7 +38,7 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.io.InvalidObjectException;
 import j86.java.text.AttributedCharacterIterator.Attribute;
@@ -52,7 +52,7 @@ import j86.java.util.HashMap;
  * <code>TextAttribute</code> instances are used as attribute keys to
  * identify attributes in
  * {@link j86.java.awt.Font Font},
- * {@link j86.j86.java.awt.font.TextLayout TextLayout},
+ * {@link j86.java.awt.font.TextLayout TextLayout},
  * {@link j86.java.text.AttributedCharacterIterator AttributedCharacterIterator},
  * and other classes handling text attributes. Other constants defined
  * in this class can be used as attribute values.
@@ -206,7 +206,7 @@ import j86.java.util.HashMap;
  * </tr>
  * <tr>
  * <td valign="TOP">{@link #INPUT_METHOD_HIGHLIGHT}</td>
- * <td valign="TOP">{@link j86.j86.java.awt.im.InputMethodHighlight},<br>{@link j86.java.text.Annotation}</td>
+ * <td valign="TOP">{@link j86.java.awt.im.InputMethodHighlight},<br>{@link j86.java.text.Annotation}</td>
  * <td valign="TOP">(see class)</td>
  * <td valign="TOP">null (do not apply input highlighting)</td>
  * </tr>
@@ -224,7 +224,7 @@ import j86.java.util.HashMap;
  * </tr>
  * <tr style="background-color:#eeeeff">
  * <td valign="TOP">{@link #NUMERIC_SHAPING}</td>
- * <td valign="TOP">{@link j86.j86.java.awt.font.NumericShaper}</td>
+ * <td valign="TOP">{@link j86.java.awt.font.NumericShaper}</td>
  * <td valign="TOP">none</td>
  * <td valign="TOP">null (do not shape digits)</td>
  * </tr>
@@ -249,7 +249,7 @@ import j86.java.util.HashMap;
  * </table>
  *
  * @see j86.java.awt.Font
- * @see j86.j86.java.awt.font.TextLayout
+ * @see j86.java.awt.font.TextLayout
  * @see j86.java.text.AttributedCharacterIterator
  */
 public final class TextAttribute extends Attribute {
@@ -573,7 +573,7 @@ public final class TextAttribute extends Attribute {
      * TextLayout#getLayoutPath}.</p>
      *
      * @see TransformAttribute
-     * @see j86.j86.java.awt.geom.AffineTransform
+     * @see j86.java.awt.geom.AffineTransform
      */
      public static final TextAttribute TRANSFORM =
         new TextAttribute("transform");
@@ -893,7 +893,7 @@ public final class TextAttribute extends Attribute {
      * Attribute key for input method highlight styles.
      *
      * <p>Values are instances of {@link
-     * j86.j86.java.awt.im.InputMethodHighlight} or {@link
+     * j86.java.awt.im.InputMethodHighlight} or {@link
      * j86.java.text.Annotation}.  The default value is <code>null</code>,
      * which means that input method styles should not be applied
      * before rendering.
@@ -909,7 +909,7 @@ public final class TextAttribute extends Attribute {
      * text, and make them available to the drawing routines.
      *
      * @see j86.java.awt.Font
-     * @see j86.j86.java.awt.im.InputMethodHighlight
+     * @see j86.java.awt.im.InputMethodHighlight
      * @see j86.java.text.Annotation
      */
     public static final TextAttribute INPUT_METHOD_HIGHLIGHT =

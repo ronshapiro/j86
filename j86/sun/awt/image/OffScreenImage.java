@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.awt.Component;
 import j86.java.awt.Color;
@@ -32,10 +32,10 @@ import j86.java.awt.Font;
 import j86.java.awt.Graphics;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.WritableRaster;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
 

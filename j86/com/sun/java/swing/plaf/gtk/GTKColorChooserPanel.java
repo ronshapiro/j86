@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.event.*;
+import j86.java.awt.image.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.colorchooser.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.colorchooser.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * A color chooser panel mimicking that of GTK's: a color wheel showing

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.*;
 import j86.java.net.URI;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.security.cert.*;
+import j86.javax.security.auth.x500.X500Principal;
 import j86.java.util.*;
 
 import j86.sun.security.util.Debug;

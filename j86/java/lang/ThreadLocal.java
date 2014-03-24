@@ -24,10 +24,10 @@
  */
 
 package j86.java.lang;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 import j86.java.util.Objects;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.function.Supplier;
 
 /**
  * This class provides thread-local variables.  These variables differ from
@@ -42,7 +42,7 @@ import j86.j86.java.util.function.Supplier;
  * A thread's id is assigned the first time it invokes {@code ThreadId.get()}
  * and remains unchanged on subsequent calls.
  * <pre>
- * import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+ * import j86.java.util.concurrent.atomic.AtomicInteger;
  *
  * public class ThreadId {
  *     // Atomic integer containing the next thread ID to be assigned
@@ -143,7 +143,7 @@ public class ThreadLocal<T> {
 
     /**
      * Creates a thread local variable.
-     * @see #withInitial(j86.j86.java.util.function.Supplier)
+     * @see #withInitial(j86.java.util.function.Supplier)
      */
     public ThreadLocal() {
     }

@@ -26,14 +26,14 @@
 package j86.java.util;
 
 import j86.java.net.NetworkInterface;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.LongConsumer;
-import j86.j86.java.util.function.DoubleConsumer;
-import j86.j86.java.util.stream.StreamSupport;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.LongStream;
-import j86.j86.java.util.stream.DoubleStream;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.LongConsumer;
+import j86.java.util.function.DoubleConsumer;
+import j86.java.util.stream.StreamSupport;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.LongStream;
+import j86.java.util.stream.DoubleStream;
 
 /**
  * A generator of uniform pseudorandom values applicable for use in
@@ -65,7 +65,7 @@ import j86.j86.java.util.stream.DoubleStream;
  *
  * <li>Instances of SplittableRandom are <em>not</em> thread-safe.
  * They are designed to be split, not shared, across threads. For
- * example, a {@link j86.j86.java.util.concurrent.ForkJoinTask
+ * example, a {@link j86.java.util.concurrent.ForkJoinTask
  * fork/join-style} computation using random numbers might include a
  * construction of the form {@code new
  * Subtask(aSplittableRandom.split()).fork()}.

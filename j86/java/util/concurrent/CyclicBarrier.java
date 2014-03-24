@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+package j86.java.util.concurrent;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.ReentrantLock;
 
 /**
  * A synchronization aid that allows a set of threads to all wait for

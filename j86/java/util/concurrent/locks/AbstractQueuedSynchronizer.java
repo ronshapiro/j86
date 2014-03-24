@@ -33,8 +33,8 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.locks;
-import j86.j86.java.util.concurrent.TimeUnit;
+package j86.java.util.concurrent.locks;
+import j86.java.util.concurrent.TimeUnit;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
 import j86.java.util.Date;
@@ -181,7 +181,7 @@ import j86.sun.misc.Unsafe;
  * synchronizers that can rely on {@code int} state, acquire, and
  * release parameters, and an internal FIFO wait queue. When this does
  * not suffice, you can build synchronizers from a lower level using
- * {@link j86.j86.j86.java.util.concurrent.atomic atomic} classes, your own custom
+ * {@link j86.java.util.concurrent.atomic atomic} classes, your own custom
  * {@link j86.java.util.Queue} classes, and {@link LockSupport} blocking
  * support.
  *
@@ -254,7 +254,7 @@ import j86.sun.misc.Unsafe;
  * }}</pre>
  *
  * <p>Here is a latch class that is like a
- * {@link j86.j86.java.util.concurrent.CountDownLatch CountDownLatch}
+ * {@link j86.java.util.concurrent.CountDownLatch CountDownLatch}
  * except that it only requires a single {@code signal} to
  * fire. Because a latch is non-exclusive, it uses the {@code shared}
  * acquire and release methods.

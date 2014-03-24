@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.jar;
+package j86.sun.net.www.protocol.jar;
 
 import j86.java.io.*;
 import j86.java.net.*;
-import j86.j86.java.util.jar.*;
+import j86.java.util.jar.*;
 
 
 /*

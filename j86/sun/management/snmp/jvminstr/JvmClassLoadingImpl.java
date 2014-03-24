@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
 import j86.java.io.Serializable;
 
-import j86.j86.java.lang.management.ClassLoadingMXBean;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.ClassLoadingMXBean;
+import j86.java.lang.management.ManagementFactory;
 // jmx imports
 //
 import j86.javax.management.MBeanServer;
@@ -38,11 +38,11 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmClassLoadingMBean;
-import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmClassesVerboseLevel;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.jvmmib.JvmClassLoadingMBean;
+import j86.sun.management.snmp.jvmmib.EnumJvmClassesVerboseLevel;
+import j86.sun.management.snmp.util.MibLogger;
 
 /**
  * The class is used for implementing the "JvmClassLoading" group.

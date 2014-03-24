@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 /**
  * <p>A Java class can implement this interface to indicate how it is

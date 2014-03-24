@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
 import j86.java.io.Serializable;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
-import j86.j86.javax.swing.event.TableModelEvent;
+import j86.javax.swing.event.TableModelEvent;
 
 
 /**

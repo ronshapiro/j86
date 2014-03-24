@@ -197,7 +197,7 @@ public class ByteArrayOutputStream extends OutputStream {
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with the default replacement string for the platform's
-     * default character set. The {@linkplain j86.j86.java.nio.charset.CharsetDecoder}
+     * default character set. The {@linkplain j86.java.nio.charset.CharsetDecoder}
      * class should be used when more control over the decoding process is
      * required.
      *
@@ -210,17 +210,17 @@ public class ByteArrayOutputStream extends OutputStream {
 
     /**
      * Converts the buffer's contents into a string by decoding the bytes using
-     * the named {@link j86.j86.java.nio.charset.Charset charset}. The length of the new
+     * the named {@link j86.java.nio.charset.Charset charset}. The length of the new
      * <tt>String</tt> is a function of the charset, and hence may not be equal
      * to the length of the byte array.
      *
      * <p> This method always replaces malformed-input and unmappable-character
      * sequences with this charset's default replacement string. The {@link
-     * j86.j86.java.nio.charset.CharsetDecoder} class should be used when more control
+     * j86.java.nio.charset.CharsetDecoder} class should be used when more control
      * over the decoding process is required.
      *
      * @param      charsetName  the name of a supported
-     *             {@link j86.j86.java.nio.charset.Charset charset}
+     *             {@link j86.java.nio.charset.Charset charset}
      * @return     String decoded from the buffer's contents.
      * @exception  UnsupportedEncodingException
      *             If the named charset is not supported

@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.parser;
+package j86.com.sun.tools.hat.internal.parser;
 
 import j86.java.io.*;
-import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.com.sun.tools.hat.internal.model.*;
 
 /**
  * Abstract base class for reading object dump files.  A reader need not be

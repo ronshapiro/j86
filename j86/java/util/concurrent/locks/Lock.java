@@ -33,8 +33,8 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.locks;
-import j86.j86.java.util.concurrent.TimeUnit;
+package j86.java.util.concurrent.locks;
+import j86.java.util.concurrent.TimeUnit;
 
 /**
  * {@code Lock} implementations provide more extensive locking

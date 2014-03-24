@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
 import j86.java.util.HashMap;
 import j86.java.util.Map;

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.awt.Component;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 
-import j86.j86.j86.java.awt.dnd.peer.DropTargetContextPeer;
+import j86.java.awt.dnd.peer.DropTargetContextPeer;
 
 import j86.java.io.IOException;
 import j86.java.io.Serializable;
@@ -328,7 +328,7 @@ public class DropTargetContext implements Serializable {
          *        the result of local drag-n-drop operation
          */
         TransferableProxy(Transferable t, boolean local) {
-            proxy = new j86.j86.sun.awt.datatransfer.TransferableProxy(t, local);
+            proxy = new j86.sun.awt.datatransfer.TransferableProxy(t, local);
             transferable = t;
             isLocal      = local;
         }
@@ -398,7 +398,7 @@ public class DropTargetContext implements Serializable {
          */
         protected boolean       isLocal;
 
-        private j86.j86.sun.awt.datatransfer.TransferableProxy proxy;
+        private j86.sun.awt.datatransfer.TransferableProxy proxy;
     }
 
 /****************************************************************************/

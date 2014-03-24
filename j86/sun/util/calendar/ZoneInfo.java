@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.util.calendar;
+package j86.sun.util.calendar;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.security.AccessController;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;

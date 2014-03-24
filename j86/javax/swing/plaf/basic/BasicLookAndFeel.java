@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.java.awt.Font;
 import j86.java.awt.Color;
 import j86.java.awt.SystemColor;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.awt.Insets;
 import j86.java.awt.Component;
 import j86.java.awt.Container;
@@ -43,7 +43,7 @@ import j86.java.awt.KeyboardFocusManager;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.javax.sound.sampled.*;
 
 import j86.sun.awt.AppContext;
@@ -69,10 +69,10 @@ import j86.javax.swing.LayoutFocusTraversalPolicy;
 import j86.javax.swing.SwingUtilities;
 import j86.javax.swing.MenuSelectionManager;
 import j86.javax.swing.MenuElement;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.JTextComponent;
-import j86.j86.javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.DefaultEditorKit;
 import j86.javax.swing.JInternalFrame;
 import j86.java.beans.PropertyVetoException;
 import j86.java.awt.Window;
@@ -217,9 +217,9 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
      * Populates {@code table} with mappings from {@code uiClassID} to the
      * fully qualified name of the ui class. The value for a
      * particular {@code uiClassID} is {@code
-     * "j86.j86.j86.javax.swing.plaf.basic.Basic + uiClassID"}. For example, the
+     * "j86.javax.swing.plaf.basic.Basic + uiClassID"}. For example, the
      * value for the {@code uiClassID} {@code TreeUI} is {@code
-     * "j86.j86.j86.javax.swing.plaf.basic.BasicTreeUI"}.
+     * "j86.javax.swing.plaf.basic.BasicTreeUI"}.
      *
      * @param table the {@code UIDefaults} instance the entries are
      *        added to
@@ -230,7 +230,7 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
      */
     protected void initClassDefaults(UIDefaults table)
     {
-        final String basicPackageName = "j86.j86.j86.javax.swing.plaf.basic.";
+        final String basicPackageName = "j86.javax.swing.plaf.basic.";
         Object[] uiDefaults = {
                    "ButtonUI", basicPackageName + "BasicButtonUI",
                  "CheckBoxUI", basicPackageName + "BasicCheckBoxUI",
@@ -463,23 +463,23 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
         Integer fontPlain = new Integer(Font.PLAIN);
         Integer fontBold = new Integer(Font.BOLD);
         Object dialogPlain12 = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.FontUIResource",
+                          "j86.javax.swing.plaf.FontUIResource",
                           null,
                           new Object[] {Font.DIALOG, fontPlain, twelve});
         Object serifPlain12 = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.FontUIResource",
+                          "j86.javax.swing.plaf.FontUIResource",
                           null,
                           new Object[] {Font.SERIF, fontPlain, twelve});
         Object sansSerifPlain12 =  new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.FontUIResource",
+                          "j86.javax.swing.plaf.FontUIResource",
                           null,
                           new Object[] {Font.SANS_SERIF, fontPlain, twelve});
         Object monospacedPlain12 = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.FontUIResource",
+                          "j86.javax.swing.plaf.FontUIResource",
                           null,
                           new Object[] {Font.MONOSPACED, fontPlain, twelve});
         Object dialogBold12 = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.FontUIResource",
+                          "j86.javax.swing.plaf.FontUIResource",
                           null,
                           new Object[] {Font.DIALOG, fontBold, twelve});
 
@@ -515,30 +515,30 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         // *** Shared Borders
         Object marginBorder = new SwingLazyValue(
-                          "j86.j86.j86.javax.swing.plaf.basic.BasicBorders$MarginBorder");
+                          "j86.javax.swing.plaf.basic.BasicBorders$MarginBorder");
         Object etchedBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource",
                           "getEtchedBorderUIResource");
         Object loweredBevelBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource",
                           "getLoweredBevelBorderUIResource");
 
         Object popupMenuBorder = new SwingLazyValue(
-                          "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                          "j86.javax.swing.plaf.basic.BasicBorders",
                           "getInternalFrameBorder");
 
         Object blackLineBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource",
                           "getBlackLineBorderUIResource");
         Object focusCellHighlightBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$LineBorderUIResource",
                           null,
                           new Object[] {yellow});
 
         Object noFocusBorder = new BorderUIResource.EmptyBorderUIResource(1,1,1,1);
 
         Object tableHeaderBorder = new SwingLazyValue(
-                          "j86.j86.javax.swing.plaf.BorderUIResource$BevelBorderUIResource",
+                          "j86.javax.swing.plaf.BorderUIResource$BevelBorderUIResource",
                           null,
                           new Object[] { new Integer(BevelBorder.RAISED),
                                          controlLtHighlight,
@@ -551,17 +551,17 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Object buttonBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getButtonBorder");
 
         Object buttonToggleBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getToggleButtonBorder");
 
         Object radioButtonBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getRadioButtonBorder");
 
         // *** FileChooser / FileView value objects
@@ -601,7 +601,7 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
         // *** InternalFrame value objects
 
         Object internalFrameBorder = new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                "j86.javax.swing.plaf.basic.BasicBorders",
                 "getInternalFrameBorder");
 
         // *** List value objects
@@ -617,43 +617,43 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Object menuBarBorder =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                "j86.javax.swing.plaf.basic.BasicBorders",
                 "getMenuBarBorder");
 
         Object menuItemCheckIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getMenuItemCheckIcon");
 
         Object menuItemArrowIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getMenuItemArrowIcon");
 
 
         Object menuArrowIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getMenuArrowIcon");
 
         Object checkBoxIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getCheckBoxIcon");
 
         Object radioButtonIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getRadioButtonIcon");
 
         Object checkBoxMenuItemIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getCheckBoxMenuItemIcon");
 
         Object radioButtonMenuItemIcon =
             new SwingLazyValue(
-                "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                "j86.javax.swing.plaf.basic.BasicIconFactory",
                 "getRadioButtonMenuItemIcon");
 
         Object menuItemAcceleratorDelimiter = "+";
@@ -664,16 +664,16 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Integer zero =  new Integer(0);
         Object zeroBorder = new SwingLazyValue(
-                           "j86.j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
+                           "j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
                            new Object[] {zero, zero, zero, zero});
 
         Integer ten = new Integer(10);
         Object optionPaneBorder = new SwingLazyValue(
-                           "j86.j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
+                           "j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
                            new Object[] {ten, ten, twelve, ten});
 
         Object optionPaneButtonAreaBorder = new SwingLazyValue(
-                           "j86.j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
+                           "j86.javax.swing.plaf.BorderUIResource$EmptyBorderUIResource",
                            new Object[] {new Integer(6), zero, zero, zero});
 
 
@@ -681,7 +681,7 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Object progressBarBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getProgressBarBorder");
 
         // ** ScrollBar value objects
@@ -700,11 +700,11 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Object splitPaneBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getSplitPaneBorder");
         Object splitPaneDividerBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getSplitPaneDividerBorder");
 
         // ** TabbedBane value objects
@@ -722,7 +722,7 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
 
         Object textFieldBorder =
             new SwingLazyValue(
-                            "j86.j86.j86.javax.swing.plaf.basic.BasicBorders",
+                            "j86.javax.swing.plaf.basic.BasicBorders",
                             "getTextFieldBorder");
 
         Object editorMargin = threeInsets;
@@ -899,19 +899,19 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
             /* Default frame icons are undefined for Basic. */
             "InternalFrame.maximizeIcon",
             new SwingLazyValue(
-                           "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                           "j86.javax.swing.plaf.basic.BasicIconFactory",
                            "createEmptyFrameIcon"),
             "InternalFrame.minimizeIcon",
             new SwingLazyValue(
-                           "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                           "j86.javax.swing.plaf.basic.BasicIconFactory",
                            "createEmptyFrameIcon"),
             "InternalFrame.iconifyIcon",
             new SwingLazyValue(
-                           "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                           "j86.javax.swing.plaf.basic.BasicIconFactory",
                            "createEmptyFrameIcon"),
             "InternalFrame.closeIcon",
             new SwingLazyValue(
-                           "j86.j86.j86.javax.swing.plaf.basic.BasicIconFactory",
+                           "j86.javax.swing.plaf.basic.BasicIconFactory",
                            "createEmptyFrameIcon"),
             // InternalFrame Auditory Cue Mappings
             "InternalFrame.closeSound", null,
@@ -1576,11 +1576,11 @@ public abstract class BasicLookAndFeel extends LookAndFeel implements Serializab
                  "ctrl shift PAGE_DOWN", "scrollLeftExtendSelection",
                  }),
             "Table.ascendingSortIcon",  new SwingLazyValue(
-                     "j86.j86.sun.swing.icon.SortArrowIcon",
+                     "j86.sun.swing.icon.SortArrowIcon",
                      null, new Object[] { Boolean.TRUE,
                                           "Table.sortIconColor" }),
             "Table.descendingSortIcon",  new SwingLazyValue(
-                     "j86.j86.sun.swing.icon.SortArrowIcon",
+                     "j86.sun.swing.icon.SortArrowIcon",
                      null, new Object[] { Boolean.FALSE,
                                           "Table.sortIconColor" }),
             "Table.sortIconColor", controlShadow,

@@ -29,10 +29,10 @@ import j86.java.io.File;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.java.util.Locale;
-import j86.j86.javax.imageio.spi.ImageInputStreamSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
-import j86.j86.javax.imageio.stream.FileCacheImageInputStream;
-import j86.j86.javax.imageio.stream.MemoryCacheImageInputStream;
+import j86.javax.imageio.spi.ImageInputStreamSpi;
+import j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.FileCacheImageInputStream;
+import j86.javax.imageio.stream.MemoryCacheImageInputStream;
 
 public class InputStreamImageInputStreamSpi extends ImageInputStreamSpi {
 

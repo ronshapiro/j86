@@ -30,14 +30,14 @@ import j86.java.io.File;
 import j86.java.io.FileInputStream;
 import j86.java.io.FileOutputStream;
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.java.util.Enumeration;
 import j86.java.util.Properties;
 import j86.java.util.Vector;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * The main entry point into AppletViewer.

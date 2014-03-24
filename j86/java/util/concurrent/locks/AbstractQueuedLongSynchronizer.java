@@ -33,8 +33,8 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.locks;
-import j86.j86.java.util.concurrent.TimeUnit;
+package j86.java.util.concurrent.locks;
+import j86.java.util.concurrent.TimeUnit;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
 import j86.java.util.Date;

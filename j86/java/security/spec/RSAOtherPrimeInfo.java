@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 import j86.java.math.BigInteger;
 
@@ -45,7 +45,7 @@ import j86.java.math.BigInteger;
  *
  *
  * @see RSAPrivateCrtKeySpec
- * @see j86.j86.java.security.interfaces.RSAMultiPrimePrivateCrtKey
+ * @see j86.java.security.interfaces.RSAMultiPrimePrivateCrtKey
  *
  * @since 1.4
  */

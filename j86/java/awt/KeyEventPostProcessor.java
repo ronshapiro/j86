@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 
 
 /**

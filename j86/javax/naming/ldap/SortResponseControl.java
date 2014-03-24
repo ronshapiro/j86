@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.naming.ldap;
+package j86.javax.naming.ldap;
 
 import j86.java.io.IOException;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 import j86.com.sun.jndi.ldap.Ber;
 import j86.com.sun.jndi.ldap.BerDecoder;
 import j86.com.sun.jndi.ldap.LdapCtx;

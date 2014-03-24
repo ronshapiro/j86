@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 /**
  * <p>This class represents the user object of the nodes in the MBean tree.</p>

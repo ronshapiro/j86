@@ -25,7 +25,7 @@
 
 package j86.sun.rmi.server;
 
-import j86.j86.java.rmi.activation.ActivationException;
+import j86.java.rmi.activation.ActivationException;
 
 /**
  * Thrown if a local or remote call is made on a group implementation

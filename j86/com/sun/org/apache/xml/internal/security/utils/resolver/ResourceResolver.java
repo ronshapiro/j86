@@ -20,17 +20,17 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver;
+package j86.com.sun.org.apache.xml.internal.security.utils.resolver;
 
 import j86.java.util.ArrayList;
 import j86.java.util.List;
 import j86.java.util.Map;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverDirectHTTP;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverFragment;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverLocalFilesystem;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverXPointer;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverDirectHTTP;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverFragment;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverLocalFilesystem;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverXPointer;
 import org.w3c.dom.Attr;
 
 /**
@@ -42,8 +42,8 @@ import org.w3c.dom.Attr;
 public class ResourceResolver {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(ResourceResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(ResourceResolver.class.getName());
 
     /** these are the system-wide resolvers */
     private static List<ResourceResolver> resolverList = new ArrayList<ResourceResolver>();
@@ -107,8 +107,8 @@ public class ResourceResolver {
                     }
                 }
 
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE,
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE,
                         "check resolvability by class " + resolverTmp.getClass().getName()
                     );
                 }
@@ -164,8 +164,8 @@ public class ResourceResolver {
     public static ResourceResolver getInstance(
         Attr uri, String baseURI, List<ResourceResolver> individualResolvers, boolean secureValidation
     ) throws ResourceResolverException {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE,
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE,
                 "I was asked to create a ResourceResolver and got "
                 + (individualResolvers == null ? 0 : individualResolvers.size())
             );
@@ -179,9 +179,9 @@ public class ResourceResolver {
                 ResourceResolver resolver = individualResolvers.get(i);
 
                 if (resolver != null) {
-                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
+                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
                         String currentClass = resolver.resolverSpi.getClass().getName();
-                        log.log(j86.j86.java.util.logging.Level.FINE, "check resolvability by class " + currentClass);
+                        log.log(j86.java.util.logging.Level.FINE, "check resolvability by class " + currentClass);
                     }
 
                     if (resolver.canResolve(context)) {
@@ -207,7 +207,7 @@ public class ResourceResolver {
                 (Class<ResourceResolverSpi>) Class.forName(className);
             register(resourceResolverClass, false);
         } catch (ClassNotFoundException e) {
-            log.log(j86.j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
+            log.log(j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
         }
     }
 
@@ -224,7 +224,7 @@ public class ResourceResolver {
                 (Class<ResourceResolverSpi>) Class.forName(className);
             register(resourceResolverClass, true);
         } catch (ClassNotFoundException e) {
-            log.log(j86.j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
+            log.log(j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
         }
     }
 
@@ -239,9 +239,9 @@ public class ResourceResolver {
             ResourceResolverSpi resourceResolverSpi = className.newInstance();
             register(resourceResolverSpi, start);
         } catch (IllegalAccessException e) {
-            log.log(j86.j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
+            log.log(j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
         } catch (InstantiationException e) {
-            log.log(j86.j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
+            log.log(j86.java.util.logging.Level.WARNING, "Error loading resolver " + className + " disabling it");
         }
     }
 
@@ -259,8 +259,8 @@ public class ResourceResolver {
                 resolverList.add(new ResourceResolver(resourceResolverSpi));
             }
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Registered resolver: " + resourceResolverSpi.toString());
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Registered resolver: " + resourceResolverSpi.toString());
         }
     }
 

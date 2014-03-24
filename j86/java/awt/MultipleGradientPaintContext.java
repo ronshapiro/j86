@@ -27,19 +27,19 @@ package j86.java.awt;
 
 import j86.java.awt.MultipleGradientPaint.CycleMethod;
 import j86.java.awt.MultipleGradientPaint.ColorSpaceType;
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.DataBufferInt;
-import j86.j86.j86.java.awt.image.DirectColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.DataBufferInt;
+import j86.java.awt.image.DirectColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.SinglePixelPackedSampleModel;
+import j86.java.awt.image.WritableRaster;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.Arrays;
 
 /**

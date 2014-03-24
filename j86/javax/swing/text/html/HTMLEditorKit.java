@@ -22,24 +22,24 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.sun.awt.AppContext;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.*;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.TextUI;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.TextUI;
 import j86.java.util.*;
 import j86.javax.accessibility.*;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 /**
  * The Swing JEditorPane text component supports different kinds
@@ -590,7 +590,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
     protected Parser getParser() {
         if (defaultParser == null) {
             try {
-                Class c = Class.forName("j86.j86.j86.j86.javax.swing.text.html.parser.ParserDelegator");
+                Class c = Class.forName("j86.javax.swing.text.html.parser.ParserDelegator");
                 defaultParser = (Parser) c.newInstance();
             } catch (Throwable e) {
             }
@@ -985,7 +985,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * information on the contents of the AttributeSets, the positions, and
      * other info.
      *
-     * @see j86.j86.j86.j86.javax.swing.text.html.parser.DocumentParser
+     * @see j86.javax.swing.text.html.parser.DocumentParser
      */
     public static class ParserCallback {
         /**
@@ -1042,23 +1042,23 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * </tr><tr>
      * <td>HTML.Tag.CONTENT<td>InlineView
      * </tr><tr>
-     * <td>HTML.Tag.IMPLIED<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.IMPLIED<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.P<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.P<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H1<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H1<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H2<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H2<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H3<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H3<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H4<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H4<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H5<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H5<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.H6<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.H6<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
-     * <td>HTML.Tag.DT<td>j86.j86.j86.javax.swing.text.html.ParagraphView
+     * <td>HTML.Tag.DT<td>j86.javax.swing.text.html.ParagraphView
      * </tr><tr>
      * <td>HTML.Tag.MENU<td>ListView
      * </tr><tr>
@@ -1096,7 +1096,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
      * </tr><tr>
      * <td>HTML.Tag.BR<td>BRView
      * </tr><tr>
-     * <td>HTML.Tag.TABLE<td>j86.j86.j86.javax.swing.text.html.TableView
+     * <td>HTML.Tag.TABLE<td>j86.javax.swing.text.html.TableView
      * </tr><tr>
      * <td>HTML.Tag.INPUT<td>FormView
      * </tr><tr>
@@ -1136,7 +1136,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                     if ((ws != null) && ws.equals("pre")) {
                         return new LineView(elem);
                     }
-                    return new j86.j86.j86.javax.swing.text.html.ParagraphView(elem);
+                    return new j86.javax.swing.text.html.ParagraphView(elem);
                 } else if ((kind == HTML.Tag.P) ||
                            (kind == HTML.Tag.H1) ||
                            (kind == HTML.Tag.H2) ||
@@ -1146,7 +1146,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                            (kind == HTML.Tag.H6) ||
                            (kind == HTML.Tag.DT)) {
                     // paragraph
-                    return new j86.j86.j86.javax.swing.text.html.ParagraphView(elem);
+                    return new j86.javax.swing.text.html.ParagraphView(elem);
                 } else if ((kind == HTML.Tag.MENU) ||
                            (kind == HTML.Tag.DIR) ||
                            (kind == HTML.Tag.UL)   ||
@@ -1177,7 +1177,7 @@ public class HTMLEditorKit extends StyledEditorKit implements Accessible {
                 } else if (kind == HTML.Tag.BR) {
                     return new BRView(elem);
                 } else if (kind == HTML.Tag.TABLE) {
-                    return new j86.j86.j86.javax.swing.text.html.TableView(elem);
+                    return new j86.javax.swing.text.html.TableView(elem);
                 } else if ((kind == HTML.Tag.INPUT) ||
                            (kind == HTML.Tag.SELECT) ||
                            (kind == HTML.Tag.TEXTAREA)) {

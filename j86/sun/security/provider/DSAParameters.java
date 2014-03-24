@@ -28,9 +28,9 @@ package j86.sun.security.provider;
 import j86.java.io.*;
 import j86.java.math.BigInteger;
 import j86.java.security.AlgorithmParametersSpi;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.DSAParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.DSAParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.DerValue;
@@ -100,7 +100,7 @@ public class DSAParameters extends AlgorithmParametersSpi {
     {
             try {
                 Class<?> dsaParamSpec = Class.forName
-                    ("j86.j86.java.security.spec.DSAParameterSpec");
+                    ("j86.java.security.spec.DSAParameterSpec");
                 if (dsaParamSpec.isAssignableFrom(paramSpec)) {
                     return paramSpec.cast(
                             new DSAParameterSpec(this.p, this.q, this.g));

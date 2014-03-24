@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 /**
  * Implements the Windows95/98/ME/NT/2000 Look and Feel.

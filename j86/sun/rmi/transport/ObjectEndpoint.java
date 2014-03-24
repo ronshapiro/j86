@@ -24,7 +24,7 @@
  */
 package j86.sun.rmi.transport;
 
-import j86.j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.ObjID;
 
 /**
  * An object used as a key to the object table that maps an

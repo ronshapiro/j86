@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.tree;
+package j86.jdk.internal.org.objectweb.asm.tree;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
@@ -148,7 +148,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime visible annotations of this class. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label visible
      */
     public List<AnnotationNode> visibleAnnotations;
@@ -157,7 +157,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime invisible annotations of this class. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label invisible
      */
     public List<AnnotationNode> invisibleAnnotations;
@@ -166,7 +166,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime visible type annotations of this class. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label visible
      */
     public List<TypeAnnotationNode> visibleTypeAnnotations;
@@ -175,7 +175,7 @@ public class ClassNode extends ClassVisitor {
      * The runtime invisible type annotations of this class. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label invisible
      */
     public List<TypeAnnotationNode> invisibleTypeAnnotations;
@@ -192,7 +192,7 @@ public class ClassNode extends ClassVisitor {
      * Informations about the inner classes of this class. This list is a list
      * of {@link InnerClassNode} objects.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.InnerClassNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.InnerClassNode
      */
     public List<InnerClassNode> innerClasses;
 
@@ -200,7 +200,7 @@ public class ClassNode extends ClassVisitor {
      * The fields of this class. This list is a list of {@link FieldNode}
      * objects.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.FieldNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.FieldNode
      */
     public List<FieldNode> fields;
 
@@ -208,7 +208,7 @@ public class ClassNode extends ClassVisitor {
      * The methods of this class. This list is a list of {@link MethodNode}
      * objects.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.MethodNode
      */
     public List<MethodNode> methods;
 

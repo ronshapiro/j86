@@ -26,9 +26,9 @@
 package j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.*;
-import j86.j86.java.awt.peer.*;
+import j86.java.awt.event.*;
+import j86.java.awt.image.*;
+import j86.java.awt.peer.*;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.util.Set;
@@ -550,14 +550,14 @@ public abstract class EmbeddedFrame extends Frame
         public void setModalBlocked(Dialog blocker, boolean blocked) {}
 
         /**
-         * @see j86.j86.java.awt.peer.ContainerPeer#restack
+         * @see j86.java.awt.peer.ContainerPeer#restack
          */
         public void restack() {
             throw new UnsupportedOperationException();
         }
 
         /**
-         * @see j86.j86.java.awt.peer.ContainerPeer#isRestackSupported
+         * @see j86.java.awt.peer.ContainerPeer#isRestackSupported
          */
         public boolean isRestackSupported() {
             return false;

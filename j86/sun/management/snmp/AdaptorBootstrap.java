@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.management.snmp;
+package j86.sun.management.snmp;
 
-import j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
+import j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer;
 import j86.com.sun.jmx.snmp.InetAddressAcl;
-import j86.j86.com.sun.jmx.snmp.IPAcl.SnmpAcl;
-import j86.j86.j86.sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIB;
-import j86.j86.j86.sun.management.snmp.jvminstr.JVM_MANAGEMENT_MIB_IMPL;
-import j86.j86.j86.sun.management.snmp.jvminstr.NotificationTarget;
-import j86.j86.j86.sun.management.snmp.jvminstr.NotificationTargetImpl;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
-import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
+import j86.com.sun.jmx.snmp.IPAcl.SnmpAcl;
+import j86.sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIB;
+import j86.sun.management.snmp.jvminstr.JVM_MANAGEMENT_MIB_IMPL;
+import j86.sun.management.snmp.jvminstr.NotificationTarget;
+import j86.sun.management.snmp.jvminstr.NotificationTargetImpl;
+import j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.util.JvmContextFactory;
 
 import j86.sun.management.Agent;
 import j86.sun.management.AgentConfigurationError;
@@ -76,17 +76,17 @@ public final class AdaptorBootstrap {
      * Names of SNMP configuration properties.
      **/
     public static interface PropertyNames {
-        public static final String PORT="com.j86.j86.sun.management.snmp.port";
+        public static final String PORT="com.j86.sun.management.snmp.port";
         public static final String CONFIG_FILE_NAME=
             "com.j86.sun.management.config.file";
         public static final String TRAP_PORT=
-            "com.j86.j86.sun.management.snmp.trap";
+            "com.j86.sun.management.snmp.trap";
         public static final String USE_ACL=
-            "com.j86.j86.sun.management.snmp.acl";
+            "com.j86.sun.management.snmp.acl";
         public static final String ACL_FILE_NAME=
-            "com.j86.j86.sun.management.snmp.acl.file";
+            "com.j86.sun.management.snmp.acl.file";
         public static final String BIND_ADDRESS=
-            "com.j86.j86.sun.management.snmp.interface";
+            "com.j86.sun.management.snmp.interface";
     }
 
     /**
@@ -151,7 +151,7 @@ public final class AdaptorBootstrap {
 
     /**
      * Initializes and starts the SNMP Adaptor Server.
-     * If the com.j86.j86.sun.management.snmp.port property is not defined,
+     * If the com.j86.sun.management.snmp.port property is not defined,
      * simply return. Otherwise, attempts to load the config file, and
      * then calls {@link #initialize(j86.java.lang.String, j86.java.util.Properties)}.
      *
@@ -289,7 +289,7 @@ public final class AdaptorBootstrap {
             adaptor.start(Long.MAX_VALUE);
         } catch (Exception x) {
             Throwable t=x;
-            if (x instanceof j86.j86.j86.com.sun.jmx.snmp.daemon.CommunicationException) {
+            if (x instanceof j86.com.sun.jmx.snmp.daemon.CommunicationException) {
                 final Throwable next = t.getCause();
                 if (next != null) t = next;
             }

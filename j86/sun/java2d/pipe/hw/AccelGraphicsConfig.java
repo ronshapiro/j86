@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.java2d.pipe.hw;
+package j86.sun.java2d.pipe.hw;
 
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.image.VolatileImage;
 
 /**
  * Implementors of this interface provida a way to create a
@@ -44,8 +44,8 @@ public interface AccelGraphicsConfig extends BufferedContextProvider {
      * Note: if {@link AccelSurface#TEXTURE} type is requested, rendering
      * to the image will be denied by throwing
      * {@code UnsupportedOperationException }
-     * from {@link j86.j86.j86.java.awt.image.VolatileImage#getGraphics} and
-     * {@link j86.j86.j86.java.awt.image.VolatileImage#createGraphics}
+     * from {@link j86.java.awt.image.VolatileImage#getGraphics} and
+     * {@link j86.java.awt.image.VolatileImage#createGraphics}
      *
      * @param width the width of the returned {@code VolatileImage}
      * @param height the height of the returned {@code VolatileImage}

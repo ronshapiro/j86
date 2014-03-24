@@ -26,13 +26,13 @@ package j86.sun.rmi.transport;
 
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.dgc.DGC;
-import j86.j86.java.rmi.dgc.Lease;
-import j86.j86.java.rmi.dgc.VMID;
-import j86.j86.java.rmi.server.LogStream;
-import j86.j86.java.rmi.server.ObjID;
-import j86.j86.java.rmi.server.RemoteServer;
-import j86.j86.java.rmi.server.ServerNotActiveException;
+import j86.java.rmi.dgc.DGC;
+import j86.java.rmi.dgc.Lease;
+import j86.java.rmi.dgc.VMID;
+import j86.java.rmi.server.LogStream;
+import j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.RemoteServer;
+import j86.java.rmi.server.ServerNotActiveException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.ArrayList;
@@ -42,9 +42,9 @@ import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.ScheduledExecutorService;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.ScheduledExecutorService;
+import j86.java.util.concurrent.TimeUnit;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.rmi.runtime.RuntimeUtil;
 import j86.sun.rmi.server.UnicastRef;
@@ -70,7 +70,7 @@ final class DGCImpl implements DGC {
     /** lease duration to grant to clients */
     private static final long leaseValue =              // default 10 minutes
         AccessController.doPrivileged(
-            new GetLongAction("j86.j86.java.rmi.dgc.leaseValue", 600000));
+            new GetLongAction("j86.java.rmi.dgc.leaseValue", 600000));
 
     /** lease check interval; default is half of lease grant duration */
     private static final long leaseCheckInterval =

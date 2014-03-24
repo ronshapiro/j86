@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
-import j86.j86.java.nio.file.Path;
-import j86.j86.j86.java.nio.file.spi.FileTypeDetector;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.spi.FileTypeDetector;
 import j86.java.util.Locale;
 import j86.java.io.IOException;
 

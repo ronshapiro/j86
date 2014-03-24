@@ -51,7 +51,7 @@ import j86.java.util.*;
  * <pre>
  * import j86.java.awt.*;
  * import j86.java.util.*;
- * import j86.j86.java.awt.event.*;
+ * import j86.java.awt.event.*;
  * import j86.javax.swing.*;
  *
  * // This program demonstrates the use of the Swing InputVerifier class.

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.border.*;
 
 import j86.java.applet.Applet;
 
@@ -38,7 +38,7 @@ import j86.java.awt.Container;
 import j86.java.awt.Dimension;
 import j86.java.awt.KeyboardFocusManager;
 import j86.java.awt.Window;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.awt.AWTEvent;
 import j86.java.awt.Toolkit;
 
@@ -62,9 +62,9 @@ import j86.sun.awt.AppContext;
  */
 public class BasicPopupMenuUI extends PopupMenuUI {
     static final StringBuilder MOUSE_GRABBER_KEY = new StringBuilder(
-                   "j86.j86.j86.javax.swing.plaf.basic.BasicPopupMenuUI.MouseGrabber");
+                   "j86.javax.swing.plaf.basic.BasicPopupMenuUI.MouseGrabber");
     static final StringBuilder MENU_KEYBOARD_HELPER_KEY = new StringBuilder(
-                   "j86.j86.j86.javax.swing.plaf.basic.BasicPopupMenuUI.MenuKeyboardHelper");
+                   "j86.javax.swing.plaf.basic.BasicPopupMenuUI.MenuKeyboardHelper");
 
     protected JPopupMenu popupMenu = null;
     private transient PopupMenuListener popupMenuListener = null;

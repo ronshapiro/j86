@@ -25,7 +25,7 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.ManagementPermission;
+import j86.java.lang.management.ManagementPermission;
 import j86.java.util.List;
 import j86.javax.management.ObjectName;
 import j86.javax.management.MalformedObjectNameException;

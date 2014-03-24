@@ -29,7 +29,7 @@
 package j86.sun.applet;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 /**
  * This subclass of ObjectInputStream delegates loading of classes to

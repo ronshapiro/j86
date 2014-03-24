@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.awt.event.*;
+import j86.java.lang.reflect.*;
 import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.ExecutionException;
 import j86.javax.management.*;
-import j86.j86.javax.management.openmbean.*;
+import j86.javax.management.openmbean.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 public class Utils {
 

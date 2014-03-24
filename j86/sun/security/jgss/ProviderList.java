@@ -25,7 +25,7 @@
 
 package j86.sun.security.jgss;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.org.ietf.jgss.*;
 import j86.java.security.AccessController;
 import j86.java.security.Provider;
@@ -35,9 +35,9 @@ import j86.java.util.HashSet;
 import j86.java.util.HashMap;
 import j86.java.util.Enumeration;
 import j86.java.util.Iterator;
-import j86.j86.sun.security.jgss.spi.*;
-import j86.j86.sun.security.jgss.wrapper.NativeGSSFactory;
-import j86.j86.sun.security.jgss.wrapper.SunNativeProvider;
+import j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.wrapper.NativeGSSFactory;
+import j86.sun.security.jgss.wrapper.SunNativeProvider;
 import j86.sun.security.action.GetPropertyAction;
 
 /**
@@ -91,7 +91,7 @@ public final class ProviderList {
         PROV_PROP_PREFIX.length();
 
     private static final String SPI_MECH_FACTORY_TYPE
-        = "j86.j86.sun.security.jgss.spi.MechanismFactory";
+        = "j86.sun.security.jgss.spi.MechanismFactory";
 
     // Undocumented property?
     private static final String DEFAULT_MECH_PROP =
@@ -297,7 +297,7 @@ public final class ProviderList {
 
             if (baseClass.isAssignableFrom(implClass)) {
 
-                j86.j86.j86.java.lang.reflect.Constructor<?> c =
+                j86.java.lang.reflect.Constructor<?> c =
                                 implClass.getConstructor(GSSCaller.class);
                 MechanismFactory mf = (MechanismFactory) (c.newInstance(caller));
 

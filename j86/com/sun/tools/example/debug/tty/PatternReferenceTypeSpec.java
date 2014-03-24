@@ -35,7 +35,7 @@
 package j86.com.sun.tools.example.debug.tty;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.ClassPrepareRequest;
+import j86.com.sun.jdi.request.ClassPrepareRequest;
 import j86.java.util.StringTokenizer;
 
 

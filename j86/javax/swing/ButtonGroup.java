@@ -24,7 +24,7 @@
  */
 package j86.javax.swing;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.io.Serializable;

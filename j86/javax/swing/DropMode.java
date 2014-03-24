@@ -32,7 +32,7 @@ package j86.javax.swing;
  * @see JTable#setDropMode
  * @see JList#setDropMode
  * @see JTree#setDropMode
- * @see j86.j86.javax.swing.text.JTextComponent#setDropMode
+ * @see j86.javax.swing.text.JTextComponent#setDropMode
  * @since 1.6
  */
 public enum DropMode {

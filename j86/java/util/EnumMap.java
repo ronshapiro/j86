@@ -498,7 +498,7 @@ public class EnumMap<K extends Enum<K>, V> extends AbstractMap<K, V>
         public <T> T[] toArray(T[] a) {
             int size = size();
             if (a.length < size)
-                a = (T[])j86.j86.j86.java.lang.reflect.Array
+                a = (T[])j86.java.lang.reflect.Array
                     .newInstance(a.getClass().getComponentType(), size);
             if (a.length > size)
                 a[size] = null;

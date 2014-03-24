@@ -30,8 +30,8 @@ import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.stream.Stream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.stream.Stream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * Reads text from a character-input stream, buffering characters so as to
@@ -61,7 +61,7 @@ import j86.j86.java.util.stream.StreamSupport;
  *
  * @see FileReader
  * @see InputStreamReader
- * @see j86.j86.java.nio.file.Files#newBufferedReader
+ * @see j86.java.nio.file.Files#newBufferedReader
  *
  * @author      Mark Reinhold
  * @since       JDK1.1
@@ -383,7 +383,7 @@ public class BufferedReader extends Reader {
      *
      * @exception  IOException  If an I/O error occurs
      *
-     * @see j86.j86.java.nio.file.Files#readAllLines
+     * @see j86.java.nio.file.Files#readAllLines
      */
     public String readLine() throws IOException {
         return readLine(false);

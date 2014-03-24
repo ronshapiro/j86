@@ -25,17 +25,17 @@
 
 package j86.sun.font;
 
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.awt.Font;
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import static j86.sun.awt.SunHints.*;
 
 

@@ -26,12 +26,12 @@
 /*
  * $Id: DOMKeyInfo.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import j86.j86.javax.xml.crypto.dom.*;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dom.*;
 
 import j86.java.security.Provider;
 import j86.java.util.*;
@@ -128,7 +128,7 @@ public final class DOMKeyInfo extends DOMStructure implements KeyInfo {
             } else if (localName.equals("PGPData")) {
                 content.add(new DOMPGPData(childElem));
             } else { //may be MgmtData, SPKIData or element from other namespace
-                content.add(new j86.j86.javax.xml.crypto.dom.DOMStructure((childElem)));
+                content.add(new j86.javax.xml.crypto.dom.DOMStructure((childElem)));
             }
         }
         keyInfoTypes = Collections.unmodifiableList(content);
@@ -148,11 +148,11 @@ public final class DOMKeyInfo extends DOMStructure implements KeyInfo {
         if (parent == null) {
             throw new NullPointerException("parent is null");
         }
-        if (!(parent instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
+        if (!(parent instanceof j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("parent must be of type DOMStructure");
         }
 
-        Node pNode = ((j86.j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
+        Node pNode = ((j86.javax.xml.crypto.dom.DOMStructure)parent).getNode();
         String dsPrefix = DOMUtils.getSignaturePrefix(context);
         Element kiElem = DOMUtils.createElement
             (DOMUtils.getOwnerDocument(pNode), "KeyInfo",
@@ -194,7 +194,7 @@ public final class DOMKeyInfo extends DOMStructure implements KeyInfo {
                 ((DOMStructure)kiType).marshal(kiElem, dsPrefix, context);
             } else {
                 DOMUtils.appendChild(kiElem,
-                    ((j86.j86.javax.xml.crypto.dom.DOMStructure)kiType).getNode());
+                    ((j86.javax.xml.crypto.dom.DOMStructure)kiType).getNode());
             }
         }
 

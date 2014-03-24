@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
-import j86.j86.sun.util.logging.LoggingProxy;
+import j86.sun.util.logging.LoggingProxy;
 
 /**
- * Implementation of LoggingProxy when j86.j86.java.util.logging classes exist.
+ * Implementation of LoggingProxy when j86.java.util.logging classes exist.
  */
 class LoggingProxyImpl implements LoggingProxy {
     static final LoggingProxy INSTANCE = new LoggingProxyImpl();

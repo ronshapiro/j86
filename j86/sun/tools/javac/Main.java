@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.javac;
+package j86.sun.tools.javac;
 
 import j86.sun.tools.java.*;
 import j86.sun.tools.util.CommandLine;
@@ -44,7 +44,7 @@ import j86.java.text.MessageFormat;
  *
  * @deprecated As of J2SE 1.3, the preferred way to compile Java
  * language sources is by using the new compiler,
- * com.j86.j86.sun.tools.javac.Main.
+ * com.j86.sun.tools.javac.Main.
  */
 @Deprecated
 public
@@ -140,7 +140,7 @@ class Main implements Constants {
     static void initResource() {
         try {
             messageRB =
-                ResourceBundle.getBundle("j86.j86.sun.tools.javac.resources.javac");
+                ResourceBundle.getBundle("j86.sun.tools.javac.resources.javac");
         } catch (MissingResourceException e) {
             throw new Error("Fatal: Resource for javac is missing");
         }
@@ -495,7 +495,7 @@ class Main implements Constants {
         String noMemoryErrorString = getText("main.no.memory");
         String stackOverflowErrorString = getText("main.stack.overflow");
 
-        env.error(0, "warn.class.is.deprecated", "j86.j86.sun.tools.javac.Main");
+        env.error(0, "warn.class.is.deprecated", "j86.sun.tools.javac.Main");
 
         try {
             // Parse all input files

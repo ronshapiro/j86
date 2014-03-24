@@ -32,9 +32,9 @@ import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.util.*;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.SyncProvider;
-import j86.j86.j86.javax.sql.rowset.spi.SyncProviderException;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.SyncProvider;
+import j86.javax.sql.rowset.spi.SyncProviderException;
 
 /**
  * The standard implementation of the <code>JoinRowSet</code>
@@ -464,8 +464,8 @@ public class JoinRowSetImpl extends WebRowSetImpl implements JoinRowSet {
      * @throws SQLException if an error occurs assembling the <code>CachedRowSet</code>
      *         object
      * @see j86.javax.sql.RowSet
-     * @see j86.j86.javax.sql.rowset.CachedRowSet
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.CachedRowSet
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public CachedRowSet toCachedRowSet() throws SQLException {
         return crsInternal;

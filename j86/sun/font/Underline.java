@@ -34,12 +34,12 @@ import j86.java.awt.Graphics2D;
 import j86.java.awt.Shape;
 import j86.java.awt.Stroke;
 
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Line2D;
 
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
 /**
  * This class provides drawing and bounds-measurement of

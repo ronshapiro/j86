@@ -25,7 +25,7 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.sun.misc.Unsafe;
 
 /** Shared functionality for all accessor generators */
@@ -141,7 +141,7 @@ class AccessorGenerator implements ClassFileConstants {
         asm.emitConstantPoolUTF8("j86.java.lang/IllegalArgumentException");
         asm.emitConstantPoolClass(asm.cpi());
         illegalArgumentClass = asm.cpi();
-        asm.emitConstantPoolUTF8("j86.j86.j86.java.lang.reflect/InvocationTargetException");
+        asm.emitConstantPoolUTF8("j86.java.lang.reflect/InvocationTargetException");
         asm.emitConstantPoolClass(asm.cpi());
         invocationTargetClass = asm.cpi();
         asm.emitConstantPoolUTF8("<init>");

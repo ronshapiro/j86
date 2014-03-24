@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.sun.management.counter.perf;
+package j86.sun.management.counter.perf;
 
-import j86.j86.sun.management.counter.*;
+import j86.sun.management.counter.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ReadOnlyBufferException;
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 
 public class PerfStringCounter extends PerfByteArrayCounter
     implements StringCounter {

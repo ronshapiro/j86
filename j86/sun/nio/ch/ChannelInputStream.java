@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.io.*;
 import j86.java.nio.*;
-import j86.j86.java.nio.channels.*;
-import j86.j86.j86.java.nio.channels.spi.*;
+import j86.java.nio.channels.*;
+import j86.java.nio.channels.spi.*;
 
 
 /**
- * This class is defined here rather than in j86.j86.java.nio.channels.Channels
+ * This class is defined here rather than in j86.java.nio.channels.Channels
  * so that code can be shared with SocketAdaptor.
  *
  * @author Mike McCloskey

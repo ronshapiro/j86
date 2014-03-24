@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 import j86.java.math.BigInteger;
 

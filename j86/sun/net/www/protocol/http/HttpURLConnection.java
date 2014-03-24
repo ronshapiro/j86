@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.util.Arrays;
 import j86.java.net.URL;
@@ -65,22 +65,22 @@ import j86.java.util.HashSet;
 import j86.java.util.HashMap;
 import j86.java.util.Set;
 import j86.sun.net.*;
-import j86.j86.sun.net.www.*;
-import j86.j86.j86.sun.net.www.http.HttpClient;
-import j86.j86.j86.sun.net.www.http.PosterOutputStream;
-import j86.j86.j86.sun.net.www.http.ChunkedInputStream;
-import j86.j86.j86.sun.net.www.http.ChunkedOutputStream;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.net.www.*;
+import j86.sun.net.www.http.HttpClient;
+import j86.sun.net.www.http.PosterOutputStream;
+import j86.sun.net.www.http.ChunkedInputStream;
+import j86.sun.net.www.http.ChunkedOutputStream;
+import j86.sun.util.logging.PlatformLogger;
 import j86.java.text.SimpleDateFormat;
 import j86.java.util.TimeZone;
 import j86.java.net.MalformedURLException;
 import j86.java.nio.ByteBuffer;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.BASIC;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.DIGEST;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.NTLM;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.KERBEROS;
-import static j86.j86.j86.sun.net.www.protocol.http.AuthScheme.UNKNOWN;
+import static j86.sun.net.www.protocol.http.AuthScheme.BASIC;
+import static j86.sun.net.www.protocol.http.AuthScheme.DIGEST;
+import static j86.sun.net.www.protocol.http.AuthScheme.NTLM;
+import static j86.sun.net.www.protocol.http.AuthScheme.NEGOTIATE;
+import static j86.sun.net.www.protocol.http.AuthScheme.KERBEROS;
+import static j86.sun.net.www.protocol.http.AuthScheme.UNKNOWN;
 
 /**
  * A class to represent an HTTP connection to a remote object.
@@ -394,7 +394,7 @@ public class HttpURLConnection extends j86.java.net.HttpURLConnection {
 
     /* Logging support */
     private static final PlatformLogger logger =
-            PlatformLogger.getLogger("j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection");
+            PlatformLogger.getLogger("j86.sun.net.www.protocol.http.HttpURLConnection");
 
     /*
      * privileged request password authentication
@@ -1090,7 +1090,7 @@ public class HttpURLConnection extends j86.java.net.HttpURLConnection {
                                  }
                              });
                 if (sel != null) {
-                    URI uri = j86.j86.sun.net.www.ParseUtil.toURI(url);
+                    URI uri = j86.sun.net.www.ParseUtil.toURI(url);
                     if (logger.isLoggable(PlatformLogger.Level.FINEST)) {
                         logger.finest("ProxySelector Request for " + uri);
                     }

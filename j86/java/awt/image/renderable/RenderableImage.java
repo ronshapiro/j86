@@ -33,10 +33,10 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.j86.java.awt.image.renderable;
+package j86.java.awt.image.renderable;
 import j86.java.util.Vector;
 import j86.java.awt.RenderingHints;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 
 /**
  * A RenderableImage is a common interface for rendering-independent

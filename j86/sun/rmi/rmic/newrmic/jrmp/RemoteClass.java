@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.rmi.rmic.newrmic.jrmp;
+package j86.sun.rmi.rmic.newrmic.jrmp;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;
@@ -41,10 +41,10 @@ import j86.java.util.Comparator;
 import j86.java.util.List;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
-import j86.j86.sun.rmi.rmic.newrmic.BatchEnvironment;
+import j86.sun.rmi.rmic.newrmic.BatchEnvironment;
 
-import static j86.j86.sun.rmi.rmic.newrmic.Constants.*;
-import static j86.j86.j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
+import static j86.sun.rmi.rmic.newrmic.Constants.*;
+import static j86.sun.rmi.rmic.newrmic.jrmp.Constants.*;
 
 /**
  * Encapsulates RMI-specific information about a remote implementation
@@ -495,7 +495,7 @@ final class RemoteClass {
          **/
         private final MethodDoc methodDoc;
 
-        /** j86.j86.java.rmi.server.Operation string for this remote method */
+        /** j86.java.rmi.server.Operation string for this remote method */
         private final String operationString;
 
         /** name and descriptor of this remote method */
@@ -573,7 +573,7 @@ final class RemoteClass {
         /**
          * Returns the string representation of this method
          * appropriate for the construction of a
-         * j86.j86.java.rmi.server.Operation object.
+         * j86.java.rmi.server.Operation object.
          **/
         String operationString() {
             return operationString;
@@ -685,7 +685,7 @@ final class RemoteClass {
         /**
          * Computes the string representation of this method
          * appropriate for the construction of a
-         * j86.j86.java.rmi.server.Operation object.
+         * j86.java.rmi.server.Operation object.
          **/
         private String computeOperationString() {
             /*

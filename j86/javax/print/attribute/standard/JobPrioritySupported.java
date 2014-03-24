@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.IntegerSyntax;
-import j86.j86.javax.print.attribute.SupportedValuesAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.IntegerSyntax;
+import j86.javax.print.attribute.SupportedValuesAttribute;
 
 /**
  * Class JobPrioritySupported is an integer valued printing attribute class

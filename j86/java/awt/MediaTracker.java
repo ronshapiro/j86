@@ -27,7 +27,7 @@ package j86.java.awt;
 
 import j86.java.awt.Component;
 import j86.java.awt.Image;
-import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageObserver;
 
 /**
  * The <code>MediaTracker</code> class is a utility class to track

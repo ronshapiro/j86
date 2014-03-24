@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.pool;
+package j86.com.sun.jndi.ldap.pool;
 
 /**
  * Represents a connection that is managed in a pool. The connection

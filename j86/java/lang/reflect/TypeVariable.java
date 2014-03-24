@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 /**
  * TypeVariable is the common superinterface for type variables of kinds.
@@ -56,7 +56,7 @@ public interface TypeVariable<D extends GenericDeclaration> extends Type, Annota
      *
      * <p>For each upper bound B: <ul> <li>if B is a parameterized
      * type or a type variable, it is created, (see {@link
-     * j86.j86.j86.java.lang.reflect.ParameterizedType ParameterizedType} for the
+     * j86.java.lang.reflect.ParameterizedType ParameterizedType} for the
      * details of the creation process for parameterized types).
      * <li>Otherwise, B is resolved.  </ul>
      *

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.Stack;
 import j86.java.util.Enumeration;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.util.Hashtable;
 import j86.java.util.Enumeration;
@@ -32,13 +32,13 @@ import j86.java.awt.Component;
 import j86.java.awt.Color;
 import j86.java.awt.Graphics;
 import j86.java.awt.Image;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ImageConsumer;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.sun.awt.image.ImageRepresentation;
-import j86.j86.j86.sun.awt.image.FileImageSource;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ImageConsumer;
+import j86.java.awt.image.ImageObserver;
+import j86.sun.awt.image.ImageRepresentation;
+import j86.sun.awt.image.FileImageSource;
 
 public class ToolkitImage extends Image {
 

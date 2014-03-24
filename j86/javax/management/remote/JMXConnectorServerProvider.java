@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 import j86.java.io.IOException;
 import j86.java.util.Map;

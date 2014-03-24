@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.resources;
+package j86.sun.util.resources;
 
 import j86.java.util.AbstractSet;
 import j86.java.util.Collections;
@@ -33,9 +33,9 @@ import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicMarkableReference;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.atomic.AtomicMarkableReference;
 
 /**
  * ParallelListResourceBundle is another variant of ListResourceBundle

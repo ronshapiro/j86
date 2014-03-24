@@ -33,7 +33,7 @@
  ******************************************************************
  ******************************************************************/
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.util.Arrays;
 
@@ -69,8 +69,8 @@ import j86.java.util.Arrays;
  *  {@link DataBuffer#TYPE_INT TYPE_INT},
  *  {@link DataBuffer#TYPE_FLOAT TYPE_FLOAT},
  *  {@link DataBuffer#TYPE_DOUBLE TYPE_DOUBLE},
- *  @see j86.j86.j86.java.awt.image.PixelInterleavedSampleModel
- *  @see j86.j86.j86.java.awt.image.BandedSampleModel
+ *  @see j86.java.awt.image.PixelInterleavedSampleModel
+ *  @see j86.java.awt.image.BandedSampleModel
  */
 
 public class ComponentSampleModel extends SampleModel
@@ -561,7 +561,7 @@ public class ComponentSampleModel extends SampleModel
      * @return the number of data elements needed to transfer a pixel with
      *         the <code>getDataElements</code> and
      *         <code>setDataElements</code> methods.
-     * @see j86.j86.j86.java.awt.image.SampleModel#getNumDataElements
+     * @see j86.java.awt.image.SampleModel#getNumDataElements
      * @see #getNumBands
      */
     public final int getNumDataElements() {

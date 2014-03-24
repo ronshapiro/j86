@@ -27,8 +27,8 @@ package j86.com.sun.jndi.ldap;
 
 import j86.java.io.IOException;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.ldap.*;
 
 /**
  * This class represents a factory for creating LDAPv3 response controls.
@@ -45,8 +45,8 @@ import j86.j86.javax.naming.ldap.*;
  * <a href="http://www.ietf.org/internet-drafts/draft-ietf-ldapext-psearch-02.txt">draft-ietf-ldapext-psearch-02.txt</a>.
  * </ul>
  *
- * @see j86.j86.javax.naming.ldap.SortResponseControl
- * @see j86.j86.javax.naming.ldap.PagedResultsResponseControl
+ * @see j86.javax.naming.ldap.SortResponseControl
+ * @see j86.javax.naming.ldap.PagedResultsResponseControl
  * @see PersistentSearchControl
  * @see EntryChangeResponseControl
  * @author Vincent Ryan

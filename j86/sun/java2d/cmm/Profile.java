@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.cmm;
+package j86.sun.java2d.cmm;
 
-import j86.j86.java.awt.color.CMMException;
+import j86.java.awt.color.CMMException;
 
 public class Profile {
     private final long nativePtr;

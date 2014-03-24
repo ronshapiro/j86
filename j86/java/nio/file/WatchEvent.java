@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 /**
  * An event or a repeated event for an object that is registered with a {@link

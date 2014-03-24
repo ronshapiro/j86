@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.java.security.AccessController;
 import j86.java.net.SocketPermission;
@@ -33,17 +33,17 @@ import j86.java.util.Arrays;
 import j86.java.util.Hashtable;
 import j86.java.util.Map;
 import j86.java.util.ResourceBundle;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
 import j86.java.util.Set;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.ldap.*;
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 
 import j86.com.sun.security.auth.LdapPrincipal;
 import j86.com.sun.security.auth.UserPrincipal;
@@ -165,16 +165,16 @@ import j86.com.sun.security.auth.UserPrincipal;
  *
  * <dt> <code>useFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
- *      and "j86.j86.javax.security.auth.login.password" as the respective keys. The
+ *      from the module's shared state, using "j86.javax.security.auth.login.name"
+ *      and "j86.javax.security.auth.login.password" as the respective keys. The
  *      retrieved values are used for authentication. If authentication fails,
  *      no attempt for a retry is made, and the failure is reported back to
  *      the calling application.</dd>
  *
  * <dt> <code>tryFirstPass</code> </dt>
  * <dd> if <code>true</code>, this module retrieves the username and password
- *      from the module's shared state, using "j86.j86.javax.security.auth.login.name"
- *       and "j86.j86.javax.security.auth.login.password" as the respective keys.  The
+ *      from the module's shared state, using "j86.javax.security.auth.login.name"
+ *       and "j86.javax.security.auth.login.password" as the respective keys.  The
  *      retrieved values are used for authentication. If authentication fails,
  *      the module uses the {@link CallbackHandler} to retrieve a new username
  *      and password, and another attempt to authenticate is made. If the
@@ -185,8 +185,8 @@ import j86.com.sun.security.auth.UserPrincipal;
  * <dd> if <code>true</code>, this module stores the username and password
  *      obtained from the {@link CallbackHandler} in the module's shared state,
  *      using
- *      "j86.j86.javax.security.auth.login.name" and
- *      "j86.j86.javax.security.auth.login.password" as the respective keys.  This is
+ *      "j86.javax.security.auth.login.name" and
+ *      "j86.javax.security.auth.login.password" as the respective keys.  This is
  *      not performed if existing values already exist for the username and
  *      password in the shared state, or if authentication fails.</dd>
  *
@@ -234,7 +234,7 @@ import j86.com.sun.security.auth.UserPrincipal;
  * <pre>
  *
  *     ExampleApplication {
- *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap://ldap-svr/ou=people,dc=example,dc=com"
  *             userFilter="(&(uid={USERNAME})(objectClass=inetOrgPerson))"
  *             authzIdentity="{EMPLOYEENUMBER}"
@@ -242,7 +242,7 @@ import j86.com.sun.security.auth.UserPrincipal;
  *     };
  *
  *     ExampleApplication {
- *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap:///cn=users,dc=example,dc=com"
  *             authIdentity="{USERNAME}"
  *             userFilter="(&(|(samAccountName={USERNAME})(userPrincipalName={USERNAME})(cn={USERNAME}))(objectClass=user))"
@@ -251,7 +251,7 @@ import j86.com.sun.security.auth.UserPrincipal;
  *     };
  *
  *     ExampleApplication {
- *         j86.j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
+ *         j86.com.sun.security.auth.module.LdapLoginModule REQUIRED
  *             userProvider="ldap://ldap-svr1 ldap://ldap-svr2"
  *             authIdentity="cn={USERNAME},ou=people,dc=example,dc=com"
  *             authzIdentity="staff"
@@ -318,9 +318,9 @@ public class LdapLoginModule implements LoginModule {
         );
 
     // Keys to retrieve the stored username and password
-    private static final String USERNAME_KEY = "j86.j86.javax.security.auth.login.name";
+    private static final String USERNAME_KEY = "j86.javax.security.auth.login.name";
     private static final String PASSWORD_KEY =
-        "j86.j86.javax.security.auth.login.password";
+        "j86.javax.security.auth.login.password";
 
     // Option names
     private static final String USER_PROVIDER = "userProvider";
@@ -384,7 +384,7 @@ public class LdapLoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     @SuppressWarnings("unchecked")
     public void initialize(Subject subject, CallbackHandler callbackHandler,
                         Map<String, ?> sharedState, Map<String, ?> options) {

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.util.Hashtable;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ImageConsumer;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ImageConsumer;
+import j86.java.awt.image.ColorModel;
 import j86.java.awt.Image;
 
 /**

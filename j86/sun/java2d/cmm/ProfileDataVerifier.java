@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.cmm;
+package j86.sun.java2d.cmm;
 
 public class ProfileDataVerifier {
     /**

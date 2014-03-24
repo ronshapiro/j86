@@ -21,16 +21,16 @@
  * under the License.
  */
 
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
 
 import j86.java.io.FileInputStream;
 import j86.java.io.FileNotFoundException;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 
 /**
  * @author $Author: coheigea $

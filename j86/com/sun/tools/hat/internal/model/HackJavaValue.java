@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.model;
+package j86.com.sun.tools.hat.internal.model;
 
 /**
  * This is used to represent values that the program doesn't really understand.

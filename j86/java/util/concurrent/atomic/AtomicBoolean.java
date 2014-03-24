@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
+package j86.java.util.concurrent.atomic;
 import j86.sun.misc.Unsafe;
 
 /**
  * A {@code boolean} value that may be updated atomically. See the
- * {@link j86.j86.j86.java.util.concurrent.atomic} package specification for
+ * {@link j86.java.util.concurrent.atomic} package specification for
  * description of the properties of atomic variables. An
  * {@code AtomicBoolean} is used in applications such as atomically
  * updated flags, and cannot be used as a replacement for a

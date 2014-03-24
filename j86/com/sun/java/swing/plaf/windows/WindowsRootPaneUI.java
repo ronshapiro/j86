@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.Component;
 import j86.java.awt.Container;
@@ -35,8 +35,8 @@ import j86.java.awt.Toolkit;
 import j86.sun.awt.AWTAccessor;
 import j86.sun.awt.SunToolkit;
 
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.KeyEvent;
 
 import j86.javax.swing.AbstractAction;
 import j86.javax.swing.ActionMap;
@@ -54,12 +54,12 @@ import j86.javax.swing.JMenuBar;
 import j86.javax.swing.MenuElement;
 import j86.javax.swing.MenuSelectionManager;
 
-import j86.j86.javax.swing.plaf.ActionMapUIResource;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.plaf.InputMapUIResource;
+import j86.javax.swing.plaf.ActionMapUIResource;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.InputMapUIResource;
 
-import j86.j86.j86.javax.swing.plaf.basic.BasicRootPaneUI;
-import j86.j86.j86.javax.swing.plaf.basic.ComboPopup;
+import j86.javax.swing.plaf.basic.BasicRootPaneUI;
+import j86.javax.swing.plaf.basic.ComboPopup;
 
 /**
  * Windows implementation of RootPaneUI, there is one shared between all

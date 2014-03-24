@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
 /**
  * A {@code UserPrincipal} representing a <em>group identity</em>, used to

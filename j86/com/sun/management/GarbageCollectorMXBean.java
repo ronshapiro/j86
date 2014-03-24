@@ -24,8 +24,8 @@
  */
 
 package com.j86.sun.management;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeType;
 
 /**
  * Platform-specific management interface for a garbage collector
@@ -39,7 +39,7 @@ import j86.j86.javax.management.openmbean.CompositeType;
  */
 @jdk.Exported
 public interface GarbageCollectorMXBean
-    extends j86.j86.java.lang.management.GarbageCollectorMXBean {
+    extends j86.java.lang.management.GarbageCollectorMXBean {
 
     /**
      * Returns the GC information about the most recent GC.

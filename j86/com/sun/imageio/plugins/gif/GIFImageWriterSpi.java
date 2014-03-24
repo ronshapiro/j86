@@ -25,13 +25,13 @@
 
 package j86.com.sun.imageio.plugins.gif;
 
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.SampleModel;
 import j86.java.util.Locale;
 import j86.javax.imageio.ImageTypeSpecifier;
 import j86.javax.imageio.ImageWriter;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.stream.ImageOutputStream;
 import j86.com.sun.imageio.plugins.common.PaletteBuilder;
 
 public class GIFImageWriterSpi extends ImageWriterSpi {

@@ -32,7 +32,7 @@ import j86.java.security.KeyRep;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.ProviderException;
 import j86.java.security.PublicKey;
-import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.javax.crypto.spec.DHParameterSpec;
 import j86.sun.security.util.*;
 
 
@@ -46,7 +46,7 @@ import j86.sun.security.util.*;
  * @see j86.java.security.KeyAgreement
  */
 final class DHPublicKey implements PublicKey,
-j86.j86.javax.crypto.interfaces.DHPublicKey, Serializable {
+j86.javax.crypto.interfaces.DHPublicKey, Serializable {
 
     static final long serialVersionUID = 7647557958927458271L;
 
@@ -294,12 +294,12 @@ j86.j86.javax.crypto.interfaces.DHPublicKey, Serializable {
     public boolean equals(Object obj) {
         if (this == obj) return true;
 
-        if (!(obj instanceof j86.j86.javax.crypto.interfaces.DHPublicKey)) {
+        if (!(obj instanceof j86.javax.crypto.interfaces.DHPublicKey)) {
             return false;
         }
 
-        j86.j86.javax.crypto.interfaces.DHPublicKey other =
-            (j86.j86.javax.crypto.interfaces.DHPublicKey) obj;
+        j86.javax.crypto.interfaces.DHPublicKey other =
+            (j86.javax.crypto.interfaces.DHPublicKey) obj;
         DHParameterSpec otherParams = other.getParams();
         return ((this.y.compareTo(other.getY()) == 0) &&
                 (this.p.compareTo(otherParams.getP()) == 0) &&

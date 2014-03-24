@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.http;
+package j86.sun.net.www.http;
 
 import j86.java.io.*;
 import j86.sun.net.ProgressSource;
-import j86.j86.sun.net.www.MeteredStream;
+import j86.sun.net.www.MeteredStream;
 
 /**
  * A stream that has the property of being able to be kept alive for

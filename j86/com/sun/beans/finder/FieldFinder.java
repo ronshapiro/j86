@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Modifier;
 
-import static j86.j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
+import static j86.sun.reflect.misc.ReflectUtil.isPackageAccessible;
 
 /**
  * This utility class provides {@code static} methods

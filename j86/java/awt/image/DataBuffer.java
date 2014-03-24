@@ -33,15 +33,15 @@
  ******************************************************************
  ******************************************************************/
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.sun.java2d.StateTrackable.State;
 import static j86.sun.java2d.StateTrackable.State.*;
 import j86.sun.java2d.StateTrackableDelegate;
 
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.SunWritableRaster;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * This class exists to wrap one or more data arrays.  Each data array in
@@ -64,8 +64,8 @@ import j86.j86.java.lang.annotation.Native;
  * methods for improved performance.  Currently, the Java 2D(tm) API
  * image classes use TYPE_BYTE, TYPE_USHORT, TYPE_INT, TYPE_SHORT,
  * TYPE_FLOAT, and TYPE_DOUBLE DataBuffers to store image data.
- * @see j86.j86.j86.java.awt.image.Raster
- * @see j86.j86.j86.java.awt.image.SampleModel
+ * @see j86.java.awt.image.Raster
+ * @see j86.java.awt.image.SampleModel
  */
 public abstract class DataBuffer {
 

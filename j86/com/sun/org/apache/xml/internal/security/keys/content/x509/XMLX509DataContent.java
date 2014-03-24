@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
+package j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
 
 /**
  * Just used for tagging contents that are allowed inside a ds:X509Data Element.

@@ -25,8 +25,8 @@
 
 package j86.java.io;
 
-import j86.j86.java.nio.channels.FileChannel;
-import j86.j86.j86.sun.nio.ch.FileChannelImpl;
+import j86.java.nio.channels.FileChannel;
+import j86.sun.nio.ch.FileChannelImpl;
 
 
 /**
@@ -46,7 +46,7 @@ import j86.j86.j86.sun.nio.ch.FileChannelImpl;
  * @see     j86.java.io.File
  * @see     j86.java.io.FileDescriptor
  * @see     j86.java.io.FileInputStream
- * @see     j86.j86.java.nio.file.Files#newOutputStream
+ * @see     j86.java.nio.file.Files#newOutputStream
  * @since   JDK1.0
  */
 public
@@ -357,10 +357,10 @@ class FileOutputStream extends OutputStream
      }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file output stream.
      *
-     * <p> The initial {@link j86.j86.java.nio.channels.FileChannel#position()
+     * <p> The initial {@link j86.java.nio.channels.FileChannel#position()
      * position} of the returned channel will be equal to the
      * number of bytes written to the file so far unless this stream is in
      * append mode, in which case it will be equal to the size of the file.

@@ -142,7 +142,7 @@ class Shutdown {
 
     static native void halt0(int status);
 
-    /* Wormhole for invoking j86.j86.java.lang.ref.Finalizer.runAllFinalizers */
+    /* Wormhole for invoking j86.java.lang.ref.Finalizer.runAllFinalizers */
     private static native void runAllFinalizers();
 
 

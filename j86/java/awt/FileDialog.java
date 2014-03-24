@@ -24,7 +24,7 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.FileDialogPeer;
+import j86.java.awt.peer.FileDialogPeer;
 import j86.java.io.FilenameFilter;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;

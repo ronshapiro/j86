@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.protocol.file;
+package j86.sun.jvmstat.perfdata.monitor.protocol.file;
 
 import j86.sun.jvmstat.monitor.*;
 import j86.sun.jvmstat.perfdata.monitor.*;
 import j86.java.io.*;
 import j86.java.net.URI;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.channels.FileChannel;
+import j86.java.nio.channels.FileChannel;
 
 /**
  * The concrete PerfDataBuffer implementation for the <em>file:</em>

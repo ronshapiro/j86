@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 /**
  * A {@code ConstantCallSite} is a {@link CallSite} whose target is permanent, and can never be changed.

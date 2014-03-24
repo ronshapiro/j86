@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 import j86.java.nio.ByteBuffer;
-import j86.j86.j86.sun.nio.ch.DirectBuffer;
+import j86.sun.nio.ch.DirectBuffer;
 
 /**
  * A class that can be used to compute the Adler-32 checksum of a data

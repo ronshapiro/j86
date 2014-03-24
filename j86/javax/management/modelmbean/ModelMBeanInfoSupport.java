@@ -28,7 +28,7 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
@@ -38,7 +38,7 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectStreamField;
 import j86.java.security.AccessController;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.Descriptor;
 import j86.javax.management.MBeanAttributeInfo;

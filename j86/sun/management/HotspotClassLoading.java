@@ -25,7 +25,7 @@
 
 package j86.sun.management;
 
-import j86.j86.sun.management.counter.*;
+import j86.sun.management.counter.*;
 
 /**
  * Implementation class of HotspotClassLoadingMBean interface.

@@ -36,11 +36,11 @@ package j86.java.lang;
  * are accessed as well as when types (e.g., classes, interfaces or
  * annotation types) are loaded.
  * In particular, this exception can be thrown by the {@linkplain
- * j86.j86.j86.java.lang.reflect.AnnotatedElement API used to read annotations
+ * j86.java.lang.reflect.AnnotatedElement API used to read annotations
  * reflectively}.
  *
  * @author  Josh Bloch
- * @see     j86.j86.j86.java.lang.reflect.AnnotatedElement
+ * @see     j86.java.lang.reflect.AnnotatedElement
  * @since 1.5
  */
 public class TypeNotPresentException extends RuntimeException {

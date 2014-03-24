@@ -27,12 +27,12 @@ package j86.sun.security.provider;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 import j86.sun.security.x509.X509CertImpl;
 import j86.sun.security.x509.X509CRLImpl;
 import j86.sun.security.pkcs.PKCS7;
-import j86.j86.sun.security.provider.certpath.X509CertPath;
-import j86.j86.sun.security.provider.certpath.X509CertificatePair;
+import j86.sun.security.provider.certpath.X509CertPath;
+import j86.sun.security.provider.certpath.X509CertificatePair;
 import j86.sun.security.util.DerValue;
 import j86.sun.security.util.Cache;
 import j86.java.util.Base64;
@@ -47,12 +47,12 @@ import j86.sun.security.pkcs.ParsingException;
  * @author Sean Mullan
  *
  *
- * @see j86.j86.java.security.cert.CertificateFactorySpi
- * @see j86.j86.java.security.cert.Certificate
- * @see j86.j86.java.security.cert.CertPath
- * @see j86.j86.java.security.cert.CRL
- * @see j86.j86.java.security.cert.X509Certificate
- * @see j86.j86.java.security.cert.X509CRL
+ * @see j86.java.security.cert.CertificateFactorySpi
+ * @see j86.java.security.cert.Certificate
+ * @see j86.java.security.cert.CertPath
+ * @see j86.java.security.cert.CRL
+ * @see j86.java.security.cert.X509Certificate
+ * @see j86.java.security.cert.X509CRL
  * @see j86.sun.security.x509.X509CertImpl
  * @see j86.sun.security.x509.X509CRLImpl
  */
@@ -326,7 +326,7 @@ public class X509Factory extends CertificateFactorySpi {
      *
      * @exception CertificateException on parsing errors.
      */
-    public Collection<? extends j86.j86.java.security.cert.Certificate>
+    public Collection<? extends j86.java.security.cert.Certificate>
             engineGenerateCertificates(InputStream is)
             throws CertificateException {
         if (is == null) {
@@ -388,7 +388,7 @@ public class X509Factory extends CertificateFactorySpi {
      *
      * @exception CRLException on parsing errors.
      */
-    public Collection<? extends j86.j86.java.security.cert.CRL> engineGenerateCRLs(
+    public Collection<? extends j86.java.security.cert.CRL> engineGenerateCRLs(
             InputStream is) throws CRLException
     {
         if (is == null) {
@@ -406,7 +406,7 @@ public class X509Factory extends CertificateFactorySpi {
      * encoded X.509 certificates (in binary or base 64 encoded format) OR
      * as a single PKCS#7 encoded blob (in binary or base64 encoded format).
      */
-    private Collection<? extends j86.j86.java.security.cert.Certificate>
+    private Collection<? extends j86.java.security.cert.Certificate>
         parseX509orPKCS7Cert(InputStream is)
         throws CertificateException, IOException
     {
@@ -439,7 +439,7 @@ public class X509Factory extends CertificateFactorySpi {
      * X.509 CRLs (in binary or base 64 encoded format) OR as a single PKCS#7
      * encoded blob (in binary or base 64 encoded format).
      */
-    private Collection<? extends j86.j86.java.security.cert.CRL>
+    private Collection<? extends j86.java.security.cert.CRL>
         parseX509orPKCS7CRL(InputStream is)
         throws CRLException, IOException
     {

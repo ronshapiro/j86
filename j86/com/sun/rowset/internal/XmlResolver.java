@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import org.xml.sax.*;
 

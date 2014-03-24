@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
 import j86.java.awt.Font;
-import j86.j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.GlyphVector;
 import j86.sun.java2d.SunGraphics2D;
-import j86.j86.sun.java2d.loops.FontInfo;
+import j86.sun.java2d.loops.FontInfo;
 import j86.sun.font.GlyphList;
 
 /*

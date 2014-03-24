@@ -39,7 +39,7 @@ import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.AudioSystem;
 import j86.javax.sound.sampled.UnsupportedAudioFileException;
 import j86.javax.sound.sampled.AudioFormat.Encoding;
-import j86.j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.sampled.spi.AudioFileReader;
 
 /**
  * WAVE file reader for files using format WAVE_FORMAT_EXTENSIBLE (0xFFFE).

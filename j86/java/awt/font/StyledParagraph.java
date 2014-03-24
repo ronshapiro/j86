@@ -27,11 +27,11 @@
 /*
  * (C) Copyright IBM Corp. 1999,  All rights reserved.
  */
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Font;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.java.awt.im.InputMethodHighlight;
 import j86.java.text.Annotation;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;

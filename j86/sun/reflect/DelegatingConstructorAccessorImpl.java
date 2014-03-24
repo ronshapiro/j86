@@ -25,7 +25,7 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 
 /** Delegates its invocation to another ConstructorAccessorImpl and can
     change its delegate at run time. */

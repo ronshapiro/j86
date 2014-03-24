@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.java.util.Hashtable;
 

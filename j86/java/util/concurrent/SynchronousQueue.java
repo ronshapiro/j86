@@ -34,9 +34,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+package j86.java.util.concurrent;
+import j86.java.util.concurrent.locks.LockSupport;
+import j86.java.util.concurrent.locks.ReentrantLock;
 import j86.java.util.*;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;

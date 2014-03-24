@@ -33,7 +33,7 @@ package j86.java.rmi;
  * @author  Ann Wollrath
  * @author  Roger Riggs
  * @see     j86.java.rmi.Naming#bind(String, java.rmi.Remote)
- * @see     j86.j86.java.rmi.registry.Registry#bind(String, java.rmi.Remote)
+ * @see     j86.java.rmi.registry.Registry#bind(String, java.rmi.Remote)
  */
 public class AlreadyBoundException extends j86.java.lang.Exception {
 

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.cmm;
+package j86.sun.java2d.cmm;
 
-import j86.j86.java.awt.color.ColorSpace;
-import j86.j86.java.awt.color.ICC_Profile;
-import j86.j86.java.awt.color.CMMException;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ICC_Profile;
+import j86.java.awt.color.CMMException;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.sun.security.action.GetPropertyAction;
@@ -38,12 +38,12 @@ import j86.java.util.ServiceLoader;
 
 public class CMSManager {
     public static ColorSpace GRAYspace;       // These two fields allow access
-    public static ColorSpace LINEAR_RGBspace; // to j86.j86.java.awt.color.ColorSpace
+    public static ColorSpace LINEAR_RGBspace; // to j86.java.awt.color.ColorSpace
                                               // private fields from other
                                               // packages.  The fields are set
-                                              // by j86.j86.java.awt.color.ColorSpace
+                                              // by j86.java.awt.color.ColorSpace
                                               // and read by
-                                              // j86.j86.j86.java.awt.image.ColorModel.
+                                              // j86.java.awt.image.ColorModel.
 
     private static PCMM cmmImpl = null;
 
@@ -56,7 +56,7 @@ public class CMSManager {
                 new PrivilegedAction<CMMServiceProvider>() {
                     public CMMServiceProvider run() {
                         String cmmClass = System.getProperty(
-                            "j86.j86.sun.java2d.cmm", "j86.sun.java2d.cmm.lcms.LcmsServiceProvider");
+                            "j86.sun.java2d.cmm", "j86.sun.java2d.cmm.lcms.LcmsServiceProvider");
 
                     ServiceLoader<CMMServiceProvider> cmmLoader
                     = ServiceLoader.loadInstalled(CMMServiceProvider.class);
@@ -80,7 +80,7 @@ public class CMSManager {
                                    "No CM module found");
         }
 
-        GetPropertyAction gpa = new GetPropertyAction("j86.j86.sun.java2d.cmm.trace");
+        GetPropertyAction gpa = new GetPropertyAction("j86.sun.java2d.cmm.trace");
         String cmmTrace = (String)AccessController.doPrivileged(gpa);
         if (cmmTrace != null) {
             cmmImpl = new CMMTracer(cmmImpl);

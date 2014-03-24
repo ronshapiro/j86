@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.util.Collections;
 import j86.java.util.HashSet;
 import j86.java.util.Iterator;
 import j86.java.util.Set;
 
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 
 /**
  * Implements the <code>PolicyNode</code> interface.

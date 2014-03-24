@@ -25,7 +25,7 @@
 /*
  * $Id: XMLValidateContext.java,v 1.8 2005/05/10 16:03:49 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.XMLCryptoContext;
 
@@ -44,7 +44,7 @@ import j86.javax.xml.crypto.XMLCryptoContext;
  * <p>The following properties can be set by an application using the
  * {@link #setProperty setProperty} method.
  * <ul>
- *   <li><code>j86.j86.javax.xml.crypto.dsig.cacheReference</code>: value must be a
+ *   <li><code>j86.javax.xml.crypto.dsig.cacheReference</code>: value must be a
  *      {@link Boolean}. This property controls whether or not the
  *      {@link Reference#validate Reference.validate} method will cache the
  *      dereferenced content and pre-digested input for subsequent retrieval via

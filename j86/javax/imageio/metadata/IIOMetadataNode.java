@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.metadata;
+package j86.javax.imageio.metadata;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;

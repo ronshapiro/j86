@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.java.lang.annotation.*;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.annotation.*;
+import j86.java.lang.reflect.Method;
 import j86.java.util.Map;
 import j86.java.util.List;
 import j86.java.util.Arrays;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.sun.invoke.util.Wrapper;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.sun.invoke.util.Wrapper;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import j86.java.lang.reflect.Field;
 import j86.java.util.Objects;
 
 /**

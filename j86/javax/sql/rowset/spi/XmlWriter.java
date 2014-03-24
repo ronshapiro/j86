@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
 import j86.java.sql.SQLException;
 import j86.java.io.Writer;
 
 import j86.javax.sql.RowSetWriter;
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 /**
  * A specialized interface that facilitates an extension of the

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.providers;
+package j86.com.sun.rowset.providers;
 
 import j86.com.sun.rowset.JdbcRowSetResourceBundle;
 import j86.javax.sql.*;
 import j86.java.io.*;
 
-import j86.j86.j86.javax.sql.rowset.spi.*;
-import j86.j86.com.sun.rowset.internal.*;
+import j86.javax.sql.rowset.spi.*;
+import j86.com.sun.rowset.internal.*;
 
 /**
  * The reference implementation of a JDBC Rowset synchronization provider
@@ -40,7 +40,7 @@ import j86.j86.com.sun.rowset.internal.*;
  * <h3>1.0 Backgroud</h3>
  * This synchronization provider is registered with the
  * <code>SyncFactory</code> by default as the
- * <code>j86.j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
+ * <code>j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
  * As an extension of the <code>SyncProvider</code> abstract
  * class, it provides the reader and writer classes required by disconnected
  * rowsets as <code>j86.javax.sql.RowSetReader</code> and <code>javax.sql.RowSetWriter</code>
@@ -64,13 +64,13 @@ import j86.j86.com.sun.rowset.internal.*;
     defined in the <code>CachedRowSet</code> interface
  * <pre>
  *     CachedRowset crs = new FooCachedRowSetImpl();
- *     crs.setSyncProvider("j86.j86.com.sun.rowset.providers.RIOptimisticProvider");
+ *     crs.setSyncProvider("j86.com.sun.rowset.providers.RIOptimisticProvider");
  * </pre>
  *  <LI>By specifying it in the constructor of the <code>RowSet</code>
  *      implementation
  * <pre>
  *     CachedRowset crs = new FooCachedRowSetImpl(
- *                         "j86.j86.com.sun.rowset.providers.RIOptimisticProvider");
+ *                         "j86.com.sun.rowset.providers.RIOptimisticProvider");
  * </pre>
  * </OL>
  * Note that because the <code>RIOptimisticProvider</code> implementation is
@@ -81,10 +81,10 @@ import j86.j86.com.sun.rowset.internal.*;
  * <code>j86.com.sun.rowset</code> package for more details.
  *
  * @author  Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncProviderException
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.javax.sql.rowset.spi.SyncProviderException
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  *
  */
 public final class RIOptimisticProvider extends SyncProvider implements Serializable {
@@ -95,7 +95,7 @@ public final class RIOptimisticProvider extends SyncProvider implements Serializ
     /**
      * The unique provider identifier.
      */
-    private String providerID = "j86.j86.com.sun.rowset.providers.RIOptimisticProvider";
+    private String providerID = "j86.com.sun.rowset.providers.RIOptimisticProvider";
 
     /**
      * The vendor name of this SyncProvider implementation
@@ -132,7 +132,7 @@ public final class RIOptimisticProvider extends SyncProvider implements Serializ
     }
 
     /**
-     * Returns the <code>'j86.j86.javax.sql.rowset.providers.RIOptimisticProvider'</code>
+     * Returns the <code>'j86.javax.sql.rowset.providers.RIOptimisticProvider'</code>
      * provider identification string.
      *
      * @return String Provider ID of this persistence provider

@@ -25,9 +25,9 @@
 
 package j86.com.sun.jndi.ldap;
 
-import j86.j86.javax.naming.ldap.UnsolicitedNotification;
+import j86.javax.naming.ldap.UnsolicitedNotification;
 import j86.javax.naming.NamingException;
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.ldap.Control;
 import j86.java.util.Vector;
 
 /**

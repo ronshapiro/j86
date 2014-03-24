@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.scope;
+package j86.sun.reflect.generics.scope;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
 
 
 /**

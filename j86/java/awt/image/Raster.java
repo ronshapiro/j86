@@ -34,17 +34,17 @@
  ******************************************************************/
 
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Point;
 
-import j86.j86.j86.sun.awt.image.ByteInterleavedRaster;
-import j86.j86.j86.sun.awt.image.ShortInterleavedRaster;
-import j86.j86.j86.sun.awt.image.IntegerInterleavedRaster;
-import j86.j86.j86.sun.awt.image.ByteBandedRaster;
-import j86.j86.j86.sun.awt.image.ShortBandedRaster;
-import j86.j86.j86.sun.awt.image.BytePackedRaster;
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.awt.image.ByteInterleavedRaster;
+import j86.sun.awt.image.ShortInterleavedRaster;
+import j86.sun.awt.image.IntegerInterleavedRaster;
+import j86.sun.awt.image.ByteBandedRaster;
+import j86.sun.awt.image.ShortBandedRaster;
+import j86.sun.awt.image.BytePackedRaster;
+import j86.sun.awt.image.SunWritableRaster;
 
 /**
  * A class representing a rectangular array of pixels.  A Raster
@@ -116,12 +116,12 @@ import j86.j86.j86.sun.awt.image.SunWritableRaster;
  * standard Interleaved, Banded, and Packed SampleModels and that may
  * be processed more efficiently than a Raster created by combining
  * an externally generated SampleModel and DataBuffer.
- * @see j86.j86.j86.java.awt.image.DataBuffer
- * @see j86.j86.j86.java.awt.image.SampleModel
- * @see j86.j86.j86.java.awt.image.PixelInterleavedSampleModel
- * @see j86.j86.j86.java.awt.image.BandedSampleModel
- * @see j86.j86.j86.java.awt.image.SinglePixelPackedSampleModel
- * @see j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel
+ * @see j86.java.awt.image.DataBuffer
+ * @see j86.java.awt.image.SampleModel
+ * @see j86.java.awt.image.PixelInterleavedSampleModel
+ * @see j86.java.awt.image.BandedSampleModel
+ * @see j86.java.awt.image.SinglePixelPackedSampleModel
+ * @see j86.java.awt.image.MultiPixelPackedSampleModel
  */
 public class Raster {
 
@@ -1449,7 +1449,7 @@ public class Raster {
      * checking is not guaranteed.
      * A ClassCastException will be thrown if the input object is non null
      * and references anything other than an array of TransferType.
-     * @see j86.j86.j86.java.awt.image.SampleModel#getDataElements(int, int, Object, DataBuffer)
+     * @see j86.java.awt.image.SampleModel#getDataElements(int, int, Object, DataBuffer)
      * @param x        The X coordinate of the pixel location
      * @param y        The Y coordinate of the pixel location
      * @param outData  An object reference to an array of type defined by
@@ -1481,7 +1481,7 @@ public class Raster {
      * checking is not guaranteed.
      * A ClassCastException will be thrown if the input object is non null
      * and references anything other than an array of TransferType.
-     * @see j86.j86.j86.java.awt.image.SampleModel#getDataElements(int, int, int, int, Object, DataBuffer)
+     * @see j86.java.awt.image.SampleModel#getDataElements(int, int, int, int, Object, DataBuffer)
      * @param x    The X coordinate of the upper-left pixel location
      * @param y    The Y coordinate of the upper-left pixel location
      * @param w    Width of the pixel rectangle

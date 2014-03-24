@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jstatd;
+package j86.sun.tools.jstatd;
 
 import j86.java.util.*;
 import j86.java.nio.*;
 import j86.java.io.*;
 import j86.java.net.*;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.*;
+import j86.java.rmi.server.*;
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.event.*;
-import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.monitor.event.*;
+import j86.sun.jvmstat.monitor.remote.*;
 
 /**
  * Concrete implementation of the RemoteHost interface for the HotSpot

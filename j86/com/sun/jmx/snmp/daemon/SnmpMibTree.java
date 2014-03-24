@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 
 
@@ -39,7 +39,7 @@ import j86.com.sun.jmx.snmp.SnmpOid;
 
 // SNMP Runtime imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
 
 /**
  * The class is used for building a tree representation of the different

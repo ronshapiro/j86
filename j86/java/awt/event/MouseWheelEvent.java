@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.awt.Component;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * An event which indicates that the mouse wheel was rotated in a component.

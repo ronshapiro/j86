@@ -26,12 +26,12 @@
 package j86.com.sun.imageio.plugins.common;
 
 import j86.java.awt.Transparency;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 import j86.java.awt.Color;
 import j86.javax.imageio.ImageTypeSpecifier;
 

@@ -28,7 +28,7 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-package j86.j86.j86.j86.sun.security.krb5.internal.crypto.dk;
+package j86.sun.security.krb5.internal.crypto.dk;
 
 import j86.javax.crypto.Cipher;
 import j86.javax.crypto.Mac;
@@ -37,12 +37,12 @@ import j86.java.io.UnsupportedEncodingException;
 import j86.java.util.Arrays;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 import j86.java.nio.CharBuffer;
 import j86.java.nio.ByteBuffer;
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.krb5.Confounder;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 import j86.sun.security.krb5.KrbCryptoException;
 
 /**

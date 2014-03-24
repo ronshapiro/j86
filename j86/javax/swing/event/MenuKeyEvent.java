@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.javax.swing.MenuElement;
 import j86.javax.swing.MenuSelectionManager;
 import j86.java.util.EventObject;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.java.awt.Component;
 
 
@@ -58,10 +58,10 @@ public class MenuKeyEvent extends KeyEvent {
      * @param source     the Component that originated the event
      *                     (typically <code>this</code>)
      * @param id         an int specifying the type of event, as defined
-     *                     in {@link j86.j86.java.awt.event.KeyEvent}
+     *                     in {@link j86.java.awt.event.KeyEvent}
      * @param when       a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
+     *                      as specified in {@link j86.java.awt.event.InputEvent}
      * @param keyCode    an int specifying the specific key that was pressed
      * @param keyChar    a char specifying the key's character value, if any
      *                   -- null if the key has no character value

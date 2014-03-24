@@ -27,20 +27,20 @@ package j86.javax.imageio;
 
 import j86.java.awt.Dimension;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.Raster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.Raster;
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
 import j86.java.util.List;
 import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;
 import j86.java.util.ResourceBundle;
-import j86.j86.javax.imageio.event.IIOWriteWarningListener;
-import j86.j86.javax.imageio.event.IIOWriteProgressListener;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.event.IIOWriteWarningListener;
+import j86.javax.imageio.event.IIOWriteProgressListener;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.spi.ImageWriterSpi;
 
 /**
  * An abstract superclass for encoding and writing images.  This class
@@ -57,8 +57,8 @@ import j86.j86.javax.imageio.spi.ImageWriterSpi;
  *
  * @see ImageReader
  * @see ImageWriteParam
- * @see j86.j86.javax.imageio.spi.IIORegistry
- * @see j86.j86.javax.imageio.spi.ImageWriterSpi
+ * @see j86.javax.imageio.spi.IIORegistry
+ * @see j86.javax.imageio.spi.ImageWriterSpi
  *
  */
 public abstract class ImageWriter implements ImageTranscoder {

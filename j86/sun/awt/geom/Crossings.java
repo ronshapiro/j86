@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.awt.geom;
+package j86.sun.awt.geom;
 
-import j86.j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.PathIterator;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 

@@ -61,14 +61,14 @@
  */
 package j86.java.time;
 
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
-import static j86.j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
-import static j86.j86.java.time.temporal.ChronoUnit.CENTURIES;
-import static j86.j86.java.time.temporal.ChronoUnit.DECADES;
-import static j86.j86.java.time.temporal.ChronoUnit.ERAS;
-import static j86.j86.java.time.temporal.ChronoUnit.MILLENNIA;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
+import static j86.java.time.temporal.ChronoUnit.CENTURIES;
+import static j86.java.time.temporal.ChronoUnit.DECADES;
+import static j86.java.time.temporal.ChronoUnit.ERAS;
+import static j86.java.time.temporal.ChronoUnit.MILLENNIA;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -76,24 +76,24 @@ import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.DateTimeFormatter;
-import j86.j86.java.time.format.DateTimeFormatterBuilder;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.format.SignStyle;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.DateTimeFormatter;
+import j86.java.time.format.DateTimeFormatterBuilder;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.format.SignStyle;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Objects;
 
 /**

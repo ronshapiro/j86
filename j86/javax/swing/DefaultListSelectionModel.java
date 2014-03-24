@@ -30,7 +30,7 @@ import j86.java.util.BitSet;
 import j86.java.io.Serializable;
 import j86.java.beans.Transient;
 
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 
 /**

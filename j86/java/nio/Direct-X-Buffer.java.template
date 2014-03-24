@@ -31,7 +31,7 @@ import j86.java.io.FileDescriptor;
 import j86.sun.misc.Cleaner;
 import j86.sun.misc.Unsafe;
 import j86.sun.misc.VM;
-import j86.j86.j86.sun.nio.ch.DirectBuffer;
+import j86.sun.nio.ch.DirectBuffer;
 
 
 class Direct$Type$Buffer$RW$$BO$

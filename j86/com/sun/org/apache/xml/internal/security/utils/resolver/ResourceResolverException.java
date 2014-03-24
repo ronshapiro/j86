@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver;
+package j86.com.sun.org.apache.xml.internal.security.utils.resolver;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
 import org.w3c.dom.Attr;
 
 /**
  * This Exception is thrown if something related to the
- * {@link j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver} goes wrong.
+ * {@link j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver} goes wrong.
  *
  * @author $Author: coheigea $
  */

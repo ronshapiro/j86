@@ -24,8 +24,8 @@
  */
 
 /**
- * Extra support for using JSR 292 RI, package j86.j86.java.lang.invoke.
+ * Extra support for using JSR 292 RI, package j86.java.lang.invoke.
  * @author jrose
  */
 
-package j86.j86.sun.invoke.util;
+package j86.sun.invoke.util;

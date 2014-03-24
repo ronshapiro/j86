@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 /**
  * An object that configures how to open or create a file.
@@ -31,8 +31,8 @@ package j86.j86.java.nio.file;
  * <p> Objects of this type are used by methods such as {@link
  * Files#newOutputStream(Path,OpenOption[]) newOutputStream}, {@link
  * Files#newByteChannel newByteChannel}, {@link
- * j86.j86.java.nio.channels.FileChannel#open FileChannel.open}, and {@link
- * j86.j86.java.nio.channels.AsynchronousFileChannel#open AsynchronousFileChannel.open}
+ * j86.java.nio.channels.FileChannel#open FileChannel.open}, and {@link
+ * j86.java.nio.channels.AsynchronousFileChannel#open AsynchronousFileChannel.open}
  * when opening or creating a file.
  *
  * <p> The {@link StandardOpenOption} enumeration type defines the

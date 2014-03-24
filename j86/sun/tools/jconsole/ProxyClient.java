@@ -30,19 +30,19 @@ import com.j86.sun.tools.jconsole.JConsoleContext;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.io.IOException;
-import j86.j86.java.lang.management.*;
-import static j86.j86.java.lang.management.ManagementFactory.*;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.management.*;
+import static j86.java.lang.management.ManagementFactory.*;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.*;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.registry.*;
-import j86.j86.java.rmi.server.*;
+import j86.java.rmi.registry.*;
+import j86.java.rmi.server.*;
 import j86.java.util.*;
 import j86.javax.management.*;
-import j86.j86.javax.management.remote.*;
-import j86.j86.j86.javax.management.remote.rmi.*;
+import j86.javax.management.remote.*;
+import j86.javax.management.remote.rmi.*;
 import j86.javax.rmi.ssl.SslRMIClientSocketFactory;
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 import j86.sun.rmi.server.UnicastRef2;
 import j86.sun.rmi.transport.LiveRef;
 
@@ -192,7 +192,7 @@ public class ProxyClient implements JConsoleContext {
     }
 
     private static final String rmiServerImplStubClassName =
-        "j86.j86.j86.javax.management.remote.rmi.RMIServerImpl_Stub";
+        "j86.javax.management.remote.rmi.RMIServerImpl_Stub";
     private static final Class<? extends Remote> rmiServerImplStubClass;
 
     static {

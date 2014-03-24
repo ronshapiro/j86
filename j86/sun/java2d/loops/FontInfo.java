@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
 import j86.java.awt.Font;
-import j86.j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.AffineTransform;
 
 import j86.sun.font.Font2D;
 import j86.sun.font.FontStrike;

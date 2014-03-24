@@ -34,7 +34,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.InputStream;
@@ -291,7 +291,7 @@ public final class UCharacterProperty
     /**
     * Default name of the datafile
     */
-    private static final String DATA_FILE_NAME_ = "/j86.j86.sun.text.resources/uprops.icu";
+    private static final String DATA_FILE_NAME_ = "/j86.sun.text.resources/uprops.icu";
 
     /**
     * Default buffer size of datafile

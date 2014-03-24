@@ -25,18 +25,18 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.datatransfer.*;
-import j86.j86.java.awt.dnd.*;
+import j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
+import j86.java.awt.dnd.*;
 import j86.java.beans.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.io.*;
 import j86.java.util.TooManyListenersException;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.JTextComponent;
 
-import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.MethodUtil;
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.awt.AppContext;
 import j86.sun.swing.*;
@@ -117,7 +117,7 @@ public class TransferHandler implements Serializable {
      * This value is used to specify that data should be linked in a drag
      * and drop operation.
      *
-     * @see j86.j86.java.awt.dnd.DnDConstants#ACTION_LINK
+     * @see j86.java.awt.dnd.DnDConstants#ACTION_LINK
      * @since 1.6
      */
     public static final int LINK = DnDConstants.ACTION_LINK;
@@ -294,7 +294,7 @@ public class TransferHandler implements Serializable {
                           ? ((DropTargetDragEvent)source).getLocation()
                           : ((DropTargetDropEvent)source).getLocation();
 
-            if (SunToolkit.isInstanceOf(component, "j86.j86.javax.swing.text.JTextComponent")) {
+            if (SunToolkit.isInstanceOf(component, "j86.javax.swing.text.JTextComponent")) {
                 dropLocation = SwingAccessor.getJTextComponentAccessor().
                                    dropLocationForPoint((JTextComponent)component, p);
             } else if (component instanceof JComponent) {
@@ -461,8 +461,8 @@ public class TransferHandler implements Serializable {
          * {@code TransferSupport} represents a drop.
          * <p>
          * The user drop action is chosen for a drop as described in the
-         * documentation for {@link j86.j86.java.awt.dnd.DropTargetDragEvent} and
-         * {@link j86.j86.java.awt.dnd.DropTargetDropEvent}. A different action
+         * documentation for {@link j86.java.awt.dnd.DropTargetDragEvent} and
+         * {@link j86.java.awt.dnd.DropTargetDropEvent}. A different action
          * may be chosen as the drop action by way of the {@code setDropAction}
          * method.
          * <p>
@@ -641,14 +641,14 @@ public class TransferHandler implements Serializable {
     /**
      * image for the {@code startDrag} method
      *
-     * @see j86.j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
+     * @see j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
      */
     private  Image dragImage;
 
     /**
      * anchor offset for the {@code startDrag} method
      *
-     * @see j86.j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
+     * @see j86.java.awt.dnd.DragGestureEvent#startDrag(Cursor dragCursor, Image dragImage, Point imageOffset, Transferable transferable, DragSourceListener dsl)
      */
     private  Point dragImageOffset;
 
@@ -702,7 +702,7 @@ public class TransferHandler implements Serializable {
 
     /**
      * Causes the Swing drag support to be initiated.  This is called by
-     * the various UI implementations in the <code>j86.j86.j86.javax.swing.plaf.basic</code>
+     * the various UI implementations in the <code>j86.javax.swing.plaf.basic</code>
      * package if the dragEnabled property is set on the component.
      * This can be called by custom UI
      * implementations to use the Swing drag support.  This method can also be called
@@ -712,7 +712,7 @@ public class TransferHandler implements Serializable {
      * The transfer <em>will not necessarily</em> have been completed at the
      * return of this call (i.e. the call does not block waiting for the drop).
      * The transfer will take place through the Swing implementation of the
-     * <code>j86.j86.java.awt.dnd</code> mechanism, requiring no further effort
+     * <code>j86.java.awt.dnd</code> mechanism, requiring no further effort
      * from the developer. The <code>exportDone</code> method will be called
      * when the transfer has completed.
      *
@@ -752,7 +752,7 @@ public class TransferHandler implements Serializable {
      * given clipboard.  This method is called by the default cut and
      * copy actions registered in a component's action map.
      * <p>
-     * The transfer will take place using the <code>j86.j86.java.awt.datatransfer</code>
+     * The transfer will take place using the <code>j86.java.awt.datatransfer</code>
      * mechanism, requiring no further effort from the developer. Any data
      * transfer <em>will</em> be complete and the <code>exportDone</code>
      * method will be called with the action that occurred, before this method
@@ -1445,7 +1445,7 @@ public class TransferHandler implements Serializable {
                                         ? null
                                         : support.getDropLocation();
 
-            if (SunToolkit.isInstanceOf(component, "j86.j86.javax.swing.text.JTextComponent")) {
+            if (SunToolkit.isInstanceOf(component, "j86.javax.swing.text.JTextComponent")) {
                 state = SwingAccessor.getJTextComponentAccessor().
                             setDropLocation((JTextComponent)component, dropLocation, state, forDrop);
             } else if (component instanceof JComponent) {

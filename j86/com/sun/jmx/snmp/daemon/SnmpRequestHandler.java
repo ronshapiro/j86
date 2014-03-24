@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 
 
@@ -33,7 +33,7 @@ package j86.j86.j86.com.sun.jmx.snmp.daemon;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.io.InterruptedIOException;
 import j86.java.net.DatagramSocket;
 import j86.java.net.DatagramPacket;
@@ -63,9 +63,9 @@ import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_ADAPTOR_LOGGER;
 
 // SNMP runtime import
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
-//import j86.j86.com.sun.jmx.snmp.IPAcl.IPAcl;
+import j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+//import j86.com.sun.jmx.snmp.IPAcl.IPAcl;
 import j86.com.sun.jmx.snmp.InetAddressAcl;
 
 

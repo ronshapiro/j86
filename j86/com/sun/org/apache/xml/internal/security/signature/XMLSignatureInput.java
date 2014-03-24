@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
@@ -37,13 +37,13 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.JavaUtils;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
+import j86.com.sun.org.apache.xml.internal.security.utils.JavaUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
@@ -565,7 +565,7 @@ public class XMLSignatureInput {
         DocumentBuilder db = dfactory.newDocumentBuilder();
         // select all nodes, also the comments.
         try {
-            db.setErrorHandler(new j86.j86.com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
+            db.setErrorHandler(new j86.com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
 
             Document doc = db.parse(this.getOctetStream());
             this.subNode = doc;

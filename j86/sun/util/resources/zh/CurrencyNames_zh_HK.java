@@ -75,13 +75,13 @@
  *
  */
 
-package j86.j86.j86.sun.util.resources.zh;
+package j86.sun.util.resources.zh;
 
 import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
-import j86.j86.sun.util.resources.OpenListResourceBundle;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.sun.util.resources.OpenListResourceBundle;
 
 public final class CurrencyNames_zh_HK extends OpenListResourceBundle {
 

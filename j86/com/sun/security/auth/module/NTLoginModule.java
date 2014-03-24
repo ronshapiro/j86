@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.java.util.*;
 import j86.java.io.IOException;
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 import j86.java.security.Principal;
 import j86.com.sun.security.auth.NTUserPrincipal;
 import j86.com.sun.security.auth.NTSidUserPrincipal;
@@ -55,7 +55,7 @@ import j86.com.sun.security.auth.NTNumericCredential;
  * debug messages from the native component of the module
  * will be output to the output stream, System.out.
  *
- * @see j86.j86.javax.security.auth.spi.LoginModule
+ * @see j86.javax.security.auth.spi.LoginModule
  */
 @jdk.Exported
 public class NTLoginModule implements LoginModule {

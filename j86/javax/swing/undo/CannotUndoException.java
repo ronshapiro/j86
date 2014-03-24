@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.undo;
+package j86.javax.swing.undo;
 
 /**
  * Thrown when an UndoableEdit is told to <code>undo()</code> and can't.

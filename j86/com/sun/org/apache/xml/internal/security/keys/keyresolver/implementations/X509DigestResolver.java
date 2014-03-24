@@ -2,24 +2,24 @@
  * reserved comment block
  * DO NOT REMOVE OR ALTER!
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.Arrays;
 import j86.java.util.Iterator;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.X509Data;
+import j86.com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 /**
@@ -31,8 +31,8 @@ import org.w3c.dom.Element;
 public class X509DigestResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(X509DigestResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(X509DigestResolver.class.getName());
 
     /** {@inheritDoc}. */
     public boolean engineCanResolve(Element element, String baseURI, StorageResolver storage) {
@@ -65,8 +65,8 @@ public class X509DigestResolver extends KeyResolverSpi {
     public X509Certificate engineLookupResolveX509Certificate(Element element, String baseURI, StorageResolver storage)
         throws KeyResolverException {
 
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Can I resolve " + element.getTagName());
         }
 
         if (!engineCanResolve(element, baseURI, storage)) {
@@ -76,8 +76,8 @@ public class X509DigestResolver extends KeyResolverSpi {
         try {
             return resolveCertificate(element, baseURI, storage);
         } catch (XMLSecurityException e) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "XMLSecurityException", e);
             }
         }
 
@@ -128,8 +128,8 @@ public class X509DigestResolver extends KeyResolverSpi {
                     byte[] certDigestBytes = XMLX509Digest.getDigestBytesFromCert(cert, keyInfoDigest.getAlgorithm());
 
                     if (Arrays.equals(keyInfoDigest.getDigestBytes(), certDigestBytes)) {
-                        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                            log.log(j86.j86.java.util.logging.Level.FINE, "Found certificate with: " + cert.getSubjectX500Principal().getName());
+                        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                            log.log(j86.java.util.logging.Level.FINE, "Found certificate with: " + cert.getSubjectX500Principal().getName());
                         }
                         return cert;
                     }
@@ -154,8 +154,8 @@ public class X509DigestResolver extends KeyResolverSpi {
         if (storage == null) {
             Object exArgs[] = { Constants._TAG_X509DIGEST };
             KeyResolverException ex = new KeyResolverException("KeyResolver.needStorageResolver", exArgs);
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "", ex);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "", ex);
             }
             throw ex;
         }

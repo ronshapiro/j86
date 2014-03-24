@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Unable to properly expand {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (No such file or directory)"},
@@ -78,11 +78,11 @@ public class AuthResources extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Configuration Error:\n\tLine {0}: system property [{1}] expanded to empty value"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","username: "},
         {"password.","password: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Please enter keystore information"},
         {"Keystore.alias.","Keystore alias: "},
@@ -90,7 +90,7 @@ public class AuthResources extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Private key password (optional): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos username [{0}]: "},
         {"Kerberos.password.for.username.",

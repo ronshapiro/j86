@@ -30,8 +30,8 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.Vector;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.Attributes;
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.directory.Attributes;
+import j86.javax.naming.ldap.Control;
 
 /**
  * Basic enumeration for NameClassPair, Binding, and SearchResults.

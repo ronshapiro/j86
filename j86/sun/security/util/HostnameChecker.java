@@ -29,14 +29,14 @@ import j86.java.io.IOException;
 import j86.java.util.*;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.ssl.Krb5Helper;
 import j86.sun.security.x509.X500Name;
 
-import j86.j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.util.IPAddressUtil;
 
 /**
  * Class to check hostnames against the names specified in a certificate as

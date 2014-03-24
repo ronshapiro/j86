@@ -29,7 +29,7 @@ import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.security.*;
 
-import j86.j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.MessageHeader;
 import j86.java.util.Base64;
 
 

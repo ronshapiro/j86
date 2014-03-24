@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.util.jar;
+package j86.java.util.jar;
 
 import j86.java.io.*;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.net.URL;
 import j86.java.util.*;
-import j86.j86.java.util.stream.Stream;
-import j86.j86.java.util.stream.StreamSupport;
-import j86.j86.java.util.zip.*;
+import j86.java.util.stream.Stream;
+import j86.java.util.stream.StreamSupport;
+import j86.java.util.zip.*;
 import j86.java.security.CodeSigner;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.Certificate;
 import j86.java.security.AccessController;
 import j86.java.security.CodeSource;
 import j86.sun.misc.IOUtils;
@@ -45,7 +45,7 @@ import j86.sun.security.util.SignatureFileVerifier;
 /**
  * The <code>JarFile</code> class is used to read the contents of a jar file
  * from any file that can be opened with <code>j86.java.io.RandomAccessFile</code>.
- * It extends the class <code>j86.j86.java.util.zip.ZipFile</code> with support
+ * It extends the class <code>j86.java.util.zip.ZipFile</code> with support
  * for reading an optional <code>Manifest</code> entry. The
  * <code>Manifest</code> can be used to specify meta-information about the
  * jar file and its entries.
@@ -63,8 +63,8 @@ import j86.sun.security.util.SignatureFileVerifier;
  *
  * @author  David Connelly
  * @see     Manifest
- * @see     j86.j86.java.util.zip.ZipFile
- * @see     j86.j86.java.util.jar.JarEntry
+ * @see     j86.java.util.zip.ZipFile
+ * @see     j86.java.util.jar.JarEntry
  * @since   1.2
  */
 public
@@ -217,7 +217,7 @@ class JarFile extends ZipFile {
      * @throws IllegalStateException
      *         may be thrown if the jar file has been closed
      *
-     * @see j86.j86.java.util.jar.JarEntry
+     * @see j86.java.util.jar.JarEntry
      */
     public JarEntry getJarEntry(String name) {
         return (JarEntry)getEntry(name);
@@ -234,7 +234,7 @@ class JarFile extends ZipFile {
      * @throws IllegalStateException
      *         may be thrown if the jar file has been closed
      *
-     * @see j86.j86.java.util.zip.ZipEntry
+     * @see j86.java.util.zip.ZipEntry
      */
     public ZipEntry getEntry(String name) {
         ZipEntry ze = super.getEntry(name);

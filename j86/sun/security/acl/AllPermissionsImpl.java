@@ -26,7 +26,7 @@
 package j86.sun.security.acl;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.*;
+import j86.java.security.acl.*;
 
 /**
  * This class implements the principal interface for the set of all permissions.

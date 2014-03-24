@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventObject;
 

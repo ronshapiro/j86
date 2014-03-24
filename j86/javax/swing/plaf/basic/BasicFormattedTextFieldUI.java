@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.ComponentUI;
 
 /**
  * Provides the look and feel implementation for

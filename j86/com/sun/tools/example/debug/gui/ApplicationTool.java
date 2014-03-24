@@ -36,7 +36,7 @@ package j86.com.sun.tools.example.debug.gui;
 
 import j86.javax.swing.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.com.sun.tools.example.debug.bdi.*;
 

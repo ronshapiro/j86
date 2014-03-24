@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.awt.event.*;
+import j86.java.lang.reflect.Array;
 import j86.java.util.EventListener;
 import j86.java.io.Serializable;
 import j86.java.io.ObjectOutputStream;
@@ -35,7 +35,7 @@ import j86.java.util.EventListener;
 
 /**
  * {@code AWTEventMulticaster} implements efficient and thread-safe multi-cast
- * event dispatching for the AWT events defined in the {@code j86.j86.java.awt.event}
+ * event dispatching for the AWT events defined in the {@code j86.java.awt.event}
  * package.
  * <p>
  * The following example illustrates how to use this class:
@@ -93,10 +93,10 @@ import j86.java.util.EventListener;
  *       {@code remove(EventListener)} method.
  * </ul>
  * <p>Swing makes use of
- * {@link j86.j86.javax.swing.event.EventListenerList EventListenerList} for
+ * {@link j86.javax.swing.event.EventListenerList EventListenerList} for
  * similar logic. Refer to it for details.
  *
- * @see j86.j86.javax.swing.event.EventListenerList
+ * @see j86.javax.swing.event.EventListenerList
  *
  * @author      John Rose
  * @author      Amy Fowler

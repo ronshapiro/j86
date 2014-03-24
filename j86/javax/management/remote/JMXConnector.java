@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 import j86.java.io.Closeable;
 import j86.java.io.IOException;
@@ -289,7 +289,7 @@ public interface JMXConnector extends Closeable {
      * @return the unique ID of this connection.  This is the same as
      * the ID that the connector server includes in its {@link
      * JMXConnectionNotification}s.  The {@link
-     * j86.j86.javax.management.remote package description} describes the
+     * j86.javax.management.remote package description} describes the
      * conventions for connection IDs.
      *
      * @exception IOException if the connection ID cannot be obtained,

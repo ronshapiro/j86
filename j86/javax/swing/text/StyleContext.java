@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.awt.*;
 import j86.java.util.*;
 import j86.java.io.*;
 
 import j86.javax.swing.SwingUtilities;
-import j86.j86.javax.swing.event.ChangeListener;
-import j86.j86.javax.swing.event.EventListenerList;
-import j86.j86.javax.swing.event.ChangeEvent;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.javax.swing.event.ChangeListener;
+import j86.javax.swing.event.EventListenerList;
+import j86.javax.swing.event.ChangeEvent;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.WeakHashMap;
 
 import j86.sun.font.FontUtilities;

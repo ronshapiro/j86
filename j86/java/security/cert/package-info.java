@@ -61,4 +61,4 @@
  *
  * @since 1.2
  */
-package j86.j86.java.security.cert;
+package j86.java.security.cert;

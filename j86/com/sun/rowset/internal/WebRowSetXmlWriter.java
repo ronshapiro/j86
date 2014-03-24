@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import j86.com.sun.rowset.JdbcRowSetResourceBundle;
 import j86.java.sql.*;
@@ -32,8 +32,8 @@ import j86.java.io.*;
 import j86.java.text.MessageFormat;
 import j86.java.util.*;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
 
 /**
  * An implementation of the <code>XmlWriter</code> interface, which writes a

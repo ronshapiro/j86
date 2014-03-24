@@ -26,7 +26,7 @@
 package j86.javax.accessibility;
 
 import j86.java.io.InputStream;
-import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.DataFlavor;
 
 /**
  *

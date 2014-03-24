@@ -27,8 +27,8 @@ package j86.com.sun.jndi.url.ldap;
 
 import j86.java.util.Hashtable;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.DirContext;
-import j86.j86.javax.naming.spi.*;
+import j86.javax.naming.directory.DirContext;
+import j86.javax.naming.spi.*;
 import j86.com.sun.jndi.ldap.LdapCtx;
 import j86.com.sun.jndi.ldap.LdapCtxFactory;
 import j86.com.sun.jndi.ldap.LdapURL;

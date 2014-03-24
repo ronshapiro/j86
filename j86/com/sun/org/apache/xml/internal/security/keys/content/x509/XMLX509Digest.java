@@ -20,15 +20,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
+package j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
 
 import j86.java.security.MessageDigest;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.peer;
+package j86.java.awt.peer;
 
 import j86.java.awt.*;
 

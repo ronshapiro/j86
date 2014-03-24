@@ -26,10 +26,10 @@
 package j86.com.sun.tools.jdi;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.*;
-import j86.j86.j86.com.sun.jdi.connect.spi.*;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.spi.*;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.util.List;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;

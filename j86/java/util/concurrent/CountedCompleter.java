@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 /**
  * A {@link ForkJoinTask} with a completion action performed when
@@ -42,7 +42,7 @@ package j86.j86.java.util.concurrent;
  * presence of subtask stalls and blockage than are other forms of
  * ForkJoinTasks, but are less intuitive to program.  Uses of
  * CountedCompleter are similar to those of other completion based
- * components (such as {@link j86.j86.java.nio.channels.CompletionHandler})
+ * components (such as {@link j86.java.nio.channels.CompletionHandler})
  * except that multiple <em>pending</em> completions may be necessary
  * to trigger the completion action {@link #onCompletion(CountedCompleter)},
  * not just one.
@@ -54,8 +54,8 @@ package j86.j86.java.util.concurrent;
  * decremented; otherwise, the completion action is performed, and if
  * this completer itself has a completer, the process is continued
  * with its completer.  As is the case with related synchronization
- * components such as {@link j86.j86.java.util.concurrent.Phaser Phaser} and
- * {@link j86.j86.java.util.concurrent.Semaphore Semaphore}, these methods
+ * components such as {@link j86.java.util.concurrent.Phaser Phaser} and
+ * {@link j86.java.util.concurrent.Semaphore Semaphore}, these methods
  * affect only internal counts; they do not establish any further
  * internal bookkeeping. In particular, the identities of pending
  * tasks are not maintained. As illustrated below, you can create
@@ -215,7 +215,7 @@ package j86.j86.java.util.concurrent;
  * <p><b>Searching.</b> A tree of CountedCompleters can search for a
  * value or property in different parts of a data structure, and
  * report a result in an {@link
- * j86.j86.j86.java.util.concurrent.atomic.AtomicReference AtomicReference} as
+ * j86.java.util.concurrent.atomic.AtomicReference AtomicReference} as
  * soon as one is found. The others can poll the result to avoid
  * unnecessary work. (You could additionally {@linkplain #cancel
  * cancel} other tasks, but it is usually simpler and more efficient

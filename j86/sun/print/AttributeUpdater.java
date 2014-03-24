@@ -25,7 +25,7 @@
 
 package j86.sun.print;
 
-import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.javax.print.attribute.PrintServiceAttributeSet;
 
 /*
  * For use in updating listeners on attribute set changes.

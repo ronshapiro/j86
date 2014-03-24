@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.naming.directory;
+package j86.javax.naming.directory;
 
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.util.NoSuchElementException;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 import j86.javax.naming.NamingException;
 import j86.javax.naming.NamingEnumeration;

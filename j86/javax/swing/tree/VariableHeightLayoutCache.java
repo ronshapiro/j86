@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
-import j86.j86.javax.swing.event.TreeModelEvent;
+import j86.javax.swing.event.TreeModelEvent;
 import j86.java.awt.Rectangle;
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.internal;
+package j86.com.sun.jmx.snmp.internal;
 
 import j86.java.net.InetAddress;
 
@@ -33,7 +33,7 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 import j86.com.sun.jmx.snmp.SnmpPdu;
 import j86.com.sun.jmx.snmp.SnmpMsg;
 
-import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
+import j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
 import j86.com.sun.jmx.snmp.SnmpUnknownSecModelException;
 import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
 /**

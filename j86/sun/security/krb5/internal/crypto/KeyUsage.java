@@ -26,7 +26,7 @@
 /*
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 /**
  * Key usages used for key derivation in Kerberos.

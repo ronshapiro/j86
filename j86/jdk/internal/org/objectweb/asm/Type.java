@@ -58,8 +58,8 @@
  */
 package j86.jdk.internal.org.objectweb.asm;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
 
 /**
  * A Java field or method type. This class can be used to make it easier to

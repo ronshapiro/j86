@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.auth.module;
+package j86.com.sun.security.auth.module;
 
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
-import j86.j86.javax.security.auth.spi.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
+import j86.javax.security.auth.spi.*;
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -118,8 +118,8 @@ import j86.com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    useFirstPass   if, true, this LoginModule retrieves the
  *                   username and password from the module's shared state,
- *                   using "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   using "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for authentication.
  *                   If authentication fails, no attempt for a retry is made,
  *                   and the failure is reported back to the calling
@@ -127,8 +127,8 @@ import j86.com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    tryFirstPass   if, true, this LoginModule retrieves the
  *                   the username and password from the module's shared state,
- *                   using "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   using "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys.  The retrieved values are used for authentication.
  *                   If authentication fails, the module uses the
  *                   CallbackHandler to retrieve a new username and password,
@@ -138,8 +138,8 @@ import j86.com.sun.security.auth.UnixNumericGroupPrincipal;
  *
  *    storePass      if, true, this LoginModule stores the username and password
  *                   obtained from the CallbackHandler in the module's
- *                   shared state, using "j86.j86.javax.security.auth.login.name" and
- *                   "j86.j86.javax.security.auth.login.password" as the respective
+ *                   shared state, using "j86.javax.security.auth.login.name" and
+ *                   "j86.javax.security.auth.login.password" as the respective
  *                   keys.  This is not performed if existing values already
  *                   exist for the username and password in the shared state,
  *                   or if authentication fails.
@@ -204,8 +204,8 @@ public class JndiLoginModule implements LoginModule {
     private static final String USER_UID = "uidNumber";
     private static final String USER_GID = "gidNumber";
     private static final String GROUP_ID = "gidNumber";
-    private static final String NAME = "j86.j86.javax.security.auth.login.name";
-    private static final String PWD = "j86.j86.javax.security.auth.login.password";
+    private static final String NAME = "j86.javax.security.auth.login.name";
+    private static final String PWD = "j86.javax.security.auth.login.password";
 
     /**
      * Initialize this <code>LoginModule</code>.
@@ -225,7 +225,7 @@ public class JndiLoginModule implements LoginModule {
      *                  <code>LoginModule</code>.
      */
     // Unchecked warning from (Map<String, Object>)sharedState is safe
-    // since j86.j86.javax.security.auth.login.LoginContext passes a raw HashMap.
+    // since j86.javax.security.auth.login.LoginContext passes a raw HashMap.
     // Unchecked warnings from options.get(String) are safe since we are
     // passing known keys.
     @SuppressWarnings("unchecked")

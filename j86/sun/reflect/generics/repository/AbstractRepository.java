@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.repository;
+package j86.sun.reflect.generics.repository;
 
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.tree.Tree;
-import j86.j86.sun.reflect.generics.visitor.Reifier;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.tree.Tree;
+import j86.sun.reflect.generics.visitor.Reifier;
 
 
 /**

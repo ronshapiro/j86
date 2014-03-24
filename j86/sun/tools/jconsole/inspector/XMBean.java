@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.java.io.IOException;
 import j86.javax.management.*;

@@ -31,7 +31,7 @@
 // CHANGELOG
 //      2005-05-19 Edward Wang
 //          - copy this file from icu4jsrc_3_2/src/com/ibm/icu/lang/UCharacterEnums.java
-//          - move from package com.ibm.icu.lang to package j86.j86.sun.net.idn
+//          - move from package com.ibm.icu.lang to package j86.sun.net.idn
 //
 //      2011-09-06 Kurchi Subhra Hazra
 //          - Added @Deprecated tag to the following:
@@ -50,7 +50,7 @@
 //              DIRECTIONALITY_BOUNDARY_NEUTRAL, DIRECTIONALITY_UNDEFINED
 //
 
-package j86.j86.sun.net.idn;
+package j86.sun.net.idn;
 
 /**
  * A container for the different 'enumerated types' used by UCharacter.

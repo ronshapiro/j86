@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.Locale;
 import j86.java.util.Set;
-import j86.j86.java.util.spi.CalendarDataProvider;
+import j86.java.util.spi.CalendarDataProvider;
 
 /**
- * Concrete implementation of the  {@link j86.j86.java.util.spi.CalendarDataProvider
+ * Concrete implementation of the  {@link j86.java.util.spi.CalendarDataProvider
  * CalendarDataProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Masayoshi Okutsu

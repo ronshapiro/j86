@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.util;
+package j86.sun.management.snmp.util;
 
 import j86.com.sun.jmx.snmp.SnmpOid;
 
@@ -34,7 +34,7 @@ import j86.java.util.TreeMap;
 import j86.java.util.List;
 import j86.java.util.Iterator;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * This class is used to cache table data.

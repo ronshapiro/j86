@@ -38,13 +38,13 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.zh;
+package j86.sun.text.resources.zh;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 public class FormatData_zh_HK extends ParallelListResourceBundle {
 

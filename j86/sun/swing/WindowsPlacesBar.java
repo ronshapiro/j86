@@ -25,7 +25,7 @@
 package j86.sun.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.*;
@@ -33,10 +33,10 @@ import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.filechooser.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.filechooser.*;
 
-import j86.j86.sun.awt.shell.*;
+import j86.sun.awt.shell.*;
 import j86.sun.awt.OSInfo;
 
 /**

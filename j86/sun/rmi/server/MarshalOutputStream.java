@@ -27,7 +27,7 @@ package j86.sun.rmi.server;
 
 import j86.java.io.*;
 import j86.java.rmi.Remote;
-import j86.j86.java.rmi.server.RemoteStub;
+import j86.java.rmi.server.RemoteStub;
 import j86.sun.rmi.transport.ObjectTable;
 import j86.sun.rmi.transport.Target;
 
@@ -90,7 +90,7 @@ public class MarshalOutputStream extends ObjectOutputStream
      * Serializes a location from which to load the the specified class.
      */
     protected void annotateClass(Class<?> cl) throws IOException {
-        writeLocation(j86.j86.java.rmi.server.RMIClassLoader.getClassAnnotation(cl));
+        writeLocation(j86.java.rmi.server.RMIClassLoader.getClassAnnotation(cl));
     }
 
     /**

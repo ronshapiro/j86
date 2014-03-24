@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.java.beans.PropertyChangeListener;
 import j86.java.io.*;
@@ -34,7 +34,7 @@ import j86.java.util.EventListener;
 import j86.java.util.Hashtable;
 import j86.java.util.List;
 import j86.java.util.Vector;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.javax.swing.DefaultListSelectionModel;
 
 /**

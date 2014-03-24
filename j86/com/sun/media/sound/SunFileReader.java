@@ -34,7 +34,7 @@ import j86.java.net.URL;
 import j86.javax.sound.sampled.AudioFileFormat;
 import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.UnsupportedAudioFileException;
-import j86.j86.javax.sound.sampled.spi.AudioFileReader;
+import j86.javax.sound.sampled.spi.AudioFileReader;
 
 
 

@@ -25,7 +25,7 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 
 class UnsafeStaticFloatFieldAccessorImpl extends UnsafeStaticFieldAccessorImpl {
     UnsafeStaticFloatFieldAccessorImpl(Field field) {

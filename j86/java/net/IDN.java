@@ -29,9 +29,9 @@ import j86.java.io.IOException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.sun.net.idn.StringPrep;
-import j86.j86.sun.net.idn.Punycode;
-import j86.j86.sun.text.normalizer.UCharacterIterator;
+import j86.sun.net.idn.StringPrep;
+import j86.sun.net.idn.Punycode;
+import j86.sun.text.normalizer.UCharacterIterator;
 
 /**
  * Provides methods to convert internationalized domain names (IDNs) between

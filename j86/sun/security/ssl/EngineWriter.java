@@ -28,7 +28,7 @@ package j86.sun.security.ssl;
 import j86.java.io.IOException;
 import j86.java.nio.ByteBuffer;
 import j86.java.util.LinkedList;
-import j86.j86.javax.net.ssl.SSLEngineResult.HandshakeStatus;
+import j86.javax.net.ssl.SSLEngineResult.HandshakeStatus;
 import j86.sun.misc.HexDumpEncoder;
 
 /**

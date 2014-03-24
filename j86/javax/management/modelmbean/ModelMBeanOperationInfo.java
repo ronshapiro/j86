@@ -28,7 +28,7 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
@@ -37,9 +37,9 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectStreamField;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.security.AccessController;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.Descriptor;
 import j86.javax.management.DescriptorAccess;
@@ -175,7 +175,7 @@ public class ModelMBeanOperationInfo extends MBeanOperationInfo
          * on the {@code Method} object that contain the {@link
          * DescriptorKey} meta-annotation.
          *
-         * @param operationMethod The j86.j86.j86.java.lang.reflect.Method object
+         * @param operationMethod The j86.java.lang.reflect.Method object
          * describing the MBean operation.
          * @param description A human readable description of the operation.
          */
@@ -200,7 +200,7 @@ public class ModelMBeanOperationInfo extends MBeanOperationInfo
          * contributed by any annotations on the {@code Method} object
          * that contain the {@link DescriptorKey} meta-annotation.
          *
-         * @param operationMethod The j86.j86.j86.java.lang.reflect.Method object
+         * @param operationMethod The j86.java.lang.reflect.Method object
          * describing the MBean operation.
          * @param description A human readable description of the
          * operation.

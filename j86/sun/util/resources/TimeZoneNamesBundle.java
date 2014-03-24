@@ -38,7 +38,7 @@
  *
  */
 
-package j86.j86.sun.util.resources;
+package j86.sun.util.resources;
 
 import j86.java.util.Map;
 import j86.java.util.LinkedHashMap;

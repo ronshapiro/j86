@@ -33,12 +33,12 @@
 /*
  * $Id: DOMReference.java 1334007 2012-05-04 14:59:46Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dom.DOMURIReference;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dom.DOMURIReference;
 
 import j86.java.io.*;
 import j86.java.net.URI;
@@ -51,11 +51,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import j86.org.jcp.xml.dsig.internal.DigesterOutputStream;
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.utils.UnsyncBufferedOutputStream;
 
 /**
  * DOM-based implementation of Reference.
@@ -86,8 +86,8 @@ public final class DOMReference extends DOMStructure
             }
         });
 
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal.dom");
 
     private final DigestMethod digestMethod;
     private final String id;
@@ -309,8 +309,8 @@ public final class DOMReference extends DOMStructure
     public void marshal(Node parent, String dsPrefix, DOMCryptoContext context)
         throws MarshalException
     {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Marshalling Reference");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Marshalling Reference");
         }
         Document ownerDoc = DOMUtils.getOwnerDocument(parent);
 
@@ -339,8 +339,8 @@ public final class DOMReference extends DOMStructure
         ((DOMDigestMethod)digestMethod).marshal(refElem, dsPrefix, context);
 
         // create and append DigestValue element
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Adding digestValueElem");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Adding digestValueElem");
         }
         Element digestValueElem = DOMUtils.createElement(ownerDoc,
                                                          "DigestValue",
@@ -369,8 +369,8 @@ public final class DOMReference extends DOMStructure
 
         // insert digestValue into DigestValue element
         String encodedDV = Base64.encode(digestValue);
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Reference object uri = " + uri);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Reference object uri = " + uri);
         }
         Element digestElem = DOMUtils.getLastChildElement(refElem);
         if (digestElem == null) {
@@ -381,8 +381,8 @@ public final class DOMReference extends DOMStructure
             (refElem.getOwnerDocument().createTextNode(encodedDV));
 
         digested = true;
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Reference digesting completed");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Reference digesting completed");
         }
     }
 
@@ -398,9 +398,9 @@ public final class DOMReference extends DOMStructure
         Data data = dereference(validateContext);
         calcDigestValue = transform(data, validateContext);
 
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Expected digest: " + Base64.encode(digestValue));
-            log.log(j86.j86.java.util.logging.Level.FINE, "Actual digest: " + Base64.encode(calcDigestValue));
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Expected digest: " + Base64.encode(digestValue));
+            log.log(j86.java.util.logging.Level.FINE, "Actual digest: " + Base64.encode(calcDigestValue));
         }
 
         validationStatus = Arrays.equals(digestValue, calcDigestValue);
@@ -428,9 +428,9 @@ public final class DOMReference extends DOMStructure
         }
         try {
             data = deref.dereference(this, context);
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "URIDereferencer class name: " + deref.getClass().getName());
-                log.log(j86.j86.java.util.logging.Level.FINE, "Data class name: " + data.getClass().getName());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "URIDereferencer class name: " + deref.getClass().getName());
+                log.log(j86.java.util.logging.Level.FINE, "Data class name: " + data.getClass().getName());
             }
         } catch (URIReferenceException ure) {
             throw new XMLSignatureException(ure);
@@ -454,7 +454,7 @@ public final class DOMReference extends DOMStructure
         md.reset();
         DigesterOutputStream dos;
         Boolean cache = (Boolean)
-            context.getProperty("j86.j86.javax.xml.crypto.dsig.cacheReference");
+            context.getProperty("j86.javax.xml.crypto.dsig.cacheReference");
         if (cache != null && cache.booleanValue()) {
             this.derefData = copyDerefData(dereferencedData);
             dos = new DigesterOutputStream(md, true);
@@ -560,7 +560,7 @@ public final class DOMReference extends DOMStructure
             throw new XMLSignatureException(e);
         } catch (IOException e) {
             throw new XMLSignatureException(e);
-        } catch (j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException e) {
+        } catch (j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException e) {
             throw new XMLSignatureException(e);
         } finally {
             if (os != null) {
@@ -647,7 +647,7 @@ public final class DOMReference extends DOMStructure
                     };
                 } catch (Exception e) {
                     // log a warning
-                    log.log(j86.j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + e);
+                    log.log(j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + e);
                     return null;
                 }
             } else if (xsi.isElement()) {
@@ -660,7 +660,7 @@ public final class DOMReference extends DOMStructure
                          xsi.getMIMEType());
                 } catch (IOException ioe) {
                     // log a warning
-                    log.log(j86.j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + ioe);
+                    log.log(j86.java.util.logging.Level.WARNING, "cannot cache dereferenced data: " + ioe);
                     return null;
                 }
             }

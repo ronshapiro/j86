@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 /**
  * A selector that defines a set of criteria for selecting {@code CRL}s.

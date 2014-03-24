@@ -32,7 +32,7 @@ package j86.java.security;
  *
  *
  * @see AlgorithmParameters
- * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.spec.AlgorithmParameterSpec
  *
  * @since 1.2
  */

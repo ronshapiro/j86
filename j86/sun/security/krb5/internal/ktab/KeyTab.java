@@ -29,11 +29,11 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.ktab;
+package j86.sun.security.krb5.internal.ktab;
 
 import j86.sun.security.krb5.*;
-import j86.j86.sun.security.krb5.internal.*;
-import j86.j86.j86.sun.security.krb5.internal.crypto.*;
+import j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.crypto.*;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.io.IOException;
@@ -46,7 +46,7 @@ import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
-import j86.j86.sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.jgss.krb5.ServiceCreds;
 
 /**
  * This class represents key table. The key table functions deal with storing

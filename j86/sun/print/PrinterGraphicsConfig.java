@@ -30,10 +30,10 @@ import j86.java.awt.GraphicsDevice;
 
 import j86.java.awt.Rectangle;
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DirectColorModel;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DirectColorModel;
 
 public class PrinterGraphicsConfig extends GraphicsConfiguration {
 

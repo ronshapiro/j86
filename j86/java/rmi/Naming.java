@@ -24,7 +24,7 @@
  */
 package j86.java.rmi;
 
-import j86.j86.java.rmi.registry.*;
+import j86.java.rmi.registry.*;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URI;
 import j86.java.net.URISyntaxException;
@@ -59,15 +59,15 @@ import j86.java.net.URISyntaxException;
  * object by name, obtain its reference, and then invoke remote methods on the
  * object.  A registry may be shared by all servers running on a host or an
  * individual server process may create and use its own registry if desired
- * (see <code>j86.j86.java.rmi.registry.LocateRegistry.createRegistry</code> method
+ * (see <code>j86.java.rmi.registry.LocateRegistry.createRegistry</code> method
  * for details).
  *
  * @author  Ann Wollrath
  * @author  Roger Riggs
  * @since   JDK1.1
- * @see     j86.j86.java.rmi.registry.Registry
- * @see     j86.j86.java.rmi.registry.LocateRegistry
- * @see     j86.j86.java.rmi.registry.LocateRegistry#createRegistry(int)
+ * @see     j86.java.rmi.registry.Registry
+ * @see     j86.java.rmi.registry.LocateRegistry
+ * @see     j86.java.rmi.registry.LocateRegistry#createRegistry(int)
  */
 public final class Naming {
     /**

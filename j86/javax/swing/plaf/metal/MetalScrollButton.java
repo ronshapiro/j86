@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.Dimension;
 import j86.java.awt.Graphics;
@@ -32,7 +32,7 @@ import j86.java.awt.Polygon;
 
 import j86.javax.swing.*;
 
-import j86.j86.j86.javax.swing.plaf.basic.BasicArrowButton;
+import j86.javax.swing.plaf.basic.BasicArrowButton;
 
 
 /**

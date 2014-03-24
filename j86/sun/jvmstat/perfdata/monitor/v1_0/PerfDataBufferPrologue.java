@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.v1_0;
+package j86.sun.jvmstat.perfdata.monitor.v1_0;
 
 import j86.sun.jvmstat.monitor.*;
 import j86.sun.jvmstat.perfdata.monitor.*;

@@ -33,7 +33,7 @@ import j86.java.net.URL;
 
 import j86.javax.sound.midi.InvalidMidiDataException;
 import j86.javax.sound.midi.Soundbank;
-import j86.j86.javax.sound.midi.spi.SoundbankReader;
+import j86.javax.sound.midi.spi.SoundbankReader;
 import j86.javax.sound.sampled.AudioInputStream;
 import j86.javax.sound.sampled.AudioSystem;
 import j86.javax.sound.sampled.UnsupportedAudioFileException;

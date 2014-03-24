@@ -29,7 +29,7 @@
  */
 
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
 

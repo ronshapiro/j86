@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.ClassEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.LiteralEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MemberEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.MethodTypeEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.InvokeDynamicEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.SignatureEntry;
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.ClassEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.DescriptorEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.LiteralEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.MemberEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.MethodHandleEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.MethodTypeEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.InvokeDynamicEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.BootstrapMethodEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.SignatureEntry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Utf8Entry;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.SortedMap;

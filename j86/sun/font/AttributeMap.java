@@ -39,12 +39,12 @@
 package j86.sun.font;
 
 import j86.java.awt.Paint;
-import j86.j86.java.awt.font.GraphicAttribute;
-import j86.j86.java.awt.font.NumericShaper;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.java.awt.font.TransformAttribute;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.im.InputMethodHighlight;
+import j86.java.awt.font.GraphicAttribute;
+import j86.java.awt.font.NumericShaper;
+import j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TransformAttribute;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.im.InputMethodHighlight;
 import j86.java.text.AttributedCharacterIterator.Attribute;
 import j86.java.util.AbstractMap;
 import j86.java.util.HashMap;

@@ -26,8 +26,8 @@
 package j86.sun.security.jgss;
 
 import j86.java.util.HashMap;
-import j86.j86.javax.security.auth.login.AppConfigurationEntry;
-import j86.j86.javax.security.auth.login.Configuration;
+import j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.javax.security.auth.login.Configuration;
 import j86.org.ietf.jgss.Oid;
 
 /**
@@ -90,27 +90,27 @@ public class LoginConfigImpl extends Configuration {
         if ("krb5".equals(mechName)) {
             if (caller == GSSCaller.CALLER_INITIATE) {
                 alts = new String[] {
-                    "com.j86.j86.sun.security.jgss.krb5.initiate",
+                    "com.j86.sun.security.jgss.krb5.initiate",
                     "com.j86.sun.security.jgss.initiate",
                 };
             } else if (caller == GSSCaller.CALLER_ACCEPT) {
                 alts = new String[] {
-                    "com.j86.j86.sun.security.jgss.krb5.accept",
+                    "com.j86.sun.security.jgss.krb5.accept",
                     "com.j86.sun.security.jgss.accept",
                 };
             } else if (caller == GSSCaller.CALLER_SSL_CLIENT) {
                 alts = new String[] {
-                    "com.j86.j86.sun.security.jgss.krb5.initiate",
+                    "com.j86.sun.security.jgss.krb5.initiate",
                     "com.j86.sun.net.ssl.client",
                 };
             } else if (caller == GSSCaller.CALLER_SSL_SERVER) {
                 alts = new String[] {
-                    "com.j86.j86.sun.security.jgss.krb5.accept",
+                    "com.j86.sun.security.jgss.krb5.accept",
                     "com.j86.sun.net.ssl.server",
                 };
             } else if (caller instanceof HttpCaller) {
                 alts = new String[] {
-                    "com.j86.j86.sun.security.jgss.krb5.initiate",
+                    "com.j86.sun.security.jgss.krb5.initiate",
                 };
             } else if (caller == GSSCaller.CALLER_UNKNOWN) {
                 throw new AssertionError("caller not defined");
@@ -183,7 +183,7 @@ public class LoginConfigImpl extends Configuration {
             }
             return new AppConfigurationEntry[] {
                 new AppConfigurationEntry(
-                        "j86.j86.com.sun.security.auth.module.Krb5LoginModule",
+                        "j86.com.sun.security.auth.module.Krb5LoginModule",
                         AppConfigurationEntry.LoginModuleControlFlag.REQUIRED,
                         options)
             };

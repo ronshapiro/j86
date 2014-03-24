@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.jar;
+package j86.java.util.jar;
 
 import j86.java.io.DataInputStream;
 import j86.java.io.DataOutputStream;
@@ -34,7 +34,7 @@ import j86.java.util.Set;
 import j86.java.util.Collection;
 import j86.java.util.AbstractSet;
 import j86.java.util.Iterator;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 import j86.java.util.Comparator;
 import j86.sun.misc.ASCIICaseInsensitiveComparator;
 
@@ -419,7 +419,7 @@ public class Attributes implements Map<Object,Object>, Cloneable {
             }
             try {
                 if ((putValue(name, value) != null) && (!lineContinued)) {
-                    PlatformLogger.getLogger("j86.j86.java.util.jar").warning(
+                    PlatformLogger.getLogger("j86.java.util.jar").warning(
                                      "Duplicate name in Manifest: " + name
                                      + ".\n"
                                      + "Ensure that the manifest does not "

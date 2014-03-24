@@ -27,15 +27,15 @@ package j86.sun.security.krb5;
 
 import j86.java.io.IOException;
 import j86.java.util.Arrays;
-import j86.j86.javax.security.auth.kerberos.KeyTab;
-import j86.j86.sun.security.jgss.krb5.Krb5Util;
-import j86.j86.sun.security.krb5.internal.HostAddresses;
-import j86.j86.sun.security.krb5.internal.KDCOptions;
-import j86.j86.sun.security.krb5.internal.KRBError;
-import j86.j86.sun.security.krb5.internal.KerberosTime;
-import j86.j86.sun.security.krb5.internal.Krb5;
-import j86.j86.sun.security.krb5.internal.PAData;
-import j86.j86.j86.sun.security.krb5.internal.crypto.EType;
+import j86.javax.security.auth.kerberos.KeyTab;
+import j86.sun.security.jgss.krb5.Krb5Util;
+import j86.sun.security.krb5.internal.HostAddresses;
+import j86.sun.security.krb5.internal.KDCOptions;
+import j86.sun.security.krb5.internal.KRBError;
+import j86.sun.security.krb5.internal.KerberosTime;
+import j86.sun.security.krb5.internal.Krb5;
+import j86.sun.security.krb5.internal.PAData;
+import j86.sun.security.krb5.internal.crypto.EType;
 
 /**
  * A manager class for AS-REQ communications.
@@ -372,7 +372,7 @@ public final class KrbAsReqBuilder {
     /**
      * Gets another type of Credentials after action
      */
-    public j86.j86.j86.sun.security.krb5.internal.ccache.Credentials getCCreds() {
+    public j86.sun.security.krb5.internal.ccache.Credentials getCCreds() {
         checkState(State.REQ_OK, "Cannot retrieve CCreds");
         return rep.getCCreds();
     }

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.callback;
+package j86.javax.security.auth.callback;
 
 import j86.java.util.Locale;
 
@@ -33,7 +33,7 @@ import j86.java.util.Locale;
  * method of a {@code CallbackHandler} to retrieve the {@code Locale}
  * used for localizing text.
  *
- * @see j86.j86.javax.security.auth.callback.CallbackHandler
+ * @see j86.javax.security.auth.callback.CallbackHandler
  */
 public class LanguageCallback implements Callback, j86.java.io.Serializable {
 

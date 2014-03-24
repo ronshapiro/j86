@@ -28,7 +28,7 @@ package j86.sun.awt;
 import j86.java.io.*;
 
 import j86.java.util.*;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /*
  * Internal class that manages j86.sun.awt.Debug settings.

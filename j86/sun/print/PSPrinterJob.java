@@ -36,37 +36,37 @@ import j86.java.awt.HeadlessException;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 
-import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.FontRenderContext;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Rectangle2D;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 
-import j86.j86.java.awt.print.Pageable;
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Paper;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterIOException;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.print.Pageable;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Paper;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterIOException;
+import j86.java.awt.print.PrinterJob;
 
 import j86.javax.print.DocFlavor;
 import j86.javax.print.PrintService;
 import j86.javax.print.StreamPrintService;
-import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
-import j86.j86.j86.javax.print.attribute.standard.PrinterName;
-import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
-import j86.j86.j86.javax.print.attribute.standard.Copies;
-import j86.j86.j86.javax.print.attribute.standard.Destination;
-import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
-import j86.j86.j86.javax.print.attribute.standard.JobName;
-import j86.j86.j86.javax.print.attribute.standard.Sides;
+import j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.javax.print.attribute.standard.PrinterName;
+import j86.javax.print.attribute.standard.Chromaticity;
+import j86.javax.print.attribute.standard.Copies;
+import j86.javax.print.attribute.standard.Destination;
+import j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.javax.print.attribute.standard.JobName;
+import j86.javax.print.attribute.standard.Sides;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.BufferedOutputStream;
@@ -96,13 +96,13 @@ import j86.sun.awt.SunToolkit;
 import j86.sun.font.FontManagerFactory;
 import j86.sun.font.FontUtilities;
 
-import j86.j86.java.nio.charset.*;
+import j86.java.nio.charset.*;
 import j86.java.nio.CharBuffer;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.file.Files;
+import j86.java.nio.file.Files;
 
 //REMIND: Remove use of this class when IPPPrintService is moved to share directory.
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 /**
  * A class which initiates and executes a PostScript printer job.
@@ -498,7 +498,7 @@ public class PSPrinterJob extends RasterPrinterJob {
     protected void startDoc() throws PrinterException {
 
         // A security check has been performed in the
-        // j86.j86.java.awt.print.printerJob.getPrinterJob method.
+        // j86.java.awt.print.printerJob.getPrinterJob method.
         // We use an inner class to execute the privilged open operations.
         // Note that we only open a file if it has been nominated by
         // the end-user in a dialog that we ouselves put up.

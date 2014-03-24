@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
-import j86.j86.j86.java.nio.channels.spi.*;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.java.util.concurrent.Future;
+import j86.java.nio.channels.spi.*;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.Future;
 import j86.java.io.IOException;
 import j86.java.net.SocketOption;
 import j86.java.net.SocketAddress;

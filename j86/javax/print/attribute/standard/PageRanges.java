@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.SetOfIntegerSyntax;
-import j86.j86.javax.print.attribute.DocAttribute;
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
-import j86.j86.javax.print.attribute.PrintJobAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.SetOfIntegerSyntax;
+import j86.javax.print.attribute.DocAttribute;
+import j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.PrintJobAttribute;
 
 /**
  * Class PageRanges is a printing attribute class, a set of integers, that
@@ -97,7 +97,7 @@ import j86.j86.javax.print.attribute.PrintJobAttribute;
  * <B>IPP Compatibility:</B> The PageRanges attribute's canonical array form
  * gives the lower and upper bound for each range of pages to be included in
  * and IPP "page-ranges" attribute. See class {@link
- * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+ * j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
  * explanation of canonical array form. The category name returned by
  * <CODE>getName()</CODE> gives the IPP attribute name.
  * <P>
@@ -114,7 +114,7 @@ public final class PageRanges   extends SetOfIntegerSyntax
     /**
      * Construct a new page ranges attribute with the given members. The
      * members are specified in "array form;" see class {@link
-     * j86.j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
+     * j86.javax.print.attribute.SetOfIntegerSyntax SetOfIntegerSyntax} for an
      * explanation of array form.
      *
      * @param  members  Set members in array form.
@@ -138,7 +138,7 @@ public final class PageRanges   extends SetOfIntegerSyntax
     /**
      * Construct a new  page ranges attribute with the given members in
      * string form.
-     * See class {@link j86.j86.javax.print.attribute.SetOfIntegerSyntax
+     * See class {@link j86.javax.print.attribute.SetOfIntegerSyntax
      * SetOfIntegerSyntax}
      * for explanation of the syntax.
      *

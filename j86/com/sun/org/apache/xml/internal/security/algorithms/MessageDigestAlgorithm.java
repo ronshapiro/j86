@@ -20,14 +20,14 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.algorithms;
+package j86.com.sun.org.apache.xml.internal.security.algorithms;
 
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchProviderException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
 import org.w3c.dom.Document;
 
 /**

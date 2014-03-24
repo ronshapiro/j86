@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.io.FileDescriptor;
 import j86.java.io.IOException;
 import j86.java.net.*;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.channels.*;
-import j86.j86.j86.java.nio.channels.spi.*;
+import j86.java.nio.channels.*;
+import j86.java.nio.channels.spi.*;
 import j86.java.util.*;
 import j86.sun.net.NetHooks;
 

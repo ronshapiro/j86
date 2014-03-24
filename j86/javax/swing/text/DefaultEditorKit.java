@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.sun.awt.SunToolkit;
 
 import j86.java.io.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionEvent;
 import j86.java.text.*;
 import j86.javax.swing.Action;
 import j86.javax.swing.KeyStroke;

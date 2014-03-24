@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
 import j86.java.io.Closeable;
 import j86.java.io.IOException;
@@ -32,7 +32,7 @@ import j86.java.util.Arrays;
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Objects;
-import j86.j86.java.nio.file.FileTreeWalker.Event;
+import j86.java.nio.file.FileTreeWalker.Event;
 
 /**
  * An {@code Iterator to iterate over the nodes of a file tree.

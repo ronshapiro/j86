@@ -25,7 +25,7 @@
 /*
  * $Id: TransformException.java,v 1.3 2005/05/10 16:03:48 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.java.io.PrintStream;
 import j86.java.io.PrintWriter;

@@ -25,10 +25,10 @@
 
 package j86.sun.misc;
 
-import j86.j86.java.lang.annotation.ElementType;
-import j86.j86.java.lang.annotation.Retention;
-import j86.j86.java.lang.annotation.RetentionPolicy;
-import j86.j86.java.lang.annotation.Target;
+import j86.java.lang.annotation.ElementType;
+import j86.java.lang.annotation.Retention;
+import j86.java.lang.annotation.RetentionPolicy;
+import j86.java.lang.annotation.Target;
 
 /**
  * <p>An annotation expressing that objects and/or their fields are

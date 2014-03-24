@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
 class Code {
 

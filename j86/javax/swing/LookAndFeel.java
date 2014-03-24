@@ -26,17 +26,17 @@
 package j86.javax.swing;
 
 import j86.java.awt.Font;
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.java.awt.Color;
 import j86.java.awt.Component;
 import j86.java.awt.SystemColor;
 import j86.java.awt.Toolkit;
 import j86.sun.awt.SunToolkit;
 
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.*;
 
 import j86.java.net.URL;
 import j86.sun.swing.SwingUtilities2;
@@ -72,7 +72,7 @@ import j86.java.util.StringTokenizer;
  * {@code BasicLookAndFeel} uses {@code BasicTreeUI} as the concrete
  * implementation for {@code TreeUI}. This is accomplished by {@code
  * BasicLookAndFeel} providing the key-value pair {@code
- * "TreeUI"-"j86.j86.j86.javax.swing.plaf.basic.BasicTreeUI"}, in the
+ * "TreeUI"-"j86.javax.swing.plaf.basic.BasicTreeUI"}, in the
  * {@code UIDefaults} returned from {@code getDefaults}. Refer to
  * {@link UIDefaults#getUI(JComponent)} for details on how the implementation
  * of the {@code ComponentUI} subclass is obtained.

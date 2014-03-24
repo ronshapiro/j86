@@ -24,11 +24,11 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.sun.awt.geom.Crossings;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.sun.awt.geom.Crossings;
 import j86.java.util.Arrays;
 
 /**
@@ -43,7 +43,7 @@ import j86.java.util.Arrays;
  * pairs of {@code (x,y)} points are joined by a line segment
  * that closes the polygon.  This <code>Polygon</code> is defined with
  * an even-odd winding rule.  See
- * {@link j86.j86.java.awt.geom.PathIterator#WIND_EVEN_ODD WIND_EVEN_ODD}
+ * {@link j86.java.awt.geom.PathIterator#WIND_EVEN_ODD WIND_EVEN_ODD}
  * for a definition of the even-odd winding rule.
  * This class's hit-testing methods, which include the
  * <code>contains</code>, <code>intersects</code> and <code>inside</code>

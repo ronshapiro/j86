@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.protocol.file;
+package j86.sun.jvmstat.perfdata.monitor.protocol.file;
 
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.event.HostListener;
+import j86.sun.jvmstat.monitor.event.HostListener;
 import j86.sun.jvmstat.perfdata.monitor.*;
 import j86.java.util.*;
 import j86.java.net.*;

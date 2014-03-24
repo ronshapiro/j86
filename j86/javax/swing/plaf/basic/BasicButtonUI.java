@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.awt.AppContext;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.Serializable;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.javax.swing.plaf.ButtonUI;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.text.View;
+import j86.java.awt.event.*;
+import j86.javax.swing.plaf.ButtonUI;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.text.View;
 
 /**
  * BasicButton implementation

@@ -23,37 +23,37 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Color;
 import j86.java.awt.Image;
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.j86.java.awt.image.AffineTransformOp;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.image.AffineTransformOp;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.VolatileImage;
 import j86.sun.awt.SunHints;
-import j86.j86.j86.sun.awt.image.ImageRepresentation;
-import j86.j86.j86.sun.awt.image.SurfaceManager;
-import j86.j86.j86.sun.awt.image.ToolkitImage;
+import j86.sun.awt.image.ImageRepresentation;
+import j86.sun.awt.image.SurfaceManager;
+import j86.sun.awt.image.ToolkitImage;
 import j86.sun.java2d.InvalidPipeException;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.Blit;
-import j86.j86.sun.java2d.loops.BlitBg;
-import j86.j86.sun.java2d.loops.TransformHelper;
-import j86.j86.sun.java2d.loops.MaskBlit;
-import j86.j86.sun.java2d.loops.CompositeType;
-import j86.j86.sun.java2d.loops.ScaledBlit;
-import j86.j86.sun.java2d.loops.SurfaceType;
+import j86.sun.java2d.loops.Blit;
+import j86.sun.java2d.loops.BlitBg;
+import j86.sun.java2d.loops.TransformHelper;
+import j86.sun.java2d.loops.MaskBlit;
+import j86.sun.java2d.loops.CompositeType;
+import j86.sun.java2d.loops.ScaledBlit;
+import j86.sun.java2d.loops.SurfaceType;
 
 public class DrawImage implements DrawImagePipe
 {
@@ -865,7 +865,7 @@ public class DrawImage implements DrawImagePipe
                 // Just need to make sure that we have a transparent pixel
                 if (needTrans && cm.getTransparency() == Transparency.OPAQUE) {
                     // Fix 4221407
-                    if (raster instanceof j86.j86.j86.sun.awt.image.BytePackedRaster) {
+                    if (raster instanceof j86.sun.awt.image.BytePackedRaster) {
                         dstCM = ColorModel.getRGBdefault();
                     }
                     else {
@@ -891,7 +891,7 @@ public class DrawImage implements DrawImagePipe
                                 dstCM = ColorModel.getRGBdefault();
                             }
                         }  /* if (matrix[0] < 1.f ...) */
-                    }   /* raster instanceof j86.j86.j86.sun.awt.image.BytePackedRaster */
+                    }   /* raster instanceof j86.sun.awt.image.BytePackedRaster */
                 } /* if (cm.getTransparency() == cm.OPAQUE) */
             } /* if (cm instanceof IndexColorModel) */
             else if (needTrans && cm.getTransparency() == Transparency.OPAQUE) {

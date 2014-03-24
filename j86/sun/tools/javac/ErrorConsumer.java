@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.javac;
+package j86.sun.tools.javac;
 
 /**
  * Allows for easier parsing of errors and warnings from the compiler

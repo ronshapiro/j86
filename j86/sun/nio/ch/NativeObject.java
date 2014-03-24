@@ -26,7 +26,7 @@
 /*
  */
 
-package j86.j86.j86.sun.nio.ch;                                     // Formerly in j86.sun.misc
+package j86.sun.nio.ch;                                     // Formerly in j86.sun.misc
 
 import j86.java.nio.ByteOrder;
 import j86.sun.misc.Unsafe;

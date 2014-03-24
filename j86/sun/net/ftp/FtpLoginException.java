@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.ftp;
+package j86.sun.net.ftp;
 
 import j86.java.io.IOException;
 

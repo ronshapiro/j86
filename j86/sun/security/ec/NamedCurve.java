@@ -28,7 +28,7 @@ package j86.sun.security.ec;
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 import j86.sun.security.util.DerOutputStream;
 import j86.sun.security.util.ObjectIdentifier;

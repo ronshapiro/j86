@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 /*
  * This interface defines the constants that are used by the classes

@@ -26,9 +26,9 @@
 package com.j86.sun.management;
 
 import j86.javax.management.Notification;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeDataView;
-import j86.j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeDataView;
+import j86.javax.management.openmbean.CompositeType;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
 import j86.sun.management.GarbageCollectionNotifInfoCompositeData;
@@ -204,7 +204,7 @@ public class GarbageCollectionNotificationInfo implements  CompositeDataView {
      * </tr>
      * <tr>
      *   <td>gcInfo</td>
-     *   <td>{@code j86.j86.javax.management.openmbean.CompositeData}</td>
+     *   <td>{@code j86.javax.management.openmbean.CompositeData}</td>
      * </tr>
      * </table>
      * </blockquote>

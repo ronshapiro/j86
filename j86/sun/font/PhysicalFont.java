@@ -26,13 +26,13 @@
 package j86.sun.font;
 
 import j86.java.awt.FontFormatException;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.io.FileInputStream;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.channels.FileChannel;
+import j86.java.nio.channels.FileChannel;
 
 public abstract class PhysicalFont extends Font2D {
 

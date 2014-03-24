@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.io.*;
 import j86.java.net.URL;
@@ -33,10 +33,10 @@ import j86.java.util.Arrays;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Random;
 
-import j86.j86.sun.net.www.HeaderParser;
+import j86.sun.net.www.HeaderParser;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
-import static j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection.HTTP_CONNECT;
+import static j86.sun.net.www.protocol.http.HttpURLConnection.HTTP_CONNECT;
 
 /**
  * DigestAuthentication: Encapsulate an http server authentication using

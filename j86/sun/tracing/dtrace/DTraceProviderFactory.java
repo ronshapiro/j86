@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tracing.dtrace;
+package j86.sun.tracing.dtrace;
 
 import j86.java.util.Map;
 import j86.java.util.Set;
@@ -145,7 +145,7 @@ public final class DTraceProviderFactory extends ProviderFactory {
             SecurityManager security = System.getSecurityManager();
             if (security != null) {
                 Permission perm = new RuntimePermission(
-                        "com.j86.j86.sun.tracing.dtrace.createProvider");
+                        "com.j86.sun.tracing.dtrace.createProvider");
                 security.checkPermission(perm);
             }
             return JVM.isSupported();

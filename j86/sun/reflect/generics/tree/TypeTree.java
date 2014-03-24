@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.tree;
+package j86.sun.reflect.generics.tree;
 
-import j86.j86.sun.reflect.generics.visitor.TypeTreeVisitor;
+import j86.sun.reflect.generics.visitor.TypeTreeVisitor;
 
 /** Common supertype for all nodes that represent type expressions in
  * the generic signature AST.

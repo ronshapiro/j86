@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 import j86.java.util.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

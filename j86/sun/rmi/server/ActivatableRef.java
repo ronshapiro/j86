@@ -28,18 +28,18 @@ package j86.sun.rmi.server;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInput;
 import j86.java.io.ObjectOutput;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Proxy;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.activation.*;
-import j86.j86.java.rmi.server.Operation;
-import j86.j86.java.rmi.server.RMIClassLoader;
-import j86.j86.java.rmi.server.RemoteCall;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.RemoteObjectInvocationHandler;
-import j86.j86.java.rmi.server.RemoteRef;
-import j86.j86.java.rmi.server.RemoteStub;
+import j86.java.rmi.activation.*;
+import j86.java.rmi.server.Operation;
+import j86.java.rmi.server.RMIClassLoader;
+import j86.java.rmi.server.RemoteCall;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RemoteObjectInvocationHandler;
+import j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.RemoteStub;
 
 @SuppressWarnings("deprecation")
 public class ActivatableRef implements RemoteRef {
@@ -114,7 +114,7 @@ public class ActivatableRef implements RemoteRef {
      * (including parameter deserialization).
      */
     public Object invoke(Remote obj,
-                         j86.j86.j86.java.lang.reflect.Method method,
+                         j86.java.lang.reflect.Method method,
                          Object[] params,
                          long opnum)
         throws Exception

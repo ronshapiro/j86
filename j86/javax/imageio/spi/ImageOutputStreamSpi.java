@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.spi;
+package j86.javax.imageio.spi;
 
 import j86.java.io.File;
 import j86.java.io.IOException;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.stream.ImageOutputStream;
 
 /**
  * The service provider interface (SPI) for
@@ -50,7 +50,7 @@ import j86.j86.javax.imageio.stream.ImageOutputStream;
  * and used transparently by applications.
  *
  * @see IIORegistry
- * @see j86.j86.javax.imageio.stream.ImageOutputStream
+ * @see j86.javax.imageio.stream.ImageOutputStream
  *
  */
 public abstract class ImageOutputStreamSpi extends IIOServiceProvider {

@@ -25,7 +25,7 @@
 
 package j86.java.security;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.java.util.*;
 import j86.java.io.*;
 
@@ -299,7 +299,7 @@ public abstract class SignatureSpi {
      * and cannot be set again, a security exception occurs, and so on.
      *
      * @deprecated Replaced by {@link
-     * #engineSetParameter(j86.j86.java.security.spec.AlgorithmParameterSpec)
+     * #engineSetParameter(j86.java.security.spec.AlgorithmParameterSpec)
      * engineSetParameter}.
      */
     @Deprecated

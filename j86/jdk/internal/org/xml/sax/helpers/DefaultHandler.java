@@ -29,7 +29,7 @@
 // NO WARRANTY!  This class is in the public domain.
 // $Id: DefaultHandler.java,v 1.3 2006/04/13 02:06:32 jeffsuttor Exp $
 
-package j86.j86.jdk.internal.org.xml.sax.helpers;
+package j86.jdk.internal.org.xml.sax.helpers;
 
 import j86.java.io.IOException;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;

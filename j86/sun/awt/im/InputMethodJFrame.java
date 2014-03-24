@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.javax.swing.JFrame;
 import j86.javax.swing.JRootPane;
@@ -31,7 +31,7 @@ import j86.javax.swing.JRootPane;
 /**
  * Implements a Swing based input method window that provides the minimal
  * functionality as specified in
- * {@link j86.j86.j86.java.awt.im.spi.InputMethodContext#createInputMethodJFrame}.
+ * {@link j86.java.awt.im.spi.InputMethodContext#createInputMethodJFrame}.
  *
  */
 public class InputMethodJFrame
@@ -61,7 +61,7 @@ public class InputMethodJFrame
         this.inputContext = inputContext;
     }
 
-    public j86.j86.java.awt.im.InputContext getInputContext() {
+    public j86.java.awt.im.InputContext getInputContext() {
         if (inputContext != null) {
             return inputContext;
         } else {

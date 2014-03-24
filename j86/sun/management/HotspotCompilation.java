@@ -25,14 +25,14 @@
 
 package j86.sun.management;
 
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 import j86.java.util.List;
 import j86.java.util.ListIterator;
 import j86.java.util.Iterator;
 import j86.java.util.ArrayList;
 import j86.java.util.Map;
 import j86.java.util.TreeMap;
-import j86.j86.sun.management.counter.*;
+import j86.sun.management.counter.*;
 
 /**
  * Implementation class of HotspotCompilationMBean interface.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
 import j86.javax.sql.*;
 
@@ -87,7 +87,7 @@ import j86.javax.sql.*;
  * The default <code>SyncProvider</code> object provided with the reference
  * implementation uses the following name:
  * <pre>
- *     j86.j86.com.sun.rowset.providers.RIOptimisticProvider
+ *     j86.com.sun.rowset.providers.RIOptimisticProvider
  * </pre>
  * <p>
  * A vendor can register a <code>SyncProvider</code> implementation class name
@@ -128,7 +128,7 @@ import j86.javax.sql.*;
  * <code>com.fred.providers.HighAvailabilitySyncProvider</code> has been
  * registered with the <code>SyncFactory</code> instance, <i>crs</i> will be
  * assigned the default provider in the reference implementation, which is
- * <code>j86.j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
+ * <code>j86.com.sun.rowset.providers.RIOptimisticProvider</code>.
  *
  * <h3>3.0 Violations and Synchronization Issues</h3>
  * If an update between a disconnected <code>RowSet</code> object
@@ -207,8 +207,8 @@ import j86.javax.sql.*;
  * </OL>
  *
  * @author Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public abstract class SyncProvider {
 

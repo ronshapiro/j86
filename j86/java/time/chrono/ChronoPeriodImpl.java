@@ -54,12 +54,12 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -69,14 +69,14 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectStreamException;
 import j86.java.io.Serializable;
 import j86.java.time.DateTimeException;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.List;
@@ -358,7 +358,7 @@ final class ChronoPeriodImpl
     //-----------------------------------------------------------------------
     /**
      * Writes the Chronology using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.chrono.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.chrono.Ser">dedicated serialized form</a>.
      * <pre>
      *  out.writeByte(12);  // identifies this as a ChronoPeriodImpl
      *  out.writeUTF(getId());  // the chronology

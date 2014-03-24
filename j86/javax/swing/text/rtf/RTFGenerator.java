@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.rtf;
+package j86.javax.swing.text.rtf;
 
 import j86.java.lang.*;
 import j86.java.util.*;
@@ -31,7 +31,7 @@ import j86.java.awt.Font;
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * Generates an RTF output stream (j86.java.io.OutputStream) from rich text

@@ -24,13 +24,13 @@
  */
 
 
-package j86.j86.sun.security.pkcs10;
+package j86.sun.security.pkcs10;
 
 import j86.java.io.PrintStream;
 import j86.java.io.IOException;
 import j86.java.math.BigInteger;
 
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateException;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.Signature;

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.security.AccessController;
 import j86.sun.security.action.GetBooleanAction;
@@ -32,17 +32,17 @@ import j86.java.util.*;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.javax.swing.*;
 
 
 
 import j86.sun.swing.UIClientPropertyKey;
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State.*;
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Prop;
-import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.State.*;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.Prop;
+import j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 
 import j86.sun.awt.AppContext;
 

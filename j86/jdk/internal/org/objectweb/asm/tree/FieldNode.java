@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.tree;
+package j86.jdk.internal.org.objectweb.asm.tree;
 
 import j86.java.util.ArrayList;
 import j86.java.util.List;
@@ -107,7 +107,7 @@ public class FieldNode extends FieldVisitor {
      * The runtime visible annotations of this field. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label visible
      */
     public List<AnnotationNode> visibleAnnotations;
@@ -116,7 +116,7 @@ public class FieldNode extends FieldVisitor {
      * The runtime invisible annotations of this field. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label invisible
      */
     public List<AnnotationNode> invisibleAnnotations;
@@ -125,7 +125,7 @@ public class FieldNode extends FieldVisitor {
      * The runtime visible type annotations of this field. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label visible
      */
     public List<TypeAnnotationNode> visibleTypeAnnotations;
@@ -134,7 +134,7 @@ public class FieldNode extends FieldVisitor {
      * The runtime invisible type annotations of this field. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label invisible
      */
     public List<TypeAnnotationNode> invisibleTypeAnnotations;

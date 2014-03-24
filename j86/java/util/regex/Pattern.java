@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.regex;
+package j86.java.util.regex;
 
 import j86.java.text.Normalizer;
 import j86.java.util.Locale;
@@ -35,9 +35,9 @@ import j86.java.util.Arrays;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.stream.Stream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.function.Predicate;
+import j86.java.util.stream.Stream;
+import j86.java.util.stream.StreamSupport;
 
 
 /**

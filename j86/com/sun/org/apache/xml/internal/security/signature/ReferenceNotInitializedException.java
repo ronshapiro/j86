@@ -20,11 +20,11 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 /**
- * Raised if verifying a {@link j86.j86.com.sun.org.apache.xml.internal.security.signature.Reference} fails
- * because of an uninitialized {@link j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput}
+ * Raised if verifying a {@link j86.com.sun.org.apache.xml.internal.security.signature.Reference} fails
+ * because of an uninitialized {@link j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput}
  *
  * @author Christian Geuer-Pollmann
  */

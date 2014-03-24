@@ -34,7 +34,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.ByteArrayInputStream;
@@ -68,7 +68,7 @@ public final class NormalizerImpl {
      * unorm.icu, which is generated with the gennorm tool.
      * The format of that file is described at the end of this file.
      */
-    private static final String DATA_FILE_NAME = "/j86.j86.sun.text.resources/unorm.icu";
+    private static final String DATA_FILE_NAME = "/j86.sun.text.resources/unorm.icu";
 
     // norm32 value constants
 

@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 import j86.java.rmi.MarshalledObject;
 import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.activation.UnknownGroupException;
-import j86.j86.java.rmi.activation.UnknownObjectException;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.RemoteServer;
+import j86.java.rmi.activation.UnknownGroupException;
+import j86.java.rmi.activation.UnknownObjectException;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RemoteServer;
 import j86.sun.rmi.server.ActivatableServerRef;
 
 /**
@@ -43,7 +43,7 @@ import j86.sun.rmi.server.ActivatableServerRef;
  *
  * <p>For the constructors and static <code>exportObject</code> methods,
  * the stub for a remote object being exported is obtained as described in
- * {@link j86.j86.java.rmi.server.UnicastRemoteObject}.
+ * {@link j86.java.rmi.server.UnicastRemoteObject}.
  *
  * <p>An attempt to serialize explicitly an instance of this class will
  * fail.

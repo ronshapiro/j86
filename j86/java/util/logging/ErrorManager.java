@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 /**
  * ErrorManager objects can be attached to Handlers to process
@@ -87,7 +87,7 @@ public class ErrorManager {
             return;
         }
         reported = true;
-        String text = "j86.j86.java.util.logging.ErrorManager: " + code;
+        String text = "j86.java.util.logging.ErrorManager: " + code;
         if (msg != null) {
             text = text + ": " + msg;
         }

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.awt.Adjustable;
 import j86.java.awt.AWTEvent;
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 
 /**

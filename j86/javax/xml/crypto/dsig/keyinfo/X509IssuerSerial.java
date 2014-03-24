@@ -25,10 +25,10 @@
 /*
  * $Id: X509IssuerSerial.java,v 1.4 2005/05/10 16:35:35 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
+package j86.javax.xml.crypto.dsig.keyinfo;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.javax.xml.crypto.XMLStructure;
 
 /**

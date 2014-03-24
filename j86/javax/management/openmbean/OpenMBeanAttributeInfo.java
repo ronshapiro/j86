@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -122,7 +122,7 @@ public interface OpenMBeanAttributeInfo extends OpenMBeanParameterInfo {
     /**
      * Returns a string representation of this <code>OpenMBeanAttributeInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanAttributeInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.OpenMBeanAttributeInfo</code>),
      * the string representation of the name and open type of the described attribute,
      * and the string representation of its default, min, max and legal values.
      *

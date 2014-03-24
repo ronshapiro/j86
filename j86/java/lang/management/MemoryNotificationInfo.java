@@ -23,8 +23,8 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
-import j86.j86.javax.management.openmbean.CompositeData;
+package j86.java.lang.management;
+import j86.javax.management.openmbean.CompositeData;
 import j86.sun.management.MemoryNotifInfoCompositeData;
 
 /**
@@ -223,7 +223,7 @@ public class MemoryNotificationInfo {
      * </tr>
      * <tr>
      *   <td>usage</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData</tt></td>
+     *   <td><tt>j86.javax.management.openmbean.CompositeData</tt></td>
      * </tr>
      * <tr>
      *   <td>count</td>

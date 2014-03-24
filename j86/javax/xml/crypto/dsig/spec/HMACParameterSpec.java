@@ -25,9 +25,9 @@
 /*
  * $Id: HMACParameterSpec.java,v 1.4 2005/05/10 16:40:17 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.spec;
+package j86.javax.xml.crypto.dsig.spec;
 
-import j86.j86.javax.xml.crypto.dsig.SignatureMethod;
+import j86.javax.xml.crypto.dsig.SignatureMethod;
 
 /**
  * Parameters for the <a href="http://www.w3.org/TR/xmldsig-core/#sec-MACs">

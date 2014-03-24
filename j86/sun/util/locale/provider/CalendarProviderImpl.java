@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.Calendar;
 import j86.java.util.Calendar.Builder;
 import j86.java.util.Locale;
 import j86.java.util.Set;
 import j86.java.util.TimeZone;
-import j86.j86.sun.util.spi.CalendarProvider;
+import j86.sun.util.spi.CalendarProvider;
 
 /**
- * Concrete implementation of the  {@link j86.j86.sun.util.spi.CalendarProvider
+ * Concrete implementation of the  {@link j86.sun.util.spi.CalendarProvider
  * CalendarProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -74,7 +74,7 @@ public class CalendarProviderImpl extends CalendarProvider implements AvailableL
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a <code>Calendar</code> instance.
      * @see j86.java.util.Calendar#getInstance(java.util.Locale)

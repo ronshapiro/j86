@@ -75,7 +75,7 @@ public class JMXSubjectDomainCombiner extends SubjectDomainCombiner {
      * A null CodeSource.
      */
     private static final CodeSource nullCodeSource =
-        new CodeSource(null, (j86.j86.java.security.cert.Certificate[]) null);
+        new CodeSource(null, (j86.java.security.cert.Certificate[]) null);
 
     /**
      * A ProtectionDomain with a null CodeSource and an empty permission set.

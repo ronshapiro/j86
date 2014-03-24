@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.relation;
+package j86.javax.management.relation;
 
 
 
@@ -34,7 +34,7 @@ import j86.java.util.Iterator;
 import j86.java.util.Map;
 import j86.java.util.List;
 
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
 import static j86.com.sun.jmx.defaults.JmxProperties.RELATION_LOGGER;
 import static j86.com.sun.jmx.mbeanserver.Util.cast;
 import j86.javax.management.InstanceNotFoundException;
@@ -1137,7 +1137,7 @@ public class RelationSupport
                 params[1] = myRelTypeName;
                 params[2] = initFlg;
                 String[] signature = new String[3];
-                signature[0] = "j86.j86.javax.management.relation.Role";
+                signature[0] = "j86.javax.management.relation.Role";
                 signature[1] = "j86.java.lang.String";
                 signature[2] = "j86.java.lang.Boolean";
                 // Can throw InstanceNotFoundException if the Relation Service
@@ -1310,7 +1310,7 @@ public class RelationSupport
             params[2] = oldRoleValue;
             String[] signature = new String[3];
             signature[0] = "j86.java.lang.String";
-            signature[1] = "j86.j86.javax.management.relation.Role";
+            signature[1] = "j86.javax.management.relation.Role";
             signature[2] = "j86.java.util.List";
 
             // Can throw InstanceNotFoundException if the Relation Service
@@ -1405,7 +1405,7 @@ public class RelationSupport
             params[2] = oldRoleValue;
             String[] signature = new String[3];
             signature[0] = "j86.java.lang.String";
-            signature[1] = "j86.j86.javax.management.relation.Role";
+            signature[1] = "j86.javax.management.relation.Role";
             signature[2] = "j86.java.util.List";
             // Can throw InstanceNotFoundException if the Relation Service
             // is not registered (to be transformed).

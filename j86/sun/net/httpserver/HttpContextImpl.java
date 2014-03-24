@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.util.logging.Logger;
-import com.j86.j86.sun.net.httpserver.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.*;
+import j86.java.util.logging.Logger;
+import com.j86.sun.net.httpserver.*;
+import j86.com.j86.sun.net.httpserver.spi.*;
 
 /**
  * HttpContext represents a mapping between a protocol (http or https) together with a root URI path

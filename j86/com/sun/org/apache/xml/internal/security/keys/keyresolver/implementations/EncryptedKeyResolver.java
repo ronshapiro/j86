@@ -20,23 +20,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations;
 
 import j86.java.security.Key;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.ArrayList;
 import j86.java.util.List;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.EncryptedKey;
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
-import j86.j86.com.sun.org.apache.xml.internal.security.encryption.XMLEncryptionException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.encryption.EncryptedKey;
+import j86.com.sun.org.apache.xml.internal.security.encryption.XMLCipher;
+import j86.com.sun.org.apache.xml.internal.security.encryption.XMLEncryptionException;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.EncryptionConstants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Element;
 
 /**
@@ -54,8 +54,8 @@ import org.w3c.dom.Element;
 public class EncryptedKeyResolver extends KeyResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(EncryptedKeyResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(EncryptedKeyResolver.class.getName());
 
     private Key kek;
     private String algorithm;
@@ -112,8 +112,8 @@ public class EncryptedKeyResolver extends KeyResolverSpi {
     public j86.javax.crypto.SecretKey engineLookupAndResolveSecretKey(
         Element element, String BaseURI, StorageResolver storage
     ) {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "EncryptedKeyResolver - Can I resolve " + element.getTagName());
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "EncryptedKeyResolver - Can I resolve " + element.getTagName());
         }
 
         if (element == null) {
@@ -124,8 +124,8 @@ public class EncryptedKeyResolver extends KeyResolverSpi {
         boolean isEncryptedKey =
             XMLUtils.elementIsInEncryptionSpace(element, EncryptionConstants._TAG_ENCRYPTEDKEY);
         if (isEncryptedKey) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Passed an Encrypted Key");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Passed an Encrypted Key");
             }
             try {
                 XMLCipher cipher = XMLCipher.getInstance();
@@ -139,8 +139,8 @@ public class EncryptedKeyResolver extends KeyResolverSpi {
                 EncryptedKey ek = cipher.loadEncryptedKey(element);
                 key = (SecretKey) cipher.decryptKey(ek, algorithm);
             } catch (XMLEncryptionException e) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, e.getMessage(), e);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, e.getMessage(), e);
                 }
             }
         }

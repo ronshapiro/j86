@@ -208,7 +208,7 @@
 	<!-- JRMP Stubs -->
 
         <rmic 	base="${dir.build.classes}"
-		classname="j86.j86.j86.javax.management.remote.rmi.RMIConnectionImpl"
+		classname="j86.javax.management.remote.rmi.RMIConnectionImpl"
 		includeAntRuntime="no"
 		includeJavaRuntime="no"
 		stubversion="1.2"
@@ -216,7 +216,7 @@
 	</rmic>
 
 	<rmic	base="${dir.build.classes}"
-		classname="j86.j86.j86.javax.management.remote.rmi.RMIServerImpl"
+		classname="j86.javax.management.remote.rmi.RMIServerImpl"
 		includeAntRuntime="no"
 		includeJavaRuntime="no"
 		stubversion="1.2"
@@ -227,7 +227,7 @@
 	<!-- IIOP Stubs -->
 
 	<rmic 	base="${dir.build.classes}"
-		classname="j86.j86.j86.javax.management.remote.rmi.RMIConnectionImpl"
+		classname="j86.javax.management.remote.rmi.RMIConnectionImpl"
 		includeAntRuntime="no"
 		includeJavaRuntime="no"
 		iiop="yes"
@@ -235,7 +235,7 @@
 	</rmic>
 
 	<rmic	base="${dir.build.classes}"
-		classname="j86.j86.j86.javax.management.remote.rmi.RMIServerImpl"
+		classname="j86.javax.management.remote.rmi.RMIServerImpl"
 		includeAntRuntime="no"
 		includeJavaRuntime="no"
 		iiop="yes"

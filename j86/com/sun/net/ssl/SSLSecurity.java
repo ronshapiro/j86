@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.SSLSecurity,
+ * NOTE:  this file was copied from j86.javax.net.ssl.SSLSecurity,
  * but was heavily modified to allow com.sun.* users to
  * access providers written using the javax.sun.* APIs.
  */
@@ -104,7 +104,7 @@ final class SSLSecurity {
          * JSSE 1.0, 1.0.1, and 1.0.2 used the com.j86.sun.net.ssl API as the
          * API was being developed.  As JSSE was folded into the main
          * release, it was decided to promote the com.j86.sun.net.ssl API to
-         * be j86.j86.javax.net.ssl.  It is desired to keep binary compatibility
+         * be j86.javax.net.ssl.  It is desired to keep binary compatibility
          * with vendors of JSSE implementation written using the
          * com.j86.sun.net.sll API, so we do this magic to handle everything.
          *
@@ -141,7 +141,7 @@ final class SSLSecurity {
              * Odds are more likely that we have a javax variant, try this
              * first.
              */
-            if (((typeClassJavax = Class.forName("j86.j86.javax.net.ssl." +
+            if (((typeClassJavax = Class.forName("j86.javax.net.ssl." +
                     engineType + "Spi")) != null) &&
                     (checkSuperclass(implClass, typeClassJavax))) {
 
@@ -271,18 +271,18 @@ final class SSLSecurity {
  * =================================================================
  * The remainder of this file is for the wrapper and wrapper-support
  * classes.  When SSLSecurity finds something which extends the
- * j86.j86.javax.net.ssl.*Spi, we need to go grab a real instance of the
+ * j86.javax.net.ssl.*Spi, we need to go grab a real instance of the
  * thing that the Spi supports, and wrap into a com.j86.sun.net.ssl.*Spi
  * object.  This also mean that anything going down into the SPI
  * needs to be wrapped, as well as anything coming back up.
  */
 final class SSLContextSpiWrapper extends SSLContextSpi {
 
-    private j86.j86.javax.net.ssl.SSLContext theSSLContext;
+    private j86.javax.net.ssl.SSLContext theSSLContext;
 
     SSLContextSpiWrapper(String algName, Provider prov) throws
             NoSuchAlgorithmException {
-        theSSLContext = j86.j86.javax.net.ssl.SSLContext.getInstance(algName, prov);
+        theSSLContext = j86.javax.net.ssl.SSLContext.getInstance(algName, prov);
     }
 
     protected void engineInit(KeyManager[] kma, TrustManager[] tma,
@@ -291,20 +291,20 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
         // Keep track of the actual number of array elements copied
         int dst;
         int src;
-        j86.j86.javax.net.ssl.KeyManager[] kmaw;
-        j86.j86.javax.net.ssl.TrustManager[] tmaw;
+        j86.javax.net.ssl.KeyManager[] kmaw;
+        j86.javax.net.ssl.TrustManager[] tmaw;
 
-        // Convert com.j86.sun.net.ssl.kma to a j86.j86.javax.net.ssl.kma
+        // Convert com.j86.sun.net.ssl.kma to a j86.javax.net.ssl.kma
         // wrapper if need be.
         if (kma != null) {
-            kmaw = new j86.j86.javax.net.ssl.KeyManager[kma.length];
+            kmaw = new j86.javax.net.ssl.KeyManager[kma.length];
             for (src = 0, dst = 0; src < kma.length; ) {
                 /*
                  * These key managers may implement both javax
                  * and com.sun interfaces, so if they do
                  * javax, there's no need to wrap them.
                  */
-                if (!(kma[src] instanceof j86.j86.javax.net.ssl.KeyManager)) {
+                if (!(kma[src] instanceof j86.javax.net.ssl.KeyManager)) {
                     /*
                      * Do we know how to convert them?  If not, oh well...
                      * We'll have to drop them on the floor in this
@@ -313,14 +313,14 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
                      * completeness.
                      */
                     if (kma[src] instanceof X509KeyManager) {
-                        kmaw[dst] = (j86.j86.javax.net.ssl.KeyManager)
+                        kmaw[dst] = (j86.javax.net.ssl.KeyManager)
                             new X509KeyManagerJavaxWrapper(
                             (X509KeyManager)kma[src]);
                         dst++;
                     }
                 } else {
                     // We can convert directly, since they implement.
-                    kmaw[dst] = (j86.j86.javax.net.ssl.KeyManager)kma[src];
+                    kmaw[dst] = (j86.javax.net.ssl.KeyManager)kma[src];
                     dst++;
                 }
                 src++;
@@ -332,9 +332,9 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
              * any problems down the road.
              */
             if (dst != src) {
-                    kmaw = (j86.j86.javax.net.ssl.KeyManager [])
+                    kmaw = (j86.javax.net.ssl.KeyManager [])
                         SSLSecurity.truncateArray(kmaw,
-                            new j86.j86.javax.net.ssl.KeyManager [dst]);
+                            new j86.javax.net.ssl.KeyManager [dst]);
             }
         } else {
             kmaw = null;
@@ -342,31 +342,31 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
 
         // Now do the same thing with the TrustManagers.
         if (tma != null) {
-            tmaw = new j86.j86.javax.net.ssl.TrustManager[tma.length];
+            tmaw = new j86.javax.net.ssl.TrustManager[tma.length];
 
             for (src = 0, dst = 0; src < tma.length; ) {
                 /*
                  * These key managers may implement both...see above...
                  */
-                if (!(tma[src] instanceof j86.j86.javax.net.ssl.TrustManager)) {
+                if (!(tma[src] instanceof j86.javax.net.ssl.TrustManager)) {
                     // Do we know how to convert them?
                     if (tma[src] instanceof X509TrustManager) {
-                        tmaw[dst] = (j86.j86.javax.net.ssl.TrustManager)
+                        tmaw[dst] = (j86.javax.net.ssl.TrustManager)
                             new X509TrustManagerJavaxWrapper(
                             (X509TrustManager)tma[src]);
                         dst++;
                     }
                 } else {
-                    tmaw[dst] = (j86.j86.javax.net.ssl.TrustManager)tma[src];
+                    tmaw[dst] = (j86.javax.net.ssl.TrustManager)tma[src];
                     dst++;
                 }
                 src++;
             }
 
             if (dst != src) {
-                tmaw = (j86.j86.javax.net.ssl.TrustManager [])
+                tmaw = (j86.javax.net.ssl.TrustManager [])
                     SSLSecurity.truncateArray(tmaw,
-                        new j86.j86.javax.net.ssl.TrustManager [dst]);
+                        new j86.javax.net.ssl.TrustManager [dst]);
             }
         } else {
             tmaw = null;
@@ -375,12 +375,12 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
         theSSLContext.init(kmaw, tmaw, sr);
     }
 
-    protected j86.j86.javax.net.ssl.SSLSocketFactory
+    protected j86.javax.net.ssl.SSLSocketFactory
             engineGetSocketFactory() {
         return theSSLContext.getSocketFactory();
     }
 
-    protected j86.j86.javax.net.ssl.SSLServerSocketFactory
+    protected j86.javax.net.ssl.SSLServerSocketFactory
             engineGetServerSocketFactory() {
         return theSSLContext.getServerSocketFactory();
     }
@@ -389,12 +389,12 @@ final class SSLContextSpiWrapper extends SSLContextSpi {
 
 final class TrustManagerFactorySpiWrapper extends TrustManagerFactorySpi {
 
-    private j86.j86.javax.net.ssl.TrustManagerFactory theTrustManagerFactory;
+    private j86.javax.net.ssl.TrustManagerFactory theTrustManagerFactory;
 
     TrustManagerFactorySpiWrapper(String algName, Provider prov) throws
             NoSuchAlgorithmException {
         theTrustManagerFactory =
-            j86.j86.javax.net.ssl.TrustManagerFactory.getInstance(algName, prov);
+            j86.javax.net.ssl.TrustManagerFactory.getInstance(algName, prov);
     }
 
     protected void engineInit(KeyStore ks) throws KeyStoreException {
@@ -406,7 +406,7 @@ final class TrustManagerFactorySpiWrapper extends TrustManagerFactorySpi {
         int dst;
         int src;
 
-        j86.j86.javax.net.ssl.TrustManager[] tma =
+        j86.javax.net.ssl.TrustManager[] tma =
             theTrustManagerFactory.getTrustManagers();
 
         TrustManager[] tmaw = new TrustManager[tma.length];
@@ -415,10 +415,10 @@ final class TrustManagerFactorySpiWrapper extends TrustManagerFactorySpi {
             if (!(tma[src] instanceof com.j86.sun.net.ssl.TrustManager)) {
                 // We only know how to wrap X509TrustManagers, as
                 // TrustManagers don't have any methods to wrap.
-                if (tma[src] instanceof j86.j86.javax.net.ssl.X509TrustManager) {
+                if (tma[src] instanceof j86.javax.net.ssl.X509TrustManager) {
                     tmaw[dst] = (TrustManager)
                         new X509TrustManagerComSunWrapper(
-                        (j86.j86.javax.net.ssl.X509TrustManager)tma[src]);
+                        (j86.javax.net.ssl.X509TrustManager)tma[src]);
                     dst++;
                 }
             } else {
@@ -440,12 +440,12 @@ final class TrustManagerFactorySpiWrapper extends TrustManagerFactorySpi {
 
 final class KeyManagerFactorySpiWrapper extends KeyManagerFactorySpi {
 
-    private j86.j86.javax.net.ssl.KeyManagerFactory theKeyManagerFactory;
+    private j86.javax.net.ssl.KeyManagerFactory theKeyManagerFactory;
 
     KeyManagerFactorySpiWrapper(String algName, Provider prov) throws
             NoSuchAlgorithmException {
         theKeyManagerFactory =
-            j86.j86.javax.net.ssl.KeyManagerFactory.getInstance(algName, prov);
+            j86.javax.net.ssl.KeyManagerFactory.getInstance(algName, prov);
     }
 
     protected void engineInit(KeyStore ks, char[] password)
@@ -459,7 +459,7 @@ final class KeyManagerFactorySpiWrapper extends KeyManagerFactorySpi {
         int dst;
         int src;
 
-        j86.j86.javax.net.ssl.KeyManager[] kma =
+        j86.javax.net.ssl.KeyManager[] kma =
             theKeyManagerFactory.getKeyManagers();
 
         KeyManager[] kmaw = new KeyManager[kma.length];
@@ -468,10 +468,10 @@ final class KeyManagerFactorySpiWrapper extends KeyManagerFactorySpi {
             if (!(kma[src] instanceof com.j86.sun.net.ssl.KeyManager)) {
                 // We only know how to wrap X509KeyManagers, as
                 // KeyManagers don't have any methods to wrap.
-                if (kma[src] instanceof j86.j86.javax.net.ssl.X509KeyManager) {
+                if (kma[src] instanceof j86.javax.net.ssl.X509KeyManager) {
                     kmaw[dst] = (KeyManager)
                         new X509KeyManagerComSunWrapper(
-                        (j86.j86.javax.net.ssl.X509KeyManager)kma[src]);
+                        (j86.javax.net.ssl.X509KeyManager)kma[src]);
                     dst++;
                 }
             } else {
@@ -494,7 +494,7 @@ final class KeyManagerFactorySpiWrapper extends KeyManagerFactorySpi {
 // =================================
 
 final class X509KeyManagerJavaxWrapper implements
-        j86.j86.javax.net.ssl.X509KeyManager {
+        j86.javax.net.ssl.X509KeyManager {
 
     private X509KeyManager theX509KeyManager;
 
@@ -533,7 +533,7 @@ final class X509KeyManagerJavaxWrapper implements
      */
     public String chooseEngineClientAlias(
             String[] keyTypes, Principal[] issuers,
-            j86.j86.javax.net.ssl.SSLEngine engine) {
+            j86.javax.net.ssl.SSLEngine engine) {
         String retval;
 
         if (keyTypes == null) {
@@ -572,7 +572,7 @@ final class X509KeyManagerJavaxWrapper implements
      */
     public String chooseEngineServerAlias(
             String keyType, Principal[] issuers,
-            j86.j86.javax.net.ssl.SSLEngine engine) {
+            j86.javax.net.ssl.SSLEngine engine) {
 
         if (keyType == null) {
             return null;
@@ -580,7 +580,7 @@ final class X509KeyManagerJavaxWrapper implements
         return theX509KeyManager.chooseServerAlias(keyType, issuers);
     }
 
-    public j86.j86.java.security.cert.X509Certificate[]
+    public j86.java.security.cert.X509Certificate[]
             getCertificateChain(String alias) {
         return theX509KeyManager.getCertificateChain(alias);
     }
@@ -591,7 +591,7 @@ final class X509KeyManagerJavaxWrapper implements
 }
 
 final class X509TrustManagerJavaxWrapper implements
-        j86.j86.javax.net.ssl.X509TrustManager {
+        j86.javax.net.ssl.X509TrustManager {
 
     private X509TrustManager theX509TrustManager;
 
@@ -600,33 +600,33 @@ final class X509TrustManagerJavaxWrapper implements
     }
 
     public void checkClientTrusted(
-            j86.j86.java.security.cert.X509Certificate[] chain, String authType)
-        throws j86.j86.java.security.cert.CertificateException {
+            j86.java.security.cert.X509Certificate[] chain, String authType)
+        throws j86.java.security.cert.CertificateException {
         if (!theX509TrustManager.isClientTrusted(chain)) {
-            throw new j86.j86.java.security.cert.CertificateException(
+            throw new j86.java.security.cert.CertificateException(
                 "Untrusted Client Certificate Chain");
         }
     }
 
     public void checkServerTrusted(
-            j86.j86.java.security.cert.X509Certificate[] chain, String authType)
-        throws j86.j86.java.security.cert.CertificateException {
+            j86.java.security.cert.X509Certificate[] chain, String authType)
+        throws j86.java.security.cert.CertificateException {
         if (!theX509TrustManager.isServerTrusted(chain)) {
-            throw new j86.j86.java.security.cert.CertificateException(
+            throw new j86.java.security.cert.CertificateException(
                 "Untrusted Server Certificate Chain");
         }
     }
 
-    public j86.j86.java.security.cert.X509Certificate[] getAcceptedIssuers() {
+    public j86.java.security.cert.X509Certificate[] getAcceptedIssuers() {
         return theX509TrustManager.getAcceptedIssuers();
     }
 }
 
 final class X509KeyManagerComSunWrapper implements X509KeyManager {
 
-    private j86.j86.javax.net.ssl.X509KeyManager theX509KeyManager;
+    private j86.javax.net.ssl.X509KeyManager theX509KeyManager;
 
-    X509KeyManagerComSunWrapper(j86.j86.javax.net.ssl.X509KeyManager obj) {
+    X509KeyManagerComSunWrapper(j86.javax.net.ssl.X509KeyManager obj) {
         theX509KeyManager = obj;
     }
 
@@ -647,7 +647,7 @@ final class X509KeyManagerComSunWrapper implements X509KeyManager {
         return theX509KeyManager.chooseServerAlias(keyType, issuers, null);
     }
 
-    public j86.j86.java.security.cert.X509Certificate[]
+    public j86.java.security.cert.X509Certificate[]
             getCertificateChain(String alias) {
         return theX509KeyManager.getCertificateChain(alias);
     }
@@ -659,33 +659,33 @@ final class X509KeyManagerComSunWrapper implements X509KeyManager {
 
 final class X509TrustManagerComSunWrapper implements X509TrustManager {
 
-    private j86.j86.javax.net.ssl.X509TrustManager theX509TrustManager;
+    private j86.javax.net.ssl.X509TrustManager theX509TrustManager;
 
-    X509TrustManagerComSunWrapper(j86.j86.javax.net.ssl.X509TrustManager obj) {
+    X509TrustManagerComSunWrapper(j86.javax.net.ssl.X509TrustManager obj) {
         theX509TrustManager = obj;
     }
 
     public boolean isClientTrusted(
-            j86.j86.java.security.cert.X509Certificate[] chain) {
+            j86.java.security.cert.X509Certificate[] chain) {
         try {
             theX509TrustManager.checkClientTrusted(chain, "UNKNOWN");
             return true;
-        } catch (j86.j86.java.security.cert.CertificateException e) {
+        } catch (j86.java.security.cert.CertificateException e) {
             return false;
         }
     }
 
     public boolean isServerTrusted(
-            j86.j86.java.security.cert.X509Certificate[] chain) {
+            j86.java.security.cert.X509Certificate[] chain) {
         try {
             theX509TrustManager.checkServerTrusted(chain, "UNKNOWN");
             return true;
-        } catch (j86.j86.java.security.cert.CertificateException e) {
+        } catch (j86.java.security.cert.CertificateException e) {
             return false;
         }
     }
 
-    public j86.j86.java.security.cert.X509Certificate[] getAcceptedIssuers() {
+    public j86.java.security.cert.X509Certificate[] getAcceptedIssuers() {
         return theX509TrustManager.getAcceptedIssuers();
     }
 }

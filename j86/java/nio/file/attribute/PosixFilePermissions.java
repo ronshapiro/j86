@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
-import static j86.j86.j86.java.nio.file.attribute.PosixFilePermission.*;
+import static j86.java.nio.file.attribute.PosixFilePermission.*;
 import j86.java.util.*;
 
 /**
@@ -141,8 +141,8 @@ public final class PosixFilePermissions {
 
     /**
      * Creates a {@link FileAttribute}, encapsulating a copy of the given file
-     * permissions, suitable for passing to the {@link j86.j86.java.nio.file.Files#createFile
-     * createFile} or {@link j86.j86.java.nio.file.Files#createDirectory createDirectory}
+     * permissions, suitable for passing to the {@link j86.java.nio.file.Files#createFile
+     * createFile} or {@link j86.java.nio.file.Files#createDirectory createDirectory}
      * methods.
      *
      * @param   perms

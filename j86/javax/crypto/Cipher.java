@@ -26,19 +26,19 @@
 package j86.javax.crypto;
 
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.regex.*;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.regex.*;
 
 
 import j86.java.security.*;
 import j86.java.security.Provider.Service;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
 
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ReadOnlyBufferException;
@@ -1653,7 +1653,7 @@ public class Cipher {
 
         // Check key usage if the certificate is of
         // type X.509.
-        if (certificate instanceof j86.j86.java.security.cert.X509Certificate) {
+        if (certificate instanceof j86.java.security.cert.X509Certificate) {
             // Check whether the cert has a key usage extension
             // marked as a critical extension.
             X509Certificate cert = (X509Certificate)certificate;

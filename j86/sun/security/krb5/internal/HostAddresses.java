@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.sun.security.krb5.PrincipalName;
 import j86.sun.security.krb5.KrbException;
@@ -42,7 +42,7 @@ import j86.java.net.Inet4Address;
 import j86.java.net.Inet6Address;
 import j86.java.net.UnknownHostException;
 import j86.java.io.IOException;
-import j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
+import j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
 
 /**
  * Implements the ASN.1 HostAddresses type.
@@ -66,7 +66,7 @@ import j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream;
  */
 
 public class HostAddresses implements Cloneable {
-    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.sun.security.krb5.internal.Krb5.DEBUG;
     private HostAddress[] addresses = null;
     private volatile int hashCode = 0;
 
@@ -246,7 +246,7 @@ public class HostAddresses implements Cloneable {
          *
          * @param cos a <code>CCacheOutputStream</code> to be written to.
          * @exception IOException if an I/O exception occurs.
-         * @see j86.j86.j86.sun.security.krb5.internal.ccache.CCacheOutputStream
+         * @see j86.sun.security.krb5.internal.ccache.CCacheOutputStream
          */
 
     public void writeAddrs(CCacheOutputStream cos) throws IOException {

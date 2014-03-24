@@ -24,10 +24,10 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.io.*;
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 import j86.java.util.*;
 
 /**
@@ -237,7 +237,7 @@ public class XMLFormatter extends Formatter {
 
         if (encoding == null) {
             // Figure out the default encoding.
-            encoding = j86.j86.java.nio.charset.Charset.defaultCharset().name();
+            encoding = j86.java.nio.charset.Charset.defaultCharset().name();
         }
         // Try to map the encoding name to a canonical name.
         try {

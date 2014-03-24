@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.net.URI;
 import j86.java.util.Collection;
@@ -34,11 +34,11 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
-import j86.j86.java.security.cert.CertStore;
-import j86.j86.java.security.cert.CertStoreException;
-import j86.j86.java.security.cert.X509CertSelector;
-import j86.j86.java.security.cert.X509CRLSelector;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.java.security.cert.CertStore;
+import j86.java.security.cert.CertStoreException;
+import j86.java.security.cert.X509CertSelector;
+import j86.java.security.cert.X509CRLSelector;
+import j86.javax.security.auth.x500.X500Principal;
 import j86.java.io.IOException;
 
 import j86.sun.security.util.Cache;
@@ -55,10 +55,10 @@ public abstract class CertStoreHelper {
     static {
         classMap.put(
             "LDAP",
-            "j86.j86.j86.sun.security.provider.certpath.ldap.LDAPCertStoreHelper");
+            "j86.sun.security.provider.certpath.ldap.LDAPCertStoreHelper");
         classMap.put(
             "SSLServer",
-            "j86.j86.j86.sun.security.provider.certpath.ssl.SSLServerCertStoreHelper");
+            "j86.sun.security.provider.certpath.ssl.SSLServerCertStoreHelper");
     };
     private static Cache<String, CertStoreHelper> cache
         = Cache.newSoftMemoryCache(NUM_TYPES);

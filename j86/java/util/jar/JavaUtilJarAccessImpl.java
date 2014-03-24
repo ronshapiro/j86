@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.jar;
+package j86.java.util.jar;
 
 import j86.java.io.IOException;
 import j86.java.net.URL;

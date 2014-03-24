@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.com.sun.jmx.mbeanserver.Util;
 import j86.com.sun.jmx.remote.internal.ClientCommunicatorAdmin;
@@ -42,11 +42,11 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectStreamClass;
 import j86.java.io.Serializable;
 import j86.java.io.WriteAbortedException;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Proxy;
 import j86.java.net.MalformedURLException;
 import j86.java.rmi.MarshalException;
 import j86.java.rmi.MarshalledObject;
@@ -54,10 +54,10 @@ import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.ServerException;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.RemoteObjectInvocationHandler;
-import j86.j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RemoteObjectInvocationHandler;
+import j86.java.rmi.server.RemoteRef;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
@@ -94,24 +94,24 @@ import j86.javax.management.ObjectInstance;
 import j86.javax.management.ObjectName;
 import j86.javax.management.QueryExp;
 import j86.javax.management.ReflectionException;
-import j86.j86.javax.management.remote.JMXConnectionNotification;
-import j86.j86.javax.management.remote.JMXConnector;
-import j86.j86.javax.management.remote.JMXConnectorFactory;
-import j86.j86.javax.management.remote.JMXServiceURL;
-import j86.j86.javax.management.remote.NotificationResult;
-import j86.j86.javax.management.remote.JMXAddressable;
+import j86.javax.management.remote.JMXConnectionNotification;
+import j86.javax.management.remote.JMXConnector;
+import j86.javax.management.remote.JMXConnectorFactory;
+import j86.javax.management.remote.JMXServiceURL;
+import j86.javax.management.remote.NotificationResult;
+import j86.javax.management.remote.JMXAddressable;
 import j86.javax.naming.InitialContext;
 import j86.javax.naming.NamingException;
 import j86.javax.rmi.ssl.SslRMIClientSocketFactory;
 import j86.javax.security.auth.Subject;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.rmi.server.UnicastRef2;
 import j86.sun.rmi.transport.LiveRef;
 
 /**
  * <p>A connection to a remote RMI connector.  Usually, such
  * connections are made using {@link
- * j86.j86.javax.management.remote.JMXConnectorFactory JMXConnectorFactory}.
+ * j86.javax.management.remote.JMXConnectorFactory JMXConnectorFactory}.
  * However, specialized applications can use this class directly, for
  * example with an {@link RMIServer} stub obtained without going
  * through JNDI.</p>
@@ -121,7 +121,7 @@ import j86.sun.rmi.transport.LiveRef;
 public class RMIConnector implements JMXConnector, Serializable, JMXAddressable {
 
     private static final ClassLogger logger =
-            new ClassLogger("j86.j86.j86.javax.management.remote.rmi", "RMIConnector");
+            new ClassLogger("j86.javax.management.remote.rmi", "RMIConnector");
 
     private static final long serialVersionUID = 817323035842634473L;
 
@@ -1789,7 +1789,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
      * <p>Connects the underlying RMIServer stub to an ORB, if needed,
      * before serializing it. This is done using the environment
      * map that was provided to the constructor, if any, and as documented
-     * in {@link j86.j86.j86.javax.management.remote.rmi}.</p>
+     * in {@link j86.javax.management.remote.rmi}.</p>
      * <p>This method then calls <code>s.defaultWriteObject()</code>.
      * Usually, <var>rmiServer</var> is null if this object
      * was constructed with a JMXServiceURL, and <var>jmxServiceURL</var>
@@ -1910,7 +1910,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
     /**
      * Lookup the RMIServer stub in a directory.
      * @param jndiURL A JNDI URL indicating the location of the Stub
-     *                (see {@link j86.j86.j86.javax.management.remote.rmi}), e.g.:
+     *                (see {@link j86.javax.management.remote.rmi}), e.g.:
      *   <ul><li><tt>rmi://registry-host:port/rmi-stub-name</tt></li>
      *       <li>or <tt>iiop://cosnaming-host:port/iiop-stub-name</tt></li>
      *       <li>or <tt>ldap://ldap-host:port/java-container-dn</tt></li>
@@ -2070,9 +2070,9 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
 
         package j86.com.sun.jmx.remote.internal;
 
-        import j86.j86.j86.java.lang.reflect.Method;
+        import j86.java.lang.reflect.Method;
         import j86.java.rmi.Remote;
-        import j86.j86.java.rmi.server.RemoteRef;
+        import j86.java.rmi.server.RemoteRef;
         import j86.com.sun.jmx.remote.internal.ProxyRef;
 
         public class PRef extends ProxyRef {
@@ -2100,13 +2100,13 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
     static {
         final String pRefByteCodeString =
                 "\312\376\272\276\0\0\0.\0\27\12\0\5\0\15\11\0\4\0\16\13\0\17\0"+
-                "\20\7\0\21\7\0\22\1\0\6<init>\1\0\36(Lj86.j86.java.rmi.server/RemoteRef;"+
-                ")V\1\0\4Code\1\0\6invoke\1\0S(Lj86.java.rmi/Remote;Lj86.j86.java.lang.reflec"+
+                "\20\7\0\21\7\0\22\1\0\6<init>\1\0\36(Lj86.java.rmi.server/RemoteRef;"+
+                ")V\1\0\4Code\1\0\6invoke\1\0S(Lj86.java.rmi/Remote;Lj86.java.lang.reflec"+
                 "t/Method;[Lj86.java.lang/Object;J)Ljava/lang/Object;\1\0\12Exception"+
                 "s\7\0\23\14\0\6\0\7\14\0\24\0\25\7\0\26\14\0\11\0\12\1\0\40com/"+
                 "sun/jmx/remote/internal/PRef\1\0$j86.com.sun.jmx.remote.internal/Pr"+
                 "oxyRef\1\0\23j86.java.lang/Exception\1\0\3ref\1\0\33Lj86.java.rmi/serve"+
-                "r/RemoteRef;\1\0\31j86.j86.java.rmi.server/RemoteRef\0!\0\4\0\5\0\0\0\0"+
+                "r/RemoteRef;\1\0\31j86.java.rmi.server/RemoteRef\0!\0\4\0\5\0\0\0\0"+
                 "\0\2\0\1\0\6\0\7\0\1\0\10\0\0\0\22\0\2\0\2\0\0\0\6*+\267\0\1\261"+
                 "\0\0\0\0\0\1\0\11\0\12\0\2\0\10\0\0\0\33\0\6\0\6\0\0\0\17*\264\0"+
                 "\2+,-\26\4\271\0\3\6\0\260\0\0\0\0\0\13\0\0\0\4\0\1\0\14\0\0";
@@ -2248,7 +2248,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
 
         package j86.com.sun.jmx.remote.protocol.iiop;
 
-        import org.omg.stub.j86.j86.j86.javax.management.remote.rmi._RMIConnection_Stub;
+        import org.omg.stub.j86.javax.management.remote.rmi._RMIConnection_Stub;
 
         import org.omg.CORBA.portable.ApplicationException;
         import org.omg.CORBA.portable.InputStream;
@@ -2292,7 +2292,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
 
      */
     private static final String iiopConnectionStubClassName =
-        "org.omg.stub.j86.j86.j86.javax.management.remote.rmi._RMIConnection_Stub";
+        "org.omg.stub.j86.javax.management.remote.rmi._RMIConnection_Stub";
     private static final String proxyStubClassName =
         "j86.com.sun.jmx.remote.protocol.iiop.ProxyStub";
     private static final String ProxyInputStreamClassName =
@@ -2312,7 +2312,7 @@ public class RMIConnector implements JMXConnector, Serializable, JMXAddressable 
                 "PInputStream\14\0\20\0\21\14\0\15\0\27\1\0+org/omg/CORBA/porta"+
                 "ble/ApplicationException\14\0%\0&\14\0'\0(\14\0\15\0)\14\0*\0&"+
                 "\14\0\26\0\27\1\0*j86.com.sun.jmx.remote.protocol.iiop/ProxyStub\1"+
-                "\0<org/omg/stub/j86.j86.j86.javax.management.remote.rmi/_RMIConnection_Stu"+
+                "\0<org/omg/stub/j86.javax.management.remote.rmi/_RMIConnection_Stu"+
                 "b\1\0)org/omg/CORBA/portable/RemarshalException\1\0\16getInput"+
                 "Stream\1\0&()Lorg/omg/CORBA/portable/InputStream;\1\0\5getId\1"+
                 "\0\24()Lj86.java.lang/String;\1\09(Ljava/lang/String;Lorg/omg/CORB"+

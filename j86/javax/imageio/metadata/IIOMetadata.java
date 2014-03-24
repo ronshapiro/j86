@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.metadata;
+package j86.javax.imageio.metadata;
 
 import org.w3c.dom.Node;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 /**
  * An abstract class to be extended by objects that represent metadata

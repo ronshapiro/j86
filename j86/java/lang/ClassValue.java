@@ -27,8 +27,8 @@ package j86.java.lang;
 
 import j86.java.lang.ClassValue.ClassValueMap;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.lang.ref.WeakReference;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 
 import static j86.java.lang.ClassValue.ClassValueMap.probeHomeLocation;
 import static j86.java.lang.ClassValue.ClassValueMap.probeBackupLocations;

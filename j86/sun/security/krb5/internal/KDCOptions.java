@@ -28,12 +28,12 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.sun.security.krb5.Config;
 import j86.sun.security.krb5.KrbException;
 import j86.sun.security.krb5.Asn1Exception;
-import j86.j86.j86.sun.security.krb5.internal.util.KerberosFlags;
+import j86.sun.security.krb5.internal.util.KerberosFlags;
 import j86.sun.security.util.*;
 import j86.java.io.IOException;
 
@@ -251,7 +251,7 @@ public class KDCOptions extends KerberosFlags {
      * @param option an option bit.
      * @param value true if the option is selected, false if the option is not selected.
      * @exception ArrayIndexOutOfBoundsException if array index out of bound occurs.
-     * @see j86.j86.sun.security.krb5.internal.Krb5
+     * @see j86.sun.security.krb5.internal.Krb5
      */
     public void set(int option, boolean value) throws ArrayIndexOutOfBoundsException {
         super.set(option, value);
@@ -263,7 +263,7 @@ public class KDCOptions extends KerberosFlags {
      * @param option an option bit.
      * @return value true if the option is selected, false if the option is not selected.
      * @exception ArrayIndexOutOfBoundsException if array index out of bound occurs.
-     * @see j86.j86.sun.security.krb5.internal.Krb5
+     * @see j86.sun.security.krb5.internal.Krb5
      */
 
     public boolean get(int option) throws ArrayIndexOutOfBoundsException {

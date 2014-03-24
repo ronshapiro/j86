@@ -26,8 +26,8 @@
 package j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.InvocationEvent;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InvocationEvent;
 
 /**
  * A stateless class which responds to native mouse moves, Component resizes,

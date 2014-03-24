@@ -30,8 +30,8 @@ import j86.java.util.Arrays;
 import j86.java.util.List;
 import j86.java.util.ListResourceBundle;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class PNGMetadataFormat extends IIOMetadataFormatImpl {
 

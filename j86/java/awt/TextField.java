@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.TextFieldPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.TextFieldPeer;
+import j86.java.awt.event.*;
 import j86.java.util.EventListener;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
@@ -84,10 +84,10 @@ import j86.javax.accessibility.*;
  * text field.
  *
  * @author      Sami Shaio
- * @see         j86.j86.java.awt.event.KeyEvent
- * @see         j86.j86.java.awt.event.KeyAdapter
- * @see         j86.j86.java.awt.event.KeyListener
- * @see         j86.j86.java.awt.event.ActionEvent
+ * @see         j86.java.awt.event.KeyEvent
+ * @see         j86.java.awt.event.KeyAdapter
+ * @see         j86.java.awt.event.KeyListener
+ * @see         j86.java.awt.event.ActionEvent
  * @see         j86.java.awt.Component#addKeyListener
  * @see         j86.java.awt.TextField#processEvent
  * @see         j86.java.awt.TextField#processActionEvent
@@ -462,7 +462,7 @@ public class TextField extends TextComponent {
      * @param      l the action listener.
      * @see        #removeActionListener
      * @see        #getActionListeners
-     * @see        j86.j86.java.awt.event.ActionListener
+     * @see        j86.java.awt.event.ActionListener
      * @since      JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -483,7 +483,7 @@ public class TextField extends TextComponent {
      * @param           l the action listener.
      * @see             #addActionListener
      * @see             #getActionListeners
-     * @see             j86.j86.java.awt.event.ActionListener
+     * @see             j86.java.awt.event.ActionListener
      * @since           JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -503,7 +503,7 @@ public class TextField extends TextComponent {
      *
      * @see #addActionListener
      * @see #removeActionListener
-     * @see j86.j86.java.awt.event.ActionListener
+     * @see j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -576,7 +576,7 @@ public class TextField extends TextComponent {
      * exception.
      *
      * @param      e the event
-     * @see        j86.j86.java.awt.event.ActionEvent
+     * @see        j86.java.awt.event.ActionEvent
      * @see        j86.java.awt.TextField#processActionEvent
      * @since      JDK1.1
      */
@@ -606,7 +606,7 @@ public class TextField extends TextComponent {
      * exception.
      *
      * @param       e the action event
-     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.event.ActionListener
      * @see         j86.java.awt.TextField#addActionListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1

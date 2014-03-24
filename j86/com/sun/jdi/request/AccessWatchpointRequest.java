@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -37,9 +37,9 @@ import j86.com.sun.jdi.*;
  * GetStatic&lt;Type&gt;Field</code>).
  * Access by JDI does not trigger this event.
  * When an enabled AccessWatchpointRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
- * {@link j86.j86.com.sun.jdi.event.AccessWatchpointEvent AccessWatchpointEvent} will be placed
- * on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.com.sun.jdi.event.AccessWatchpointEvent AccessWatchpointEvent} will be placed
+ * on the {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ExceptionRequests is
  * managed by the {@link EventRequestManager}
  * The collection of existing
@@ -50,7 +50,7 @@ import j86.com.sun.jdi.*;
  * of a Field is not considered an access.
  *
  * @see ModificationWatchpointRequest
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

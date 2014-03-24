@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.management.jdp;
+package j86.sun.management.jdp;
 
 import j86.java.io.IOException;
 import j86.java.util.HashMap;
@@ -70,7 +70,7 @@ public final class JdpJmxPacket
     public final static String PROCESS_ID_KEY = "PROCESS_ID";
     /**
      * Hostname of rmi server, optional presented if user overrides rmi server
-     * hostname by j86.j86.java.rmi.server.hostname property
+     * hostname by j86.java.rmi.server.hostname property
      */
     public final static String RMI_HOSTNAME_KEY = "RMI_HOSTNAME";
     /**

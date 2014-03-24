@@ -41,29 +41,29 @@ by the Test Compatibility Kit (TCK) as mandated by the Java Community Process.
 <h3>1.0 Available JDBC RowSet Reference Implementations </h3>
   The following implementations are provided:<br>
            
-<blockquote><tt><b>JdbcRowSetImpl</b></tt> - The <tt>j86.j86.javax.sql.rowset.JdbcRowSet</tt>
+<blockquote><tt><b>JdbcRowSetImpl</b></tt> - The <tt>j86.javax.sql.rowset.JdbcRowSet</tt>
 interface reference implementation. <br>
 <br>
-<tt><b>CachedRowSetImpl </b></tt>- The <tt>j86.j86.javax.sql.rowset.CachedRowSet</tt> interface
+<tt><b>CachedRowSetImpl </b></tt>- The <tt>j86.javax.sql.rowset.CachedRowSet</tt> interface
 reference implementation.<br>
 <br>
-<tt><b>WebRowSetImpl</b></tt> - The <tt>j86.j86.javax.sql.rowset.WebRowSet</tt> interface
+<tt><b>WebRowSetImpl</b></tt> - The <tt>j86.javax.sql.rowset.WebRowSet</tt> interface
 reference implementation.<br>
 <br>
-<tt><b>FilteredRowSetImpl</b></tt> - The <tt>j86.j86.javax.sql.rowset.FilteredRowSet</tt>
+<tt><b>FilteredRowSetImpl</b></tt> - The <tt>j86.javax.sql.rowset.FilteredRowSet</tt>
 interface reference implementation.<br>
 <br>
-<tt><b>JoinRowSetImpl</b></tt> - The <tt>j86.j86.javax.sql.rowset.JoinRowSet</tt> interface
+<tt><b>JoinRowSetImpl</b></tt> - The <tt>j86.javax.sql.rowset.JoinRowSet</tt> interface
 reference implementation.<br>
 </blockquote>
 
 All details on their expected behavior, including their interactions with the <tt>SyncProvider</tt>
-SPI and helper classes are provided in the interface definitions in the <tt>j86.j86.javax.sql.rowset</tt>
+SPI and helper classes are provided in the interface definitions in the <tt>j86.javax.sql.rowset</tt>
 package specification.<br>
    
 <h3>2.0 Usage</h3>
 The reference implementations represent robust implementations of the standard
-<code>RowSet</code> interfaces defined in the <code>j86.j86.javax.sql.rowset</code> package. 
+<code>RowSet</code> interfaces defined in the <code>j86.javax.sql.rowset</code> package. 
 All disconnected <code>RowSet</code> implementations, such as the <tt>CachedRowSetImpl</tt>
 and <tt>WebRowSetImpl</tt>, are flexible enough to use the <tt>SyncFactory</tt> SPIs to 
 leverage non-reference implementation <tt>SyncProvider</tt> implementations to obtain

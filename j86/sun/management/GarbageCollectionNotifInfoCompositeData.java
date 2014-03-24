@@ -27,16 +27,16 @@ package j86.sun.management;
 
 import com.j86.sun.management.GarbageCollectionNotificationInfo;
 import com.j86.sun.management.GcInfo;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.javax.management.openmbean.CompositeData;
-import j86.j86.javax.management.openmbean.CompositeType;
-import j86.j86.javax.management.openmbean.CompositeDataSupport;
-import j86.j86.javax.management.openmbean.OpenDataException;
-import j86.j86.javax.management.openmbean.OpenType;
-import j86.j86.javax.management.openmbean.SimpleType;
+import j86.java.lang.reflect.Method;
+import j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeType;
+import j86.javax.management.openmbean.CompositeDataSupport;
+import j86.javax.management.openmbean.OpenDataException;
+import j86.javax.management.openmbean.OpenType;
+import j86.javax.management.openmbean.SimpleType;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 import j86.java.util.HashMap;
 
 /**

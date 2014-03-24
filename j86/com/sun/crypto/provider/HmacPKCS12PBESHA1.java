@@ -30,10 +30,10 @@ import j86.java.nio.ByteBuffer;
 
 import j86.javax.crypto.MacSpi;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
-import j86.j86.javax.crypto.spec.PBEParameterSpec;
+import j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.PBEParameterSpec;
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 /**
  * This is an implementation of the HMAC-PBESHA1 algorithm as defined
@@ -66,9 +66,9 @@ public final class HmacPKCS12PBESHA1 extends HmacCore {
         char[] passwdChars;
         byte[] salt = null;
         int iCount = 0;
-        if (key instanceof j86.j86.javax.crypto.interfaces.PBEKey) {
-            j86.j86.javax.crypto.interfaces.PBEKey pbeKey =
-                (j86.j86.javax.crypto.interfaces.PBEKey) key;
+        if (key instanceof j86.javax.crypto.interfaces.PBEKey) {
+            j86.javax.crypto.interfaces.PBEKey pbeKey =
+                (j86.javax.crypto.interfaces.PBEKey) key;
             passwdChars = pbeKey.getPassword();
             salt = pbeKey.getSalt(); // maybe null if unspecified
             iCount = pbeKey.getIterationCount(); // maybe 0 if unspecified

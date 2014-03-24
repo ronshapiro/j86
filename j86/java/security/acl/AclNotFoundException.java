@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.acl;
+package j86.java.security.acl;
 
 /**
  * This is an exception that is thrown whenever a reference is made to a

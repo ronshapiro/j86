@@ -38,18 +38,18 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.text.Collator;
 import j86.java.text.ParseException;
 import j86.java.text.RuleBasedCollator;
-import j86.j86.java.text.spi.CollatorProvider;
+import j86.java.text.spi.CollatorProvider;
 import j86.java.util.Locale;
 import j86.java.util.Set;
 
 /**
  * Concrete implementation of the
- * {@link j86.j86.java.text.spi.CollatorProvider CollatorProvider} class
+ * {@link j86.java.text.spi.CollatorProvider CollatorProvider} class
  * for the JRE LocaleProviderAdapter.
  */
 public class CollatorProviderImpl extends CollatorProvider implements AvailableLanguageTags {
@@ -86,7 +86,7 @@ public class CollatorProviderImpl extends CollatorProvider implements AvailableL
      * <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.text.Collator#getInstance(j86.java.util.Locale)
      */

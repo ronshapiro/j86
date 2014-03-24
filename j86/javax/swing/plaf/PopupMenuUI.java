@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.swing.plaf;
+package j86.javax.swing.plaf;
 
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseEvent;
 import j86.javax.swing.Popup;
 import j86.javax.swing.PopupFactory;
 import j86.javax.swing.JPopupMenu;

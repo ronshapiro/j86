@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
 public final class RenderCache {
     final class Entry {

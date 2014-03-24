@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.sdp;
+package j86.sun.net.sdp;
 
 import j86.java.io.IOException;
 import j86.java.io.FileDescriptor;

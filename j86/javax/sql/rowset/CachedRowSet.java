@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -32,7 +32,7 @@ import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.util.*;
 
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.spi.*;
 
 /**
  * The interface that all standard implementations of
@@ -739,10 +739,10 @@ public interface CachedRowSet extends RowSet, Joinable {
     * back to the data source
     * @see #acceptChanges(j86.java.sql.Connection)
     * @see j86.javax.sql.RowSetWriter
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncProviderException
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncResolver
+    * @see j86.javax.sql.rowset.spi.SyncFactory
+    * @see j86.javax.sql.rowset.spi.SyncProvider
+    * @see j86.javax.sql.rowset.spi.SyncProviderException
+    * @see j86.javax.sql.rowset.spi.SyncResolver
     */
     public void acceptChanges() throws SyncProviderException;
 
@@ -809,10 +809,10 @@ public interface CachedRowSet extends RowSet, Joinable {
     * back to the data source
     * @see #acceptChanges()
     * @see j86.javax.sql.RowSetWriter
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncProviderException
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncResolver
+    * @see j86.javax.sql.rowset.spi.SyncFactory
+    * @see j86.javax.sql.rowset.spi.SyncProvider
+    * @see j86.javax.sql.rowset.spi.SyncProviderException
+    * @see j86.javax.sql.rowset.spi.SyncResolver
     */
     public void acceptChanges(Connection con) throws SyncProviderException;
 
@@ -889,7 +889,7 @@ public interface CachedRowSet extends RowSet, Joinable {
     * @throws SQLException if (1) the current row has not been deleted or
     * (2) the cursor is on the insert row, before the first row, or
     * after the last row
-    * @see j86.j86.javax.sql.rowset.CachedRowSet#undoInsert
+    * @see j86.javax.sql.rowset.CachedRowSet#undoInsert
     * @see j86.java.sql.ResultSet#cancelRowUpdates
     */
     public void undoDelete() throws SQLException;
@@ -914,7 +914,7 @@ public interface CachedRowSet extends RowSet, Joinable {
     * @throws SQLException if (1) the current row has not been inserted or (2)
     * the cursor is before the first row, after the last row, or on the
     * insert row
-    * @see j86.j86.javax.sql.rowset.CachedRowSet#undoDelete
+    * @see j86.javax.sql.rowset.CachedRowSet#undoDelete
     * @see j86.java.sql.ResultSet#cancelRowUpdates
     */
     public void undoInsert() throws SQLException;
@@ -1076,7 +1076,7 @@ public interface CachedRowSet extends RowSet, Joinable {
     * <pre>
     *     RowSetReader rowsetReader = null;
     *     SyncProvider provider =
-    *         SyncFactory.getInstance("j86.j86.javax.sql.rowset.provider.RIOptimisticProvider");
+    *         SyncFactory.getInstance("j86.javax.sql.rowset.provider.RIOptimisticProvider");
     *         if (provider instanceof RIOptimisticProvider) {
     *             rowsetReader = provider.getRowSetReader();
     *         }
@@ -1253,7 +1253,7 @@ public interface CachedRowSet extends RowSet, Joinable {
     *     <i>tabName</i> is <code>null</code>
     * @see j86.javax.sql.RowSetMetaData#setTableName
     * @see j86.javax.sql.RowSetWriter
-    * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+    * @see j86.javax.sql.rowset.spi.SyncProvider
     */
    public void setTableName(String tabName) throws SQLException;
 

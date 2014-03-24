@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.security.spec.MGF1ParameterSpec;
+import j86.java.security.spec.MGF1ParameterSpec;
 
 /**
  * This class specifies a parameter spec for RSA-PSS signature scheme,

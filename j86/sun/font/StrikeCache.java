@@ -27,16 +27,16 @@ package j86.sun.font;
 
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.*;
 
 import j86.sun.java2d.Disposer;
-import j86.j86.sun.java2d.pipe.BufferedContext;
-import j86.j86.sun.java2d.pipe.RenderQueue;
-import j86.j86.j86.sun.java2d.pipe.hw.AccelGraphicsConfig;
+import j86.sun.java2d.pipe.BufferedContext;
+import j86.sun.java2d.pipe.RenderQueue;
+import j86.sun.java2d.pipe.hw.AccelGraphicsConfig;
 import j86.sun.misc.Unsafe;
 
 /**

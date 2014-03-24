@@ -24,14 +24,14 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 
 
 // java import
 //
 import j86.java.io.*;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 // jmx import
 //

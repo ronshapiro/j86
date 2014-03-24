@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.javax.swing.Painter;
 
 import j86.javax.swing.JComponent;
 import j86.javax.swing.UIManager;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.UIResource;
 import j86.java.awt.Graphics;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Color;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 
 /**
  * TableScrollPaneCorner - A simple component that paints itself using the table

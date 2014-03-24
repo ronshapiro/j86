@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.callback;
+package j86.javax.security.auth.callback;
 
 /**
  * <p> Underlying security services instantiate and pass a
@@ -31,7 +31,7 @@ package j86.j86.javax.security.auth.callback;
  * method of a {@code CallbackHandler} to retrieve generic text
  * information.
  *
- * @see j86.j86.javax.security.auth.callback.CallbackHandler
+ * @see j86.javax.security.auth.callback.CallbackHandler
  */
 public class TextInputCallback implements Callback, j86.java.io.Serializable {
 

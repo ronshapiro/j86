@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.sql.rowset.spi;
+package j86.javax.sql.rowset.spi;
 
 import j86.java.sql.SQLException;
 
@@ -33,8 +33,8 @@ import j86.java.sql.SQLException;
  * being successfully instantiated
  *
  * @author Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class SyncFactoryException extends j86.java.sql.SQLException {
 

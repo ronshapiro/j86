@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.java.util.jar;
+package j86.java.util.jar;
 
-import j86.j86.java.util.zip.*;
+import j86.java.util.zip.*;
 import j86.java.io.*;
 
 /**
  * The <code>JarOutputStream</code> class is used to write the contents
  * of a JAR file to any output stream. It extends the class
- * <code>j86.j86.java.util.zip.ZipOutputStream</code> with support
+ * <code>j86.java.util.zip.ZipOutputStream</code> with support
  * for writing an optional <code>Manifest</code> entry. The
  * <code>Manifest</code> can be used to specify meta-information about
  * the JAR file and its entries.
  *
  * @author  David Connelly
  * @see     Manifest
- * @see     j86.j86.java.util.zip.ZipOutputStream
+ * @see     j86.java.util.zip.ZipOutputStream
  * @since   1.2
  */
 public

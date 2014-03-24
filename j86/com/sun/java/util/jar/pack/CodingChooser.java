@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
@@ -35,9 +35,9 @@ import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.java.util.Random;
 import j86.java.util.Set;
-import j86.j86.java.util.zip.Deflater;
-import j86.j86.java.util.zip.DeflaterOutputStream;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import j86.java.util.zip.Deflater;
+import j86.java.util.zip.DeflaterOutputStream;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 /**
  * Heuristic chooser of basic encodings.
  * Runs "zip" to measure the apparent information content after coding.

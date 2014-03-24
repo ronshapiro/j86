@@ -29,7 +29,7 @@
  */
 package j86.com.sun.pept;
 
-import j86.j86.com.sun.pept.presentation.MessageStruct;
+import j86.com.sun.pept.presentation.MessageStruct;
 import j86.java.util.*;
 
 /**

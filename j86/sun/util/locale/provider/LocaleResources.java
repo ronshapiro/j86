@@ -38,10 +38,10 @@
  *
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
 import j86.java.text.MessageFormat;
 import j86.java.util.Calendar;
 import j86.java.util.LinkedHashSet;
@@ -49,13 +49,13 @@ import j86.java.util.Locale;
 import j86.java.util.Map;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.sun.util.calendar.ZoneInfo;
-import j86.j86.sun.util.resources.LocaleData;
-import j86.j86.sun.util.resources.OpenListResourceBundle;
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
-import j86.j86.sun.util.resources.TimeZoneNamesBundle;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.sun.util.calendar.ZoneInfo;
+import j86.sun.util.resources.LocaleData;
+import j86.sun.util.resources.OpenListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.TimeZoneNamesBundle;
 
 /**
  * Central accessor to locale-dependent resources for JRE/CLDR provider adapters.

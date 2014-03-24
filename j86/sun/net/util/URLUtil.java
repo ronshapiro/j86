@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.util;
+package j86.sun.net.util;
 
 import j86.java.net.URL;
 

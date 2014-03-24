@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.plugins.jpeg;
+package j86.javax.imageio.plugins.jpeg;
 
 import j86.java.util.Arrays;
 

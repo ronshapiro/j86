@@ -26,14 +26,14 @@
 package j86.sun.security.provider;
 
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.math.BigInteger;
 
 import j86.java.security.*;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
-import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.javax.crypto.spec.DHParameterSpec;
 
 /**
  * Cache for DSA and DH parameter specs. Used by the KeyPairGenerators

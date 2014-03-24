@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.util.HashSet;
 import j86.java.util.Set;

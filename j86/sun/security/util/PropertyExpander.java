@@ -113,10 +113,10 @@ public class PropertyExpander {
                             try {
                                 if (sb.length() > 0 ||
                                     !(new URI(val)).isAbsolute()) {
-                                    val = j86.j86.sun.net.www.ParseUtil.encodePath(val);
+                                    val = j86.sun.net.www.ParseUtil.encodePath(val);
                                 }
                             } catch (URISyntaxException use) {
-                                val = j86.j86.sun.net.www.ParseUtil.encodePath(val);
+                                val = j86.sun.net.www.ParseUtil.encodePath(val);
                             }
                         }
                         sb.append(val);

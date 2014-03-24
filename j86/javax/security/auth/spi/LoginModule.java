@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.spi;
+package j86.javax.security.auth.spi;
 
 import j86.javax.security.auth.Subject;
 import j86.javax.security.auth.AuthPermission;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
 import j86.java.util.Map;
 
 /**
@@ -123,8 +123,8 @@ import j86.java.util.Map;
  * no arguments.  This allows classes which load the {@code LoginModule}
  * to instantiate it.
  *
- * @see j86.j86.javax.security.auth.login.LoginContext
- * @see j86.j86.javax.security.auth.login.Configuration
+ * @see j86.javax.security.auth.login.LoginContext
+ * @see j86.javax.security.auth.login.Configuration
  */
 public interface LoginModule {
 

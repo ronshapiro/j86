@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 /**
  * Interface DocAttributeSet specifies the interface for a set of doc

@@ -25,9 +25,9 @@
 /*
  * $Id: XSLTTransformParameterSpec.java,v 1.4 2005/05/10 16:40:18 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.spec;
+package j86.javax.xml.crypto.dsig.spec;
 
-import j86.j86.javax.xml.crypto.dsig.Transform;
+import j86.javax.xml.crypto.dsig.Transform;
 import j86.javax.xml.crypto.XMLStructure;
 
 /**

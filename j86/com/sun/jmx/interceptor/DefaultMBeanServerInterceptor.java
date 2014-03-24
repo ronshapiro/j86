@@ -39,7 +39,7 @@ import j86.com.sun.jmx.mbeanserver.Util;
 import j86.com.sun.jmx.remote.util.EnvHelp;
 
 import j86.java.io.ObjectInputStream;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.Permission;
@@ -50,7 +50,7 @@ import j86.java.util.HashSet;
 import j86.java.util.List;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 // JMX import
 import j86.javax.management.Attribute;
@@ -87,7 +87,7 @@ import j86.javax.management.ReflectionException;
 import j86.javax.management.RuntimeErrorException;
 import j86.javax.management.RuntimeMBeanException;
 import j86.javax.management.RuntimeOperationsException;
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * This is the default class for MBean manipulation on the agent side. It

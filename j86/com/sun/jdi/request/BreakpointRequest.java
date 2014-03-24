@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -31,16 +31,16 @@ import j86.com.sun.jdi.*;
  * Identifies a {@link Location} in the target VM at which
  * execution should be stopped. When an enabled BreakpointRequest is
  * satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
- * {@link j86.j86.com.sun.jdi.event.BreakpointEvent BreakpointEvent}
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.com.sun.jdi.event.BreakpointEvent BreakpointEvent}
  * will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue} and
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue} and
  * the application is interrupted. The collection of existing breakpoints is
  * managed by the {@link EventRequestManager}
  *
  * @see Location
- * @see j86.j86.com.sun.jdi.event.BreakpointEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

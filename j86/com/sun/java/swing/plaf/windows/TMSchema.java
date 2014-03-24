@@ -38,7 +38,7 @@
  *
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
 import j86.java.util.*;

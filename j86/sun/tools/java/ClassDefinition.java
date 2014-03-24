@@ -182,7 +182,7 @@ class ClassDefinition implements Constants {
     }
 
     // *** DEBUG ***
-    protected boolean supersCheckStarted = !(this instanceof j86.j86.sun.tools.javac.SourceClass);
+    protected boolean supersCheckStarted = !(this instanceof j86.sun.tools.javac.SourceClass);
 
     /**
      * Get the class' super class
@@ -1274,7 +1274,7 @@ class ClassDefinition implements Constants {
                     !inSamePackage(method.getClassDeclaration())) {
 
                     if (override != null && this instanceof
-                        j86.j86.sun.tools.javac.SourceClass) {
+                        j86.sun.tools.javac.SourceClass) {
                         // We give a warning when a class shadows an
                         // inaccessible package-private method from
                         // its superclass.  This warning is meant
@@ -1344,7 +1344,7 @@ class ClassDefinition implements Constants {
                             // to enable method lookup to work in the
                             // VM.
                             method =
-                                new j86.j86.sun.tools.javac.SourceMember(method,this,
+                                new j86.sun.tools.javac.SourceMember(method,this,
                                                                  env);
                             mirandaMethods.add(method);
 
@@ -1405,7 +1405,7 @@ class ClassDefinition implements Constants {
                                 // to enable method lookup to work in the
                                 // VM.
                                 method =
-                                    new j86.j86.sun.tools.javac.SourceMember(method,
+                                    new j86.sun.tools.javac.SourceMember(method,
                                                                      this,env);
 
                                 mirandaMethods.replace(method);
@@ -1648,7 +1648,7 @@ class ClassDefinition implements Constants {
     /**
      * We create a stub for this.  Source classes do more work.
      * Some calls from 'SourceClass.checkSupers' execute this method.
-     * @see j86.j86.sun.tools.javac.SourceClass#resolveTypeStructure
+     * @see j86.sun.tools.javac.SourceClass#resolveTypeStructure
      */
 
     public void resolveTypeStructure(Environment env) {

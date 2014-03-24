@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.nio.charset;
+package j86.java.nio.charset;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.j86.java.nio.charset.spi.CharsetProvider;
+import j86.java.nio.charset.spi.CharsetProvider;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Collections;
@@ -42,8 +42,8 @@ import j86.java.util.ServiceConfigurationError;
 import j86.java.util.SortedMap;
 import j86.java.util.TreeMap;
 import j86.sun.misc.ASCIICaseInsensitiveComparator;
-import j86.j86.j86.sun.nio.cs.StandardCharsets;
-import j86.j86.j86.sun.nio.cs.ThreadLocalCoders;
+import j86.sun.nio.cs.StandardCharsets;
+import j86.sun.nio.cs.ThreadLocalCoders;
 import j86.sun.security.action.GetPropertyAction;
 
 
@@ -59,7 +59,7 @@ import j86.sun.security.action.GetPropertyAction;
  * constructing a map that contains every charset for which support is
  * available in the current Java virtual machine.  Support for new charsets can
  * be added via the service-provider interface defined in the {@link
- * j86.j86.j86.java.nio.charset.spi.CharsetProvider} class.
+ * j86.java.nio.charset.spi.CharsetProvider} class.
  *
  * <p> All of the methods defined in this class are safe for use by multiple
  * concurrent threads.
@@ -264,7 +264,7 @@ import j86.sun.security.action.GetPropertyAction;
  *
  * @see CharsetDecoder
  * @see CharsetEncoder
- * @see j86.j86.j86.java.nio.charset.spi.CharsetProvider
+ * @see j86.java.nio.charset.spi.CharsetProvider
  * @see j86.java.lang.Character
  */
 
@@ -282,7 +282,7 @@ public abstract class Charset
             if (!j86.sun.misc.VM.isBooted())
                 return false;
             bugLevel = level = AccessController.doPrivileged(
-                new GetPropertyAction("j86.j86.j86.sun.nio.cs.bugLevel", ""));
+                new GetPropertyAction("j86.sun.nio.cs.bugLevel", ""));
         }
         return level.equals(bl);
     }
@@ -432,7 +432,7 @@ public abstract class Charset
                            public CharsetProvider run() {
                                 try {
                                     Class<?> epc
-                                        = Class.forName("j86.j86.j86.j86.sun.nio.cs.ext.ExtendedCharsets");
+                                        = Class.forName("j86.sun.nio.cs.ext.ExtendedCharsets");
                                     return (CharsetProvider)epc.newInstance();
                                 } catch (ClassNotFoundException x) {
                                     // Extended charsets not available

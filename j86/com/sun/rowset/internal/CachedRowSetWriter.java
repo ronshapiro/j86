@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -32,13 +32,13 @@ import j86.java.io.*;
 
 import j86.com.sun.rowset.*;
 import j86.java.text.MessageFormat;
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.serial.SQLInputImpl;
-import j86.j86.j86.javax.sql.rowset.serial.SerialArray;
-import j86.j86.j86.javax.sql.rowset.serial.SerialBlob;
-import j86.j86.j86.javax.sql.rowset.serial.SerialClob;
-import j86.j86.j86.javax.sql.rowset.serial.SerialStruct;
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.serial.SQLInputImpl;
+import j86.javax.sql.rowset.serial.SerialArray;
+import j86.javax.sql.rowset.serial.SerialBlob;
+import j86.javax.sql.rowset.serial.SerialClob;
+import j86.javax.sql.rowset.serial.SerialStruct;
+import j86.javax.sql.rowset.spi.*;
 
 
 /**
@@ -61,9 +61,9 @@ import j86.j86.j86.javax.sql.rowset.spi.*;
  *
  * @version 0.2
  * @author Jonathan Bruce
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
- * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactoryException
+ * @see j86.javax.sql.rowset.spi.SyncProvider
+ * @see j86.javax.sql.rowset.spi.SyncFactory
+ * @see j86.javax.sql.rowset.spi.SyncFactoryException
  */
 public class CachedRowSetWriter implements TransactionalWriter, Serializable {
 

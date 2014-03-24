@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventObject;
-import j86.j86.javax.swing.table.*;
+import j86.javax.swing.table.*;
 
 /**
  * <B>TableColumnModelEvent</B> is used to notify listeners that a table

@@ -30,7 +30,7 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.parser;
+package j86.com.sun.tools.hat.internal.parser;
 
 import j86.java.io.DataInputStream;
 import j86.java.io.InputStream;

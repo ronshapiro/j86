@@ -27,9 +27,9 @@ package j86.java.lang;
 
 import j86.java.io.DataInputStream;
 import j86.java.io.InputStream;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Arrays;
-import j86.j86.java.util.zip.InflaterInputStream;
+import j86.java.util.zip.InflaterInputStream;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 

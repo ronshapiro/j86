@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.swing.MenuItemLayoutHelper;
 
 import j86.java.awt.*;
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicHTML;
-import j86.j86.javax.swing.text.*;
-import j86.j86.j86.sun.swing.plaf.synth.*;
+import j86.javax.swing.plaf.basic.BasicHTML;
+import j86.javax.swing.text.*;
+import j86.sun.swing.plaf.synth.*;
 
 /**
  * Wrapper for primitive graphics calls.

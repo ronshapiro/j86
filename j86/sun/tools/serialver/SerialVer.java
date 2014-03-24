@@ -37,7 +37,7 @@ import j86.java.net.URLClassLoader;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.java.util.StringTokenizer;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 public class SerialVer extends Applet {
     GridBagLayout gb;

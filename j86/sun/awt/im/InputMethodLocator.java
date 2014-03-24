@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTException;
-import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.awt.im.spi.InputMethodDescriptor;
 import j86.java.util.Locale;
 
 /**

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 import j86.java.awt.Window;
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
 

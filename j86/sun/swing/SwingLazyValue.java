@@ -24,13 +24,13 @@
  */
 package j86.sun.swing;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.AccessibleObject;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.AccessibleObject;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.javax.swing.UIDefaults;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * SwingLazyValue is a copy of ProxyLazyValue that does not snapshot the
@@ -108,7 +108,7 @@ public class SwingLazyValue implements UIDefaults.LazyValue {
                     types[i]=Integer.TYPE;
                 } else if (args[i] instanceof j86.java.lang.Boolean) {
                     types[i]=Boolean.TYPE;
-                } else if (args[i] instanceof j86.j86.javax.swing.plaf.ColorUIResource) {
+                } else if (args[i] instanceof j86.javax.swing.plaf.ColorUIResource) {
                     /* PENDING(ges) Currently the Reflection APIs do not
                        search superclasses of parameters supplied for
                        constructor/method lookup.  Since we only have

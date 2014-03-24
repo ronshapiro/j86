@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.x500;
+package j86.javax.security.auth.x500;
 
 import j86.java.io.*;
 import j86.java.security.Principal;
@@ -58,7 +58,7 @@ import j86.sun.security.util.*;
  * {@code X509Certificate} return X500Principals representing the
  * issuer and subject fields of the certificate.
  *
- * @see j86.j86.java.security.cert.X509Certificate
+ * @see j86.java.security.cert.X509Certificate
  * @since 1.4
  */
 public final class X500Principal implements Principal, j86.java.io.Serializable {

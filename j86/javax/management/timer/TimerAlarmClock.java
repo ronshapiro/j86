@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.management.timer;
+package j86.javax.management.timer;
 
 import j86.java.util.Date;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import static j86.com.sun.jmx.defaults.JmxProperties.TIMER_LOGGER;
 
 /**

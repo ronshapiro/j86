@@ -27,7 +27,7 @@ package j86.sun.security.acl;
 
 import j86.java.util.*;
 import j86.java.security.*;
-import j86.j86.java.security.acl.*;
+import j86.java.security.acl.*;
 
 /**
  * Class implementing the Owner interface. The

@@ -29,13 +29,13 @@
  *
  * The algorithm is copyright of CompuServe.
  */
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 import j86.java.util.Vector;
 import j86.java.util.Hashtable;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 
 /**
  * Gif Image converter

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.Component;
 import j86.java.awt.Graphics;
@@ -31,17 +31,17 @@ import j86.java.awt.Insets;
 import j86.java.awt.KeyEventPostProcessor;
 import j86.java.awt.KeyboardFocusManager;
 import j86.java.awt.Window;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.KeyEvent;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 
 import j86.sun.swing.StringUIClientPropertyKey;
 
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
-import j86.j86.com.sun.java.swing.plaf.windows.TMSchema.State;
-import j86.j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import j86.com.sun.java.swing.plaf.windows.TMSchema.State;
+import j86.com.sun.java.swing.plaf.windows.XPStyle.Skin;
 import static j86.sun.swing.SwingUtilities2.BASICMENUITEMUI_MAX_TEXT_OFFSET;
 
 /**

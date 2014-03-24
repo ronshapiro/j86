@@ -30,12 +30,12 @@ import j86.java.net.Socket;
 import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.java.security.cert.Certificate;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
-import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
+import j86.sun.security.provider.certpath.AlgorithmChecker;
 import j86.sun.security.action.GetPropertyAction;
 
 public abstract class SSLContextImpl extends SSLContextSpi {
@@ -728,14 +728,14 @@ public abstract class SSLContextImpl extends SSLContextSpi {
                 @Override
                 public Object run() throws Exception {
                     props.put("keyStore",  System.getProperty(
-                                "j86.j86.javax.net.ssl.keyStore", ""));
+                                "j86.javax.net.ssl.keyStore", ""));
                     props.put("keyStoreType", System.getProperty(
-                                "j86.j86.javax.net.ssl.keyStoreType",
+                                "j86.javax.net.ssl.keyStoreType",
                                 KeyStore.getDefaultType()));
                     props.put("keyStoreProvider", System.getProperty(
-                                "j86.j86.javax.net.ssl.keyStoreProvider", ""));
+                                "j86.javax.net.ssl.keyStoreProvider", ""));
                     props.put("keyStorePasswd", System.getProperty(
-                                "j86.j86.javax.net.ssl.keyStorePassword", ""));
+                                "j86.javax.net.ssl.keyStorePassword", ""));
                     return null;
                 }
             });

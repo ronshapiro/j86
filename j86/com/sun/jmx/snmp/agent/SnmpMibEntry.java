@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 // java imports
 //
@@ -83,7 +83,7 @@ public abstract class SnmpMibEntry extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @exception If the given `arc' does not identify any variable in this

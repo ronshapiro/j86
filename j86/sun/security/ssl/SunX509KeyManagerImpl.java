@@ -25,14 +25,14 @@
 
 package j86.sun.security.ssl;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 import j86.java.security.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.java.security.cert.Certificate;
 import j86.java.util.*;
 import j86.java.net.Socket;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 
 /**

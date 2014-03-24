@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
+package j86.com.sun.org.apache.xml.internal.security.utils.resolver.implementations;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
@@ -33,11 +33,11 @@ import j86.java.net.URI;
 import j86.java.net.URL;
 import j86.java.net.URLConnection;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 
 /**
  * A simple ResourceResolver for HTTP requests. This class handles only 'pure'
@@ -62,8 +62,8 @@ import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.Resou
 public class ResolverDirectHTTP extends ResourceResolverSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(ResolverDirectHTTP.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(ResolverDirectHTTP.class.getName());
 
     /** Field properties[] */
     private static final String properties[] = {
@@ -150,8 +150,8 @@ public class ResolverDirectHTTP extends ResourceResolverSpi {
                 summarized += read;
             }
 
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Fetched " + summarized + " bytes from URI " + uriNew.toString());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Fetched " + summarized + " bytes from URI " + uriNew.toString());
             }
 
             XMLSignatureInput result = new XMLSignatureInput(baos.toByteArray());
@@ -214,33 +214,33 @@ public class ResolverDirectHTTP extends ResourceResolverSpi {
      */
     public boolean engineCanResolveURI(ResourceResolverContext context) {
         if (context.uriToResolve == null) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "quick fail, uri == null");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "quick fail, uri == null");
             }
             return false;
         }
 
         if (context.uriToResolve.equals("") || (context.uriToResolve.charAt(0)=='#')) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "quick fail for empty URIs and local ones");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "quick fail for empty URIs and local ones");
             }
             return false;
         }
 
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I was asked whether I can resolve " + context.uriToResolve);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I was asked whether I can resolve " + context.uriToResolve);
         }
 
         if (context.uriToResolve.startsWith("http:") ||
             (context.baseUri != null && context.baseUri.startsWith("http:") )) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "I state that I can resolve " + context.uriToResolve);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "I state that I can resolve " + context.uriToResolve);
             }
             return true;
         }
 
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "I state that I can't resolve " + context.uriToResolve);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "I state that I can't resolve " + context.uriToResolve);
         }
 
         return false;

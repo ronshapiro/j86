@@ -26,7 +26,7 @@
 /*
  * $Id$
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.NodeSetData;
 import j86.java.util.ArrayList;

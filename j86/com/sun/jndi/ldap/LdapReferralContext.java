@@ -26,9 +26,9 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.*;
-import j86.j86.javax.naming.ldap.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.*;
+import j86.javax.naming.ldap.*;
 
 import j86.java.util.Hashtable;
 import j86.java.util.StringTokenizer;
@@ -106,7 +106,7 @@ final class LdapReferralContext implements DirContext, LdapContext {
             }
 
             // Create a Reference containing the referral URL.
-            Reference ref = new Reference("j86.j86.javax.naming.directory.DirContext",
+            Reference ref = new Reference("j86.javax.naming.directory.DirContext",
                                           new StringRefAddr("URL", referral));
 
             Object obj;

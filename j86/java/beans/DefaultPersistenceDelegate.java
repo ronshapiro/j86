@@ -25,9 +25,9 @@
 package j86.java.beans;
 
 import j86.java.util.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.Objects;
-import j86.j86.sun.reflect.misc.*;
+import j86.sun.reflect.misc.*;
 
 
 /**
@@ -298,7 +298,7 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
 
             // The ComponentListener is added automatically, when
             // Contatiner:add is called on the parent.
-            if (listenerType == j86.j86.java.awt.event.ComponentListener.class) {
+            if (listenerType == j86.java.awt.event.ComponentListener.class) {
                 continue;
             }
 
@@ -309,7 +309,7 @@ public class DefaultPersistenceDelegate extends PersistenceDelegate {
             // and do not need to do this anyway since it will be created
             // and installed by the "add" method. Special case this for now,
             // ignoring all change listeners on JMenuItems.
-            if (listenerType == j86.j86.javax.swing.event.ChangeListener.class &&
+            if (listenerType == j86.javax.swing.event.ChangeListener.class &&
                 type == j86.javax.swing.JMenuItem.class) {
                 continue;
             }

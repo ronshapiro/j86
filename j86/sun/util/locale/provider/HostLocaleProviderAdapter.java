@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
+import j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * LocaleProviderAdapter implementation for the host locale data.

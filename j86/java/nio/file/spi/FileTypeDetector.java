@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.spi;
+package j86.java.nio.file.spi;
 
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.file.Path;
 import j86.java.io.IOException;
 
 /**
@@ -42,7 +42,7 @@ import j86.java.io.IOException;
  * href="../attribute/package-summary.html"> attribute</a> or the bytes in a
  * file may be examined to guess its file type.
  *
- * @see j86.j86.java.nio.file.Files#probeContentType(Path)
+ * @see j86.java.nio.file.Files#probeContentType(Path)
  *
  * @since 1.7
  */
@@ -99,7 +99,7 @@ public abstract class FileTypeDetector {
      *          provider then the {@link SecurityManager#checkRead(String)} method
      *          is invoked to check read access to the file.
      *
-     * @see j86.j86.java.nio.file.Files#probeContentType
+     * @see j86.java.nio.file.Files#probeContentType
      */
     public abstract String probeContentType(Path path)
         throws IOException;

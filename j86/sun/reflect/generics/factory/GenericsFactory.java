@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.factory;
+package j86.sun.reflect.generics.factory;
 
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.j86.java.lang.reflect.TypeVariable;
-import j86.j86.j86.java.lang.reflect.WildcardType;
-import j86.j86.sun.reflect.generics.tree.FieldTypeSignature;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.TypeVariable;
+import j86.java.lang.reflect.WildcardType;
+import j86.sun.reflect.generics.tree.FieldTypeSignature;
 
 /**
  * A factory interface for reflective objects representing generic types.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.event;
+package j86.java.awt.event;
 
 /**
  * An abstract adapter class for receiving container events.

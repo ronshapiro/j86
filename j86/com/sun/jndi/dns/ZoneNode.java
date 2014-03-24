@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.dns;
 
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.Date;
 import j86.java.util.Vector;
 

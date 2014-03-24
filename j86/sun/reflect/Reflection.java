@@ -25,12 +25,12 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 
 /** Common utility routines used by both j86.java.lang and
-    j86.j86.j86.java.lang.reflect */
+    j86.java.lang.reflect */
 
 public class Reflection {
 
@@ -52,7 +52,7 @@ public class Reflection {
     }
 
     /** Returns the class of the caller of the method calling this method,
-        ignoring frames associated with j86.j86.j86.java.lang.reflect.Method.invoke()
+        ignoring frames associated with j86.java.lang.reflect.Method.invoke()
         and its implementation. */
     @CallerSensitive
     public static native Class<?> getCallerClass();

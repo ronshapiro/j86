@@ -30,14 +30,14 @@ import j86.java.io.BufferedReader;
 import j86.java.io.File;
 import j86.java.io.FileInputStream;
 import j86.java.io.InputStreamReader;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.lang.ref.SoftReference;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.security.AccessController;
 
 import j86.java.security.PrivilegedAction;
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.FontUIResource;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * A collection of utility methods.

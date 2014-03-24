@@ -23,15 +23,15 @@
  * questions.
  */
 
-package com.j86.j86.sun.net.httpserver;
+package com.j86.sun.net.httpserver;
 
 import j86.java.io.*;
 import j86.java.nio.*;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.net.*;
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 import j86.java.util.*;
-import j86.j86.sun.net.www.MessageHeader;
+import j86.sun.net.www.MessageHeader;
 
 /**
  * This class encapsulates a HTTP request received and a

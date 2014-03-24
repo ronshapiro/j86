@@ -26,12 +26,12 @@
 package j86.javax.crypto;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.java.io.Serializable;
 import j86.java.util.Enumeration;
 import j86.java.util.Vector;
 
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 /**
  * The CryptoPermission class extends the

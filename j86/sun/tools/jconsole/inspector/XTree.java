@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.java.io.IOException;
 import j86.java.util.*;
 import j86.javax.management.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.tree.*;
+import j86.javax.swing.tree.*;
 import j86.sun.tools.jconsole.JConsole;
 import j86.sun.tools.jconsole.MBeansTab;
 import j86.sun.tools.jconsole.Messages;
-import j86.j86.sun.tools.jconsole.inspector.XNodeInfo;
-import static j86.j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
+import j86.sun.tools.jconsole.inspector.XNodeInfo;
+import static j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
 
 @SuppressWarnings("serial")
 public class XTree extends JTree {

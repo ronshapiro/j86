@@ -25,10 +25,10 @@
 
 package j86.sun.font;
 
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.lang.ref.WeakReference;
 
 /* This is Freetype based implementation of FontScaler.
  *

@@ -26,7 +26,7 @@
 /*
  * $Id: Utils.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.InputStream;

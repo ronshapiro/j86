@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.annotation;
+package j86.sun.reflect.annotation;
 
 /**
  * An instance of this class is stored in an AnnotationInvocationHandler's

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.plaf;
+package j86.javax.swing.plaf;
 
 import j86.javax.swing.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 /**
  * Pluggable look and feel interface for JMenuItem.

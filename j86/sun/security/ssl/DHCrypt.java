@@ -29,11 +29,11 @@ package j86.sun.security.ssl;
 import j86.java.math.BigInteger;
 import j86.java.security.*;
 import j86.java.io.IOException;
-import j86.j86.javax.net.ssl.SSLHandshakeException;
+import j86.javax.net.ssl.SSLHandshakeException;
 import j86.javax.crypto.SecretKey;
 import j86.javax.crypto.KeyAgreement;
-import j86.j86.javax.crypto.interfaces.DHPublicKey;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.interfaces.DHPublicKey;
+import j86.javax.crypto.spec.*;
 
 import j86.sun.security.util.KeyUtil;
 

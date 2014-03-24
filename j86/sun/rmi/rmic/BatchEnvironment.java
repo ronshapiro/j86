@@ -41,9 +41,9 @@ import j86.java.util.Iterator;
 import j86.java.util.LinkedHashSet;
 import j86.java.util.StringTokenizer;
 import j86.java.util.Vector;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
 import j86.sun.tools.java.ClassPath;
 
 /**
@@ -61,7 +61,7 @@ import j86.sun.tools.java.ClassPath;
  * they are subject to change or removal without notice.
  */
 
-public class BatchEnvironment extends j86.j86.sun.tools.javac.BatchEnvironment {
+public class BatchEnvironment extends j86.sun.tools.javac.BatchEnvironment {
 
     /** instance of Main which created this environment */
     private Main main;
@@ -84,7 +84,7 @@ public class BatchEnvironment extends j86.j86.sun.tools.javac.BatchEnvironment {
     {
         /**
          * Previously, this method delegated to the
-         * j86.j86.sun.tools.javac.BatchEnvironment.classPaths method in order
+         * j86.sun.tools.javac.BatchEnvironment.classPaths method in order
          * to supply default values for paths not specified on the
          * command line, expand extensions directories into specific
          * JAR files, and construct the ClassPath object-- but as part
@@ -223,7 +223,7 @@ public class BatchEnvironment extends j86.j86.sun.tools.javac.BatchEnvironment {
 
     /**
      * Utility for building paths of directories and JAR files.  This
-     * class was copied from com.j86.j86.sun.tools.javac.util.Paths as part of
+     * class was copied from com.j86.sun.tools.javac.util.Paths as part of
      * the fix for 6473331, which adds support for Class-Path manifest
      * entries in JAR files.  Diagnostic code is simply commented out
      * because rmic silently ignored these conditions historically.

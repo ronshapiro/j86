@@ -25,7 +25,7 @@
 
 package j86.javax.security.sasl;
 
-import j86.j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.Callback;
 
 /**
   * This callback is used by {@code SaslServer} to determine whether

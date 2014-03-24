@@ -25,18 +25,18 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.LineMetrics;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.java.awt.font.TextLayout;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.peer.FontPeer;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.LineMetrics;
+import j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextLayout;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.peer.FontPeer;
 import j86.java.io.*;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.nio.file.Files;
+import j86.java.lang.ref.SoftReference;
+import j86.java.nio.file.Files;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.text.AttributedCharacterIterator.Attribute;
@@ -189,7 +189,7 @@ import static j86.sun.font.EAttribute.*;
  * <code>ImageGraphicAttribute</code> are not serializable.</li>
  * <li><code>INPUT_METHOD_HIGHLIGHT</code> uses
  * <code>InputMethodHighlight</code> values, which are
- * not serializable.  See {@link j86.j86.java.awt.im.InputMethodHighlight}.</li>
+ * not serializable.  See {@link j86.java.awt.im.InputMethodHighlight}.</li>
  * </ul>
  *
  * <p>Clients who create custom subclasses of <code>Paint</code> and
@@ -203,7 +203,7 @@ import static j86.sun.font.EAttribute.*;
  * <code>deriveFont</code> APIs ignore the FONT attribute, and it is
  * not retained by the Font; the static {@link #getFont} method should
  * be used if the FONT attribute might be present.  See {@link
- * j86.j86.java.awt.font.TextAttribute#FONT} for more information.</p>
+ * j86.java.awt.font.TextAttribute#FONT} for more information.</p>
  *
  * <p>Several attributes will cause additional rendering overhead
  * and potentially invoke layout.  If a <code>Font</code> has such
@@ -679,7 +679,7 @@ public class Font implements j86.java.io.Serializable
 
     /**
      * Creates a new <code>Font</code> with the specified attributes.
-     * Only keys defined in {@link j86.j86.java.awt.font.TextAttribute TextAttribute}
+     * Only keys defined in {@link j86.java.awt.font.TextAttribute TextAttribute}
      * are recognized.  In addition the FONT attribute is
      *  not recognized by this constructor
      * (see {@link #getAvailableAttributes}). Only attributes that have
@@ -687,7 +687,7 @@ public class Font implements j86.java.io.Serializable
      * <p>
      * If <code>attributes</code> is <code>null</code>, a new
      * <code>Font</code> is initialized with default values.
-     * @see j86.j86.java.awt.font.TextAttribute
+     * @see j86.java.awt.font.TextAttribute
      * @param attributes the attributes to assign to the new
      *          <code>Font</code>, or <code>null</code>
      */
@@ -770,7 +770,7 @@ public class Font implements j86.java.io.Serializable
      * If <code>attributes</code>contains a <code>FONT</code> attribute
      * with a valid <code>Font</code> as its value, it will be
      * merged with any remaining attributes.  See
-     * {@link j86.j86.java.awt.font.TextAttribute#FONT} for more
+     * {@link j86.java.awt.font.TextAttribute#FONT} for more
      * information.
      *
      * @param attributes the attributes to assign to the new
@@ -779,7 +779,7 @@ public class Font implements j86.java.io.Serializable
      *          attributes
      * @throws NullPointerException if <code>attributes</code> is null.
      * @since 1.2
-     * @see j86.j86.java.awt.font.TextAttribute
+     * @see j86.java.awt.font.TextAttribute
      */
     public static Font getFont(Map<? extends Attribute, ?> attributes) {
         // optimize for two cases:
@@ -2508,7 +2508,7 @@ public class Font implements j86.java.io.Serializable
     }
 
     /**
-     * Creates a {@link j86.j86.java.awt.font.GlyphVector GlyphVector} by
+     * Creates a {@link j86.java.awt.font.GlyphVector GlyphVector} by
      * mapping characters to glyphs one-to-one based on the
      * Unicode cmap in this <code>Font</code>.  This method does no other
      * processing besides the mapping of glyphs to characters.  This
@@ -2527,7 +2527,7 @@ public class Font implements j86.java.io.Serializable
     }
 
     /**
-     * Creates a {@link j86.j86.java.awt.font.GlyphVector GlyphVector} by
+     * Creates a {@link j86.java.awt.font.GlyphVector GlyphVector} by
      * mapping characters to glyphs one-to-one based on the
      * Unicode cmap in this <code>Font</code>.  This method does no other
      * processing besides the mapping of glyphs to characters.  This
@@ -2546,7 +2546,7 @@ public class Font implements j86.java.io.Serializable
     }
 
     /**
-     * Creates a {@link j86.j86.java.awt.font.GlyphVector GlyphVector} by
+     * Creates a {@link j86.java.awt.font.GlyphVector GlyphVector} by
      * mapping the specified characters to glyphs one-to-one based on the
      * Unicode cmap in this <code>Font</code>.  This method does no other
      * processing besides the mapping of glyphs to characters.  This
@@ -2566,7 +2566,7 @@ public class Font implements j86.java.io.Serializable
     }
 
     /**
-     * Creates a {@link j86.j86.java.awt.font.GlyphVector GlyphVector} by
+     * Creates a {@link j86.java.awt.font.GlyphVector GlyphVector} by
      * mapping characters to glyphs one-to-one based on the
      * Unicode cmap in this <code>Font</code>.  This method does no other
      * processing besides the mapping of glyphs to characters.  This

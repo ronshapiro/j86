@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 import j86.java.net.URL;
 import j86.java.io.InputStream;

@@ -25,7 +25,7 @@
 
 package j86.java.lang;
 
-import j86.j86.j86.java.lang.reflect.AnnotatedElement;
+import j86.java.lang.reflect.AnnotatedElement;
 import j86.java.io.InputStream;
 import j86.java.util.Enumeration;
 
@@ -39,20 +39,20 @@ import j86.java.net.MalformedURLException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.java.util.jar.JarInputStream;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
-import j86.j86.java.util.jar.JarException;
+import j86.java.util.jar.JarInputStream;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
+import j86.java.util.jar.JarException;
 import j86.java.util.Map;
 import j86.java.util.HashMap;
 import j86.java.util.Iterator;
 
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 
-import j86.j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.Annotation;
 
 /**
  * {@code Package} objects contain version information
@@ -108,7 +108,7 @@ import j86.j86.java.lang.annotation.Annotation;
  *
  * @see ClassLoader#definePackage
  */
-public class Package implements j86.j86.j86.java.lang.reflect.AnnotatedElement {
+public class Package implements j86.java.lang.reflect.AnnotatedElement {
     /**
      * Return the name of this package.
      *

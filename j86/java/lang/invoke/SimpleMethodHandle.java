@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import static j86.j86.java.lang.invoke.LambdaForm.*;
-import static j86.j86.java.lang.invoke.MethodHandleNatives.Constants.*;
-import j86.j86.java.util.logging.Level;
-import j86.j86.java.util.logging.Logger;
+import static j86.java.lang.invoke.LambdaForm.*;
+import static j86.java.lang.invoke.MethodHandleNatives.Constants.*;
+import j86.java.util.logging.Level;
+import j86.java.util.logging.Logger;
 
 /**
  * A method handle whose behavior is determined only by its LambdaForm.

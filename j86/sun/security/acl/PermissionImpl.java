@@ -26,7 +26,7 @@
 package j86.sun.security.acl;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.*;
+import j86.java.security.acl.*;
 
 /**
  * The PermissionImpl class implements the permission

@@ -32,7 +32,7 @@ package j86.java.security;
  * <p>
  * Note: The specialized private key interfaces extend this interface.
  * See, for example, the {@code DSAPrivateKey} interface in
- * {@link j86.j86.java.security.interfaces}.
+ * {@link j86.java.security.interfaces}.
  * <p>
  * Implementations should override the default {@code destroy} and
  * {@code isDestroyed} methods from the
@@ -48,9 +48,9 @@ package j86.java.security;
  * @see PublicKey
  * @see Certificate
  * @see Signature#initVerify
- * @see j86.j86.java.security.interfaces.DSAPrivateKey
- * @see j86.j86.java.security.interfaces.RSAPrivateKey
- * @see j86.j86.java.security.interfaces.RSAPrivateCrtKey
+ * @see j86.java.security.interfaces.DSAPrivateKey
+ * @see j86.java.security.interfaces.RSAPrivateKey
+ * @see j86.java.security.interfaces.RSAPrivateCrtKey
  *
  * @author Benjamin Renaud
  * @author Josh Bloch

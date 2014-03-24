@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
-import static j86.j86.sun.reflect.misc.ReflectUtil.checkPackageAccess;
+import static j86.sun.reflect.misc.ReflectUtil.checkPackageAccess;
 
 /**
  * This is utility class that provides {@code static} methods

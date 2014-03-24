@@ -26,8 +26,8 @@
 package j86.sun.instrument;
 
 
-import j86.j86.java.lang.instrument.Instrumentation;
-import j86.j86.java.lang.instrument.ClassFileTransformer;
+import j86.java.lang.instrument.Instrumentation;
+import j86.java.lang.instrument.ClassFileTransformer;
 import j86.java.security.ProtectionDomain;
 
 /*

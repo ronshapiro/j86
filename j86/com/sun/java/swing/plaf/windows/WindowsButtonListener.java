@@ -24,12 +24,12 @@
  */
 
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.beans.PropertyChangeEvent;
 
 import j86.javax.swing.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.basic.*;
 
 /**
  * Button Listener

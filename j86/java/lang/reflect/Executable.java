@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 import j86.java.util.Map;
 import j86.java.util.Objects;
-import j86.j86.sun.reflect.annotation.AnnotationParser;
-import j86.j86.sun.reflect.annotation.AnnotationSupport;
-import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
-import j86.j86.sun.reflect.annotation.TypeAnnotation;
-import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
+import j86.sun.reflect.annotation.AnnotationParser;
+import j86.sun.reflect.annotation.AnnotationSupport;
+import j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.sun.reflect.annotation.TypeAnnotation;
+import j86.sun.reflect.generics.repository.ConstructorRepository;
 
 /**
  * A shared superclass for the common functionality of {@link Method}
@@ -486,10 +486,10 @@ public abstract class Executable extends AccessibleObject
      * declared in source ("mandated"), as well as parameters that
      * are neither implicitly nor explicitly declared in source
      * ("synthetic") to the parameter list for a method.  See {@link
-     * j86.j86.j86.java.lang.reflect.Parameter} for more information.
+     * j86.java.lang.reflect.Parameter} for more information.
      *
-     * @see j86.j86.j86.java.lang.reflect.Parameter
-     * @see j86.j86.j86.java.lang.reflect.Parameter#getAnnotations
+     * @see j86.java.lang.reflect.Parameter
+     * @see j86.java.lang.reflect.Parameter#getAnnotations
      * @return an array of arrays that represent the annotations on
      *    the formal and implicit parameters, in declaration order, of
      *    the executable represented by this object

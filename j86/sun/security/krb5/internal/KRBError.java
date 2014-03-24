@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.java.io.ObjectOutputStream;
 import j86.sun.security.krb5.PrincipalName;
@@ -44,7 +44,7 @@ import j86.java.math.BigInteger;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
 import j86.java.util.List;
-import j86.j86.j86.sun.security.krb5.internal.util.KerberosString;
+import j86.sun.security.krb5.internal.util.KerberosString;
 /**
  * Implements the ASN.1 KRBError type.
  *

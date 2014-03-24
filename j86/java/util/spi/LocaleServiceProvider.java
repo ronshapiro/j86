@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.Locale;
 
@@ -64,12 +64,12 @@ import j86.java.util.Locale;
  * that loaded the file.
  * <p>
  * For example, an implementation of the
- * {@link j86.j86.java.text.spi.DateFormatProvider DateFormatProvider} class should
+ * {@link j86.java.text.spi.DateFormatProvider DateFormatProvider} class should
  * take the form of a jar file which contains the file:
  * <pre>
- * META-INF/services/j86.j86.java.text.spi.DateFormatProvider
+ * META-INF/services/j86.java.text.spi.DateFormatProvider
  * </pre>
- * And the file <code>j86.j86.java.text.spi.DateFormatProvider</code> should have
+ * And the file <code>j86.java.text.spi.DateFormatProvider</code> should have
  * a line such as:
  * <pre>
  * <code>com.foo.DateFormatProviderImpl</code>

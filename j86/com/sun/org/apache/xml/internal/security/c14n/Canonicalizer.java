@@ -20,27 +20,27 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.c14n;
+package j86.com.sun.org.apache.xml.internal.security.c14n;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_WithComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclOmitComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclWithComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315WithComments;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerPhysical;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_OmitComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer11_WithComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclOmitComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315ExclWithComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315WithComments;
+import j86.com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerPhysical;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -280,7 +280,7 @@ public class Canonicalizer {
          * though the document type declaration is not retained in the
          * canonical form.
          */
-        db.setErrorHandler(new j86.j86.com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
+        db.setErrorHandler(new j86.com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler());
 
         Document document = db.parse(in);
         return this.canonicalizeSubtree(document);

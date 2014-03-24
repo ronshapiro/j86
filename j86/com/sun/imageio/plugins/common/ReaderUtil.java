@@ -28,7 +28,7 @@ package j86.com.sun.imageio.plugins.common;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.io.IOException;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * This class contains utility methods that may be useful to ImageReader

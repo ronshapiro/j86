@@ -25,7 +25,7 @@
 
 package j86.com.sun.jmx.remote.util;
 
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 public class ClassLoaderWithRepository extends ClassLoader {
     public ClassLoaderWithRepository(ClassLoaderRepository clr,

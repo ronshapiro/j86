@@ -32,8 +32,8 @@ import j86.java.security.*;
 
 import j86.javax.crypto.BadPaddingException;
 
-import j86.j86.javax.net.ssl.*;
-import j86.j86.javax.net.ssl.SSLEngineResult.*;
+import j86.javax.net.ssl.*;
+import j86.javax.net.ssl.SSLEngineResult.*;
 
 /**
  * Implementation of an non-blocking SSLEngine.

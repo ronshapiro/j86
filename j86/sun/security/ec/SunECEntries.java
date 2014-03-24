@@ -28,7 +28,7 @@ package j86.sun.security.ec;
 import j86.java.util.Collection;
 import j86.java.util.Map;
 
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Pattern;
 
 /**
  * Defines the entries of the SunEC provider.
@@ -129,8 +129,8 @@ final class SunECEntries {
         map.put("Alg.Alias.Signature.OID.1.2.840.10045.4.3.4", "SHA512withECDSA");
         map.put("Alg.Alias.Signature.1.2.840.10045.4.3.4", "SHA512withECDSA");
 
-        String ecKeyClasses = "j86.j86.java.security.interfaces.ECPublicKey" +
-                "|j86.j86.java.security.interfaces.ECPrivateKey";
+        String ecKeyClasses = "j86.java.security.interfaces.ECPublicKey" +
+                "|j86.java.security.interfaces.ECPrivateKey";
         map.put("Signature.NONEwithECDSA SupportedKeyClasses", ecKeyClasses);
         map.put("Signature.SHA1withECDSA SupportedKeyClasses", ecKeyClasses);
         map.put("Signature.SHA224withECDSA SupportedKeyClasses", ecKeyClasses);

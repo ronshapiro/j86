@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.swing.plaf;
+package j86.sun.swing.plaf;
 
 import j86.javax.swing.JTextField;
 import j86.javax.swing.UIDefaults;
-import j86.j86.javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.text.DefaultEditorKit;
 
 /**
  * GTKKeybindings - The standard set of keymaps for the GTK Platform

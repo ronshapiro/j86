@@ -52,7 +52,7 @@ public class Resources_zh_CN extends j86.java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\t\u4E3B\u7528\u6237\u7C7B = {0}\n\t\u4E3B\u7528\u6237\u540D\u79F0 = {1}"},
 
-        // j86.j86.javax.security.auth.x500
+        // j86.javax.security.auth.x500
         {"provided.null.name", "\u63D0\u4F9B\u7684\u540D\u79F0\u4E3A\u7A7A\u503C"},
         {"provided.null.keyword.map", "\u63D0\u4F9B\u7684\u5173\u952E\u5B57\u6620\u5C04\u4E3A\u7A7A\u503C"},
         {"provided.null.OID.map", "\u63D0\u4F9B\u7684 OID \u6620\u5C04\u4E3A\u7A7A\u503C"},
@@ -77,10 +77,10 @@ public class Resources_zh_CN extends j86.java.util.ListResourceBundle {
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "\u6B63\u5728\u5C1D\u8BD5\u6DFB\u52A0\u4E00\u4E2A\u975E{0}\u5B9E\u4F8B\u7684\u5BF9\u8C61"},
 
-        // j86.j86.javax.security.auth.login.AppConfigurationEntry
+        // j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // j86.j86.javax.security.auth.login.LoginContext
+        // j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "\u65E0\u6548\u7A7A\u8F93\u5165: \u540D\u79F0"},
         {"No.LoginModules.configured.for.name",
          "\u6CA1\u6709\u4E3A{0}\u914D\u7F6E LoginModules"},
@@ -146,7 +146,7 @@ public class Resources_zh_CN extends j86.java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass \u6216 principalName \u4E3A\u7A7A\u503C"},
 
-        // j86.j86.sun.security.pkcs11.SunPKCS11
+        // j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11 \u6807\u8BB0 [{0}] \u53E3\u4EE4: "},
 

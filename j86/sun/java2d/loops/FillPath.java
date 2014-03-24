@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
-import j86.j86.sun.java2d.loops.GraphicsPrimitive;
+import j86.sun.java2d.loops.GraphicsPrimitive;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.Path2D;
 
 /**
  *   FillPath

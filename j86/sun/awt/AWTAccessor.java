@@ -30,13 +30,13 @@ import j86.sun.misc.Unsafe;
 import j86.java.awt.*;
 import j86.java.awt.KeyboardFocusManager;
 import j86.java.awt.DefaultKeyboardFocusManager;
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.InvocationEvent;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InvocationEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.peer.ComponentPeer;
 
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.AccessControlContext;
 
 import j86.java.io.File;
@@ -829,14 +829,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Set an accessor object for the j86.j86.java.awt.event.InputEvent class.
+     * Set an accessor object for the j86.java.awt.event.InputEvent class.
      */
     public static void setInputEventAccessor(InputEventAccessor iea) {
         inputEventAccessor = iea;
     }
 
     /*
-     * Retrieve the accessor object for the j86.j86.java.awt.event.InputEvent class.
+     * Retrieve the accessor object for the j86.java.awt.event.InputEvent class.
      */
     public static InputEventAccessor getInputEventAccessor() {
         if (inputEventAccessor == null) {
@@ -1051,14 +1051,14 @@ public final class AWTAccessor {
     }
 
     /**
-     * Set an accessor object for the j86.j86.java.awt.event.KeyEvent class.
+     * Set an accessor object for the j86.java.awt.event.KeyEvent class.
      */
     public static void setKeyEventAccessor(KeyEventAccessor kea) {
         keyEventAccessor = kea;
     }
 
     /**
-     * Retrieve the accessor object for the j86.j86.java.awt.event.KeyEvent class.
+     * Retrieve the accessor object for the j86.java.awt.event.KeyEvent class.
      */
     public static KeyEventAccessor getKeyEventAccessor() {
         if (keyEventAccessor == null) {
@@ -1170,14 +1170,14 @@ public final class AWTAccessor {
     }
 
     /*
-     * Get the accessor object for the j86.j86.java.awt.event.InvocationEvent class.
+     * Get the accessor object for the j86.java.awt.event.InvocationEvent class.
      */
     public static void setInvocationEventAccessor(InvocationEventAccessor invocationEventAccessor) {
         AWTAccessor.invocationEventAccessor = invocationEventAccessor;
     }
 
     /*
-     * Set the accessor object for the j86.j86.java.awt.event.InvocationEvent class.
+     * Set the accessor object for the j86.java.awt.event.InvocationEvent class.
      */
     public static InvocationEventAccessor getInvocationEventAccessor() {
         return invocationEventAccessor;

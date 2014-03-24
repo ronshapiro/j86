@@ -30,7 +30,7 @@ import j86.sun.awt.AppContext;
 import j86.java.util.Collections;
 import j86.java.util.Map;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.Callable;
 import j86.java.applet.Applet;
 import j86.java.awt.AWTEvent;
 import j86.java.awt.EventQueue;

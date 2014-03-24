@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.Arrays;
 import j86.java.util.Currency;
@@ -37,7 +37,7 @@ import j86.java.util.ResourceBundle.Control;
  * {@link j86.java.util.Currency Currency} class.
  * Note that currency symbols are considered names when determining
  * behaviors described in the
- * {@link j86.j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
+ * {@link j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
  * specification.
  *
  * @since        1.6
@@ -68,7 +68,7 @@ public abstract class CurrencyNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @see j86.java.util.Currency#getSymbol(java.util.Locale)
      */
@@ -87,7 +87,7 @@ public abstract class CurrencyNameProvider extends LocaleServiceProvider {
      * @exception IllegalArgumentException if <code>currencyCode</code> is not in
      *     the form of three upper-case letters, or <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>currencyCode</code> or
      *     <code>locale</code> is <code>null</code>

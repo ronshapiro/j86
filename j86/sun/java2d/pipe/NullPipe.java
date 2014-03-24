@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.Color;
 import j86.java.awt.Image;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.java.awt.font.GlyphVector;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.font.GlyphVector;
 import j86.sun.java2d.SunGraphics2D;
 
 /**

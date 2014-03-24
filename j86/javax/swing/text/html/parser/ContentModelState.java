@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.j86.javax.swing.text.html.parser;
+package j86.javax.swing.text.html.parser;
 
 /**
  * A content model state. This is basically a list of pointers to

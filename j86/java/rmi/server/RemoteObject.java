@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.rmi.Remote;
 import j86.java.rmi.NoSuchObjectException;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Proxy;
 import j86.sun.rmi.server.Util;
 
 /**
@@ -210,7 +210,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * If this object is an instance of
      * <code>RemoteStub</code> or <code>RemoteObjectInvocationHandler</code>
      * that was returned from any of
-     * the <code>j86.j86.java.rmi.activation.Activatable.exportObject</code> methods,
+     * the <code>j86.java.rmi.activation.Activatable.exportObject</code> methods,
      * the external ref type name is <code>"ActivatableRef"</code>.
      *
      * If this object is an instance of
@@ -228,7 +228,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * when this object was deserialized.
      *
      * <p>If this object is an instance of
-     * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> that does not
+     * <code>j86.java.rmi.server.UnicastRemoteObject</code> that does not
      * use custom socket factories,
      * the external ref type name is <code>"UnicastServerRef"</code>.
      *
@@ -254,7 +254,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>the data written as a result of calling
-     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
+     * {link j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
@@ -278,7 +278,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>the data written as a result of calling
-     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
+     * {link j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
@@ -302,12 +302,12 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * written by {@link j86.java.io.ObjectOutput#writeInt(int)}
      *
      * <li>a client socket factory (object of type
-     * <code>j86.j86.java.rmi.server.RMIClientSocketFactory</code>),
+     * <code>j86.java.rmi.server.RMIClientSocketFactory</code>),
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *
      * <li>the data written as a result of calling
-     * {link j86.j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
+     * {link j86.java.rmi.server.ObjID#write(j86.java.io.ObjectOutput)}
      * on the <code>ObjID</code> instance contained in the reference
      *
      * <li>the boolean value <code>false</code>,
@@ -321,7 +321,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * <ul>
      *
      * <li>an instance of
-     * <code>j86.j86.java.rmi.activation.ActivationID</code>,
+     * <code>j86.java.rmi.activation.ActivationID</code>,
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *
@@ -336,7 +336,7 @@ public abstract class RemoteObject implements Remote, j86.java.io.Serializable {
      * <ul>
      *
      * <li>an instance of
-     * <code>j86.j86.java.rmi.activation.ActivationID</code>,
+     * <code>j86.java.rmi.activation.ActivationID</code>,
      * written by passing it to an invocation of
      * <code>writeObject</code> on the stream instance
      *

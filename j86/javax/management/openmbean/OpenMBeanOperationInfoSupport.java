@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -216,7 +216,7 @@ public class OpenMBeanOperationInfoSupport
     }
 
 
-    // [JF]: should we add constructor with j86.j86.j86.java.lang.reflect.Method
+    // [JF]: should we add constructor with j86.java.lang.reflect.Method
     // method parameter ?  would need to add consistency check between
     // OpenType<?> returnOpenType and method.getReturnType().
 
@@ -366,7 +366,7 @@ public class OpenMBeanOperationInfoSupport
      *
      * <p>The string representation consists of the name of this class
      * (ie {@code
-     * j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport}), and
+     * j86.javax.management.openmbean.OpenMBeanOperationInfoSupport}), and
      * the name, signature, return open type and impact of the
      * described operation and the string representation of its descriptor.</p>
      *

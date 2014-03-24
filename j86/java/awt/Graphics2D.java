@@ -26,15 +26,15 @@
 package j86.java.awt;
 
 import j86.java.awt.RenderingHints.Key;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.j86.java.awt.image.renderable.RenderableImage;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.renderable.RenderableImage;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.TextAttribute;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.util.Map;
 
@@ -146,7 +146,7 @@ import j86.java.util.Map;
  * The outline of the <code>Shape</code> is extracted using the
  * {@link Shape#getPathIterator(AffineTransform) getPathIterator} method of
  * <code>Shape</code>, which returns a
- * {@link j86.j86.java.awt.geom.PathIterator PathIterator}
+ * {@link j86.java.awt.geom.PathIterator PathIterator}
  * object that iterates along the boundary of the <code>Shape</code>.
  * <li>
  * If the <code>Graphics2D</code> object cannot handle the curved segments
@@ -176,7 +176,7 @@ import j86.java.util.Map;
  * If the argument is an
  * {@link AttributedCharacterIterator},
  * the iterator is asked to convert itself to a
- * {@link j86.j86.java.awt.font.TextLayout TextLayout}
+ * {@link j86.java.awt.font.TextLayout TextLayout}
  * using its embedded font attributes. The <code>TextLayout</code>
  * implements more sophisticated glyph layout algorithms that
  * perform Unicode bi-directional layout adjustments automatically
@@ -210,7 +210,7 @@ import j86.java.util.Map;
  * <code>Image</code> object's local coordinate system.
  * <li>
  * If an <code>AffineTransform</code> is passed to
- * {@link #drawImage(j86.java.awt.Image, j86.java.awt.geom.AffineTransform, j86.j86.java.awt.image.ImageObserver) drawImage(Image, AffineTransform, ImageObserver)},
+ * {@link #drawImage(j86.java.awt.Image, j86.java.awt.geom.AffineTransform, j86.java.awt.image.ImageObserver) drawImage(Image, AffineTransform, ImageObserver)},
  * the <code>AffineTransform</code> is used to transform the bounding
  * box from image space to user space. If no <code>AffineTransform</code>
  * is supplied, the bounding box is treated as if it is already in user space.
@@ -764,7 +764,7 @@ public abstract class Graphics2D extends Graphics {
      * @throws NullPointerException if <code>g</code> is <code>null</code>.
      *
      * @see j86.java.awt.Font#createGlyphVector
-     * @see j86.j86.java.awt.font.GlyphVector
+     * @see j86.java.awt.font.GlyphVector
      * @see #setPaint
      * @see j86.java.awt.Graphics#setColor
      * @see #setTransform
@@ -1223,9 +1223,9 @@ public abstract class Graphics2D extends Graphics {
      * the text rendering.
      *
      * @return a reference to an instance of FontRenderContext.
-     * @see j86.j86.java.awt.font.FontRenderContext
+     * @see j86.java.awt.font.FontRenderContext
      * @see j86.java.awt.Font#createGlyphVector
-     * @see j86.j86.java.awt.font.TextLayout
+     * @see j86.java.awt.font.TextLayout
      * @since     1.2
      */
 

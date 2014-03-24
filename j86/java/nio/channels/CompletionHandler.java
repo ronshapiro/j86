@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 /**
  * A handler for consuming the result of an asynchronous I/O operation.

@@ -29,11 +29,11 @@ import j86.java.io.*;
 import j86.java.math.BigInteger;
 import j86.java.net.URI;
 import j86.java.util.*;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509CRL;
-import j86.j86.java.security.cert.CRLException;
-import j86.j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509CRL;
+import j86.java.security.cert.CRLException;
+import j86.java.security.cert.CertificateFactory;
 import j86.java.security.*;
 
 import j86.sun.security.timestamp.*;

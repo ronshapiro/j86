@@ -20,24 +20,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.algorithms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.algorithms.implementations;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.Key;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.javax.crypto.Mac;
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.JCEMapper;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignature;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Text;
@@ -45,8 +45,8 @@ import org.w3c.dom.Text;
 public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(IntegrityHmac.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(IntegrityHmac.class.getName());
 
     /** Field macAlgorithm */
     private Mac macAlgorithm = null;
@@ -74,8 +74,8 @@ public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
      */
     public IntegrityHmac() throws XMLSignatureException {
         String algorithmID = JCEMapper.translateURItoJCEID(this.engineGetURI());
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Created IntegrityHmacSHA1 using " + algorithmID);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Created IntegrityHmacSHA1 using " + algorithmID);
         }
 
         try {
@@ -89,7 +89,7 @@ public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
 
     /**
      * Proxy method for {@link j86.java.security.Signature#setParameter(
-     * j86.j86.java.security.spec.AlgorithmParameterSpec)}
+     * j86.java.security.spec.AlgorithmParameterSpec)}
      * which is executed on the internal {@link j86.java.security.Signature} object.
      *
      * @param params
@@ -116,8 +116,8 @@ public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
     protected boolean engineVerify(byte[] signature) throws XMLSignatureException {
         try {
             if (this.HMACOutputLengthSet && this.HMACOutputLength < getDigestLength()) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "HMACOutputLength must not be less than " + getDigestLength());
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "HMACOutputLength must not be less than " + getDigestLength());
                 }
                 Object[] exArgs = { String.valueOf(getDigestLength()) };
                 throw new XMLSignatureException("algorithms.HMACOutputLengthMin", exArgs);
@@ -156,8 +156,8 @@ public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
                 this.macAlgorithm = Mac.getInstance(macAlgorithm.getAlgorithm());
             } catch (Exception e) {
                 // this shouldn't occur, but if it does, restore previous Mac
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "Exception when reinstantiating Mac:" + e);
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "Exception when reinstantiating Mac:" + e);
                 }
                 this.macAlgorithm = mac;
             }
@@ -175,8 +175,8 @@ public abstract class IntegrityHmac extends SignatureAlgorithmSpi {
     protected byte[] engineSign() throws XMLSignatureException {
         try {
             if (this.HMACOutputLengthSet && this.HMACOutputLength < getDigestLength()) {
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "HMACOutputLength must not be less than " + getDigestLength());
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "HMACOutputLength must not be less than " + getDigestLength());
                 }
                 Object[] exArgs = { String.valueOf(getDigestLength()) };
                 throw new XMLSignatureException("algorithms.HMACOutputLengthMin", exArgs);

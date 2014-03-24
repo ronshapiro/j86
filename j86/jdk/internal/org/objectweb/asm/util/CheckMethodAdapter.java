@@ -56,11 +56,11 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.util;
+package j86.jdk.internal.org.objectweb.asm.util;
 
 import j86.java.io.PrintWriter;
 import j86.java.io.StringWriter;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.HashSet;
@@ -77,10 +77,10 @@ import j86.jdk.internal.org.objectweb.asm.Opcodes;
 import j86.jdk.internal.org.objectweb.asm.Type;
 import j86.jdk.internal.org.objectweb.asm.TypePath;
 import j86.jdk.internal.org.objectweb.asm.TypeReference;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier;
+import j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier;
 
 /**
  * A {@link MethodVisitor} that checks that its methods are properly used. More
@@ -89,7 +89,7 @@ import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier;
  * arguments - such as the fact that the given opcode is correct for a given
  * visit method. This adapter can also perform some basic data flow checks (more
  * precisely those that can be performed without the full class hierarchy - see
- * {@link j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier}). For instance in a
+ * {@link j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier}). For instance in a
  * method whose signature is <tt>void m ()</tt>, the invalid instruction
  * IRETURN, or the invalid sequence IADD L2I will be detected if the data flow
  * checks are enabled. These checks are enabled by using the

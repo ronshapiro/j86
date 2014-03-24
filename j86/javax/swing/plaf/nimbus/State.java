@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.javax.swing.JComponent;
-import j86.j86.j86.javax.swing.plaf.synth.SynthConstants;
+import j86.javax.swing.plaf.synth.SynthConstants;
 
 /**
  * <p>Represents a built in, or custom, state in Nimbus.</p>

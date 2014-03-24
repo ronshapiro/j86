@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis;
+package j86.jdk.internal.org.objectweb.asm.tree.analysis;
 
 import j86.java.util.HashSet;
 import j86.java.util.List;
@@ -64,11 +64,11 @@ import j86.java.util.Set;
 
 import j86.jdk.internal.org.objectweb.asm.Opcodes;
 import j86.jdk.internal.org.objectweb.asm.Type;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.InvokeDynamicInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.LdcInsnNode;
+import j86.jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
 
 /**
  * An {@link Interpreter} for {@link SourceValue} values.

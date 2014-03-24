@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.BufferStrategy;
-import j86.j86.java.awt.peer.CanvasPeer;
+import j86.java.awt.image.BufferStrategy;
+import j86.java.awt.peer.CanvasPeer;
 import j86.javax.accessibility.*;
 
 /**

@@ -31,11 +31,11 @@
    Any HTTP functionality not provided by this API can be implemented by application code
    using the API.
    <p>
-   Programmers must implement the {@link com.j86.j86.sun.net.httpserver.HttpHandler} interface. This interface
+   Programmers must implement the {@link com.j86.sun.net.httpserver.HttpHandler} interface. This interface
    provides a callback which is invoked to handle incoming requests from clients.
    A HTTP request and its response is known as an exchange. HTTP exchanges are
-   represented by the {@link com.j86.j86.sun.net.httpserver.HttpExchange} class.
-   The {@link com.j86.j86.sun.net.httpserver.HttpServer} class is used to listen for incoming TCP connections
+   represented by the {@link com.j86.sun.net.httpserver.HttpExchange} class.
+   The {@link com.j86.sun.net.httpserver.HttpServer} class is used to listen for incoming TCP connections
    and it dispatches requests on these connections to handlers which have been
    registered with the server.
    <p>
@@ -63,19 +63,19 @@
    application thread to invoke the handle() method for incoming http
    requests directed to port 8000, and to the path /applications/myapp/.
    <p>
-   The {@link com.j86.j86.sun.net.httpserver.HttpExchange} class encapsulates everything an application needs to
+   The {@link com.j86.sun.net.httpserver.HttpExchange} class encapsulates everything an application needs to
    process incoming requests and to generate appropriate responses.
    <p>
-   Registering a handler with a HttpServer creates a {@link com.j86.j86.sun.net.httpserver.HttpContext} object and
-   {@link com.j86.j86.sun.net.httpserver.Filter}
+   Registering a handler with a HttpServer creates a {@link com.j86.sun.net.httpserver.HttpContext} object and
+   {@link com.j86.sun.net.httpserver.Filter}
    objects can be added to the returned context. Filters are used to perform automatic pre- and
    post-processing of exchanges before they are passed to the exchange handler.
    <p>
-   For sensitive information, a {@link com.j86.j86.sun.net.httpserver.HttpsServer} can
+   For sensitive information, a {@link com.j86.sun.net.httpserver.HttpsServer} can
    be used to process "https" requests secured by the SSL or TLS protocols.
    A HttpsServer must be provided with a
-   {@link com.j86.j86.sun.net.httpserver.HttpsConfigurator} object, which contains an
-   initialized {@link j86.j86.javax.net.ssl.SSLContext}.
+   {@link com.j86.sun.net.httpserver.HttpsConfigurator} object, which contains an
+   initialized {@link j86.javax.net.ssl.SSLContext}.
    HttpsConfigurator can be used to configure the
    cipher suites and other SSL operating parameters.
    A simple example SSLContext could be created as follows:
@@ -124,4 +124,4 @@
    @since 1.6
  */
 @jdk.Exported
-package com.j86.j86.sun.net.httpserver;
+package com.j86.sun.net.httpserver;

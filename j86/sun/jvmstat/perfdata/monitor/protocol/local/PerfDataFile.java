@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
 import j86.java.io.File;
 import j86.java.io.FilenameFilter;

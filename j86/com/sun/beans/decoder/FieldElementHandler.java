@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.decoder;
+package j86.com.sun.beans.decoder;
 
-import j86.j86.com.sun.beans.finder.FieldFinder;
+import j86.com.sun.beans.finder.FieldFinder;
 
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 
 /**
  * This class is intended to handle &lt;field&gt; element.

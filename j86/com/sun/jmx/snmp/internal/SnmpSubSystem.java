@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.internal;
+package j86.com.sun.jmx.snmp.internal;
 
 import j86.com.sun.jmx.snmp.SnmpEngine;
 import j86.com.sun.jmx.snmp.SnmpUnknownModelException;

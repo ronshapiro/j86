@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
@@ -457,12 +457,12 @@ public class AnalyzerAdapter extends MethodVisitor {
             if (sort == Type.OBJECT || sort == Type.ARRAY) {
                 push("j86.java.lang/Class");
             } else if (sort == Type.METHOD) {
-                push("j86.j86.java.lang.invoke/MethodType");
+                push("j86.java.lang.invoke/MethodType");
             } else {
                 throw new IllegalArgumentException();
             }
         } else if (cst instanceof Handle) {
-            push("j86.j86.java.lang.invoke/MethodHandle");
+            push("j86.java.lang.invoke/MethodHandle");
         } else {
             throw new IllegalArgumentException();
         }

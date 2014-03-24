@@ -24,12 +24,12 @@
  */
 
 
-package j86.j86.sun.reflect.misc;
+package j86.sun.reflect.misc;
 
-import j86.j86.j86.java.lang.reflect.Member;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Member;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
 import j86.java.util.Arrays;
 import j86.sun.reflect.Reflection;
 import j86.sun.security.util.SecurityConstants;

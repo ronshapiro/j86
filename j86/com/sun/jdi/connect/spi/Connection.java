@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.com.sun.jdi.connect.spi;
+package j86.com.sun.jdi.connect.spi;
 
 import j86.java.io.IOException;
 
@@ -32,7 +32,7 @@ import j86.java.io.IOException;
  *
  * <p> A Connection represents a bi-directional communication channel
  * between a debugger and a target VM. A Connection is created when
- * {@link j86.j86.j86.com.sun.jdi.connect.spi.TransportService TransportService}
+ * {@link j86.com.sun.jdi.connect.spi.TransportService TransportService}
  * establishes a connection and successfully handshakes with a target
  * VM. A TransportService implementation provides a reliable
  * JDWP packet transportation service and consequently a Connection

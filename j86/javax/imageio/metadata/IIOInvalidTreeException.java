@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.metadata;
+package j86.javax.imageio.metadata;
 
 import j86.javax.imageio.IIOException;
 import org.w3c.dom.Node;

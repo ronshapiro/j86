@@ -27,7 +27,7 @@ package j86.javax.accessibility;
 
 import j86.java.util.*;
 import j86.java.awt.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * <P>The AccessibleEditableText interface should be implemented by all

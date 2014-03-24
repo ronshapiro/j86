@@ -26,14 +26,14 @@
 /*
  * $Id: DOMXMLSignatureFactory.java 1333869 2012-05-04 10:42:44Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.*;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.*;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
+import j86.javax.xml.crypto.dsig.keyinfo.*;
+import j86.javax.xml.crypto.dsig.spec.*;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.NoSuchAlgorithmException;
@@ -156,11 +156,11 @@ public final class DOMXMLSignatureFactory extends XMLSignatureFactory {
         if (xmlStructure == null) {
             throw new NullPointerException("xmlStructure cannot be null");
         }
-        if (!(xmlStructure instanceof j86.j86.javax.xml.crypto.dom.DOMStructure)) {
+        if (!(xmlStructure instanceof j86.javax.xml.crypto.dom.DOMStructure)) {
             throw new ClassCastException("xmlStructure must be of type DOMStructure");
         }
         return unmarshal
-            (((j86.j86.javax.xml.crypto.dom.DOMStructure) xmlStructure).getNode(),
+            (((j86.javax.xml.crypto.dom.DOMStructure) xmlStructure).getNode(),
              new UnmarshalContext());
     }
 

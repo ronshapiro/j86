@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_sv extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Kan inte ut\u00F6ka korrekt {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (det finns ingen s\u00E5dan fil eller katalog)"},
@@ -78,11 +78,11 @@ public class AuthResources_sv extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Konfigurationsfel:\n\tRad {0}: systemegenskapen [{1}] ut\u00F6kad till tomt v\u00E4rde"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","anv\u00E4ndarnamn: "},
         {"password.","l\u00F6senord: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Ange nyckellagerinformation"},
         {"Keystore.alias.","Nyckellageralias: "},
@@ -90,7 +90,7 @@ public class AuthResources_sv extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "L\u00F6senord f\u00F6r personlig nyckel (valfritt): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos-anv\u00E4ndarnamn [{0}]: "},
         {"Kerberos.password.for.username.",

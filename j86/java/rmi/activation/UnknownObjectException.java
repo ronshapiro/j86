@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 /**
  * An <code>UnknownObjectException</code> is thrown by methods of classes and
- * interfaces in the <code>j86.j86.java.rmi.activation</code> package when the
+ * interfaces in the <code>j86.java.rmi.activation</code> package when the
  * <code>ActivationID</code> parameter to the method is determined to be
  * invalid.  An <code>ActivationID</code> is invalid if it is not currently
  * known by the <code>ActivationSystem</code>.  An <code>ActivationID</code>
@@ -37,12 +37,12 @@ package j86.j86.java.rmi.activation;
  *
  * @author  Ann Wollrath
  * @since   1.2
- * @see     j86.j86.java.rmi.activation.Activatable
- * @see     j86.j86.java.rmi.activation.ActivationGroup
- * @see     j86.j86.java.rmi.activation.ActivationID
- * @see     j86.j86.java.rmi.activation.ActivationMonitor
- * @see     j86.j86.java.rmi.activation.ActivationSystem
- * @see     j86.j86.java.rmi.activation.Activator
+ * @see     j86.java.rmi.activation.Activatable
+ * @see     j86.java.rmi.activation.ActivationGroup
+ * @see     j86.java.rmi.activation.ActivationID
+ * @see     j86.java.rmi.activation.ActivationMonitor
+ * @see     j86.java.rmi.activation.ActivationSystem
+ * @see     j86.java.rmi.activation.Activator
  */
 public class UnknownObjectException extends ActivationException {
 

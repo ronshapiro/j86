@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 
 import j86.java.awt.AWTError;
 import j86.java.awt.HeadlessException;
@@ -33,12 +33,12 @@ import j86.javax.print.DocFlavor;
 import j86.javax.print.PrintService;
 import j86.javax.print.PrintServiceLookup;
 import j86.javax.print.StreamPrintServiceFactory;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.j86.javax.print.attribute.standard.Media;
-import j86.j86.j86.javax.print.attribute.standard.MediaPrintableArea;
-import j86.j86.j86.javax.print.attribute.standard.MediaSize;
-import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
-import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.standard.MediaPrintableArea;
+import j86.javax.print.attribute.standard.MediaSize;
+import j86.javax.print.attribute.standard.MediaSizeName;
+import j86.javax.print.attribute.standard.OrientationRequested;
 
 import j86.sun.security.action.GetPropertyAction;
 
@@ -77,7 +77,7 @@ public abstract class PrinterJob {
         return (PrinterJob) j86.java.security.AccessController.doPrivileged(
             new j86.java.security.PrivilegedAction() {
             public Object run() {
-                String nm = System.getProperty("j86.j86.java.awt.printerjob", null);
+                String nm = System.getProperty("j86.java.awt.printerjob", null);
                 try {
                     return (PrinterJob)Class.forName(nm).newInstance();
                 } catch (ClassNotFoundException e) {

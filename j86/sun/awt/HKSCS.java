@@ -25,16 +25,16 @@
 
 package j86.sun.awt;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CharsetDecoder;
 
 /* 2d/XMap and WFontConfiguration implementation need access HKSCS,
    make a subclass here to avoid expose HKSCS to the public in
    ExtendedCharsets class, because if we want to have a public HKSCS,
    it probably should be HKSCS_2001 not HKSCS.
 */
-public class HKSCS extends j86.j86.j86.j86.sun.nio.cs.ext.MS950_HKSCS_XP {
+public class HKSCS extends j86.sun.nio.cs.ext.MS950_HKSCS_XP {
     public HKSCS () {
         super();
     }

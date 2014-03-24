@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -127,7 +127,7 @@ public interface OpenMBeanConstructorInfo {
     /**
      * Returns a string representation of this <code>OpenMBeanConstructorInfo</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.OpenMBeanConstructorInfo</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.OpenMBeanConstructorInfo</code>),
      * and the name and signature of the described constructor.
      *
      * @return  a string representation of this <code>OpenMBeanConstructorInfo</code> instance

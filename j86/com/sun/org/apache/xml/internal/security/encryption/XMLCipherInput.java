@@ -20,18 +20,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
+package j86.com.sun.org.apache.xml.internal.security.encryption;
 
 import j86.java.io.IOException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
 import org.w3c.dom.Attr;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * <code>XMLCipherInput</code> is used to wrap input passed into the
@@ -49,8 +49,8 @@ import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
  */
 public class XMLCipherInput {
 
-    private static j86.j86.java.util.logging.Logger logger =
-        j86.j86.java.util.logging.Logger.getLogger(XMLCipherInput.class.getName());
+    private static j86.java.util.logging.Logger logger =
+        j86.java.util.logging.Logger.getLogger(XMLCipherInput.class.getName());
 
     /** The data we are working with */
     private CipherData cipherData;
@@ -119,8 +119,8 @@ public class XMLCipherInput {
 
         if (cipherData.getDataType() == CipherData.REFERENCE_TYPE) {
             // Fun time!
-            if (logger.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                logger.log(j86.j86.java.util.logging.Level.FINE, "Found a reference type CipherData");
+            if (logger.isLoggable(j86.java.util.logging.Level.FINE)) {
+                logger.log(j86.java.util.logging.Level.FINE, "Found a reference type CipherData");
             }
             CipherReference cr = cipherData.getCipherReference();
 
@@ -139,23 +139,23 @@ public class XMLCipherInput {
             }
 
             if (input != null) {
-                if (logger.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    logger.log(j86.j86.java.util.logging.Level.FINE, "Managed to resolve URI \"" + cr.getURI() + "\"");
+                if (logger.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    logger.log(j86.java.util.logging.Level.FINE, "Managed to resolve URI \"" + cr.getURI() + "\"");
                 }
             } else {
-                if (logger.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    logger.log(j86.j86.java.util.logging.Level.FINE, "Failed to resolve URI \"" + cr.getURI() + "\"");
+                if (logger.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    logger.log(j86.java.util.logging.Level.FINE, "Failed to resolve URI \"" + cr.getURI() + "\"");
                 }
             }
 
             // Lets see if there are any transforms
             Transforms transforms = cr.getTransforms();
             if (transforms != null) {
-                if (logger.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    logger.log(j86.j86.java.util.logging.Level.FINE, "Have transforms in cipher reference");
+                if (logger.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    logger.log(j86.java.util.logging.Level.FINE, "Have transforms in cipher reference");
                 }
                 try {
-                    j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms dsTransforms =
+                    j86.com.sun.org.apache.xml.internal.security.transforms.Transforms dsTransforms =
                         transforms.getDSTransforms();
                     dsTransforms.setSecureValidation(secureValidation);
                     input = dsTransforms.performTransforms(input);
@@ -179,8 +179,8 @@ public class XMLCipherInput {
             throw new XMLEncryptionException("CipherData.getDataType() returned unexpected value");
         }
 
-        if (logger.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            logger.log(j86.j86.java.util.logging.Level.FINE, "Encrypted octets:\n" + base64EncodedEncryptedOctets);
+        if (logger.isLoggable(j86.java.util.logging.Level.FINE)) {
+            logger.log(j86.java.util.logging.Level.FINE, "Encrypted octets:\n" + base64EncodedEncryptedOctets);
         }
 
         try {

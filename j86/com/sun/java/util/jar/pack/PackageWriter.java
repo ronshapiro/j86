@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.*;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.File;
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.InnerClass;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.*;
+import j86.com.sun.j86.java.util.jar.pack.Package.Class;
+import j86.com.sun.j86.java.util.jar.pack.Package.File;
+import j86.com.sun.j86.java.util.jar.pack.Package.InnerClass;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.io.PrintStream;
@@ -40,7 +40,7 @@ import j86.java.util.HashSet;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Writer for a package file.

@@ -28,8 +28,8 @@ import j86.java.awt.Container;
 import j86.java.awt.Insets;
 import j86.javax.swing.*;
 import j86.javax.swing.LayoutStyle.ComponentPlacement;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * An implementation of <code>LayoutStyle</code> that returns 6 for related

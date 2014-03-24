@@ -160,7 +160,7 @@ public class LocalVirtualMachine {
     }
 
     private static final String LOCAL_CONNECTOR_ADDRESS_PROP =
-        "com.j86.j86.sun.management.jmxremote.localConnectorAddress";
+        "com.j86.sun.management.jmxremote.localConnectorAddress";
 
     private static void getAttachableVMs(Map<Integer, LocalVirtualMachine> map) {
         List<VirtualMachineDescriptor> vms = VirtualMachine.list();
@@ -257,7 +257,7 @@ public class LocalVirtualMachine {
 
         agent = f.getCanonicalPath();
         try {
-            vm.loadAgent(agent, "com.j86.j86.sun.management.jmxremote");
+            vm.loadAgent(agent, "com.j86.sun.management.jmxremote");
         } catch (AgentLoadException x) {
             IOException ioe = new IOException(x.getMessage());
             ioe.initCause(x);

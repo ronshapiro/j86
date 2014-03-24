@@ -25,10 +25,10 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.table.*;
+import j86.javax.swing.table.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.print.*;
-import j86.j86.java.awt.geom.*;
+import j86.java.awt.print.*;
+import j86.java.awt.geom.*;
 import j86.java.text.MessageFormat;
 
 /**

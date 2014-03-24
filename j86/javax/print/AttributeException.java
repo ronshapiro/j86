@@ -25,7 +25,7 @@
 
 package j86.javax.print;
 
-import j86.j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.Attribute;
 
 /**
  * Interface AttributeException is a mixin interface which a subclass of
@@ -48,7 +48,7 @@ public interface AttributeException {
      * Service instance does not support the attribute at all, or null if
      * there are no such attributes. The objects in the returned array are
      * classes that extend the base interface
-     * {@link j86.j86.javax.print.attribute.Attribute Attribute}.
+     * {@link j86.javax.print.attribute.Attribute Attribute}.
      *
      * @return unsupported attribute classes
      */

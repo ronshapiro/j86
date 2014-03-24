@@ -25,8 +25,8 @@
 
 package j86.sun.tools.jstack;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 

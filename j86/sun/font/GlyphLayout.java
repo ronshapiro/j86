@@ -68,15 +68,15 @@
 
 package j86.sun.font;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.awt.Font;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.Point2D;
 import j86.java.util.ArrayList;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 
 import static j86.java.lang.Character.*;
 

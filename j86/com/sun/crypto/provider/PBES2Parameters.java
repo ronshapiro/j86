@@ -29,10 +29,10 @@ import j86.java.io.*;
 import j86.java.math.BigInteger;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.AlgorithmParametersSpi;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
-import j86.j86.javax.crypto.spec.PBEParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.PBEParameterSpec;
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.util.*;
 

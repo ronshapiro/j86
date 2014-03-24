@@ -33,18 +33,18 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.util.AbstractQueue;
 import j86.java.util.Collection;
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
 import j86.java.util.Queue;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.locks.LockSupport;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An unbounded {@link TransferQueue} based on linked nodes.
@@ -1172,7 +1172,7 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * return {@code false}.
      *
      * @return {@code true} (as specified by
-     *  {@link j86.j86.java.util.concurrent.BlockingQueue#offer(Object,long,TimeUnit)
+     *  {@link j86.java.util.concurrent.BlockingQueue#offer(Object,long,TimeUnit)
      *  BlockingQueue.offer})
      * @throws NullPointerException if the specified element is null
      */
@@ -1410,7 +1410,7 @@ public class LinkedTransferQueue<E> extends AbstractQueue<E>
      * {@code LinkedTransferQueue} is not capacity constrained.
      *
      * @return {@code Integer.MAX_VALUE} (as specified by
-     *         {@link j86.j86.java.util.concurrent.BlockingQueue#remainingCapacity()
+     *         {@link j86.java.util.concurrent.BlockingQueue#remainingCapacity()
      *         BlockingQueue.remainingCapacity})
      */
     public int remainingCapacity() {

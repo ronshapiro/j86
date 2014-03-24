@@ -30,7 +30,7 @@ import j86.java.util.List;
 import j86.java.util.Collections;
 import j86.java.util.Comparator;
 import j86.java.io.IOException;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * CookieManager provides a concrete implementation of {@link CookieHandler},

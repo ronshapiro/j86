@@ -26,7 +26,7 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.NamingException;
-import j86.j86.javax.naming.directory.InvalidSearchFilterException;
+import j86.javax.naming.directory.InvalidSearchFilterException;
 
 import j86.java.io.IOException;
 

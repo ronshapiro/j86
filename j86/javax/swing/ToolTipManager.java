@@ -26,7 +26,7 @@
 
 package j86.javax.swing;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.awt.*;
 
 /**
@@ -424,7 +424,7 @@ public class ToolTipManager extends MouseAdapter implements MouseMotionListener 
         component.removeKeyListener(accessibilityKeyListener);
     }
 
-    // implements j86.j86.java.awt.event.MouseListener
+    // implements j86.java.awt.event.MouseListener
     /**
      *  Called when the mouse enters the region of a component.
      *  This determines whether the tool tip should be shown.
@@ -487,7 +487,7 @@ public class ToolTipManager extends MouseAdapter implements MouseMotionListener 
         }
     }
 
-    // implements j86.j86.java.awt.event.MouseListener
+    // implements j86.java.awt.event.MouseListener
     /**
      *  Called when the mouse exits the region of a component.
      *  Any tool tip showing should be hidden.
@@ -558,7 +558,7 @@ public class ToolTipManager extends MouseAdapter implements MouseMotionListener 
         }
     }
 
-    // implements j86.j86.java.awt.event.MouseListener
+    // implements j86.java.awt.event.MouseListener
     /**
      *  Called when the mouse is pressed.
      *  Any tool tip showing should be hidden.
@@ -573,7 +573,7 @@ public class ToolTipManager extends MouseAdapter implements MouseMotionListener 
         mouseEvent = null;
     }
 
-    // implements j86.j86.java.awt.event.MouseMotionListener
+    // implements j86.java.awt.event.MouseMotionListener
     /**
      *  Called when the mouse is pressed and dragged.
      *  Does nothing.
@@ -583,7 +583,7 @@ public class ToolTipManager extends MouseAdapter implements MouseMotionListener 
     public void mouseDragged(MouseEvent event) {
     }
 
-    // implements j86.j86.java.awt.event.MouseMotionListener
+    // implements j86.java.awt.event.MouseMotionListener
     /**
      *  Called when the mouse is moved.
      *  Determines whether the tool tip should be displayed.

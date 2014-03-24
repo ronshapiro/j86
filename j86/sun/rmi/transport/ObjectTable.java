@@ -24,12 +24,12 @@
  */
 package j86.sun.rmi.transport;
 
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.ReferenceQueue;
 import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
-import j86.j86.java.rmi.dgc.VMID;
-import j86.j86.java.rmi.server.ExportException;
-import j86.j86.java.rmi.server.ObjID;
+import j86.java.rmi.dgc.VMID;
+import j86.java.rmi.server.ExportException;
+import j86.java.rmi.server.ObjID;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.HashMap;

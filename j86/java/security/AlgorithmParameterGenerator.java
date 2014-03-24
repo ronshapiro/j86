@@ -25,7 +25,7 @@
 
 package j86.java.security;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * The {@code AlgorithmParameterGenerator} class is used to generate a
@@ -84,7 +84,7 @@ import j86.j86.java.security.spec.AlgorithmParameterSpec;
  *
  *
  * @see AlgorithmParameters
- * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.spec.AlgorithmParameterSpec
  *
  * @since 1.2
  */

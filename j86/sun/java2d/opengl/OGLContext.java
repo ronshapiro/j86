@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.opengl;
+package j86.sun.java2d.opengl;
 
-import j86.j86.sun.java2d.pipe.BufferedContext;
-import j86.j86.sun.java2d.pipe.RenderBuffer;
-import j86.j86.sun.java2d.pipe.RenderQueue;
-import j86.j86.j86.sun.java2d.pipe.hw.ContextCapabilities;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
-import static j86.j86.j86.sun.java2d.pipe.hw.ContextCapabilities.*;
+import j86.sun.java2d.pipe.BufferedContext;
+import j86.sun.java2d.pipe.RenderBuffer;
+import j86.sun.java2d.pipe.RenderQueue;
+import j86.sun.java2d.pipe.hw.ContextCapabilities;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
+import static j86.sun.java2d.pipe.hw.ContextCapabilities.*;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * Note that the RenderQueue lock must be acquired before calling any of

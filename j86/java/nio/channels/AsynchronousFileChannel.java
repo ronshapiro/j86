@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
-import j86.j86.java.nio.file.*;
-import j86.j86.j86.java.nio.file.attribute.FileAttribute;
-import j86.j86.j86.java.nio.file.spi.*;
+import j86.java.nio.file.*;
+import j86.java.nio.file.attribute.FileAttribute;
+import j86.java.nio.file.spi.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.io.IOException;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.ExecutorService;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.ExecutorService;
 import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.util.Collections;

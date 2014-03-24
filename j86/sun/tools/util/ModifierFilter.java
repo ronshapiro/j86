@@ -38,12 +38,12 @@ import j86.sun.tools.java.*;
  * supported API.  Code that depends on them does so at its own risk:
  * they are subject to change or removal without notice.
  *
- *   @see j86.j86.j86.java.lang.reflect.Modifier
+ *   @see j86.java.lang.reflect.Modifier
  *   @author Robert Field
  */
 
 public
-class ModifierFilter extends j86.j86.j86.java.lang.reflect.Modifier {
+class ModifierFilter extends j86.java.lang.reflect.Modifier {
 
     /**
     * Package private access.

@@ -27,11 +27,11 @@
  * @author Charlton Innovations, Inc.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.sun.java2d.SunGraphics2D;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.TextLayout;
 
 /**
  * This interface defines the set of calls that pipeline objects

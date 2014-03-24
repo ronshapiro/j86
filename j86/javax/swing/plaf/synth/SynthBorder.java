@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.JTextComponent;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.border.*;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * SynthBorder is a border that delegates to a Painter. The Insets

@@ -26,11 +26,11 @@
 package j86.sun.font;
 
 import j86.java.awt.Font;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.SoftReference;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.util.Locale;
 
 public abstract class Font2D {

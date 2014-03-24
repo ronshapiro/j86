@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.ssl.krb5;
+package j86.sun.security.ssl.krb5;
 
 import j86.java.security.AccessControlContext;
 import j86.java.security.Permission;
@@ -31,14 +31,14 @@ import j86.java.security.Principal;
 import j86.java.util.Set;
 import j86.javax.crypto.SecretKey;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.kerberos.KerberosKey;
-import j86.j86.javax.security.auth.kerberos.KeyTab;
-import j86.j86.javax.security.auth.kerberos.ServicePermission;
-import j86.j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.kerberos.KerberosKey;
+import j86.javax.security.auth.kerberos.KeyTab;
+import j86.javax.security.auth.kerberos.ServicePermission;
+import j86.javax.security.auth.login.LoginException;
 
 import j86.sun.security.jgss.GSSCaller;
-import j86.j86.sun.security.jgss.krb5.Krb5Util;
-import j86.j86.sun.security.jgss.krb5.ServiceCreds;
+import j86.sun.security.jgss.krb5.Krb5Util;
+import j86.sun.security.jgss.krb5.ServiceCreds;
 import j86.sun.security.krb5.PrincipalName;
 import j86.sun.security.ssl.Krb5Proxy;
 

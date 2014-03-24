@@ -45,13 +45,13 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.Objects;
 import j86.java.util.Set;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.Manifest;
 import j86.sun.misc.Resource;
 import j86.sun.misc.URLClassPath;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -244,7 +244,7 @@ public class URLClassLoader extends SecureClassLoader implements Closeable {
                         closeables.put(jar, null);
                     }
                 }
-            } else if (urlc instanceof j86.j86.j86.sun.net.www.protocol.file.FileURLConnection) {
+            } else if (urlc instanceof j86.sun.net.www.protocol.file.FileURLConnection) {
                 synchronized (closeables) {
                     closeables.put(is, null);
                 }

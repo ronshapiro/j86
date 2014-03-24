@@ -46,8 +46,8 @@ import j86.java.util.Map;
  * Any method on <code>StackFrame</code> which
  * takes <code>StackFrame</code> as an parameter may throw
  * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
+ * disconnected and the {@link j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>StackFrame</code> which
  * takes <code>StackFrame</code> as an parameter may throw

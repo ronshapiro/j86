@@ -33,13 +33,13 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.locks;
+package j86.java.util.concurrent.locks;
 
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.j86.java.util.concurrent.locks.Lock;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.ReadWriteLock;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.locks.Lock;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.ReadWriteLock;
+import j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A capability-based lock with three modes for controlling read/write

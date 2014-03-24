@@ -52,7 +52,7 @@ public class Resources_pt_BR extends j86.java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tClasse do Principal = {0}\n\tNome do Principal = {1}"},
 
-        // j86.j86.javax.security.auth.x500
+        // j86.javax.security.auth.x500
         {"provided.null.name", "nome nulo fornecido"},
         {"provided.null.keyword.map", "mapa de palavra-chave nulo fornecido"},
         {"provided.null.OID.map", "mapa OID nulo fornecido"},
@@ -77,10 +77,10 @@ public class Resources_pt_BR extends j86.java.util.ListResourceBundle {
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "tentativa de adicionar um objeto que n\u00E3o \u00E9 uma inst\u00E2ncia de {0}"},
 
-        // j86.j86.javax.security.auth.login.AppConfigurationEntry
+        // j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // j86.j86.javax.security.auth.login.LoginContext
+        // j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "Entrada nula inv\u00E1lida: nome"},
         {"No.LoginModules.configured.for.name",
          "Nenhum LoginModule configurado para {0}"},
@@ -146,7 +146,7 @@ public class Resources_pt_BR extends j86.java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "principalClass ou principalName nulo"},
 
-        // j86.j86.sun.security.pkcs11.SunPKCS11
+        // j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "Senha PKCS11 de Token [{0}]: "},
 

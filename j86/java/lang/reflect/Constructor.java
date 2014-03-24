@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.ConstructorAccessor;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.annotation.TypeAnnotation;
-import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
-import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
-import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.scope.ConstructorScope;
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.annotation.AnnotationFormatError;
+import j86.sun.reflect.annotation.TypeAnnotation;
+import j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.sun.reflect.generics.repository.ConstructorRepository;
+import j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.scope.ConstructorScope;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.AnnotationFormatError;
 
 /**
  * {@code Constructor} provides information about, and access to, a single
@@ -129,7 +129,7 @@ public final class Constructor<T> extends Executable {
         // among Constructor objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new j86.j86.j86.java.lang.reflect
+        // which implicitly requires that new j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Constructor<T> res = new Constructor<>(clazz,

@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.Package.Class;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.com.sun.j86.java.util.jar.pack.Package.Class;
+import j86.java.lang.reflect.Modifier;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Represents a chunk of bytecodes.
@@ -356,7 +356,7 @@ class Code extends Attribute.Holder {
 /* TEST CODE ONLY
     private boolean assertBCICodingsOK() {
         boolean ok = true;
-        int len = j86.j86.j86.java.lang.reflect.Array.getLength(insnMap);
+        int len = j86.java.lang.reflect.Array.getLength(insnMap);
         int base = 0;
         if (insnMap.getClass().getComponentType() == Byte.TYPE)
             base = Byte.MIN_VALUE;
@@ -381,7 +381,7 @@ class Code extends Attribute.Holder {
                     StringBuffer sb = new StringBuffer();
                     sb.append("bci "+(q==0?"map":"del")+"["+len+"] = {");
                     for (int j = 0; j < len; j++) {
-                        int mapi = ((Number)j86.j86.j86.java.lang.reflect.Array.get(insnMap, j)).intValue() - base;
+                        int mapi = ((Number)j86.java.lang.reflect.Array.get(insnMap, j)).intValue() - base;
                         mapi -= j*q;
                         sb.append(" "+mapi);
                     }

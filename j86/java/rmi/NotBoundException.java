@@ -34,8 +34,8 @@ package j86.java.rmi;
  * @author  Roger Riggs
  * @see     j86.java.rmi.Naming#lookup(String)
  * @see     j86.java.rmi.Naming#unbind(String)
- * @see     j86.j86.java.rmi.registry.Registry#lookup(String)
- * @see     j86.j86.java.rmi.registry.Registry#unbind(String)
+ * @see     j86.java.rmi.registry.Registry#lookup(String)
+ * @see     j86.java.rmi.registry.Registry#unbind(String)
  */
 public class NotBoundException extends j86.java.lang.Exception {
 

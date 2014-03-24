@@ -25,10 +25,10 @@
 /*
  * $Id: CanonicalizationMethod.java,v 1.6 2005/05/10 16:03:45 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.C14NMethodParameterSpec;
 
 /**
  * A representation of the XML <code>CanonicalizationMethod</code>

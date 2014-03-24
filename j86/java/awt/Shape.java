@@ -25,10 +25,10 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 
 /**
  * The <code>Shape</code> interface provides definitions for objects
@@ -67,10 +67,10 @@ import j86.j86.java.awt.geom.Rectangle2D;
  * determining if a shape contains or intersects a rectangle or if a
  * shape contains a point.
  *
- * @see j86.j86.java.awt.geom.PathIterator
- * @see j86.j86.java.awt.geom.AffineTransform
- * @see j86.j86.java.awt.geom.FlatteningPathIterator
- * @see j86.j86.java.awt.geom.GeneralPath
+ * @see j86.java.awt.geom.PathIterator
+ * @see j86.java.awt.geom.AffineTransform
+ * @see j86.java.awt.geom.FlatteningPathIterator
+ * @see j86.java.awt.geom.GeneralPath
  *
  * @author Jim Graham
  * @since 1.2
@@ -213,7 +213,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code true} even though the rectangular area does not
      * intersect the {@code Shape}.
-     * The {@link j86.j86.java.awt.geom.Area Area} class performs
+     * The {@link j86.java.awt.geom.Area Area} class performs
      * more accurate computations of geometric intersection than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -228,7 +228,7 @@ public interface Shape {
      *          the interior of the rectangular area intersect, or are
      *          both highly likely to intersect and intersection calculations
      *          would be too expensive to perform; <code>false</code> otherwise.
-     * @see j86.j86.java.awt.geom.Area
+     * @see j86.java.awt.geom.Area
      * @since 1.2
      */
     public boolean intersects(double x, double y, double w, double h);
@@ -249,7 +249,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code true} even though the {@code Rectangle2D} does not
      * intersect the {@code Shape}.
-     * The {@link j86.j86.java.awt.geom.Area Area} class performs
+     * The {@link j86.java.awt.geom.Area Area} class performs
      * more accurate computations of geometric intersection than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -285,7 +285,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code false} even though the {@code Shape} contains
      * the rectangular area.
-     * The {@link j86.j86.java.awt.geom.Area Area} class performs
+     * The {@link j86.java.awt.geom.Area Area} class performs
      * more accurate geometric computations than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.
@@ -303,7 +303,7 @@ public interface Shape {
      *          <code>intersects</code> method returns <code>true</code>
      *          and the containment calculations would be too expensive to
      *          perform.
-     * @see j86.j86.java.awt.geom.Area
+     * @see j86.java.awt.geom.Area
      * @see #intersects
      * @since 1.2
      */
@@ -325,7 +325,7 @@ public interface Shape {
      * This means that for some {@code Shapes} this method might
      * return {@code false} even though the {@code Shape} contains
      * the {@code Rectangle2D}.
-     * The {@link j86.j86.java.awt.geom.Area Area} class performs
+     * The {@link j86.java.awt.geom.Area Area} class performs
      * more accurate geometric computations than most
      * {@code Shape} objects and therefore can be used if a more precise
      * answer is required.

@@ -29,7 +29,7 @@ import j86.java.math.BigInteger;
 import j86.java.util.*;
 
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.interfaces.*;
+import j86.java.security.interfaces.*;
 
 import j86.javax.crypto.BadPaddingException;
 

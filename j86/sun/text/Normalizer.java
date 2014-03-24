@@ -25,8 +25,8 @@
 
 package j86.sun.text;
 
-import j86.j86.sun.text.normalizer.NormalizerBase;
-import j86.j86.sun.text.normalizer.NormalizerImpl;
+import j86.sun.text.normalizer.NormalizerBase;
+import j86.sun.text.normalizer.NormalizerImpl;
 
 /**
  * This Normalizer is for Unicode 3.2 support for IDNA only.

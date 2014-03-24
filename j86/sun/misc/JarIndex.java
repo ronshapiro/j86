@@ -27,8 +27,8 @@ package j86.sun.misc;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.util.jar.*;
-import j86.j86.java.util.zip.*;
+import j86.java.util.jar.*;
+import j86.java.util.zip.*;
 
 /**
  * This class is used to maintain mappings from packages, classes

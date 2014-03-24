@@ -25,7 +25,7 @@
 
 package j86.sun.security.internal.spec;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.javax.crypto.SecretKey;
 

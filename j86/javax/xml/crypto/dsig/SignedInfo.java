@@ -25,7 +25,7 @@
 /*
  * $Id: SignedInfo.java,v 1.7 2005/05/10 16:03:47 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.javax.xml.crypto.XMLStructure;
 import j86.java.io.InputStream;

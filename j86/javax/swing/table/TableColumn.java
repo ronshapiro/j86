@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 import j86.java.lang.Integer;
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -73,10 +73,10 @@ import j86.java.beans.PropertyChangeListener;
  *
  * @author Alan Chung
  * @author Philip Milne
- * @see j86.j86.javax.swing.table.TableColumnModel
+ * @see j86.javax.swing.table.TableColumnModel
  *
- * @see j86.j86.javax.swing.table.DefaultTableColumnModel
- * @see j86.j86.javax.swing.table.JTableHeader#getDefaultRenderer()
+ * @see j86.javax.swing.table.DefaultTableColumnModel
+ * @see j86.javax.swing.table.JTableHeader#getDefaultRenderer()
  * @see JTable#getDefaultRenderer(Class)
  * @see JTable#getDefaultEditor(Class)
  * @see JTable#getCellRenderer(int, int)
@@ -414,7 +414,7 @@ public class TableColumn extends Object implements Serializable {
      * @return  the <code>headerRenderer</code> property
      * @see     #setHeaderRenderer
      * @see     #setHeaderValue
-     * @see     j86.j86.javax.swing.table.JTableHeader#getDefaultRenderer()
+     * @see     j86.javax.swing.table.JTableHeader#getDefaultRenderer()
      */
     public TableCellRenderer getHeaderRenderer() {
         return headerRenderer;
@@ -798,7 +798,7 @@ public class TableColumn extends Object implements Serializable {
      * renderer, just as the <code>JTable</code> does for its cell renderers.
      *
      * @return the default header renderer
-     * @see j86.j86.javax.swing.table.JTableHeader#createDefaultRenderer()
+     * @see j86.javax.swing.table.JTableHeader#createDefaultRenderer()
      */
     protected TableCellRenderer createDefaultHeaderRenderer() {
         DefaultTableCellRenderer label = new DefaultTableCellRenderer() {

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.awt.AppContext;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 
 
 import j86.java.awt.*;

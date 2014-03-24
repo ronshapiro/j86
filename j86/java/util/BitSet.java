@@ -29,8 +29,8 @@ import j86.java.io.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ByteOrder;
 import j86.java.nio.LongBuffer;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * This class implements a vector of bits that grows as needed. Each

@@ -38,17 +38,17 @@ import j86.java.security.URIParameter;
 import j86.java.text.MessageFormat;
 import j86.java.util.*;
 import j86.javax.security.auth.AuthPermission;
-import j86.j86.javax.security.auth.login.AppConfigurationEntry;
-import j86.j86.javax.security.auth.login.AppConfigurationEntry.LoginModuleControlFlag;
-import j86.j86.javax.security.auth.login.Configuration;
-import j86.j86.javax.security.auth.login.ConfigurationSpi;
+import j86.javax.security.auth.login.AppConfigurationEntry;
+import j86.javax.security.auth.login.AppConfigurationEntry.LoginModuleControlFlag;
+import j86.javax.security.auth.login.Configuration;
+import j86.javax.security.auth.login.ConfigurationSpi;
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.PropertyExpander;
 import j86.sun.security.util.ResourcesMgr;
 
 /**
  * This class represents a default implementation for
- * {@code j86.j86.javax.security.auth.login.Configuration}.
+ * {@code j86.javax.security.auth.login.Configuration}.
  *
  * <p> This object stores the runtime login configuration representation,
  * and is the amalgamation of multiple static login configurations that
@@ -89,9 +89,9 @@ import j86.sun.security.util.ResourcesMgr;
  *
  * <p> The configuration syntax supported by this implementation
  * is exactly that syntax specified in the
- * {@code j86.j86.javax.security.auth.login.Configuration} class.
+ * {@code j86.javax.security.auth.login.Configuration} class.
  *
- * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.javax.security.auth.login.LoginContext
  * @see j86.java.security.Security security properties
  */
 public final class ConfigFile extends Configuration {

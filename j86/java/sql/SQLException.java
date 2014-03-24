@@ -27,7 +27,7 @@ package j86.java.sql;
 
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
 /**
  * <P>An exception that provides information on a database access

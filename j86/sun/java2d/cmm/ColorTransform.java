@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.cmm;
+package j86.sun.java2d.cmm;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
 
 public interface ColorTransform {
     public int Any = -1;/* any rendering type, whichever is

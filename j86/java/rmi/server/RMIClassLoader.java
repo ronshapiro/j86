@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
@@ -68,7 +68,7 @@ import j86.java.util.ServiceLoader;
  * <ul>
  *
  * <li>If the system property
- * <code>j86.j86.java.rmi.server.RMIClassLoaderSpi</code> is defined, then if
+ * <code>j86.java.rmi.server.RMIClassLoaderSpi</code> is defined, then if
  * its value equals the string <code>"default"</code>, the provider
  * instance will be the value returned by an invocation of the {@link
  * #getDefaultProviderInstance()} method, and for any other value, if
@@ -83,7 +83,7 @@ import j86.java.util.ServiceLoader;
  * obtain a provider instance.
  *
  * <li>If a resource named
- * <code>META-INF/services/j86.j86.java.rmi.server.RMIClassLoaderSpi</code> is
+ * <code>META-INF/services/j86.java.rmi.server.RMIClassLoaderSpi</code> is
  * visible to the system class loader, then the contents of that
  * resource are interpreted as a provider-configuration file, and the
  * first class name specified in that file is used as the provider
@@ -265,7 +265,7 @@ public class RMIClassLoader {
     }
 
     /**
-     * Loads a dynamic proxy class (see {@link j86.j86.j86.java.lang.reflect.Proxy})
+     * Loads a dynamic proxy class (see {@link j86.java.lang.reflect.Proxy})
      * that implements a set of interfaces with the given names
      * from a codebase URL path.
      *
@@ -298,7 +298,7 @@ public class RMIClassLoader {
      * @throws  ClassNotFoundException if a definition for one of
      * the named interfaces could not be found at the specified location,
      * or if creation of the dynamic proxy class failed (such as if
-     * {@link j86.j86.j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])}
+     * {@link j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])}
      * would throw an <code>IllegalArgumentException</code> for the given
      * interface list)
      *
@@ -384,7 +384,7 @@ public class RMIClassLoader {
     /**
      * Returns the canonical instance of the default provider
      * for the service provider interface {@link RMIClassLoaderSpi}.
-     * If the system property <code>j86.j86.java.rmi.server.RMIClassLoaderSpi</code>
+     * If the system property <code>j86.java.rmi.server.RMIClassLoaderSpi</code>
      * is not defined, then the <code>RMIClassLoader</code> static
      * methods
      *
@@ -429,7 +429,7 @@ public class RMIClassLoader {
      * system class loader such as the loader used for installed
      * extensions, or the bootstrap class loader (which may be
      * represented by <code>null</code>), then the value of the
-     * <code>j86.j86.java.rmi.server.codebase</code> property (or possibly an
+     * <code>j86.java.rmi.server.codebase</code> property (or possibly an
      * earlier cached value) is returned, or
      * <code>null</code> is returned if that property is not set.
      *
@@ -448,13 +448,13 @@ public class RMIClassLoader {
      * invoking <code>openConnection().getPermission()</code> on each
      * URL; if any of those invocations throws a
      * <code>SecurityException</code> or an <code>IOException</code>,
-     * then the value of the <code>j86.j86.java.rmi.server.codebase</code>
+     * then the value of the <code>j86.java.rmi.server.codebase</code>
      * property (or possibly an earlier cached value) is returned, or
      * <code>null</code> is returned if that property is not set.
      *
      * <li><p>Finally, if the class loader is not an instance of
      * <code>URLClassLoader</code>, then the value of the
-     * <code>j86.j86.java.rmi.server.codebase</code> property (or possibly an
+     * <code>j86.java.rmi.server.codebase</code> property (or possibly an
      * earlier cached value) is returned, or
      * <code>null</code> is returned if that property is not set.
      *
@@ -473,7 +473,7 @@ public class RMIClassLoader {
      * class loader and their codebase URL path (an ordered list of
      * URLs).  If the <code>codebase</code> argument is <code>null</code>,
      * the codebase URL path is the value of the system property
-     * <code>j86.j86.java.rmi.server.codebase</code> or possibly an
+     * <code>j86.java.rmi.server.codebase</code> or possibly an
      * earlier cached value.  For a given codebase URL path passed as the
      * <code>codebase</code> argument to an invocation of one of the
      * below methods in a given context, the codebase loader is the
@@ -543,7 +543,7 @@ public class RMIClassLoader {
      * <li>if all of the resolved interfaces are <code>public</code>,
      * then it first attempts to obtain a dynamic proxy class (using
      * {@link
-     * j86.j86.j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])
+     * j86.java.lang.reflect.Proxy#getProxyClass(ClassLoader,Class[])
      * Proxy.getProxyClass}) for the resolved interfaces defined in
      * the codebase loader; if that attempt throws an
      * <code>IllegalArgumentException</code>, it then attempts to
@@ -669,7 +669,7 @@ public class RMIClassLoader {
          * First check for the system property being set:
          */
         String providerClassName =
-            System.getProperty("j86.j86.java.rmi.server.RMIClassLoaderSpi");
+            System.getProperty("j86.java.rmi.server.RMIClassLoaderSpi");
 
         if (providerClassName != null) {
             if (providerClassName.equals("default")) {

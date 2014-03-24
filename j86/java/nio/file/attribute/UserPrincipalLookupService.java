@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
 import j86.java.io.IOException;
 
@@ -47,7 +47,7 @@ import j86.java.io.IOException;
  *
  * @since 1.7
  *
- * @see j86.j86.java.nio.file.FileSystem#getUserPrincipalLookupService
+ * @see j86.java.nio.file.FileSystem#getUserPrincipalLookupService
  */
 
 public abstract class UserPrincipalLookupService {

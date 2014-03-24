@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.*;
 import j86.javax.swing.SizeRequirements;
-import j86.j86.javax.swing.event.DocumentEvent;
-import j86.j86.javax.swing.text.Document;
-import j86.j86.javax.swing.text.Element;
-import j86.j86.javax.swing.text.AttributeSet;
-import j86.j86.javax.swing.text.StyleConstants;
-import j86.j86.javax.swing.text.View;
-import j86.j86.javax.swing.text.ViewFactory;
-import j86.j86.javax.swing.text.BadLocationException;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.text.Document;
+import j86.javax.swing.text.Element;
+import j86.javax.swing.text.AttributeSet;
+import j86.javax.swing.text.StyleConstants;
+import j86.javax.swing.text.View;
+import j86.javax.swing.text.ViewFactory;
+import j86.javax.swing.text.BadLocationException;
+import j86.javax.swing.text.JTextComponent;
 
 /**
  * Displays the a paragraph, and uses css attributes for its
@@ -43,7 +43,7 @@ import j86.j86.javax.swing.text.JTextComponent;
  * @author  Timothy Prinzing
  */
 
-public class ParagraphView extends j86.j86.javax.swing.text.ParagraphView {
+public class ParagraphView extends j86.javax.swing.text.ParagraphView {
 
     /**
      * Constructs a ParagraphView for the given element.
@@ -139,7 +139,7 @@ public class ParagraphView extends j86.j86.javax.swing.text.ParagraphView {
      *
      * <p>If size requirements are explicitly specified for the paragraph,
      * use that requirements.  Otherwise, use the requirements of the
-     * superclass {@link j86.j86.javax.swing.text.ParagraphView}.</p>
+     * superclass {@link j86.javax.swing.text.ParagraphView}.</p>
      *
      * <p>If the {@code axis} parameter is neither {@code View.X_AXIS} nor
      * {@code View.Y_AXIS}, {@link IllegalArgumentException} is thrown.  If the
@@ -244,7 +244,7 @@ public class ParagraphView extends j86.j86.javax.swing.text.ParagraphView {
      *           typically the view is told to render into the span
      *           that is returned, although there is no guarantee;
      *           the parent may choose to resize or break the view
-     * @see j86.j86.javax.swing.text.ParagraphView#getPreferredSpan
+     * @see j86.javax.swing.text.ParagraphView#getPreferredSpan
      */
     public float getPreferredSpan(int axis) {
         if (!isVisible()) {
@@ -261,7 +261,7 @@ public class ParagraphView extends j86.j86.javax.swing.text.ParagraphView {
      * @param axis may be either <code>View.X_AXIS</code> or
      *  <code>View.Y_AXIS</code>
      * @return  the minimum span the view can be rendered into
-     * @see j86.j86.javax.swing.text.ParagraphView#getMinimumSpan
+     * @see j86.javax.swing.text.ParagraphView#getMinimumSpan
      */
     public float getMinimumSpan(int axis) {
         if (!isVisible()) {
@@ -278,7 +278,7 @@ public class ParagraphView extends j86.j86.javax.swing.text.ParagraphView {
      * @param axis may be either <code>View.X_AXIS</code> or
      *  <code>View.Y_AXIS</code>
      * @return  the maximum span the view can be rendered into
-     * @see j86.j86.javax.swing.text.ParagraphView#getMaximumSpan
+     * @see j86.javax.swing.text.ParagraphView#getMaximumSpan
      */
     public float getMaximumSpan(int axis) {
         if (!isVisible()) {

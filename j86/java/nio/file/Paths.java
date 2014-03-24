@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.nio.file;
+package j86.java.nio.file;
 
-import j86.j86.j86.java.nio.file.spi.FileSystemProvider;
+import j86.java.nio.file.spi.FileSystemProvider;
 import j86.java.net.URI;
 
 /**

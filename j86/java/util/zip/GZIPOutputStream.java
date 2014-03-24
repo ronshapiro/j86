@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;

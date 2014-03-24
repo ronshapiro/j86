@@ -28,8 +28,8 @@ package j86.sun.security.rsa;
 import j86.java.math.BigInteger;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.RSAKeyGenParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.RSAKeyGenParameterSpec;
 
 import j86.sun.security.jca.JCAUtil;
 

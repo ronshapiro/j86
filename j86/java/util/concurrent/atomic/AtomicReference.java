@@ -33,14 +33,14 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
-import j86.j86.java.util.function.UnaryOperator;
-import j86.j86.java.util.function.BinaryOperator;
+package j86.java.util.concurrent.atomic;
+import j86.java.util.function.UnaryOperator;
+import j86.java.util.function.BinaryOperator;
 import j86.sun.misc.Unsafe;
 
 /**
  * An object reference that may be updated atomically. See the {@link
- * j86.j86.j86.java.util.concurrent.atomic} package specification for description
+ * j86.java.util.concurrent.atomic} package specification for description
  * of the properties of atomic variables.
  * @since 1.5
  * @author Doug Lea

@@ -26,7 +26,7 @@
 /*
  * $Id: ApacheNodeSetData.java 1203890 2011-11-18 22:47:56Z mullan $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.util.Collections;
 import j86.java.util.Iterator;
@@ -35,9 +35,9 @@ import j86.java.util.List;
 import j86.java.util.Set;
 import j86.javax.xml.crypto.NodeSetData;
 import org.w3c.dom.Node;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 
 public class ApacheNodeSetData implements ApacheData, NodeSetData {
 

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.java.io.Serializable;
 import j86.java.util.Enumeration;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 
 import j86.javax.management.ObjectName;
@@ -44,8 +44,8 @@ import j86.com.sun.jmx.snmp.SnmpDefinitions;
 import j86.com.sun.jmx.snmp.SnmpStatusException;
 import j86.com.sun.jmx.snmp.SnmpEngine;
 import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpAccessControlModel;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpEngineImpl;
+import j86.com.sun.jmx.snmp.internal.SnmpAccessControlModel;
+import j86.com.sun.jmx.snmp.internal.SnmpEngineImpl;
 
 /**
  * This list is used in order to construct the OID during the getnext.

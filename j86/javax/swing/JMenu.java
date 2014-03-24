@@ -40,7 +40,7 @@ import j86.java.awt.Point;
 import j86.java.awt.Polygon;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 
 import j86.java.util.*;
@@ -50,12 +50,12 @@ import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
 import j86.javax.accessibility.*;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * An implementation of a menu -- a popup window containing

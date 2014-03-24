@@ -35,11 +35,11 @@ import j86.java.awt.JobAttributes.*;
 import j86.java.awt.PageAttributes;
 import j86.java.awt.PageAttributes.*;
 
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Paper;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Paper;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterJob;
 
 import j86.java.io.File;
 import j86.java.io.FilePermission;
@@ -52,24 +52,24 @@ import j86.java.util.ArrayList;
 import j86.java.util.Properties;
 
 import j86.javax.print.PrintService;
-import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.ResolutionSyntax;
-import j86.j86.javax.print.attribute.Size2DSyntax;
-import j86.j86.j86.javax.print.attribute.standard.Chromaticity;
-import j86.j86.j86.javax.print.attribute.standard.Copies;
-import j86.j86.j86.javax.print.attribute.standard.Destination;
-import j86.j86.j86.javax.print.attribute.standard.DialogTypeSelection;
-import j86.j86.j86.javax.print.attribute.standard.JobName;
-import j86.j86.j86.javax.print.attribute.standard.MediaSize;
-import j86.j86.j86.javax.print.attribute.standard.PrintQuality;
-import j86.j86.j86.javax.print.attribute.standard.PrinterResolution;
-import j86.j86.j86.javax.print.attribute.standard.SheetCollate;
-import j86.j86.j86.javax.print.attribute.standard.Sides;
-import j86.j86.j86.javax.print.attribute.standard.Media;
-import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
-import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
-import j86.j86.j86.javax.print.attribute.standard.PageRanges;
+import j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.ResolutionSyntax;
+import j86.javax.print.attribute.Size2DSyntax;
+import j86.javax.print.attribute.standard.Chromaticity;
+import j86.javax.print.attribute.standard.Copies;
+import j86.javax.print.attribute.standard.Destination;
+import j86.javax.print.attribute.standard.DialogTypeSelection;
+import j86.javax.print.attribute.standard.JobName;
+import j86.javax.print.attribute.standard.MediaSize;
+import j86.javax.print.attribute.standard.PrintQuality;
+import j86.javax.print.attribute.standard.PrinterResolution;
+import j86.javax.print.attribute.standard.SheetCollate;
+import j86.javax.print.attribute.standard.Sides;
+import j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.standard.OrientationRequested;
+import j86.javax.print.attribute.standard.MediaSizeName;
+import j86.javax.print.attribute.standard.PageRanges;
 
 import j86.sun.print.SunPageSelection;
 import j86.sun.print.SunMinMaxPage;
@@ -945,7 +945,7 @@ public class PrintJob2D extends PrintJob implements Printable, Runnable {
      * @return PAGE_EXISTS if the page is rendered successfully
      *         or NO_SUCH_PAGE if <code>pageIndex</code> specifies a
      *         non-existent page.
-     * @exception j86.j86.java.awt.print.PrinterException
+     * @exception j86.java.awt.print.PrinterException
      *         thrown when the print job is terminated.
      */
     public int print(Graphics graphics, PageFormat pageFormat, int pageIndex)

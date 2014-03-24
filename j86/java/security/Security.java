@@ -25,9 +25,9 @@
 
 package j86.java.security;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.io.*;
 import j86.java.net.URL;
 import j86.sun.security.util.Debug;

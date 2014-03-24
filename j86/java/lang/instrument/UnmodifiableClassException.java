@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.lang.instrument;
+package j86.java.lang.instrument;
 
 /**
  * Thrown by an implementation of
- * {@link j86.j86.java.lang.instrument.Instrumentation#redefineClasses Instrumentation.redefineClasses}
+ * {@link j86.java.lang.instrument.Instrumentation#redefineClasses Instrumentation.redefineClasses}
  * when one of the specified classes cannot be modified.
  *
- * @see     j86.j86.java.lang.instrument.Instrumentation#redefineClasses
+ * @see     j86.java.lang.instrument.Instrumentation#redefineClasses
  * @since   1.5
  */
 public class UnmodifiableClassException extends Exception {

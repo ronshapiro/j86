@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.print.attribute.standard;
+package j86.javax.print.attribute.standard;
 
 import j86.java.util.AbstractSet;
 import j86.java.util.Iterator;
@@ -31,8 +31,8 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.HashMap;
 import j86.java.util.Set;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.PrintServiceAttribute;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.PrintServiceAttribute;
 
 /**
  * Class PrinterStateReasons is a printing attribute class, a set of

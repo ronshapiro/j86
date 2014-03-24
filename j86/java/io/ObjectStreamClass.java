@@ -25,17 +25,17 @@
 
 package j86.java.io;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Member;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Member;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
 import j86.java.security.AccessController;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
@@ -46,13 +46,13 @@ import j86.java.util.Collections;
 import j86.java.util.Comparator;
 import j86.java.util.HashSet;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 import j86.sun.misc.Unsafe;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 import j86.sun.reflect.ReflectionFactory;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Serialization's descriptor for classes.  It contains the name and

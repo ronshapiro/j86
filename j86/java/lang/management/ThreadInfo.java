@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
-import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeData;
 import j86.sun.management.ManagementFactoryHelper;
 import j86.sun.management.ThreadInfoCompositeData;
 import static j86.java.lang.Thread.State.*;
@@ -47,7 +47,7 @@ import static j86.java.lang.Thread.State.*;
  *       <li>waiting to enter a synchronization block/method, or</li>
  *       <li>waiting to be notified in a {@link Object#wait Object.wait} method,
  *           or</li>
- *       <li>parking due to a {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#park
+ *       <li>parking due to a {@link j86.java.util.concurrent.locks.LockSupport#park
  *           LockSupport.park} call.</li>
  *       </ul>
  *   </li>
@@ -439,13 +439,13 @@ public class ThreadInfo {
      *     <br>The thread is in the {@link j86.java.lang.Thread.State#WAITING WAITING}
      *     or {@link j86.java.lang.Thread.State#TIMED_WAITING TIMED_WAITING} state
      *     due to a call to the
-     *     {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#park(Object)
+     *     {@link j86.java.util.concurrent.locks.LockSupport#park(Object)
      *     LockSupport.park} method.  The synchronization object
      *     is the object returned from
-     *     {@link j86.j86.j86.java.util.concurrent.locks.LockSupport#getBlocker
+     *     {@link j86.java.util.concurrent.locks.LockSupport#getBlocker
      *     LockSupport.getBlocker} method. Typically it is an
      *     <a href="LockInfo.html#OwnableSynchronizer"> ownable synchronizer</a>
-     *     or a {@link j86.j86.j86.java.util.concurrent.locks.Condition Condition}.</li>
+     *     or a {@link j86.java.util.concurrent.locks.Condition Condition}.</li>
      * </ul>
      *
      * <p>This method returns <tt>null</tt> if the thread is not in any of
@@ -695,7 +695,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockInfo</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData</tt>
+     *   <td><tt>j86.javax.management.openmbean.CompositeData</tt>
      *       - the mapped type for {@link LockInfo} as specified in the
      *         {@link LockInfo#from} method.
      *       <p>
@@ -717,7 +717,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td><a name="StackTrace">stackTrace</a></td>
-     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.javax.management.openmbean.CompositeData[]</tt>
      *       <p>
      *       Each element is a <tt>CompositeData</tt> representing
      *       StackTraceElement containing the following attributes:
@@ -753,7 +753,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockedMonitors</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.javax.management.openmbean.CompositeData[]</tt>
      *       whose element type is the mapped type for
      *       {@link MonitorInfo} as specified in the
      *       {@link MonitorInfo#from Monitor.from} method.
@@ -763,7 +763,7 @@ public class ThreadInfo {
      * </tr>
      * <tr>
      *   <td>lockedSynchronizers</td>
-     *   <td><tt>j86.j86.javax.management.openmbean.CompositeData[]</tt>
+     *   <td><tt>j86.javax.management.openmbean.CompositeData[]</tt>
      *       whose element type is the mapped type for
      *       {@link LockInfo} as specified in the {@link LockInfo#from} method.
      *       <p>

@@ -23,6 +23,6 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.tree;
+package j86.sun.reflect.generics.tree;
 
 public interface ReturnType extends TypeTree{}

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.com.sun.jdi.connect.spi;
+package j86.com.sun.jdi.connect.spi;
 
 /**
  * This exception may be thrown as a result of an asynchronous

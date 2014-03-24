@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.keytool;
+package j86.sun.security.tools.keytool;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>

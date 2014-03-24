@@ -32,10 +32,10 @@ import j86.java.net.Proxy;
 /**
  * This class exists for compatibility with previous JSSE releases
  * only. The HTTPS implementation can now be found in
- * j86.j86.j86.j86.sun.net.www.protocol.https.
+ * j86.sun.net.www.protocol.https.
  *
  */
-public class Handler extends j86.j86.j86.j86.sun.net.www.protocol.https.Handler {
+public class Handler extends j86.sun.net.www.protocol.https.Handler {
 
     public Handler() {
         super();

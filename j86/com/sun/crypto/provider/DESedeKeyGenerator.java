@@ -27,12 +27,12 @@ package j86.com.sun.crypto.provider;
 
 import j86.javax.crypto.KeyGeneratorSpi;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.spec.DESedeKeySpec;
+import j86.javax.crypto.spec.DESedeKeySpec;
 import j86.java.security.SecureRandom;
 import j86.java.security.InvalidParameterException;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.InvalidKeyException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class generates a Triple DES key.

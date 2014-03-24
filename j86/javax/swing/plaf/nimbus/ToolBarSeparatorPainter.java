@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
-import j86.j86.j86.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode;
+import j86.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode;
 import j86.java.awt.Dimension;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Insets;

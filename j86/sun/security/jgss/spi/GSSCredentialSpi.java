@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.spi;
+package j86.sun.security.jgss.spi;
 
 import j86.org.ietf.jgss.*;
 import j86.java.security.Provider;

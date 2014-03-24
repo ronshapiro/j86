@@ -33,14 +33,14 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
-import j86.j86.java.util.function.IntUnaryOperator;
-import j86.j86.java.util.function.IntBinaryOperator;
+package j86.java.util.concurrent.atomic;
+import j86.java.util.function.IntUnaryOperator;
+import j86.java.util.function.IntBinaryOperator;
 import j86.sun.misc.Unsafe;
 
 /**
  * An {@code int} value that may be updated atomically.  See the
- * {@link j86.j86.j86.java.util.concurrent.atomic} package specification for
+ * {@link j86.java.util.concurrent.atomic} package specification for
  * description of the properties of atomic variables. An
  * {@code AtomicInteger} is used in applications such as atomically
  * incremented counters, and cannot be used as a replacement for an

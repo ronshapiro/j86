@@ -32,14 +32,14 @@
 // CHANGELOG
 //      2005-05-19 Edward Wang
 //          - copy this file from icu4jsrc_3_2/src/com/ibm/icu/text/StringPrep.java
-//          - move from package com.ibm.icu.text to package j86.j86.sun.net.idn
+//          - move from package com.ibm.icu.text to package j86.sun.net.idn
 //          - use ParseException instead of StringPrepParseException
 //          - change 'Normalizer.getUnicodeVersion()' to 'NormalizerImpl.getUnicodeVersion()'
 //          - remove all @deprecated tag to make compiler happy
 //      2007-08-14 Martin Buchholz
 //          - remove redundant casts
 //
-package j86.j86.sun.net.idn;
+package j86.sun.net.idn;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.ByteArrayInputStream;
@@ -48,15 +48,15 @@ import j86.java.io.InputStream;
 import j86.java.text.ParseException;
 
 import j86.sun.text.Normalizer;
-import j86.j86.sun.text.normalizer.CharTrie;
-import j86.j86.sun.text.normalizer.Trie;
-import j86.j86.sun.text.normalizer.NormalizerImpl;
-import j86.j86.sun.text.normalizer.VersionInfo;
-import j86.j86.sun.text.normalizer.UCharacter;
-import j86.j86.sun.text.normalizer.UCharacterIterator;
-import j86.j86.sun.text.normalizer.UTF16;
-import j86.j86.sun.net.idn.UCharacterDirection;
-import j86.j86.sun.net.idn.StringPrepDataReader;
+import j86.sun.text.normalizer.CharTrie;
+import j86.sun.text.normalizer.Trie;
+import j86.sun.text.normalizer.NormalizerImpl;
+import j86.sun.text.normalizer.VersionInfo;
+import j86.sun.text.normalizer.UCharacter;
+import j86.sun.text.normalizer.UCharacterIterator;
+import j86.sun.text.normalizer.UTF16;
+import j86.sun.net.idn.UCharacterDirection;
+import j86.sun.net.idn.StringPrepDataReader;
 
 /**
  * StringPrep API implements the StingPrep framework as described by

@@ -33,12 +33,12 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 import j86.java.util.Map;
 import j86.java.util.Objects;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Function;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Function;
 
 /**
  * A {@link j86.java.util.Map} providing thread safety and atomicity

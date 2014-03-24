@@ -38,7 +38,7 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Font;
 
@@ -49,7 +49,7 @@ import j86.java.text.Bidi;
 import j86.java.text.BreakIterator;
 import j86.java.text.CharacterIterator;
 
-import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.FontRenderContext;
 
 import j86.java.util.Hashtable;
 import j86.java.util.Map;

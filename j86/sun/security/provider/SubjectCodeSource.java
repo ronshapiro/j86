@@ -29,8 +29,8 @@ import j86.java.net.URL;
 import j86.java.util.*;
 import j86.java.security.CodeSource;
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.security.cert.Certificate;
+import j86.java.lang.reflect.Constructor;
 
 import j86.javax.security.auth.Subject;
 import j86.sun.security.provider.PolicyParser.PrincipalEntry;

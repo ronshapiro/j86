@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A {@code MutableCallSite} is a {@link CallSite} whose target variable

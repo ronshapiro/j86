@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.pool;
+package j86.com.sun.jndi.ldap.pool;
 
 /**
  * Is a reference to Connections that is stored in Pool.
  * This is an intermediate object that is outside of the circular
  * reference loop of
  *  j86.com.sun.jndi.ldap.Connection <-> com.sun.jndi.ldap.LdapClient
- *    <-> j86.j86.com.sun.jndi.ldap.pool.Connections
+ *    <-> j86.com.sun.jndi.ldap.pool.Connections
  *
  * Because Connection is a daemon thread, it will keep LdapClient
  * alive until LdapClient closes Connection. This will in turn

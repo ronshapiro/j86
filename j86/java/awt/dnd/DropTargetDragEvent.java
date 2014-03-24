@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.awt.Point;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
 
 import j86.java.util.List;
 

@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 /**
  * An {@link ExecutorService} that can schedule commands to run after a given
@@ -71,7 +71,7 @@ package j86.j86.java.util.concurrent;
  * to beep every ten seconds for an hour:
  *
  *  <pre> {@code
- * import static j86.j86.java.util.concurrent.TimeUnit.*;
+ * import static j86.java.util.concurrent.TimeUnit.*;
  * class BeeperControl {
  *   private final ScheduledExecutorService scheduler =
  *     Executors.newScheduledThreadPool(1);

@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.awt.datatransfer;
+package j86.java.awt.datatransfer;
 
 import j86.java.io.*;
 import j86.java.nio.*;
 import j86.java.util.*;
 
-import j86.j86.sun.awt.datatransfer.DataTransferer;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.awt.datatransfer.DataTransferer;
+import j86.sun.reflect.misc.ReflectUtil;
 
 import static j86.sun.security.util.SecurityConstants.GET_CLASSLOADER_PERMISSION;
 
@@ -227,7 +227,7 @@ public class DataFlavor implements Externalizable, Cloneable {
      *
      * The representation class associated with this <code>DataFlavor</code>
      * identifies the Java type of an object returned as a reference
-     * from an invocation <code>j86.j86.java.awt.datatransfer.getTransferData</code>.
+     * from an invocation <code>j86.java.awt.datatransfer.getTransferData</code>.
      */
     public static final String javaSerializedObjectMimeType = "application/x-java-serialized-object";
 

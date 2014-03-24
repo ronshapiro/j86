@@ -24,16 +24,16 @@
  */
 package j86.java.beans;
 
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Method;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.sun.reflect.misc.MethodUtil;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * The <code>EventHandler</code> class provides
@@ -266,7 +266,7 @@ import j86.j86.sun.reflect.misc.ReflectUtil;
  * undefined.  For that reason we recommend against targeting overloaded
  * methods.
  *
- * @see j86.j86.j86.java.lang.reflect.Proxy
+ * @see j86.java.lang.reflect.Proxy
  * @see j86.java.util.EventObject
  *
  * @since 1.4

@@ -28,8 +28,8 @@ package j86.sun.tools.jstat;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.event.*;
-import j86.j86.java.util.regex.PatternSyntaxException;
+import j86.sun.jvmstat.monitor.event.*;
+import j86.java.util.regex.PatternSyntaxException;
 
 /**
  * Class to sample and output various jvmstat statistics for a target Java

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.swing.undo;
+package j86.javax.swing.undo;
 
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 /**
  * An <code>UndoableEdit</code> represents an edit.  The edit may

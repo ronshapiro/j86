@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.sun.invoke.WrapperInstance;
 import j86.java.util.ArrayList;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class consists exclusively of static methods that help adapt
@@ -86,7 +86,7 @@ public class MethodHandleProxies {
      * which means any checked exception (or other checked throwable)
      * not declared by the requested type's single abstract method.
      * If this happens, the throwable will be wrapped in an instance of
-     * {@link j86.j86.j86.java.lang.reflect.UndeclaredThrowableException UndeclaredThrowableException}
+     * {@link j86.java.lang.reflect.UndeclaredThrowableException UndeclaredThrowableException}
      * and thrown in that wrapped form.
      * <p>
      * Like {@link j86.java.lang.Integer#valueOf Integer.valueOf},
@@ -94,7 +94,7 @@ public class MethodHandleProxies {
      * by their behavior.
      * It is not guaranteed to return a new instance for every call.
      * <p>
-     * Because of the possibility of {@linkplain j86.j86.j86.java.lang.reflect.Method#isBridge bridge methods}
+     * Because of the possibility of {@linkplain j86.java.lang.reflect.Method#isBridge bridge methods}
      * and other corner cases, the interface may also have several abstract methods
      * with the same name but having distinct descriptors (types of returns and parameters).
      * In this case, all the methods are bound in common to the one given target.

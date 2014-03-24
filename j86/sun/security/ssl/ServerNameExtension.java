@@ -26,7 +26,7 @@
 package j86.sun.security.ssl;
 
 import j86.java.io.IOException;
-import j86.j86.java.nio.charset.StandardCharsets;
+import j86.java.nio.charset.StandardCharsets;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
@@ -34,11 +34,11 @@ import j86.java.util.List;
 import j86.java.util.LinkedHashMap;
 import j86.java.util.Map;
 
-import j86.j86.javax.net.ssl.SNIHostName;
-import j86.j86.javax.net.ssl.SNIMatcher;
-import j86.j86.javax.net.ssl.SNIServerName;
-import j86.j86.javax.net.ssl.SSLProtocolException;
-import j86.j86.javax.net.ssl.StandardConstants;
+import j86.javax.net.ssl.SNIHostName;
+import j86.javax.net.ssl.SNIMatcher;
+import j86.javax.net.ssl.SNIServerName;
+import j86.javax.net.ssl.SSLProtocolException;
+import j86.javax.net.ssl.StandardConstants;
 
 /*
  * [RFC 4366/6066] To facilitate secure connections to servers that host

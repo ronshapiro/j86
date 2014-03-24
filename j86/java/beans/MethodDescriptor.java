@@ -25,9 +25,9 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Method;
 import j86.java.util.List;
 import j86.java.util.ArrayList;
 

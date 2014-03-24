@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.MethodAccessor;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.generics.repository.MethodRepository;
-import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.scope.MethodScope;
-import j86.j86.sun.reflect.annotation.AnnotationType;
-import j86.j86.sun.reflect.annotation.AnnotationParser;
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.java.lang.annotation.AnnotationFormatError;
+import j86.sun.reflect.generics.repository.MethodRepository;
+import j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.scope.MethodScope;
+import j86.sun.reflect.annotation.AnnotationType;
+import j86.sun.reflect.annotation.AnnotationParser;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.annotation.AnnotationFormatError;
 import j86.java.nio.ByteBuffer;
 
 /**
@@ -141,7 +141,7 @@ public final class Method extends Executable {
         // among Method objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new j86.j86.j86.java.lang.reflect
+        // which implicitly requires that new j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Method res = new Method(clazz, name, parameterTypes, returnType,
@@ -593,7 +593,7 @@ public final class Method extends Executable {
             j86.sun.misc.SharedSecrets.getJavaLangAccess().
                 getConstantPool(getDeclaringClass()),
             getDeclaringClass());
-        if (result instanceof j86.j86.sun.reflect.annotation.ExceptionProxy)
+        if (result instanceof j86.sun.reflect.annotation.ExceptionProxy)
             throw new AnnotationFormatError("Invalid default: " + this);
         return result;
     }

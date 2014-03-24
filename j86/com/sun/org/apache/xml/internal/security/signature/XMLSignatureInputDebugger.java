@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 import j86.java.io.IOException;
 import j86.java.io.StringWriter;
@@ -28,8 +28,8 @@ import j86.java.io.Writer;
 import j86.java.util.Arrays;
 import j86.java.util.Set;
 
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Comment;
 import org.w3c.dom.Document;

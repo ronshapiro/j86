@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.metadata;
+package j86.javax.imageio.metadata;
 
 /**
  * An interface to be implemented by objects that can determine the

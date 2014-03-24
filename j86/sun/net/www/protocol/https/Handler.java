@@ -27,14 +27,14 @@
  *      HTTP stream opener
  */
 
-package j86.j86.j86.j86.sun.net.www.protocol.https;
+package j86.sun.net.www.protocol.https;
 
 import j86.java.io.IOException;
 import j86.java.net.URL;
 import j86.java.net.Proxy;
 
 /** open an http input stream given a URL */
-public class Handler extends j86.j86.j86.sun.net.www.protocol.http.Handler {
+public class Handler extends j86.sun.net.www.protocol.http.Handler {
     protected String proxy;
     protected int proxyPort;
 

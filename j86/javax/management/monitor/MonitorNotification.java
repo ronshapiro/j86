@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.monitor;
+package j86.javax.management.monitor;
 
 
 // jmx imports

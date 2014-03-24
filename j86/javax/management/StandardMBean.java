@@ -38,15 +38,15 @@ import j86.java.security.PrivilegedAction;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.logging.Level;
-import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfo;
-import j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanConstructorInfo;
-import j86.j86.javax.management.openmbean.OpenMBeanConstructorInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanOperationInfo;
-import j86.j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
-import j86.j86.javax.management.openmbean.OpenMBeanParameterInfo;
-import j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
+import j86.java.util.logging.Level;
+import j86.javax.management.openmbean.OpenMBeanAttributeInfo;
+import j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanConstructorInfo;
+import j86.javax.management.openmbean.OpenMBeanConstructorInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanOperationInfo;
+import j86.javax.management.openmbean.OpenMBeanOperationInfoSupport;
+import j86.javax.management.openmbean.OpenMBeanParameterInfo;
+import j86.javax.management.openmbean.OpenMBeanParameterInfoSupport;
 
 /**
  * <p>An MBean whose management interface is determined by reflection

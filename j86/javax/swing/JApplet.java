@@ -25,7 +25,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.applet.Applet;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.util.Locale;

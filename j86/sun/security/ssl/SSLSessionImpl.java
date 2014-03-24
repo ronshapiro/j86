@@ -38,18 +38,18 @@ import j86.java.util.ArrayList;
 import j86.java.security.Principal;
 import j86.java.security.PrivateKey;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateEncodingException;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateEncodingException;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.javax.net.ssl.SSLSessionContext;
-import j86.j86.javax.net.ssl.SSLSessionBindingListener;
-import j86.j86.javax.net.ssl.SSLSessionBindingEvent;
-import j86.j86.javax.net.ssl.SSLPeerUnverifiedException;
-import j86.j86.javax.net.ssl.SSLPermission;
-import j86.j86.javax.net.ssl.ExtendedSSLSession;
-import j86.j86.javax.net.ssl.SNIServerName;
+import j86.javax.net.ssl.SSLSessionContext;
+import j86.javax.net.ssl.SSLSessionBindingListener;
+import j86.javax.net.ssl.SSLSessionBindingEvent;
+import j86.javax.net.ssl.SSLPeerUnverifiedException;
+import j86.javax.net.ssl.SSLPermission;
+import j86.javax.net.ssl.ExtendedSSLSession;
+import j86.javax.net.ssl.SNIServerName;
 
 import static j86.sun.security.ssl.CipherSuite.KeyExchange.*;
 
@@ -382,7 +382,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
 
     /**
      * Return the cert chain presented by the peer in the
-     * j86.j86.java.security.cert format.
+     * j86.java.security.cert format.
      * Note: This method can be used only when using certificate-based
      * cipher suites; using it with non-certificate-based cipher suites,
      * such as Kerberos, will throw an SSLPeerUnverifiedException.
@@ -391,7 +391,7 @@ final class SSLSessionImpl extends ExtendedSSLSession {
      *  first in the chain, and with the "root" CA last.
      */
     @Override
-    public j86.j86.java.security.cert.Certificate[] getPeerCertificates()
+    public j86.java.security.cert.Certificate[] getPeerCertificates()
             throws SSLPeerUnverifiedException {
         //
         // clone to preserve integrity of session ... caller can't
@@ -409,12 +409,12 @@ final class SSLSessionImpl extends ExtendedSSLSession {
         // Certs are immutable objects, therefore we don't clone them.
         // But do need to clone the array, so that nothing is inserted
         // into peerCerts.
-        return (j86.j86.java.security.cert.Certificate[])peerCerts.clone();
+        return (j86.java.security.cert.Certificate[])peerCerts.clone();
     }
 
     /**
      * Return the cert chain presented to the peer in the
-     * j86.j86.java.security.cert format.
+     * j86.java.security.cert format.
      * Note: This method is useful only when using certificate-based
      * cipher suites.
      *
@@ -422,13 +422,13 @@ final class SSLSessionImpl extends ExtendedSSLSession {
      *  first in the chain, and with the "root" CA last.
      */
     @Override
-    public j86.j86.java.security.cert.Certificate[] getLocalCertificates() {
+    public j86.java.security.cert.Certificate[] getLocalCertificates() {
         //
         // clone to preserve integrity of session ... caller can't
         // change record of peer identity even by accident, much
         // less do it intentionally.
         return (localCerts == null ? null :
-            (j86.j86.java.security.cert.Certificate[])localCerts.clone());
+            (j86.java.security.cert.Certificate[])localCerts.clone());
     }
 
     /**

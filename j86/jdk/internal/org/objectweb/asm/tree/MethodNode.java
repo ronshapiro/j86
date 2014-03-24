@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.tree;
+package j86.jdk.internal.org.objectweb.asm.tree;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
@@ -116,7 +116,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime visible annotations of this method. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label visible
      */
     public List<AnnotationNode> visibleAnnotations;
@@ -125,7 +125,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime invisible annotations of this method. This list is a list of
      * {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label invisible
      */
     public List<AnnotationNode> invisibleAnnotations;
@@ -134,7 +134,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime visible type annotations of this method. This list is a list
      * of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label visible
      */
     public List<TypeAnnotationNode> visibleTypeAnnotations;
@@ -143,7 +143,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime invisible type annotations of this method. This list is a
      * list of {@link TypeAnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode
      * @label invisible
      */
     public List<TypeAnnotationNode> invisibleTypeAnnotations;
@@ -170,7 +170,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime visible parameter annotations of this method. These lists are
      * lists of {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label invisible parameters
      */
     public List<AnnotationNode>[] visibleParameterAnnotations;
@@ -179,7 +179,7 @@ public class MethodNode extends MethodVisitor {
      * The runtime invisible parameter annotations of this method. These lists
      * are lists of {@link AnnotationNode} objects. May be <tt>null</tt>.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AnnotationNode
      * @label visible parameters
      */
     public List<AnnotationNode>[] invisibleParameterAnnotations;
@@ -188,7 +188,7 @@ public class MethodNode extends MethodVisitor {
      * The instructions of this method. This list is a list of
      * {@link AbstractInsnNode} objects.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.AbstractInsnNode
      * @label instructions
      */
     public InsnList instructions;
@@ -197,7 +197,7 @@ public class MethodNode extends MethodVisitor {
      * The try catch blocks of this method. This list is a list of
      * {@link TryCatchBlockNode} objects.
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode
      */
     public List<TryCatchBlockNode> tryCatchBlocks;
 
@@ -215,7 +215,7 @@ public class MethodNode extends MethodVisitor {
      * The local variables of this method. This list is a list of
      * {@link LocalVariableNode} objects. May be <tt>null</tt>
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.LocalVariableNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.LocalVariableNode
      */
     public List<LocalVariableNode> localVariables;
 
@@ -223,7 +223,7 @@ public class MethodNode extends MethodVisitor {
      * The visible local variable annotations of this method. This list is a
      * list of {@link LocalVariableAnnotationNode} objects. May be <tt>null</tt>
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode
      */
     public List<LocalVariableAnnotationNode> visibleLocalVariableAnnotations;
 
@@ -231,7 +231,7 @@ public class MethodNode extends MethodVisitor {
      * The invisible local variable annotations of this method. This list is a
      * list of {@link LocalVariableAnnotationNode} objects. May be <tt>null</tt>
      *
-     * @associates j86.j86.jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode
+     * @associates j86.jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode
      */
     public List<LocalVariableAnnotationNode> invisibleLocalVariableAnnotations;
 

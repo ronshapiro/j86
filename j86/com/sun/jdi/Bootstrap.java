@@ -43,7 +43,7 @@ public class Bootstrap extends Object {
      * <p> May throw an unspecified error if initialization of the
      * {@link j86.com.sun.jdi.VirtualMachineManager} fails or if
      * the virtual machine manager is unable to locate or create
-     * any {@link j86.j86.com.sun.jdi.connect.Connector Connectors}. </p>
+     * any {@link j86.com.sun.jdi.connect.Connector Connectors}. </p>
      * <p>
      * @throws j86.java.lang.SecurityException if a security manager has been
      * installed and it denies {@link JDIPermission}

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.protocol.local;
+package j86.sun.jvmstat.perfdata.monitor.protocol.local;
 
 import j86.sun.misc.Perf;
 import j86.sun.jvmstat.monitor.*;
@@ -31,8 +31,8 @@ import j86.sun.jvmstat.perfdata.monitor.*;
 import j86.java.util.*;
 import j86.java.io.*;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.channels.FileChannel;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.nio.channels.FileChannel;
+import j86.java.lang.reflect.Constructor;
 import j86.java.security.AccessController;
 
 /**

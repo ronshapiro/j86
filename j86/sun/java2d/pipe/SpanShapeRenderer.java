@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
 import j86.java.awt.BasicStroke;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Rectangle2D;
 import j86.sun.awt.SunHints;
 
 /**

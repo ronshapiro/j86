@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
+package j86.com.sun.org.apache.xml.internal.security.c14n.implementations;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
@@ -36,14 +36,14 @@ import j86.java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi;
+import j86.com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare;
+import j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Comment;
 import org.w3c.dom.Element;

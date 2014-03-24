@@ -25,19 +25,19 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.*;
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.awt.event.*;
+import j86.java.awt.image.*;
+import j86.java.lang.reflect.*;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.*;
 
 import j86.com.sun.java.swing.SwingUtilities3;
 
 import j86.sun.awt.SubRegionShowable;
 import j86.sun.java2d.SunGraphics2D;
-import j86.j86.j86.sun.java2d.pipe.hw.ExtendedBufferCapabilities;
+import j86.sun.java2d.pipe.hw.ExtendedBufferCapabilities;
 import j86.sun.awt.SunToolkit;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * A PaintManager implementation that uses a BufferStrategy for

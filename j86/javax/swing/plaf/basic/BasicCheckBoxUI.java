@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.sun.awt.AppContext;
 
 import j86.javax.swing.*;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.java.awt.event.*;
+import j86.javax.swing.plaf.*;
 import j86.java.io.Serializable;
 
 

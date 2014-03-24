@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.security.spec;
+package j86.java.security.spec;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class specifies the set of parameters used with mask generation
@@ -50,7 +50,7 @@ import j86.j86.java.security.spec.AlgorithmParameterSpec;
  * }
  * </pre>
  * @see PSSParameterSpec
- * @see j86.j86.javax.crypto.spec.OAEPParameterSpec
+ * @see j86.javax.crypto.spec.OAEPParameterSpec
  *
  * @author Valerie Peng
  *

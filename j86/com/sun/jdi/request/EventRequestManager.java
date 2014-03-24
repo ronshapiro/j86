@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -35,9 +35,9 @@ import j86.java.util.List;
  * is accessed through {@link VirtualMachine#eventRequestManager()}
  *
  * @see EventRequest
- * @see j86.j86.com.sun.jdi.event.Event
+ * @see j86.com.sun.jdi.event.Event
  * @see BreakpointRequest
- * @see j86.j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.com.sun.jdi.event.BreakpointEvent
  * @see VirtualMachine
  *
  * @author Robert Field
@@ -98,7 +98,7 @@ public interface EventRequestManager extends Mirror {
      * or both can be selected. Note, however, that
      * at the time an exception is thrown, it is not always
      * possible to determine whether it is truly caught. See
-     * {@link j86.j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
+     * {@link j86.com.sun.jdi.event.ExceptionEvent#catchLocation} for
      * details.
      * @param refType If non-null, specifies that exceptions which are
      *                instances of refType will be reported. Note: this
@@ -218,19 +218,19 @@ public interface EventRequestManager extends Mirror {
      * <p>
      * The returned request will control stepping only in the specified
      * <code>thread</code>; all other threads will be unaffected.
-     * A <code>size</code>value of {@link j86.j86.com.sun.jdi.request.StepRequest#STEP_MIN} will generate a
+     * A <code>size</code>value of {@link j86.com.sun.jdi.request.StepRequest#STEP_MIN} will generate a
      * step event each time the code index changes. It represents the
      * smallest step size available and often maps to the instruction
      * level.
-     * A <code>size</code> value of {@link j86.j86.com.sun.jdi.request.StepRequest#STEP_LINE} will generate a
+     * A <code>size</code> value of {@link j86.com.sun.jdi.request.StepRequest#STEP_LINE} will generate a
      * step event each time the source line changes unless line number information is not available,
      * in which case a STEP_MIN will be done instead.  For example, no line number information is
      * available during the execution of a method that has been rendered obsolete by
      * by a {@link j86.com.sun.jdi.VirtualMachine#redefineClasses} operation.
-     * A <code>depth</code> value of {@link j86.j86.com.sun.jdi.request.StepRequest#STEP_INTO} will generate
+     * A <code>depth</code> value of {@link j86.com.sun.jdi.request.StepRequest#STEP_INTO} will generate
      * step events in any called methods.  A <code>depth</code> value
-     * of {@link j86.j86.com.sun.jdi.request.StepRequest#STEP_OVER} restricts step events to the current frame
-     * or caller frames. A <code>depth</code> value of {@link j86.j86.com.sun.jdi.request.StepRequest#STEP_OUT}
+     * of {@link j86.com.sun.jdi.request.StepRequest#STEP_OVER} restricts step events to the current frame
+     * or caller frames. A <code>depth</code> value of {@link j86.com.sun.jdi.request.StepRequest#STEP_OUT}
      * restricts step events to caller frames only. All depth
      * restrictions are relative to the call stack immediately before the
      * step takes place.
@@ -330,7 +330,7 @@ public interface EventRequestManager extends Mirror {
      * activate this event request.
      * <P>
      * This request (if enabled) will cause a
-     * {@link j86.j86.com.sun.jdi.event.VMDeathEvent}
+     * {@link j86.com.sun.jdi.event.VMDeathEvent}
      * to be sent on termination of the target VM.
      * <P>
      * A VMDeathRequest with a suspend policy of
@@ -341,8 +341,8 @@ public interface EventRequestManager extends Mirror {
      * events before VM death.  If all event processing is being
      * done in the same thread as event sets are being read,
      * enabling the request is all that is needed since the VM
-     * will be suspended until the {@link j86.j86.com.sun.jdi.event.EventSet}
-     * containing the {@link j86.j86.com.sun.jdi.event.VMDeathEvent}
+     * will be suspended until the {@link j86.com.sun.jdi.event.EventSet}
+     * containing the {@link j86.com.sun.jdi.event.VMDeathEvent}
      * is resumed.
      * <P>
      * Not all target virtual machines support this operation.

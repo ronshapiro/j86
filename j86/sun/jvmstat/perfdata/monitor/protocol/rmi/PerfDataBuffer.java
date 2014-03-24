@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.jvmstat.perfdata.monitor.protocol.rmi;
+package j86.sun.jvmstat.perfdata.monitor.protocol.rmi;
 
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.monitor.remote.*;
 import j86.sun.jvmstat.perfdata.monitor.*;
 import j86.java.io.*;
 import j86.java.rmi.RemoteException;

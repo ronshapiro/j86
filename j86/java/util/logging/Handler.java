@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 import j86.java.io.UnsupportedEncodingException;
 /**
@@ -151,10 +151,10 @@ public abstract class Handler {
         checkPermission();
         if (encoding != null) {
             try {
-                if(!j86.j86.java.nio.charset.Charset.isSupported(encoding)) {
+                if(!j86.java.nio.charset.Charset.isSupported(encoding)) {
                     throw new UnsupportedEncodingException(encoding);
                 }
-            } catch (j86.j86.java.nio.charset.IllegalCharsetNameException e) {
+            } catch (j86.java.nio.charset.IllegalCharsetNameException e) {
                 throw new UnsupportedEncodingException(encoding);
             }
         }

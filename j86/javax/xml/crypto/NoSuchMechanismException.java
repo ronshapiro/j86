@@ -29,11 +29,11 @@ package j86.javax.xml.crypto;
 
 import j86.java.io.PrintStream;
 import j86.java.io.PrintWriter;
-import j86.j86.javax.xml.crypto.dsig.Manifest;
-import j86.j86.javax.xml.crypto.dsig.XMLSignature;
-import j86.j86.javax.xml.crypto.dsig.XMLSignatureFactory;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
+import j86.javax.xml.crypto.dsig.Manifest;
+import j86.javax.xml.crypto.dsig.XMLSignature;
+import j86.javax.xml.crypto.dsig.XMLSignatureFactory;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfoFactory;
 
 /**
  * This exception is thrown when a particular XML mechanism is requested but

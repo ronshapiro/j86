@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
@@ -39,10 +39,10 @@ import j86.java.util.Properties;
 import j86.java.util.Set;
 import j86.java.util.SortedMap;
 import j86.java.util.TreeMap;
-import j86.j86.java.util.jar.Pack200;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.util.jar.Pack200;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 
 /**
  * Control block for publishing Pack200 options to the other classes.

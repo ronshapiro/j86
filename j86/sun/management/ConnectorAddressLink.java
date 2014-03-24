@@ -31,12 +31,12 @@ import j86.java.util.HashMap;
 import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.java.util.Map;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 
 import j86.sun.misc.Perf;
-import j86.j86.sun.management.counter.Units;
-import j86.j86.sun.management.counter.Counter;
-import j86.j86.j86.sun.management.counter.perf.PerfInstrumentation;
+import j86.sun.management.counter.Units;
+import j86.sun.management.counter.Counter;
+import j86.sun.management.counter.perf.PerfInstrumentation;
 
 /**
  * A utility class to support the exporting and importing of the address

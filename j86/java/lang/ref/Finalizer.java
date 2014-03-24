@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.ref;
+package j86.java.lang.ref;
 
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AccessController;

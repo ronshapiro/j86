@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
-import j86.j86.java.nio.channels.*;
-import j86.j86.java.util.concurrent.*;
+import j86.java.nio.channels.*;
+import j86.java.util.concurrent.*;
 import j86.java.security.AccessController;
 import j86.sun.security.action.GetIntegerAction;
 
@@ -41,7 +41,7 @@ class Invoker {
     // thread before it re-directs invocations to the thread pool. This helps
     // avoid stack overflow and lessens the risk of starvation.
     private static final int maxHandlerInvokeCount = AccessController.doPrivileged(
-        new GetIntegerAction("j86.j86.j86.sun.nio.ch.maxCompletionHandlersOnStack", 16));
+        new GetIntegerAction("j86.sun.nio.ch.maxCompletionHandlersOnStack", 16));
 
     // Per-thread object with reference to channel group and a counter for
     // the number of completion handlers invoked. This should be reset to 0

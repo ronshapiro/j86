@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.prefs;
+package j86.java.util.prefs;
 import j86.java.util.*;
 
 /**

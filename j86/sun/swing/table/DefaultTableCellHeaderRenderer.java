@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.swing.table;
+package j86.sun.swing.table;
 
 import j86.sun.swing.DefaultLookup;
 
@@ -35,9 +35,9 @@ import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.io.Serializable;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.table.*;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.table.*;
 
 public class DefaultTableCellHeaderRenderer extends DefaultTableCellRenderer
         implements UIResource {

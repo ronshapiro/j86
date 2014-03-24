@@ -26,10 +26,10 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.event.*;
-import j86.j86.javax.naming.ldap.*;
-import j86.j86.javax.naming.ldap.LdapName;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.event.*;
+import j86.javax.naming.ldap.*;
+import j86.javax.naming.ldap.LdapName;
 
 import j86.java.util.Vector;
 import j86.com.sun.jndi.toolkit.ctx.Continuation;

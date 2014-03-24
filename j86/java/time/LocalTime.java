@@ -61,14 +61,14 @@
  */
 package j86.java.time;
 
-import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.MICRO_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
-import static j86.j86.java.time.temporal.ChronoUnit.NANOS;
+import static j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.java.time.temporal.ChronoField.MICRO_OF_DAY;
+import static j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.java.time.temporal.ChronoField.NANO_OF_DAY;
+import static j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.java.time.temporal.ChronoField.SECOND_OF_DAY;
+import static j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.java.time.temporal.ChronoUnit.NANOS;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -76,20 +76,20 @@ import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.format.DateTimeFormatter;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.format.DateTimeFormatter;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Objects;
 
 /**
@@ -416,7 +416,7 @@ public final class LocalTime
      * Obtains an instance of {@code LocalTime} from a text string such as {@code 10:15}.
      * <p>
      * The string must represent a valid time and is parsed using
-     * {@link j86.j86.java.time.format.DateTimeFormatter#ISO_LOCAL_TIME}.
+     * {@link j86.java.time.format.DateTimeFormatter#ISO_LOCAL_TIME}.
      *
      * @param text the text to parse such as "10:15:30", not null
      * @return the parsed local time, not null

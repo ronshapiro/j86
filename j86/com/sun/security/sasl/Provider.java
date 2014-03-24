@@ -59,11 +59,11 @@ public final class Provider extends j86.java.security.Provider {
             public Void run() {
                 // Client mechanisms
                 put("SaslClientFactory.DIGEST-MD5",
-                    "j86.j86.com.sun.security.sasl.digest.FactoryImpl");
+                    "j86.com.sun.security.sasl.digest.FactoryImpl");
                 put("SaslClientFactory.NTLM",
-                    "j86.j86.com.sun.security.sasl.ntlm.FactoryImpl");
+                    "j86.com.sun.security.sasl.ntlm.FactoryImpl");
                 put("SaslClientFactory.GSSAPI",
-                    "j86.j86.com.sun.security.sasl.gsskerb.FactoryImpl");
+                    "j86.com.sun.security.sasl.gsskerb.FactoryImpl");
 
                 put("SaslClientFactory.EXTERNAL",
                     "j86.com.sun.security.sasl.ClientFactoryImpl");
@@ -76,11 +76,11 @@ public final class Provider extends j86.java.security.Provider {
                 put("SaslServerFactory.CRAM-MD5",
                     "j86.com.sun.security.sasl.ServerFactoryImpl");
                 put("SaslServerFactory.GSSAPI",
-                    "j86.j86.com.sun.security.sasl.gsskerb.FactoryImpl");
+                    "j86.com.sun.security.sasl.gsskerb.FactoryImpl");
                 put("SaslServerFactory.DIGEST-MD5",
-                    "j86.j86.com.sun.security.sasl.digest.FactoryImpl");
+                    "j86.com.sun.security.sasl.digest.FactoryImpl");
                 put("SaslServerFactory.NTLM",
-                    "j86.j86.com.sun.security.sasl.ntlm.FactoryImpl");
+                    "j86.com.sun.security.sasl.ntlm.FactoryImpl");
                 return null;
             }
         });

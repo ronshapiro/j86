@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_de extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "{0} kann nicht ordnungsgem\u00E4\u00DF erweitert werden"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (Datei oder Verzeichnis nicht vorhanden)"},
@@ -78,11 +78,11 @@ public class AuthResources_de extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Konfigurationsfehler:\n\tZeile {0}: Systemeigenschaft [{1}] auf leeren Wert erweitert"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","Benutzername: "},
         {"password.","Kennwort: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Geben Sie die Keystore-Informationen ein"},
         {"Keystore.alias.","Keystore-Alias: "},
@@ -90,7 +90,7 @@ public class AuthResources_de extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Private Key-Kennwort (optional): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos-Benutzername [{0}]: "},
         {"Kerberos.password.for.username.",

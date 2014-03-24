@@ -26,19 +26,19 @@
 /*
  * $Id: DOMURIDereferencer.java 1231033 2012-01-13 12:12:12Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import j86.com.sun.org.apache.xml.internal.security.Init;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.*;
+import j86.javax.xml.crypto.dom.*;
 
 /**
  * DOM-based implementation of URIDereferencer.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.math.BigInteger;
 
@@ -45,23 +45,23 @@ import j86.java.util.Set;
 import j86.java.security.*;
 import j86.java.security.KeyStore.*;
 
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertificateException;
 
-import j86.j86.java.security.interfaces.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.interfaces.*;
+import j86.java.security.spec.*;
 
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.interfaces.*;
+import j86.javax.crypto.interfaces.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
-import j86.j86.javax.security.auth.login.LoginException;
-import j86.j86.javax.security.auth.callback.Callback;
-import j86.j86.javax.security.auth.callback.PasswordCallback;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.PasswordCallback;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.DerValue;
@@ -69,11 +69,11 @@ import j86.sun.security.util.ECUtil;
 
 import j86.sun.security.ec.ECParameters;
 
-import j86.j86.sun.security.pkcs11.Secmod.*;
-import static j86.j86.sun.security.pkcs11.P11Util.*;
+import j86.sun.security.pkcs11.Secmod.*;
+import static j86.sun.security.pkcs11.P11Util.*;
 
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 import j86.sun.security.rsa.RSAKeyFactory;
 

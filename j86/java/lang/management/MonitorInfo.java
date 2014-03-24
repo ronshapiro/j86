@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
-import j86.j86.javax.management.openmbean.CompositeData;
+import j86.javax.management.openmbean.CompositeData;
 import j86.sun.management.MonitorInfoCompositeData;
 
 /**

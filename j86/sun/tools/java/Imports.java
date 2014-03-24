@@ -110,13 +110,13 @@ class Imports implements Constants {
         // import each others' classes.
 
         // A note: the resolution of the package j86.java.lang takes place
-        // in the j86.j86.sun.tools.javac.BatchEnvironment#setExemptPackages().
+        // in the j86.sun.tools.javac.BatchEnvironment#setExemptPackages().
 
         // Make sure that the current package's name does not collide
         // with the name of an existing class. (bug 4101529)
         //
         // This change has been backed out because, on WIN32, it
-        // failed to distinguish between j86.j86.java.awt.event and
+        // failed to distinguish between j86.java.awt.event and
         // j86.java.awt.Event when looking for a directory.  We will
         // add this back in later.
         //
@@ -142,7 +142,7 @@ class Imports implements Constants {
 
             // Check to see if this package is exempt from the "exists"
             // check.  See the note in
-            // j86.j86.sun.tools.javac.BatchEnvironment#setExemptPackages()
+            // j86.sun.tools.javac.BatchEnvironment#setExemptPackages()
             // for more information.
             if (env.isExemptPackage(nm)) {
                 resolvedPackages.addElement(t);

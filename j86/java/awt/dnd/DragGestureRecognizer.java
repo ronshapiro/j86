@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.InputEvent;
 import j86.java.awt.Component;
 import j86.java.awt.Point;
 
@@ -61,7 +61,7 @@ import j86.java.io.Serializable;
  * on the <code>Component</code> as a drag initiating gesture, it will notify
  * its unicast <code>DragGestureListener</code> by
  * invoking its
- * {@link j86.j86.java.awt.dnd.DragGestureListener#dragGestureRecognized gestureRecognized()}
+ * {@link j86.java.awt.dnd.DragGestureListener#dragGestureRecognized gestureRecognized()}
  * method.
  * <P>
  * When a concrete <code>DragGestureRecognizer</code>
@@ -76,9 +76,9 @@ import j86.java.io.Serializable;
  * appropriate).
  * <P>
  * @author Laurence P. G. Cable
- * @see j86.j86.java.awt.dnd.DragGestureListener
- * @see j86.j86.java.awt.dnd.DragGestureEvent
- * @see j86.j86.java.awt.dnd.DragSource
+ * @see j86.java.awt.dnd.DragGestureListener
+ * @see j86.java.awt.dnd.DragGestureEvent
+ * @see j86.java.awt.dnd.DragSource
  */
 
 public abstract class DragGestureRecognizer implements Serializable {

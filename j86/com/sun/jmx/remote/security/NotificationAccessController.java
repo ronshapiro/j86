@@ -47,7 +47,7 @@ public interface NotificationAccessController {
 
     /**
      * This method is called when a remote
-     * {@link j86.j86.javax.management.remote.JMXConnector} invokes the method
+     * {@link j86.javax.management.remote.JMXConnector} invokes the method
      * {@link j86.javax.management.MBeanServerConnection#addNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
      *
      * @param connectionId the {@code connectionId} of the remote client
@@ -66,7 +66,7 @@ public interface NotificationAccessController {
 
     /**
      * This method is called when a remote
-     * {@link j86.j86.javax.management.remote.JMXConnector} invokes the method
+     * {@link j86.javax.management.remote.JMXConnector} invokes the method
      * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener)}
      * or the method
      * {@link j86.javax.management.MBeanServerConnection#removeNotificationListener(ObjectName,NotificationListener,NotificationFilter,Object)}.
@@ -87,7 +87,7 @@ public interface NotificationAccessController {
 
     /**
      * This method is called before the
-     * {@link j86.j86.javax.management.remote.JMXConnectorServer}
+     * {@link j86.javax.management.remote.JMXConnectorServer}
      * forwards the notification to the interested remote
      * listener represented by the authenticated subject.
      *

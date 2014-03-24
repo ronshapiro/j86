@@ -33,23 +33,23 @@ import j86.java.awt.Image;
 import j86.java.awt.Shape;
 import j86.java.awt.Transparency;
 
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.TextLayout;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Area;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Line2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Area;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Line2D;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.sun.awt.image.ByteComponentRaster;
 
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
+import j86.java.awt.print.PrinterJob;
 
 /**
  * This class converts paths into PostScript

@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.naming.ldap;
+package j86.javax.naming.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
+import j86.javax.naming.directory.*;
 
 import j86.java.util.Hashtable;
 
@@ -82,8 +82,8 @@ import j86.java.util.Hashtable;
   *
   * @see LdapContext
   * @see j86.javax.naming.InitialContext
-  * @see j86.j86.javax.naming.directory.InitialDirContext
-  * @see j86.j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
+  * @see j86.javax.naming.directory.InitialDirContext
+  * @see j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
   * @since 1.3
   */
 

@@ -27,10 +27,10 @@ package j86.sun.security.x509;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.java.security.cert.CRLException;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.security.cert.CRLException;
+import j86.java.security.cert.CertificateException;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
 import j86.java.util.Enumeration;

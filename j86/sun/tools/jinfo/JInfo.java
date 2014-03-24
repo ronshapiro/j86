@@ -25,7 +25,7 @@
 
 package j86.sun.tools.jinfo;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
 

@@ -27,13 +27,13 @@ package j86.sun.applet;
 
 import j86.java.applet.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.MemoryImageSource;
+import j86.java.awt.event.*;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.MemoryImageSource;
 import j86.java.io.*;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.java.net.InetAddress;
 import j86.java.net.JarURLConnection;
 import j86.java.net.MalformedURLException;
@@ -1059,7 +1059,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
                         Policy p = j86.java.security.Policy.getPolicy();
                         if (p != null) {
                             return p.getPermissions(new CodeSource(null,
-                                                                   (j86.j86.java.security.cert.Certificate[]) null));
+                                                                   (j86.java.security.cert.Certificate[]) null));
                         } else {
                             return null;
                         }
@@ -1113,7 +1113,7 @@ abstract class AppletPanel extends Panel implements AppletStub, Runnable {
 
         ProtectionDomain domain =
             new ProtectionDomain(new CodeSource(codebase,
-                                                (j86.j86.java.security.cert.Certificate[]) null), perms);
+                                                (j86.java.security.cert.Certificate[]) null), perms);
         AccessControlContext acc =
             new AccessControlContext(new ProtectionDomain[] { domain });
 

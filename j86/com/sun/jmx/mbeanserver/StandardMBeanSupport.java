@@ -25,7 +25,7 @@
 
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 import j86.javax.management.MBeanInfo;
 import j86.javax.management.MBeanServer;

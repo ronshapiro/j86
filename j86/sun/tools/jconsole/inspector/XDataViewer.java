@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.javax.swing.JTable;
 import j86.javax.swing.JScrollPane;
 import j86.javax.swing.JButton;
 
-import j86.j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseListener;
 import j86.java.awt.Component;
 import j86.java.awt.Container;
 

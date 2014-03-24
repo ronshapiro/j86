@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.www;
+package j86.sun.net.www;
 
 import j86.java.util.BitSet;
 import j86.java.io.UnsupportedEncodingException;
@@ -34,14 +34,14 @@ import j86.java.net.URI;
 import j86.java.net.URISyntaxException;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.CharacterCodingException;
-import j86.j86.j86.sun.nio.cs.ThreadLocalCoders;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CoderResult;
-import j86.j86.java.nio.charset.CodingErrorAction;
+import j86.java.nio.charset.CharacterCodingException;
+import j86.sun.nio.cs.ThreadLocalCoders;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.CodingErrorAction;
 
 /**
- * A class that contains useful routines common to j86.j86.sun.net.www
+ * A class that contains useful routines common to j86.sun.net.www
  * @author  Mike McCloskey
  */
 

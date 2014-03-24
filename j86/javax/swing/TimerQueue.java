@@ -30,9 +30,9 @@ package j86.javax.swing;
 
 
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.*;
-import j86.j86.j86.java.util.concurrent.locks.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.concurrent.*;
+import j86.java.util.concurrent.locks.*;
+import j86.java.util.concurrent.atomic.AtomicLong;
 import j86.sun.awt.AppContext;
 
 
@@ -240,7 +240,7 @@ class TimerQueue implements Runnable
 
     static class DelayedTimer implements Delayed {
         // most of it copied from
-        // j86.j86.java.util.concurrent.ScheduledThreadPoolExecutor
+        // j86.java.util.concurrent.ScheduledThreadPoolExecutor
 
         /**
          * Sequence number to break scheduling ties, and in turn to

@@ -28,7 +28,7 @@
  * Copyright IBM Corp. 1999-2000.  All rights reserved.
  */
 
-package j86.j86.javax.management.modelmbean;
+package j86.javax.management.modelmbean;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MODELMBEAN_LOGGER;
 import static j86.com.sun.jmx.mbeanserver.Util.cast;
@@ -40,7 +40,7 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectStreamField;
 
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Constructor;
 
 import j86.java.security.AccessController;
 import j86.java.util.HashMap;
@@ -50,14 +50,14 @@ import j86.java.util.Set;
 import j86.java.util.SortedMap;
 import j86.java.util.StringTokenizer;
 import j86.java.util.TreeMap;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.Descriptor;
 import j86.javax.management.ImmutableDescriptor;
 import j86.javax.management.MBeanException;
 import j86.javax.management.RuntimeOperationsException;
 
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class represents the metadata set for a ModelMBean element.  A

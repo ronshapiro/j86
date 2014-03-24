@@ -25,7 +25,7 @@
 package j86.sun.swing;
 
 import j86.java.util.*;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 import j86.javax.swing.SwingUtilities;
 
 /**

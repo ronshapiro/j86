@@ -34,8 +34,8 @@ package j86.sun.security.krb5;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.Security;
 import j86.java.util.Locale;
-import j86.j86.sun.security.krb5.internal.Krb5;
-import j86.j86.sun.security.krb5.internal.NetClient;
+import j86.sun.security.krb5.internal.Krb5;
+import j86.sun.security.krb5.internal.NetClient;
 import j86.java.io.IOException;
 import j86.java.net.SocketTimeoutException;
 import j86.java.util.StringTokenizer;
@@ -47,7 +47,7 @@ import j86.java.util.List;
 import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.util.Iterator;
-import j86.j86.sun.security.krb5.internal.KRBError;
+import j86.sun.security.krb5.internal.KRBError;
 
 /**
  * KDC-REQ/KDC-REP communication. No more base class for KrbAsReq and

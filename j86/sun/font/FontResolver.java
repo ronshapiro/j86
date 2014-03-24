@@ -32,7 +32,7 @@ package j86.sun.font;
 
 import j86.java.awt.Font;
 import j86.java.awt.GraphicsEnvironment;
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 import j86.java.util.ArrayList;
 import j86.java.util.Map;
 import j86.sun.text.CodePointIterator;

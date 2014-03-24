@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.attribute;
+package j86.java.nio.file.attribute;
 
 import j86.java.io.IOException;
 
@@ -37,8 +37,8 @@ import j86.java.io.IOException;
  * <p> The {@link #getOwner getOwner} or {@link #setOwner setOwner} methods may
  * be used to read or update the owner of the file.
  *
- * <p> The {@link j86.j86.java.nio.file.Files#getAttribute getAttribute} and
- * {@link j86.j86.java.nio.file.Files#setAttribute setAttribute} methods may also be
+ * <p> The {@link j86.java.nio.file.Files#getAttribute getAttribute} and
+ * {@link j86.java.nio.file.Files#setAttribute setAttribute} methods may also be
  * used to read or update the owner. In that case, the owner attribute is
  * identified by the name {@code "owner"}, and the value of the attribute is
  * a {@link UserPrincipal}.

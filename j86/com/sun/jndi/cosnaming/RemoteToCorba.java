@@ -26,13 +26,13 @@
 package j86.com.sun.jndi.cosnaming;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.StateFactory;
+import j86.javax.naming.spi.StateFactory;
 import j86.java.util.Hashtable;
 
 import org.omg.CORBA.ORB;
 
 import j86.java.rmi.Remote;
-import j86.j86.java.rmi.server.ExportException;
+import j86.java.rmi.server.ExportException;
 
 import j86.com.sun.jndi.toolkit.corba.CorbaUtils;  // for RMI-IIOP
 

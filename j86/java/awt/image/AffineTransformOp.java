@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.Point2D;
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.Rectangle;
 import j86.java.awt.RenderingHints;
 import j86.java.awt.Transparency;
-import j86.j86.java.lang.annotation.Native;
-import j86.j86.j86.sun.awt.image.ImagingLib;
+import j86.java.lang.annotation.Native;
+import j86.sun.awt.image.ImagingLib;
 
 /**
  * This class uses an affine transform to perform a linear mapping from

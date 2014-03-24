@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;
 
 /**
  * The common interface extended by all annotation types.  Note that an
@@ -34,7 +34,7 @@ package j86.j86.java.lang.annotation;
  * More information about annotation types can be found in section 9.6 of
  * <cite>The Java&trade; Language Specification</cite>.
  *
- * The {@link j86.j86.j86.java.lang.reflect.AnnotatedElement} interface discusses
+ * The {@link j86.java.lang.reflect.AnnotatedElement} interface discusses
  * compatibility concerns when evolving an annotation type from being
  * non-repeatable to being repeatable.
  *

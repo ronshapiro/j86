@@ -25,7 +25,7 @@
 
 package com.j86.sun.nio.file;
 
-import j86.j86.java.nio.file.OpenOption;
+import j86.java.nio.file.OpenOption;
 
 /**
  * Defines <em>extended</em> open options supported on some platforms

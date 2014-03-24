@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.util;
+package j86.jdk.internal.org.objectweb.asm.util;
 
 import j86.java.io.FileInputStream;
 import j86.java.io.PrintWriter;
@@ -77,12 +77,12 @@ import j86.jdk.internal.org.objectweb.asm.Opcodes;
 import j86.jdk.internal.org.objectweb.asm.Type;
 import j86.jdk.internal.org.objectweb.asm.TypePath;
 import j86.jdk.internal.org.objectweb.asm.TypeReference;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.ClassNode;
-import j86.j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Frame;
-import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
+import j86.jdk.internal.org.objectweb.asm.tree.ClassNode;
+import j86.jdk.internal.org.objectweb.asm.tree.MethodNode;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.BasicValue;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.Frame;
+import j86.jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
 
 /**
  * A {@link ClassVisitor} that checks that its methods are properly used. More
@@ -122,9 +122,9 @@ import j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier;
  * insnNumber locals : stack):
  *
  * <pre>
- * j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 71: Expected I, but found .
- *   at j86.j86.j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer.analyze(Analyzer.java:289)
- *   at j86.j86.jdk.internal.org.objectweb.asm.util.CheckClassAdapter.verify(CheckClassAdapter.java:135)
+ * j86.jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException: Error at instruction 71: Expected I, but found .
+ *   at j86.jdk.internal.org.objectweb.asm.tree.analysis.Analyzer.analyze(Analyzer.java:289)
+ *   at j86.jdk.internal.org.objectweb.asm.util.CheckClassAdapter.verify(CheckClassAdapter.java:135)
  * ...
  * remove()V
  * 00000 LinkedBlockingQueue$Itr . . . . . . . .  :

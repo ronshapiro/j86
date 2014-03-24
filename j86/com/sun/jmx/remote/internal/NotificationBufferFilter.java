@@ -28,7 +28,7 @@ package j86.com.sun.jmx.remote.internal;
 import j86.java.util.List;
 import j86.javax.management.Notification;
 import j86.javax.management.ObjectName;
-import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.management.remote.TargetedNotification;
 
 public interface NotificationBufferFilter {
     /**

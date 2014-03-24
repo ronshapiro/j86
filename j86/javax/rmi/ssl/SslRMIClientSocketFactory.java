@@ -28,11 +28,11 @@ package j86.javax.rmi.ssl;
 import j86.java.io.IOException;
 import j86.java.io.Serializable;
 import j86.java.net.Socket;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIClientSocketFactory;
 import j86.java.util.StringTokenizer;
 import j86.javax.net.SocketFactory;
-import j86.j86.javax.net.ssl.SSLSocket;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.SSLSocket;
+import j86.javax.net.ssl.SSLSocketFactory;
 
 /**
  * <p>An <code>SslRMIClientSocketFactory</code> instance is used by the RMI
@@ -66,7 +66,7 @@ import j86.j86.javax.net.ssl.SSLSocketFactory;
  * socket.  The value of this system property is a string that is a
  * comma-separated list of SSL/TLS protocol versions to enable.</p>
  *
- * @see j86.j86.javax.net.ssl.SSLSocketFactory
+ * @see j86.javax.net.ssl.SSLSocketFactory
  * @see j86.javax.rmi.ssl.SslRMIServerSocketFactory
  * @since 1.5
  */

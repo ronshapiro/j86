@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.HashSet;
 import j86.java.util.LinkedHashSet;
 import j86.java.util.Objects;
 import j86.java.util.Set;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean;
-import j86.j86.java.util.function.IntFunction;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.atomic.AtomicBoolean;
+import j86.java.util.function.IntFunction;
 
 /**
  * Factory methods for transforming streams into duplicate-free streams, using

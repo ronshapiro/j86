@@ -25,7 +25,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.util.Hashtable;
 import j86.java.util.Enumeration;
@@ -34,7 +34,7 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.security.AccessController;
-import j86.j86.javax.swing.event.SwingPropertyChangeSupport;
+import j86.javax.swing.event.SwingPropertyChangeSupport;
 import j86.sun.security.action.GetPropertyAction;
 
 /**

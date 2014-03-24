@@ -26,30 +26,30 @@
 package j86.com.sun.imageio.plugins.png;
 
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.DataOutput;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
 import j86.java.util.Iterator;
 import j86.java.util.Locale;
-import j86.j86.java.util.zip.Deflater;
-import j86.j86.java.util.zip.DeflaterOutputStream;
+import j86.java.util.zip.Deflater;
+import j86.java.util.zip.DeflaterOutputStream;
 import j86.javax.imageio.IIOException;
 import j86.javax.imageio.IIOImage;
 import j86.javax.imageio.ImageTypeSpecifier;
 import j86.javax.imageio.ImageWriteParam;
 import j86.javax.imageio.ImageWriter;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
-import j86.j86.javax.imageio.stream.ImageOutputStreamImpl;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.stream.ImageOutputStreamImpl;
 
 class CRC {
 

@@ -26,12 +26,12 @@
 package j86.sun.jvmstat.perfdata.monitor;
 
 import j86.java.util.List;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.java.io.*;
 
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.remote.*;
-import j86.j86.sun.jvmstat.monitor.event.VmListener;
+import j86.sun.jvmstat.monitor.remote.*;
+import j86.sun.jvmstat.monitor.event.VmListener;
 
 /**
  * Base class for all MonitoredVm implementations that utilize the

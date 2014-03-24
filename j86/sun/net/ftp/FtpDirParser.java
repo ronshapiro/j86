@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.ftp;
+package j86.sun.net.ftp;
 
 /**
  * This interface describes a parser for the FtpClient class. Such a parser is

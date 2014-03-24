@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.datatransfer;
+package j86.java.awt.datatransfer;
 
 import j86.java.io.*;
 
@@ -39,8 +39,8 @@ import j86.java.io.*;
  * and all equivalent flavors is <b>deprecated</b>. No other
  * <code>DataFlavor</code>s are supported.
  *
- * @see j86.j86.java.awt.datatransfer.DataFlavor#stringFlavor
- * @see j86.j86.java.awt.datatransfer.DataFlavor#plainTextFlavor
+ * @see j86.java.awt.datatransfer.DataFlavor#stringFlavor
+ * @see j86.java.awt.datatransfer.DataFlavor#plainTextFlavor
  */
 public class StringSelection implements Transferable, ClipboardOwner {
 

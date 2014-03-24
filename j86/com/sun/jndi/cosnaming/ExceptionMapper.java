@@ -26,8 +26,8 @@
 package j86.com.sun.jndi.cosnaming;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.*;
 
 import org.omg.CosNaming.*;
 import org.omg.CosNaming.NamingContextPackage.*;

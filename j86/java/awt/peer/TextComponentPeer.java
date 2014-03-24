@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.awt.peer;
+package j86.java.awt.peer;
 
 import j86.java.awt.TextComponent;
-import j86.j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.im.InputMethodRequests;
 
 /**
  * The peer interface for {@link TextComponent}.

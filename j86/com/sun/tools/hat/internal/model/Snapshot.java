@@ -30,12 +30,12 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.model;
+package j86.com.sun.tools.hat.internal.model;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.util.*;
-import j86.j86.com.sun.tools.hat.internal.parser.ReadBuffer;
-import j86.j86.com.sun.tools.hat.internal.util.Misc;
+import j86.com.sun.tools.hat.internal.parser.ReadBuffer;
+import j86.com.sun.tools.hat.internal.util.Misc;
 
 /**
  *
@@ -86,9 +86,9 @@ public class Snapshot {
     // represents null reference
     private JavaThing nullThing;
 
-    // j86.j86.java.lang.ref.Reference class
+    // j86.java.lang.ref.Reference class
     private JavaClass weakReferenceClass;
-    // index of 'referent' field in j86.j86.java.lang.ref.Reference class
+    // index of 'referent' field in j86.java.lang.ref.Reference class
     private int referentFieldIndex;
 
     // j86.java.lang.Class class
@@ -274,7 +274,7 @@ public class Snapshot {
         heapObjects.putAll(fakeClasses);
         fakeClasses.clear();
 
-        weakReferenceClass = findClass("j86.j86.java.lang.ref.Reference");
+        weakReferenceClass = findClass("j86.java.lang.ref.Reference");
         if (weakReferenceClass == null)  {      // JDK 1.1.x
             weakReferenceClass = findClass("j86.sun.misc.Ref");
             referentFieldIndex = 0;
@@ -402,7 +402,7 @@ public class Snapshot {
             return obj.elements();
         }
 
-        JavaClass clazz = findClass("j86.j86.java.lang.ref.Finalizer");
+        JavaClass clazz = findClass("j86.java.lang.ref.Finalizer");
         JavaObject queue = (JavaObject) clazz.getStaticField("queue");
         JavaThing tmp = queue.getField("head");
         Vector<JavaHeapObject> finalizables = new Vector<JavaHeapObject>();

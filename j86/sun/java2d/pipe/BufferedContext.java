@@ -23,21 +23,21 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.pipe;
+package j86.sun.java2d.pipe;
 
 import j86.java.awt.AlphaComposite;
 import j86.java.awt.Color;
 import j86.java.awt.Composite;
 import j86.java.awt.Paint;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.j86.sun.java2d.pipe.hw.AccelSurface;
+import j86.java.awt.geom.AffineTransform;
+import j86.sun.java2d.pipe.hw.AccelSurface;
 import j86.sun.java2d.InvalidPipeException;
 import j86.sun.java2d.SunGraphics2D;
-import j86.j86.sun.java2d.loops.XORComposite;
-import static j86.j86.sun.java2d.pipe.BufferedOpCodes.*;
-import static j86.j86.sun.java2d.pipe.BufferedRenderPipe.BYTES_PER_SPAN;
+import j86.sun.java2d.loops.XORComposite;
+import static j86.sun.java2d.pipe.BufferedOpCodes.*;
+import static j86.sun.java2d.pipe.BufferedRenderPipe.BYTES_PER_SPAN;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * Base context class for managing state in a single-threaded rendering

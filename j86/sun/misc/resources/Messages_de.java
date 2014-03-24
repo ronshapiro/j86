@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.misc.resources;
+package j86.sun.misc.resources;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>

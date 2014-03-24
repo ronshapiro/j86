@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.j86.sun.tracing.dtrace;
+package j86.sun.tracing.dtrace;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.annotation.Annotation;
 
 import j86.sun.tracing.ProviderSkeleton;
 import j86.sun.tracing.ProbeSkeleton;
 import com.j86.sun.tracing.Provider;
 import com.j86.sun.tracing.ProbeName;
-import com.j86.j86.sun.tracing.dtrace.Attributes;
-import com.j86.j86.sun.tracing.dtrace.ModuleName;
-import com.j86.j86.sun.tracing.dtrace.FunctionName;
-import com.j86.j86.sun.tracing.dtrace.StabilityLevel;
-import com.j86.j86.sun.tracing.dtrace.DependencyClass;
+import com.j86.sun.tracing.dtrace.Attributes;
+import com.j86.sun.tracing.dtrace.ModuleName;
+import com.j86.sun.tracing.dtrace.FunctionName;
+import com.j86.sun.tracing.dtrace.StabilityLevel;
+import com.j86.sun.tracing.dtrace.DependencyClass;
 
 import j86.sun.misc.ProxyGenerator;
 
@@ -89,7 +89,7 @@ class DTraceProvider extends ProviderSkeleton {
      * Magic routine which creates an implementation of the user's interface.
      *
      * This method uses the ProxyGenerator directly to bypass the
-     * j86.j86.j86.java.lang.reflect.proxy cache so that we get a unique class each
+     * j86.java.lang.reflect.proxy cache so that we get a unique class each
      * time it's called and can't accidently reuse a $Proxy class.
      *
      * @return an implementation of the user's interface

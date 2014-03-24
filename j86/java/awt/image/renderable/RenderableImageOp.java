@@ -33,10 +33,10 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.j86.java.awt.image.renderable;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.j86.java.awt.image.RenderedImage;
+package j86.java.awt.image.renderable;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.image.RenderedImage;
 import j86.java.awt.RenderingHints;
 import j86.java.util.Hashtable;
 import j86.java.util.Vector;

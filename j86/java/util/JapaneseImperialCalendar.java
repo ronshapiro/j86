@@ -27,15 +27,15 @@ package j86.java.util;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
-import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
-import j86.j86.sun.util.calendar.BaseCalendar;
-import j86.j86.sun.util.calendar.CalendarDate;
-import j86.j86.sun.util.calendar.CalendarSystem;
-import j86.j86.sun.util.calendar.CalendarUtils;
-import j86.j86.sun.util.calendar.Era;
-import j86.j86.sun.util.calendar.Gregorian;
-import j86.j86.sun.util.calendar.LocalGregorianCalendar;
-import j86.j86.sun.util.calendar.ZoneInfo;
+import j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.sun.util.calendar.BaseCalendar;
+import j86.sun.util.calendar.CalendarDate;
+import j86.sun.util.calendar.CalendarSystem;
+import j86.sun.util.calendar.CalendarUtils;
+import j86.sun.util.calendar.Era;
+import j86.sun.util.calendar.Gregorian;
+import j86.sun.util.calendar.LocalGregorianCalendar;
+import j86.sun.util.calendar.ZoneInfo;
 
 /**
  * <code>JapaneseImperialCalendar</code> implements a Japanese
@@ -71,7 +71,7 @@ class JapaneseImperialCalendar extends Calendar {
      * Implementation Notes
      *
      * This implementation uses
-     * j86.j86.sun.util.calendar.LocalGregorianCalendar to perform most of the
+     * j86.sun.util.calendar.LocalGregorianCalendar to perform most of the
      * calendar calculations. LocalGregorianCalendar is configurable
      * and reads <JRE_HOME>/lib/calendars.properties at the start-up.
      */
@@ -113,7 +113,7 @@ class JapaneseImperialCalendar extends Calendar {
     private static final long ONE_DAY    = 24*ONE_HOUR;
     private static final long ONE_WEEK   = 7*ONE_DAY;
 
-    // Reference to the j86.j86.sun.util.calendar.LocalGregorianCalendar instance (singleton).
+    // Reference to the j86.sun.util.calendar.LocalGregorianCalendar instance (singleton).
     private static final LocalGregorianCalendar jcal
         = (LocalGregorianCalendar) CalendarSystem.forName("japanese");
 
@@ -124,7 +124,7 @@ class JapaneseImperialCalendar extends Calendar {
     // The Era instance representing "before Meiji".
     private static final Era BEFORE_MEIJI_ERA = new Era("BeforeMeiji", "BM", Long.MIN_VALUE, false);
 
-    // Imperial eras. The j86.j86.sun.util.calendar.LocalGregorianCalendar
+    // Imperial eras. The j86.sun.util.calendar.LocalGregorianCalendar
     // doesn't have an Era representing before Meiji, which is
     // inconvenient for a Calendar. So, era[0] is a reference to
     // BEFORE_MEIJI_ERA.
@@ -273,7 +273,7 @@ class JapaneseImperialCalendar extends Calendar {
     }
 
     /**
-     * jdate always has a j86.j86.sun.util.calendar.LocalGregorianCalendar.Date instance to
+     * jdate always has a j86.sun.util.calendar.LocalGregorianCalendar.Date instance to
      * avoid overhead of creating it for each calculation.
      */
     private transient LocalGregorianCalendar.Date jdate;

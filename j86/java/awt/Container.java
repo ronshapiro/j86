@@ -24,13 +24,13 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.dnd.DropTarget;
+import j86.java.awt.dnd.DropTarget;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
-import j86.j86.java.awt.peer.ContainerPeer;
-import j86.j86.java.awt.peer.ComponentPeer;
-import j86.j86.java.awt.peer.LightweightPeer;
+import j86.java.awt.peer.ContainerPeer;
+import j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.peer.LightweightPeer;
 
 import j86.java.beans.PropertyChangeListener;
 
@@ -49,7 +49,7 @@ import j86.java.util.Set;
 
 import j86.javax.accessibility.*;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 import j86.sun.awt.AppContext;
 import j86.sun.awt.AWTAccessor;
@@ -57,9 +57,9 @@ import j86.sun.awt.CausedFocusEvent;
 import j86.sun.awt.PeerEvent;
 import j86.sun.awt.SunToolkit;
 
-import j86.j86.sun.awt.dnd.SunDropTargetEvent;
+import j86.sun.awt.dnd.SunDropTargetEvent;
 
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 
 import j86.sun.security.action.GetBooleanAction;
 
@@ -90,7 +90,7 @@ import j86.sun.security.action.GetBooleanAction;
 public class Container extends Component {
 
     private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.Container");
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.Container");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.java.awt.event.Container");
 
     private static final Component[] EMPTY_ARRAY = new Component[0];
 
@@ -4409,7 +4409,7 @@ class LightweightDispatcher implements j86.java.io.Serializable, AWTEventListene
      */
     private static final int  LWD_MOUSE_DRAGGED_OVER = 1500;
 
-    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.j86.java.awt.event.LightweightDispatcher");
+    private static final PlatformLogger eventLog = PlatformLogger.getLogger("j86.java.awt.event.LightweightDispatcher");
 
     LightweightDispatcher(Container nativeContainer) {
         this.nativeContainer = nativeContainer;

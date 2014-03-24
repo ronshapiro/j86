@@ -59,16 +59,16 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
 import j86.java.time.ZoneId;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.temporal.TemporalField;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.temporal.TemporalField;
 import j86.java.util.ArrayList;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * Context object used during date and time parsing.

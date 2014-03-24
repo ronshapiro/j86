@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 /**
  * Interface for input method windows that need special handling
@@ -35,7 +35,7 @@ public interface InputMethodWindow {
     /**
      * Sets the input context that this input method window is attached to,
      * null to unattach the window.
-     * @see j86.j86.j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow
+     * @see j86.java.awt.im.spi.InputMethodContext#createInputMethodWindow
      */
     public void setInputContext(InputContext inputContext);
 

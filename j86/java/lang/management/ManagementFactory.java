@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 import j86.javax.management.DynamicMBean;
 import j86.javax.management.MBeanServer;
 import j86.javax.management.MBeanServerConnection;
@@ -72,7 +72,7 @@ import j86.sun.management.ManagementFactoryHelper;
  * data types.
  * The data types being transmitted between the JMX connector
  * server and the connector client are
- * {@linkplain j86.j86.javax.management.openmbean.OpenType open types}
+ * {@linkplain j86.javax.management.openmbean.OpenType open types}
  * and this allows interoperation across versions.
  * See <a href="../../../j86.javax.management/MXBean.html#MXBean-spec">
  * the specification of MXBeans</a> for details.
@@ -114,10 +114,10 @@ import j86.sun.management.ManagementFactoryHelper;
  *         MXBeans remotely.
  *         The attributes and operations of an MXBean use only
  *         <em>JMX open types</em> which include basic data types,
- *         {@link j86.j86.javax.management.openmbean.CompositeData CompositeData},
- *         and {@link j86.j86.javax.management.openmbean.TabularData TabularData}
+ *         {@link j86.javax.management.openmbean.CompositeData CompositeData},
+ *         and {@link j86.javax.management.openmbean.TabularData TabularData}
  *         defined in
- *         {@link j86.j86.javax.management.openmbean.OpenType OpenType}.
+ *         {@link j86.javax.management.openmbean.OpenType OpenType}.
  *         The mapping is specified in
  *         the {@linkplain j86.javax.management.MXBean MXBean} specification
  *         for details.
@@ -167,8 +167,8 @@ import j86.sun.management.ManagementFactoryHelper;
  * </tr>
  * <tr>
  * <td> {@link PlatformLoggingMXBean} </td>
- * <td> {@link j86.j86.java.util.logging.LogManager#LOGGING_MXBEAN_NAME
- *             j86.j86.java.util.logging:type=Logging}</td>
+ * <td> {@link j86.java.util.logging.LogManager#LOGGING_MXBEAN_NAME
+ *             j86.java.util.logging:type=Logging}</td>
  * </tr>
  * </table>
  * </blockquote>
@@ -501,12 +501,12 @@ public class ManagementFactory {
      *
      * <p>This method is equivalent to:
      * <blockquote>
-     * {@link j86.j86.j86.java.lang.reflect.Proxy#newProxyInstance
+     * {@link j86.java.lang.reflect.Proxy#newProxyInstance
      *        Proxy.newProxyInstance}<tt>(mxbeanInterface.getClassLoader(),
      *        new Class[] { mxbeanInterface }, handler)</tt>
      * </blockquote>
      *
-     * where <tt>handler</tt> is an {@link j86.j86.j86.java.lang.reflect.InvocationHandler
+     * where <tt>handler</tt> is an {@link j86.java.lang.reflect.InvocationHandler
      * InvocationHandler} to which method invocations to the MXBean interface
      * are dispatched. This <tt>handler</tt> converts an input parameter
      * from an MXBean data type to its mapped open type before forwarding

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 /**
  * This runtime exception is thrown to indicate that the index of a row to be added to a <i>tabular data</i> instance

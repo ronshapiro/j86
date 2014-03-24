@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 import j86.com.sun.jmx.mbeanserver.Util;
 import j86.java.io.IOException;
@@ -39,7 +39,7 @@ import j86.java.security.PrivilegedAction;
 
 import j86.com.sun.jmx.remote.util.ClassLogger;
 import j86.com.sun.jmx.remote.util.EnvHelp;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 
 /**
@@ -197,7 +197,7 @@ public class JMXConnectorFactory {
         "com.sun.jmx.remote.protocol";
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", "JMXConnectorFactory");
+        new ClassLogger("j86.javax.management.remote.misc", "JMXConnectorFactory");
 
     /** There are no instances of this class.  */
     private JMXConnectorFactory() {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventListener;
 
@@ -35,7 +35,7 @@ import j86.java.util.EventListener;
  * See <a href="http://docs.oracle.com/javase/tutorial/uiswing/events/internalframelistener.html">How to Write an Internal Frame Listener</a>
  * in <em>The Java Tutorial</em> for further documentation.
  *
- * @see j86.j86.java.awt.event.WindowListener
+ * @see j86.java.awt.event.WindowListener
  *
  * @author Thomas Ball
  */

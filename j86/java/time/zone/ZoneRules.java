@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.zone;
+package j86.java.time.zone;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -79,8 +79,8 @@ import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Objects;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * The rules defining how the zone offset varies for a single time-zone.
@@ -327,7 +327,7 @@ public final class ZoneRules implements Serializable {
 
     /**
      * Writes the object using a
-     * <a href="../../../serialized-form.html#j86.j86.java.time.zone.Ser">dedicated serialized form</a>.
+     * <a href="../../../serialized-form.html#j86.java.time.zone.Ser">dedicated serialized form</a>.
      * @serialData
      * <pre style="font-size:1.0em">{@code
      *

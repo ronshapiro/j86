@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.awt.datatransfer;
+package j86.sun.awt.datatransfer;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 
 import j86.java.io.IOException;
 

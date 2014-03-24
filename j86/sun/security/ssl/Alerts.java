@@ -25,7 +25,7 @@
 
 package j86.sun.security.ssl;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 /*
  * A simple class to congregate alerts, their definitions, and common

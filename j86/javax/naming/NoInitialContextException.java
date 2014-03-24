@@ -44,9 +44,9 @@ package j86.javax.naming;
   * @author Scott Seligman
   *
   * @see InitialContext
-  * @see j86.j86.javax.naming.directory.InitialDirContext
-  * @see j86.j86.javax.naming.spi.NamingManager#getInitialContext
-  * @see j86.j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
+  * @see j86.javax.naming.directory.InitialDirContext
+  * @see j86.javax.naming.spi.NamingManager#getInitialContext
+  * @see j86.javax.naming.spi.NamingManager#setInitialContextFactoryBuilder
   * @since 1.3
   */
 public class NoInitialContextException extends NamingException {

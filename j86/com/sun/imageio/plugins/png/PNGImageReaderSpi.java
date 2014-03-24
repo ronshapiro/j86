@@ -29,10 +29,10 @@ import j86.java.io.IOException;
 import j86.java.util.Locale;
 import j86.java.util.Iterator;
 import j86.javax.imageio.ImageReader;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.stream.ImageInputStream;
 
 public class PNGImageReaderSpi extends ImageReaderSpi {
 

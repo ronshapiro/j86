@@ -61,9 +61,9 @@
  */
 package j86.java.time;
 
-import static j86.j86.java.time.temporal.ChronoUnit.DAYS;
-import static j86.j86.java.time.temporal.ChronoUnit.MONTHS;
-import static j86.j86.java.time.temporal.ChronoUnit.YEARS;
+import static j86.java.time.temporal.ChronoUnit.DAYS;
+import static j86.java.time.temporal.ChronoUnit.MONTHS;
+import static j86.java.time.temporal.ChronoUnit.YEARS;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -71,24 +71,24 @@ import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.time.chrono.ChronoLocalDate;
-import j86.j86.java.time.chrono.ChronoPeriod;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.DateTimeParseException;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.chrono.ChronoLocalDate;
+import j86.java.time.chrono.ChronoPeriod;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.DateTimeParseException;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Objects;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
 
 /**
  * A date-based amount of time in the ISO-8601 calendar system,

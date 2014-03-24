@@ -26,7 +26,7 @@
 package com.j86.sun.management;
 
 import j86.java.util.List;
-import j86.j86.java.lang.management.PlatformManagedObject;
+import j86.java.lang.management.PlatformManagedObject;
 
 /**
  * Diagnostic management interface for the HotSpot Virtual Machine.

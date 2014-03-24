@@ -27,19 +27,19 @@
  * @author Charlton Innovations, Inc.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.sun.java2d.pipe.Region;
-import j86.j86.sun.java2d.pipe.SpanIterator;
+import j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.AffineTransform;
+import j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.SpanIterator;
 import j86.sun.java2d.SunGraphics2D;
 import j86.sun.java2d.SurfaceData;
-import j86.j86.sun.java2d.loops.ProcessPath;
+import j86.sun.java2d.loops.ProcessPath;
 import j86.sun.font.GlyphList;
 
 /**

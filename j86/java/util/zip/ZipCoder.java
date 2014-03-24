@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.java.util.zip;
+package j86.java.util.zip;
 
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.StandardCharsets;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CoderResult;
-import j86.j86.java.nio.charset.CodingErrorAction;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.StandardCharsets;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.CodingErrorAction;
 import j86.java.util.Arrays;
-import j86.j86.j86.sun.nio.cs.ArrayDecoder;
-import j86.j86.j86.sun.nio.cs.ArrayEncoder;
+import j86.sun.nio.cs.ArrayDecoder;
+import j86.sun.nio.cs.ArrayEncoder;
 
 /**
  * Utility class for zipfile name and comment decoding and encoding

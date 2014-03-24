@@ -22,37 +22,37 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.java.awt.BorderLayout;
 import static j86.java.awt.BorderLayout.*;
 import j86.javax.swing.JComponent;
 import j86.javax.swing.UIDefaults;
 import j86.javax.swing.UIManager;
-import j86.j86.j86.javax.swing.plaf.synth.Region;
-import j86.j86.j86.javax.swing.plaf.synth.SynthLookAndFeel;
-import j86.j86.j86.javax.swing.plaf.synth.SynthStyle;
-import j86.j86.j86.javax.swing.plaf.synth.SynthStyleFactory;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.synth.Region;
+import j86.javax.swing.plaf.synth.SynthLookAndFeel;
+import j86.javax.swing.plaf.synth.SynthStyle;
+import j86.javax.swing.plaf.synth.SynthStyleFactory;
+import j86.javax.swing.plaf.UIResource;
 import j86.java.security.AccessController;
 import j86.java.awt.Color;
 import j86.java.awt.Container;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.LayoutManager;
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.util.*;
 import j86.javax.swing.GrayFilter;
 import j86.javax.swing.Icon;
 import j86.javax.swing.JToolBar;
-import j86.j86.javax.swing.border.TitledBorder;
-import j86.j86.javax.swing.plaf.BorderUIResource;
-import j86.j86.javax.swing.plaf.ColorUIResource;
+import j86.javax.swing.border.TitledBorder;
+import j86.javax.swing.plaf.BorderUIResource;
+import j86.javax.swing.plaf.ColorUIResource;
 import j86.sun.swing.ImageIconUIResource;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
-import j86.j86.sun.swing.plaf.GTKKeybindings;
-import j86.j86.sun.swing.plaf.WindowsKeybindings;
+import j86.sun.swing.plaf.synth.SynthIcon;
+import j86.sun.swing.plaf.GTKKeybindings;
+import j86.sun.swing.plaf.WindowsKeybindings;
 import j86.sun.security.action.GetPropertyAction;
 
 /**

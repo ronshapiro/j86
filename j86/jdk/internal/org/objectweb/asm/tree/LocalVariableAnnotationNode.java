@@ -57,7 +57,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package j86.j86.jdk.internal.org.objectweb.asm.tree;
+package j86.jdk.internal.org.objectweb.asm.tree;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;

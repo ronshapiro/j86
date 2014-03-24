@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -32,7 +32,7 @@ import j86.sun.misc.Unsafe;
 /**
  * This class consists exclusively of static names internal to the
  * method handle implementation.
- * Usage:  {@code import static j86.j86.java.lang.invoke.MethodHandleStatics.*}
+ * Usage:  {@code import static j86.java.lang.invoke.MethodHandleStatics.*}
  * @author John Rose, JSR 292 EG
  */
 /*non-public*/ class MethodHandleStatics {
@@ -50,11 +50,11 @@ import j86.sun.misc.Unsafe;
         final Object[] values = { false, false, false, false, null };
         AccessController.doPrivileged(new PrivilegedAction<Void>() {
                 public Void run() {
-                    values[0] = Boolean.getBoolean("j86.j86.java.lang.invoke.MethodHandle.DEBUG_NAMES");
-                    values[1] = Boolean.getBoolean("j86.j86.java.lang.invoke.MethodHandle.DUMP_CLASS_FILES");
-                    values[2] = Boolean.getBoolean("j86.j86.java.lang.invoke.MethodHandle.TRACE_INTERPRETER");
-                    values[3] = Boolean.getBoolean("j86.j86.java.lang.invoke.MethodHandle.TRACE_METHOD_LINKAGE");
-                    values[4] = Integer.getInteger("j86.j86.java.lang.invoke.MethodHandle.COMPILE_THRESHOLD");
+                    values[0] = Boolean.getBoolean("j86.java.lang.invoke.MethodHandle.DEBUG_NAMES");
+                    values[1] = Boolean.getBoolean("j86.java.lang.invoke.MethodHandle.DUMP_CLASS_FILES");
+                    values[2] = Boolean.getBoolean("j86.java.lang.invoke.MethodHandle.TRACE_INTERPRETER");
+                    values[3] = Boolean.getBoolean("j86.java.lang.invoke.MethodHandle.TRACE_METHOD_LINKAGE");
+                    values[4] = Integer.getInteger("j86.java.lang.invoke.MethodHandle.COMPILE_THRESHOLD");
                     return null;
                 }
             });

@@ -133,8 +133,8 @@ public final class SunJCE extends Provider {
                             + "|OAEPWITHSHA-384ANDMGF1PADDING"
                             + "|OAEPWITHSHA-512ANDMGF1PADDING");
                     put("Cipher.RSA SupportedKeyClasses",
-                            "j86.j86.java.security.interfaces.RSAPublicKey" +
-                            "|j86.j86.java.security.interfaces.RSAPrivateKey");
+                            "j86.java.security.interfaces.RSAPublicKey" +
+                            "|j86.java.security.interfaces.RSAPrivateKey");
 
                     put("Cipher.DES", "j86.com.sun.crypto.provider.DESCipher");
                     put("Cipher.DES SupportedModes", BLOCK_MODES);
@@ -416,8 +416,8 @@ public final class SunJCE extends Provider {
                     put("Alg.Alias.KeyAgreement."+OID_PKCS3, "DiffieHellman");
 
                     put("KeyAgreement.DiffieHellman SupportedKeyClasses",
-                        "j86.j86.javax.crypto.interfaces.DHPublicKey" +
-                        "|j86.j86.javax.crypto.interfaces.DHPrivateKey");
+                        "j86.javax.crypto.interfaces.DHPublicKey" +
+                        "|j86.javax.crypto.interfaces.DHPrivateKey");
 
                     /*
                      * Algorithm Parameter engines

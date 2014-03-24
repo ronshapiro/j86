@@ -28,7 +28,7 @@ import j86.java.awt.BasicStroke;
 import j86.java.awt.Color;
 import j86.java.awt.Font;
 import j86.java.awt.Paint;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 
 /**
  * Factory class for vending standard <code>Border</code> objects.  Wherever

@@ -25,9 +25,9 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.plaf.FileChooserUI;
+import j86.javax.swing.event.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.plaf.FileChooserUI;
 
 import j86.javax.accessibility.*;
 
@@ -47,10 +47,10 @@ import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.HeadlessException;
 import j86.java.awt.EventQueue;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeEvent;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 
 /**
  * <code>JFileChooser</code> provides a simple mechanism for the user to

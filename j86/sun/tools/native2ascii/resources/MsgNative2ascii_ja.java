@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.native2ascii.resources;
+package j86.sun.tools.native2ascii.resources;
 
 import j86.java.util.ListResourceBundle;
 

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.digest;
+package j86.com.sun.security.sasl.digest;
 
 import j86.javax.security.sasl.SaslException;
 

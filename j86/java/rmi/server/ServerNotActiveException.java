@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 /**
  * An <code>ServerNotActiveException</code> is an <code>Exception</code>
@@ -33,7 +33,7 @@ package j86.j86.java.rmi.server;
  *
  * @author  Roger Riggs
  * @since   JDK1.1
- * @see j86.j86.java.rmi.server.RemoteServer#getClientHost()
+ * @see j86.java.rmi.server.RemoteServer#getClientHost()
  */
 public class ServerNotActiveException extends j86.java.lang.Exception {
 

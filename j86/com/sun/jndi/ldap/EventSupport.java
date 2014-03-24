@@ -30,11 +30,11 @@ import j86.java.util.Vector;
 import j86.java.util.EventObject;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.event.*;
-import j86.j86.javax.naming.directory.SearchControls;
-import j86.j86.javax.naming.ldap.UnsolicitedNotificationListener;
-import j86.j86.javax.naming.ldap.UnsolicitedNotificationEvent;
-import j86.j86.javax.naming.ldap.UnsolicitedNotification;
+import j86.javax.naming.event.*;
+import j86.javax.naming.directory.SearchControls;
+import j86.javax.naming.ldap.UnsolicitedNotificationListener;
+import j86.javax.naming.ldap.UnsolicitedNotificationEvent;
+import j86.javax.naming.ldap.UnsolicitedNotification;
 
 /**
  * This is a utility class that can be used by a context that supports

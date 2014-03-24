@@ -33,17 +33,17 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.util.AbstractQueue;
 import j86.java.util.Collection;
 import j86.java.util.Iterator;
 import j86.java.util.NoSuchElementException;
-import j86.j86.j86.java.util.concurrent.locks.Condition;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.locks.Condition;
+import j86.java.util.concurrent.locks.ReentrantLock;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * An optionally-bounded {@linkplain BlockingDeque blocking deque} based on
@@ -944,7 +944,7 @@ public class LinkedBlockingDeque<E>
         lock.lock();
         try {
             if (a.length < count)
-                a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance
+                a = (T[])j86.java.lang.reflect.Array.newInstance
                     (a.getClass().getComponentType(), count);
 
             int k = 0;

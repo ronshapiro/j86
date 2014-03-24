@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.sun.java2d.pipe.hw;
+package j86.sun.java2d.pipe.hw;
 
 import j86.java.util.Collections;
 import j86.java.util.HashMap;
 import j86.java.util.Iterator;
 import j86.java.util.Map;
 import j86.java.util.Set;
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 
 /**

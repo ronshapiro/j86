@@ -39,7 +39,7 @@ import j86.java.util.Iterator;
 import j86.java.util.HashSet;
 import j86.java.util.StringTokenizer;
 import j86.java.security.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 import j86.sun.awt.AWTSecurityManager;
 import j86.sun.awt.AppContext;
 import j86.sun.security.provider.*;

@@ -23,31 +23,31 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.security.AccessController;
-import j86.j86.java.text.spi.BreakIteratorProvider;
-import j86.j86.java.text.spi.CollatorProvider;
-import j86.j86.java.text.spi.DateFormatProvider;
-import j86.j86.java.text.spi.DateFormatSymbolsProvider;
-import j86.j86.java.text.spi.DecimalFormatSymbolsProvider;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.BreakIteratorProvider;
+import j86.java.text.spi.CollatorProvider;
+import j86.java.text.spi.DateFormatProvider;
+import j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.text.spi.DecimalFormatSymbolsProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.List;
 import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.spi.CalendarDataProvider;
-import j86.j86.java.util.spi.CalendarNameProvider;
-import j86.j86.java.util.spi.CurrencyNameProvider;
-import j86.j86.java.util.spi.LocaleNameProvider;
-import j86.j86.java.util.spi.LocaleServiceProvider;
-import j86.j86.java.util.spi.TimeZoneNameProvider;
-import j86.j86.sun.util.cldr.CLDRLocaleProviderAdapter;
-import j86.j86.sun.util.spi.CalendarProvider;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.spi.CalendarDataProvider;
+import j86.java.util.spi.CalendarNameProvider;
+import j86.java.util.spi.CurrencyNameProvider;
+import j86.java.util.spi.LocaleNameProvider;
+import j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.TimeZoneNameProvider;
+import j86.sun.util.cldr.CLDRLocaleProviderAdapter;
+import j86.sun.util.spi.CalendarProvider;
 
 /**
  * The LocaleProviderAdapter abstract class.
@@ -60,11 +60,11 @@ public abstract class LocaleProviderAdapter {
      * Adapter type.
      */
     public static enum Type {
-        JRE("j86.j86.sun.util.resources", "j86.j86.sun.text.resources"),
-        CLDR("j86.j86.sun.util.resources.cldr", "j86.j86.sun.text.resources.cldr"),
+        JRE("j86.sun.util.resources", "j86.sun.text.resources"),
+        CLDR("j86.sun.util.resources.cldr", "j86.sun.text.resources.cldr"),
         SPI,
         HOST,
-        FALLBACK("j86.j86.sun.util.resources", "j86.j86.sun.text.resources");
+        FALLBACK("j86.sun.util.resources", "j86.sun.text.resources");
 
         private final String UTIL_RESOURCES_PACKAGE;
         private final String TEXT_RESOURCES_PACKAGE;
@@ -399,7 +399,7 @@ public abstract class LocaleProviderAdapter {
     public abstract NumberFormatProvider getNumberFormatProvider();
 
     /*
-     * Getter methods for j86.j86.java.util.spi.* providers
+     * Getter methods for j86.java.util.spi.* providers
      */
 
     /**

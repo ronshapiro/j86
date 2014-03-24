@@ -33,9 +33,9 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.atomic;
+package j86.java.util.concurrent.atomic;
 import j86.java.io.Serializable;
-import j86.j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.LongBinaryOperator;
 
 /**
  * One or more variables that together maintain a running {@code long}
@@ -267,7 +267,7 @@ public class LongAccumulator extends Striped64 implements Serializable {
 
     /**
      * Returns a
-     * <a href="../../../../serialized-form.html#j86.j86.j86.java.util.concurrent.atomic.LongAccumulator.SerializationProxy">
+     * <a href="../../../../serialized-form.html#j86.java.util.concurrent.atomic.LongAccumulator.SerializationProxy">
      * SerializationProxy</a>
      * representing the state of this instance.
      *

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.internal;
+package j86.com.sun.jmx.snmp.internal;
 
 
-import j86.j86.com.sun.jmx.snmp.mpm.SnmpMsgTranslator;
+import j86.com.sun.jmx.snmp.mpm.SnmpMsgTranslator;
 
 import j86.com.sun.jmx.snmp.SnmpTooBigException;
 import j86.com.sun.jmx.snmp.SnmpStatusException;

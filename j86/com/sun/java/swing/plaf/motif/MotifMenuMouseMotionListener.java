@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.motif;
+package j86.com.sun.java.swing.plaf.motif;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.javax.swing.MenuSelectionManager;
 
 /**

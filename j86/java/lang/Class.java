@@ -25,21 +25,21 @@
 
 package j86.java.lang;
 
-import j86.j86.j86.java.lang.reflect.AnnotatedElement;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.GenericArrayType;
-import j86.j86.j86.java.lang.reflect.GenericDeclaration;
-import j86.j86.j86.java.lang.reflect.Member;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Executable;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.j86.java.lang.reflect.TypeVariable;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.AnnotatedType;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.reflect.AnnotatedElement;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.GenericArrayType;
+import j86.java.lang.reflect.GenericDeclaration;
+import j86.java.lang.reflect.Member;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Executable;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.TypeVariable;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.AnnotatedType;
+import j86.java.lang.ref.SoftReference;
 import j86.java.io.InputStream;
 import j86.java.io.ObjectStreamField;
 import j86.java.security.AccessController;
@@ -59,17 +59,17 @@ import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.ConstantPool;
 import j86.sun.reflect.Reflection;
 import j86.sun.reflect.ReflectionFactory;
-import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.repository.ClassRepository;
-import j86.j86.sun.reflect.generics.repository.MethodRepository;
-import j86.j86.sun.reflect.generics.repository.ConstructorRepository;
-import j86.j86.sun.reflect.generics.scope.ClassScope;
+import j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.repository.ClassRepository;
+import j86.sun.reflect.generics.repository.MethodRepository;
+import j86.sun.reflect.generics.repository.ConstructorRepository;
+import j86.sun.reflect.generics.scope.ClassScope;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.java.lang.annotation.Annotation;
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.sun.reflect.annotation.*;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.Proxy;
+import j86.sun.reflect.annotation.*;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * Instances of the class {@code Class} represent classes and
@@ -356,10 +356,10 @@ public final class Class<T> implements j86.java.io.Serializable,
      * this method effectively bypasses the compile-time exception
      * checking that would otherwise be performed by the compiler.
      * The {@link
-     * j86.j86.j86.java.lang.reflect.Constructor#newInstance(java.lang.Object...)
+     * j86.java.lang.reflect.Constructor#newInstance(java.lang.Object...)
      * Constructor.newInstance} method avoids this problem by wrapping
      * any exception thrown by the constructor in a (checked) {@link
-     * j86.j86.j86.java.lang.reflect.InvocationTargetException}.
+     * j86.java.lang.reflect.InvocationTargetException}.
      *
      * @return  a newly allocated instance of the class represented by this
      *          object.
@@ -419,7 +419,7 @@ public final class Class<T> implements j86.java.io.Serializable,
             }
         }
         Constructor<T> tmpConstructor = cachedConstructor;
-        // Security check (same as in j86.j86.j86.java.lang.reflect.Constructor)
+        // Security check (same as in j86.java.lang.reflect.Constructor)
         int modifiers = tmpConstructor.getModifiers();
         if (!Reflection.quickCheckMemberAccess(this, modifiers)) {
             Class<?> caller = Reflection.getCallerClass();
@@ -689,7 +689,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      *
      * @return an array of {@code TypeVariable} objects that represent
      *     the type variables declared by this generic declaration
-     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError if the generic
+     * @throws j86.java.lang.reflect.GenericSignatureFormatError if the generic
      *     signature of this generic declaration does not conform to
      *     the format specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
@@ -729,7 +729,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      * parameters used in the source code. The parameterized type
      * representing the superclass is created if it had not been
      * created before. See the declaration of {@link
-     * j86.j86.j86.java.lang.reflect.ParameterizedType ParameterizedType} for the
+     * j86.java.lang.reflect.ParameterizedType ParameterizedType} for the
      * semantics of the creation process for parameterized types.  If
      * this {@code Class} represents either the {@code Object}
      * class, an interface, a primitive type, or void, then null is
@@ -737,12 +737,12 @@ public final class Class<T> implements j86.java.io.Serializable,
      * {@code Class} object representing the {@code Object} class is
      * returned.
      *
-     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError if the generic
+     * @throws j86.java.lang.reflect.GenericSignatureFormatError if the generic
      *     class signature does not conform to the format specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
      * @throws TypeNotPresentException if the generic superclass
      *     refers to a non-existent type declaration
-     * @throws j86.j86.j86.java.lang.reflect.MalformedParameterizedTypeException if the
+     * @throws j86.java.lang.reflect.MalformedParameterizedTypeException if the
      *     generic superclass refers to a parameterized type that cannot be
      *     instantiated  for any reason
      * @return the superclass of the class represented by this object
@@ -856,7 +856,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      * the actual type parameters used in the source code. The
      * parameterized type representing each superinterface is created
      * if it had not been created before. See the declaration of
-     * {@link j86.j86.j86.java.lang.reflect.ParameterizedType ParameterizedType}
+     * {@link j86.java.lang.reflect.ParameterizedType ParameterizedType}
      * for the semantics of the creation process for parameterized
      * types.
      *
@@ -883,13 +883,13 @@ public final class Class<T> implements j86.java.io.Serializable,
      * <p>If this object represents a primitive type or void, the
      * method returns an array of length 0.
      *
-     * @throws j86.j86.j86.java.lang.reflect.GenericSignatureFormatError
+     * @throws j86.java.lang.reflect.GenericSignatureFormatError
      *     if the generic class signature does not conform to the format
      *     specified in
      *     <cite>The Java&trade; Virtual Machine Specification</cite>
      * @throws TypeNotPresentException if any of the generic
      *     superinterfaces refers to a non-existent type declaration
-     * @throws j86.j86.j86.java.lang.reflect.MalformedParameterizedTypeException
+     * @throws j86.java.lang.reflect.MalformedParameterizedTypeException
      *     if any of the generic superinterfaces refer to a parameterized
      *     type that cannot be instantiated for any reason
      * @return an array of interfaces implemented by this class
@@ -908,7 +908,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      *
      * @return the {@code Class} representing the component type of this
      * class if this class is an array
-     * @see     j86.j86.j86.java.lang.reflect.Array
+     * @see     j86.java.lang.reflect.Array
      * @since JDK1.1
      */
     public native Class<?> getComponentType();
@@ -938,7 +938,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      * Specification</em>, table 4.1.
      *
      * @return the {@code int} representing the modifiers for this class
-     * @see     j86.j86.j86.java.lang.reflect.Modifier
+     * @see     j86.java.lang.reflect.Modifier
      * @since JDK1.1
      */
     public native int getModifiers();
@@ -964,7 +964,7 @@ public final class Class<T> implements j86.java.io.Serializable,
     /**
      * If this {@code Class} object represents a local or anonymous
      * class within a method, returns a {@link
-     * j86.j86.j86.java.lang.reflect.Method Method} object representing the
+     * j86.java.lang.reflect.Method Method} object representing the
      * immediately enclosing method of the underlying class. Returns
      * {@code null} otherwise.
      *
@@ -1119,7 +1119,7 @@ public final class Class<T> implements j86.java.io.Serializable,
     /**
      * If this {@code Class} object represents a local or anonymous
      * class within a constructor, returns a {@link
-     * j86.j86.j86.java.lang.reflect.Constructor Constructor} object representing
+     * j86.java.lang.reflect.Constructor Constructor} object representing
      * the immediately enclosing constructor of the underlying
      * class. Returns {@code null} otherwise.  In particular, this
      * method returns {@code null} if the underlying class is a local
@@ -1734,7 +1734,7 @@ public final class Class<T> implements j86.java.io.Serializable,
      * increased flexibility in the virtual machine can be used to
      * implement various language features.  For example, covariant
      * returns can be implemented with {@linkplain
-     * j86.j86.j86.java.lang.reflect.Method#isBridge bridge methods}; the bridge
+     * j86.java.lang.reflect.Method#isBridge bridge methods}; the bridge
      * method and the method being overridden would have the same
      * signature but different return types.
      *
@@ -2551,7 +2551,7 @@ public final class Class<T> implements j86.java.io.Serializable,
 
     //
     //
-    // j86.j86.j86.java.lang.reflect.Field handling
+    // j86.java.lang.reflect.Field handling
     //
     //
 
@@ -2634,7 +2634,7 @@ public final class Class<T> implements j86.java.io.Serializable,
 
     //
     //
-    // j86.j86.j86.java.lang.reflect.Constructor handling
+    // j86.java.lang.reflect.Constructor handling
     //
     //
 
@@ -2669,7 +2669,7 @@ public final class Class<T> implements j86.java.io.Serializable,
 
     //
     //
-    // j86.j86.j86.java.lang.reflect.Method handling
+    // j86.java.lang.reflect.Method handling
     //
     //
 

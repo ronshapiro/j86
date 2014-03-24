@@ -29,9 +29,9 @@ import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.util.Date;
 import j86.java.util.List;
-import j86.j86.java.util.regex.Matcher;
-import j86.j86.java.util.regex.Pattern;
-import j86.j86.java.util.regex.PatternSyntaxException;
+import j86.java.util.regex.Matcher;
+import j86.java.util.regex.Pattern;
+import j86.java.util.regex.PatternSyntaxException;
 
 /**
  * <code>RowFilter</code> is used to filter out entries from the
@@ -91,7 +91,7 @@ import j86.j86.java.util.regex.PatternSyntaxException;
  * @param <M> the type of the model; for example <code>PersonModel</code>
  * @param <I> the type of the identifier; when using
  *            <code>TableRowSorter</code> this will be <code>Integer</code>
- * @see j86.j86.javax.swing.table.TableRowSorter
+ * @see j86.javax.swing.table.TableRowSorter
  * @since 1.6
  */
 public abstract class RowFilter<M,I> {
@@ -151,12 +151,12 @@ public abstract class RowFilter<M,I> {
      *   RowFilter.regexFilter("^a");
      * </pre>
      * <p>
-     * The returned filter uses {@link j86.j86.java.util.regex.Matcher#find}
+     * The returned filter uses {@link j86.java.util.regex.Matcher#find}
      * to test for inclusion.  To test for exact matches use the
      * characters '^' and '$' to match the beginning and end of the
      * string respectively.  For example, "^foo$" includes only rows whose
      * string is exactly "foo" and not, for example, "food".  See
-     * {@link j86.j86.java.util.regex.Pattern} for a complete description of
+     * {@link j86.java.util.regex.Pattern} for a complete description of
      * the supported regular-expression constructs.
      *
      * @param regex the regular expression to filter on
@@ -169,7 +169,7 @@ public abstract class RowFilter<M,I> {
      *         are &lt; 0
      * @throws PatternSyntaxException if <code>regex</code> is
      *         not a valid regular expression.
-     * @see j86.j86.java.util.regex.Pattern
+     * @see j86.java.util.regex.Pattern
      */
     public static <M,I> RowFilter<M,I> regexFilter(String regex,
                                                        int... indices) {

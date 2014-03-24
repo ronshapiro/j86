@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 /**
  * The <code>Dimension2D</code> class is to encapsulate a width

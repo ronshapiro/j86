@@ -27,8 +27,8 @@ package j86.java.lang;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.java.io.File;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
 import j86.java.security.AccessController;
@@ -39,7 +39,7 @@ import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.ProtectionDomain;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.Certificate;
 import j86.java.util.Collections;
 import j86.java.util.Enumeration;
 import j86.java.util.HashMap;
@@ -50,14 +50,14 @@ import j86.java.util.Map;
 import j86.java.util.Vector;
 import j86.java.util.Hashtable;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.sun.misc.CompoundEnumeration;
 import j86.sun.misc.Resource;
 import j86.sun.misc.URLClassPath;
 import j86.sun.misc.VM;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -2011,9 +2011,9 @@ public abstract class ClassLoader {
      * any of its "subpackages".
      *
      * <p> A subpackage of a package named p is any package whose name begins
-     * with "<tt>p.</tt>".  For example, <tt>j86.j86.javax.swing.text</tt> is a
+     * with "<tt>p.</tt>".  For example, <tt>j86.javax.swing.text</tt> is a
      * subpackage of <tt>j86.javax.swing</tt>, and both <tt>j86.java.util</tt> and
-     * <tt>j86.j86.j86.java.lang.reflect</tt> are subpackages of <tt>java</tt>.
+     * <tt>j86.java.lang.reflect</tt> are subpackages of <tt>java</tt>.
      *
      * <p> In the event that multiple package defaults apply to a given class,
      * the package default pertaining to the most specific package takes

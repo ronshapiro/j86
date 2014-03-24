@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.java.util.BitSet;
 import j86.java.io.Serializable;
 

@@ -52,7 +52,7 @@ import j86.java.security.PermissionCollection;
 import j86.sun.awt.AppContext;
 import j86.sun.awt.SunToolkit;
 import j86.sun.misc.IOUtils;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -79,7 +79,7 @@ public class AppletClassLoader extends URLClassLoader {
         super(new URL[0]);
         this.base = base;
         this.codesource =
-            new CodeSource(base, (j86.j86.java.security.cert.Certificate[]) null);
+            new CodeSource(base, (j86.java.security.cert.Certificate[]) null);
         acc = AccessController.getContext();
     }
 

@@ -312,13 +312,13 @@ import j86.java.io.Serializable;
  * <LI>
  * Renderable image object -- The client supplies an object that implements
  * interface
- * {@link j86.j86.j86.j86.java.awt.image.renderable.RenderableImage RenderableImage}. The
+ * {@link j86.java.awt.image.renderable.RenderableImage RenderableImage}. The
  * printer calls methods
  * in that interface to obtain the image to be printed.
  * <P>
  * <LI>
  * Printable object -- The client supplies an object that implements interface
- * {@link j86.j86.java.awt.print.Printable Printable}.
+ * {@link j86.java.awt.print.Printable Printable}.
  * The printer calls methods in that interface to obtain the pages to be
  * printed, one by one.
  * For each page, the printer supplies a graphics context, and whatever the
@@ -326,7 +326,7 @@ import j86.java.io.Serializable;
  * <P>
  * <LI>
  * Pageable object -- The client supplies an object that implements interface
- * {@link j86.j86.java.awt.print.Pageable Pageable}. The printer calls
+ * {@link j86.java.awt.print.Pageable Pageable}. The printer calls
  * methods in that interface to obtain the pages to be printed, one by one.
  * For each page, the printer supplies a graphics context, and whatever
  * the client draws in that graphics context gets printed.
@@ -359,7 +359,7 @@ import j86.java.io.Serializable;
  * Renderable image objects. Specifically, the following doc flavor is
  * recommended to be supported:
  * <BR>&#183;&nbsp;&nbsp;
- * <CODE>("application/x-java-jvm-local-objectref", "j86.j86.j86.j86.java.awt.image.renderable.RenderableImage")</CODE>
+ * <CODE>("application/x-java-jvm-local-objectref", "j86.java.awt.image.renderable.RenderableImage")</CODE>
  * </UL>
  * <P>
  * A Java Print Service instance is allowed to support any other doc flavors
@@ -393,7 +393,7 @@ import j86.java.io.Serializable;
  * <H3>Design Rationale</H3>
  * <P>
  * Class DocFlavor in package j86.javax.print.data is similar to class
- * {@link j86.j86.java.awt.datatransfer.DataFlavor DataFlavor}. Class
+ * {@link j86.java.awt.datatransfer.DataFlavor DataFlavor}. Class
  * <code>DataFlavor</code>
  * is not used in the Java Print Service (JPS) API
  * for three reasons which are all rooted in allowing the JPS API to be
@@ -405,13 +405,13 @@ import j86.java.io.Serializable;
  * AWT.
  * <P>
  * <LI>
- * The implementation of class <code>j86.j86.java.awt.datatransfer.DataFlavor</code>
+ * The implementation of class <code>j86.java.awt.datatransfer.DataFlavor</code>
  * does not guarantee that equivalent data flavors will have the same
  * serialized representation. DocFlavor does, and can be used in services
  * which need this.
  * <P>
  * <LI>
- * The implementation of class <code>j86.j86.java.awt.datatransfer.DataFlavor</code>
+ * The implementation of class <code>j86.java.awt.datatransfer.DataFlavor</code>
  * includes a human presentable name as part of the serialized representation.
  * This is not appropriate as part of a service matching constraint.
  * </OL>
@@ -1406,27 +1406,27 @@ public class DocFlavor implements Serializable, Cloneable {
         /**
          * Service formatted print data doc flavor with print data
          * representation class name =
-         * <CODE>"j86.j86.j86.j86.java.awt.image.renderable.RenderableImage"</CODE>
+         * <CODE>"j86.java.awt.image.renderable.RenderableImage"</CODE>
          * (renderable image object).
          */
         public static final SERVICE_FORMATTED RENDERABLE_IMAGE =
-            new SERVICE_FORMATTED("j86.j86.j86.j86.java.awt.image.renderable.RenderableImage");
+            new SERVICE_FORMATTED("j86.java.awt.image.renderable.RenderableImage");
 
         /**
          * Service formatted print data doc flavor with print data
-         * representation class name = <CODE>"j86.j86.java.awt.print.Printable"</CODE>
+         * representation class name = <CODE>"j86.java.awt.print.Printable"</CODE>
          * (printable object).
          */
         public static final SERVICE_FORMATTED PRINTABLE =
-            new SERVICE_FORMATTED ("j86.j86.java.awt.print.Printable");
+            new SERVICE_FORMATTED ("j86.java.awt.print.Printable");
 
         /**
          * Service formatted print data doc flavor with print data
-         * representation class name = <CODE>"j86.j86.java.awt.print.Pageable"</CODE>
+         * representation class name = <CODE>"j86.java.awt.print.Pageable"</CODE>
          * (pageable object).
          */
         public static final SERVICE_FORMATTED PAGEABLE =
-            new SERVICE_FORMATTED ("j86.j86.java.awt.print.Pageable");
+            new SERVICE_FORMATTED ("j86.java.awt.print.Pageable");
 
         }
 

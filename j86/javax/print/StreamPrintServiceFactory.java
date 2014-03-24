@@ -145,7 +145,7 @@ public abstract class StreamPrintServiceFactory {
      * the print system with
      * the {@link StreamPrintService#dispose() dispose} method
      * before returning from the
-     * {@link DocPrintJob#print(Doc, j86.j86.javax.print.attribute.PrintRequestAttributeSet) print}
+     * {@link DocPrintJob#print(Doc, j86.javax.print.attribute.PrintRequestAttributeSet) print}
      * method of <code>DocPrintJob</code> so that the print system knows
      * this printer is no longer usable.
      * This is equivalent to a physical printer going offline - permanently.

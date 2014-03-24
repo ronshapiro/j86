@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.org.ietf.jgss.*;
 import j86.java.io.InputStream;
@@ -625,8 +625,8 @@ abstract class MessageToken_v2 extends Krb5Token {
         /**
          * Returns the token id for the message token.
          * @return the token id
-         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#MIC_ID_v2
-         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID_v2
+         * @see j86.sun.security.jgss.krb5.Krb5Token#MIC_ID_v2
+         * @see j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID_v2
          */
         public final int getTokenId() {
             return tokenId;

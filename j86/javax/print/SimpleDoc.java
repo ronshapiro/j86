@@ -31,8 +31,8 @@ import j86.java.io.StringReader;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.java.io.Reader;
-import j86.j86.javax.print.attribute.AttributeSetUtilities;
-import j86.j86.javax.print.attribute.DocAttributeSet;
+import j86.javax.print.attribute.AttributeSetUtilities;
+import j86.javax.print.attribute.DocAttributeSet;
 
 /**
  * This class is an implementation of interface <code>Doc</code> that can
@@ -92,7 +92,7 @@ public final class SimpleDoc implements Doc {
        Class repClass = null;
        try {
             String className = flavor.getRepresentationClassName();
-            j86.j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(className);
+            j86.sun.reflect.misc.ReflectUtil.checkPackageAccess(className);
             repClass = Class.forName(className, false,
                               Thread.currentThread().getContextClassLoader());
        } catch (Throwable e) {

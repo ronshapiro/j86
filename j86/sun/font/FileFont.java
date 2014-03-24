@@ -25,11 +25,11 @@
 
 package j86.sun.font;
 
-import j86.j86.java.lang.ref.Reference;
+import j86.java.lang.ref.Reference;
 import j86.java.awt.FontFormatException;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.io.File;
 import j86.java.nio.ByteBuffer;
 import j86.sun.java2d.Disposer;

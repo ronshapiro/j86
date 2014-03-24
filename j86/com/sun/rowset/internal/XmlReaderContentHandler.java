@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import j86.java.util.*;
 
@@ -33,7 +33,7 @@ import org.xml.sax.helpers.*;
 import j86.java.sql.*;
 import j86.javax.sql.*;
 
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 import j86.com.sun.rowset.*;
 import j86.java.io.IOException;
 import j86.java.text.MessageFormat;
@@ -660,7 +660,7 @@ public class XmlReaderContentHandler extends DefaultHandler {
                      //Added the handling for Class tags to take care of maps
                      //Makes an entry into the map upon end of class tag
                      try{
-                          typeMap.put(Key_map,j86.j86.sun.reflect.misc.ReflectUtil.forName(Value_map));
+                          typeMap.put(Key_map,j86.sun.reflect.misc.ReflectUtil.forName(Value_map));
 
                         }catch(ClassNotFoundException ex) {
                           throw new SAXException(MessageFormat.format(resBundle.handleGetObject("xmlrch.errmap").toString(), ex.getMessage()));

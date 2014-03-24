@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // jmx imports
 //
@@ -32,7 +32,7 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 //
 
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmMemMgrPoolRelEntryMBean;
+import j86.sun.management.snmp.jvmmib.JvmMemMgrPoolRelEntryMBean;
 
 /**
  * The class is used for implementing the "JvmMemMgrPoolRelEntry" group.

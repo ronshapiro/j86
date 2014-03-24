@@ -25,19 +25,19 @@
 
 package j86.sun.font;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.awt.FontFormatException;
 import j86.java.io.FileNotFoundException;
 import j86.java.io.IOException;
 import j86.java.io.RandomAccessFile;
 import j86.java.io.UnsupportedEncodingException;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.ByteOrder;
 import j86.java.nio.MappedByteBuffer;
 import j86.java.nio.BufferUnderflowException;
-import j86.j86.java.nio.channels.ClosedChannelException;
-import j86.j86.java.nio.channels.FileChannel;
+import j86.java.nio.channels.ClosedChannelException;
+import j86.java.nio.channels.FileChannel;
 import j86.sun.java2d.Disposer;
 import j86.sun.java2d.DisposerRecord;
 import j86.java.util.HashSet;

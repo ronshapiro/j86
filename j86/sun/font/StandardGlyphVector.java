@@ -31,23 +31,23 @@ import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import static j86.java.awt.RenderingHints.*;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.GlyphMetrics;
-import j86.j86.java.awt.font.GlyphJustificationInfo;
-import j86.j86.java.awt.font.GlyphVector;
-import j86.j86.java.awt.font.LineMetrics;
-import j86.j86.java.awt.font.TextAttribute;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.GlyphMetrics;
+import j86.java.awt.font.GlyphJustificationInfo;
+import j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.LineMetrics;
+import j86.java.awt.font.TextAttribute;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.lang.ref.SoftReference;
 import j86.java.text.CharacterIterator;
 
 import j86.sun.awt.SunHints;
-import j86.j86.sun.java2d.loops.FontInfo;
+import j86.sun.java2d.loops.FontInfo;
 
 /**
  * Standard implementation of GlyphVector used by Font, GlyphList, and

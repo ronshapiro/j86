@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.decoder;
+package j86.com.sun.beans.decoder;
 
-import j86.j86.com.sun.beans.finder.ClassFinder;
+import j86.com.sun.beans.finder.ClassFinder;
 
 import j86.java.beans.ExceptionListener;
 
 import j86.java.io.IOException;
 import j86.java.io.StringReader;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.WeakReference;
 
 import j86.java.util.ArrayList;
 import j86.java.util.HashMap;

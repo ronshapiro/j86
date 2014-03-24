@@ -31,7 +31,7 @@ import j86.java.util.Collections;
 import j86.java.security.*;
 import j86.java.security.KeyStore.*;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 abstract class KeyManagerFactoryImpl extends KeyManagerFactorySpi {
 

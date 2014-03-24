@@ -27,7 +27,7 @@ package j86.java.applet;
 
 import j86.java.awt.Image;
 import j86.java.awt.Graphics;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ColorModel;
 import j86.java.net.URL;
 import j86.java.util.Enumeration;
 import j86.java.io.InputStream;

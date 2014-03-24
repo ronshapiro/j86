@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.awt.datatransfer;
+package j86.sun.awt.datatransfer;
 
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.InputStream;
@@ -36,8 +36,8 @@ import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectStreamClass;
 import j86.java.io.OutputStream;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.HashMap;

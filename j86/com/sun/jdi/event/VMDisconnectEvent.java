@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.event;
+package j86.com.sun.jdi.event;
 
 import j86.com.sun.jdi.*;
 
@@ -41,9 +41,9 @@ import j86.com.sun.jdi.*;
  * will be preceded by a {@link VMDeathEvent}.
  * <p>
  * This event is always sent.
- * There is no corresponding {@link j86.j86.com.sun.jdi.request.EventRequest}.
+ * There is no corresponding {@link j86.com.sun.jdi.request.EventRequest}.
  * The enclosing singleton {@link EventSet} always has a
- * suspend policy of {@link j86.j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE}.
+ * suspend policy of {@link j86.com.sun.jdi.request.EventRequest#SUSPEND_NONE}.
  *
  * @see VMDeathEvent
  * @see EventQueue

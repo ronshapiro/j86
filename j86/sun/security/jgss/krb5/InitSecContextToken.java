@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import com.j86.sun.security.jgss.AuthorizationDataEntry;
 import j86.org.ietf.jgss.*;
@@ -31,8 +31,8 @@ import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.sun.security.krb5.*;
 import j86.java.net.InetAddress;
-import j86.j86.sun.security.krb5.internal.AuthorizationData;
-import j86.j86.sun.security.krb5.internal.KerberosTime;
+import j86.sun.security.krb5.internal.AuthorizationData;
+import j86.sun.security.krb5.internal.KerberosTime;
 
 class InitSecContextToken extends InitialToken {
 

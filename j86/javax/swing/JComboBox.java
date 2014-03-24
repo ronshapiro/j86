@@ -30,14 +30,14 @@ import j86.java.beans.Transient;
 import j86.java.util.*;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.java.io.Serializable;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 
 import j86.javax.accessibility.*;
 
@@ -1630,9 +1630,9 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
 
             // Get the popup list
             Accessible a = getUI().getAccessibleChild(JComboBox.this, 0);
-            if (a instanceof j86.j86.j86.javax.swing.plaf.basic.ComboPopup) {
+            if (a instanceof j86.javax.swing.plaf.basic.ComboPopup) {
                 // Listen for changes to the popup menu selection.
-                popupList = ((j86.j86.j86.javax.swing.plaf.basic.ComboPopup)a).getList();
+                popupList = ((j86.javax.swing.plaf.basic.ComboPopup)a).getList();
                 popupList.addListSelectionListener(
                     new AccessibleJComboBoxListSelectionListener());
             }
@@ -1937,10 +1937,10 @@ implements ItemSelectable,ListDataListener,ActionListener, Accessible {
             Accessible a =
                 JComboBox.this.getUI().getAccessibleChild(JComboBox.this, 0);
             if (a != null &&
-                a instanceof j86.j86.j86.javax.swing.plaf.basic.ComboPopup) {
+                a instanceof j86.javax.swing.plaf.basic.ComboPopup) {
 
                 // get the popup list
-                JList list = ((j86.j86.j86.javax.swing.plaf.basic.ComboPopup)a).getList();
+                JList list = ((j86.javax.swing.plaf.basic.ComboPopup)a).getList();
 
                 // return the i-th selection in the popup list
                 AccessibleContext ac = list.getAccessibleContext();

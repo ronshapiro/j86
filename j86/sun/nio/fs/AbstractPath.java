@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
-import j86.j86.java.nio.file.*;
+import j86.java.nio.file.*;
 import j86.java.io.File;
 import j86.java.io.IOException;
 import j86.java.util.Iterator;

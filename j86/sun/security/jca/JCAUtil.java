@@ -25,7 +25,7 @@
 
 package j86.sun.security.jca;
 
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 import j86.java.security.*;
 

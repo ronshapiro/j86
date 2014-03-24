@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.lang.Thread.UncaughtExceptionHandler;
 import j86.java.util.ArrayList;
@@ -41,14 +41,14 @@ import j86.java.util.Arrays;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
 import j86.java.util.List;
-import j86.j86.java.util.concurrent.AbstractExecutorService;
-import j86.j86.java.util.concurrent.Callable;
-import j86.j86.java.util.concurrent.ExecutorService;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.RejectedExecutionException;
-import j86.j86.java.util.concurrent.RunnableFuture;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
-import j86.j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.AbstractExecutorService;
+import j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.ExecutorService;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.RejectedExecutionException;
+import j86.java.util.concurrent.RunnableFuture;
+import j86.java.util.concurrent.ThreadLocalRandom;
+import j86.java.util.concurrent.TimeUnit;
 import j86.java.security.AccessControlContext;
 import j86.java.security.ProtectionDomain;
 import j86.java.security.Permissions;
@@ -136,11 +136,11 @@ import j86.java.security.Permissions;
  * parameters, but these may be controlled by setting three
  * {@linkplain System#getProperty system properties}:
  * <ul>
- * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.parallelism}
+ * <li>{@code j86.java.util.concurrent.ForkJoinPool.common.parallelism}
  * - the parallelism level, a non-negative integer
- * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.threadFactory}
+ * <li>{@code j86.java.util.concurrent.ForkJoinPool.common.threadFactory}
  * - the class name of a {@link ForkJoinWorkerThreadFactory}
- * <li>{@code j86.j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler}
+ * <li>{@code j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler}
  * - the class name of a {@link UncaughtExceptionHandler}
  * </ul>
  * If a {@link SecurityManager} is present and no factory is
@@ -3303,11 +3303,11 @@ public class ForkJoinPool extends AbstractExecutorService {
         UncaughtExceptionHandler handler = null;
         try {  // ignore exceptions in accessing/parsing properties
             String pp = System.getProperty
-                ("j86.j86.java.util.concurrent.ForkJoinPool.common.parallelism");
+                ("j86.java.util.concurrent.ForkJoinPool.common.parallelism");
             String fp = System.getProperty
-                ("j86.j86.java.util.concurrent.ForkJoinPool.common.threadFactory");
+                ("j86.java.util.concurrent.ForkJoinPool.common.threadFactory");
             String hp = System.getProperty
-                ("j86.j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler");
+                ("j86.java.util.concurrent.ForkJoinPool.common.exceptionHandler");
             if (pp != null)
                 parallelism = Integer.parseInt(pp);
             if (fp != null)

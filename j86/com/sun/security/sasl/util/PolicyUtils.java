@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.util;
+package j86.com.sun.security.sasl.util;
 
 import j86.javax.security.sasl.Sasl;
 import j86.java.util.Map;

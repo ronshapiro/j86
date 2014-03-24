@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 
 import j86.java.awt.BorderLayout;
 import j86.java.awt.Color;
 import j86.java.awt.Component;
 import j86.java.awt.Dimension;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
 import j86.java.io.IOException;
 
 import j86.javax.management.IntrospectionException;
@@ -50,12 +50,12 @@ import j86.javax.swing.JPanel;
 import j86.javax.swing.JScrollPane;
 import j86.javax.swing.JTextArea;
 import j86.javax.swing.SwingWorker;
-import j86.j86.javax.swing.border.LineBorder;
-import j86.j86.javax.swing.tree.DefaultMutableTreeNode;
-import j86.j86.javax.swing.tree.DefaultTreeModel;
+import j86.javax.swing.border.LineBorder;
+import j86.javax.swing.tree.DefaultMutableTreeNode;
+import j86.javax.swing.tree.DefaultTreeModel;
 
 import j86.sun.tools.jconsole.*;
-import j86.j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
+import j86.sun.tools.jconsole.inspector.XNodeInfo.Type;
 
 @SuppressWarnings("serial")
 public class XSheet extends JPanel

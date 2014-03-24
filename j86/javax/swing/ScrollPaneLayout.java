@@ -26,7 +26,7 @@
 package j86.javax.swing;
 
 
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 
 import j86.java.awt.LayoutManager;
 import j86.java.awt.Component;
@@ -1117,5 +1117,5 @@ public class ScrollPaneLayout
     /**
      * The UI resource version of <code>ScrollPaneLayout</code>.
      */
-    public static class UIResource extends ScrollPaneLayout implements j86.j86.javax.swing.plaf.UIResource {}
+    public static class UIResource extends ScrollPaneLayout implements j86.javax.swing.plaf.UIResource {}
 }

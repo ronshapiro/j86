@@ -59,19 +59,19 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.format;
+package j86.java.time.format;
 
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
-import static j86.j86.java.time.temporal.ChronoField.INSTANT_SECONDS;
-import static j86.j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
-import static j86.j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
-import static j86.j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
-import static j86.j86.java.time.temporal.ChronoField.YEAR;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.HOUR_OF_DAY;
+import static j86.java.time.temporal.ChronoField.INSTANT_SECONDS;
+import static j86.java.time.temporal.ChronoField.MINUTE_OF_HOUR;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.NANO_OF_SECOND;
+import static j86.java.time.temporal.ChronoField.OFFSET_SECONDS;
+import static j86.java.time.temporal.ChronoField.SECOND_OF_MINUTE;
+import static j86.java.time.temporal.ChronoField.YEAR;
 
-import j86.j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.SoftReference;
 import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.math.RoundingMode;
@@ -82,19 +82,19 @@ import j86.java.time.LocalDate;
 import j86.java.time.LocalDateTime;
 import j86.java.time.ZoneId;
 import j86.java.time.ZoneOffset;
-import j86.j86.java.time.chrono.ChronoLocalDate;
-import j86.j86.java.time.chrono.Chronology;
-import j86.j86.java.time.chrono.IsoChronology;
-import j86.j86.java.time.format.DateTimeTextProvider.LocaleStore;
-import j86.j86.java.time.temporal.ChronoField;
-import j86.j86.java.time.temporal.IsoFields;
-import j86.j86.java.time.temporal.TemporalAccessor;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalQueries;
-import j86.j86.java.time.temporal.TemporalQuery;
-import j86.j86.java.time.temporal.ValueRange;
-import j86.j86.java.time.temporal.WeekFields;
-import j86.j86.java.time.zone.ZoneRulesProvider;
+import j86.java.time.chrono.ChronoLocalDate;
+import j86.java.time.chrono.Chronology;
+import j86.java.time.chrono.IsoChronology;
+import j86.java.time.format.DateTimeTextProvider.LocaleStore;
+import j86.java.time.temporal.ChronoField;
+import j86.java.time.temporal.IsoFields;
+import j86.java.time.temporal.TemporalAccessor;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalQueries;
+import j86.java.time.temporal.TemporalQuery;
+import j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.WeekFields;
+import j86.java.time.zone.ZoneRulesProvider;
 import j86.java.util.AbstractMap.SimpleImmutableEntry;
 import j86.java.util.ArrayList;
 import j86.java.util.Arrays;
@@ -111,12 +111,12 @@ import j86.java.util.Map.Entry;
 import j86.java.util.Objects;
 import j86.java.util.Set;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleResources;
-import j86.j86.j86.sun.util.locale.provider.TimeZoneNameUtility;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleResources;
+import j86.sun.util.locale.provider.TimeZoneNameUtility;
 
 /**
  * Builder to create date-time formatters.
@@ -378,7 +378,7 @@ public final class DateTimeFormatterBuilder {
      * The parser for a variable width value such as this normally behaves greedily,
      * requiring one digit, but accepting as many digits as possible.
      * This behavior can be affected by 'adjacent value parsing'.
-     * See {@link #appendValue(j86.j86.java.time.temporal.TemporalField, int)} for full details.
+     * See {@link #appendValue(j86.java.time.temporal.TemporalField, int)} for full details.
      *
      * @param field  the field to append, not null
      * @return this, for chaining, not null
@@ -460,7 +460,7 @@ public final class DateTimeFormatterBuilder {
      * The parser for a variable width value such as this normally behaves greedily,
      * accepting as many digits as possible.
      * This behavior can be affected by 'adjacent value parsing'.
-     * See {@link #appendValue(j86.j86.java.time.temporal.TemporalField, int)} for full details.
+     * See {@link #appendValue(j86.java.time.temporal.TemporalField, int)} for full details.
      * <p>
      * In strict parsing mode, the minimum number of parsed digits is {@code minWidth}
      * and the maximum is {@code maxWidth}.
@@ -2985,7 +2985,7 @@ public final class DateTimeFormatterBuilder {
          * Converts a value for this field to a fraction between 0 and 1.
          * <p>
          * The fractional value is between 0 (inclusive) and 1 (exclusive).
-         * It can only be returned if the {@link j86.j86.java.time.temporal.TemporalField#range() value range} is fixed.
+         * It can only be returned if the {@link j86.java.time.temporal.TemporalField#range() value range} is fixed.
          * The fraction is obtained by calculation from the field range using 9 decimal
          * places and a rounding mode of {@link RoundingMode#FLOOR FLOOR}.
          * The calculation is inaccurate if the values do not run continuously from smallest to largest.
@@ -3012,7 +3012,7 @@ public final class DateTimeFormatterBuilder {
          * Converts a fraction from 0 to 1 for this field to a value.
          * <p>
          * The fractional value must be between 0 (inclusive) and 1 (exclusive).
-         * It can only be returned if the {@link j86.j86.java.time.temporal.TemporalField#range() value range} is fixed.
+         * It can only be returned if the {@link j86.java.time.temporal.TemporalField#range() value range} is fixed.
          * The value is obtained by calculation from the field range and a rounding
          * mode of {@link RoundingMode#FLOOR FLOOR}.
          * The calculation is inaccurate if the values do not run continuously from smallest to largest.

@@ -26,7 +26,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.java.util.Vector;
 import j86.java.util.Locale;
@@ -38,10 +38,10 @@ import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.Transient;
 
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.text.Position;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.text.Position;
 
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
@@ -92,9 +92,9 @@ import static j86.sun.swing.SwingUtilities2.Section.*;
  * constructor or the {@code setModel} method. The contents need not be static -
  * the number of items, and the values of items can change over time. A correct
  * {@code ListModel} implementation notifies the set of
- * {@code j86.j86.javax.swing.event.ListDataListener}s that have been added to it, each
+ * {@code j86.javax.swing.event.ListDataListener}s that have been added to it, each
  * time a change occurs. These changes are characterized by a
- * {@code j86.j86.javax.swing.event.ListDataEvent}, which identifies the range of list
+ * {@code j86.javax.swing.event.ListDataEvent}, which identifies the range of list
  * indices that have been modified, added, or removed. {@code JList}'s
  * {@code ListUI} is responsible for keeping the visual representation up to
  * date with changes, by listening to the model.
@@ -133,9 +133,9 @@ import static j86.sun.swing.SwingUtilities2.Section.*;
  * lies with the list's {@code ListUI}.
  * <p>
  * A correct {@code ListSelectionModel} implementation notifies the set of
- * {@code j86.j86.javax.swing.event.ListSelectionListener}s that have been added to it
+ * {@code j86.javax.swing.event.ListSelectionListener}s that have been added to it
  * each time a change to the selection occurs. These changes are characterized
- * by a {@code j86.j86.javax.swing.event.ListSelectionEvent}, which identifies the range
+ * by a {@code j86.javax.swing.event.ListSelectionEvent}, which identifies the range
  * of the selection change.
  * <p>
  * The preferred way to listen for changes in list selection is to add
@@ -546,7 +546,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
 
     /**
      * Returns {@code "ListUI"}, the <code>UIDefaults</code> key used to look
-     * up the name of the {@code j86.j86.javax.swing.plaf.ListUI} class that defines
+     * up the name of the {@code j86.javax.swing.plaf.ListUI} class that defines
      * the look and feel for this component.
      *
      * @return the string "ListUI"
@@ -1778,7 +1778,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      *
      * @see #addListSelectionListener
      * @see #removeListSelectionListener
-     * @see j86.j86.javax.swing.event.ListSelectionEvent
+     * @see j86.javax.swing.event.ListSelectionEvent
      * @see EventListenerList
      */
     protected void fireSelectionValueChanged(int firstIndex, int lastIndex,
@@ -2133,7 +2133,7 @@ public class JList<E> extends JComponent implements Scrollable, Accessible
      *
      * @param b the new value for the property
      * @see ListSelectionModel#setValueIsAdjusting
-     * @see j86.j86.javax.swing.event.ListSelectionEvent#getValueIsAdjusting
+     * @see j86.javax.swing.event.ListSelectionEvent#getValueIsAdjusting
      * @see #getValueIsAdjusting
      */
     public void setValueIsAdjusting(boolean b) {

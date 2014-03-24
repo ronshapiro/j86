@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.net.www.http;
+package j86.sun.net.www.http;
 
 import j86.java.io.*;
 

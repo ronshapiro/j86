@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Arrays;
 import j86.java.util.IntSummaryStatistics;
@@ -32,18 +32,18 @@ import j86.java.util.OptionalInt;
 import j86.java.util.PrimitiveIterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.IntBinaryOperator;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.IntFunction;
-import j86.j86.java.util.function.IntPredicate;
-import j86.j86.java.util.function.IntSupplier;
-import j86.j86.java.util.function.IntToDoubleFunction;
-import j86.j86.java.util.function.IntToLongFunction;
-import j86.j86.java.util.function.IntUnaryOperator;
-import j86.j86.java.util.function.ObjIntConsumer;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.IntBinaryOperator;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.IntFunction;
+import j86.java.util.function.IntPredicate;
+import j86.java.util.function.IntSupplier;
+import j86.java.util.function.IntToDoubleFunction;
+import j86.java.util.function.IntToLongFunction;
+import j86.java.util.function.IntUnaryOperator;
+import j86.java.util.function.ObjIntConsumer;
+import j86.java.util.function.Supplier;
 
 /**
  * A sequence of primitive int-valued elements supporting sequential and parallel
@@ -62,13 +62,13 @@ import j86.j86.java.util.function.Supplier;
  * }</pre>
  *
  * See the class documentation for {@link Stream} and the package documentation
- * for <a href="package-summary.html">j86.j86.java.util.stream</a> for additional
+ * for <a href="package-summary.html">j86.java.util.stream</a> for additional
  * specification of streams, stream operations, stream pipelines, and
  * parallelism.
  *
  * @since 1.8
  * @see Stream
- * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
+ * @see <a href="package-summary.html">j86.java.util.stream</a>
  */
 public interface IntStream extends BaseStream<Integer, IntStream> {
 
@@ -148,7 +148,7 @@ public interface IntStream extends BaseStream<Integer, IntStream> {
      * Returns a stream consisting of the results of replacing each element of
      * this stream with the contents of a mapped stream produced by applying
      * the provided mapping function to each element.  Each mapped stream is
-     * {@link j86.j86.java.util.stream.BaseStream#close() closed} after its contents
+     * {@link j86.java.util.stream.BaseStream#close() closed} after its contents
      * have been placed into this stream.  (If a mapped stream is {@code null}
      * an empty stream is used, instead.)
      *

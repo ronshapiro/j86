@@ -29,8 +29,8 @@ package j86.java.lang;
  * Thrown to indicate that an {@code invokedynamic} instruction has
  * failed to find its bootstrap method,
  * or the bootstrap method has failed to provide a
- * {@linkplain j86.j86.java.lang.invoke.CallSite call site} with a {@linkplain java.lang.invoke.CallSite#getTarget target}
- * of the correct {@linkplain j86.j86.java.lang.invoke.MethodHandle#type method type}.
+ * {@linkplain j86.java.lang.invoke.CallSite call site} with a {@linkplain java.lang.invoke.CallSite#getTarget target}
+ * of the correct {@linkplain j86.java.lang.invoke.MethodHandle#type method type}.
  *
  * @author John Rose, JSR 292 EG
  * @since 1.7

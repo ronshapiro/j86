@@ -42,9 +42,9 @@ package j86.java.util;
 
 import j86.java.io.IOException;
 import j86.java.io.InputStream;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.net.JarURLConnection;
 import j86.java.net.URL;
 import j86.java.net.URLConnection;
@@ -52,15 +52,15 @@ import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.spi.ResourceBundleControlProvider;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.spi.ResourceBundleControlProvider;
 
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.util.locale.BaseLocale;
-import j86.j86.sun.util.locale.LocaleObjectCache;
+import j86.sun.util.locale.BaseLocale;
+import j86.sun.util.locale.LocaleObjectCache;
 
 
 /**

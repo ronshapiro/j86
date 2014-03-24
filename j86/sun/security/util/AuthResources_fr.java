@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_fr extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal : {0}"},
         {"UnixPrincipal.name", "UnixPrincipal : {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "Impossible de d\u00E9velopper {0} correctement"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (fichier ou r\u00E9pertoire inexistant)"},
@@ -78,11 +78,11 @@ public class AuthResources_fr extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Erreur de configuration :\n\tLigne {0} : propri\u00E9t\u00E9 syst\u00E8me [{1}] d\u00E9velopp\u00E9e en valeur vide"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","nom utilisateur : "},
         {"password.","mot de passe : "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Entrez les informations du fichier de cl\u00E9s"},
         {"Keystore.alias.","Alias du fichier de cl\u00E9s : "},
@@ -90,7 +90,7 @@ public class AuthResources_fr extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Mot de passe de la cl\u00E9 priv\u00E9e (facultatif) : "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Nom utilisateur Kerberos [{0}] : "},
         {"Kerberos.password.for.username.",

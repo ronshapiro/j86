@@ -27,7 +27,7 @@
  * Plain text file handler.
  * @author  Steven B. Byrne
  */
-package j86.j86.j86.sun.net.www.content.text;
+package j86.sun.net.www.content.text;
 import j86.java.net.*;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;

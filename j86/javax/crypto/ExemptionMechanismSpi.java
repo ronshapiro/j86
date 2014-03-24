@@ -29,7 +29,7 @@ import j86.java.security.Key;
 import j86.java.security.AlgorithmParameters;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.InvalidAlgorithmParameterException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)

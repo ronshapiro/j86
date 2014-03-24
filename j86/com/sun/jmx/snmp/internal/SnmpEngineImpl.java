@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.jmx.snmp.internal;
+package j86.com.sun.jmx.snmp.internal;
 
 import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.java.util.Hashtable;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.io.Serializable;
 
 import j86.com.sun.jmx.snmp.SnmpDefinitions;
@@ -37,7 +37,7 @@ import j86.com.sun.jmx.snmp.SnmpUsmKeyHandler;
 import j86.com.sun.jmx.snmp.SnmpEngineFactory;
 import j86.com.sun.jmx.snmp.SnmpUnknownModelException;
 
-import j86.j86.com.sun.jmx.snmp.internal.SnmpTools;
+import j86.com.sun.jmx.snmp.internal.SnmpTools;
 import j86.com.sun.jmx.snmp.SnmpBadSecurityLevelException;
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 
@@ -48,15 +48,15 @@ import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
  * The way the engineId is retrieved is linked to the way the engine is
  * instantiated. See each <CODE>SnmpEngine</CODE> constructor for more details.
  * An engine is composed of a set of sub systems
- * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpSubSystem}. An <CODE>SNMP</CODE>
+ * {@link j86.com.sun.jmx.snmp.internal.SnmpSubSystem}. An <CODE>SNMP</CODE>
  * engine can contain a:
  *<ul>
  *<li> Message Processing Sub System :
- * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem}</li>
+ * {@link j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem}</li>
  *<li> Security Sub System :
- * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpSecuritySubSystem} </li>
+ * {@link j86.com.sun.jmx.snmp.internal.SnmpSecuritySubSystem} </li>
  *<li> Access Control Sub System :
- * {@link j86.j86.com.sun.jmx.snmp.internal.SnmpAccessControlSubSystem}</li>
+ * {@link j86.com.sun.jmx.snmp.internal.SnmpAccessControlSubSystem}</li>
  *</ul>
  *<P> Each sub system contains a set of models. A model is an implementation
  * of a particular treatement (eg: the User based Security Model defined in

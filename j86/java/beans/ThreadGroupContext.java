@@ -25,8 +25,8 @@
 
 package j86.java.beans;
 
-import j86.j86.com.sun.beans.finder.BeanInfoFinder;
-import j86.j86.com.sun.beans.finder.PropertyEditorFinder;
+import j86.com.sun.beans.finder.BeanInfoFinder;
+import j86.com.sun.beans.finder.PropertyEditorFinder;
 
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.util.Map;

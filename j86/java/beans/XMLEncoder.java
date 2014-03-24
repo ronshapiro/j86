@@ -26,11 +26,11 @@ package j86.java.beans;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.IllegalCharsetNameException;
-import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.lang.reflect.*;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.IllegalCharsetNameException;
+import j86.java.nio.charset.UnsupportedCharsetException;
 
 /**
  * The <code>XMLEncoder</code> class is a complementary alternative to

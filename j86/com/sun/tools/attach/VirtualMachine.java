@@ -55,8 +55,8 @@ import j86.java.io.IOException;
  * {@link #loadAgentLibrary loadAgentLibrary}, and {@link #loadAgentPath loadAgentPath}
  * methods are used to load agents into target virtual machine. The {@link
  * #loadAgent loadAgent} method is used to load agents that are written in the Java
- * Language and deployed in a {@link j86.j86.java.util.jar.JarFile JAR file}. (See
- * {@link j86.j86.java.lang.instrument} for a detailed description on how these agents
+ * Language and deployed in a {@link j86.java.util.jar.JarFile JAR file}. (See
+ * {@link j86.java.lang.instrument} for a detailed description on how these agents
  * are loaded and started). The {@link #loadAgentLibrary loadAgentLibrary} and
  * {@link #loadAgentPath loadAgentPath} methods are used to load agents that
  * are deployed either in a dynamic library or statically linked into the VM and make use of the <a
@@ -85,7 +85,7 @@ import j86.java.io.IOException;
  *          + "management-agent.jar";
  *
  *      // load agent into target VM
- *      vm.loadAgent(agent, "com.j86.j86.sun.management.jmxremote.port=5000");
+ *      vm.loadAgent(agent, "com.j86.sun.management.jmxremote.port=5000");
  *
  *      // detach
  *      vm.detach();
@@ -486,7 +486,7 @@ public abstract class VirtualMachine {
      * <p> The agent provided to this method is a path name to a JAR file on the file
      * system of the target virtual machine. This path is passed to the target virtual
      * machine where it is interpreted. The target virtual machine attempts to start
-     * the agent as specified by the {@link j86.j86.java.lang.instrument} specification.
+     * the agent as specified by the {@link j86.java.lang.instrument} specification.
      * That is, the specified JAR file is added to the system class path (of the target
      * virtual machine), and the <code>agentmain</code> method of the agent class, specified
      * by the <code>Agent-Class</code> attribute in the JAR manifest, is invoked. This
@@ -501,7 +501,7 @@ public abstract class VirtualMachine {
      *
      * @throws  AgentLoadException
      *          If the agent does not exist, or cannot be started in the manner
-     *          specified in the {@link j86.j86.java.lang.instrument} specification.
+     *          specified in the {@link j86.java.lang.instrument} specification.
      *
      * @throws  AgentInitializationException
      *          If the <code>agentmain</code> throws an exception
@@ -529,7 +529,7 @@ public abstract class VirtualMachine {
      *
      * @throws  AgentLoadException
      *          If the agent does not exist, or cannot be started in the manner
-     *          specified in the {@link j86.j86.java.lang.instrument} specification.
+     *          specified in the {@link j86.java.lang.instrument} specification.
      *
      * @throws  AgentInitializationException
      *          If the <code>agentmain</code> throws an exception

@@ -24,17 +24,17 @@
  */
 package j86.javax.swing;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.beans.PropertyChangeListener;
 import j86.java.beans.PropertyChangeSupport;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.util.List;
-import j86.j86.java.util.concurrent.*;
-import j86.j86.j86.java.util.concurrent.locks.*;
+import j86.java.util.concurrent.*;
+import j86.java.util.concurrent.locks.*;
 
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.javax.swing.SwingUtilities;
 
@@ -211,7 +211,7 @@ import j86.sun.swing.AccumulativeRunnable;
  * <p>
  * Because {@code SwingWorker} implements {@code Runnable}, a
  * {@code SwingWorker} can be submitted to an
- * {@link j86.j86.java.util.concurrent.Executor} for execution.
+ * {@link j86.java.util.concurrent.Executor} for execution.
  *
  * @author Igor Kushnirskiy
  *

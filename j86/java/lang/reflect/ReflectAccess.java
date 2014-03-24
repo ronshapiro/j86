@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.sun.reflect.MethodAccessor;
 import j86.sun.reflect.ConstructorAccessor;

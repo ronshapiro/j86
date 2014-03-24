@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.event;
+package j86.javax.imageio.event;
 
-import j86.j86.j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImage;
 import j86.java.util.EventListener;
 import j86.javax.imageio.ImageReader;
 

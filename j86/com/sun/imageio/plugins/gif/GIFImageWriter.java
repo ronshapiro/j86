@@ -27,14 +27,14 @@ package j86.com.sun.imageio.plugins.gif;
 
 import j86.java.awt.Dimension;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.ComponentSampleModel;
-import j86.j86.j86.java.awt.image.DataBufferByte;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.java.awt.image.SampleModel;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ComponentSampleModel;
+import j86.java.awt.image.DataBufferByte;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.SampleModel;
+import j86.java.awt.image.WritableRaster;
 import j86.java.io.IOException;
 import j86.java.nio.ByteOrder;
 import j86.java.util.Arrays;
@@ -45,17 +45,17 @@ import j86.javax.imageio.IIOImage;
 import j86.javax.imageio.ImageTypeSpecifier;
 import j86.javax.imageio.ImageWriteParam;
 import j86.javax.imageio.ImageWriter;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.metadata.IIOMetadataNode;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.javax.imageio.stream.ImageOutputStream;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import j86.com.sun.imageio.plugins.common.LZWCompressor;
 import j86.com.sun.imageio.plugins.common.PaletteBuilder;
-import j86.j86.j86.sun.awt.image.ByteComponentRaster;
+import j86.sun.awt.image.ByteComponentRaster;
 
 public class GIFImageWriter extends ImageWriter {
     private static final boolean DEBUG = false; // XXX false for release!

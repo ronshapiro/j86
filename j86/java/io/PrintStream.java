@@ -27,9 +27,9 @@ package j86.java.io;
 
 import j86.java.util.Formatter;
 import j86.java.util.Locale;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.IllegalCharsetNameException;
-import j86.j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.IllegalCharsetNameException;
+import j86.java.nio.charset.UnsupportedCharsetException;
 
 /**
  * A <code>PrintStream</code> adds functionality to another output stream,
@@ -182,7 +182,7 @@ public class PrintStream extends FilterOutputStream
      * specified file name.  This convenience constructor creates
      * the necessary intermediate {@link j86.java.io.OutputStreamWriter
      * OutputStreamWriter}, which will encode characters using the
-     * {@linkplain j86.j86.java.nio.charset.Charset#defaultCharset() default charset}
+     * {@linkplain j86.java.nio.charset.Charset#defaultCharset() default charset}
      * for this instance of the Java virtual machine.
      *
      * @param  fileName
@@ -222,7 +222,7 @@ public class PrintStream extends FilterOutputStream
      *         will be written to the file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException
@@ -253,7 +253,7 @@ public class PrintStream extends FilterOutputStream
      * specified file.  This convenience constructor creates the necessary
      * intermediate {@link j86.java.io.OutputStreamWriter OutputStreamWriter},
      * which will encode characters using the {@linkplain
-     * j86.j86.java.nio.charset.Charset#defaultCharset() default charset} for this
+     * j86.java.nio.charset.Charset#defaultCharset() default charset} for this
      * instance of the Java virtual machine.
      *
      * @param  file
@@ -293,7 +293,7 @@ public class PrintStream extends FilterOutputStream
      *         file and is buffered.
      *
      * @param  csn
-     *         The name of a supported {@linkplain j86.j86.java.nio.charset.Charset
+     *         The name of a supported {@linkplain j86.java.nio.charset.Charset
      *         charset}
      *
      * @throws  FileNotFoundException

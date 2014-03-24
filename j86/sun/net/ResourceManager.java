@@ -26,7 +26,7 @@
 package j86.sun.net;
 
 import j86.java.net.SocketException;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 import j86.sun.security.action.GetPropertyAction;
 
 /**

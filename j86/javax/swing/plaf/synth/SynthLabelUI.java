@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.*;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.*;
+import j86.javax.swing.text.View;
 import j86.java.awt.Dimension;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Insets;

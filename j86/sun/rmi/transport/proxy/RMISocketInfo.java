@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.proxy;
+package j86.sun.rmi.transport.proxy;
 
 /**
  * RMISocketInfo is an interface that extensions of the j86.java.net.Socket

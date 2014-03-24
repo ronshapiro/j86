@@ -20,28 +20,28 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver;
+package j86.com.sun.org.apache.xml.internal.security.keys.keyresolver;
 
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
 import j86.java.util.List;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
 
 import j86.javax.crypto.SecretKey;
 
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.DEREncodedKeyValueResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.DSAKeyValueResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.KeyInfoReferenceResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RSAKeyValueResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RetrievalMethodResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509CertificateResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509DigestResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509IssuerSerialResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509SKIResolver;
-import j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509SubjectNameResolver;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.DEREncodedKeyValueResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.DSAKeyValueResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.KeyInfoReferenceResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RSAKeyValueResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RetrievalMethodResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509CertificateResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509DigestResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509IssuerSerialResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509SKIResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509SubjectNameResolver;
+import j86.com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
@@ -52,8 +52,8 @@ import org.w3c.dom.Node;
 public class KeyResolver {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(KeyResolver.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(KeyResolver.class.getName());
 
     /** Field resolverVector */
     private static List<KeyResolver> resolverVector = new CopyOnWriteArrayList<KeyResolver>();
@@ -102,8 +102,8 @@ public class KeyResolver {
 
                 throw new KeyResolverException("utils.resolver.noClass", exArgs);
             }
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "check resolvability by class " + resolver.getClass());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "check resolvability by class " + resolver.getClass());
             }
 
             X509Certificate cert = resolver.resolveX509Certificate(element, baseURI, storage);
@@ -143,8 +143,8 @@ public class KeyResolver {
 
                 throw new KeyResolverException("utils.resolver.noClass", exArgs);
             }
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "check resolvability by class " + resolver.getClass());
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "check resolvability by class " + resolver.getClass());
             }
 
             PublicKey cert = resolver.resolvePublicKey(element, baseURI, storage);
@@ -163,10 +163,10 @@ public class KeyResolver {
 
     /**
      * This method is used for registering {@link KeyResolverSpi}s which are
-     * available to <I>all</I> {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
+     * available to <I>all</I> {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
      * personalized {@link KeyResolverSpi}s should only be registered directly
-     * to the {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
-     * {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
+     * to the {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
+     * {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
      * Please note that this method will create a new copy of the underlying array, as the
      * underlying collection is a CopyOnWriteArrayList.
      *
@@ -186,10 +186,10 @@ public class KeyResolver {
 
     /**
      * This method is used for registering {@link KeyResolverSpi}s which are
-     * available to <I>all</I> {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
+     * available to <I>all</I> {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
      * personalized {@link KeyResolverSpi}s should only be registered directly
-     * to the {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
-     * {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
+     * to the {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
+     * {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
      * Please note that this method will create a new copy of the underlying array, as the
      * underlying collection is a CopyOnWriteArrayList.
      *
@@ -219,10 +219,10 @@ public class KeyResolver {
 
     /**
      * This method is used for registering {@link KeyResolverSpi}s which are
-     * available to <I>all</I> {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
+     * available to <I>all</I> {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
      * personalized {@link KeyResolverSpi}s should only be registered directly
-     * to the {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
-     * {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
+     * to the {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
+     * {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
      * Please note that this method will create a new copy of the underlying array, as the
      * underlying collection is a CopyOnWriteArrayList.
      *
@@ -243,10 +243,10 @@ public class KeyResolver {
 
     /**
      * This method is used for registering {@link KeyResolverSpi}s which are
-     * available to <I>all</I> {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
+     * available to <I>all</I> {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} objects. This means that
      * personalized {@link KeyResolverSpi}s should only be registered directly
-     * to the {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
-     * {@link j86.j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
+     * to the {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo} using
+     * {@link j86.com.sun.org.apache.xml.internal.security.keys.KeyInfo#registerInternalKeyResolver}.
      * The KeyResolverSpi instances are not registered as a global resolver.
      *
      *

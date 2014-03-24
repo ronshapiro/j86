@@ -248,6 +248,6 @@ public abstract class ClientCommunicatorAdmin {
     private final int[] lock = new int[0];
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc",
+        new ClassLogger("j86.javax.management.remote.misc",
                         "ClientCommunicatorAdmin");
 }

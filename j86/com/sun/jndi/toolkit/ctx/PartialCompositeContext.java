@@ -29,9 +29,9 @@ import j86.java.util.Hashtable;
 import j86.java.util.Enumeration;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.Resolver;
-import j86.j86.javax.naming.spi.ResolveResult;
-import j86.j86.javax.naming.spi.NamingManager;
+import j86.javax.naming.spi.Resolver;
+import j86.javax.naming.spi.ResolveResult;
+import j86.javax.naming.spi.NamingManager;
 
 /**
   * PartialCompositeContext implements Context operations on

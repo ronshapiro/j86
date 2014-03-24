@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.awt.shell;
+package j86.sun.awt.shell;
 
 import j86.java.io.File;
 import j86.java.io.FileNotFoundException;
-import j86.j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.Callable;
 
 /**
  * @author Michael Martak

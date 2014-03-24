@@ -73,7 +73,7 @@ import j86.java.security.Permission;
  * class that begins with the string preceding "<code>.*</code>".  For
  * instance, "<code>j86.javax.management.*</code>" grants access to
  * <code>j86.javax.management.MBeanServerDelegate</code> and
- * <code>j86.j86.javax.management.timer.Timer</code>, among other classes.</p>
+ * <code>j86.javax.management.timer.Timer</code>, among other classes.</p>
  *
  * <p>A class name pattern can also be empty or the single character
  * "<code>*</code>", both of which grant access to any class.</p>

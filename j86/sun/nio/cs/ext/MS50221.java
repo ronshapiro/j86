@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.nio.cs.ext;
+package j86.sun.nio.cs.ext;
 
-import j86.j86.java.nio.charset.Charset;
+import j86.java.nio.charset.Charset;
 
 public class MS50221 extends MS50220
 {

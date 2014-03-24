@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
-import j86.j86.j86.javax.swing.plaf.synth.Region;
+import j86.javax.swing.plaf.synth.Region;
 
 /**
  * A typesafe enumeration of the distinct rendering portions specific

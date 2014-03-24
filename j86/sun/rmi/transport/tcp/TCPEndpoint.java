@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.tcp;
+package j86.sun.rmi.transport.tcp;
 
 import j86.java.io.DataInput;
 import j86.java.io.DataOutput;
@@ -34,9 +34,9 @@ import j86.java.net.ServerSocket;
 import j86.java.net.Socket;
 import j86.java.rmi.ConnectIOException;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.RMISocketFactory;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RMISocketFactory;
 import j86.java.security.AccessController;
 import j86.java.util.Collection;
 import j86.java.util.HashMap;
@@ -91,15 +91,15 @@ public class TCPEndpoint implements Endpoint {
     }
 
     /**
-     * Returns the value of the j86.j86.java.rmi.server.hostname property.
+     * Returns the value of the j86.java.rmi.server.hostname property.
      */
     private static String getHostnameProperty() {
         return AccessController.doPrivileged(
-            new GetPropertyAction("j86.j86.java.rmi.server.hostname"));
+            new GetPropertyAction("j86.java.rmi.server.hostname"));
     }
 
     /**
-     * Find host name of local machine.  Property "j86.j86.java.rmi.server.hostname"
+     * Find host name of local machine.  Property "j86.java.rmi.server.hostname"
      * is used if set, so server administrator can compensate for the possible
      * inablility to get fully qualified host name from VM.
      */
@@ -122,7 +122,7 @@ public class TCPEndpoint implements Endpoint {
                 /* if the user wishes to use a fully qualified domain
                  * name then attempt to find one.
                  */
-                if (getBoolean("j86.j86.java.rmi.server.useLocalHostName")) {
+                if (getBoolean("j86.java.rmi.server.useLocalHostName")) {
                     localHost = FQDN.attemptFQDN(localAddr);
                 } else {
                     /* default to using ip addresses, names will
@@ -722,7 +722,7 @@ public class TCPEndpoint implements Endpoint {
                 FQDN f = new FQDN(hostAddress);
 
                 int nameServiceTimeOut =
-                    TCPEndpoint.getInt("j86.j86.sun.rmi.transport.tcp.localHostNameTimeOut",
+                    TCPEndpoint.getInt("j86.sun.rmi.transport.tcp.localHostNameTimeOut",
                                        10000);
 
                 try {

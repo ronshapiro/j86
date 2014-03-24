@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.basic;
+package j86.javax.swing.plaf.basic;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.filechooser.FileFilter;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.filechooser.FileFilter;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.datatransfer.*;
+import j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
 import j86.java.beans.*;
 import j86.java.io.*;
 import j86.java.util.*;
 import j86.java.util.List;
-import j86.j86.java.util.regex.*;
-import j86.j86.sun.awt.shell.ShellFolder;
+import j86.java.util.regex.*;
+import j86.sun.awt.shell.ShellFolder;
 import j86.sun.swing.*;
 import j86.sun.swing.SwingUtilities2;
 

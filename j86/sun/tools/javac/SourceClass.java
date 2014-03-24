@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.tools.javac;
+package j86.sun.tools.javac;
 
 import j86.sun.tools.java.*;
 import j86.sun.tools.tree.*;
@@ -606,7 +606,7 @@ class SourceClass extends ClassDefinition {
             // necessary for inner classes.  (bug 4101529)
             //
             // This change has been backed out because, on WIN32, it
-            // failed to distinguish between j86.j86.java.awt.event and
+            // failed to distinguish between j86.java.awt.event and
             // j86.java.awt.Event when looking for a directory.  We will
             // add this back in later.
             //
@@ -2637,7 +2637,7 @@ class SourceClass extends ClassDefinition {
             String src = ((ClassFile)getSource()).getAbsoluteName();
 
             // Class name, fully qualified
-            //   e.g. "j86.java.lang.Object" or "FooBar" or "j86.j86.sun.tools.javac.Main"
+            //   e.g. "j86.java.lang.Object" or "FooBar" or "j86.sun.tools.javac.Main"
             // Inner class names must be mangled, as ordinary '.' qualification
             // is used internally where the spec requires '$' separators.
             //   String className = getName().toString();

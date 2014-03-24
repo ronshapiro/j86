@@ -1010,7 +1010,7 @@ function toHtml(obj) {
     var tmp = unwrapJavaObject(obj);
     if (tmp != undefined) {
         var id = tmp.idString;
-        if (tmp instanceof Packages.j86.j86.com.sun.tools.hat.internal.model.JavaClass) {
+        if (tmp instanceof Packages.j86.com.sun.tools.hat.internal.model.JavaClass) {
             var name = tmp.name;
             return "<a href='/class/" + id + "'>class " + name + "</a>";
         } else {
@@ -1167,7 +1167,7 @@ function concat(array1, array2) {
         return array1.concat(array2);
     } else if (array1 instanceof j86.java.util.Enumeration &&
                array2 instanceof j86.java.util.Enumeration) {
-        return new Packages.j86.j86.com.sun.tools.hat.internal.util.CompositeEnumeration(array1, array2);
+        return new Packages.j86.com.sun.tools.hat.internal.util.CompositeEnumeration(array1, array2);
     } else {
         return undefined;
     }

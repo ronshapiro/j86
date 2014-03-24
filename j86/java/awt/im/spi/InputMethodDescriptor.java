@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.java.awt.im.spi;
+package j86.java.awt.im.spi;
 
 import j86.java.awt.AWTException;
 import j86.java.awt.Image;
@@ -45,7 +45,7 @@ public interface InputMethodDescriptor {
      * The locale may describe just the language, or may also include
      * country and variant information if needed.
      * The information is used to select input methods by locale
-     * ({@link j86.j86.java.awt.im.InputContext#selectInputMethod(Locale)}). It may also
+     * ({@link j86.java.awt.im.InputContext#selectInputMethod(Locale)}). It may also
      * be used to sort input methods by locale in a user-visible
      * list of input methods.
      * <p>
@@ -54,7 +54,7 @@ public interface InputMethodDescriptor {
      * mode for Roman characters, typically still only Japanese would
      * be returned. Thus, the list of locales returned is typically
      * a subset of the locales for which the corresponding input method's
-     * implementation of {@link j86.j86.j86.java.awt.im.spi.InputMethod#setLocale} returns true.
+     * implementation of {@link j86.java.awt.im.spi.InputMethod#setLocale} returns true.
      * <p>
      * If {@link #hasDynamicLocaleList} returns true, this method is
      * called each time the information is needed. This

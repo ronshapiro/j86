@@ -32,8 +32,8 @@ import j86.java.io.IOException;
 
 import j86.com.sun.jdi.Bootstrap;
 import j86.com.sun.jdi.VirtualMachine;
-import j86.j86.com.sun.jdi.connect.*;
-import j86.j86.j86.com.sun.jdi.connect.spi.*;
+import j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.connect.spi.*;
 
 /*
  * A ListeningConnector to listen for connections from target VM

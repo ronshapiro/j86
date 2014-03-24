@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
@@ -52,18 +52,18 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpIndex;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
+import j86.com.sun.jmx.snmp.agent.SnmpIndex;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMibTable;
+import j86.com.sun.jmx.snmp.agent.SnmpMibSubRequest;
+import j86.com.sun.jmx.snmp.agent.SnmpStandardObjectServer;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
-import j86.j86.j86.sun.management.snmp.util.SnmpCachedData;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableCache;
-import j86.j86.j86.sun.management.snmp.util.SnmpTableHandler;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
-import j86.j86.j86.sun.management.snmp.util.JvmContextFactory;
+import j86.sun.management.snmp.jvmmib.JvmRTBootClassPathTableMeta;
+import j86.sun.management.snmp.util.SnmpCachedData;
+import j86.sun.management.snmp.util.SnmpTableCache;
+import j86.sun.management.snmp.util.SnmpTableHandler;
+import j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.util.JvmContextFactory;
 
 /**
  * The class is used for implementing the "JvmRTBootClassPathTable".
@@ -136,14 +136,14 @@ public class JvmRTBootClassPathTableMetaImpl
         cache = new JvmRTBootClassPathTableCache(this, -1);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(Object userData)
         throws SnmpStatusException {
         // null means get the first OID.
         return getNextOid(null,userData);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected SnmpOid getNextOid(SnmpOid oid, Object userData)
         throws SnmpStatusException {
         final boolean dbg = log.isDebugOn();
@@ -175,7 +175,7 @@ public class JvmRTBootClassPathTableMetaImpl
     }
 
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     protected boolean contains(SnmpOid oid, Object userData) {
 
         // Get the handler.
@@ -190,7 +190,7 @@ public class JvmRTBootClassPathTableMetaImpl
         return handler.contains(oid);
     }
 
-    // See j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable
+    // See j86.com.sun.jmx.snmp.agent.SnmpMibTable
     public Object getEntry(SnmpOid oid)
         throws SnmpStatusException {
         final boolean dbg = log.isDebugOn();

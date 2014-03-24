@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.spnego;
+package j86.sun.security.jgss.spnego;
 
 import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.*;
-import j86.j86.sun.security.jgss.spi.*;
-import j86.j86.sun.security.jgss.krb5.Krb5MechFactory;
-import j86.j86.sun.security.jgss.krb5.Krb5InitCredential;
-import j86.j86.sun.security.jgss.krb5.Krb5AcceptCredential;
-import j86.j86.sun.security.jgss.krb5.Krb5NameElement;
+import j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.krb5.Krb5MechFactory;
+import j86.sun.security.jgss.krb5.Krb5InitCredential;
+import j86.sun.security.jgss.krb5.Krb5AcceptCredential;
+import j86.sun.security.jgss.krb5.Krb5NameElement;
 import j86.java.security.Provider;
 import j86.java.util.Vector;
 

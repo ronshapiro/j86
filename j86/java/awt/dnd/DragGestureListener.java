@@ -25,7 +25,7 @@
 
 
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 import j86.java.util.EventListener;
 
@@ -40,9 +40,9 @@ import j86.java.util.EventListener;
  * method and passes a {@code DragGestureEvent}.
 
  *
- * @see j86.j86.java.awt.dnd.DragGestureRecognizer
- * @see j86.j86.java.awt.dnd.DragGestureEvent
- * @see j86.j86.java.awt.dnd.DragSource
+ * @see j86.java.awt.dnd.DragGestureRecognizer
+ * @see j86.java.awt.dnd.DragGestureEvent
+ * @see j86.java.awt.dnd.DragSource
  */
 
  public interface DragGestureListener extends EventListener {
@@ -54,8 +54,8 @@ import j86.java.util.EventListener;
      * if appropriate, {@link DragGestureEvent#startDrag startDrag()} method on
      * the {@code DragGestureEvent} has to be invoked.
      * <P>
-     * @see j86.j86.java.awt.dnd.DragGestureRecognizer
-     * @see j86.j86.java.awt.dnd.DragGestureEvent
+     * @see j86.java.awt.dnd.DragGestureRecognizer
+     * @see j86.java.awt.dnd.DragGestureEvent
      * @param dge the <code>DragGestureEvent</code> describing
      * the gesture that has just occurred
      */

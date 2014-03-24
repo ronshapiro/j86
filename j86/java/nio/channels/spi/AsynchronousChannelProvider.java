@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.channels.spi;
+package j86.java.nio.channels.spi;
 
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.channels.*;
 import j86.java.io.IOException;
 import j86.java.util.Iterator;
 import j86.java.util.ServiceLoader;
 import j86.java.util.ServiceConfigurationError;
-import j86.j86.java.util.concurrent.*;
+import j86.java.util.concurrent.*;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
@@ -85,12 +85,12 @@ public abstract class AsynchronousChannelProvider {
                         p = loadProviderAsService();
                         if (p != null)
                             return p;
-                        return j86.j86.j86.sun.nio.ch.DefaultAsynchronousChannelProvider.create();
+                        return j86.sun.nio.ch.DefaultAsynchronousChannelProvider.create();
                     }});
         }
 
         private static AsynchronousChannelProvider loadProviderFromProperty() {
-            String cn = System.getProperty("j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider");
+            String cn = System.getProperty("j86.java.nio.channels.spi.AsynchronousChannelProvider");
             if (cn == null)
                 return null;
             try {
@@ -137,7 +137,7 @@ public abstract class AsynchronousChannelProvider {
      * <ol>
      *
      *   <li><p> If the system property
-     *   <tt>j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider</tt> is defined
+     *   <tt>j86.java.nio.channels.spi.AsynchronousChannelProvider</tt> is defined
      *   then it is taken to be the fully-qualified name of a concrete provider class.
      *   The class is loaded and instantiated; if this process fails then an
      *   unspecified error is thrown.  </p></li>
@@ -145,7 +145,7 @@ public abstract class AsynchronousChannelProvider {
      *   <li><p> If a provider class has been installed in a jar file that is
      *   visible to the system class loader, and that jar file contains a
      *   provider-configuration file named
-     *   <tt>j86.j86.j86.java.nio.channels.spi.AsynchronousChannelProvider</tt> in the resource
+     *   <tt>j86.java.nio.channels.spi.AsynchronousChannelProvider</tt> in the resource
      *   directory <tt>META-INF/services</tt>, then the first class name
      *   specified in that file is taken.  The class is loaded and
      *   instantiated; if this process fails then an unspecified error is

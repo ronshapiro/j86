@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.dnd;
+package j86.java.awt.dnd;
 
 /**
  * An abstract adapter class for receiving drag source events. The methods in

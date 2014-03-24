@@ -25,9 +25,9 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.ManagementFactory;
-import j86.j86.java.lang.management.MemoryManagerMXBean;
-import j86.j86.java.lang.management.MemoryPoolMXBean;
+import j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.MemoryManagerMXBean;
+import j86.java.lang.management.MemoryPoolMXBean;
 
 import j86.javax.management.MBeanNotificationInfo;
 import j86.javax.management.ObjectName;

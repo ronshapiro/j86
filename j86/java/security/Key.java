@@ -92,7 +92,7 @@ package j86.java.security;
  * @see KeyPairGenerator
  * @see KeyFactory
  * @see KeyRep
- * @see j86.j86.java.security.spec.KeySpec
+ * @see j86.java.security.spec.KeySpec
  * @see Identity
  * @see Signer
  *

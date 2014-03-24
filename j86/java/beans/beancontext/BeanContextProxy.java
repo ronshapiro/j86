@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 /**
  * <p>
@@ -69,8 +69,8 @@ package j86.j86.java.beans.beancontext;
  * @author Laurence P. G. Cable
  * @since 1.2
  *
- * @see j86.j86.java.beans.beancontext.BeanContextChild
- * @see j86.j86.java.beans.beancontext.BeanContextChildSupport
+ * @see j86.java.beans.beancontext.BeanContextChild
+ * @see j86.java.beans.beancontext.BeanContextChildSupport
  */
 
 public interface BeanContextProxy {

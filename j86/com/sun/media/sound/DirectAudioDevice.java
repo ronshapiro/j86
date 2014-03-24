@@ -32,8 +32,8 @@ import j86.java.util.Vector;
 import j86.javax.sound.sampled.*;
 
 // IDEA:
-// Use j86.j86.java.util.concurrent.Semaphore,
-// j86.j86.j86.java.util.concurrent.locks.ReentrantLock and other new classes/methods
+// Use j86.java.util.concurrent.Semaphore,
+// j86.java.util.concurrent.locks.ReentrantLock and other new classes/methods
 // to improve this class's thread safety.
 
 

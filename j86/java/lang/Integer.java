@@ -25,7 +25,7 @@
 
 package j86.java.lang;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * The {@code Integer} class wraps a value of the primitive type
@@ -1555,7 +1555,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int sum(int a, int b) {
@@ -1569,7 +1569,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int max(int a, int b) {
@@ -1583,7 +1583,7 @@ public final class Integer extends Number implements Comparable<Integer> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static int min(int a, int b) {

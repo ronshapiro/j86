@@ -34,11 +34,11 @@ import j86.java.security.AccessControlContext;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AlgorithmConstraints;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.locks.ReentrantLock;
 
 import j86.javax.crypto.BadPaddingException;
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 /**
  * Implementation of an SSL socket.  This is a normal connection type
@@ -54,7 +54,7 @@ import j86.j86.javax.net.ssl.*;
  * proxying or tunneling, and also allows the kind of "role reversal"
  * that is required for most FTP data transfers.
  *
- * @see j86.j86.javax.net.ssl.SSLSocket
+ * @see j86.javax.net.ssl.SSLSocket
  * @see SSLServerSocket
  *
  * @author David Brownell

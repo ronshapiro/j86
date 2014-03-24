@@ -23,8 +23,8 @@
  * questions.
  */
 
-package j86.j86.j86.j86.java.awt.image.renderable;
-import j86.j86.j86.java.awt.image.RenderedImage;
+package j86.java.awt.image.renderable;
+import j86.java.awt.image.RenderedImage;
 import j86.java.io.Serializable;
 import j86.java.util.Vector;
 

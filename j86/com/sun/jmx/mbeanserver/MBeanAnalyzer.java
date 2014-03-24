@@ -27,8 +27,8 @@ package j86.com.sun.jmx.mbeanserver;
 
 import static j86.com.sun.jmx.mbeanserver.Util.*;
 
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Modifier;
 import j86.java.security.AccessController;
 import j86.java.util.Arrays;
 import j86.java.util.Comparator;

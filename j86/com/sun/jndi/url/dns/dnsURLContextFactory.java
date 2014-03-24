@@ -29,7 +29,7 @@ package j86.com.sun.jndi.url.dns;
 import j86.java.util.Hashtable;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.spi.ObjectFactory;
+import j86.javax.naming.spi.ObjectFactory;
 
 
 /**

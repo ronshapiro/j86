@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.management.counter;
+package j86.sun.management.counter;
 
 import j86.java.io.IOException;
 import j86.java.io.ObjectOutputStream;

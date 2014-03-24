@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.naming.spi;
+package j86.javax.naming.spi;
 
 import j86.java.util.Hashtable;
 import j86.javax.naming.*;
@@ -46,7 +46,7 @@ import j86.javax.naming.*;
   * @see InitialContextFactoryBuilder
   * @see NamingManager#getInitialContext
   * @see j86.javax.naming.InitialContext
-  * @see j86.j86.javax.naming.directory.InitialDirContext
+  * @see j86.javax.naming.directory.InitialDirContext
   * @since 1.3
   */
 

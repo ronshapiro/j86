@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.tools.jarsigner;
+package j86.sun.security.tools.jarsigner;
 
 /**
  * <p> This class represents the <code>ResourceBundle</code>

@@ -52,7 +52,7 @@ public class Resources_ja extends j86.java.util.ListResourceBundle {
         {"CredOwner.Principal.Class.class.Principal.Name.name",
                 "CredOwner:\n\tPrincipal\u30AF\u30E9\u30B9={0}\n\t\u30D7\u30EA\u30F3\u30B7\u30D1\u30EB\u540D={1}"},
 
-        // j86.j86.javax.security.auth.x500
+        // j86.javax.security.auth.x500
         {"provided.null.name", "null\u306E\u540D\u524D\u304C\u6307\u5B9A\u3055\u308C\u307E\u3057\u305F"},
         {"provided.null.keyword.map", "null\u306E\u30AD\u30FC\u30EF\u30FC\u30C9\u30FB\u30DE\u30C3\u30D7\u304C\u6307\u5B9A\u3055\u308C\u307E\u3057\u305F"},
         {"provided.null.OID.map", "null\u306EOID\u30DE\u30C3\u30D7\u304C\u6307\u5B9A\u3055\u308C\u307E\u3057\u305F"},
@@ -77,10 +77,10 @@ public class Resources_ja extends j86.java.util.ListResourceBundle {
         {"attempting.to.add.an.object.which.is.not.an.instance.of.class",
                 "{0}\u306E\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u3067\u306F\u306A\u3044\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u3092\u8FFD\u52A0\u3057\u3088\u3046\u3068\u3057\u307E\u3057\u305F"},
 
-        // j86.j86.javax.security.auth.login.AppConfigurationEntry
+        // j86.javax.security.auth.login.AppConfigurationEntry
         {"LoginModuleControlFlag.", "LoginModuleControlFlag: "},
 
-        // j86.j86.javax.security.auth.login.LoginContext
+        // j86.javax.security.auth.login.LoginContext
         {"Invalid.null.input.name", "\u7121\u52B9\u306Anull\u5165\u529B: \u540D\u524D"},
         {"No.LoginModules.configured.for.name",
          "{0}\u7528\u306B\u69CB\u6210\u3055\u308C\u305FLoginModules\u306F\u3042\u308A\u307E\u305B\u3093"},
@@ -146,7 +146,7 @@ public class Resources_ja extends j86.java.util.ListResourceBundle {
         {"null.principalClass.or.principalName",
                 "null\u306EprincipalClass\u307E\u305F\u306FprincipalName"},
 
-        // j86.j86.sun.security.pkcs11.SunPKCS11
+        // j86.sun.security.pkcs11.SunPKCS11
         {"PKCS11.Token.providerName.Password.",
                 "PKCS11\u30C8\u30FC\u30AF\u30F3[{0}]\u30D1\u30B9\u30EF\u30FC\u30C9: "},
 

@@ -25,9 +25,9 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
 
 /**
  * A PropertyDescriptor describes one property that a Java Bean

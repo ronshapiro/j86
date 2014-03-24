@@ -27,7 +27,7 @@ package j86.java.awt;
 import j86.java.io.*;
 import j86.java.lang.*;
 import j86.java.util.*;
-import j86.j86.j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ImageObserver;
 import j86.java.text.AttributedCharacterIterator;
 
 /**
@@ -785,7 +785,7 @@ public abstract class Graphics {
     /**
      * Renders the text of the specified iterator applying its attributes
      * in accordance with the specification of the
-     * {@link j86.j86.java.awt.font.TextAttribute TextAttribute} class.
+     * {@link j86.java.awt.font.TextAttribute TextAttribute} class.
      * <p>
      * The baseline of the leftmost character is at position
      * (<i>x</i>,&nbsp;<i>y</i>) in this graphics context's coordinate system.
@@ -876,8 +876,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public abstract boolean drawImage(Image img, int x, int y,
                                       ImageObserver observer);
@@ -915,8 +915,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public abstract boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -957,8 +957,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public abstract boolean drawImage(Image img, int x, int y,
                                       Color bgcolor,
@@ -1002,8 +1002,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      */
     public abstract boolean drawImage(Image img, int x, int y,
                                       int width, int height,
@@ -1056,8 +1056,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public abstract boolean drawImage(Image img,
@@ -1117,8 +1117,8 @@ public abstract class Graphics {
      * @return   <code>false</code> if the image pixels are still changing;
      *           <code>true</code> otherwise.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public abstract boolean drawImage(Image img,

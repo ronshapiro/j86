@@ -33,8 +33,8 @@ import j86.java.io.FileInputStream;
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.Arrays;
@@ -50,7 +50,7 @@ import j86.sun.font.CompositeFontDescriptor;
 import j86.sun.font.SunFontManager;
 import j86.sun.font.FontManagerFactory;
 import j86.sun.font.FontUtilities;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * Provides the definitions of the five logical fonts: Serif, SansSerif,

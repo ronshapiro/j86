@@ -33,24 +33,24 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 
 import j86.java.io.Serializable;
 import j86.java.util.Collection;
 import j86.java.util.List;
 import j86.java.util.RandomAccess;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.util.concurrent.Callable;
-import j86.j86.java.util.concurrent.CancellationException;
-import j86.j86.java.util.concurrent.ExecutionException;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.RejectedExecutionException;
-import j86.j86.java.util.concurrent.RunnableFuture;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.java.util.concurrent.TimeoutException;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.CancellationException;
+import j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.RejectedExecutionException;
+import j86.java.util.concurrent.RunnableFuture;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.TimeoutException;
+import j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.lang.reflect.Constructor;
 
 /**
  * Abstract base class for tasks that run within a {@link ForkJoinPool}.
@@ -140,11 +140,11 @@ import j86.j86.j86.java.lang.reflect.Constructor;
  * {@link #isCompletedNormally} is true if a task completed without
  * cancellation or encountering an exception; {@link #isCancelled} is
  * true if the task was cancelled (in which case {@link #getException}
- * returns a {@link j86.j86.java.util.concurrent.CancellationException}); and
+ * returns a {@link j86.java.util.concurrent.CancellationException}); and
  * {@link #isCompletedAbnormally} is true if a task was either
  * cancelled or encountered an exception, in which case {@link
  * #getException} will return either the encountered exception or
- * {@link j86.j86.java.util.concurrent.CancellationException}.
+ * {@link j86.java.util.concurrent.CancellationException}.
  *
  * <p>The ForkJoinTask class is not usually directly subclassed.
  * Instead, you subclass one of the abstract classes that support a

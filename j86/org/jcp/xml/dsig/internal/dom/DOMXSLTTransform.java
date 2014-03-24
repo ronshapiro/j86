@@ -26,15 +26,15 @@
 /*
  * $Id: DOMXSLTTransform.java 1197150 2011-11-03 14:34:57Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.security.InvalidAlgorithmParameterException;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 
 /**
  * DOM-based implementation of XSLT Transform.
@@ -64,7 +64,7 @@ public final class DOMXSLTTransform extends ApacheTransform {
 
     private void unmarshalParams(Element sheet) {
         this.params = new XSLTTransformParameterSpec
-            (new j86.j86.javax.xml.crypto.dom.DOMStructure(sheet));
+            (new j86.javax.xml.crypto.dom.DOMStructure(sheet));
     }
 
     public void marshalParams(XMLStructure parent, XMLCryptoContext context)
@@ -73,7 +73,7 @@ public final class DOMXSLTTransform extends ApacheTransform {
         XSLTTransformParameterSpec xp =
             (XSLTTransformParameterSpec) getParameterSpec();
         Node xsltElem =
-            ((j86.j86.javax.xml.crypto.dom.DOMStructure) xp.getStylesheet()).getNode();
+            ((j86.javax.xml.crypto.dom.DOMStructure) xp.getStylesheet()).getNode();
         DOMUtils.appendChild(transformElem, xsltElem);
     }
 }

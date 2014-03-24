@@ -38,9 +38,9 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.nl;
+package j86.sun.text.resources.nl;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_nl_NL extends ParallelListResourceBundle {
     /**

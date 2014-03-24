@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.im;
+package j86.sun.awt.im;
 
 import j86.java.awt.AWTException;
 import j86.java.awt.CheckboxMenuItem;
@@ -36,11 +36,11 @@ import j86.java.awt.Menu;
 import j86.java.awt.MenuItem;
 import j86.java.awt.Toolkit;
 import j86.sun.awt.AppContext;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.java.awt.event.InvocationEvent;
-import j86.j86.j86.java.awt.im.spi.InputMethodDescriptor;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.event.InvocationEvent;
+import j86.java.awt.im.spi.InputMethodDescriptor;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedActionException;
@@ -51,8 +51,8 @@ import j86.java.util.Locale;
 import j86.java.util.ServiceLoader;
 import j86.java.util.Vector;
 import j86.java.util.Set;
-import j86.j86.java.util.prefs.BackingStoreException;
-import j86.j86.java.util.prefs.Preferences;
+import j86.java.util.prefs.BackingStoreException;
+import j86.java.util.prefs.Preferences;
 import j86.sun.awt.InputMethodSupport;
 import j86.sun.awt.SunToolkit;
 
@@ -94,7 +94,7 @@ class ExecutableInputMethodManager extends InputMethodManager
     private InputContext requestInputContext;
 
     // IM preference stuff
-    private static final String preferredIMNode = "/j86.j86.sun.awt.im/preferredInputMethod";
+    private static final String preferredIMNode = "/j86.sun.awt.im/preferredInputMethod";
     private static final String descriptorKey = "descriptor";
     private Hashtable<String, InputMethodLocator> preferredLocatorCache = new Hashtable<>();
     private Preferences userRoot;

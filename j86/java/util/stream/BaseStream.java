@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
 import j86.java.util.Collection;
 import j86.java.util.Iterator;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.function.Predicate;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.function.Predicate;
 
 /**
  * Base interface for streams, which are sequences of elements supporting
@@ -48,7 +48,7 @@ import j86.j86.java.util.function.Predicate;
  * }</pre>
  *
  * See the class documentation for {@link Stream} and the package documentation
- * for <a href="package-summary.html">j86.j86.java.util.stream</a> for additional
+ * for <a href="package-summary.html">j86.java.util.stream</a> for additional
  * specification of streams, stream operations, stream pipelines, and
  * parallelism, which governs the behavior of all stream types.
  *
@@ -59,7 +59,7 @@ import j86.j86.java.util.function.Predicate;
  * @see IntStream
  * @see LongStream
  * @see DoubleStream
- * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
+ * @see <a href="package-summary.html">j86.java.util.stream</a>
  */
 public interface BaseStream<T, S extends BaseStream<T, S>>
         extends AutoCloseable {

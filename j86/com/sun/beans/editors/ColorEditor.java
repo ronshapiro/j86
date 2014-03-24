@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.beans.editors;
+package j86.com.sun.beans.editors;
 
 import j86.java.awt.*;
 import j86.java.beans.*;

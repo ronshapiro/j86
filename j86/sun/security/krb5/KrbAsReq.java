@@ -31,9 +31,9 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.sun.security.krb5.internal.*;
-import j86.j86.j86.sun.security.krb5.internal.crypto.Nonce;
-import j86.j86.j86.sun.security.krb5.internal.crypto.KeyUsage;
+import j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.crypto.Nonce;
+import j86.sun.security.krb5.internal.crypto.KeyUsage;
 import j86.java.io.IOException;
 
 /**

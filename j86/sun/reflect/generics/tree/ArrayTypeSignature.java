@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.reflect.generics.tree;
+package j86.sun.reflect.generics.tree;
 
-import j86.j86.sun.reflect.generics.visitor.TypeTreeVisitor;
+import j86.sun.reflect.generics.visitor.TypeTreeVisitor;
 
 public class ArrayTypeSignature implements FieldTypeSignature {
     private TypeSignature componentType;

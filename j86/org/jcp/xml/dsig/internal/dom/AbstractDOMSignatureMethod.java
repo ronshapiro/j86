@@ -21,22 +21,22 @@
  * under the License.
  */
 
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.java.security.Key;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.SignatureException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.javax.xml.crypto.MarshalException;
-import j86.j86.javax.xml.crypto.dom.DOMCryptoContext;
-import j86.j86.javax.xml.crypto.dsig.SignatureMethod;
-import j86.j86.javax.xml.crypto.dsig.SignedInfo;
-import j86.j86.javax.xml.crypto.dsig.XMLSignature;
-import j86.j86.javax.xml.crypto.dsig.XMLSignatureException;
-import j86.j86.javax.xml.crypto.dsig.XMLSignContext;
-import j86.j86.javax.xml.crypto.dsig.XMLValidateContext;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
+import j86.javax.xml.crypto.dom.DOMCryptoContext;
+import j86.javax.xml.crypto.dsig.SignatureMethod;
+import j86.javax.xml.crypto.dsig.SignedInfo;
+import j86.javax.xml.crypto.dsig.XMLSignature;
+import j86.javax.xml.crypto.dsig.XMLSignatureException;
+import j86.javax.xml.crypto.dsig.XMLSignContext;
+import j86.javax.xml.crypto.dsig.XMLValidateContext;
+import j86.javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

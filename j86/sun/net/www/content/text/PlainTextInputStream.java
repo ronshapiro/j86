@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.content.text;
+package j86.sun.net.www.content.text;
 import j86.java.io.InputStream;
 import j86.java.io.FilterInputStream;
 

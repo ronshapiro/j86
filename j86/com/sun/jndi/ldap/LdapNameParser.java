@@ -27,7 +27,7 @@ package j86.com.sun.jndi.ldap;
 
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.ldap.LdapName;
+import j86.javax.naming.ldap.LdapName;
 
 
 class LdapNameParser implements NameParser {

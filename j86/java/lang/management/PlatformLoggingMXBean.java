@@ -23,30 +23,30 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 /**
- * The management interface for the {@linkplain j86.j86.java.util.logging logging} facility.
+ * The management interface for the {@linkplain j86.java.util.logging logging} facility.
  *
  * <p>There is a single global instance of the <tt>PlatformLoggingMXBean</tt>.
- * The {@link j86.j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
+ * The {@link j86.java.lang.management.ManagementFactory#getPlatformMXBean(Class)
  * ManagementFactory.getPlatformMXBean} method can be used to obtain
  * the {@code PlatformLoggingMXBean} object as follows:
  * <pre>
  *     PlatformLoggingMXBean logging = ManagementFactory.getPlatformMXBean(PlatformLoggingMXBean.class);
  * </pre>
  * The {@code PlatformLoggingMXBean} object is also registered with the
- * platform {@linkplain j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
+ * platform {@linkplain j86.java.lang.management.ManagementFactory#getPlatformMBeanServer
  * MBeanServer}.
  * The {@link j86.javax.management.ObjectName ObjectName} for uniquely
  * identifying the {@code PlatformLoggingMXBean} within an MBeanServer is:
  * <pre>
- *      {@link j86.j86.java.util.logging.LogManager#LOGGING_MXBEAN_NAME java.util.logging:type=Logging}
+ *      {@link j86.java.util.logging.LogManager#LOGGING_MXBEAN_NAME java.util.logging:type=Logging}
  * </pre>
  *
  * <p>The instance registered in the platform <tt>MBeanServer</tt> with
  * this {@code ObjectName} implements all attributes defined by
- * {@link j86.j86.java.util.logging.LoggingMXBean}.
+ * {@link j86.java.util.logging.LoggingMXBean}.
  *
  * @since   1.7
  */
@@ -54,8 +54,8 @@ public interface PlatformLoggingMXBean extends PlatformManagedObject {
 
     /**
      * Returns the list of the currently registered
-     * {@linkplain j86.j86.java.util.logging.Logger logger} names. This method
-     * calls {@link j86.j86.java.util.logging.LogManager#getLoggerNames} and
+     * {@linkplain j86.java.util.logging.Logger logger} names. This method
+     * calls {@link j86.java.util.logging.LogManager#getLoggerNames} and
      * returns a list of the logger names.
      *
      * @return A list of {@code String} each of which is a
@@ -64,15 +64,15 @@ public interface PlatformLoggingMXBean extends PlatformManagedObject {
     j86.java.util.List<String> getLoggerNames();
 
     /**
-     * Gets the name of the log {@linkplain j86.j86.java.util.logging.Logger#getLevel
+     * Gets the name of the log {@linkplain j86.java.util.logging.Logger#getLevel
      * level} associated with the specified logger.
      * If the specified logger does not exist, {@code null}
      * is returned.
      * This method first finds the logger of the given name and
      * then returns the name of the log level by calling:
      * <blockquote>
-     *   {@link j86.j86.java.util.logging.Logger#getLevel
-     *    Logger.getLevel()}.{@link j86.j86.java.util.logging.Level#getName getName()};
+     *   {@link j86.java.util.logging.Logger#getLevel
+     *    Logger.getLevel()}.{@link j86.java.util.logging.Level#getName getName()};
      * </blockquote>
      *
      * <p>
@@ -87,16 +87,16 @@ public interface PlatformLoggingMXBean extends PlatformManagedObject {
      *         is {@code null}.  If the specified logger does not
      *         exist, {@code null} is returned.
      *
-     * @see j86.j86.java.util.logging.Logger#getLevel
+     * @see j86.java.util.logging.Logger#getLevel
      */
     String getLoggerLevel(String loggerName);
 
     /**
      * Sets the specified logger to the specified new
-     * {@linkplain j86.j86.java.util.logging.Logger#setLevel level}.
+     * {@linkplain j86.java.util.logging.Logger#setLevel level}.
      * If the {@code levelName} is not {@code null}, the level
      * of the specified logger is set to the parsed
-     * {@link j86.j86.java.util.logging.Level Level}
+     * {@link j86.java.util.logging.Level Level}
      * matching the {@code levelName}.
      * If the {@code levelName} is {@code null}, the level
      * of the specified logger is set to {@code null} and
@@ -115,13 +115,13 @@ public interface PlatformLoggingMXBean extends PlatformManagedObject {
      * @throws SecurityException if a security manager exists and if
      * the caller does not have LoggingPermission("control").
      *
-     * @see j86.j86.java.util.logging.Logger#setLevel
+     * @see j86.java.util.logging.Logger#setLevel
      */
     void setLoggerLevel(String loggerName, String levelName);
 
     /**
      * Returns the name of the
-     * {@linkplain j86.j86.java.util.logging.Logger#getParent parent}
+     * {@linkplain j86.java.util.logging.Logger#getParent parent}
      * for the specified logger.
      * If the specified logger does not exist, {@code null} is returned.
      * If the specified logger is the root {@code Logger} in the namespace,

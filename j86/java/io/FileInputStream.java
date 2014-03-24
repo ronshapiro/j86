@@ -25,8 +25,8 @@
 
 package j86.java.io;
 
-import j86.j86.java.nio.channels.FileChannel;
-import j86.j86.j86.sun.nio.ch.FileChannelImpl;
+import j86.java.nio.channels.FileChannel;
+import j86.sun.nio.ch.FileChannelImpl;
 
 
 /**
@@ -42,7 +42,7 @@ import j86.j86.j86.sun.nio.ch.FileChannelImpl;
  * @see     j86.java.io.File
  * @see     j86.java.io.FileDescriptor
  * @see     j86.java.io.FileOutputStream
- * @see     j86.j86.java.nio.file.Files#newInputStream
+ * @see     j86.java.nio.file.Files#newInputStream
  * @since   JDK1.0
  */
 public
@@ -327,10 +327,10 @@ class FileInputStream extends InputStream
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.FileChannel FileChannel}
+     * Returns the unique {@link j86.java.nio.channels.FileChannel FileChannel}
      * object associated with this file input stream.
      *
-     * <p> The initial {@link j86.j86.java.nio.channels.FileChannel#position()
+     * <p> The initial {@link j86.java.nio.channels.FileChannel#position()
      * position} of the returned channel will be equal to the
      * number of bytes read from the file so far.  Reading bytes from this
      * stream will increment the channel's position.  Changing the channel's

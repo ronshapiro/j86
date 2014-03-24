@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.KeyManager
+ * NOTE:  this file was copied from j86.javax.net.ssl.KeyManager
  */
 
 package com.j86.sun.net.ssl;
@@ -35,7 +35,7 @@ package com.j86.sun.net.ssl;
  * of a secure socket.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.KeyManager}.
+ *      replaced by {@link j86.javax.net.ssl.KeyManager}.
  */
 @Deprecated
 public interface KeyManager {

@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.FieldAccessor;
 import j86.sun.reflect.Reflection;
-import j86.j86.sun.reflect.generics.repository.FieldRepository;
-import j86.j86.sun.reflect.generics.factory.CoreReflectionFactory;
-import j86.j86.sun.reflect.generics.factory.GenericsFactory;
-import j86.j86.sun.reflect.generics.scope.ClassScope;
-import j86.j86.java.lang.annotation.Annotation;
+import j86.sun.reflect.generics.repository.FieldRepository;
+import j86.sun.reflect.generics.factory.CoreReflectionFactory;
+import j86.sun.reflect.generics.factory.GenericsFactory;
+import j86.sun.reflect.generics.scope.ClassScope;
+import j86.java.lang.annotation.Annotation;
 import j86.java.util.Map;
 import j86.java.util.Objects;
-import j86.j86.sun.reflect.annotation.AnnotationParser;
-import j86.j86.sun.reflect.annotation.AnnotationSupport;
-import j86.j86.sun.reflect.annotation.TypeAnnotation;
-import j86.j86.sun.reflect.annotation.TypeAnnotationParser;
+import j86.sun.reflect.annotation.AnnotationParser;
+import j86.sun.reflect.annotation.AnnotationSupport;
+import j86.sun.reflect.annotation.TypeAnnotation;
+import j86.sun.reflect.annotation.TypeAnnotationParser;
 
 /**
  * A {@code Field} provides information about, and dynamic access to, a
@@ -138,7 +138,7 @@ class Field extends AccessibleObject implements Member {
         // among Field objects which refer to the same underlying
         // method in the VM. (All of this contortion is only necessary
         // because of the "accessibility" bit in AccessibleObject,
-        // which implicitly requires that new j86.j86.j86.java.lang.reflect
+        // which implicitly requires that new j86.java.lang.reflect
         // objects be fabricated for each reflective call on Class
         // objects.)
         Field res = new Field(clazz, name, type, modifiers, slot, signature, annotations);

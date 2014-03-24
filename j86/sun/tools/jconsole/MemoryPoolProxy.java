@@ -26,15 +26,15 @@
 package j86.sun.tools.jconsole;
 
 import j86.javax.management.ObjectName;
-import j86.j86.java.lang.management.MemoryPoolMXBean;
-import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.MemoryPoolMXBean;
+import j86.java.lang.management.MemoryUsage;
 import com.j86.sun.management.GarbageCollectorMXBean;
 import com.j86.sun.management.GcInfo;
 import j86.java.util.HashMap;
 import j86.java.util.Set;
 import j86.java.util.Map;
 
-import static j86.j86.java.lang.management.ManagementFactory.*;
+import static j86.java.lang.management.ManagementFactory.*;
 
 public class MemoryPoolProxy {
     private String poolName;

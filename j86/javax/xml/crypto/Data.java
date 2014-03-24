@@ -27,7 +27,7 @@
  */
 package j86.javax.xml.crypto;
 
-import j86.j86.javax.xml.crypto.dsig.Transform;
+import j86.javax.xml.crypto.dsig.Transform;
 
 /**
  * An abstract representation of the result of dereferencing a

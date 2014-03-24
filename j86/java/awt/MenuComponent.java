@@ -24,8 +24,8 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.MenuComponentPeer;
-import j86.j86.java.awt.event.ActionEvent;
+import j86.java.awt.peer.MenuComponentPeer;
+import j86.java.awt.event.ActionEvent;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.sun.awt.AppContext;
@@ -285,7 +285,7 @@ public abstract class MenuComponent implements j86.java.io.Serializable {
      * @param     f   the font to be set
      * @see       #getFont
      * @see       Font#getAttributes
-     * @see       j86.j86.java.awt.font.TextAttribute
+     * @see       j86.java.awt.font.TextAttribute
      */
     public void setFont(Font f) {
         font = f;
@@ -921,7 +921,7 @@ public abstract class MenuComponent implements j86.java.io.Serializable {
          *
          * @param l the focus listener
          */
-        public void addFocusListener(j86.j86.java.awt.event.FocusListener l) {
+        public void addFocusListener(j86.java.awt.event.FocusListener l) {
             // Not supported for MenuComponents
         }
 
@@ -931,7 +931,7 @@ public abstract class MenuComponent implements j86.java.io.Serializable {
          *
          * @param l the focus listener
          */
-        public void removeFocusListener(j86.j86.java.awt.event.FocusListener l) {
+        public void removeFocusListener(j86.java.awt.event.FocusListener l) {
             // Not supported for MenuComponents
         }
 

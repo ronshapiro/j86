@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;
 
 import j86.sun.security.krb5.JavaxSecurityAuthKerberosAccess;
 import j86.sun.security.krb5.EncryptionKey;
@@ -31,7 +31,7 @@ import j86.sun.security.krb5.PrincipalName;
 
 class JavaxSecurityAuthKerberosAccessImpl
         implements JavaxSecurityAuthKerberosAccess {
-    public j86.j86.j86.sun.security.krb5.internal.ktab.KeyTab keyTabTakeSnapshot(
+    public j86.sun.security.krb5.internal.ktab.KeyTab keyTabTakeSnapshot(
             KeyTab ktab) {
         return ktab.takeSnapshot();
     }

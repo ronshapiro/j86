@@ -37,7 +37,7 @@ import j86.java.io.BufferedWriter;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
-import j86.j86.sun.util.spi.XmlPropertiesProvider;
+import j86.sun.util.spi.XmlPropertiesProvider;
 
 /**
  * The {@code Properties} class represents a persistent set of
@@ -1138,7 +1138,7 @@ class Properties extends Hashtable<Object,Object> {
      * method then the system-wide provider is located as follows: </p>
      *
      * <ol>
-     *   <li> If the system property {@code j86.j86.sun.util.spi.XmlPropertiesProvider}
+     *   <li> If the system property {@code j86.sun.util.spi.XmlPropertiesProvider}
      *   is defined then it is taken to be the full-qualified name of a concrete
      *   provider class. The class is loaded with the system class loader as the
      *   initiating loader. If it cannot be loaded or instantiated using a zero
@@ -1147,7 +1147,7 @@ class Properties extends Hashtable<Object,Object> {
      *   <li> If the system property is not defined then the service-provider
      *   loading facility defined by the {@link ServiceLoader} class is used to
      *   locate a provider with the system class loader as the initiating
-     *   loader and {@code j86.j86.sun.util.spi.XmlPropertiesProvider} as the service
+     *   loader and {@code j86.sun.util.spi.XmlPropertiesProvider} as the service
      *   type. If this process fails then an unspecified error is thrown. If
      *   there is more than one service provider installed then it is
      *   not specified as to which provider will be used. </li>
@@ -1159,7 +1159,7 @@ class Properties extends Hashtable<Object,Object> {
     private static class XmlSupport {
 
         private static XmlPropertiesProvider loadProviderFromProperty(ClassLoader cl) {
-            String cn = System.getProperty("j86.j86.sun.util.spi.XmlPropertiesProvider");
+            String cn = System.getProperty("j86.sun.util.spi.XmlPropertiesProvider");
             if (cn == null)
                 return null;
             try {

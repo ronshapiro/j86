@@ -26,8 +26,8 @@
 package j86.java.net;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Method;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
 import j86.java.util.Set;
@@ -44,7 +44,7 @@ import j86.java.util.Set;
 /*package*/ class HttpConnectSocketImpl extends PlainSocketImpl {
 
     private static final String httpURLClazzStr =
-                                  "j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection";
+                                  "j86.sun.net.www.protocol.http.HttpURLConnection";
     private static final String netClientClazzStr = "j86.sun.net.NetworkClient";
     private static final String doTunnelingStr = "doTunneling";
     private static final Field httpField;

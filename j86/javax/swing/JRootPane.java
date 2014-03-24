@@ -26,14 +26,14 @@ package j86.javax.swing;
 
 import j86.java.applet.Applet;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.security.AccessController;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.plaf.RootPaneUI;
+import j86.javax.swing.plaf.RootPaneUI;
 import j86.java.util.Vector;
 import j86.java.io.Serializable;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 import j86.sun.awt.AWTAccessor;
 import j86.sun.security.action.GetBooleanAction;
 

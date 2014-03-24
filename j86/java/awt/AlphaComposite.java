@@ -25,8 +25,8 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.java.lang.annotation.Native;
+import j86.java.awt.image.ColorModel;
+import j86.java.lang.annotation.Native;
 import j86.sun.java2d.SunCompositeContext;
 
 /**

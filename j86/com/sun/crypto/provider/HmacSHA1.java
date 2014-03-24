@@ -30,7 +30,7 @@ import j86.java.nio.ByteBuffer;
 import j86.javax.crypto.MacSpi;
 import j86.javax.crypto.SecretKey;
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 /**
  * This is an implementation of the HMAC-SHA1 algorithm.

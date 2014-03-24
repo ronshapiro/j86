@@ -26,18 +26,18 @@
 package j86.sun.tools.jar;
 
 import j86.java.io.*;
-import j86.j86.java.nio.file.Path;
-import j86.j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
+import j86.java.nio.file.Files;
 import j86.java.util.*;
-import j86.j86.java.util.zip.*;
-import j86.j86.java.util.jar.*;
-import j86.j86.java.util.jar.Pack200.*;
-import j86.j86.java.util.jar.Manifest;
+import j86.java.util.zip.*;
+import j86.java.util.jar.*;
+import j86.java.util.jar.Pack200.*;
+import j86.java.util.jar.Manifest;
 import j86.java.text.MessageFormat;
 import j86.sun.misc.JarIndex;
 import static j86.sun.misc.JarIndex.INDEX_NAME;
-import static j86.j86.java.util.jar.JarFile.MANIFEST_NAME;
-import static j86.j86.java.nio.file.StandardCopyOption.REPLACE_EXISTING;
+import static j86.java.util.jar.JarFile.MANIFEST_NAME;
+import static j86.java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
 /**
  * This class implements a simple utility for creating files in the JAR

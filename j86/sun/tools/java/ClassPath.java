@@ -29,7 +29,7 @@ import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
 import j86.java.io.File;
 import j86.java.io.IOException;
-import j86.j86.java.util.zip.*;
+import j86.java.util.zip.*;
 
 /**
  * This class is used to represent a class path, which can contain both

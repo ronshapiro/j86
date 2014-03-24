@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.management.snmp.jvminstr;
+package j86.sun.management.snmp.jvminstr;
 
 // java imports
 //
 import j86.java.io.Serializable;
 
-import j86.j86.java.lang.management.ThreadMXBean;
-import j86.j86.java.lang.management.ManagementFactory;
+import j86.java.lang.management.ThreadMXBean;
+import j86.java.lang.management.ManagementFactory;
 
 // jmx imports
 //
@@ -39,13 +39,13 @@ import j86.com.sun.jmx.snmp.SnmpStatusException;
 
 // jdmk imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMib;
+import j86.com.sun.jmx.snmp.agent.SnmpMib;
 import j86.com.sun.jmx.snmp.SnmpDefinitions;
 
-import j86.j86.j86.sun.management.snmp.jvmmib.JvmThreadingMBean;
-import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmThreadCpuTimeMonitoring;
-import j86.j86.j86.sun.management.snmp.jvmmib.EnumJvmThreadContentionMonitoring;
-import j86.j86.j86.sun.management.snmp.util.MibLogger;
+import j86.sun.management.snmp.jvmmib.JvmThreadingMBean;
+import j86.sun.management.snmp.jvmmib.EnumJvmThreadCpuTimeMonitoring;
+import j86.sun.management.snmp.jvmmib.EnumJvmThreadContentionMonitoring;
+import j86.sun.management.snmp.util.MibLogger;
 
 /**
  * The class is used for implementing the "JvmThreading" group.
@@ -68,9 +68,9 @@ public class JvmThreadingImpl implements JvmThreadingMBean {
      * SET request. unsupported(1) can only be set internally by the
      * agent.
      *
-     * See j86.j86.java.lang.management.ThreadMXBean.isThreadCpuTimeSupported(),
-     * j86.j86.java.lang.management.ThreadMXBean.isThreadCpuTimeEnabled(),
-     * j86.j86.java.lang.management.ThreadMXBean.setThreadCpuTimeEnabled()
+     * See j86.java.lang.management.ThreadMXBean.isThreadCpuTimeSupported(),
+     * j86.java.lang.management.ThreadMXBean.isThreadCpuTimeEnabled(),
+     * j86.java.lang.management.ThreadMXBean.setThreadCpuTimeEnabled()
      * "
      *
      */
@@ -101,9 +101,9 @@ public class JvmThreadingImpl implements JvmThreadingMBean {
      * SET request. unsupported(1) can only be set internally by the
      * agent.
      *
-     * See j86.j86.java.lang.management.ThreadMXBean.isThreadContentionMonitoringSupported(),
-     * j86.j86.java.lang.management.ThreadMXBean.isThreadContentionMonitoringEnabled(),
-     * j86.j86.java.lang.management.ThreadMXBean.setThreadContentionMonitoringEnabled()
+     * See j86.java.lang.management.ThreadMXBean.isThreadContentionMonitoringSupported(),
+     * j86.java.lang.management.ThreadMXBean.isThreadContentionMonitoringEnabled(),
+     * j86.java.lang.management.ThreadMXBean.setThreadContentionMonitoringEnabled()
      * "
      *
      */
@@ -138,7 +138,7 @@ public class JvmThreadingImpl implements JvmThreadingMBean {
 
     /**
      * ThreadMXBean accessor. It is acquired from the
-     * j86.j86.java.lang.management.ManagementFactory
+     * j86.java.lang.management.ManagementFactory
      * @return The local ThreadMXBean.
      */
     static ThreadMXBean getThreadMXBean() {

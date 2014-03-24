@@ -52,13 +52,13 @@ import j86.java.security.ProtectionDomain;
 import j86.java.text.DateFormat;
 import j86.java.text.DateFormatSymbols;
 import j86.java.time.Instant;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 import j86.sun.util.BuddhistCalendar;
-import j86.j86.sun.util.calendar.ZoneInfo;
-import j86.j86.j86.sun.util.locale.provider.CalendarDataUtility;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.sun.util.spi.CalendarProvider;
+import j86.sun.util.calendar.ZoneInfo;
+import j86.sun.util.locale.provider.CalendarDataUtility;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.spi.CalendarProvider;
 
 /**
  * The <code>Calendar</code> class is an abstract class that provides methods
@@ -3492,7 +3492,7 @@ public abstract class Calendar implements Serializable, Cloneable, Comparable<Ca
     private static class CalendarAccessControlContext {
         private static final AccessControlContext INSTANCE;
         static {
-            RuntimePermission perm = new RuntimePermission("accessClassInPackage.j86.j86.sun.util.calendar");
+            RuntimePermission perm = new RuntimePermission("accessClassInPackage.j86.sun.util.calendar");
             PermissionCollection perms = perm.newPermissionCollection();
             perms.add(perm);
             INSTANCE = new AccessControlContext(new ProtectionDomain[] {

@@ -40,7 +40,7 @@ import j86.javax.crypto.SecretKey;
 public class KerberosClientKeyExchange extends HandshakeMessage {
 
     private static final String IMPL_CLASS =
-        "j86.j86.sun.security.ssl.krb5.KerberosClientKeyExchangeImpl";
+        "j86.sun.security.ssl.krb5.KerberosClientKeyExchangeImpl";
 
     private static final Class<?> implClass = AccessController.doPrivileged(
             new PrivilegedAction<Class<?>>() {

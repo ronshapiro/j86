@@ -25,16 +25,16 @@
 /*
  * $Id: Transform.java,v 1.5 2005/05/10 16:03:48 mullan Exp $
  */
-package j86.j86.javax.xml.crypto.dsig;
+package j86.javax.xml.crypto.dsig;
 
 import j86.java.io.OutputStream;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.javax.xml.crypto.AlgorithmMethod;
 import j86.javax.xml.crypto.Data;
 import j86.javax.xml.crypto.OctetStreamData;
 import j86.javax.xml.crypto.XMLCryptoContext;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
+import j86.javax.xml.crypto.dsig.spec.TransformParameterSpec;
 
 /**
  * A representation of the XML <code>Transform</code> element as

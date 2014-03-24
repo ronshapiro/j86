@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.net.*;
 import j86.java.io.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.util.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
 
 /**
  * Component decorator that implements the view interface
@@ -344,9 +344,9 @@ public class FormView extends ComponentView implements ActionListener {
             // BasicListUI$Handler and BasicComboBoxUI$Handler.
             AbstractListModel listModel = (AbstractListModel) model;
             String listenerClass1 =
-                    "j86.j86.j86.javax.swing.plaf.basic.BasicListUI$Handler";
+                    "j86.javax.swing.plaf.basic.BasicListUI$Handler";
             String listenerClass2 =
-                    "j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxUI$Handler";
+                    "j86.javax.swing.plaf.basic.BasicComboBoxUI$Handler";
             for (ListDataListener listener : listModel.getListDataListeners()) {
                 if (listenerClass1.equals(listener.getClass().getName())
                         || listenerClass2.equals(listener.getClass().getName()))
@@ -358,9 +358,9 @@ public class FormView extends ComponentView implements ActionListener {
             // case of JPasswordField, JTextField and JTextArea
             // All have 2 stale DocumentListeners.
             String listenerClass1 =
-                    "j86.j86.j86.javax.swing.plaf.basic.BasicTextUI$UpdateHandler";
+                    "j86.javax.swing.plaf.basic.BasicTextUI$UpdateHandler";
             String listenerClass2 =
-                    "j86.j86.javax.swing.text.DefaultCaret$Handler";
+                    "j86.javax.swing.text.DefaultCaret$Handler";
             AbstractDocument docModel = (AbstractDocument) model;
             for (DocumentListener listener : docModel.getDocumentListeners()) {
                 if (listenerClass1.equals(listener.getClass().getName())

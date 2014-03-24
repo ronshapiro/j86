@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.nimbus;
+package j86.javax.swing.plaf.nimbus;
 
 import j86.javax.swing.Painter;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.sun.swing.plaf.synth.SynthIcon;
 
-import j86.j86.j86.javax.swing.plaf.synth.SynthContext;
+import j86.javax.swing.plaf.synth.SynthContext;
 import j86.javax.swing.*;
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.javax.swing.plaf.UIResource;
+import j86.java.awt.image.BufferedImage;
+import j86.javax.swing.plaf.UIResource;
 
 /**
  * An icon that delegates to a painter.

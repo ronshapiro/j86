@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.util.spi;
+package j86.sun.util.spi;
 
 import j86.java.util.Calendar;
 import j86.java.util.Locale;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.spi.LocaleServiceProvider;
+import j86.java.util.spi.LocaleServiceProvider;
 
 /**
  * An abstract class for service providers that
@@ -55,7 +55,7 @@ public abstract class CalendarProvider extends LocaleServiceProvider {
      * @exception NullPointerException if <code>locale</code> is null
      * @exception IllegalArgumentException if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @return a <code>Calendar</code> instance.
      * @see j86.java.util.Calendar#getInstance(java.util.Locale)

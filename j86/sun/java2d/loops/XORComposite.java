@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ColorModel;
 import j86.java.awt.Color;
 import j86.java.awt.Composite;
 import j86.java.awt.CompositeContext;

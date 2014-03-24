@@ -33,7 +33,7 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.j86.java.util.concurrent.locks;
+package j86.java.util.concurrent.locks;
 
 /**
  * A synchronizer that may be exclusively owned by a thread.  This

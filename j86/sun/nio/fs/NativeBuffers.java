@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
 import j86.sun.misc.Unsafe;
 

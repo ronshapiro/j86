@@ -26,8 +26,8 @@
 package j86.sun.misc;
 
 import j86.java.util.StringTokenizer;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
 import j86.java.util.ResourceBundle;
 import j86.java.util.MissingResourceException;
 import j86.java.text.MessageFormat;
@@ -70,7 +70,7 @@ public class ExtensionInfo {
 
     // For I18N support
     private static final ResourceBundle rb =
-        ResourceBundle.getBundle("j86.j86.sun.misc.resources.Messages");
+        ResourceBundle.getBundle("j86.sun.misc.resources.Messages");
 
 
     /**

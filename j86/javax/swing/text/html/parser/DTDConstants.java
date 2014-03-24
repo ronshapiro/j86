@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.j86.javax.swing.text.html.parser;
+package j86.javax.swing.text.html.parser;
 
 /**
  * SGML constants used in a DTD. The names of the

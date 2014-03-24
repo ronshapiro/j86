@@ -34,10 +34,10 @@ import j86.java.security.NoSuchProviderException;
 import j86.java.security.InvalidParameterException;
 import j86.java.security.MessageDigest;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.java.security.spec.DSAParameterSpec;
-import j86.j86.java.security.spec.DSAGenParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.spec.DSAParameterSpec;
+import j86.java.security.spec.DSAGenParameterSpec;
 
 /**
  * This class generates parameters for the DSA algorithm. It uses a default
@@ -48,7 +48,7 @@ import j86.j86.java.security.spec.DSAGenParameterSpec;
  *
  *
  * @see j86.java.security.AlgorithmParameters
- * @see j86.j86.java.security.spec.AlgorithmParameterSpec
+ * @see j86.java.security.spec.AlgorithmParameterSpec
  * @see DSAParameters
  *
  * @since 1.2

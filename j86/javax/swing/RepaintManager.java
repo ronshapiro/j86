@@ -26,13 +26,13 @@ package j86.javax.swing;
 
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.event.*;
+import j86.java.awt.image.VolatileImage;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.util.*;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicInteger;
 import j86.java.applet.*;
 
 import j86.sun.awt.AWTAccessor;
@@ -994,7 +994,7 @@ public class RepaintManager
    * This happens when the maximum double buffer size has been set for this
    * repaint manager.
    *
-   * @see j86.j86.j86.java.awt.image.VolatileImage
+   * @see j86.java.awt.image.VolatileImage
    * @since 1.4
    */
     public Image getVolatileOffscreenBuffer(Component c,
@@ -1440,7 +1440,7 @@ public class RepaintManager
             if (repaintManager.useVolatileDoubleBuffer() &&
                 (offscreen = getValidImage(repaintManager.
                 getVolatileOffscreenBuffer(bufferComponent, w, h))) != null) {
-                VolatileImage vImage = (j86.j86.j86.java.awt.image.VolatileImage)offscreen;
+                VolatileImage vImage = (j86.java.awt.image.VolatileImage)offscreen;
                 GraphicsConfiguration gc = bufferComponent.
                                             getGraphicsConfiguration();
                 for (int i = 0; !paintCompleted &&
@@ -1450,7 +1450,7 @@ public class RepaintManager
                         repaintManager.resetVolatileDoubleBuffer(gc);
                         offscreen = repaintManager.getVolatileOffscreenBuffer(
                             bufferComponent,w, h);
-                        vImage = (j86.j86.j86.java.awt.image.VolatileImage)offscreen;
+                        vImage = (j86.java.awt.image.VolatileImage)offscreen;
                     }
                     paintDoubleBuffered(paintingComponent, vImage, g, x, y,
                                         w, h);

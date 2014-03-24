@@ -26,9 +26,9 @@
 package j86.sun.awt;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.dnd.*;
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
-import j86.j86.java.awt.peer.*;
+import j86.java.awt.dnd.*;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.peer.*;
 
 /**
  * Interface for component creation support in toolkits

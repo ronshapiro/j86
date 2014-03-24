@@ -22,20 +22,20 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.decoder;
+package j86.com.sun.beans.decoder;
 
-import j86.j86.com.sun.beans.finder.MethodFinder;
+import j86.com.sun.beans.finder.MethodFinder;
 
 import j86.java.beans.IndexedPropertyDescriptor;
 import j86.java.beans.IntrospectionException;
 import j86.java.beans.Introspector;
 import j86.java.beans.PropertyDescriptor;
 
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 
-import j86.j86.sun.reflect.misc.MethodUtil;
+import j86.sun.reflect.misc.MethodUtil;
 
 /**
  * This class is intended to handle &lt;property&gt; element.

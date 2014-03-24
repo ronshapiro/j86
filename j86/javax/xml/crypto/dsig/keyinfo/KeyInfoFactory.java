@@ -25,7 +25,7 @@
 /*
  * $Id: KeyInfoFactory.java,v 1.12 2005/05/10 16:35:35 mullan Exp $
  */
-package j86.j86.j86.javax.xml.crypto.dsig.keyinfo;
+package j86.javax.xml.crypto.dsig.keyinfo;
 
 import j86.java.math.BigInteger;
 import j86.java.security.KeyException;
@@ -34,14 +34,14 @@ import j86.java.security.NoSuchProviderException;
 import j86.java.security.Provider;
 import j86.java.security.PublicKey;
 import j86.java.security.Security;
-import j86.j86.java.security.cert.X509CRL;
+import j86.java.security.cert.X509CRL;
 import j86.java.util.List;
 import j86.javax.xml.crypto.MarshalException;
 import j86.javax.xml.crypto.NoSuchMechanismException;
 import j86.javax.xml.crypto.URIDereferencer;
 import j86.javax.xml.crypto.XMLStructure;
-import j86.j86.javax.xml.crypto.dom.DOMStructure;
-import j86.j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dom.DOMStructure;
+import j86.javax.xml.crypto.dsig.*;
 
 import j86.sun.security.jca.*;
 import j86.sun.security.jca.GetInstance.Instance;
@@ -453,7 +453,7 @@ public abstract class KeyInfoFactory {
      *
      * @param content a list of one or more X.509 content types. Valid types are
      *    {@link String} (subject names), <code>byte[]</code> (subject key ids),
-     *    {@link j86.j86.java.security.cert.X509Certificate}, {@link X509CRL},
+     *    {@link j86.java.security.cert.X509Certificate}, {@link X509CRL},
      *    or {@link XMLStructure} ({@link X509IssuerSerial}
      *    objects or elements from an external namespace). Subject names are
      *    distinguished names in RFC 2253 String format. Implementations MUST

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.javax.crypto.interfaces;
+package j86.javax.crypto.interfaces;
 
-import j86.j86.javax.crypto.spec.DHParameterSpec;
+import j86.javax.crypto.spec.DHParameterSpec;
 
 /**
  * The interface to a Diffie-Hellman key.
  *
  * @author Jan Luehe
  *
- * @see j86.j86.javax.crypto.spec.DHParameterSpec
+ * @see j86.javax.crypto.spec.DHParameterSpec
  * @see DHPublicKey
  * @see DHPrivateKey
  * @since 1.4

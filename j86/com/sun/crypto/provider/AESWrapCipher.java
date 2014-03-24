@@ -27,9 +27,9 @@ package j86.com.sun.crypto.provider;
 
 import j86.java.util.Arrays;
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 import j86.javax.crypto.*;
-import j86.j86.javax.crypto.spec.*;
+import j86.javax.crypto.spec.*;
 
 /**
  * This class implements the AES KeyWrap algorithm as defined

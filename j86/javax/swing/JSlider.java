@@ -25,8 +25,8 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.io.Serializable;
@@ -363,7 +363,7 @@ public class JSlider extends JComponent implements SwingConstants, Accessible {
      * slider.
      * @see #changeListener
      * @see #fireStateChanged
-     * @see j86.j86.javax.swing.event.ChangeListener
+     * @see j86.javax.swing.event.ChangeListener
      * @see j86.javax.swing.BoundedRangeModel
      */
     protected ChangeListener createChangeListener() {

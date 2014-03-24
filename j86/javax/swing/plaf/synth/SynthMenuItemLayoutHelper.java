@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.sun.swing.StringUIClientPropertyKey;
 import j86.sun.swing.MenuItemLayoutHelper;
-import j86.j86.j86.sun.swing.plaf.synth.SynthIcon;
+import j86.sun.swing.plaf.synth.SynthIcon;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.text.View;
 import j86.java.awt.*;
 
 /**

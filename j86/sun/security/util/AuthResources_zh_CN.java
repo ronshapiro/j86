@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_zh_CN extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "\u65E0\u6CD5\u6B63\u786E\u6269\u5C55{0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (\u6CA1\u6709\u8FD9\u6837\u7684\u6587\u4EF6\u6216\u76EE\u5F55)"},
@@ -78,11 +78,11 @@ public class AuthResources_zh_CN extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "\u914D\u7F6E\u9519\u8BEF: \n\t\u884C {0}: \u7CFB\u7EDF\u5C5E\u6027 [{1}] \u6269\u5C55\u5230\u7A7A\u503C"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","\u7528\u6237\u540D: "},
         {"password.","\u53E3\u4EE4: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "\u8BF7\u8F93\u5165\u5BC6\u94A5\u5E93\u4FE1\u606F"},
         {"Keystore.alias.","\u5BC6\u94A5\u5E93\u522B\u540D: "},
@@ -90,7 +90,7 @@ public class AuthResources_zh_CN extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "\u79C1\u6709\u5BC6\u94A5\u53E3\u4EE4 (\u53EF\u9009): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Kerberos \u7528\u6237\u540D [{0}]: "},
         {"Kerberos.password.for.username.",

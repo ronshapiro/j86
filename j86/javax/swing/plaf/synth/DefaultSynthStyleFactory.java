@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.FontUIResource;
+import j86.javax.swing.plaf.FontUIResource;
 import j86.java.awt.Font;
 import j86.java.util.*;
-import j86.j86.java.util.regex.*;
-import j86.j86.j86.sun.swing.plaf.synth.*;
+import j86.java.util.regex.*;
+import j86.sun.swing.plaf.synth.*;
 import j86.sun.swing.BakedArrayList;
 
 /**

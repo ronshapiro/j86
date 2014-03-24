@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import static j86.java.util.Calendar.*;
 import j86.java.util.Locale;
 import j86.java.util.Map;
-import j86.j86.java.util.spi.CalendarDataProvider;
-import j86.j86.java.util.spi.CalendarNameProvider;
+import j86.java.util.spi.CalendarDataProvider;
+import j86.java.util.spi.CalendarNameProvider;
 
 /**
  * {@code CalendarDataUtility} is a utility class for calling the

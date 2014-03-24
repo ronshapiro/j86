@@ -20,15 +20,15 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
 import j86.java.io.OutputStream;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
 
 /**
  * Class TransformXPointer

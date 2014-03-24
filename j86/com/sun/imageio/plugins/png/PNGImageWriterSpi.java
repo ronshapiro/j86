@@ -25,16 +25,16 @@
 
 package j86.com.sun.imageio.plugins.png;
 
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.SampleModel;
 import j86.java.util.Locale;
 import j86.javax.imageio.ImageWriter;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.spi.ImageWriterSpi;
-import j86.j86.javax.imageio.stream.ImageOutputStream;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.spi.ImageWriterSpi;
+import j86.javax.imageio.stream.ImageOutputStream;
 
 public class PNGImageWriterSpi extends ImageWriterSpi {
 

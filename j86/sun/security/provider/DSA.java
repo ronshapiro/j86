@@ -32,9 +32,9 @@ import j86.java.nio.ByteBuffer;
 
 import j86.java.security.*;
 import j86.java.security.SecureRandom;
-import j86.j86.java.security.interfaces.*;
-import j86.j86.java.security.spec.DSAParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.interfaces.*;
+import j86.java.security.spec.DSAParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.DerValue;
@@ -104,13 +104,13 @@ abstract class DSA extends SignatureSpi {
      */
     protected void engineInitSign(PrivateKey privateKey)
             throws InvalidKeyException {
-        if (!(privateKey instanceof j86.j86.java.security.interfaces.DSAPrivateKey)) {
+        if (!(privateKey instanceof j86.java.security.interfaces.DSAPrivateKey)) {
             throw new InvalidKeyException("not a DSA private key: " +
                                           privateKey);
         }
 
-        j86.j86.java.security.interfaces.DSAPrivateKey priv =
-            (j86.j86.java.security.interfaces.DSAPrivateKey)privateKey;
+        j86.java.security.interfaces.DSAPrivateKey priv =
+            (j86.java.security.interfaces.DSAPrivateKey)privateKey;
 
         // check for algorithm specific constraints before doing initialization
         DSAParams params = priv.getParams();
@@ -137,12 +137,12 @@ abstract class DSA extends SignatureSpi {
      */
     protected void engineInitVerify(PublicKey publicKey)
             throws InvalidKeyException {
-        if (!(publicKey instanceof j86.j86.java.security.interfaces.DSAPublicKey)) {
+        if (!(publicKey instanceof j86.java.security.interfaces.DSAPublicKey)) {
             throw new InvalidKeyException("not a DSA public key: " +
                                           publicKey);
         }
-        j86.j86.java.security.interfaces.DSAPublicKey pub =
-            (j86.j86.java.security.interfaces.DSAPublicKey)publicKey;
+        j86.java.security.interfaces.DSAPublicKey pub =
+            (j86.java.security.interfaces.DSAPublicKey)publicKey;
 
         // check for algorithm specific constraints before doing initialization
         DSAParams params = pub.getParams();

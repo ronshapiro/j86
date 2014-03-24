@@ -61,9 +61,9 @@
  * written authorization of the copyright holder.
  */
 
-package j86.j86.j86.sun.text.resources.sr;
+package j86.sun.text.resources.sr;
 
-import j86.j86.sun.util.resources.ParallelListResourceBundle;
+import j86.sun.util.resources.ParallelListResourceBundle;
 
 public class FormatData_sr_Latn_ME extends ParallelListResourceBundle {
     protected final Object[][] getContents() {

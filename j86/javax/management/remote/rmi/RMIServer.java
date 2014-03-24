@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.java.io.IOException;
 import j86.java.rmi.Remote;

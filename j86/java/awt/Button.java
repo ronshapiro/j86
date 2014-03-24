@@ -25,9 +25,9 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.ButtonPeer;
+import j86.java.awt.peer.ButtonPeer;
 import j86.java.util.EventListener;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
@@ -78,8 +78,8 @@ import j86.javax.accessibility.*;
  * make use of the button's action command as a messaging protocol.
  *
  * @author      Sami Shaio
- * @see         j86.j86.java.awt.event.ActionEvent
- * @see         j86.j86.java.awt.event.ActionListener
+ * @see         j86.java.awt.event.ActionEvent
+ * @see         j86.java.awt.event.ActionListener
  * @see         j86.java.awt.Component#processMouseEvent
  * @see         j86.java.awt.Component#addMouseListener
  * @since       JDK1.0
@@ -227,7 +227,7 @@ public class Button extends Component implements Accessible {
      *                  action command.
      *            If the string is <code>null</code> then the action command
      *            is set to match the label of the button.
-     * @see       j86.j86.java.awt.event.ActionEvent
+     * @see       j86.java.awt.event.ActionEvent
      * @since     JDK1.1
      */
     public void setActionCommand(String command) {
@@ -254,7 +254,7 @@ public class Button extends Component implements Accessible {
      * @param         l the action listener
      * @see           #removeActionListener
      * @see           #getActionListeners
-     * @see           j86.j86.java.awt.event.ActionListener
+     * @see           j86.java.awt.event.ActionListener
      * @since         JDK1.1
      */
     public synchronized void addActionListener(ActionListener l) {
@@ -276,7 +276,7 @@ public class Button extends Component implements Accessible {
      * @param           l     the action listener
      * @see             #addActionListener
      * @see             #getActionListeners
-     * @see             j86.j86.java.awt.event.ActionListener
+     * @see             j86.java.awt.event.ActionListener
      * @since           JDK1.1
      */
     public synchronized void removeActionListener(ActionListener l) {
@@ -296,7 +296,7 @@ public class Button extends Component implements Accessible {
      *
      * @see             #addActionListener
      * @see             #removeActionListener
-     * @see             j86.j86.java.awt.event.ActionListener
+     * @see             j86.java.awt.event.ActionListener
      * @since 1.4
      */
     public synchronized ActionListener[] getActionListeners() {
@@ -368,7 +368,7 @@ public class Button extends Component implements Accessible {
      * exception.
      *
      * @param        e the event
-     * @see          j86.j86.java.awt.event.ActionEvent
+     * @see          j86.java.awt.event.ActionEvent
      * @see          j86.java.awt.Button#processActionEvent
      * @since        JDK1.1
      */
@@ -398,7 +398,7 @@ public class Button extends Component implements Accessible {
      * exception.
      *
      * @param       e the action event
-     * @see         j86.j86.java.awt.event.ActionListener
+     * @see         j86.java.awt.event.ActionListener
      * @see         j86.java.awt.Button#addActionListener
      * @see         j86.java.awt.Component#enableEvents
      * @since       JDK1.1

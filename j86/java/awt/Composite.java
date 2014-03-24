@@ -25,7 +25,7 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.ColorModel;
 
 /**
  * The <code>Composite</code> interface, along with

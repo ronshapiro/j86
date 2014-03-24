@@ -27,9 +27,9 @@ package j86.sun.security.provider;
 
 import j86.java.io.*;
 import j86.java.security.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.CertificateFactory;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.CertificateFactory;
+import j86.java.security.cert.CertificateException;
 import j86.java.util.*;
 import j86.sun.misc.IOUtils;
 

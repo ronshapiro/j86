@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.wrapper;
+package j86.sun.security.jgss.wrapper;
 
 import j86.org.ietf.jgss.*;
 import j86.java.security.Provider;
@@ -36,7 +36,7 @@ import j86.sun.security.util.DerInputStream;
 import j86.sun.security.util.DerOutputStream;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.GSSExceptionImpl;
-import j86.j86.sun.security.jgss.spi.GSSNameSpi;
+import j86.sun.security.jgss.spi.GSSNameSpi;
 
 /**
  * This class is essentially a wrapper class for the gss_name_t

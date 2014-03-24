@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
 import j86.java.net.*;
 import j86.java.io.*;
-import com.j86.j86.sun.net.httpserver.*;
-import j86.com.j86.j86.sun.net.httpserver.spi.*;
+import com.j86.sun.net.httpserver.*;
+import j86.com.j86.sun.net.httpserver.spi.*;
 
 public class DefaultHttpServerProvider extends HttpServerProvider {
     public HttpServer createHttpServer (InetSocketAddress addr, int backlog) throws IOException {

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.net.ftp;
+package j86.sun.net.ftp;
 
 import j86.java.util.Date;
 import j86.java.util.HashMap;
@@ -34,7 +34,7 @@ import j86.java.util.HashMap;
  * time, owner and group of the file, although some of these could be unavailable
  * due to specific FTP server limitations.
  *
- * @see j86.j86.sun.net.ftp.FtpDirParser
+ * @see j86.sun.net.ftp.FtpDirParser
  * @since 1.7
  */
 public class FtpDirEntry {

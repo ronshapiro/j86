@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.java.io.Closeable;
 import j86.java.io.IOException;
@@ -49,7 +49,7 @@ import j86.javax.management.ObjectName;
 import j86.javax.management.ReflectionException;
 import j86.javax.management.RuntimeMBeanException;
 import j86.javax.management.RuntimeOperationsException;
-import j86.j86.javax.management.remote.NotificationResult;
+import j86.javax.management.remote.NotificationResult;
 import j86.javax.security.auth.Subject;
 
 /**

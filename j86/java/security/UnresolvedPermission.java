@@ -29,8 +29,8 @@ import j86.java.io.IOException;
 import j86.java.io.ByteArrayInputStream;
 import j86.java.util.ArrayList;
 import j86.java.util.Hashtable;
-import j86.j86.j86.java.lang.reflect.*;
-import j86.j86.java.security.cert.*;
+import j86.java.lang.reflect.*;
+import j86.java.security.cert.*;
 
 /**
  * The UnresolvedPermission class is used to hold Permissions that
@@ -130,7 +130,7 @@ implements j86.java.io.Serializable
      */
     private String actions;
 
-    private transient j86.j86.java.security.cert.Certificate certs[];
+    private transient j86.java.security.cert.Certificate certs[];
 
     /**
      * Creates a new UnresolvedPermission containing the permission
@@ -152,7 +152,7 @@ implements j86.java.io.Serializable
     public UnresolvedPermission(String type,
                                 String name,
                                 String actions,
-                                j86.j86.java.security.cert.Certificate certs[])
+                                j86.java.security.cert.Certificate certs[])
     {
         super(type);
 
@@ -195,7 +195,7 @@ implements j86.java.io.Serializable
 
                 if (this.certs == null) {
                     // extract the signer certs
-                    ArrayList<j86.j86.java.security.cert.Certificate> signerCerts =
+                    ArrayList<j86.java.security.cert.Certificate> signerCerts =
                         new ArrayList<>();
                     i = 0;
                     while (i < certs.length) {
@@ -208,7 +208,7 @@ implements j86.java.io.Serializable
                         i++;
                     }
                     this.certs =
-                        new j86.j86.java.security.cert.Certificate[signerCerts.size()];
+                        new j86.java.security.cert.Certificate[signerCerts.size()];
                     signerCerts.toArray(this.certs);
                 }
             }
@@ -224,7 +224,7 @@ implements j86.java.io.Serializable
      * try and resolve this permission using the class loader of the permission
      * that was passed in.
      */
-    Permission resolve(Permission p, j86.j86.java.security.cert.Certificate certs[]) {
+    Permission resolve(Permission p, j86.java.security.cert.Certificate certs[]) {
         if (this.certs != null) {
             // if p wasn't signed, we don't have a match
             if (certs == null) {
@@ -473,7 +473,7 @@ implements j86.java.io.Serializable
      *
      * @since 1.5
      */
-    public j86.j86.java.security.cert.Certificate[] getUnresolvedCerts() {
+    public j86.java.security.cert.Certificate[] getUnresolvedCerts() {
         return (certs == null) ? null : certs.clone();
     }
 
@@ -528,7 +528,7 @@ implements j86.java.io.Serializable
             oos.writeInt(certs.length);
             // write out each cert, including its type
             for (int i=0; i < certs.length; i++) {
-                j86.j86.java.security.cert.Certificate cert = certs[i];
+                j86.java.security.cert.Certificate cert = certs[i];
                 try {
                     oos.writeUTF(cert.getType());
                     byte[] encoded = cert.getEncoded();
@@ -561,7 +561,7 @@ implements j86.java.io.Serializable
             // we know of 3 different cert types: X.509, PGP, SDSI, which
             // could all be present in the stream at the same time
             cfs = new Hashtable<String, CertificateFactory>(3);
-            this.certs = new j86.j86.java.security.cert.Certificate[size];
+            this.certs = new j86.java.security.cert.Certificate[size];
         }
 
         for (int i=0; i<size; i++) {

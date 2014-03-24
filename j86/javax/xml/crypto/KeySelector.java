@@ -28,8 +28,8 @@
 package j86.javax.xml.crypto;
 
 import j86.java.security.Key;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 /**
  * A selector that finds and returns a key using the data contained in a

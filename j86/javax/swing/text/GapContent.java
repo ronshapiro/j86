@@ -22,19 +22,19 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.Vector;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.Serializable;
-import j86.j86.javax.swing.undo.AbstractUndoableEdit;
-import j86.j86.javax.swing.undo.CannotRedoException;
-import j86.j86.javax.swing.undo.CannotUndoException;
-import j86.j86.javax.swing.undo.UndoableEdit;
+import j86.javax.swing.undo.AbstractUndoableEdit;
+import j86.javax.swing.undo.CannotRedoException;
+import j86.javax.swing.undo.CannotUndoException;
+import j86.javax.swing.undo.UndoableEdit;
 import j86.javax.swing.SwingUtilities;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
 
 /**
  * An implementation of the AbstractDocument.Content interface

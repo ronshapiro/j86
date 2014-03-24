@@ -23,32 +23,32 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.io.*;
 import j86.java.util.*;
 
 import j86.java.security.*;
-import j86.j86.java.security.interfaces.*;
+import j86.java.security.interfaces.*;
 
-import j86.j86.javax.crypto.interfaces.*;
+import j86.javax.crypto.interfaces.*;
 
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.login.LoginException;
-import j86.j86.javax.security.auth.login.FailedLoginException;
-import j86.j86.javax.security.auth.callback.Callback;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.callback.ConfirmationCallback;
-import j86.j86.javax.security.auth.callback.PasswordCallback;
-import j86.j86.javax.security.auth.callback.TextOutputCallback;
+import j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.login.FailedLoginException;
+import j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.ConfirmationCallback;
+import j86.javax.security.auth.callback.PasswordCallback;
+import j86.javax.security.auth.callback.TextOutputCallback;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.ResourcesMgr;
 
-import j86.j86.sun.security.pkcs11.Secmod.*;
+import j86.sun.security.pkcs11.Secmod.*;
 
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * PKCS#11 provider main class.
@@ -499,18 +499,18 @@ public final class SunPKCS11 extends AuthProvider {
     static {
         // names of all the implementation classes
         // use local variables, only used here
-        String P11Digest           = "j86.j86.sun.security.pkcs11.P11Digest";
-        String P11MAC              = "j86.j86.sun.security.pkcs11.P11MAC";
-        String P11KeyPairGenerator = "j86.j86.sun.security.pkcs11.P11KeyPairGenerator";
-        String P11KeyGenerator     = "j86.j86.sun.security.pkcs11.P11KeyGenerator";
-        String P11RSAKeyFactory    = "j86.j86.sun.security.pkcs11.P11RSAKeyFactory";
-        String P11DSAKeyFactory    = "j86.j86.sun.security.pkcs11.P11DSAKeyFactory";
-        String P11DHKeyFactory     = "j86.j86.sun.security.pkcs11.P11DHKeyFactory";
-        String P11KeyAgreement     = "j86.j86.sun.security.pkcs11.P11KeyAgreement";
-        String P11SecretKeyFactory = "j86.j86.sun.security.pkcs11.P11SecretKeyFactory";
-        String P11Cipher           = "j86.j86.sun.security.pkcs11.P11Cipher";
-        String P11RSACipher        = "j86.j86.sun.security.pkcs11.P11RSACipher";
-        String P11Signature        = "j86.j86.sun.security.pkcs11.P11Signature";
+        String P11Digest           = "j86.sun.security.pkcs11.P11Digest";
+        String P11MAC              = "j86.sun.security.pkcs11.P11MAC";
+        String P11KeyPairGenerator = "j86.sun.security.pkcs11.P11KeyPairGenerator";
+        String P11KeyGenerator     = "j86.sun.security.pkcs11.P11KeyGenerator";
+        String P11RSAKeyFactory    = "j86.sun.security.pkcs11.P11RSAKeyFactory";
+        String P11DSAKeyFactory    = "j86.sun.security.pkcs11.P11DSAKeyFactory";
+        String P11DHKeyFactory     = "j86.sun.security.pkcs11.P11DHKeyFactory";
+        String P11KeyAgreement     = "j86.sun.security.pkcs11.P11KeyAgreement";
+        String P11SecretKeyFactory = "j86.sun.security.pkcs11.P11SecretKeyFactory";
+        String P11Cipher           = "j86.sun.security.pkcs11.P11Cipher";
+        String P11RSACipher        = "j86.sun.security.pkcs11.P11RSACipher";
+        String P11Signature        = "j86.sun.security.pkcs11.P11Signature";
 
         // XXX register all aliases
 
@@ -600,7 +600,7 @@ public final class SunPKCS11 extends AuthProvider {
 
         d(KA, "DH",             P11KeyAgreement,        s("DiffieHellman"),
                 m(CKM_DH_PKCS_DERIVE));
-        d(KA, "ECDH",           "j86.j86.sun.security.pkcs11.P11ECDHKeyAgreement",
+        d(KA, "ECDH",           "j86.sun.security.pkcs11.P11ECDHKeyAgreement",
                 m(CKM_ECDH1_DERIVE));
 
         d(SKF, "ARCFOUR",       P11SecretKeyFactory,    s("RC4"),
@@ -740,17 +740,17 @@ public final class SunPKCS11 extends AuthProvider {
          * this.
          */
         d(KG, "SunTlsRsaPremasterSecret",
-                    "j86.j86.sun.security.pkcs11.P11TlsRsaPremasterSecretGenerator",
+                    "j86.sun.security.pkcs11.P11TlsRsaPremasterSecretGenerator",
                 m(CKM_SSL3_PRE_MASTER_KEY_GEN, CKM_TLS_PRE_MASTER_KEY_GEN));
         d(KG, "SunTlsMasterSecret",
-                    "j86.j86.sun.security.pkcs11.P11TlsMasterSecretGenerator",
+                    "j86.sun.security.pkcs11.P11TlsMasterSecretGenerator",
                 m(CKM_SSL3_MASTER_KEY_DERIVE, CKM_TLS_MASTER_KEY_DERIVE,
                     CKM_SSL3_MASTER_KEY_DERIVE_DH,
                     CKM_TLS_MASTER_KEY_DERIVE_DH));
         d(KG, "SunTlsKeyMaterial",
-                    "j86.j86.sun.security.pkcs11.P11TlsKeyMaterialGenerator",
+                    "j86.sun.security.pkcs11.P11TlsKeyMaterialGenerator",
                 m(CKM_SSL3_KEY_AND_MAC_DERIVE, CKM_TLS_KEY_AND_MAC_DERIVE));
-        d(KG, "SunTlsPrf", "j86.j86.sun.security.pkcs11.P11TlsPrfGenerator",
+        d(KG, "SunTlsPrf", "j86.sun.security.pkcs11.P11TlsPrfGenerator",
                 m(CKM_TLS_PRF, CKM_NSS_TLS_PRF_GENERAL));
     }
 
@@ -938,12 +938,12 @@ public final class SunPKCS11 extends AuthProvider {
                     // run out of sessions in the middle of a
                     // nextBytes() call where we cannot fail over.
                     putService(new P11Service(token, SR, "PKCS11",
-                        "j86.j86.sun.security.pkcs11.P11SecureRandom", null,
+                        "j86.sun.security.pkcs11.P11SecureRandom", null,
                         PCKM_SECURERANDOM));
                 }
                 if (config.isEnabled(PCKM_KEYSTORE)) {
                     putService(new P11Service(token, KS, "PKCS11",
-                        "j86.j86.sun.security.pkcs11.P11KeyStore",
+                        "j86.sun.security.pkcs11.P11KeyStore",
                         s("PKCS11-" + config.getName()),
                         PCKM_KEYSTORE));
                 }

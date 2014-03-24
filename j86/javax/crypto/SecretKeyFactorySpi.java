@@ -26,7 +26,7 @@
 package j86.javax.crypto;
 
 import j86.java.security.*;
-import j86.j86.java.security.spec.*;
+import j86.java.security.spec.*;
 
 /**
  * This class defines the <i>Service Provider Interface</i> (<b>SPI</b>)
@@ -46,8 +46,8 @@ import j86.j86.java.security.spec.*;
  * @author Jan Luehe
  *
  * @see SecretKey
- * @see j86.j86.javax.crypto.spec.DESKeySpec
- * @see j86.j86.javax.crypto.spec.DESedeKeySpec
+ * @see j86.javax.crypto.spec.DESKeySpec
+ * @see j86.javax.crypto.spec.DESedeKeySpec
  * @since 1.4
  */
 

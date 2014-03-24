@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.j86.javax.management.remote.rmi;
+package j86.javax.management.remote.rmi;
 
 import j86.java.io.IOException;
 import j86.java.rmi.NoSuchObjectException;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.UnicastRemoteObject;
-import j86.j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.server.RemoteObject;
 import j86.java.util.Map;
 import j86.java.util.Collections;
 import j86.javax.security.auth.Subject;

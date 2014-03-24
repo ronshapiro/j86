@@ -47,7 +47,7 @@ import j86.sun.security.x509.X500Name;
  *             This X500Principal classs is entirely deprecated and
  *             is here to allow for a smooth transition to the new
  *             class.
- * @see j86.j86.javax.security.auth.x500.X500Principal
+ * @see j86.javax.security.auth.x500.X500Principal
 */
 @jdk.Exported(false)
 @Deprecated

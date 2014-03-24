@@ -32,7 +32,7 @@ import j86.java.awt.Image;
 import j86.java.awt.MenuBar;
 import j86.java.awt.MenuComponent;
 import j86.java.awt.Toolkit;
-import j86.j86.java.awt.peer.FramePeer;
+import j86.java.awt.peer.FramePeer;
 
 /**
  * The class provides basic functionality for a lightweight frame

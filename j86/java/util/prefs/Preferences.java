@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.prefs;
+package j86.java.util.prefs;
 
 import j86.java.io.InputStream;
 import j86.java.io.IOException;
@@ -194,7 +194,7 @@ import j86.java.lang.Double;
  * <ol>
  *
  * <li><p>If the system property
- * <tt>j86.j86.java.util.prefs.PreferencesFactory</tt> is defined, then it is
+ * <tt>j86.java.util.prefs.PreferencesFactory</tt> is defined, then it is
  * taken to be the fully-qualified name of a class implementing the
  * <tt>PreferencesFactory</tt> interface.  The class is loaded and
  * instantiated; if this process fails then an unspecified error is
@@ -204,7 +204,7 @@ import j86.java.lang.Double;
  * has been installed in a jar file that is visible to the
  * {@link j86.java.lang.ClassLoader#getSystemClassLoader system class loader},
  * and that jar file contains a provider-configuration file named
- * <tt>j86.j86.java.util.prefs.PreferencesFactory</tt> in the resource
+ * <tt>j86.java.util.prefs.PreferencesFactory</tt> in the resource
  * directory <tt>META-INF/services</tt>, then the first class name
  * specified in that file is taken.  If more than one such jar file is
  * provided, the first one found will be used.  The class is loaded
@@ -231,7 +231,7 @@ public abstract class Preferences {
             new PrivilegedAction<String>() {
                 public String run() {
                     return System.getProperty(
-                        "j86.j86.java.util.prefs.PreferencesFactory");}});
+                        "j86.java.util.prefs.PreferencesFactory");}});
         if (factoryName != null) {
             // FIXME: This code should be run in a doPrivileged and
             // not use the context classloader, to avoid being
@@ -292,11 +292,11 @@ public abstract class Preferences {
         String osName = System.getProperty("os.name");
         String platformFactory;
         if (osName.startsWith("Windows")) {
-            platformFactory = "j86.j86.java.util.prefs.WindowsPreferencesFactory";
+            platformFactory = "j86.java.util.prefs.WindowsPreferencesFactory";
         } else if (osName.contains("OS X")) {
-            platformFactory = "j86.j86.java.util.prefs.MacOSXPreferencesFactory";
+            platformFactory = "j86.java.util.prefs.MacOSXPreferencesFactory";
         } else {
-            platformFactory = "j86.j86.java.util.prefs.FileSystemPreferencesFactory";
+            platformFactory = "j86.java.util.prefs.FileSystemPreferencesFactory";
         }
         try {
             return (PreferencesFactory)

@@ -42,7 +42,7 @@ import j86.java.io.ObjectStreamField;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
-import j86.j86.sun.net.util.IPAddressUtil;
+import j86.sun.net.util.IPAddressUtil;
 import j86.sun.net.RegisteredDomain;
 import j86.sun.net.PortConfig;
 import j86.sun.security.util.SecurityConstants;
@@ -616,7 +616,7 @@ public final class SocketPermission extends Permission
         if (invalid || untrusted) return true;
         try {
             if (!trustNameService && (defaultDeny ||
-                j86.j86.sun.net.www.URLConnection.isProxiedHost(hostname))) {
+                j86.sun.net.www.URLConnection.isProxiedHost(hostname))) {
                 if (this.cname == null) {
                     this.getCanonName();
                 }

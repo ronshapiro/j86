@@ -28,12 +28,12 @@ package j86.java.util;
 import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.Serializable;
-import j86.j86.j86.java.lang.reflect.ParameterizedType;
-import j86.j86.j86.java.lang.reflect.Type;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.Function;
+import j86.java.lang.reflect.ParameterizedType;
+import j86.java.lang.reflect.Type;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.Function;
 
 /**
  * Hash table based implementation of the <tt>Map</tt> interface.  This

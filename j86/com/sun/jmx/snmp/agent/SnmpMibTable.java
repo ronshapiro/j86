@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.com.sun.jmx.snmp.agent;
+package j86.com.sun.jmx.snmp.agent;
 
 import j86.java.io.Serializable;
 import j86.java.util.Date;
 import j86.java.util.Enumeration;
 import j86.java.util.Hashtable;
 import j86.java.util.Vector;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.ListenerNotFoundException;
 import j86.javax.management.MBeanNotificationInfo;
@@ -54,7 +54,7 @@ import j86.com.sun.jmx.snmp.SnmpVarBind;
  * Its responsibility is to manage a sorted array of OID indexes
  * according to the SNMP indexing scheme over the "real" table.
  * Each object of this class can be bound to an
- * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} to which it will
+ * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} to which it will
  * forward remote entry creation requests, and invoke callbacks
  * when an entry has been successfully added to / removed from
  * the OID index array.
@@ -72,16 +72,16 @@ import j86.com.sun.jmx.snmp.SnmpVarBind;
  *
  * <p>
  * Objects of this class are instantiated by the generated
- * whole MIB class extending {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMib}
+ * whole MIB class extending {@link j86.com.sun.jmx.snmp.agent.SnmpMib}
  * You should never need to instantiate this class directly.
  * </p>
  *
  * <p><b>This API is a Sun Microsystems internal API  and is subject
  * to change without notice.</b></p>
- * @see j86.j86.com.sun.jmx.snmp.agent.SnmpMib
- * @see j86.j86.com.sun.jmx.snmp.agent.SnmpMibEntry
- * @see j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory
- * @see j86.j86.com.sun.jmx.snmp.agent.SnmpTableSupport
+ * @see j86.com.sun.jmx.snmp.agent.SnmpMib
+ * @see j86.com.sun.jmx.snmp.agent.SnmpMibEntry
+ * @see j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory
+ * @see j86.com.sun.jmx.snmp.agent.SnmpTableSupport
  *
  */
 
@@ -428,13 +428,13 @@ public abstract class SnmpMibTable extends SnmpMibNode
     /**
      * Add a new entry in this <CODE>SnmpMibTable</CODE>.
      * Also triggers the addEntryCB() callback of the
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
      * if this node is bound to a factory.
      *
      * This method assumes that the given entry will not be registered.
      * If the entry is going to be registered, or if ObjectName's are
      * required, then
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibTable#addEntry(SnmpOid,
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpMibTable#addEntry(SnmpOid,
      * ObjectName, Object)} should be preferred.
      * <br> This function is mainly provided for backward compatibility.
      *
@@ -458,7 +458,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
     /**
      * Add a new entry in this <CODE>SnmpMibTable</CODE>.
      * Also triggers the addEntryCB() callback of the
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
      * if this node is bound to a factory.
      *
      * <p>
@@ -575,7 +575,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
     /**
      * Remove the specified entry from the table.
      * Also triggers the removeEntryCB() callback of the
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
      * if this node is bound to a factory.
      *
      * <p>
@@ -601,7 +601,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
     /**
      * Remove the specified entry from the table.
      * Also triggers the removeEntryCB() callback of the
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
      * if this node is bound to a factory.
      *
      * <p>
@@ -623,7 +623,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
     /**
      * Remove the specified entry from the table.
      * Also triggers the removeEntryCB() callback of the
-     * {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
+     * {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} interface
      * if this node is bound to a factory.
      *
      * <p>
@@ -830,7 +830,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
 
         MBeanNotificationInfo[] notifsInfo = {
             new MBeanNotificationInfo
-            (types, "j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryNotification",
+            (types, "j86.com.sun.jmx.snmp.agent.SnmpTableEntryNotification",
              "Notifications sent by the SnmpMibTable")
         };
 
@@ -844,7 +844,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * <p>
      * @param factory The
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} through
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpTableEntryFactory} through
      *        which entries will be created when a remote SNMP manager
      *        request the creation of a new entry via an SNMP SET request.
      */
@@ -880,7 +880,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      **/
@@ -973,7 +973,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The RowStatus code mapped from the value contained
@@ -1029,7 +1029,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The new value of the control variable (usually
@@ -1082,7 +1082,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return <code>true</code> if the row can be placed in
@@ -1530,7 +1530,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @param pduVersion Protocol version of the original request PDU.
@@ -1571,7 +1571,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @param pduVersion Protocol version of the original request PDU.
@@ -1596,7 +1596,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The next <CODE>SnmpOid</CODE> index.
@@ -1660,7 +1660,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      * <p>
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The <CODE>SnmpOid</CODE> of the first entry in the table.
@@ -1694,7 +1694,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The next columnar object id.
@@ -1717,7 +1717,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @exception SnmpStatusException If this id is not valid.
@@ -1739,7 +1739,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @exception SnmpStatusException If this id is not valid.
@@ -1790,7 +1790,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      *
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return The next <CODE>SnmpOid</CODE>.
@@ -2288,7 +2288,7 @@ public abstract class SnmpMibTable extends SnmpMibNode
      * @param oid The index part of the OID we're looking for.
      * @param userData A contextual object containing user-data.
      *        This object is allocated through the <code>
-     *        {@link j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
+     *        {@link j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory}</code>
      *        for each incoming SNMP request.
      *
      * @return <code>true</code> if the entry is found, <code>false</code>

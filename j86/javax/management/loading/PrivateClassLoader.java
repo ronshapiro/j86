@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.loading;
+package j86.javax.management.loading;
 
 /**
  * Marker interface indicating that a ClassLoader should not be added

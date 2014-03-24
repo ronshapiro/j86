@@ -34,7 +34,7 @@
 
 package j86.com.sun.tools.example.debug.event;
 
-import j86.j86.com.sun.jdi.event.*;
+import j86.com.sun.jdi.event.*;
 
 public class ClassUnloadEventSet extends AbstractEventSet {
 

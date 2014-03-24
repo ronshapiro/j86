@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.j86.sun.net.www.http;
+package j86.sun.net.www.http;
 
 import j86.java.io.*;
 import j86.java.util.ArrayList;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 import j86.sun.net.NetProperties;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * Main class of the HTTP traffic capture tool.

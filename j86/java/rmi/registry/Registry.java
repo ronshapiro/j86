@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.registry;
+package j86.java.rmi.registry;
 
 import j86.java.rmi.AccessException;
 import j86.java.rmi.AlreadyBoundException;
@@ -44,7 +44,7 @@ import j86.java.rmi.RemoteException;
  * initial reference to a remote object.  Therefore, a registry's
  * remote object implementation is typically exported with a
  * well-known address, such as with a well-known {@link
- * j86.j86.java.rmi.server.ObjID#REGISTRY_ID ObjID} and TCP port number
+ * j86.java.rmi.server.ObjID#REGISTRY_ID ObjID} and TCP port number
  * (default is {@link #REGISTRY_PORT 1099}).
  *
  * <p>The {@link LocateRegistry} class provides a programmatic API for

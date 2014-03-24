@@ -24,12 +24,12 @@
  */
 
 package j86.sun.management;
-import j86.j86.java.lang.management.MemoryUsage;
-import j86.j86.java.lang.management.MemoryNotificationInfo;
-import j86.j86.java.lang.management.MonitorInfo;
-import j86.j86.java.lang.management.LockInfo;
-import j86.j86.java.lang.management.ThreadInfo;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.MemoryNotificationInfo;
+import j86.java.lang.management.MonitorInfo;
+import j86.java.lang.management.LockInfo;
+import j86.java.lang.management.ThreadInfo;
+import j86.java.lang.reflect.*;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.*;
@@ -39,8 +39,8 @@ import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.javax.management.*;
-import j86.j86.javax.management.openmbean.*;
-import static j86.j86.javax.management.openmbean.SimpleType.*;
+import j86.javax.management.openmbean.*;
+import static j86.javax.management.openmbean.SimpleType.*;
 import com.j86.sun.management.VMOption;
 
 /**
@@ -526,7 +526,7 @@ public abstract class MappedMXBeanType {
                                   mapItemTypes);
 
             openType = new TabularType(typeName, typeName, rowType, mapIndexNames);
-            mappedTypeClass = j86.j86.javax.management.openmbean.TabularData.class;
+            mappedTypeClass = j86.javax.management.openmbean.TabularData.class;
         }
 
         Type getJavaType() {
@@ -571,7 +571,7 @@ public abstract class MappedMXBeanType {
     }
 
     private static final Class<?> COMPOSITE_DATA_CLASS =
-        j86.j86.javax.management.openmbean.CompositeData.class;
+        j86.javax.management.openmbean.CompositeData.class;
 
     // Classes that have a static from method
     //   Mapped open type - CompositeData
@@ -700,7 +700,7 @@ public abstract class MappedMXBeanType {
             }
 
             if (data instanceof LockInfo) {
-                if (data instanceof j86.j86.java.lang.management.MonitorInfo) {
+                if (data instanceof j86.java.lang.management.MonitorInfo) {
                     return MonitorInfoCompositeData.toCompositeData((MonitorInfo) data);
                 }
                 return LockInfoCompositeData.toCompositeData((LockInfo) data);

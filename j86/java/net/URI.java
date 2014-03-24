@@ -32,13 +32,13 @@ import j86.java.io.ObjectOutputStream;
 import j86.java.io.Serializable;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.CharBuffer;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.CoderResult;
-import j86.j86.java.nio.charset.CodingErrorAction;
-import j86.j86.java.nio.charset.CharacterCodingException;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.CoderResult;
+import j86.java.nio.charset.CodingErrorAction;
+import j86.java.nio.charset.CharacterCodingException;
 import j86.java.text.Normalizer;
-import j86.j86.j86.sun.nio.cs.ThreadLocalCoders;
+import j86.sun.nio.cs.ThreadLocalCoders;
 
 import j86.java.lang.Character;             // for javadoc
 import j86.java.lang.NullPointerException;  // for javadoc

@@ -30,8 +30,8 @@
 package j86.sun.font;
 
 import j86.java.awt.Font;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.font.LineMetrics;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.LineMetrics;
 
 /**
  * A text source represents text for rendering, plus context information.

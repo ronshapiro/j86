@@ -43,8 +43,8 @@ import j86.java.util.Set;
  * certificate in the certification path contains the required algorithm
  * constraints.
  *
- * @see j86.j86.javax.net.ssl.SSLParameters#getAlgorithmConstraints
- * @see j86.j86.javax.net.ssl.SSLParameters#setAlgorithmConstraints(AlgorithmConstraints)
+ * @see j86.javax.net.ssl.SSLParameters#getAlgorithmConstraints
+ * @see j86.javax.net.ssl.SSLParameters#setAlgorithmConstraints(AlgorithmConstraints)
  *
  * @since 1.7
  */

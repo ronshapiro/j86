@@ -24,17 +24,17 @@
  */
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.TextComponentPeer;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.peer.TextComponentPeer;
+import j86.java.awt.event.*;
 import j86.java.util.EventListener;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 import j86.sun.awt.InputMethodSupport;
 import j86.java.text.BreakIterator;
-import j86.j86.javax.swing.text.AttributeSet;
+import j86.javax.swing.text.AttributeSet;
 import j86.javax.accessibility.*;
-import j86.j86.java.awt.im.InputMethodRequests;
+import j86.java.awt.im.InputMethodRequests;
 import j86.sun.security.util.SecurityConstants;
 
 /**
@@ -552,7 +552,7 @@ public class TextComponent extends Component implements Accessible {
      * @param l the text event listener
      * @see             #removeTextListener
      * @see             #getTextListeners
-     * @see             j86.j86.java.awt.event.TextListener
+     * @see             j86.java.awt.event.TextListener
      */
     public synchronized void addTextListener(TextListener l) {
         if (l == null) {
@@ -573,7 +573,7 @@ public class TextComponent extends Component implements Accessible {
      * @param           l     the text listener
      * @see             #addTextListener
      * @see             #getTextListeners
-     * @see             j86.j86.java.awt.event.TextListener
+     * @see             j86.java.awt.event.TextListener
      * @since           JDK1.1
      */
     public synchronized void removeTextListener(TextListener l) {

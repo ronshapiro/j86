@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 
 
@@ -34,9 +34,9 @@ import j86.java.io.Serializable;
 import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.java.util.Hashtable;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
-import j86.j86.java.security.acl.NotOwnerException;
+import j86.java.security.acl.NotOwnerException;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
 

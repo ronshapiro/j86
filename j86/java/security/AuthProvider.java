@@ -26,8 +26,8 @@
 package j86.java.security;
 
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.login.LoginException;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.login.LoginException;
+import j86.javax.security.auth.callback.CallbackHandler;
 
 /**
  * This class defines login and logout methods for a provider.

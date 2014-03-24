@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.interfaces;
+package j86.java.security.interfaces;
 
 /**
  * The interface to a DSA public or private key. DSA (Digital Signature

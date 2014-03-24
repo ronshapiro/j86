@@ -33,7 +33,7 @@
  * platform contains support for the client side of Kerberos via the
  * {@link j86.org.ietf.jgss} package. There might also be
  * a login module that implements
- * {@link j86.j86.javax.security.auth.spi.LoginModule LoginModule} to authenticate
+ * {@link j86.javax.security.auth.spi.LoginModule LoginModule} to authenticate
  * Kerberos principals.<p>
  *
  * You can provide the name of your default realm and Key Distribution
@@ -50,4 +50,4 @@
  *
  * @since JDK1.4
  */
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;

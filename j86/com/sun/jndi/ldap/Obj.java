@@ -26,9 +26,9 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.DirectoryManager;
-import j86.j86.javax.naming.spi.DirStateFactory;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.DirectoryManager;
+import j86.javax.naming.spi.DirStateFactory;
 
 import j86.java.io.IOException;
 import j86.java.io.ByteArrayInputStream;
@@ -45,8 +45,8 @@ import j86.java.util.StringTokenizer;
 import j86.sun.misc.BASE64Encoder;
 import j86.sun.misc.BASE64Decoder;
 
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.Modifier;
 
 /**
   * Class containing static methods and constants for dealing with

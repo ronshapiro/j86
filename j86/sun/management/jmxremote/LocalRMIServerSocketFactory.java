@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.management.jmxremote;
+package j86.sun.management.jmxremote;
 
 import j86.java.io.IOException;
 import j86.java.net.InetAddress;
@@ -31,7 +31,7 @@ import j86.java.net.NetworkInterface;
 import j86.java.net.ServerSocket;
 import j86.java.net.Socket;
 import j86.java.net.SocketException;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
 import j86.java.util.Enumeration;
 
 /**

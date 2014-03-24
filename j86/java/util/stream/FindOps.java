@@ -22,16 +22,16 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.Optional;
 import j86.java.util.OptionalDouble;
 import j86.java.util.OptionalInt;
 import j86.java.util.OptionalLong;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.concurrent.CountedCompleter;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.CountedCompleter;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.Supplier;
 
 /**
  * Factory for instances of a short-circuiting {@code TerminalOp} that searches

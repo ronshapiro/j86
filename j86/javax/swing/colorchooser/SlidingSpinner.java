@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.javax.swing.colorchooser;
+package j86.javax.swing.colorchooser;
 
 import j86.javax.swing.JComponent;
 import j86.javax.swing.JSlider;
 import j86.javax.swing.JSpinner;
 import j86.javax.swing.JSpinner.DefaultEditor;
 import j86.javax.swing.SpinnerNumberModel;
-import j86.j86.javax.swing.event.ChangeEvent;
-import j86.j86.javax.swing.event.ChangeListener;
+import j86.javax.swing.event.ChangeEvent;
+import j86.javax.swing.event.ChangeListener;
 
 final class SlidingSpinner implements ChangeListener {
 

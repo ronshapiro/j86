@@ -28,7 +28,7 @@ package j86.sun.awt;
 import j86.java.awt.Component;
 import j86.java.awt.Graphics;
 import j86.java.awt.Rectangle;
-import j86.j86.java.awt.event.PaintEvent;
+import j86.java.awt.event.PaintEvent;
 
 /**
  * The <code>RepaintArea</code> is a geometric construct created for the

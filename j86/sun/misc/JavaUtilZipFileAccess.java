@@ -25,7 +25,7 @@
 
 package j86.sun.misc;
 
-import j86.j86.java.util.zip.ZipFile;
+import j86.java.util.zip.ZipFile;
 
 public interface JavaUtilZipFileAccess {
     public boolean startsWithLocHeader(ZipFile zip);

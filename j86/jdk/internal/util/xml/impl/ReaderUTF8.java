@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.jdk.internal.util.xml.impl;
+package j86.jdk.internal.util.xml.impl;
 
 import j86.java.io.Reader;
 import j86.java.io.InputStream;

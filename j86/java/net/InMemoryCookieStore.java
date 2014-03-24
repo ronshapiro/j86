@@ -35,7 +35,7 @@ import j86.java.util.ArrayList;
 import j86.java.util.HashMap;
 import j86.java.util.Collections;
 import j86.java.util.Iterator;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.concurrent.locks.ReentrantLock;
 
 /**
  * A simple in-memory j86.java.net.CookieStore implementation

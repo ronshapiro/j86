@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 
 
@@ -37,12 +37,12 @@ import j86.java.io.FileNotFoundException;
 import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.java.util.Hashtable;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.util.HashSet;
-import j86.j86.java.security.acl.AclEntry;
-import j86.j86.java.security.acl.NotOwnerException;
+import j86.java.security.acl.AclEntry;
+import j86.java.security.acl.NotOwnerException;
 
 // SNMP Runtime import
 //
@@ -122,7 +122,7 @@ public class SnmpAcl implements InetAddressAcl, Serializable {
 
     /**
      * Returns an enumeration of the entries in this ACL. Each element in the
-     * enumeration is of type <CODE>j86.j86.java.security.acl.AclEntry</CODE>.
+     * enumeration is of type <CODE>j86.java.security.acl.AclEntry</CODE>.
      *
      * @return An enumeration of the entries in this ACL.
      */
@@ -433,8 +433,8 @@ public class SnmpAcl implements InetAddressAcl, Serializable {
                             "readAuthorizedListFile",
                             "===> " + aa.getPrincipal().toString());
                 }
-                for (Enumeration<j86.j86.java.security.acl.Permission> eee = aa.permissions();eee.hasMoreElements();) {
-                    j86.j86.java.security.acl.Permission perm = eee.nextElement();
+                for (Enumeration<j86.java.security.acl.Permission> eee = aa.permissions();eee.hasMoreElements();) {
+                    j86.java.security.acl.Permission perm = eee.nextElement();
                     if (SNMP_LOGGER.isLoggable(Level.FINER)) {
                         SNMP_LOGGER.logp(Level.FINER, SnmpAcl.class.getName(),
                                 "readAuthorizedListFile", "perm = " + perm);

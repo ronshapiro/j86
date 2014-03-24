@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.beans.DesignMode;
 import j86.java.beans.Visibility;
@@ -45,8 +45,8 @@ import j86.java.util.Locale;
  * @since 1.2
  *
  * @see j86.java.beans.Beans
- * @see j86.j86.java.beans.beancontext.BeanContextChild
- * @see j86.j86.java.beans.beancontext.BeanContextMembershipListener
+ * @see j86.java.beans.beancontext.BeanContextChild
+ * @see j86.java.beans.beancontext.BeanContextMembershipListener
  * @see j86.java.beans.PropertyChangeEvent
  * @see j86.java.beans.DesignMode
  * @see j86.java.beans.Visibility

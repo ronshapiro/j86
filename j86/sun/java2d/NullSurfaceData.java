@@ -26,13 +26,13 @@
 package j86.sun.java2d;
 
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.ColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.ColorModel;
 import j86.java.awt.GraphicsConfiguration;
 
 import j86.sun.java2d.StateTrackable.State;
-import j86.j86.sun.java2d.loops.SurfaceType;
-import j86.j86.sun.java2d.pipe.NullPipe;
+import j86.sun.java2d.loops.SurfaceType;
+import j86.sun.java2d.pipe.NullPipe;
 
 /**
  * This class provides an empty implementation of the SurfaceData

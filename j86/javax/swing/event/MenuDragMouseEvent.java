@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.javax.swing.MenuElement;
 import j86.javax.swing.MenuSelectionManager;
 import j86.java.util.EventObject;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.MouseEvent;
 import j86.java.awt.Component;
 
 
@@ -60,10 +60,10 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param source        the Component that originated the event
      *                      (typically <code>this</code>)
      * @param id            an int specifying the type of event, as defined
-     *                      in {@link j86.j86.java.awt.event.MouseEvent}
+     *                      in {@link j86.java.awt.event.MouseEvent}
      * @param when          a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
+     *                      as specified in {@link j86.java.awt.event.InputEvent}
      * @param x             an int specifying the horizontal position at which
      *                      the event occurred, in pixels
      * @param y             an int specifying the vertical position at which
@@ -93,10 +93,10 @@ public class MenuDragMouseEvent extends MouseEvent {
      * @param source        the Component that originated the event
      *                      (typically <code>this</code>)
      * @param id            an int specifying the type of event, as defined
-     *                      in {@link j86.j86.java.awt.event.MouseEvent}
+     *                      in {@link j86.java.awt.event.MouseEvent}
      * @param when          a long identifying the time the event occurred
      * @param modifiers     an int specifying any modifier keys held down,
-     *                      as specified in {@link j86.j86.java.awt.event.InputEvent}
+     *                      as specified in {@link j86.java.awt.event.InputEvent}
      * @param x             an int specifying the horizontal position at which
      *                      the event occurred, in pixels
      * @param y             an int specifying the vertical position at which

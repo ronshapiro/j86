@@ -25,7 +25,7 @@
 
 package j86.sun.tools.jconsole;
 
-import j86.j86.java.lang.management.MemoryUsage;
+import j86.java.lang.management.MemoryUsage;
 
 public class MemoryPoolStat {
     private String      poolName;

@@ -33,11 +33,11 @@
  **********************************************************************
  **********************************************************************/
 
-package j86.j86.j86.j86.java.awt.image.renderable;
+package j86.java.awt.image.renderable;
 import j86.java.util.*;
-import j86.j86.java.awt.geom.*;
+import j86.java.awt.geom.*;
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 
 /**
  * A RenderContext encapsulates the information needed to produce a

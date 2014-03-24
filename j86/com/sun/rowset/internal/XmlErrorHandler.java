@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.DefaultHandler;
 
 import j86.com.sun.rowset.*;
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 
 /**

@@ -34,7 +34,7 @@ import j86.java.util.Vector;
 public class SCDynamicStoreConfig {
     private static native void installNotificationCallback();
     private static native Hashtable<String, Object> getKerberosConfig();
-    private static boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
+    private static boolean DEBUG = j86.sun.security.krb5.internal.Krb5.DEBUG;
 
     static {
         boolean isMac = j86.java.security.AccessController.doPrivileged(

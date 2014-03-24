@@ -28,9 +28,9 @@ package j86.sun.awt;
 import j86.java.awt.ScrollPane;
 import j86.java.awt.Insets;
 import j86.java.awt.Adjustable;
-import j86.j86.java.awt.event.MouseWheelEvent;
+import j86.java.awt.event.MouseWheelEvent;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /*
  * ScrollPaneWheelScroller is a helper class for implmenenting mouse wheel

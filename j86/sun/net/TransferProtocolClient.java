@@ -33,7 +33,7 @@ import j86.java.util.Vector;
  * It is used by subclasses implementing specific protocols.
  *
  * @author      Jonathan Payne
- * @see         j86.j86.sun.net.ftp.FtpClient
+ * @see         j86.sun.net.ftp.FtpClient
  * @see         j86.sun.net.nntp.NntpClient
  */
 

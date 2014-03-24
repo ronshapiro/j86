@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.io.Serializable;
 
@@ -229,8 +229,8 @@ public abstract class Point2D implements Cloneable {
      * the information necessary to satisfy the various accessor
      * methods below.
      *
-     * @see j86.j86.java.awt.geom.Point2D.Float
-     * @see j86.j86.java.awt.geom.Point2D.Double
+     * @see j86.java.awt.geom.Point2D.Float
+     * @see j86.java.awt.geom.Point2D.Double
      * @see j86.java.awt.Point
      * @since 1.2
      */

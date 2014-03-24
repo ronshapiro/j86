@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.monitor;
+package j86.javax.management.monitor;
 
 import static j86.com.sun.jmx.defaults.JmxProperties.MONITOR_LOGGER;
 import j86.com.sun.jmx.mbeanserver.GetPropertyAction;
@@ -36,18 +36,18 @@ import j86.java.security.ProtectionDomain;
 import j86.java.util.List;
 import j86.java.util.Map;
 import j86.java.util.WeakHashMap;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
-import j86.j86.java.util.concurrent.Executors;
-import j86.j86.java.util.concurrent.Future;
-import j86.j86.java.util.concurrent.LinkedBlockingQueue;
-import j86.j86.java.util.concurrent.ScheduledExecutorService;
-import j86.j86.java.util.concurrent.ScheduledFuture;
-import j86.j86.java.util.concurrent.ThreadFactory;
-import j86.j86.java.util.concurrent.ThreadPoolExecutor;
-import j86.j86.java.util.concurrent.TimeUnit;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.concurrent.Executors;
+import j86.java.util.concurrent.Future;
+import j86.java.util.concurrent.LinkedBlockingQueue;
+import j86.java.util.concurrent.ScheduledExecutorService;
+import j86.java.util.concurrent.ScheduledFuture;
+import j86.java.util.concurrent.ThreadFactory;
+import j86.java.util.concurrent.ThreadPoolExecutor;
+import j86.java.util.concurrent.TimeUnit;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.logging.Level;
 import j86.javax.management.AttributeNotFoundException;
 import j86.javax.management.InstanceNotFoundException;
 import j86.javax.management.IntrospectionException;
@@ -60,7 +60,7 @@ import j86.javax.management.MBeanServerConnection;
 import j86.javax.management.NotificationBroadcasterSupport;
 import j86.javax.management.ObjectName;
 import j86.javax.management.ReflectionException;
-import static j86.j86.javax.management.monitor.MonitorNotification.*;
+import static j86.javax.management.monitor.MonitorNotification.*;
 
 /**
  * Defines the part common to all monitor MBeans.

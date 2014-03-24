@@ -22,9 +22,9 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.function.Supplier;
 
 /**
  * A {@link Sink} which accumulates state as elements are accepted, and allows

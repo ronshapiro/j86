@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
-import j86.j86.java.util.logging.Logger;
+import j86.java.util.logging.Logger;
 import j86.java.security.PrivilegedAction;
 
 /**
@@ -68,35 +68,35 @@ class ServerConfig {
             new PrivilegedAction<Void>() {
                 @Override
                 public Void run () {
-                    idleInterval = Long.getLong("j86.j86.sun.net.httpserver.idleInterval",
+                    idleInterval = Long.getLong("j86.sun.net.httpserver.idleInterval",
                             DEFAULT_IDLE_INTERVAL) * 1000;
 
-                    clockTick = Integer.getInteger("j86.j86.sun.net.httpserver.clockTick",
+                    clockTick = Integer.getInteger("j86.sun.net.httpserver.clockTick",
                             DEFAULT_CLOCK_TICK);
 
                     maxIdleConnections = Integer.getInteger(
-                            "j86.j86.sun.net.httpserver.maxIdleConnections",
+                            "j86.sun.net.httpserver.maxIdleConnections",
                             DEFAULT_MAX_IDLE_CONNECTIONS);
 
-                    drainAmount = Long.getLong("j86.j86.sun.net.httpserver.drainAmount",
+                    drainAmount = Long.getLong("j86.sun.net.httpserver.drainAmount",
                             DEFAULT_DRAIN_AMOUNT);
 
                     maxReqHeaders = Integer.getInteger(
-                            "j86.j86.sun.net.httpserver.maxReqHeaders",
+                            "j86.sun.net.httpserver.maxReqHeaders",
                             DEFAULT_MAX_REQ_HEADERS);
 
-                    maxReqTime = Long.getLong("j86.j86.sun.net.httpserver.maxReqTime",
+                    maxReqTime = Long.getLong("j86.sun.net.httpserver.maxReqTime",
                             DEFAULT_MAX_REQ_TIME);
 
-                    maxRspTime = Long.getLong("j86.j86.sun.net.httpserver.maxRspTime",
+                    maxRspTime = Long.getLong("j86.sun.net.httpserver.maxRspTime",
                             DEFAULT_MAX_RSP_TIME);
 
-                    timerMillis = Long.getLong("j86.j86.sun.net.httpserver.timerMillis",
+                    timerMillis = Long.getLong("j86.sun.net.httpserver.timerMillis",
                             DEFAULT_TIMER_MILLIS);
 
-                    debug = Boolean.getBoolean("j86.j86.sun.net.httpserver.debug");
+                    debug = Boolean.getBoolean("j86.sun.net.httpserver.debug");
 
-                    noDelay = Boolean.getBoolean("j86.j86.sun.net.httpserver.nodelay");
+                    noDelay = Boolean.getBoolean("j86.sun.net.httpserver.nodelay");
 
                     return null;
                 }
@@ -112,26 +112,26 @@ class ServerConfig {
         j86.java.security.AccessController.doPrivileged(
             new PrivilegedAction<Void>() {
                 public Void run () {
-                    if (System.getProperty("j86.j86.sun.net.httpserver.readTimeout")
+                    if (System.getProperty("j86.sun.net.httpserver.readTimeout")
                                                 !=null)
                     {
-                        logger.warning ("j86.j86.sun.net.httpserver.readTimeout "+
+                        logger.warning ("j86.sun.net.httpserver.readTimeout "+
                             "property is no longer used. "+
-                            "Use j86.j86.sun.net.httpserver.maxReqTime instead."
+                            "Use j86.sun.net.httpserver.maxReqTime instead."
                         );
                     }
-                    if (System.getProperty("j86.j86.sun.net.httpserver.writeTimeout")
+                    if (System.getProperty("j86.sun.net.httpserver.writeTimeout")
                                                 !=null)
                     {
-                        logger.warning ("j86.j86.sun.net.httpserver.writeTimeout "+
+                        logger.warning ("j86.sun.net.httpserver.writeTimeout "+
                             "property is no longer used. Use "+
-                            "j86.j86.sun.net.httpserver.maxRspTime instead."
+                            "j86.sun.net.httpserver.maxRspTime instead."
                         );
                     }
-                    if (System.getProperty("j86.j86.sun.net.httpserver.selCacheTimeout")
+                    if (System.getProperty("j86.sun.net.httpserver.selCacheTimeout")
                                                 !=null)
                     {
-                        logger.warning ("j86.j86.sun.net.httpserver.selCacheTimeout "+
+                        logger.warning ("j86.sun.net.httpserver.selCacheTimeout "+
                             "property is no longer used."
                         );
                     }

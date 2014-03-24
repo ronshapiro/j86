@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.java.lang.reflect;
+package j86.java.lang.reflect;
 
 /**
  * Thrown when a semantically malformed parameterized type is

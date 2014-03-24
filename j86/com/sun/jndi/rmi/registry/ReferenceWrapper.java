@@ -27,7 +27,7 @@ package j86.com.sun.jndi.rmi.registry;
 
 
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.server.UnicastRemoteObject;
 
 import j86.javax.naming.*;
 

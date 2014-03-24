@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
@@ -76,8 +76,8 @@ import j86.java.util.List;
  * the end of the build process, and there will not be any more entries in
  * the list.
  * <p>
- * @see j86.j86.sun.security.provider.certpath.BuildStep
- * @see j86.j86.sun.security.provider.certpath.Vertex
+ * @see j86.sun.security.provider.certpath.BuildStep
+ * @see j86.sun.security.provider.certpath.Vertex
  * <p>
  * @author  seth proctor
  * @since   1.4

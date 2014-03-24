@@ -35,13 +35,13 @@
 package j86.com.sun.tools.example.debug.tty;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.*;
-import j86.j86.com.sun.jdi.request.EventRequestManager;
-import j86.j86.com.sun.jdi.request.ThreadStartRequest;
-import j86.j86.com.sun.jdi.request.ThreadDeathRequest;
+import j86.com.sun.jdi.connect.*;
+import j86.com.sun.jdi.request.EventRequestManager;
+import j86.com.sun.jdi.request.ThreadStartRequest;
+import j86.com.sun.jdi.request.ThreadDeathRequest;
 
 import j86.java.util.*;
-import j86.j86.java.util.regex.*;
+import j86.java.util.regex.*;
 import j86.java.io.*;
 
 class VMConnection {
@@ -51,7 +51,7 @@ class VMConnection {
     private int outputCompleteCount = 0;
 
     private final Connector connector;
-    private final Map<String, j86.j86.com.sun.jdi.connect.Connector.Argument> connectorArgs;
+    private final Map<String, j86.com.sun.jdi.connect.Connector.Argument> connectorArgs;
     private final int traceFlags;
 
     synchronized void notifyOutputComplete() {
@@ -78,8 +78,8 @@ class VMConnection {
         return null;
     }
 
-    private Map <String, j86.j86.com.sun.jdi.connect.Connector.Argument> parseConnectorArgs(Connector connector, String argString) {
-        Map<String, j86.j86.com.sun.jdi.connect.Connector.Argument> arguments = connector.defaultArguments();
+    private Map <String, j86.com.sun.jdi.connect.Connector.Argument> parseConnectorArgs(Connector connector, String argString) {
+        Map<String, j86.com.sun.jdi.connect.Connector.Argument> arguments = connector.defaultArguments();
 
         /*
          * We are parsing strings of the form:

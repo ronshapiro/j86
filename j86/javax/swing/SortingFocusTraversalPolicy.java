@@ -29,7 +29,7 @@ import j86.java.awt.Container;
 import j86.java.awt.Window;
 import j86.java.util.*;
 import j86.java.awt.FocusTraversalPolicy;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * A FocusTraversalPolicy that determines traversal order by sorting the

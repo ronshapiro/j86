@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.beans.*;
 import j86.javax.swing.*;
 import j86.java.awt.Dimension;
 import j86.java.awt.Graphics;
 import j86.java.awt.Insets;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.javax.swing.plaf.SeparatorUI;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.plaf.DimensionUIResource;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.SeparatorUI;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.DimensionUIResource;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

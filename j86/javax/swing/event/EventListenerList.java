@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.java.lang.reflect.Array;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * A class that holds a list of EventListeners.  A single instance

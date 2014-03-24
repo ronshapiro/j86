@@ -37,32 +37,32 @@ import j86.javax.print.DocFlavor;
 import j86.javax.print.DocPrintJob;
 import j86.javax.print.PrintService;
 import j86.javax.print.PrintException;
-import j86.j86.javax.print.event.PrintJobEvent;
-import j86.j86.javax.print.event.PrintJobListener;
-import j86.j86.javax.print.event.PrintJobAttributeListener;
+import j86.javax.print.event.PrintJobEvent;
+import j86.javax.print.event.PrintJobListener;
+import j86.javax.print.event.PrintJobAttributeListener;
 
-import j86.j86.javax.print.attribute.Attribute;
-import j86.j86.javax.print.attribute.AttributeSet;
-import j86.j86.javax.print.attribute.AttributeSetUtilities;
-import j86.j86.javax.print.attribute.DocAttributeSet;
-import j86.j86.javax.print.attribute.HashPrintJobAttributeSet;
-import j86.j86.javax.print.attribute.HashPrintRequestAttributeSet;
-import j86.j86.javax.print.attribute.PrintJobAttribute;
-import j86.j86.javax.print.attribute.PrintJobAttributeSet;
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
-import j86.j86.javax.print.attribute.PrintRequestAttributeSet;
-import j86.j86.j86.javax.print.attribute.standard.Copies;
-import j86.j86.j86.javax.print.attribute.standard.DocumentName;
-import j86.j86.j86.javax.print.attribute.standard.Fidelity;
-import j86.j86.j86.javax.print.attribute.standard.JobName;
-import j86.j86.j86.javax.print.attribute.standard.JobOriginatingUserName;
-import j86.j86.j86.javax.print.attribute.standard.Media;
-import j86.j86.j86.javax.print.attribute.standard.MediaSize;
-import j86.j86.j86.javax.print.attribute.standard.MediaSizeName;
-import j86.j86.j86.javax.print.attribute.standard.OrientationRequested;
-import j86.j86.j86.javax.print.attribute.standard.RequestingUserName;
+import j86.javax.print.attribute.Attribute;
+import j86.javax.print.attribute.AttributeSet;
+import j86.javax.print.attribute.AttributeSetUtilities;
+import j86.javax.print.attribute.DocAttributeSet;
+import j86.javax.print.attribute.HashPrintJobAttributeSet;
+import j86.javax.print.attribute.HashPrintRequestAttributeSet;
+import j86.javax.print.attribute.PrintJobAttribute;
+import j86.javax.print.attribute.PrintJobAttributeSet;
+import j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.PrintRequestAttributeSet;
+import j86.javax.print.attribute.standard.Copies;
+import j86.javax.print.attribute.standard.DocumentName;
+import j86.javax.print.attribute.standard.Fidelity;
+import j86.javax.print.attribute.standard.JobName;
+import j86.javax.print.attribute.standard.JobOriginatingUserName;
+import j86.javax.print.attribute.standard.Media;
+import j86.javax.print.attribute.standard.MediaSize;
+import j86.javax.print.attribute.standard.MediaSizeName;
+import j86.javax.print.attribute.standard.OrientationRequested;
+import j86.javax.print.attribute.standard.RequestingUserName;
 
-import j86.j86.java.awt.print.*;
+import j86.java.awt.print.*;
 
 public class PSStreamPrintJob implements CancelablePrintJob {
 
@@ -321,7 +321,7 @@ public class PSStreamPrintJob implements CancelablePrintJob {
                 notifyEvent(PrintJobEvent.JOB_FAILED);
                 throw new PrintException(cce);
             }
-        } else if (repClassName.equals("j86.j86.java.awt.print.Pageable")) {
+        } else if (repClassName.equals("j86.java.awt.print.Pageable")) {
             try {
                 pageableJob((Pageable)doc.getPrintData(), reqAttrSet);
                 return;
@@ -332,7 +332,7 @@ public class PSStreamPrintJob implements CancelablePrintJob {
                 notifyEvent(PrintJobEvent.JOB_FAILED);
                 throw new PrintException(ioe);
             }
-        } else if (repClassName.equals("j86.j86.java.awt.print.Printable")) {
+        } else if (repClassName.equals("j86.java.awt.print.Printable")) {
             try {
                 printableJob((Printable)doc.getPrintData(), reqAttrSet);
                 return;

@@ -27,9 +27,9 @@ package j86.javax.imageio;
 
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.RenderedImage;
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
 import j86.java.util.Iterator;
@@ -38,13 +38,13 @@ import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;
 import j86.java.util.ResourceBundle;
 import j86.java.util.Set;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.event.IIOReadWarningListener;
-import j86.j86.javax.imageio.event.IIOReadProgressListener;
-import j86.j86.javax.imageio.event.IIOReadUpdateListener;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.event.IIOReadWarningListener;
+import j86.javax.imageio.event.IIOReadProgressListener;
+import j86.javax.imageio.event.IIOReadUpdateListener;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * An abstract superclass for parsing and decoding of images.  This
@@ -66,8 +66,8 @@ import j86.j86.javax.imageio.stream.ImageInputStream;
  * have been read previously.
  *
  * @see ImageWriter
- * @see j86.j86.javax.imageio.spi.IIORegistry
- * @see j86.j86.javax.imageio.spi.ImageReaderSpi
+ * @see j86.javax.imageio.spi.IIORegistry
+ * @see j86.javax.imageio.spi.ImageReaderSpi
  *
  */
 public abstract class ImageReader {
@@ -283,7 +283,7 @@ public abstract class ImageReader {
      *
      * @see ImageInputStream
      * @see #getInput
-     * @see j86.j86.javax.imageio.spi.ImageReaderSpi#getInputTypes
+     * @see j86.javax.imageio.spi.ImageReaderSpi#getInputTypes
      */
     public void setInput(Object input,
                          boolean seekForwardOnly,
@@ -1211,7 +1211,7 @@ public abstract class ImageReader {
 
     /**
      * Returns <code>true</code> if this plug-in supports reading
-     * just a {@link j86.j86.j86.java.awt.image.Raster Raster} of pixel data.
+     * just a {@link j86.java.awt.image.Raster Raster} of pixel data.
      * If this method returns <code>false</code>, calls to
      * {@link #readRaster readRaster} or {@link #readTileRaster readTileRaster}
      * will throw an <code>UnsupportedOperationException</code>.
@@ -1278,7 +1278,7 @@ public abstract class ImageReader {
      *
      * @see #canReadRaster
      * @see #read
-     * @see j86.j86.j86.java.awt.image.Raster
+     * @see j86.java.awt.image.Raster
      */
     public Raster readRaster(int imageIndex, ImageReadParam param)
         throws IOException {
@@ -1508,7 +1508,7 @@ public abstract class ImageReader {
      *
      * @see #readTile
      * @see #readRaster
-     * @see j86.j86.j86.java.awt.image.Raster
+     * @see j86.java.awt.image.Raster
      */
     public Raster readTileRaster(int imageIndex,
                                  int tileX, int tileY) throws IOException {

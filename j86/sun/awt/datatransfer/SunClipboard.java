@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.sun.awt.datatransfer;
+package j86.sun.awt.datatransfer;
 
 import j86.java.awt.EventQueue;
 
-import j86.j86.java.awt.datatransfer.Clipboard;
-import j86.j86.java.awt.datatransfer.FlavorTable;
-import j86.j86.java.awt.datatransfer.SystemFlavorMap;
-import j86.j86.java.awt.datatransfer.Transferable;
-import j86.j86.java.awt.datatransfer.ClipboardOwner;
-import j86.j86.java.awt.datatransfer.DataFlavor;
-import j86.j86.java.awt.datatransfer.FlavorListener;
-import j86.j86.java.awt.datatransfer.FlavorEvent;
-import j86.j86.java.awt.datatransfer.UnsupportedFlavorException;
+import j86.java.awt.datatransfer.Clipboard;
+import j86.java.awt.datatransfer.FlavorTable;
+import j86.java.awt.datatransfer.SystemFlavorMap;
+import j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.ClipboardOwner;
+import j86.java.awt.datatransfer.DataFlavor;
+import j86.java.awt.datatransfer.FlavorListener;
+import j86.java.awt.datatransfer.FlavorEvent;
+import j86.java.awt.datatransfer.UnsupportedFlavorException;
 
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;

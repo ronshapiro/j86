@@ -38,9 +38,9 @@ import j86.java.awt.Component;
 import j86.java.awt.Container;
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
-import j86.j86.java.awt.event.WindowListener;
-import j86.j86.java.awt.event.WindowAdapter;
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowListener;
+import j86.java.awt.event.WindowAdapter;
+import j86.java.awt.event.WindowEvent;
 
 import j86.java.awt.IllegalComponentStateException;
 import j86.java.awt.Point;
@@ -48,8 +48,8 @@ import j86.java.awt.Rectangle;
 import j86.java.text.*;
 import j86.java.util.Locale;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
 
 
 /** A class to monitor the progress of some operation. If it looks

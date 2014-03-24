@@ -29,11 +29,11 @@ import j86.java.net.InetAddress;
 import j86.java.io.IOException;
 import j86.java.util.Set;
 import j86.java.nio.ByteBuffer;
-import j86.j86.j86.java.nio.channels.spi.AbstractSelectableChannel;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
-import j86.j86.java.nio.channels.ClosedChannelException;
-import j86.j86.java.nio.channels.NotYetBoundException;
-import j86.j86.java.nio.channels.SelectionKey;
+import j86.java.nio.channels.spi.AbstractSelectableChannel;
+import j86.java.nio.channels.spi.SelectorProvider;
+import j86.java.nio.channels.ClosedChannelException;
+import j86.java.nio.channels.NotYetBoundException;
+import j86.java.nio.channels.SelectionKey;
 
 /**
  * A selectable channel for message-oriented SCTP sockets.
@@ -163,7 +163,7 @@ public abstract class SctpMultiChannel
      */
     public static SctpMultiChannel open() throws
         IOException {
-        return new j86.j86.j86.j86.sun.nio.ch.sctp.SctpMultiChannelImpl((SelectorProvider)null);
+        return new j86.sun.nio.ch.sctp.SctpMultiChannelImpl((SelectorProvider)null);
     }
 
     /**
@@ -226,10 +226,10 @@ public abstract class SctpMultiChannel
      * @throws  ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
+     * @throws  j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
@@ -263,10 +263,10 @@ public abstract class SctpMultiChannel
      * @throws  ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
+     * @throws  j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound
      *
-     * @throws  j86.j86.java.nio.channels.UnsupportedAddressTypeException
+     * @throws  j86.java.nio.channels.UnsupportedAddressTypeException
      *          If the type of the given address is not supported
      *
      * @throws  SecurityException
@@ -312,7 +312,7 @@ public abstract class SctpMultiChannel
      * @throws  NotYetBoundException
      *          If this channel is not yet bound
      *
-     * @throws  j86.j86.java.nio.channels.AlreadyBoundException
+     * @throws  j86.java.nio.channels.AlreadyBoundException
      *          If this channel is already bound to the given address
      *
      * @throws  IllegalArgumentException
@@ -596,14 +596,14 @@ public abstract class SctpMultiChannel
      *          the notification handler returns {@code RETURN} after handling
      *          a notification
      *
-     * @throws  j86.j86.java.nio.channels.ClosedChannelException
+     * @throws  j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  j86.j86.java.nio.channels.AsynchronousCloseException
+     * @throws  j86.java.nio.channels.AsynchronousCloseException
      *          If another thread closes this channel
      *          while the read operation is in progress
      *
-     * @throws  j86.j86.java.nio.channels.ClosedByInterruptException
+     * @throws  j86.java.nio.channels.ClosedByInterruptException
      *          If another thread interrupts the current thread
      *          while the read operation is in progress, thereby
      *          closing the channel and setting the current thread's
@@ -662,7 +662,7 @@ public abstract class SctpMultiChannel
      * to {@link AssociationChangeNotification.AssocChangeEvent#CANT_START CANT_START}.
      *
      * <P> The message is transferred from the byte buffer as if by a regular
-     * {@link j86.j86.java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer)
+     * {@link j86.java.nio.channels.WritableByteChannel#write(java.nio.ByteBuffer)
      * write} operation.
      *
      * <P> If a security manager has been installed then for each new association
@@ -691,14 +691,14 @@ public abstract class SctpMultiChannel
      *          exists and {@code streamNumber} is greater than the maximum number
      *          of outgoing streams
      *
-     * @throws  j86.j86.java.nio.channels.ClosedChannelException
+     * @throws  j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
-     * @throws  j86.j86.java.nio.channels.AsynchronousCloseException
+     * @throws  j86.java.nio.channels.AsynchronousCloseException
      *          If another thread closes this channel
      *          while the read operation is in progress
      *
-     * @throws  j86.j86.java.nio.channels.ClosedByInterruptException
+     * @throws  j86.java.nio.channels.ClosedByInterruptException
      *          If another thread interrupts the current thread
      *          while the read operation is in progress, thereby
      *          closing the channel and setting the current thread's
@@ -733,7 +733,7 @@ public abstract class SctpMultiChannel
      *
      * @return  The {@code SctpChannel}
      *
-     * @throws  j86.j86.java.nio.channels.ClosedChannelException
+     * @throws  j86.java.nio.channels.ClosedChannelException
      *          If this channel is closed
      *
      * @throws  IOException

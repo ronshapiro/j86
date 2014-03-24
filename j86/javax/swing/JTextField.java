@@ -27,11 +27,11 @@ package j86.javax.swing;
 import j86.sun.swing.SwingUtilities2;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
 import j86.javax.accessibility.*;
 
 import j86.java.io.ObjectOutputStream;

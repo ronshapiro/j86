@@ -25,7 +25,7 @@
 package j86.sun.rmi.server;
 
 import j86.java.rmi.Remote;
-import j86.j86.java.rmi.server.RemoteCall;
+import j86.java.rmi.server.RemoteCall;
 
 /**
  * The Dispatcher interface allows the transport to make

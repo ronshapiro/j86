@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.utils;
+package j86.com.sun.org.apache.xml.internal.security.utils;
 
 import j86.java.io.BufferedReader;
 import j86.java.io.IOException;
@@ -28,7 +28,7 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.math.BigInteger;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -43,7 +43,7 @@ import org.w3c.dom.Text;
  * @author Anli Shundi
  * @author Christian Geuer-Pollmann
  * @see <A HREF="ftp://ftp.isi.edu/in-notes/rfc2045.txt">RFC 2045</A>
- * @see j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformBase64Decode
+ * @see j86.com.sun.org.apache.xml.internal.security.transforms.implementations.TransformBase64Decode
  */
 public class Base64 {
 

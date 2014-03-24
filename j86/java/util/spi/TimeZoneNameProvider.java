@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.spi;
+package j86.java.util.spi;
 
 import j86.java.util.Locale;
 
@@ -70,7 +70,7 @@ public abstract class TimeZoneNameProvider extends LocaleServiceProvider {
      *     given locale, or null if it's not available.
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or <code>locale</code> isn't one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>ID</code> or <code>locale</code>
      *     is null

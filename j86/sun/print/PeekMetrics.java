@@ -32,10 +32,10 @@ import j86.java.awt.Graphics2D;
 import j86.java.awt.Image;
 import j86.java.awt.Paint;
 
-import j86.j86.java.awt.font.TextLayout;
+import j86.java.awt.font.TextLayout;
 
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.j86.java.awt.image.renderable.RenderableImage;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.renderable.RenderableImage;
 
 /**
  * Maintain information about the type of drawing

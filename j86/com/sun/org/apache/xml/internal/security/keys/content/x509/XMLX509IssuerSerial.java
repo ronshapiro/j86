@@ -20,24 +20,24 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
+package j86.com.sun.org.apache.xml.internal.security.keys.content.x509;
 
 import j86.java.math.BigInteger;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.X509Certificate;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.RFC2253Parser;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.RFC2253Parser;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class XMLX509IssuerSerial extends SignatureElementProxy implements XMLX509DataContent {
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(XMLX509IssuerSerial.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(XMLX509IssuerSerial.class.getName());
 
     /**
      * Constructor XMLX509IssuerSerial
@@ -108,8 +108,8 @@ public class XMLX509IssuerSerial extends SignatureElementProxy implements XMLX50
     public BigInteger getSerialNumber() {
         String text =
             this.getTextFromChildElement(Constants._TAG_X509SERIALNUMBER, Constants.SignatureSpecNS);
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "X509SerialNumber text: " + text);
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "X509SerialNumber text: " + text);
         }
 
         return new BigInteger(text);

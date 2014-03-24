@@ -59,7 +59,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.zone;
+package j86.java.time.zone;
 
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
@@ -74,9 +74,9 @@ import j86.java.util.Objects;
 import j86.java.util.ServiceConfigurationError;
 import j86.java.util.ServiceLoader;
 import j86.java.util.Set;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Provider of time-zone rules to the system.
@@ -90,7 +90,7 @@ import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
  * directories. Installed providers are loaded using the service-provider loading
  * facility defined by the {@link ServiceLoader} class. A ZoneRulesProvider
  * identifies itself with a provider configuration file named
- * {@code j86.j86.java.time.zone.ZoneRulesProvider} in the resource directory
+ * {@code j86.java.time.zone.ZoneRulesProvider} in the resource directory
  * {@code META-INF/services}. The file should contain a line that specifies the
  * fully qualified concrete zonerules-provider class name.
  * Providers may also be made available by adding them to the class path or by
@@ -98,7 +98,7 @@ import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
  * <p>
  * The Java virtual machine has a default provider that provides zone rules
  * for the time-zones defined by IANA Time Zone Database (TZDB). If the system
- * property {@code j86.j86.java.time.zone.DefaultZoneRulesProvider} is defined then
+ * property {@code j86.java.time.zone.DefaultZoneRulesProvider} is defined then
  * it is taken to be the fully-qualified name of a concrete ZoneRulesProvider
  * class to be loaded as the default provider, using the system class loader.
  * If this system property is not defined, a system-default provider will be
@@ -138,12 +138,12 @@ public abstract class ZoneRulesProvider {
     private static final ConcurrentMap<String, ZoneRulesProvider> ZONES = new ConcurrentHashMap<>(512, 0.75f, 2);
 
     static {
-        // if the property j86.j86.java.time.zone.DefaultZoneRulesProvider is
+        // if the property j86.java.time.zone.DefaultZoneRulesProvider is
         // set then its value is the class name of the default provider
         final List<ZoneRulesProvider> loaded = new ArrayList<>();
         AccessController.doPrivileged(new PrivilegedAction<Object>() {
             public Object run() {
-                String prop = System.getProperty("j86.j86.java.time.zone.DefaultZoneRulesProvider");
+                String prop = System.getProperty("j86.java.time.zone.DefaultZoneRulesProvider");
                 if (prop != null) {
                     try {
                         Class<?> c = Class.forName(prop, true, ClassLoader.getSystemClassLoader());

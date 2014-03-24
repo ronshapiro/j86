@@ -39,10 +39,10 @@ import j86.java.util.Set;
 
 import j86.java.net.URL;
 
-import j86.j86.javax.sound.midi.spi.MidiFileWriter;
-import j86.j86.javax.sound.midi.spi.MidiFileReader;
-import j86.j86.javax.sound.midi.spi.SoundbankReader;
-import j86.j86.javax.sound.midi.spi.MidiDeviceProvider;
+import j86.javax.sound.midi.spi.MidiFileWriter;
+import j86.javax.sound.midi.spi.MidiFileReader;
+import j86.javax.sound.midi.spi.SoundbankReader;
+import j86.javax.sound.midi.spi.MidiDeviceProvider;
 
 import j86.com.sun.media.sound.JDK13Services;
 import j86.com.sun.media.sound.ReferenceCountingDevice;
@@ -111,7 +111,7 @@ import j86.com.sun.media.sound.MidiDeviceTransmitterEnvelope;
  * The property value consists of the provider class name
  * and the device name, separated by the hash mark (&quot;#&quot;).
  * The provider class name is the fully-qualified
- * name of a concrete {@link j86.j86.javax.sound.midi.spi.MidiDeviceProvider
+ * name of a concrete {@link j86.javax.sound.midi.spi.MidiDeviceProvider
  * MIDI device provider} class. The device name is matched against
  * the <code>String</code> returned by the <code>getName</code>
  * method of <code>MidiDevice.Info</code>.

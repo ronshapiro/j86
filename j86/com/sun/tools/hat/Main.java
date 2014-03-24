@@ -34,9 +34,9 @@ package j86.com.sun.tools.hat;
 import j86.java.io.IOException;
 import j86.java.io.File;
 
-import j86.j86.com.sun.tools.hat.internal.model.Snapshot;
-import j86.j86.com.sun.tools.hat.internal.model.ReachableExcludesImpl;
-import j86.j86.com.sun.tools.hat.internal.server.QueryListener;
+import j86.com.sun.tools.hat.internal.model.Snapshot;
+import j86.com.sun.tools.hat.internal.model.ReachableExcludesImpl;
+import j86.com.sun.tools.hat.internal.server.QueryListener;
 
 /**
  *
@@ -156,7 +156,7 @@ public class Main {
 
         System.out.println("Reading from " + fileName + "...");
         try {
-            model = j86.j86.com.sun.tools.hat.internal.parser.Reader.readFile(fileName, callStack, debugLevel);
+            model = j86.com.sun.tools.hat.internal.parser.Reader.readFile(fileName, callStack, debugLevel);
         } catch (IOException ex) {
             ex.printStackTrace();
             System.exit(1);
@@ -176,7 +176,7 @@ public class Main {
             System.out.println("Reading baseline snapshot...");
             Snapshot baseline = null;
             try {
-                baseline = j86.j86.com.sun.tools.hat.internal.parser.Reader.readFile(baselineDump, false,
+                baseline = j86.com.sun.tools.hat.internal.parser.Reader.readFile(baselineDump, false,
                                                       debugLevel);
             } catch (IOException ex) {
                 ex.printStackTrace();

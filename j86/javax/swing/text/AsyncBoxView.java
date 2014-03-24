@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.util.*;
 import j86.java.util.List;
 import j86.java.awt.*;
 import j86.javax.swing.SwingUtilities;
-import j86.j86.javax.swing.event.DocumentEvent;
+import j86.javax.swing.event.DocumentEvent;
 
 /**
  * A box that does layout asynchronously.  This

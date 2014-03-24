@@ -47,7 +47,7 @@ import j86.java.security.Permission;
 import j86.java.security.ProtectionDomain;
 import j86.java.security.CodeSource;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * This class is used by the system to launch the main application.
@@ -242,7 +242,7 @@ public class Launcher {
 
             ProtectionDomain domain = new ProtectionDomain(
                 new CodeSource(perms.getCodeBase(),
-                    (j86.j86.java.security.cert.Certificate[]) null),
+                    (j86.java.security.cert.Certificate[]) null),
                 perms);
 
             AccessControlContext acc =
@@ -322,7 +322,7 @@ public class Launcher {
          * This class loader supports dynamic additions to the class path
          * at runtime.
          *
-         * @see j86.j86.java.lang.instrument.Instrumentation#appendToSystemClassPathSearch
+         * @see j86.java.lang.instrument.Instrumentation#appendToSystemClassPathSearch
          */
         private void appendToClassPathForInstrumentation(String path) {
             assert(Thread.holdsLock(this));
@@ -346,7 +346,7 @@ public class Launcher {
 
             ProtectionDomain domain =
                 new ProtectionDomain(new CodeSource(perms.getCodeBase(),
-                    (j86.j86.java.security.cert.Certificate[]) null),
+                    (j86.java.security.cert.Certificate[]) null),
                 perms);
 
             AccessControlContext acc =
@@ -468,7 +468,7 @@ public class Launcher {
      * The stream handler factory for loading system protocol handlers.
      */
     private static class Factory implements URLStreamHandlerFactory {
-        private static String PREFIX = "j86.j86.sun.net.www.protocol";
+        private static String PREFIX = "j86.sun.net.www.protocol";
 
         public URLStreamHandler createURLStreamHandler(String protocol) {
             String name = PREFIX + "." + protocol + ".Handler";

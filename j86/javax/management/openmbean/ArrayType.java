@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 import j86.java.io.ObjectStreamException;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 
 /**
  * The <code>ArrayType</code> class is the <i>open type</i> class whose instances describe
@@ -738,7 +738,7 @@ public class ArrayType<T> extends OpenType<T> {
      * Returns a string representation of this <code>ArrayType</code> instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * <code>j86.j86.javax.management.openmbean.ArrayType</code>), the type name,
+     * <code>j86.javax.management.openmbean.ArrayType</code>), the type name,
      * the dimension, the elements' open type and the primitive array flag
      * defined for this instance.
      * <p>

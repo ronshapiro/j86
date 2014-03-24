@@ -25,9 +25,9 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.UnaryOperator;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.UnaryOperator;
 
 /**
  * Resizable-array implementation of the <tt>List</tt> interface.  Implements

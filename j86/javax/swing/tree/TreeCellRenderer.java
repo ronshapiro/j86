@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
 import j86.java.awt.Component;
 import j86.javax.swing.JTree;

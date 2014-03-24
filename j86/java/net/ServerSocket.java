@@ -27,7 +27,7 @@ package j86.java.net;
 
 import j86.java.io.FileDescriptor;
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.ServerSocketChannel;
+import j86.java.nio.channels.ServerSocketChannel;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedExceptionAction;
 
@@ -45,7 +45,7 @@ import j86.java.security.PrivilegedExceptionAction;
  * @author  unascribed
  * @see     j86.java.net.SocketImpl
  * @see     j86.java.net.ServerSocket#setSocketFactory(java.net.SocketImplFactory)
- * @see     j86.j86.java.nio.channels.ServerSocketChannel
+ * @see     j86.java.nio.channels.ServerSocketChannel
  * @since   JDK1.0
  */
 public
@@ -494,7 +494,7 @@ class ServerSocket implements j86.java.io.Closeable {
      *             {@code checkAccept} method doesn't allow the operation.
      * @exception  SocketTimeoutException if a timeout was previously set with setSoTimeout and
      *             the timeout has been reached.
-     * @exception  j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @exception  j86.java.nio.channels.IllegalBlockingModeException
      *             if this socket has an associated channel, the channel is in
      *             non-blocking mode, and there is no connection ready to be
      *             accepted
@@ -521,7 +521,7 @@ class ServerSocket implements j86.java.io.Closeable {
      * return from implAccept the FooSocket will be connected to a client.
      *
      * @param s the Socket
-     * @throws j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @throws j86.java.nio.channels.IllegalBlockingModeException
      *         if this socket has an associated channel,
      *         and the channel is in non-blocking mode
      * @throws IOException if an I/O error occurs when waiting
@@ -588,12 +588,12 @@ class ServerSocket implements j86.java.io.Closeable {
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.ServerSocketChannel} object
+     * Returns the unique {@link j86.java.nio.channels.ServerSocketChannel} object
      * associated with this socket, if any.
      *
      * <p> A server socket will have a channel if, and only if, the channel
      * itself was created via the {@link
-     * j86.j86.java.nio.channels.ServerSocketChannel#open ServerSocketChannel.open}
+     * j86.java.nio.channels.ServerSocketChannel#open ServerSocketChannel.open}
      * method.
      *
      * @return  the server-socket channel associated with this socket,

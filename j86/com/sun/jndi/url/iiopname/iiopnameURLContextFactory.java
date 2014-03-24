@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.url.iiopname;
+package j86.com.sun.jndi.url.iiopname;
 
 import j86.com.sun.jndi.url.iiop.iiopURLContextFactory;
 

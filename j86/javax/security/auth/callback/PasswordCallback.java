@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.callback;
+package j86.javax.security.auth.callback;
 
 /**
  * <p> Underlying security services instantiate and pass a
  * {@code PasswordCallback} to the {@code handle}
  * method of a {@code CallbackHandler} to retrieve password information.
  *
- * @see j86.j86.javax.security.auth.callback.CallbackHandler
+ * @see j86.javax.security.auth.callback.CallbackHandler
  */
 public class PasswordCallback implements Callback, j86.java.io.Serializable {
 

@@ -25,7 +25,7 @@
 
 package j86.org.ietf.jgss;
 
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 

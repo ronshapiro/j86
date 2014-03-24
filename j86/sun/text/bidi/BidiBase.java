@@ -50,20 +50,20 @@
  * fallbacks for unsupported combinations.
  */
 
-package j86.j86.sun.text.bidi;
+package j86.sun.text.bidi;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Array;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.Bidi;
 import j86.java.util.Arrays;
 import j86.java.util.MissingResourceException;
-import j86.j86.sun.text.normalizer.UBiDiProps;
-import j86.j86.sun.text.normalizer.UCharacter;
-import j86.j86.sun.text.normalizer.UTF16;
+import j86.sun.text.normalizer.UBiDiProps;
+import j86.sun.text.normalizer.UCharacter;
+import j86.sun.text.normalizer.UTF16;
 
 /**
  *
@@ -3443,14 +3443,14 @@ public class BidiBase {
 
     /**
      * A class that provides access to constants defined by
-     * j86.j86.java.awt.font.TextAttribute without creating a static dependency.
+     * j86.java.awt.font.TextAttribute without creating a static dependency.
      */
     private static class TextAttributeConstants {
-        private static final Class<?> clazz = getClass("j86.j86.java.awt.font.TextAttribute");
+        private static final Class<?> clazz = getClass("j86.java.awt.font.TextAttribute");
 
         /**
          * TextAttribute instances (or a fake Attribute type if
-         * j86.j86.java.awt.font.TextAttribute is not present)
+         * j86.java.awt.font.TextAttribute is not present)
          */
         static final AttributedCharacterIterator.Attribute RUN_DIRECTION =
             getTextAttribute("RUN_DIRECTION");
@@ -3497,12 +3497,12 @@ public class BidiBase {
     }
 
     /**
-     * A class that provides access to j86.j86.java.awt.font.NumericShaping without
+     * A class that provides access to j86.java.awt.font.NumericShaping without
      * creating a static dependency.
      */
     private static class NumericShapings {
         private static final Class<?> clazz =
-            getClass("j86.j86.java.awt.font.NumericShaper");
+            getClass("j86.java.awt.font.NumericShaper");
         private static final Method shapeMethod =
             getMethod(clazz, "shape", char[].class, int.class, int.class);
 

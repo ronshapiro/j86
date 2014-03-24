@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
-import j86.j86.java.security.cert.CertificateException;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.CertificateException;
+import j86.java.security.cert.X509Certificate;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.x509.AuthorityKeyIdentifierExtension;

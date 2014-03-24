@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.TrustManagerFactory
+ * NOTE:  this file was copied from j86.javax.net.ssl.TrustManagerFactory
  */
 
 package com.j86.sun.net.ssl;
@@ -38,7 +38,7 @@ import j86.java.security.*;
  * material is based on a KeyStore and/or provider specific sources.
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.TrustManagerFactory}.
+ *      replaced by {@link j86.javax.net.ssl.TrustManagerFactory}.
  */
 @Deprecated
 public class TrustManagerFactory {

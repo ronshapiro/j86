@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
 import j86.jdk.internal.org.objectweb.asm.MethodVisitor;
 import j86.jdk.internal.org.objectweb.asm.Opcodes;
 import j86.jdk.internal.org.objectweb.asm.Type;
-import j86.j86.sun.invoke.util.BytecodeDescriptor;
-import j86.j86.sun.invoke.util.Wrapper;
-import static j86.j86.sun.invoke.util.Wrapper.*;
+import j86.sun.invoke.util.BytecodeDescriptor;
+import j86.sun.invoke.util.Wrapper;
+import static j86.sun.invoke.util.Wrapper.*;
 
 class TypeConvertingMethodAdapter extends MethodVisitor {
 

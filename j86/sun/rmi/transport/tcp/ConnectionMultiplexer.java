@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.rmi.transport.tcp;
+package j86.sun.rmi.transport.tcp;
 
 import j86.java.io.*;
 import j86.java.util.*;
-import j86.j86.java.rmi.server.LogStream;
+import j86.java.rmi.server.LogStream;
 
 import j86.sun.rmi.runtime.Log;
 
@@ -51,12 +51,12 @@ final class ConnectionMultiplexer {
 
     private static String getLogLevel() {
         return j86.java.security.AccessController.doPrivileged(
-            new j86.sun.security.action.GetPropertyAction("j86.j86.sun.rmi.transport.tcp.multiplex.logLevel"));
+            new j86.sun.security.action.GetPropertyAction("j86.sun.rmi.transport.tcp.multiplex.logLevel"));
     }
 
     /* multiplex system log */
     static final Log multiplexLog =
-        Log.getLog("j86.j86.sun.rmi.transport.tcp.multiplex",
+        Log.getLog("j86.sun.rmi.transport.tcp.multiplex",
                    "multiplex", ConnectionMultiplexer.logLevel);
 
     /** multiplexing protocol operation codes */

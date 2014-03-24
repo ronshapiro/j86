@@ -24,7 +24,7 @@
  */
 package j86.sun.security.util;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.sun.security.util.ObjectIdentifier;
 

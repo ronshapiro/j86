@@ -24,17 +24,17 @@
  */
 
 
-package j86.j86.javax.print.attribute;
+package j86.javax.print.attribute;
 
 /**
  * Interface SupportedValuesAttribute is a tagging interface which a printing
  * attribute class implements to indicate the attribute describes the supported
  * values for another attribute. For example, if a Print Service instance
- * supports the {@link j86.j86.j86.javax.print.attribute.standard.Copies Copies}
+ * supports the {@link j86.javax.print.attribute.standard.Copies Copies}
  * attribute, the Print Service instance will have a {@link
- * j86.j86.j86.javax.print.attribute.standard.CopiesSupported CopiesSupported} attribute,
+ * j86.javax.print.attribute.standard.CopiesSupported CopiesSupported} attribute,
  * which is a SupportedValuesAttribute giving the legal values a client may
- * specify for the {@link j86.j86.j86.javax.print.attribute.standard.Copies Copies}
+ * specify for the {@link j86.javax.print.attribute.standard.Copies Copies}
  * attribute.
  * <P>
  *

@@ -26,7 +26,7 @@
 package j86.sun.security.x509;
 
 import j86.java.io.IOException;
-import j86.j86.java.security.cert.PolicyQualifierInfo;
+import j86.java.security.cert.PolicyQualifierInfo;
 import j86.java.util.Collections;
 import j86.java.util.Enumeration;
 import j86.java.util.Iterator;
@@ -70,7 +70,7 @@ public class PolicyInformation {
     /* The policy OID */
     private CertificatePolicyId policyIdentifier;
 
-    /* A Set of j86.j86.java.security.cert.PolicyQualifierInfo objects */
+    /* A Set of j86.java.security.cert.PolicyQualifierInfo objects */
     private Set<PolicyQualifierInfo> policyQualifiers;
 
     /**

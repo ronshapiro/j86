@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
 import j86.java.beans.*;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * Wrapper for a value from the desktop. The value is lazily looked up, and

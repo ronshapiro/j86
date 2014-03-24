@@ -33,14 +33,14 @@
 /*
  * $Id: DOMXMLSignature.java 1333415 2012-05-03 12:03:51Z coheigea $
  */
-package j86.j86.org.jcp.xml.dsig.internal.dom;
+package j86.org.jcp.xml.dsig.internal.dom;
 
 import j86.javax.xml.crypto.*;
-import j86.j86.javax.xml.crypto.dom.*;
-import j86.j86.javax.xml.crypto.dsig.*;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMSignContext;
-import j86.j86.j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
-import j86.j86.j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
+import j86.javax.xml.crypto.dom.*;
+import j86.javax.xml.crypto.dsig.*;
+import j86.javax.xml.crypto.dsig.dom.DOMSignContext;
+import j86.javax.xml.crypto.dsig.dom.DOMValidateContext;
+import j86.javax.xml.crypto.dsig.keyinfo.KeyInfo;
 
 import j86.java.security.InvalidKeyException;
 import j86.java.security.Key;
@@ -55,8 +55,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+import j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 
 /**
  * DOM-based implementation of XMLSignature.
@@ -67,8 +67,8 @@ import j86.j86.com.sun.org.apache.xml.internal.security.utils.Base64;
 public final class DOMXMLSignature extends DOMStructure
     implements XMLSignature {
 
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger("j86.j86.org.jcp.xml.dsig.internal.dom");
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger("j86.org.jcp.xml.dsig.internal.dom");
     private String id;
     private SignatureValue sv;
     private KeyInfo ki;
@@ -276,14 +276,14 @@ public final class DOMXMLSignature extends DOMStructure
         for (int i = 0, size = refs.size(); validateRefs && i < size; i++) {
             Reference ref = refs.get(i);
             boolean refValid = ref.validate(vc);
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Reference[" + ref.getURI() + "] is valid: " + refValid);
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Reference[" + ref.getURI() + "] is valid: " + refValid);
             }
             validateRefs &= refValid;
         }
         if (!validateRefs) {
-            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                log.log(j86.j86.java.util.logging.Level.FINE, "Couldn't validate the References");
+            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                log.log(j86.java.util.logging.Level.FINE, "Couldn't validate the References");
             }
             validationStatus = false;
             validated = true;
@@ -303,8 +303,8 @@ public final class DOMXMLSignature extends DOMStructure
                 for (int j = 0; validateMans && j < csize; j++) {
                     XMLStructure xs = content.get(j);
                     if (xs instanceof Manifest) {
-                        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                            log.log(j86.j86.java.util.logging.Level.FINE, "validating manifest");
+                        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                            log.log(j86.java.util.logging.Level.FINE, "validating manifest");
                         }
                         Manifest man = (Manifest)xs;
                         @SuppressWarnings("unchecked")
@@ -313,8 +313,8 @@ public final class DOMXMLSignature extends DOMStructure
                         for (int k = 0; validateMans && k < rsize; k++) {
                             Reference ref = manRefs.get(k);
                             boolean refValid = ref.validate(vc);
-                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                                log.log(j86.j86.java.util.logging.Level.FINE,
+                            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.java.util.logging.Level.FINE,
                                     "Manifest ref[" + ref.getURI() + "] is valid: " + refValid
                                 );
                             }

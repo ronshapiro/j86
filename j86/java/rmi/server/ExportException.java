@@ -23,19 +23,19 @@
  * questions.
  */
 
-package j86.j86.java.rmi.server;
+package j86.java.rmi.server;
 
 /**
  * An <code>ExportException</code> is a <code>RemoteException</code>
  * thrown if an attempt to export a remote object fails.  A remote object is
  * exported via the constructors and <code>exportObject</code> methods of
- * <code>j86.j86.java.rmi.server.UnicastRemoteObject</code> and
- * <code>j86.j86.java.rmi.activation.Activatable</code>.
+ * <code>j86.java.rmi.server.UnicastRemoteObject</code> and
+ * <code>j86.java.rmi.activation.Activatable</code>.
  *
  * @author  Ann Wollrath
  * @since   JDK1.1
- * @see j86.j86.java.rmi.server.UnicastRemoteObject
- * @see j86.j86.java.rmi.activation.Activatable
+ * @see j86.java.rmi.server.UnicastRemoteObject
+ * @see j86.java.rmi.activation.Activatable
  */
 public class ExportException extends j86.java.rmi.RemoteException {
 

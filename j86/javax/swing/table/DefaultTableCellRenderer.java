@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 
 import j86.java.awt.Component;
 import j86.java.awt.Color;
@@ -162,7 +162,7 @@ public class DefaultTableCellRenderer extends JLabel
         setBackground(null);
     }
 
-    // implements j86.j86.javax.swing.table.TableCellRenderer
+    // implements j86.javax.swing.table.TableCellRenderer
     /**
      *
      * Returns the default table cell renderer.
@@ -215,7 +215,7 @@ public class DefaultTableCellRenderer extends JLabel
             Color background = unselectedBackground != null
                                     ? unselectedBackground
                                     : table.getBackground();
-            if (background == null || background instanceof j86.j86.javax.swing.plaf.UIResource) {
+            if (background == null || background instanceof j86.javax.swing.plaf.UIResource) {
                 Color alternateColor = DefaultLookup.getColor(this, ui, "Table.alternateRowColor");
                 if (alternateColor != null && row % 2 != 0) {
                     background = alternateColor;
@@ -345,7 +345,7 @@ public class DefaultTableCellRenderer extends JLabel
                 || propertyName == "displayedMnemonic"
                 || ((propertyName == "font" || propertyName == "foreground")
                     && oldValue != newValue
-                    && getClientProperty(j86.j86.j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
+                    && getClientProperty(j86.javax.swing.plaf.basic.BasicHTML.propertyKey) != null)) {
 
             super.firePropertyChange(propertyName, oldValue, newValue);
         }
@@ -392,7 +392,7 @@ public class DefaultTableCellRenderer extends JLabel
      * Please see {@link j86.java.beans.XMLEncoder}.
      */
     public static class UIResource extends DefaultTableCellRenderer
-        implements j86.j86.javax.swing.plaf.UIResource
+        implements j86.javax.swing.plaf.UIResource
     {
     }
 

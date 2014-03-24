@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.sun.awt.AppContext;
 
@@ -496,7 +496,7 @@ public class Region {
 
     static void registerUIs(UIDefaults table) {
         for (Object key : getUItoRegionMap().keySet()) {
-            table.put(key, "j86.j86.j86.javax.swing.plaf.synth.SynthLookAndFeel");
+            table.put(key, "j86.javax.swing.plaf.synth.SynthLookAndFeel");
         }
     }
 

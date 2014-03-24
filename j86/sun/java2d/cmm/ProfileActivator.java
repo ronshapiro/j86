@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.cmm;
+package j86.sun.java2d.cmm;
 
-import j86.j86.java.awt.color.ProfileDataException;
+import j86.java.awt.color.ProfileDataException;
 
 /**
  * An interface to allow the ProfileDeferralMgr to activate a

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.java.lang.invoke;
+package j86.java.lang.invoke;
 
-import j86.j86.sun.invoke.empty.Empty;
-import static j86.j86.java.lang.invoke.MethodHandleStatics.*;
-import static j86.j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
+import j86.sun.invoke.empty.Empty;
+import static j86.java.lang.invoke.MethodHandleStatics.*;
+import static j86.java.lang.invoke.MethodHandles.Lookup.IMPL_LOOKUP;
 
 /**
  * A {@code CallSite} is a holder for a variable {@link MethodHandle},

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jndi.ldap.pool;
+package j86.com.sun.jndi.ldap.pool;
 
 import j86.java.util.Map;
 import j86.java.util.WeakHashMap;
@@ -33,8 +33,8 @@ import j86.java.util.Iterator;
 import j86.java.util.LinkedList;
 
 import j86.java.io.PrintStream;
-import j86.j86.java.lang.ref.Reference;
-import j86.j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.Reference;
+import j86.java.lang.ref.ReferenceQueue;
 import j86.javax.naming.NamingException;
 
 /**

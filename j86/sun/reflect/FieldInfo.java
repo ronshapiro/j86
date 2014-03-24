@@ -25,8 +25,8 @@
 
 package j86.sun.reflect;
 
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Modifier;
 
 /** NOTE: obsolete as of JDK 1.4 B75 and should be removed from the
     workspace (FIXME) */

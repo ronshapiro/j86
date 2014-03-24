@@ -25,11 +25,11 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.annotation.Retention;
-import j86.j86.java.lang.annotation.Target;
+import j86.java.lang.annotation.Retention;
+import j86.java.lang.annotation.Target;
 
-import static j86.j86.java.lang.annotation.ElementType.METHOD;
-import static j86.j86.java.lang.annotation.RetentionPolicy.RUNTIME;
+import static j86.java.lang.annotation.ElementType.METHOD;
+import static j86.java.lang.annotation.RetentionPolicy.RUNTIME;
 
 /**
  * Indicates that an attribute called "transient"

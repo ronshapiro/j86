@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.management.jdp;
+package j86.sun.management.jdp;
 
 import j86.java.io.ByteArrayInputStream;
 import j86.java.io.DataInputStream;

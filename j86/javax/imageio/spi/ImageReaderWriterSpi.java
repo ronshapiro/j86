@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.spi;
+package j86.javax.imageio.spi;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
 import j86.java.util.Arrays;
 import j86.java.util.Iterator;
 import j86.javax.imageio.ImageReader;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.stream.ImageInputStream;
 
 /**
  * A superclass containing instance variables and methods common to

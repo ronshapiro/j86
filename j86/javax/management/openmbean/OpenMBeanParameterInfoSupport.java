@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -39,7 +39,7 @@ import j86.javax.management.MBeanParameterInfo;
 // but can't easily be refactored because there's no multiple inheritance.
 // The best we can do for refactoring is to put a bunch of static methods
 // in OpenMBeanAttributeInfoSupport and import them here.
-import static j86.j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport.*;
+import static j86.javax.management.openmbean.OpenMBeanAttributeInfoSupport.*;
 
 /**
  * Describes a parameter used in one or more operations or
@@ -597,7 +597,7 @@ public class OpenMBeanParameterInfoSupport
      * {@code OpenMBeanParameterInfoSupport} instance.
      * <p>
      * The string representation consists of the name of this class (i.e.
-     * {@code j86.j86.javax.management.openmbean.OpenMBeanParameterInfoSupport}),
+     * {@code j86.javax.management.openmbean.OpenMBeanParameterInfoSupport}),
      * the string representation of the name and open type of the described
      * parameter, the string representation of its default, min, max and legal
      * values and the string representation of its descriptor.

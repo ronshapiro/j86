@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.java.io.IOException;
 import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.GSSCaller;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.sun.security.krb5.*;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;

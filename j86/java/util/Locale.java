@@ -47,22 +47,22 @@ import j86.java.io.ObjectStreamField;
 import j86.java.io.Serializable;
 import j86.java.security.AccessController;
 import j86.java.text.MessageFormat;
-import j86.j86.java.util.spi.LocaleNameProvider;
+import j86.java.util.spi.LocaleNameProvider;
 
 import j86.sun.security.action.GetPropertyAction;
-import j86.j86.sun.util.locale.BaseLocale;
-import j86.j86.sun.util.locale.InternalLocaleBuilder;
-import j86.j86.sun.util.locale.LanguageTag;
-import j86.j86.sun.util.locale.LocaleExtensions;
-import j86.j86.sun.util.locale.LocaleMatcher;
-import j86.j86.sun.util.locale.LocaleObjectCache;
-import j86.j86.sun.util.locale.LocaleSyntaxException;
-import j86.j86.sun.util.locale.LocaleUtils;
-import j86.j86.sun.util.locale.ParseStatus;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleResources;
-import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.sun.util.locale.BaseLocale;
+import j86.sun.util.locale.InternalLocaleBuilder;
+import j86.sun.util.locale.LanguageTag;
+import j86.sun.util.locale.LocaleExtensions;
+import j86.sun.util.locale.LocaleMatcher;
+import j86.sun.util.locale.LocaleObjectCache;
+import j86.sun.util.locale.LocaleSyntaxException;
+import j86.sun.util.locale.LocaleUtils;
+import j86.sun.util.locale.ParseStatus;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleResources;
+import j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 /**
  * A <code>Locale</code> object represents a specific geographical, political,
@@ -989,7 +989,7 @@ public final class Locale implements Cloneable, Serializable {
      * Returns an array of all installed locales.
      * The returned array represents the union of locales supported
      * by the Java runtime environment and by installed
-     * {@link j86.j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
+     * {@link j86.java.util.spi.LocaleServiceProvider LocaleServiceProvider}
      * implementations.  It must contain at least a <code>Locale</code>
      * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
@@ -2111,7 +2111,7 @@ public final class Locale implements Cloneable, Serializable {
         return composeList(format, newList);
     }
 
-    // Duplicate of j86.j86.sun.util.locale.UnicodeLocaleExtension.isKey in order to
+    // Duplicate of j86.sun.util.locale.UnicodeLocaleExtension.isKey in order to
     // avoid its class loading.
     private static boolean isUnicodeExtensionKey(String s) {
         // 2alphanum

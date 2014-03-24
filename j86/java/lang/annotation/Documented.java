@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;
 
 /**
  * Indicates that annotations with a type are to be documented by javadoc

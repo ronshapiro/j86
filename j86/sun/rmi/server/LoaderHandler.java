@@ -28,11 +28,11 @@ package j86.sun.rmi.server;
 import j86.java.io.File;
 import j86.java.io.FilePermission;
 import j86.java.io.IOException;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.j86.java.lang.reflect.Modifier;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.lang.ref.SoftReference;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.reflect.Modifier;
+import j86.java.lang.reflect.Proxy;
 import j86.java.net.JarURLConnection;
 import j86.java.net.MalformedURLException;
 import j86.java.net.SocketPermission;
@@ -46,7 +46,7 @@ import j86.java.security.Permissions;
 import j86.java.security.PermissionCollection;
 import j86.java.security.Policy;
 import j86.java.security.ProtectionDomain;
-import j86.j86.java.rmi.server.LogStream;
+import j86.java.rmi.server.LogStream;
 import j86.java.util.Arrays;
 import j86.java.util.Collections;
 import j86.java.util.Enumeration;
@@ -55,13 +55,13 @@ import j86.java.util.IdentityHashMap;
 import j86.java.util.Map;
 import j86.java.util.StringTokenizer;
 import j86.java.util.WeakHashMap;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.rmi.runtime.Log;
 import j86.sun.security.action.GetPropertyAction;
 
 /**
  * <code>LoaderHandler</code> provides the implementation of the static
- * methods of the <code>j86.j86.java.rmi.server.RMIClassLoader</code> class.
+ * methods of the <code>j86.java.rmi.server.RMIClassLoader</code> class.
  *
  * @author      Ann Wollrath
  * @author      Peter Jones
@@ -80,13 +80,13 @@ public final class LoaderHandler {
         Log.getLog("sun.rmi.loader", "loader", LoaderHandler.logLevel);
 
     /**
-     * value of "j86.j86.java.rmi.server.codebase" property, as cached at class
+     * value of "j86.java.rmi.server.codebase" property, as cached at class
      * initialization time.  It may contain malformed URLs.
      */
     private static String codebaseProperty = null;
     static {
         String prop = j86.java.security.AccessController.doPrivileged(
-            new GetPropertyAction("j86.j86.java.rmi.server.codebase"));
+            new GetPropertyAction("j86.java.rmi.server.codebase"));
         if (prop != null && prop.trim().length() > 0) {
             codebaseProperty = prop;
         }
@@ -127,7 +127,7 @@ public final class LoaderHandler {
 
     /**
      * Returns an array of URLs initialized with the value of the
-     * j86.j86.java.rmi.server.codebase property as the URL path.
+     * j86.java.rmi.server.codebase property as the URL path.
      */
     private static synchronized URL[] getDefaultCodebaseURLs()
         throws MalformedURLException
@@ -217,7 +217,7 @@ public final class LoaderHandler {
          * Get the class's class loader.  If it is null, the system class
          * loader, an ancestor of the base class loader (such as the loader
          * for installed extensions), return the value of the
-         * "j86.j86.java.rmi.server.codebase" property.
+         * "j86.java.rmi.server.codebase" property.
          */
         ClassLoader loader = cl.getClassLoader();
         if (loader == null || codebaseLoaders.containsKey(loader)) {
@@ -348,7 +348,7 @@ public final class LoaderHandler {
 
     /**
      * Register a class loader as one whose classes should always be
-     * annotated with the value of the "j86.j86.java.rmi.server.codebase" property.
+     * annotated with the value of the "j86.java.rmi.server.codebase" property.
      */
     public static void registerCodebaseLoader(ClassLoader loader) {
         codebaseLoaders.put(loader, null);
@@ -991,7 +991,7 @@ public final class LoaderHandler {
                 new j86.java.security.PrivilegedAction<PermissionCollection>() {
                 public PermissionCollection run() {
                     CodeSource codesource = new CodeSource(null,
-                        (j86.j86.java.security.cert.Certificate[]) null);
+                        (j86.java.security.cert.Certificate[]) null);
                     Policy p = j86.java.security.Policy.getPolicy();
                     if (p != null) {
                         return p.getPermissions(codesource);
@@ -1016,7 +1016,7 @@ public final class LoaderHandler {
          */
         ProtectionDomain pd = new ProtectionDomain(
             new CodeSource((urls.length > 0 ? urls[0] : null),
-                (j86.j86.java.security.cert.Certificate[]) null),
+                (j86.java.security.cert.Certificate[]) null),
             perms);
         return new AccessControlContext(new ProtectionDomain[] { pd });
     }

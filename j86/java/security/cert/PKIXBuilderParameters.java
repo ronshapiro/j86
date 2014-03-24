@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.security.KeyStore;
 import j86.java.security.KeyStoreException;
@@ -96,7 +96,7 @@ public class PKIXBuilderParameters extends PKIXParameters {
      * {@code null}
      * @throws ClassCastException if any of the elements of
      * {@code trustAnchors} are not of type
-     * {@code j86.j86.java.security.cert.TrustAnchor}
+     * {@code j86.java.security.cert.TrustAnchor}
      */
     public PKIXBuilderParameters(Set<TrustAnchor> trustAnchors, CertSelector
         targetConstraints) throws InvalidAlgorithmParameterException

@@ -23,23 +23,23 @@
  * questions.
  */
 
-package j86.j86.j86.java.nio.file.spi;
+package j86.java.nio.file.spi;
 
-import j86.j86.java.nio.file.*;
-import j86.j86.j86.java.nio.file.attribute.*;
-import j86.j86.java.nio.channels.*;
+import j86.java.nio.file.*;
+import j86.java.nio.file.attribute.*;
+import j86.java.nio.channels.*;
 import j86.java.net.URI;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ExecutorService;
+import j86.java.util.concurrent.ExecutorService;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 
 /**
  * Service-provider class for file systems. The methods defined by the {@link
- * j86.j86.java.nio.file.Files} class will typically delegate to an instance of this
+ * j86.java.nio.file.Files} class will typically delegate to an instance of this
  * class.
  *
  * <p> A file system provider is a concrete implementation of this class that
@@ -50,7 +50,7 @@ import j86.java.security.PrivilegedAction;
  * The {@link FileSystems} class defines how file system providers are located
  * and loaded. The default provider is typically a system-default provider but
  * may be overridden if the system property {@code
- * j86.j86.j86.java.nio.file.spi.DefaultFileSystemProvider} is set. In that case, the
+ * j86.java.nio.file.spi.DefaultFileSystemProvider} is set. In that case, the
  * provider has a one argument constructor whose formal parameter type is {@code
  * FileSystemProvider}. All other providers have a zero argument constructor
  * that initializes the provider.
@@ -200,7 +200,7 @@ public abstract class FileSystemProvider {
      * <p> This method throws {@link FileSystemAlreadyExistsException} if the
      * file system already exists because it was previously created by an
      * invocation of this method. Once a file system is {@link
-     * j86.j86.java.nio.file.FileSystem#close closed} it is provider-dependent if the
+     * j86.java.nio.file.FileSystem#close closed} it is provider-dependent if the
      * provider allows a new file system to be created with the same URI as a
      * file system it previously created.
      *
@@ -240,7 +240,7 @@ public abstract class FileSystemProvider {
      * are undefined (Undefined components are represented by {@code null}).
      *
      * <p> Once a file system created by this provider is {@link
-     * j86.j86.java.nio.file.FileSystem#close closed} it is provider-dependent if this
+     * j86.java.nio.file.FileSystem#close closed} it is provider-dependent if this
      * method returns a reference to the closed file system or throws {@link
      * FileSystemNotFoundException}. If the provider allows a new file system to
      * be created with the same URI as a file system it previously created then
@@ -569,7 +569,7 @@ public abstract class FileSystemProvider {
      * Opens a directory, returning a {@code DirectoryStream} to iterate over
      * the entries in the directory. This method works in exactly the manner
      * specified by the {@link
-     * Files#newDirectoryStream(j86.j86.java.nio.file.Path, java.nio.file.DirectoryStream.Filter)}
+     * Files#newDirectoryStream(j86.java.nio.file.Path, java.nio.file.DirectoryStream.Filter)}
      * method.
      *
      * @param   dir

@@ -21,7 +21,7 @@
  * under the License.
  */
 
-package j86.j86.com.sun.org.apache.xml.internal.security.transforms;
+package j86.com.sun.org.apache.xml.internal.security.transforms;
 
 public interface TransformParam {
 }

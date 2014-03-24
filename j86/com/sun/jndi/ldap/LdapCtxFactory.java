@@ -30,10 +30,10 @@ import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.ObjectFactory;
-import j86.j86.javax.naming.spi.InitialContextFactory;
-import j86.j86.javax.naming.ldap.Control;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.ObjectFactory;
+import j86.javax.naming.spi.InitialContextFactory;
+import j86.javax.naming.ldap.Control;
 
 import j86.com.sun.jndi.url.ldap.ldapURLContextFactory;
 

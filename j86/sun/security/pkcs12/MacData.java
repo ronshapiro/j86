@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs12;
+package j86.sun.security.pkcs12;
 
 import j86.java.io.*;
 import j86.java.security.*;

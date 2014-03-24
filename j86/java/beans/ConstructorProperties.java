@@ -25,9 +25,9 @@
 
 package j86.java.beans;
 
-import j86.j86.java.lang.annotation.*;
-import static j86.j86.java.lang.annotation.ElementType.*;
-import static j86.j86.java.lang.annotation.RetentionPolicy.*;
+import j86.java.lang.annotation.*;
+import static j86.java.lang.annotation.ElementType.*;
+import static j86.java.lang.annotation.RetentionPolicy.*;
 
 /**
    <p>An annotation on a constructor that shows how the parameters of

@@ -33,7 +33,7 @@ package j86.com.sun.naming.internal;
  */
 
 
-class NamedWeakReference<T> extends j86.j86.java.lang.ref.WeakReference<T> {
+class NamedWeakReference<T> extends j86.java.lang.ref.WeakReference<T> {
 
     private final String name;
 

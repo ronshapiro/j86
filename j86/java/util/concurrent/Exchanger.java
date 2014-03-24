@@ -34,10 +34,10 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
-import j86.j86.j86.java.util.concurrent.locks.LockSupport;
+package j86.java.util.concurrent;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.concurrent.locks.LockSupport;
 
 /**
  * A synchronization point at which threads can pair and swap elements

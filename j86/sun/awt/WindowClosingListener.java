@@ -25,7 +25,7 @@
 
 package j86.sun.awt;
 
-import j86.j86.java.awt.event.WindowEvent;
+import j86.java.awt.event.WindowEvent;
 
 /**
  * Interface for listening to WINDOW_CLOSING events before and

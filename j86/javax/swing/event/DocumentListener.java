@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventListener;
 
@@ -46,8 +46,8 @@ import j86.java.util.EventListener;
  * (i.e. the associated Document)</em>.
  *
  * @author  Timothy Prinzing
- * @see j86.j86.javax.swing.text.Document
- * @see j86.j86.javax.swing.text.StyledDocument
+ * @see j86.javax.swing.text.Document
+ * @see j86.javax.swing.text.StyledDocument
  * @see DocumentEvent
  */
 public interface DocumentListener extends EventListener {

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.kerberos;
+package j86.javax.security.auth.kerberos;
 
 import j86.java.io.*;
 import j86.java.util.Arrays;

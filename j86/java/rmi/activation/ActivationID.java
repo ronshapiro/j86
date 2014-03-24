@@ -23,23 +23,23 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 import j86.java.io.IOException;
 import j86.java.io.InvalidObjectException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.Serializable;
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.Proxy;
 import j86.java.rmi.MarshalledObject;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.UnmarshalException;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.RemoteObjectInvocationHandler;
-import j86.j86.java.rmi.server.RemoteRef;
-import j86.j86.java.rmi.server.UID;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RemoteObjectInvocationHandler;
+import j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.UID;
 
 /**
  * Activation makes use of special identifiers to denote remote
@@ -48,9 +48,9 @@ import j86.j86.java.rmi.server.UID;
  * pieces of information needed for activating an object:
  * <ul>
  * <li> a remote reference to the object's activator (a {@link
- * j86.j86.java.rmi.server.RemoteRef RemoteRef}
+ * j86.java.rmi.server.RemoteRef RemoteRef}
  * instance), and
- * <li> a unique identifier (a {@link j86.j86.java.rmi.server.UID UID}
+ * <li> a unique identifier (a {@link j86.java.rmi.server.UID UID}
  * instance) for the object. </ul> <p>
  *
  * An activation identifier for an object can be obtained by registering
@@ -167,10 +167,10 @@ public class ActivationID implements Serializable {
      *
      * <p>The <code>writeObject</code> method is invoked on
      * <code>out</code> passing this object's unique identifier
-     * (a {@link j86.j86.java.rmi.server.UID UID} instance) as the argument.
+     * (a {@link j86.java.rmi.server.UID UID} instance) as the argument.
      *
      * <p>Next, the {@link
-     * j86.j86.java.rmi.server.RemoteRef#getRefClass(j86.java.io.ObjectOutput)
+     * j86.java.rmi.server.RemoteRef#getRefClass(j86.java.io.ObjectOutput)
      * getRefClass} method is invoked on the activator's
      * <code>RemoteRef</code> instance to obtain its external ref
      * type name.  Next, the <code>writeUTF</code> method is
@@ -181,7 +181,7 @@ public class ActivationID implements Serializable {
      * as the argument.
      *
      * @serialData The serialized data for this class comprises a
-     * <code>j86.j86.java.rmi.server.UID</code> (written with
+     * <code>j86.java.rmi.server.UID</code> (written with
      * <code>ObjectOutput.writeObject</code>) followed by the
      * external ref type name of the activator's
      * <code>RemoteRef</code> instance (a string written with
@@ -192,7 +192,7 @@ public class ActivationID implements Serializable {
      * <p>The external ref type name of the
      * <code>RemoteRef</Code> instance is
      * determined using the definitions of external ref type
-     * names specified in the {@link j86.j86.java.rmi.server.RemoteObject
+     * names specified in the {@link j86.java.rmi.server.RemoteObject
      * RemoteObject} <code>writeObject</code> method
      * <b>serialData</b> specification.  Similarly, the data
      * written by the <code>writeExternal</code> method and read
@@ -200,7 +200,7 @@ public class ActivationID implements Serializable {
      * <code>RemoteRef</code> implementation classes
      * corresponding to each of the defined external ref type
      * names is specified in the {@link
-     * j86.j86.java.rmi.server.RemoteObject RemoteObject}
+     * j86.java.rmi.server.RemoteObject RemoteObject}
      * <code>writeObject</code> method <b>serialData</b>
      * specification.
      **/
@@ -235,7 +235,7 @@ public class ActivationID implements Serializable {
      *
      * <p>The <code>readObject</code> method is invoked on
      * <code>in</code> to read this object's unique identifier
-     * (a {@link j86.j86.java.rmi.server.UID UID} instance).
+     * (a {@link j86.java.rmi.server.UID UID} instance).
      *
      * <p>Next, the <code>readUTF</code> method is invoked on
      * <code>in</code> to read the external ref type name of the

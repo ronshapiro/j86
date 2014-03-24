@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.util.*;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 import j86.java.security.Key;
 

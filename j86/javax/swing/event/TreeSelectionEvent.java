@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.javax.swing.event;
+package j86.javax.swing.event;
 
 import j86.java.util.EventObject;
-import j86.j86.javax.swing.tree.TreePath;
+import j86.javax.swing.tree.TreePath;
 
 /**
  * An event that characterizes a change in the current
@@ -45,7 +45,7 @@ import j86.j86.javax.swing.tree.TreePath;
  * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see TreeSelectionListener
- * @see j86.j86.javax.swing.tree.TreeSelectionModel
+ * @see j86.javax.swing.tree.TreeSelectionModel
  *
  * @author Scott Violet
  */

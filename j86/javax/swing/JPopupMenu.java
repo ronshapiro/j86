@@ -26,7 +26,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectOutputStream;
@@ -37,10 +37,10 @@ import j86.java.util.Locale;
 import j86.java.util.Vector;
 import j86.java.util.Hashtable;
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.plaf.PopupMenuUI;
-import j86.j86.javax.swing.plaf.ComponentUI;
-import j86.j86.j86.javax.swing.plaf.basic.BasicComboPopup;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.plaf.PopupMenuUI;
+import j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.plaf.basic.BasicComboPopup;
+import j86.javax.swing.event.*;
 
 import j86.sun.awt.SunToolkit;
 import j86.sun.security.util.SecurityConstants;

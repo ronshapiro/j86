@@ -25,7 +25,7 @@
 
 package j86.java.awt;
 
-import j86.j86.java.awt.peer.PopupMenuPeer;
+import j86.java.awt.peer.PopupMenuPeer;
 import j86.javax.accessibility.*;
 
 

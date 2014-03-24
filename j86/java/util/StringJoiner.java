@@ -48,8 +48,8 @@ package j86.java.util;
  * }</pre>
  * <p>
  * A {@code StringJoiner} may be employed to create formatted output from a
- * {@link j86.j86.java.util.stream.Stream} using
- * {@link j86.j86.java.util.stream.Collectors#joining(CharSequence)}. For example:
+ * {@link j86.java.util.stream.Stream} using
+ * {@link j86.java.util.stream.Collectors#joining(CharSequence)}. For example:
  *
  * <pre> {@code
  * List<Integer> numbers = Arrays.asList(1, 2, 3, 4);
@@ -58,8 +58,8 @@ package j86.java.util;
  *     .collect(Collectors.joining(", "));
  * }</pre>
  *
- * @see j86.j86.java.util.stream.Collectors#joining(CharSequence)
- * @see j86.j86.java.util.stream.Collectors#joining(CharSequence, CharSequence, CharSequence)
+ * @see j86.java.util.stream.Collectors#joining(CharSequence)
+ * @see j86.java.util.stream.Collectors#joining(CharSequence, CharSequence, CharSequence)
  * @since  1.8
 */
 public final class StringJoiner {

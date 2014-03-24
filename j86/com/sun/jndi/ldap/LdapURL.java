@@ -26,8 +26,8 @@
 package j86.com.sun.jndi.ldap;
 
 import j86.javax.naming.*;
-import j86.j86.javax.naming.directory.*;
-import j86.j86.javax.naming.spi.*;
+import j86.javax.naming.directory.*;
+import j86.javax.naming.spi.*;
 import j86.java.net.URL;
 import j86.java.net.MalformedURLException;
 import j86.java.io.UnsupportedEncodingException;

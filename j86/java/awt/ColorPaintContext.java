@@ -27,10 +27,10 @@
 
 package j86.java.awt;
 
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.Raster;
-import j86.j86.j86.java.awt.image.WritableRaster;
-import j86.j86.j86.sun.awt.image.IntegerComponentRaster;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.Raster;
+import j86.java.awt.image.WritableRaster;
+import j86.sun.awt.image.IntegerComponentRaster;
 import j86.java.util.Arrays;
 
 class ColorPaintContext implements PaintContext {
@@ -51,7 +51,7 @@ class ColorPaintContext implements PaintContext {
      * blue).
      * @return the RGB value of the color in the default sRGB
      *         <code>ColorModel</code>.
-     * @see j86.j86.j86.java.awt.image.ColorModel#getRGBdefault
+     * @see j86.java.awt.image.ColorModel#getRGBdefault
      * @see #getRed
      * @see #getGreen
      * @see #getBlue

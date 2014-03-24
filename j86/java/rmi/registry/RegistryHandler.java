@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.rmi.registry;
+package j86.java.rmi.registry;
 
 import j86.java.rmi.RemoteException;
 import j86.java.rmi.UnknownHostException;

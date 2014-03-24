@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.j86.sun.nio.ch.sctp;
+package j86.sun.nio.ch.sctp;
 
 import j86.java.net.SocketAddress;
 import j86.com.j86.sun.nio.sctp.MessageInfo;

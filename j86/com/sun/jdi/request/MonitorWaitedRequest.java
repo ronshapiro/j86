@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -31,15 +31,15 @@ import j86.com.sun.jdi.*;
  * Request for notification when a thread in the target VM has finished waiting on
  * a monitor object. That is, a thread is leaving Object.wait(). "
  * When an enabled MonitorWaitedRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
- * {@link j86.j86.com.sun.jdi.event.MonitorWaitedEvent MonitorWaitedEvent}
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.com.sun.jdi.event.MonitorWaitedEvent MonitorWaitedEvent}
  * will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing MonitorWaitedEvents is
  * managed by the {@link EventRequestManager}
  *
- * @see j86.j86.com.sun.jdi.event.MonitorWaitedEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.MonitorWaitedEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Swamy Venkataramanappa

@@ -28,7 +28,7 @@ package j86.java.net;
 import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.io.IOException;
-import j86.j86.java.nio.channels.SocketChannel;
+import j86.java.nio.channels.SocketChannel;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedAction;
@@ -47,7 +47,7 @@ import j86.java.security.PrivilegedAction;
  * @author  unascribed
  * @see     j86.java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)
  * @see     j86.java.net.SocketImpl
- * @see     j86.j86.java.nio.channels.SocketChannel
+ * @see     j86.java.nio.channels.SocketChannel
  * @since   JDK1.0
  */
 public
@@ -526,7 +526,7 @@ class Socket implements j86.java.io.Closeable {
      *
      * @param   endpoint the {@code SocketAddress}
      * @throws  IOException if an error occurs during the connection
-     * @throws  j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @throws  j86.java.nio.channels.IllegalBlockingModeException
      *          if this socket has an associated channel,
      *          and the channel is in non-blocking mode
      * @throws  IllegalArgumentException if endpoint is null or is a
@@ -547,7 +547,7 @@ class Socket implements j86.java.io.Closeable {
      * @param   timeout  the timeout value to be used in milliseconds.
      * @throws  IOException if an error occurs during the connection
      * @throws  SocketTimeoutException if timeout expires before connecting
-     * @throws  j86.j86.java.nio.channels.IllegalBlockingModeException
+     * @throws  j86.java.nio.channels.IllegalBlockingModeException
      *          if this socket has an associated channel,
      *          and the channel is in non-blocking mode
      * @throws  IllegalArgumentException if endpoint is null or is a
@@ -833,13 +833,13 @@ class Socket implements j86.java.io.Closeable {
     }
 
     /**
-     * Returns the unique {@link j86.j86.java.nio.channels.SocketChannel SocketChannel}
+     * Returns the unique {@link j86.java.nio.channels.SocketChannel SocketChannel}
      * object associated with this socket, if any.
      *
      * <p> A socket will have a channel if, and only if, the channel itself was
-     * created via the {@link j86.j86.java.nio.channels.SocketChannel#open
+     * created via the {@link j86.java.nio.channels.SocketChannel#open
      * SocketChannel.open} or {@link
-     * j86.j86.java.nio.channels.ServerSocketChannel#accept ServerSocketChannel.accept}
+     * j86.java.nio.channels.ServerSocketChannel#accept ServerSocketChannel.accept}
      * methods.
      *
      * @return  the socket channel associated with this socket,
@@ -859,7 +859,7 @@ class Socket implements j86.java.io.Closeable {
      * <p> If this socket has an associated channel then the resulting input
      * stream delegates all of its operations to the channel.  If the channel
      * is in non-blocking mode then the input stream's {@code read} operations
-     * will throw an {@link j86.j86.java.nio.channels.IllegalBlockingModeException}.
+     * will throw an {@link j86.java.nio.channels.IllegalBlockingModeException}.
      *
      * <p>Under abnormal conditions the underlying connection may be
      * broken by the remote host or the network software (for example
@@ -927,7 +927,7 @@ class Socket implements j86.java.io.Closeable {
      * stream delegates all of its operations to the channel.  If the channel
      * is in non-blocking mode then the output stream's {@code write}
      * operations will throw an {@link
-     * j86.j86.java.nio.channels.IllegalBlockingModeException}.
+     * j86.java.nio.channels.IllegalBlockingModeException}.
      *
      * <p> Closing the returned {@link j86.java.io.OutputStream OutputStream}
      * will close the associated socket.

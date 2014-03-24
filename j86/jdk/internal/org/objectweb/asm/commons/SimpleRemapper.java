@@ -57,7 +57,7 @@
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.util.Collections;
 import j86.java.util.Map;

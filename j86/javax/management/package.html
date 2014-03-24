@@ -132,7 +132,7 @@ questions.
 
         <p>An <em>MXBean</em> is a variant of Standard MBean where complex
             types are mapped to a standard set of types defined in the
-            {@link j86.j86.javax.management.openmbean} package.  MXBeans are appropriate
+            {@link j86.javax.management.openmbean} package.  MXBeans are appropriate
             if you would otherwise need to reference application-specific
             classes in your MBean interface.  They are described in detail
         in the specification for {@link j86.javax.management.MXBean MXBean}.</p>
@@ -159,7 +159,7 @@ questions.
             that do not necessarily have access to application-specific
             types, including non-Java programs.  Open MBeans are defined by
             the package <a href="openmbean/package-summary.html"><code>
-        j86.j86.javax.management.openmbean</code></a>.</p>
+        j86.javax.management.openmbean</code></a>.</p>
 
 
         <h3>Model MBeans</h3>
@@ -173,7 +173,7 @@ questions.
             provide common functionality such as persistence and caching.
             Model MBeans are defined by the package
             <a href="modelmbean/package-summary.html"><code>
-        j86.j86.javax.management.modelmbean</code></a>.</p>
+        j86.javax.management.modelmbean</code></a>.</p>
 
 
         <h2>MBean Server</h2>
@@ -194,7 +194,7 @@ questions.
             single MBean Server that can be shared by different managed
             components running within the same Java Virtual Machine.  The
             Platform MBean Server is accessed with the method {@link
-        j86.j86.java.lang.management.ManagementFactory#getPlatformMBeanServer()}.</p>
+        j86.java.lang.management.ManagementFactory#getPlatformMBeanServer()}.</p>
 
         <p>Application code can also create a new MBean Server, or
             access already-created MBean Servers, using the {@link
@@ -332,7 +332,7 @@ questions.
             application to access an MBean Server in essentially the same
             way as a local one.  The package
             <a href="remote/package-summary.html"><code>
-        j86.j86.javax.management.remote</code></a> defines connectors.</p>
+        j86.javax.management.remote</code></a> defines connectors.</p>
 
         <p>The JMX specification also defines the notion of an
             <em>adaptor</em>.  An adaptor translates between requests in a
@@ -382,9 +382,9 @@ questions.
 
             <li><p>You cannot use dot syntax such as {@code
                 HeapMemoryUsage.used} in the {@linkplain
-                j86.j86.javax.management.monitor.Monitor#setObservedAttribute
+                j86.javax.management.monitor.Monitor#setObservedAttribute
                 observed attribute} of a monitor, as described in the
-                documentation for the {@link j86.j86.javax.management.monitor}
+                documentation for the {@link j86.javax.management.monitor}
             package.</p>
 
         </ul>

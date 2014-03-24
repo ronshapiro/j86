@@ -29,7 +29,7 @@ import j86.sun.misc.Unsafe;
 
 import j86.java.awt.Point;
 
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.JTextComponent;
 import j86.javax.swing.TransferHandler;
 
 /**
@@ -82,19 +82,19 @@ public final class SwingAccessor {
     }
 
     /**
-     * The j86.j86.javax.swing.text.JTextComponent class accessor object.
+     * The j86.javax.swing.text.JTextComponent class accessor object.
      */
     private static JTextComponentAccessor jtextComponentAccessor;
 
     /**
-     * Set an accessor object for the j86.j86.javax.swing.text.JTextComponent class.
+     * Set an accessor object for the j86.javax.swing.text.JTextComponent class.
      */
     public static void setJTextComponentAccessor(JTextComponentAccessor jtca) {
          jtextComponentAccessor = jtca;
     }
 
     /**
-     * Retrieve the accessor object for the j86.j86.javax.swing.text.JTextComponent class.
+     * Retrieve the accessor object for the j86.javax.swing.text.JTextComponent class.
      */
     public static JTextComponentAccessor getJTextComponentAccessor() {
         if (jtextComponentAccessor == null) {

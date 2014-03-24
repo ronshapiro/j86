@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.beans.infos;
+package j86.com.sun.beans.infos;
 
 import j86.java.beans.*;
 

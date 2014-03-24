@@ -28,11 +28,11 @@ package j86.com.sun.jmx.remote.internal;
 import j86.java.io.IOException;
 import j86.java.io.ObjectInput;
 import j86.java.io.ObjectOutput;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.RemoteObject;
-import j86.j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.RemoteObject;
+import j86.java.rmi.server.RemoteRef;
 
 
 @SuppressWarnings("deprecation")
@@ -56,7 +56,7 @@ public class ProxyRef implements RemoteRef {
      * @deprecated
      */
     @Deprecated
-    public void invoke(j86.j86.java.rmi.server.RemoteCall call) throws Exception {
+    public void invoke(j86.java.rmi.server.RemoteCall call) throws Exception {
         ref.invoke(call);
     }
 
@@ -69,7 +69,7 @@ public class ProxyRef implements RemoteRef {
      * @deprecated
      */
     @Deprecated
-    public void done(j86.j86.java.rmi.server.RemoteCall call) throws RemoteException {
+    public void done(j86.java.rmi.server.RemoteCall call) throws RemoteException {
         ref.done(call);
     }
 
@@ -81,8 +81,8 @@ public class ProxyRef implements RemoteRef {
      * @deprecated
      */
     @Deprecated
-    public j86.j86.java.rmi.server.RemoteCall newCall(RemoteObject obj,
-            j86.j86.java.rmi.server.Operation[] op, int opnum,
+    public j86.java.rmi.server.RemoteCall newCall(RemoteObject obj,
+            j86.java.rmi.server.Operation[] op, int opnum,
                               long hash) throws RemoteException {
         return ref.newCall(obj, op, opnum, hash);
     }

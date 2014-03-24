@@ -36,7 +36,7 @@ package j86.com.sun.tools.example.debug.bdi;
 
 import j86.java.util.EventObject;
 
-import j86.j86.com.sun.jdi.request.EventRequest;
+import j86.com.sun.jdi.request.EventRequest;
 
 public class SpecEvent extends EventObject {
 

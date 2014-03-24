@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.util;
+package j86.sun.awt.util;
 
 import j86.java.util.AbstractSequentialList;
 import j86.java.util.Collection;
@@ -862,7 +862,7 @@ public class IdentityLinkedList<E>
      */
     public <T> T[] toArray(T[] a) {
         if (a.length < size)
-            a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
+            a = (T[])j86.java.lang.reflect.Array.newInstance(
                                 a.getClass().getComponentType(), size);
         int i = 0;
         Object[] result = a;

@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a thread terminates in the target VM.
  * When an enabled ThreadDeathRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
- * {@link j86.j86.com.sun.jdi.event.ThreadDeathEvent ThreadDeathEvent}
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.com.sun.jdi.event.ThreadDeathEvent ThreadDeathEvent}
  * will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ThreadDeathRequests is
  * managed by the {@link EventRequestManager}
  *
- * @see j86.j86.com.sun.jdi.event.ThreadDeathEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.ThreadDeathEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

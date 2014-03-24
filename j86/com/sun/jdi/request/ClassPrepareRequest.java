@@ -23,25 +23,25 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a class is prepared in the target VM.
  * When an enabled ClassPrepareRequest is satisfied, an
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing a
- * {@link j86.j86.com.sun.jdi.event.ClassPrepareEvent ClassPrepareEvent}
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing a
+ * {@link j86.com.sun.jdi.event.ClassPrepareEvent ClassPrepareEvent}
  * will be placed on the
- * {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ClassPrepareRequests is
  * managed by the {@link EventRequestManager}
  * <p>
  * Class preparation is defined in the Java Virtual Machine
  * Specification.
  *
- * @see j86.j86.com.sun.jdi.event.ClassPrepareEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.ClassPrepareEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

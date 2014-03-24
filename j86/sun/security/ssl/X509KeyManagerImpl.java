@@ -25,20 +25,20 @@
 
 package j86.sun.security.ssl;
 
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 import j86.java.util.*;
 import static j86.java.util.Locale.ENGLISH;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
+import j86.java.util.concurrent.atomic.AtomicLong;
 import j86.java.net.Socket;
 
 import j86.java.security.*;
 import j86.java.security.KeyStore.*;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.*;
+import j86.java.security.cert.Certificate;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
-import j86.j86.sun.security.provider.certpath.AlgorithmChecker;
+import j86.sun.security.provider.certpath.AlgorithmChecker;
 
 /**
  * The new X509 key manager implementation. The main differences to the

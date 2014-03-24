@@ -1018,7 +1018,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param b the second operand
      * @return the sum of {@code a} and {@code b}
      * @jls 4.2.4 Floating-Point Operations
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double sum(double a, double b) {
@@ -1032,7 +1032,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param a the first operand
      * @param b the second operand
      * @return the greater of {@code a} and {@code b}
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double max(double a, double b) {
@@ -1046,7 +1046,7 @@ public final class Double extends Number implements Comparable<Double> {
      * @param a the first operand
      * @param b the second operand
      * @return the smaller of {@code a} and {@code b}.
-     * @see j86.j86.java.util.function.BinaryOperator
+     * @see j86.java.util.function.BinaryOperator
      * @since 1.8
      */
     public static double min(double a, double b) {

@@ -34,7 +34,7 @@ import j86.java.net.MalformedURLException;
 import j86.java.awt.AWTPermission;
 import j86.java.awt.GraphicsEnvironment;
 import j86.java.awt.HeadlessException;
-import j86.j86.java.awt.peer.DesktopPeer;
+import j86.java.awt.peer.DesktopPeer;
 import j86.sun.awt.SunToolkit;
 import j86.sun.awt.HeadlessToolkit;
 import j86.java.io.FilePermission;

@@ -27,7 +27,7 @@ package j86.sun.management;
 
 import j86.java.util.Map;
 import j86.java.util.HashMap;
-import j86.j86.sun.management.counter.Counter;
+import j86.sun.management.counter.Counter;
 
 
 /**

@@ -33,7 +33,7 @@ import j86.java.awt.Graphics;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Font;
 import j86.java.awt.FontMetrics;
-import j86.j86.java.awt.font.FontRenderContext;
+import j86.java.awt.font.FontRenderContext;
 import j86.java.awt.Graphics;
 import j86.java.awt.GraphicsConfiguration;
 import j86.java.awt.Image;
@@ -44,19 +44,19 @@ import j86.java.awt.Stroke;
 import j86.java.awt.RenderingHints;
 import j86.java.awt.RenderingHints.Key;
 
-import j86.j86.java.awt.font.GlyphVector;
+import j86.java.awt.font.GlyphVector;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Rectangle2D;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.BufferedImageOp;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.RenderedImage;
-import j86.j86.j86.j86.java.awt.image.renderable.RenderContext;
-import j86.j86.j86.j86.java.awt.image.renderable.RenderableImage;
-import j86.j86.java.awt.print.PrinterGraphics;
-import j86.j86.java.awt.print.PrinterJob;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.BufferedImageOp;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.RenderedImage;
+import j86.java.awt.image.renderable.RenderContext;
+import j86.java.awt.image.renderable.RenderableImage;
+import j86.java.awt.print.PrinterGraphics;
+import j86.java.awt.print.PrinterJob;
 
 import j86.java.text.AttributedCharacterIterator;
 
@@ -805,8 +805,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -845,8 +845,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -883,8 +883,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -942,8 +942,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param    observer    object to be notified as more of
      *                          the image is converted.
      * @see      j86.java.awt.Image
-     * @see      j86.j86.j86.java.awt.image.ImageObserver
-     * @see      j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see      j86.java.awt.image.ImageObserver
+     * @see      j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since    JDK1.0
      */
     public boolean drawImage(Image img, int x, int y,
@@ -1011,8 +1011,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,
@@ -1073,8 +1073,8 @@ public class ProxyGraphics2D extends Graphics2D implements PrinterGraphics {
      * @param       observer object to be notified as more of the image is
      *                    scaled and converted.
      * @see         j86.java.awt.Image
-     * @see         j86.j86.j86.java.awt.image.ImageObserver
-     * @see         j86.j86.j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
+     * @see         j86.java.awt.image.ImageObserver
+     * @see         j86.java.awt.image.ImageObserver#imageUpdate(java.awt.Image, int, int, int, int, int)
      * @since       JDK1.1
      */
     public boolean drawImage(Image img,

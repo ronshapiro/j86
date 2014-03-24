@@ -29,7 +29,7 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.sun.security.krb5.internal;
+package j86.sun.security.krb5.internal;
 
 import j86.sun.security.krb5.Config;
 import j86.sun.security.krb5.Asn1Exception;
@@ -62,7 +62,7 @@ public class HostAddress implements Cloneable {
     byte[] address = null;
 
     private static InetAddress localInetAddress; //caches local inet address
-    private static final boolean DEBUG = j86.j86.sun.security.krb5.internal.Krb5.DEBUG;
+    private static final boolean DEBUG = j86.sun.security.krb5.internal.Krb5.DEBUG;
     private volatile int hashCode = 0;
 
     private HostAddress(int dummy) {}

@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.java.awt.geom;
+package j86.java.awt.geom;
 
 import j86.java.awt.Shape;
 import j86.java.awt.Rectangle;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
 import j86.java.util.NoSuchElementException;
-import j86.j86.sun.awt.geom.Curve;
-import j86.j86.sun.awt.geom.Crossings;
-import j86.j86.sun.awt.geom.AreaOp;
+import j86.sun.awt.geom.Curve;
+import j86.sun.awt.geom.Crossings;
+import j86.sun.awt.geom.AreaOp;
 
 /**
  * An <code>Area</code> object stores and manipulates a

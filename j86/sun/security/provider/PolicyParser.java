@@ -33,7 +33,7 @@ import j86.java.security.GeneralSecurityException;
 import j86.java.security.Principal;
 import j86.java.text.MessageFormat;
 import j86.java.util.*;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.Debug;
 import j86.sun.security.util.PropertyExpander;
@@ -515,7 +515,7 @@ public class PolicyParser {
                     principalName = expand(principalName);
 
                     if (principalClass.equals
-                                ("j86.j86.javax.security.auth.x500.X500Principal") &&
+                                ("j86.javax.security.auth.x500.X500Principal") &&
                         !principalName.equals(PrincipalEntry.WILDCARD_NAME)) {
 
                         // 4702543:  X500 names with an EmailAddress
@@ -731,7 +731,7 @@ public class PolicyParser {
             dirs = new String[count];
             for (int i = 0; i < count; i++) {
                 File file = new File(st.nextToken());
-                dirs[i] = j86.j86.sun.net.www.ParseUtil.encodePath
+                dirs[i] = j86.sun.net.www.ParseUtil.encodePath
                         (file.getAbsolutePath());
 
                 if (!dirs[i].startsWith("/")) {

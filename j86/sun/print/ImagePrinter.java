@@ -27,9 +27,9 @@ package j86.sun.print;
 
 import j86.java.awt.Graphics;
 import j86.java.awt.Graphics2D;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Printable;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Printable;
 import j86.java.net.URL;
 import j86.java.io.InputStream;
 import j86.javax.imageio.ImageIO;

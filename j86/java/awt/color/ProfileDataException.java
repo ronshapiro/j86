@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.color;
+package j86.java.awt.color;
 
 /**
  * This exception is thrown when an error occurs in accessing or

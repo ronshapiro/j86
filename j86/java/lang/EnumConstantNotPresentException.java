@@ -29,11 +29,11 @@ package j86.java.lang;
  * Thrown when an application tries to access an enum constant by name
  * and the enum type contains no constant with the specified name.
  * This exception can be thrown by the {@linkplain
- * j86.j86.j86.java.lang.reflect.AnnotatedElement API used to read annotations
+ * j86.java.lang.reflect.AnnotatedElement API used to read annotations
  * reflectively}.
  *
  * @author  Josh Bloch
- * @see     j86.j86.j86.java.lang.reflect.AnnotatedElement
+ * @see     j86.java.lang.reflect.AnnotatedElement
  * @since   1.5
  */
 @SuppressWarnings("rawtypes") /* rawtypes are part of the public api */

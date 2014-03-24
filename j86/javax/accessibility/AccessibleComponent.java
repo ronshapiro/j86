@@ -26,7 +26,7 @@
 package j86.javax.accessibility;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 /**
  * The AccessibleComponent interface should be supported by any object

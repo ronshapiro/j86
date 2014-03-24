@@ -23,18 +23,18 @@
  * questions.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.text.DateFormat;
 import j86.java.text.SimpleDateFormat;
-import j86.j86.java.text.spi.DateFormatProvider;
+import j86.java.text.spi.DateFormatProvider;
 import j86.java.util.Calendar;
 import j86.java.util.Locale;
 import j86.java.util.MissingResourceException;
 import j86.java.util.Set;
 
 /**
- * Concrete implementation of the  {@link j86.j86.java.text.spi.DateFormatProvider
+ * Concrete implementation of the  {@link j86.java.text.spi.DateFormatProvider
  * DateFormatProvider} class for the JRE LocaleProviderAdapter.
  *
  * @author Naoto Sato
@@ -78,7 +78,7 @@ public class DateFormatProviderImpl extends DateFormatProvider implements Availa
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a time formatter.
@@ -101,7 +101,7 @@ public class DateFormatProviderImpl extends DateFormatProvider implements Availa
      * @exception IllegalArgumentException if <code>style</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a date formatter.
@@ -130,7 +130,7 @@ public class DateFormatProviderImpl extends DateFormatProvider implements Availa
      *     <code>timeStyle</code> is invalid,
      *     or if <code>locale</code> isn't
      *     one of the locales returned from
-     *     {@link j86.j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
+     *     {@link j86.java.util.spi.LocaleServiceProvider#getAvailableLocales()
      *     getAvailableLocales()}.
      * @exception NullPointerException if <code>locale</code> is null
      * @return a date/time formatter.

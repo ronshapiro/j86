@@ -30,7 +30,7 @@ import j86.java.nio.ByteBuffer;
 import j86.javax.crypto.MacSpi;
 import j86.javax.crypto.SecretKey;
 import j86.java.security.*;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import static j86.com.sun.crypto.provider.TlsPrfGenerator.genPad;
 

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.javax.swing.tree;
+package j86.javax.swing.tree;
 
-import j86.j86.javax.swing.event.TreeExpansionEvent;
+import j86.javax.swing.event.TreeExpansionEvent;
 
 /**
  * Exception used to stop and expand/collapse from happening.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.invoke.anon;
+package j86.sun.invoke.anon;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.Method;
 import j86.sun.misc.IOUtils;
 
 /**

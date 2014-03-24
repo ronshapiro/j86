@@ -28,9 +28,9 @@ package j86.sun.rmi.server;
 import j86.java.io.IOException;
 import j86.java.io.ObjectOutput;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.*;
+import j86.java.rmi.server.*;
 import j86.sun.rmi.transport.*;
-import j86.j86.sun.rmi.transport.tcp.*;
+import j86.sun.rmi.transport.tcp.*;
 
 /**
  * Server-side ref for a remote impl that uses a custom socket factory.

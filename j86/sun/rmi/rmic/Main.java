@@ -53,9 +53,9 @@ import j86.sun.tools.java.ClassNotFound;
 import j86.sun.tools.java.Identifier;
 import j86.sun.tools.java.ClassPath;
 
-import j86.j86.sun.tools.javac.SourceClass;
+import j86.sun.tools.javac.SourceClass;
 import j86.sun.tools.util.CommandLine;
-import j86.j86.j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Constructor;
 import j86.java.util.Properties;
 
 /**
@@ -148,7 +148,7 @@ public class Main implements j86.sun.rmi.rmic.Constants {
          */
         for (int i = 0; i < argv.length; i++) {
             if (argv[i].equals("-Xnew")) {
-                return (new j86.j86.sun.rmi.rmic.newrmic.Main(out,
+                return (new j86.sun.rmi.rmic.newrmic.Main(out,
                                                       program)).compile(argv);
             }
         }

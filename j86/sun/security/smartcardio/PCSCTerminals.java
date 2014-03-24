@@ -26,7 +26,7 @@
 package j86.sun.security.smartcardio;
 
 import j86.java.util.*;
-import j86.j86.java.lang.ref.*;
+import j86.java.lang.ref.*;
 
 import j86.javax.smartcardio.*;
 import static j86.javax.smartcardio.CardTerminals.State.*;

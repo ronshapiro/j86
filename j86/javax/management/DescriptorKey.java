@@ -25,7 +25,7 @@
 
 package j86.javax.management;
 
-import j86.j86.java.lang.annotation.*;
+import j86.java.lang.annotation.*;
 
 /**
  * <p>Meta-annotation that describes how an annotation element relates

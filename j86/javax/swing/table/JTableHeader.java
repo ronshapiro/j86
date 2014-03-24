@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.javax.swing.table;
+package j86.javax.swing.table;
 
-import j86.j86.sun.swing.table.DefaultTableCellHeaderRenderer;
+import j86.sun.swing.table.DefaultTableCellHeaderRenderer;
 
 import j86.java.util.*;
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import j86.javax.accessibility.*;
 
 import j86.java.beans.PropertyChangeListener;

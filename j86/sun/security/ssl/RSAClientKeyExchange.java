@@ -31,7 +31,7 @@ import j86.java.security.*;
 
 import j86.javax.crypto.*;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 import j86.sun.security.internal.spec.TlsRsaPremasterSecretParameterSpec;
 import j86.sun.security.util.KeyUtil;

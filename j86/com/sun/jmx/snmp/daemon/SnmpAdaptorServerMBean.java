@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.j86.com.sun.jmx.snmp.daemon;
+package j86.com.sun.jmx.snmp.daemon;
 
 // java import
 import j86.java.util.Vector;
@@ -45,9 +45,9 @@ import j86.com.sun.jmx.snmp.SnmpPeer;
 
 // SNMP Runtime imports
 //
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpMibHandler;
-import j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
+import j86.com.sun.jmx.snmp.agent.SnmpMibAgent;
+import j86.com.sun.jmx.snmp.agent.SnmpMibHandler;
+import j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory;
 
 /**
  * Exposes the remote management interface of the {@link SnmpAdaptorServer} MBean.
@@ -204,7 +204,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * Set the user-data factory of this SNMP protocol adaptor.
      *
      * @param factory The factory object (null means no factory).
-     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     public void setUserDataFactory(SnmpUserDataFactory factory);
 
@@ -212,7 +212,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * Get the user-data factory associated with this SNMP protocol adaptor.
      *
      * @return The factory object (null means no factory).
-     * @see j86.j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
+     * @see j86.com.sun.jmx.snmp.agent.SnmpUserDataFactory
      */
     public SnmpUserDataFactory getUserDataFactory();
 
@@ -425,8 +425,8 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
 
     /**
      * Adds a new MIB in the SNMP MIB handler.
-     * This method is called automatically by {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
-     * and {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
+     * This method is called automatically by {@link j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
+     * and {@link j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
      * and should not be called directly.
      *
      * @param mib The MIB to add.
@@ -453,8 +453,8 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
 
     /**
      * Removes the specified MIB from the SNMP protocol adaptor.
-     * This method is called automatically by {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
-     * and {@link j86.j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
+     * This method is called automatically by {@link j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptor(SnmpMibHandler)}
+     * and {@link j86.com.sun.jmx.snmp.agent.SnmpMibAgent#setSnmpAdaptorName(ObjectName)}
      * and should not be called directly.
      *
      * @param mib The MIB to be removed.
@@ -630,7 +630,7 @@ public interface SnmpAdaptorServerMBean extends CommunicatorServerMBean {
      * @param trapOid The OID identifying the trap.
      * @param varBindList A list of <CODE>SnmpVarBind</CODE> instances or null.
      *
-     * @return A vector of {@link j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpInformRequest} objects.
+     * @return A vector of {@link j86.com.sun.jmx.snmp.daemon.SnmpInformRequest} objects.
      * <P>If there is no destination host for this inform request, the returned vector will be empty.
      *
      * @exception IllegalStateException  This method has been invoked while the SNMP adaptor server was not active.

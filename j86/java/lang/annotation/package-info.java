@@ -30,4 +30,4 @@
  * @author Josh Bloch
  * @since 1.5
  */
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;

@@ -22,15 +22,15 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.net.URLEncoder;
 import j86.java.net.MalformedURLException;
 import j86.java.io.IOException;
 import j86.java.net.URL;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 import j86.javax.swing.*;
 
 

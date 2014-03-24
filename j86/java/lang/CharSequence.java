@@ -29,9 +29,9 @@ import j86.java.util.NoSuchElementException;
 import j86.java.util.PrimitiveIterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.IntConsumer;
-import j86.j86.java.util.stream.IntStream;
-import j86.j86.java.util.stream.StreamSupport;
+import j86.java.util.function.IntConsumer;
+import j86.java.util.stream.IntStream;
+import j86.java.util.stream.StreamSupport;
 
 /**
  * A <tt>CharSequence</tt> is a readable sequence of <code>char</code> values. This

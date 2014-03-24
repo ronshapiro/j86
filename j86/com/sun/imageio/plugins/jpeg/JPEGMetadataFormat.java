@@ -25,11 +25,11 @@
 
 package j86.com.sun.imageio.plugins.jpeg;
 
-import j86.j86.javax.imageio.metadata.IIOMetadataFormat;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOMetadataFormat;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.plugins.jpeg.JPEGQTable;
-import j86.j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
+import j86.javax.imageio.plugins.jpeg.JPEGQTable;
+import j86.javax.imageio.plugins.jpeg.JPEGHuffmanTable;
 
 import j86.java.util.List;
 import j86.java.util.ArrayList;

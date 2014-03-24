@@ -27,7 +27,7 @@ package j86.sun.security.ssl;
 
 import j86.java.io.*;
 import j86.java.net.*;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.SSLSocketFactory;
 
 
 /**

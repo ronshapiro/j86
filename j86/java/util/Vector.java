@@ -25,9 +25,9 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.UnaryOperator;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.UnaryOperator;
 
 /**
  * The {@code Vector} class implements a growable array of

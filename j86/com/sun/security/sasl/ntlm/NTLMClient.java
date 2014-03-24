@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.ntlm;
+package j86.com.sun.security.sasl.ntlm;
 
 import j86.com.sun.security.ntlm.Client;
 import j86.com.sun.security.ntlm.NTLMException;
@@ -32,14 +32,14 @@ import j86.java.net.InetAddress;
 import j86.java.net.UnknownHostException;
 import j86.java.util.Map;
 import j86.java.util.Random;
-import j86.j86.javax.security.auth.callback.Callback;
+import j86.javax.security.auth.callback.Callback;
 
 
 import j86.javax.security.sasl.*;
-import j86.j86.javax.security.auth.callback.CallbackHandler;
-import j86.j86.javax.security.auth.callback.NameCallback;
-import j86.j86.javax.security.auth.callback.PasswordCallback;
-import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
+import j86.javax.security.auth.callback.CallbackHandler;
+import j86.javax.security.auth.callback.NameCallback;
+import j86.javax.security.auth.callback.PasswordCallback;
+import j86.javax.security.auth.callback.UnsupportedCallbackException;
 
 /**
   * Required callbacks:
@@ -55,7 +55,7 @@ import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
   * j86.javax.security.sasl.qop
   *    String, quality of protection; only "auth" is accepted, default "auth"
   *
-  * j86.j86.com.sun.security.sasl.ntlm.version
+  * j86.com.sun.security.sasl.ntlm.version
   *    String, name a specific version to use; can be:
   *      LM/NTLM: Original NTLM v1
   *      LM: Original NTLM v1, LM only
@@ -67,7 +67,7 @@ import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
   *    If not specified, use system property "ntlm.version". If
   *    still not specified, use default value "LMv2/NTLMv2".
   *
-  * j86.j86.com.sun.security.sasl.ntlm.random
+  * j86.com.sun.security.sasl.ntlm.random
   *    j86.java.util.Random, the nonce source to be used in NTLM v2 or NTLM v1 with
   *    Client Challenge. Default null, an internal j86.java.util.Random object
   *    will be used
@@ -87,13 +87,13 @@ import j86.j86.javax.security.auth.callback.UnsupportedCallbackException;
 final class NTLMClient implements SaslClient {
 
     private static final String NTLM_VERSION =
-            "j86.j86.com.sun.security.sasl.ntlm.version";
+            "j86.com.sun.security.sasl.ntlm.version";
     private static final String NTLM_RANDOM =
-            "j86.j86.com.sun.security.sasl.ntlm.random";
+            "j86.com.sun.security.sasl.ntlm.random";
     private final static String NTLM_DOMAIN =
-            "j86.j86.com.sun.security.sasl.ntlm.domain";
+            "j86.com.sun.security.sasl.ntlm.domain";
     private final static String NTLM_HOSTNAME =
-            "j86.j86.com.sun.security.sasl.ntlm.hostname";
+            "j86.com.sun.security.sasl.ntlm.hostname";
 
     private final Client client;
     private final String mech;

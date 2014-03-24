@@ -25,15 +25,15 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionEvent;
 
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.IOException;
 
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.text.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * A text component that can be marked up with attributes that are
@@ -77,7 +77,7 @@ import j86.j86.javax.swing.plaf.*;
  * description: A text component that can be marked up with attributes that are graphically represented.
  *
  * @author  Timothy Prinzing
- * @see j86.j86.javax.swing.text.StyledEditorKit
+ * @see j86.javax.swing.text.StyledEditorKit
  */
 public class JTextPane extends JEditorPane {
 
@@ -100,7 +100,7 @@ public class JTextPane extends JEditorPane {
 
     /**
      * Creates a new <code>JTextPane</code>, with a specified document model.
-     * A new instance of <code>j86.j86.javax.swing.text.StyledEditorKit</code>
+     * A new instance of <code>j86.javax.swing.text.StyledEditorKit</code>
      *  is created and set.
      *
      * @param doc the document model
@@ -451,7 +451,7 @@ public class JTextPane extends JEditorPane {
 
     /**
      * Creates the <code>EditorKit</code> to use by default.  This
-     * is implemented to return <code>j86.j86.javax.swing.text.StyledEditorKit</code>.
+     * is implemented to return <code>j86.javax.swing.text.StyledEditorKit</code>.
      *
      * @return the editor kit
      */

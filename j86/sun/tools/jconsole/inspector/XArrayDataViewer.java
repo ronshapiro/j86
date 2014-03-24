@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
-import j86.j86.j86.java.lang.reflect.Array;
+import j86.java.lang.reflect.Array;
 import j86.java.util.Collection;
 import j86.java.util.Map;
 import j86.javax.swing.JEditorPane;

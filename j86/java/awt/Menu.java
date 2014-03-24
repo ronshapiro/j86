@@ -28,8 +28,8 @@ import j86.java.io.IOException;
 import j86.java.io.ObjectInputStream;
 import j86.java.util.Vector;
 import j86.java.util.Enumeration;
-import j86.j86.java.awt.peer.MenuPeer;
-import j86.j86.java.awt.event.KeyEvent;
+import j86.java.awt.peer.MenuPeer;
+import j86.java.awt.event.KeyEvent;
 import j86.javax.accessibility.*;
 import j86.sun.awt.AWTAccessor;
 

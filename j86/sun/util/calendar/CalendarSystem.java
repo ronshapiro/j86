@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.util.calendar;
+package j86.sun.util.calendar;
 
 import j86.java.io.File;
 import j86.java.io.FileInputStream;
@@ -33,8 +33,8 @@ import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 import j86.java.util.Properties;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
 
 /**
  * <code>CalendarSystem</code> is an abstract class that defines the
@@ -84,7 +84,7 @@ public abstract class CalendarSystem {
     // Map of calendar names and CalendarSystem instances
     private static ConcurrentMap<String,CalendarSystem> calendars;
 
-    private static final String PACKAGE_NAME = "j86.j86.sun.util.calendar.";
+    private static final String PACKAGE_NAME = "j86.sun.util.calendar.";
 
     private static final String[] namePairs = {
         "gregorian", "Gregorian",

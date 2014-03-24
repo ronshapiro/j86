@@ -26,7 +26,7 @@
 /*
  * $Id$
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.signature.reference;
+package j86.com.sun.org.apache.xml.internal.security.signature.reference;
 
 import j86.java.util.Iterator;
 

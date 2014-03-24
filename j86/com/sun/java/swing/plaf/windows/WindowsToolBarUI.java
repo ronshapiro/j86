@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.windows;
+package j86.com.sun.java.swing.plaf.windows;
 
 import j86.java.awt.*;
 
@@ -33,16 +33,16 @@ import j86.javax.swing.JToggleButton;
 import j86.javax.swing.UIDefaults;
 import j86.javax.swing.UIManager;
 
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.border.CompoundBorder;
-import j86.j86.javax.swing.border.EmptyBorder;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.border.CompoundBorder;
+import j86.javax.swing.border.EmptyBorder;
 
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
-import j86.j86.j86.javax.swing.plaf.basic.BasicBorders;
-import j86.j86.j86.javax.swing.plaf.basic.BasicToolBarUI;
+import j86.javax.swing.plaf.basic.BasicBorders;
+import j86.javax.swing.plaf.basic.BasicToolBarUI;
 
-import static j86.j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
+import static j86.com.sun.java.swing.plaf.windows.TMSchema.Part;
 
 
 public class WindowsToolBarUI extends BasicToolBarUI {

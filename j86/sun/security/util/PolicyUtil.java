@@ -30,7 +30,7 @@ import j86.java.net.*;
 import j86.java.security.*;
 import j86.java.util.Arrays;
 
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 
 /**
@@ -76,7 +76,7 @@ public class PolicyUtil {
                 Debug debug)
         throws KeyStoreException, MalformedURLException, IOException,
                 NoSuchProviderException, NoSuchAlgorithmException,
-                j86.j86.java.security.cert.CertificateException {
+                j86.java.security.cert.CertificateException {
 
         if (keyStoreName == null) {
             throw new IllegalArgumentException("null KeyStore name");

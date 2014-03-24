@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.file.Files;
-import j86.j86.java.nio.file.Path;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.file.Files;
+import j86.java.nio.file.Path;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
 import j86.java.util.LongSummaryStatistics;
@@ -36,19 +36,19 @@ import j86.java.util.OptionalLong;
 import j86.java.util.PrimitiveIterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.LongBinaryOperator;
-import j86.j86.java.util.function.LongConsumer;
-import j86.j86.java.util.function.LongFunction;
-import j86.j86.java.util.function.LongPredicate;
-import j86.j86.java.util.function.LongSupplier;
-import j86.j86.java.util.function.LongToDoubleFunction;
-import j86.j86.java.util.function.LongToIntFunction;
-import j86.j86.java.util.function.LongUnaryOperator;
-import j86.j86.java.util.function.ObjLongConsumer;
-import j86.j86.java.util.function.Supplier;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.LongBinaryOperator;
+import j86.java.util.function.LongConsumer;
+import j86.java.util.function.LongFunction;
+import j86.java.util.function.LongPredicate;
+import j86.java.util.function.LongSupplier;
+import j86.java.util.function.LongToDoubleFunction;
+import j86.java.util.function.LongToIntFunction;
+import j86.java.util.function.LongUnaryOperator;
+import j86.java.util.function.ObjLongConsumer;
+import j86.java.util.function.Supplier;
 
 /**
  * A sequence of primitive long-valued elements supporting sequential and parallel
@@ -67,13 +67,13 @@ import j86.j86.java.util.function.Supplier;
  * }</pre>
  *
  * See the class documentation for {@link Stream} and the package documentation
- * for <a href="package-summary.html">j86.j86.java.util.stream</a> for additional
+ * for <a href="package-summary.html">j86.java.util.stream</a> for additional
  * specification of streams, stream operations, stream pipelines, and
  * parallelism.
  *
  * @since 1.8
  * @see Stream
- * @see <a href="package-summary.html">j86.j86.java.util.stream</a>
+ * @see <a href="package-summary.html">j86.java.util.stream</a>
  */
 public interface LongStream extends BaseStream<Long, LongStream> {
 
@@ -153,7 +153,7 @@ public interface LongStream extends BaseStream<Long, LongStream> {
      * Returns a stream consisting of the results of replacing each element of
      * this stream with the contents of a mapped stream produced by applying
      * the provided mapping function to each element.  Each mapped stream is
-     * {@link j86.j86.java.util.stream.BaseStream#close() closed} after its contents
+     * {@link j86.java.util.stream.BaseStream#close() closed} after its contents
      * have been placed into this stream.  (If a mapped stream is {@code null}
      * an empty stream is used, instead.)
      *

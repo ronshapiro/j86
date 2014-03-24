@@ -26,16 +26,16 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.*;
-import j86.j86.java.lang.management.*;
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.management.*;
+import j86.java.lang.reflect.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 
 
-import j86.j86.java.util.concurrent.*;
+import j86.java.util.concurrent.*;
 
 import static j86.sun.tools.jconsole.Formatter.*;
 import static j86.sun.tools.jconsole.Utilities.*;

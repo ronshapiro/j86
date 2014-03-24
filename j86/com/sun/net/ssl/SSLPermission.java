@@ -24,7 +24,7 @@
  */
 
 /*
- * NOTE:  this file was copied from j86.j86.javax.net.ssl.SSLPermission
+ * NOTE:  this file was copied from j86.javax.net.ssl.SSLPermission
  */
 
 package com.j86.sun.net.ssl;
@@ -97,7 +97,7 @@ import j86.java.lang.SecurityManager;
  * @author Roland Schemers
  *
  * @deprecated As of JDK 1.4, this implementation-specific class was
- *      replaced by {@link j86.j86.javax.net.ssl.SSLPermission}.
+ *      replaced by {@link j86.javax.net.ssl.SSLPermission}.
  */
 @Deprecated
 public final class SSLPermission extends BasicPermission {

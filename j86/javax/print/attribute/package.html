@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
 <head>
-<title>j86.j86.javax.print.attribute package</title>
+<title>j86.javax.print.attribute package</title>
 <!--
 Copyright (c) 2000, 2013, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -144,9 +144,9 @@ The Java Print Service API defines a group of
 standard attribute classes modeled upon the attributes in
 the Internet Printing Protocol (IPP) version 1.1. The
 standard attribute classes are in the subpackage
-j86.j86.j86.javax.print.attribute.standard to keep the actual
+j86.javax.print.attribute.standard to keep the actual
 attribute classes conceptually separate from the generic
-apparatus defined in package j86.j86.javax.print.attribute. 
+apparatus defined in package j86.javax.print.attribute. 
 
 <H3>Attribute Sets</H3>
 A client usually needs to provide more than one processing 
@@ -179,7 +179,7 @@ be added to the set.
 </OL>
 
 <P>
-The j86.j86.javax.print.attribute package includes 
+The j86.javax.print.attribute package includes 
 <A HREF="HashAttributeSet.html">HashAttributeSet</A>
 as a concrete implementation of the attribute set interface.
 <code>HashAttributeSet</code> provides an attribute set based on a hash map.
@@ -210,7 +210,7 @@ which means that the client is allowed both to examine and to change an
 attribute set's contents. For a read-only attribute set, calling a mutating 
 operation throws an <code>UnmodifiableSetException</code>. 
 <P>
-Package j86.j86.javax.print.attribute includes
+Package j86.javax.print.attribute includes
 one concrete implementation of each of the attribute set subinterfaces:
 <ul>
 <li><A HREF="HashDocAttributeSet.html">HashDocAttributeSet</A>
@@ -314,7 +314,7 @@ public class Sides
 <p>
 Since every attribute class implements <code>Attribute</code>, every attribute
 class must provide an implementation for the 
-{@link j86.j86.javax.print.attribute.Attribute#getCategory() getCategory} method,
+{@link j86.javax.print.attribute.Attribute#getCategory() getCategory} method,
 which returns the attribute category.  In the case of <code>Sides</code>, the
 <code>getCategory</code> method returns <code>Sides.class</code>.  The 
 <code>getCategory</code> method is final to ensure that any vendor-defined 
@@ -329,7 +329,7 @@ The Java Print Service API is designed so that vendors can:
 <ul>
 <li>define new vendor-specific values for any standard attribute 
 defined in <a href="standard/package-summary.html">
-j86.j86.j86.javax.print.attribute.standard</a>.
+j86.javax.print.attribute.standard</a>.
 <li>define new attribute categories representing the vendor printer's
 proprietary capabilities not already supported by the standard
 attributes.

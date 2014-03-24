@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.beans.beancontext;
+package j86.java.beans.beancontext;
 
 import j86.java.beans.PropertyChangeEvent;
 import j86.java.beans.PropertyChangeListener;
@@ -51,9 +51,9 @@ import j86.java.io.Serializable;
  * @author      Laurence P. G. Cable
  * @since       1.2
  *
- * @see j86.j86.java.beans.beancontext.BeanContext
- * @see j86.j86.java.beans.beancontext.BeanContextServices
- * @see j86.j86.java.beans.beancontext.BeanContextChild
+ * @see j86.java.beans.beancontext.BeanContext
+ * @see j86.java.beans.beancontext.BeanContextServices
+ * @see j86.java.beans.beancontext.BeanContextChild
  */
 
 public class BeanContextChildSupport implements BeanContextChild, BeanContextServicesListener, Serializable {

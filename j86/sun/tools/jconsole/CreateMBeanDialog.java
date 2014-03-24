@@ -26,13 +26,13 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.util.List;
 import j86.java.util.TreeSet;
 import j86.java.util.Comparator;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.border.*;
 
 import j86.javax.management.MBeanServerConnection;
 import j86.javax.management.ObjectName;

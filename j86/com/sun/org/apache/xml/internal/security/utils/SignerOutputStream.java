@@ -20,20 +20,20 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.utils;
+package j86.com.sun.org.apache.xml.internal.security.utils;
 
 import j86.java.io.ByteArrayOutputStream;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+import j86.com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
 
 /**
  * @author raul
  *
  */
 public class SignerOutputStream extends ByteArrayOutputStream {
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(SignerOutputStream.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(SignerOutputStream.class.getName());
 
     final SignatureAlgorithm sa;
 
@@ -64,13 +64,13 @@ public class SignerOutputStream extends ByteArrayOutputStream {
 
     /** @inheritDoc */
     public void write(byte[] arg0, int arg1, int arg2) {
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "Canonicalized SignedInfo:");
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "Canonicalized SignedInfo:");
             StringBuilder sb = new StringBuilder(arg2);
             for (int i = arg1; i < (arg1 + arg2); i++) {
                 sb.append((char)arg0[i]);
             }
-            log.log(j86.j86.java.util.logging.Level.FINE, sb.toString());
+            log.log(j86.java.util.logging.Level.FINE, sb.toString());
         }
         try {
             sa.update(arg0, arg1, arg2);

@@ -32,7 +32,7 @@ import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.util.*;
 
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 /**
  * The standard implementation of the <code>JdbcRowSet</code> interface. See the interface

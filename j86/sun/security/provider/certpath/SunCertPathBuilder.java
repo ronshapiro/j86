@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
 import j86.java.security.GeneralSecurityException;
 import j86.java.security.InvalidAlgorithmParameterException;
 import j86.java.security.PublicKey;
-import j86.j86.java.security.cert.*;
-import j86.j86.java.security.cert.CertPathValidatorException.BasicReason;
-import j86.j86.java.security.cert.PKIXReason;
+import j86.java.security.cert.*;
+import j86.java.security.cert.CertPathValidatorException.BasicReason;
+import j86.java.security.cert.PKIXReason;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;
 import j86.java.util.Collections;
@@ -40,9 +40,9 @@ import j86.java.util.Iterator;
 import j86.java.util.List;
 import j86.java.util.LinkedList;
 import j86.java.util.Set;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
-import j86.j86.sun.security.provider.certpath.PKIX.BuilderParams;
+import j86.sun.security.provider.certpath.PKIX.BuilderParams;
 import static j86.sun.security.x509.PKIXExtensions.*;
 import j86.sun.security.util.Debug;
 

@@ -687,7 +687,7 @@ public class Runtime {
      */
     public native void gc();
 
-    /* Wormhole for calling j86.j86.java.lang.ref.Finalizer.runFinalization */
+    /* Wormhole for calling j86.java.lang.ref.Finalizer.runFinalization */
     private static native void runFinalization0();
 
     /**

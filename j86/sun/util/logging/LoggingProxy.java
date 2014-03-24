@@ -24,15 +24,15 @@
  */
 
 
-package j86.j86.sun.util.logging;
+package j86.sun.util.logging;
 
 /**
- * A proxy interface for the j86.j86.java.util.logging support.
+ * A proxy interface for the j86.java.util.logging support.
  *
- * @see j86.j86.sun.util.logging.LoggingSupport
+ * @see j86.sun.util.logging.LoggingSupport
  */
 public interface LoggingProxy {
-    // Methods to bridge j86.j86.java.util.logging.Logger methods
+    // Methods to bridge j86.java.util.logging.Logger methods
     public Object getLogger(String name);
 
     public Object getLevel(Object logger);
@@ -47,7 +47,7 @@ public interface LoggingProxy {
 
     public void log(Object logger, Object level, String msg, Object... params);
 
-    // Methods to bridge j86.j86.java.util.logging.LoggingMXBean methods
+    // Methods to bridge j86.java.util.logging.LoggingMXBean methods
     public j86.java.util.List<String> getLoggerNames();
 
     public String getLoggerLevel(String loggerName);

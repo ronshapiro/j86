@@ -27,7 +27,7 @@ package j86.java.nio;
 
 import j86.java.util.Comparator;
 import j86.java.util.Spliterator;
-import j86.j86.java.util.function.IntConsumer;
+import j86.java.util.function.IntConsumer;
 
 /**
  * A Spliterator.OfInt for sources that traverse and split elements

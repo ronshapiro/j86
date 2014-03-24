@@ -27,7 +27,7 @@ package j86.sun.tools.jstat;
 
 import j86.java.util.*;
 import j86.sun.jvmstat.monitor.*;
-import j86.j86.sun.jvmstat.monitor.event.*;
+import j86.sun.jvmstat.monitor.event.*;
 
 /**
  * Application to output jvmstat statistics exported by a target Java

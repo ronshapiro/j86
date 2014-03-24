@@ -25,8 +25,8 @@
 package j86.java.lang;
 
 import j86.java.io.*;
-import j86.j86.j86.java.lang.reflect.Executable;
-import j86.j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.Executable;
+import j86.java.lang.annotation.Annotation;
 import j86.java.security.AccessControlContext;
 import j86.java.util.Properties;
 import j86.java.util.PropertyPermission;
@@ -35,13 +35,13 @@ import j86.java.util.Map;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AllPermission;
-import j86.j86.java.nio.channels.Channel;
-import j86.j86.j86.java.nio.channels.spi.SelectorProvider;
-import j86.j86.j86.sun.nio.ch.Interruptible;
+import j86.java.nio.channels.Channel;
+import j86.java.nio.channels.spi.SelectorProvider;
+import j86.sun.nio.ch.Interruptible;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 import j86.sun.security.util.SecurityConstants;
-import j86.j86.sun.reflect.annotation.AnnotationType;
+import j86.sun.reflect.annotation.AnnotationType;
 
 /**
  * The <code>System</code> class contains several useful class fields
@@ -223,12 +223,12 @@ public final class System {
      * Java virtual machine.
      *
      * <p> This method returns the channel obtained by invoking the
-     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
+     * {@link j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
      * inheritedChannel} method of the system-wide default
-     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider} object. </p>
+     * {@link j86.java.nio.channels.spi.SelectorProvider} object. </p>
      *
      * <p> In addition to the network-oriented channels described in
-     * {@link j86.j86.j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
+     * {@link j86.java.nio.channels.spi.SelectorProvider#inheritedChannel
      * inheritedChannel}, this method may return other kinds of
      * channels in the future.
      *
@@ -1189,7 +1189,7 @@ public final class System {
         setOut0(newPrintStream(fdOut, props.getProperty("sun.stdout.encoding")));
         setErr0(newPrintStream(fdErr, props.getProperty("sun.stderr.encoding")));
 
-        // Load the zip library now in order to keep j86.j86.java.util.zip.ZipFile
+        // Load the zip library now in order to keep j86.java.util.zip.ZipFile
         // from trying to use itself to load this library later.
         loadLibrary("zip");
 

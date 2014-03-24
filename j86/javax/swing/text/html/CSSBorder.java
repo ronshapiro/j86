@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.text.html;
+package j86.javax.swing.text.html;
 
 import j86.java.awt.Color;
 import j86.java.awt.Component;
@@ -34,16 +34,16 @@ import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
-import j86.j86.javax.swing.border.AbstractBorder;
-import j86.j86.javax.swing.text.AttributeSet;
-import j86.j86.javax.swing.text.View;
-import j86.j86.j86.javax.swing.text.html.CSS.Attribute;
-import j86.j86.j86.javax.swing.text.html.CSS.BorderStyle;
-import j86.j86.j86.javax.swing.text.html.CSS.BorderWidthValue;
-import j86.j86.j86.javax.swing.text.html.CSS.ColorValue;
-import j86.j86.j86.javax.swing.text.html.CSS.CssValue;
-import j86.j86.j86.javax.swing.text.html.CSS.LengthValue;
-import j86.j86.j86.javax.swing.text.html.CSS.Value;
+import j86.javax.swing.border.AbstractBorder;
+import j86.javax.swing.text.AttributeSet;
+import j86.javax.swing.text.View;
+import j86.javax.swing.text.html.CSS.Attribute;
+import j86.javax.swing.text.html.CSS.BorderStyle;
+import j86.javax.swing.text.html.CSS.BorderWidthValue;
+import j86.javax.swing.text.html.CSS.ColorValue;
+import j86.javax.swing.text.html.CSS.CssValue;
+import j86.javax.swing.text.html.CSS.LengthValue;
+import j86.javax.swing.text.html.CSS.Value;
 
 /**
  * CSS-style borders for HTML elements.
@@ -193,7 +193,7 @@ class CSSBorder extends AbstractBorder {
     }
 
 
-    /* The j86.j86.javax.swing.border.Border methods.  */
+    /* The j86.javax.swing.border.Border methods.  */
 
     public Insets getBorderInsets(Component c, Insets insets) {
         int[] widths = getWidths();

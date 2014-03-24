@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import j86.org.ietf.jgss.*;
 import j86.sun.security.jgss.*;
@@ -674,8 +674,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the token id for the message token.
          * @return the token id
-         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#MIC_ID
-         * @see j86.j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID
+         * @see j86.sun.security.jgss.krb5.Krb5Token#MIC_ID
+         * @see j86.sun.security.jgss.krb5.Krb5Token#WRAP_ID
          */
         public final int getTokenId() {
             return tokenId;
@@ -684,8 +684,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the sign algorithm for the message token.
          * @return the sign algorithm
-         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC
-         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC_MD5
+         * @see j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC
+         * @see j86.sun.security.jgss.krb5.MessageToken#SIGN_DES_MAC_MD5
          */
         public final int getSignAlg() {
             return signAlg;
@@ -694,8 +694,8 @@ abstract class MessageToken extends Krb5Token {
         /**
          * Returns the seal algorithm for the message token.
          * @return the seal algorithm
-         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_DES
-         * @see j86.j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_NONE
+         * @see j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_DES
+         * @see j86.sun.security.jgss.krb5.MessageToken#SEAL_ALG_NONE
          */
         public final int getSealAlg() {
             return sealAlg;

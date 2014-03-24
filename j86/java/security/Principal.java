@@ -32,7 +32,7 @@ import j86.javax.security.auth.Subject;
  * can be used to represent any entity, such as an individual, a
  * corporation, and a login id.
  *
- * @see j86.j86.java.security.cert.X509Certificate
+ * @see j86.java.security.cert.X509Certificate
  *
  * @author Li Gong
  */

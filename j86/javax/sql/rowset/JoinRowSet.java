@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sql.rowset;
+package j86.javax.sql.rowset;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
@@ -32,7 +32,7 @@ import j86.java.io.*;
 import j86.java.math.*;
 import j86.java.util.*;
 
-import j86.j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.*;
 
 /**
  * The <code>JoinRowSet</code> interface provides a mechanism for combining related
@@ -409,8 +409,8 @@ public interface JoinRowSet extends WebRowSet {
      * @throws SQLException if an error occurs assembling the CachedRowSet
      * object
      * @see j86.javax.sql.RowSet
-     * @see j86.j86.javax.sql.rowset.CachedRowSet
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.CachedRowSet
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public CachedRowSet toCachedRowSet() throws j86.java.sql.SQLException;
 

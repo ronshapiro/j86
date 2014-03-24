@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.security.provider.certpath;
+package j86.sun.security.provider.certpath;
 
 import j86.java.io.IOException;
 import j86.java.security.AccessController;
 import j86.java.security.GeneralSecurityException;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 import j86.java.util.*;
 
 import j86.sun.security.action.GetBooleanAction;
-import j86.j86.sun.security.provider.certpath.PKIX.BuilderParams;
+import j86.sun.security.provider.certpath.PKIX.BuilderParams;
 import j86.sun.security.util.Debug;
 import j86.sun.security.x509.GeneralNames;
 import j86.sun.security.x509.GeneralNameInterface;

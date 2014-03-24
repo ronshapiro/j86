@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.Component;
 import j86.java.awt.Container;
 import j86.java.awt.LayoutManager;
 import j86.java.awt.Adjustable;
-import j86.j86.java.awt.event.AdjustmentListener;
-import j86.j86.java.awt.event.AdjustmentEvent;
-import j86.j86.java.awt.event.ActionListener;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.MouseListener;
-import j86.j86.java.awt.event.MouseMotionListener;
-import j86.j86.java.awt.event.MouseAdapter;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.AdjustmentListener;
+import j86.java.awt.event.AdjustmentEvent;
+import j86.java.awt.event.ActionListener;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.MouseListener;
+import j86.java.awt.event.MouseMotionListener;
+import j86.java.awt.event.MouseAdapter;
+import j86.java.awt.event.MouseEvent;
 import j86.java.awt.Graphics;
 import j86.java.awt.Dimension;
 import j86.java.awt.Rectangle;
@@ -48,10 +48,10 @@ import j86.java.awt.IllegalComponentStateException;
 import j86.java.beans.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicScrollBarUI;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicScrollBarUI;
 
 
 /**

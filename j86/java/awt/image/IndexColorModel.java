@@ -23,10 +23,10 @@
  * questions.
  */
 
-package j86.j86.j86.java.awt.image;
+package j86.java.awt.image;
 
 import j86.java.awt.Transparency;
-import j86.j86.java.awt.color.ColorSpace;
+import j86.java.awt.color.ColorSpace;
 import j86.java.math.BigInteger;
 
 /**
@@ -130,7 +130,7 @@ public class IndexColorModel extends ColorModel {
     private boolean allgrayopaque;
     private BigInteger validBits;
 
-    private j86.j86.j86.sun.awt.image.BufImgSurfaceData.ICMColorData colorData = null;
+    private j86.sun.awt.image.BufImgSurfaceData.ICMColorData colorData = null;
 
     private static int[] opaqueBits = {8, 8, 8};
     private static int[] alphaBits = {8, 8, 8, 8};

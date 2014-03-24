@@ -28,10 +28,10 @@ package j86.sun.print;
 import j86.java.util.Vector;
 
 import j86.javax.print.PrintService;
-import j86.j86.javax.print.attribute.PrintServiceAttributeSet;
-import j86.j86.javax.print.attribute.HashPrintServiceAttributeSet;
-import j86.j86.javax.print.event.PrintServiceAttributeEvent;
-import j86.j86.javax.print.event.PrintServiceAttributeListener;
+import j86.javax.print.attribute.PrintServiceAttributeSet;
+import j86.javax.print.attribute.HashPrintServiceAttributeSet;
+import j86.javax.print.event.PrintServiceAttributeEvent;
+import j86.javax.print.event.PrintServiceAttributeListener;
 
 /*
  * A utility class usable by all print services for managing listeners

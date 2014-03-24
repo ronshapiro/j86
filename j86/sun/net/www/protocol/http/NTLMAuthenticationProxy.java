@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.sun.net.www.protocol.http;
+package j86.sun.net.www.protocol.http;
 
 import j86.java.net.URL;
 import j86.java.net.PasswordAuthentication;
-import j86.j86.j86.java.lang.reflect.Constructor;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.java.lang.reflect.Constructor;
+import j86.java.lang.reflect.Method;
+import j86.sun.util.logging.PlatformLogger;
 
 /**
  * Proxy class for loading NTLMAuthentication, so as to remove static
@@ -37,7 +37,7 @@ import j86.j86.sun.util.logging.PlatformLogger;
 class NTLMAuthenticationProxy {
     private static Method supportsTA;
     private static Method isTrustedSite;
-    private static final String clazzStr = "j86.j86.j86.j86.sun.net.www.protocol.http.ntlm.NTLMAuthentication";
+    private static final String clazzStr = "j86.sun.net.www.protocol.http.ntlm.NTLMAuthentication";
     private static final String supportsTAStr = "supportsTransparentAuth";
     private static final String isTrustedSiteStr = "isTrustedSite";
 

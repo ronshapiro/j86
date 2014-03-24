@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.sound.midi.spi;
+package j86.javax.sound.midi.spi;
 
 import j86.javax.sound.midi.MidiDevice;
 import j86.javax.sound.midi.MidiUnavailableException;

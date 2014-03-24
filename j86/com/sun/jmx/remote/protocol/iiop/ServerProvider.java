@@ -30,10 +30,10 @@ import j86.java.net.MalformedURLException;
 import j86.java.util.Map;
 
 import j86.javax.management.MBeanServer;
-import j86.j86.javax.management.remote.JMXConnectorServer;
-import j86.j86.javax.management.remote.JMXConnectorServerProvider;
-import j86.j86.javax.management.remote.JMXServiceURL;
-import j86.j86.j86.javax.management.remote.rmi.RMIConnectorServer;
+import j86.javax.management.remote.JMXConnectorServer;
+import j86.javax.management.remote.JMXConnectorServerProvider;
+import j86.javax.management.remote.JMXServiceURL;
+import j86.javax.management.remote.rmi.RMIConnectorServer;
 
 public class ServerProvider implements JMXConnectorServerProvider {
 

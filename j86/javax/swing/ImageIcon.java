@@ -25,7 +25,7 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 import j86.java.beans.ConstructorProperties;
 import j86.java.beans.Transient;
 import j86.java.net.URL;
@@ -39,7 +39,7 @@ import j86.java.util.Locale;
 import j86.javax.accessibility.*;
 
 import j86.sun.awt.AppContext;
-import j86.j86.j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Field;
 import j86.java.security.*;
 
 /**

@@ -26,15 +26,15 @@
 package j86.sun.misc;
 
 import j86.java.util.*;
-import j86.j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarFile;
 import j86.sun.misc.JarIndex;
 import j86.sun.misc.InvalidJarIndexException;
-import j86.j86.sun.net.www.ParseUtil;
-import j86.j86.java.util.zip.ZipEntry;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Attributes.Name;
+import j86.sun.net.www.ParseUtil;
+import j86.java.util.zip.ZipEntry;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Attributes.Name;
 import j86.java.net.JarURLConnection;
 import j86.java.net.MalformedURLException;
 import j86.java.net.URL;
@@ -49,9 +49,9 @@ import j86.java.security.CodeSigner;
 import j86.java.security.Permission;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.PrivilegedExceptionAction;
-import j86.j86.java.security.cert.Certificate;
+import j86.java.security.cert.Certificate;
 import j86.sun.misc.FileURLMapper;
-import j86.j86.sun.net.util.URLUtil;
+import j86.sun.net.util.URLUtil;
 
 /**
  * This class is used to maintain a search path of URLs for loading classes

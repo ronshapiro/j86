@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.management;
+package j86.java.lang.management;
 
 /**
  * The management interface for a buffer pool, for example a pool of
@@ -33,7 +33,7 @@ package j86.j86.java.lang.management;
  * <p> A class implementing this interface is an
  * {@link j86.javax.management.MXBean}. A Java
  * virtual machine has one or more implementations of this interface. The {@link
- * j86.j86.java.lang.management.ManagementFactory#getPlatformMXBeans getPlatformMXBeans}
+ * j86.java.lang.management.ManagementFactory#getPlatformMXBeans getPlatformMXBeans}
  * method can be used to obtain the list of {@code BufferPoolMXBean} objects
  * representing the management interfaces for pools of buffers as follows:
  * <pre>

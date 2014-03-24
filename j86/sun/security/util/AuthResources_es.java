@@ -31,7 +31,7 @@ package j86.sun.security.util;
  *
  * <ol>
  * <li> j86.com.sun.security.auth
- * <li> j86.j86.com.sun.security.auth.login
+ * <li> j86.com.sun.security.auth.login
  * </ol>
  *
  */
@@ -59,7 +59,7 @@ public class AuthResources_es extends j86.java.util.ListResourceBundle {
         {"UnixNumericUserPrincipal.name", "UnixNumericUserPrincipal: {0}"},
         {"UnixPrincipal.name", "UnixPrincipal: {0}"},
 
-        // j86.j86.com.sun.security.auth.login.ConfigFile
+        // j86.com.sun.security.auth.login.ConfigFile
         {"Unable.to.properly.expand.config", "No se ha podido ampliar correctamente {0}"},
         {"extra.config.No.such.file.or.directory.",
                 "{0} (No existe tal archivo o directorio)"},
@@ -78,11 +78,11 @@ public class AuthResources_es extends j86.java.util.ListResourceBundle {
         {"Configuration.Error.Line.line.system.property.value.expanded.to.empty.value",
             "Error de configuraci\u00F3n:\n\tL\u00EDnea {0}: propiedad de sistema [{1}] ampliada a valor vac\u00EDo"},
 
-        // j86.j86.com.sun.security.auth.module.JndiLoginModule
+        // j86.com.sun.security.auth.module.JndiLoginModule
         {"username.","nombre de usuario: "},
         {"password.","contrase\u00F1a: "},
 
-        // j86.j86.com.sun.security.auth.module.KeyStoreLoginModule
+        // j86.com.sun.security.auth.module.KeyStoreLoginModule
         {"Please.enter.keystore.information",
                 "Introduzca la informaci\u00F3n del almac\u00E9n de claves"},
         {"Keystore.alias.","Alias de Almac\u00E9n de Claves: "},
@@ -90,7 +90,7 @@ public class AuthResources_es extends j86.java.util.ListResourceBundle {
         {"Private.key.password.optional.",
             "Contrase\u00F1a de Clave Privada (opcional): "},
 
-        // j86.j86.com.sun.security.auth.module.Krb5LoginModule
+        // j86.com.sun.security.auth.module.Krb5LoginModule
         {"Kerberos.username.defUsername.",
                 "Nombre de usuario de Kerberos [{0}]: "},
         {"Kerberos.password.for.username.",

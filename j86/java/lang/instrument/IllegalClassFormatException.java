@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.instrument;
+package j86.java.lang.instrument;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -31,12 +31,12 @@ package j86.j86.java.lang.instrument;
 
 /**
  * Thrown by an implementation of
- * {@link j86.j86.java.lang.instrument.ClassFileTransformer#transform ClassFileTransformer.transform}
+ * {@link j86.java.lang.instrument.ClassFileTransformer#transform ClassFileTransformer.transform}
  * when its input parameters are invalid.
  * This may occur either because the initial class file bytes were
  * invalid or a previously applied transform corrupted the bytes.
  *
- * @see     j86.j86.java.lang.instrument.ClassFileTransformer#transform
+ * @see     j86.java.lang.instrument.ClassFileTransformer#transform
  * @since   1.5
  */
 public class IllegalClassFormatException extends Exception {

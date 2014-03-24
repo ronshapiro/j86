@@ -22,14 +22,14 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.plaf;
+package j86.javax.swing.plaf;
 
 import j86.javax.swing.Action;
 import j86.javax.swing.BoundedRangeModel;
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Insets;
-import j86.j86.javax.swing.text.*;
+import j86.javax.swing.text.*;
 
 /**
  * Text editor user interface
@@ -156,7 +156,7 @@ public abstract class TextUI extends ComponentUI
     /**
      * Returns the string to be used as the tooltip at the passed in location.
      *
-     * @see j86.j86.javax.swing.text.JTextComponent#getToolTipText
+     * @see j86.javax.swing.text.JTextComponent#getToolTipText
      * @since 1.4
      */
     public String getToolTipText(JTextComponent t, Point pt) {

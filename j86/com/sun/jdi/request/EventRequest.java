@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
@@ -31,8 +31,8 @@ import j86.com.sun.jdi.*;
  * Represents a request for notification of an event.  Examples include
  * {@link BreakpointRequest} and {@link ExceptionRequest}.
  * When an event occurs for which an enabled request is present,
- * an  {@link j86.j86.com.sun.jdi.event.EventSet EventSet} will
- * be placed on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * an  {@link j86.com.sun.jdi.event.EventSet EventSet} will
+ * be placed on the {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing event requests is
  * managed by the {@link EventRequestManager}.
  * <p>
@@ -64,15 +64,15 @@ import j86.com.sun.jdi.*;
  * Any method on <code>EventRequest</code> which
  * takes <code>EventRequest</code> as an parameter may throw
  * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
+ * disconnected and the {@link j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>EventRequest</code> which
  * takes <code>EventRequest</code> as an parameter may throw
  * {@link j86.com.sun.jdi.VMOutOfMemoryException} if the target VM has run out of memory.
  *
- * @see j86.j86.com.sun.jdi.event.BreakpointEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

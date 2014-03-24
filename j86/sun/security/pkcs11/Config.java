@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.pkcs11;
+package j86.sun.security.pkcs11;
 
 import j86.java.io.*;
 import static j86.java.io.StreamTokenizer.*;
@@ -35,11 +35,11 @@ import j86.java.security.*;
 import j86.sun.security.action.GetPropertyAction;
 import j86.sun.security.util.PropertyExpander;
 
-import j86.j86.j86.sun.security.pkcs11.wrapper.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.CK_ATTRIBUTE.*;
+import j86.sun.security.pkcs11.wrapper.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.sun.security.pkcs11.wrapper.CK_ATTRIBUTE.*;
 
-import static j86.j86.sun.security.pkcs11.TemplateManager.*;
+import static j86.sun.security.pkcs11.TemplateManager.*;
 
 /**
  * Configuration container and file parsing.
@@ -60,7 +60,7 @@ final class Config {
     private static final boolean staticAllowSingleThreadedModules;
 
     static {
-        String p = "j86.j86.sun.security.pkcs11.allowSingleThreadedModules";
+        String p = "j86.sun.security.pkcs11.allowSingleThreadedModules";
         String s = AccessController.doPrivileged(new GetPropertyAction(p));
         if ("false".equalsIgnoreCase(s)) {
             staticAllowSingleThreadedModules = false;

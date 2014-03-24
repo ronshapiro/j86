@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
@@ -32,7 +32,7 @@ import j86.java.io.OutputStream;
 import j86.java.util.Arrays;
 import j86.java.util.HashSet;
 import j86.java.util.Set;
-import static j86.com.sun.j86.j86.java.util.jar.pack.Constants.*;
+import static j86.com.sun.j86.java.util.jar.pack.Constants.*;
 
 /**
  * Population-based coding.

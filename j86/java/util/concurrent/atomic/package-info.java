@@ -57,10 +57,10 @@
  * a thread may block transiently before performing the operation.
  *
  * <p>Instances of classes
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicBoolean},
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicInteger},
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicLong}, and
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicReference}
+ * {@link j86.java.util.concurrent.atomic.AtomicBoolean},
+ * {@link j86.java.util.concurrent.atomic.AtomicInteger},
+ * {@link j86.java.util.concurrent.atomic.AtomicLong}, and
+ * {@link j86.java.util.concurrent.atomic.AtomicReference}
  * each provide access and updates to a single variable of the
  * corresponding type.  Each class also provides appropriate utility
  * methods for that type.  For example, classes {@code AtomicLong} and
@@ -130,9 +130,9 @@
  * {@code compareAndSet} operations on any selected {@code volatile}
  * field of any selected class.
  *
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater},
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicIntegerFieldUpdater}, and
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicLongFieldUpdater} are
+ * {@link j86.java.util.concurrent.atomic.AtomicReferenceFieldUpdater},
+ * {@link j86.java.util.concurrent.atomic.AtomicIntegerFieldUpdater}, and
+ * {@link j86.java.util.concurrent.atomic.AtomicLongFieldUpdater} are
  * reflection-based utilities that provide access to the associated
  * field types.  These are mainly of use in atomic data structures in
  * which several {@code volatile} fields of the same node (for
@@ -143,9 +143,9 @@
  * guarantees.
  *
  * <p>The
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicIntegerArray},
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicLongArray}, and
- * {@link j86.j86.j86.java.util.concurrent.atomic.AtomicReferenceArray} classes
+ * {@link j86.java.util.concurrent.atomic.AtomicIntegerArray},
+ * {@link j86.java.util.concurrent.atomic.AtomicLongArray}, and
+ * {@link j86.java.util.concurrent.atomic.AtomicReferenceArray} classes
  * further extend atomic operation support to arrays of these types.
  * These classes are also notable in providing {@code volatile} access
  * semantics for their array elements, which is not supported for
@@ -174,12 +174,12 @@
  * acceptable when, for example, updating performance statistics, but
  * rarely otherwise.
  *
- * <p>The {@link j86.j86.j86.java.util.concurrent.atomic.AtomicMarkableReference}
+ * <p>The {@link j86.java.util.concurrent.atomic.AtomicMarkableReference}
  * class associates a single boolean with a reference.  For example, this
  * bit might be used inside a data structure to mean that the object
  * being referenced has logically been deleted.
  *
- * The {@link j86.j86.j86.java.util.concurrent.atomic.AtomicStampedReference}
+ * The {@link j86.java.util.concurrent.atomic.AtomicStampedReference}
  * class associates an integer value with a reference.  This may be
  * used for example, to represent version numbers corresponding to
  * series of updates.
@@ -209,4 +209,4 @@
  *
  * @since 1.5
  */
-package j86.j86.j86.java.util.concurrent.atomic;
+package j86.java.util.concurrent.atomic;

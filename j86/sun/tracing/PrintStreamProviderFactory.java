@@ -25,7 +25,7 @@
 
 package j86.sun.tracing;
 
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.java.io.PrintStream;
 import j86.java.util.HashMap;
 

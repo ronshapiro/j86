@@ -23,22 +23,22 @@
  * questions.
  */
 
-package j86.j86.j86.sun.security.provider.certpath.ldap;
+package j86.sun.security.provider.certpath.ldap;
 
 import j86.java.io.IOException;
 import j86.java.net.URI;
 import j86.java.util.Collection;
 import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.InvalidAlgorithmParameterException;
-import j86.j86.java.security.cert.CertStore;
-import j86.j86.java.security.cert.CertStoreException;
-import j86.j86.java.security.cert.X509CertSelector;
-import j86.j86.java.security.cert.X509CRLSelector;
+import j86.java.security.cert.CertStore;
+import j86.java.security.cert.CertStoreException;
+import j86.java.security.cert.X509CertSelector;
+import j86.java.security.cert.X509CRLSelector;
 import j86.javax.naming.CommunicationException;
 import j86.javax.naming.ServiceUnavailableException;
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
-import j86.j86.sun.security.provider.certpath.CertStoreHelper;
+import j86.sun.security.provider.certpath.CertStoreHelper;
 
 /**
  * LDAP implementation of CertStoreHelper.

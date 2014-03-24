@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 public class ImageFormatException extends Exception {
     public ImageFormatException(String s) {

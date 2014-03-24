@@ -26,13 +26,13 @@
 package j86.sun.tools.jconsole;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.PropertyVetoException;
 import j86.java.net.URI;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
 
 import static j86.sun.misc.Version.jdkMinorVersion;
 

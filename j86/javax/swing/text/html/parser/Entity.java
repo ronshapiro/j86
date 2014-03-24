@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.j86.javax.swing.text.html.parser;
+package j86.javax.swing.text.html.parser;
 
 import j86.java.util.Hashtable;
 import j86.java.io.IOException;

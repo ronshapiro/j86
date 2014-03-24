@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.net.www.protocol.http.spnego;
+package j86.sun.net.www.protocol.http.spnego;
 
 import com.j86.sun.security.jgss.ExtendedGSSContext;
 import j86.java.io.IOException;
@@ -33,8 +33,8 @@ import j86.org.ietf.jgss.GSSException;
 import j86.org.ietf.jgss.GSSName;
 import j86.org.ietf.jgss.Oid;
 
-import j86.j86.j86.sun.net.www.protocol.http.HttpCallerInfo;
-import j86.j86.j86.sun.net.www.protocol.http.Negotiator;
+import j86.sun.net.www.protocol.http.HttpCallerInfo;
+import j86.sun.net.www.protocol.http.Negotiator;
 import j86.sun.security.jgss.GSSManagerImpl;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.HttpCaller;

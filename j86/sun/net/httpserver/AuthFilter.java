@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.sun.net.httpserver;
+package j86.sun.net.httpserver;
 
-import com.j86.j86.sun.net.httpserver.*;
+import com.j86.sun.net.httpserver.*;
 import j86.java.io.*;
 import j86.java.nio.*;
-import j86.j86.java.nio.channels.*;
-import j86.j86.sun.net.www.MessageHeader;
+import j86.java.nio.channels.*;
+import j86.sun.net.www.MessageHeader;
 import j86.java.util.*;
 import j86.javax.security.auth.*;
-import j86.j86.javax.security.auth.callback.*;
-import j86.j86.javax.security.auth.login.*;
+import j86.javax.security.auth.callback.*;
+import j86.javax.security.auth.login.*;
 
 public class AuthFilter extends Filter {
 

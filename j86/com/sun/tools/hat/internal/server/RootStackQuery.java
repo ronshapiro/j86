@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.server;
+package j86.com.sun.tools.hat.internal.server;
 
 
-import j86.j86.com.sun.tools.hat.internal.model.*;
+import j86.com.sun.tools.hat.internal.model.*;
 
 /**
  * Query to show the StackTrace for a given root

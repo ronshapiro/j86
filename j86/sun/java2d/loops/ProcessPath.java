@@ -23,16 +23,16 @@
  * questions.
  */
 
-package j86.j86.sun.java2d.loops;
+package j86.sun.java2d.loops;
 
-import j86.j86.java.awt.geom.Path2D;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.QuadCurve2D;
+import j86.java.awt.geom.Path2D;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.QuadCurve2D;
 import j86.sun.awt.SunHints;
 import j86.java.util.*;
 
 /* This is the java implementation of the native code from
- * src/share/native/j86.j86.sun.java2d.loops/ProcessPath.[c,h]
+ * src/share/native/j86.sun.java2d.loops/ProcessPath.[c,h]
  * This code is written to be as much similar to the native
  * as it possible. So, it sometimes does not follow java naming conventions.
  *
@@ -2009,7 +2009,7 @@ public class ProcessPath {
             if (drawing && xl <= rightBnd) {
 
                 /* Support of the strokeHint was added into the
-                 * draw and fill methods of the j86.j86.sun.java2d.pipe.LoopPipe
+                 * draw and fill methods of the j86.sun.java2d.pipe.LoopPipe
                  */
                 hnd.dhnd.drawScanline(xl, rightBnd, y  >> MDP_PREC);
             }

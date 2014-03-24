@@ -30,9 +30,9 @@ import j86.java.awt.*;
 import j86.java.beans.PropertyVetoException;
 import j86.java.beans.PropertyChangeEvent;
 
-import j86.j86.javax.swing.event.InternalFrameEvent;
-import j86.j86.javax.swing.event.InternalFrameListener;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.InternalFrameEvent;
+import j86.javax.swing.event.InternalFrameListener;
+import j86.javax.swing.plaf.*;
 
 import j86.javax.accessibility.*;
 
@@ -805,7 +805,7 @@ public class JInternalFrame extends JComponent implements
      * @see #isClosed()
      * @see #setDefaultCloseOperation
      * @see #dispose
-     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
+     * @see j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
      *
      * @beaninfo
      *           bound: true
@@ -1608,7 +1608,7 @@ public class JInternalFrame extends JComponent implements
      *
      * @since 1.3
      * @see #setDefaultCloseOperation
-     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
+     * @see j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSING
      */
     public void doDefaultCloseAction() {
         fireInternalFrameEvent(InternalFrameEvent.INTERNAL_FRAME_CLOSING);
@@ -1782,7 +1782,7 @@ public class JInternalFrame extends JComponent implements
      * the internal frame and does not fire
      * an <code>INTERNAL_FRAME_CLOSING</code> event.
      *
-     * @see j86.j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSED
+     * @see j86.javax.swing.event.InternalFrameEvent#INTERNAL_FRAME_CLOSED
      * @see #setVisible
      * @see #setSelected
      * @see #setClosed

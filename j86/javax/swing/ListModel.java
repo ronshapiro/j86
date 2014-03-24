@@ -25,7 +25,7 @@
 
 package j86.javax.swing;
 
-import j86.j86.javax.swing.event.ListDataListener;
+import j86.javax.swing.event.ListDataListener;
 
 /**
  * This interface defines the methods components like JList use

@@ -29,7 +29,7 @@ import j86.java.security.AlgorithmConstraints;
 import j86.java.security.CryptoPrimitive;
 import j86.java.security.AlgorithmParameters;
 
-import j86.j86.javax.net.ssl.*;
+import j86.javax.net.ssl.*;
 
 import j86.java.security.Key;
 

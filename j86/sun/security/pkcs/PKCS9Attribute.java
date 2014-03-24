@@ -27,7 +27,7 @@ package j86.sun.security.pkcs;
 
 import j86.java.io.IOException;
 import j86.java.io.OutputStream;
-import j86.j86.java.security.cert.CertificateException;
+import j86.java.security.cert.CertificateException;
 import j86.java.util.Locale;
 import j86.java.util.Date;
 import j86.java.util.Hashtable;

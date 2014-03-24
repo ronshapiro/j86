@@ -24,7 +24,7 @@
  */
 package j86.javax.accessibility;
 
-import j86.j86.javax.swing.text.AttributeSet;
+import j86.javax.swing.text.AttributeSet;
 
 
 /**

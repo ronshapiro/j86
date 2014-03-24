@@ -51,8 +51,8 @@ import j86.javax.management.NotificationBroadcaster;
 import j86.javax.management.NotificationFilter;
 import j86.javax.management.ObjectInstance;
 import j86.javax.management.ObjectName;
-import j86.j86.javax.management.remote.NotificationResult;
-import j86.j86.javax.management.remote.TargetedNotification;
+import j86.javax.management.remote.NotificationResult;
+import j86.javax.management.remote.TargetedNotification;
 import j86.javax.management.MalformedObjectNameException;
 import j86.javax.security.auth.Subject;
 
@@ -502,5 +502,5 @@ public class ServerNotifForwarder {
     private final NotificationAccessController notificationAccessController;
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc", "ServerNotifForwarder");
+        new ClassLogger("j86.javax.management.remote.misc", "ServerNotifForwarder");
 }

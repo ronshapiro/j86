@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.rmi.dgc;
+package j86.java.rmi.dgc;
 
 /**
  * A lease contains a unique VM identifier and a lease duration. A

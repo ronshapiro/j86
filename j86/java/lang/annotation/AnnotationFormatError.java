@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;
 
 /**
  * Thrown when the annotation parser attempts to read an annotation
  * from a class file and determines that the annotation is malformed.
  * This error can be thrown by the {@linkplain
- * j86.j86.j86.java.lang.reflect.AnnotatedElement API used to read annotations
+ * j86.java.lang.reflect.AnnotatedElement API used to read annotations
  * reflectively}.
  *
  * @author  Josh Bloch
- * @see     j86.j86.j86.java.lang.reflect.AnnotatedElement
+ * @see     j86.java.lang.reflect.AnnotatedElement
  * @since   1.5
  */
 public class AnnotationFormatError extends Error {

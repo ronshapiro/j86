@@ -23,11 +23,11 @@
  * questions.
  */
 
-package j86.j86.sun.tools.jconsole.inspector;
+package j86.sun.tools.jconsole.inspector;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.javax.swing.event.*;
+import j86.java.awt.event.*;
+import j86.javax.swing.event.*;
 import j86.javax.swing.*;
 
 

@@ -26,7 +26,7 @@ package j86.sun.security.acl;
 
 import j86.java.util.*;
 import j86.java.security.Principal;
-import j86.j86.java.security.acl.*;
+import j86.java.security.acl.*;
 
 /**
  * This is a class that describes one entry that associates users

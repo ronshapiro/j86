@@ -75,10 +75,10 @@ import j86.java.util.List;
  * returned as the default.  To determine the available strata
  * use {@link ReferenceType#availableStrata()}.
  *
- * @see j86.j86.com.sun.jdi.request.EventRequestManager
+ * @see j86.com.sun.jdi.request.EventRequestManager
  * @see StackFrame
- * @see j86.j86.com.sun.jdi.event.BreakpointEvent
- * @see j86.j86.com.sun.jdi.event.ExceptionEvent
+ * @see j86.com.sun.jdi.event.BreakpointEvent
+ * @see j86.com.sun.jdi.event.ExceptionEvent
  * @see Locatable
  *
  * @author Robert Field

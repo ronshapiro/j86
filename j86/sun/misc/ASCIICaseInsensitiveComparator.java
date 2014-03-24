@@ -80,7 +80,7 @@ public class ASCIICaseInsensitiveComparator implements Comparator<String> {
         return h;
     }
 
-    /* If j86.j86.java.util.regex.ASCII ever becomes public or sun.*, use its code instead:*/
+    /* If j86.java.util.regex.ASCII ever becomes public or sun.*, use its code instead:*/
     static boolean isLower(int ch) {
         return ((ch-'a')|('z'-ch)) >= 0;
     }

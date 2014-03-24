@@ -38,20 +38,20 @@
  *
  */
 
-package j86.j86.java.awt.font;
+package j86.java.awt.font;
 
 import j86.java.awt.Color;
 import j86.java.awt.Font;
 import j86.java.awt.Graphics2D;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Shape;
-import j86.j86.java.awt.font.NumericShaper;
-import j86.j86.java.awt.font.TextLine.TextLineMetrics;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.font.NumericShaper;
+import j86.java.awt.font.TextLine.TextLineMetrics;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 import j86.java.text.AttributedString;
 import j86.java.text.AttributedCharacterIterator;
 import j86.java.text.AttributedCharacterIterator.Attribute;

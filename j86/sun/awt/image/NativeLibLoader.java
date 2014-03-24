@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.j86.sun.awt.image;
+package j86.sun.awt.image;
 
 class NativeLibLoader {
 
     /**
      * This is copied from j86.java.awt.Toolkit since we need the library
-     * loaded in j86.j86.j86.sun.awt.image also:
+     * loaded in j86.sun.awt.image also:
      *
      * WARNING: This is a temporary workaround for a problem in the
      * way the AWT loads native libraries. A number of classes in this
-     * package (j86.j86.j86.sun.awt.image) have a native method, initIDs(),
+     * package (j86.sun.awt.image) have a native method, initIDs(),
      * which initializes
      * the JNI field and method ids used in the native portion of
      * their implementation.

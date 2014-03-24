@@ -25,7 +25,7 @@
 
 package com.j86.sun.nio.file;
 
-import j86.j86.java.nio.file.WatchEvent.Modifier;
+import j86.java.nio.file.WatchEvent.Modifier;
 
 /**
  * Defines the <em>sensitivity levels</em> when registering objects with a

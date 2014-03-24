@@ -25,12 +25,12 @@
 
 package j86.sun.tracing;
 
-import j86.j86.j86.java.lang.reflect.InvocationHandler;
-import j86.j86.j86.java.lang.reflect.Method;
-import j86.j86.j86.java.lang.reflect.Proxy;
-import j86.j86.j86.java.lang.reflect.InvocationTargetException;
-import j86.j86.j86.java.lang.reflect.AnnotatedElement;
-import j86.j86.java.lang.annotation.Annotation;
+import j86.java.lang.reflect.InvocationHandler;
+import j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Proxy;
+import j86.java.lang.reflect.InvocationTargetException;
+import j86.java.lang.reflect.AnnotatedElement;
+import j86.java.lang.annotation.Annotation;
 import j86.java.util.HashMap;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;

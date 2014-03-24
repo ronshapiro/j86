@@ -24,22 +24,22 @@
  */
 package j86.javax.swing;
 
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.swing.UIAction;
 
 import j86.java.applet.*;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.dnd.DropTarget;
+import j86.java.awt.event.*;
+import j86.java.awt.dnd.DropTarget;
 
-import j86.j86.j86.java.lang.reflect.*;
+import j86.java.lang.reflect.*;
 
 import j86.javax.accessibility.*;
-import j86.j86.javax.swing.event.MenuDragMouseEvent;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.javax.swing.text.View;
+import j86.javax.swing.event.MenuDragMouseEvent;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.text.View;
 import j86.java.security.AccessController;
 import j86.sun.security.action.GetPropertyAction;
 

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.*;
 import j86.java.nio.ByteBuffer;
 import j86.java.nio.MappedByteBuffer;
-import j86.j86.j86.java.nio.channels.spi.AbstractInterruptibleChannel;
-import j86.j86.java.nio.file.*;
-import j86.j86.j86.java.nio.file.attribute.FileAttribute;
-import j86.j86.j86.java.nio.file.spi.*;
+import j86.java.nio.channels.spi.AbstractInterruptibleChannel;
+import j86.java.nio.file.*;
+import j86.java.nio.file.attribute.FileAttribute;
+import j86.java.nio.file.spi.*;
 import j86.java.util.Set;
 import j86.java.util.HashSet;
 import j86.java.util.Collections;
@@ -785,7 +785,7 @@ public abstract class FileChannel
      *
      * @since 1.4
      *
-     * @see j86.j86.java.nio.channels.FileChannel#map
+     * @see j86.java.nio.channels.FileChannel#map
      */
     public static class MapMode {
 
@@ -909,7 +909,7 @@ public abstract class FileChannel
      * @throws IOException
      *         If some other I/O error occurs
      *
-     * @see j86.j86.java.nio.channels.FileChannel.MapMode
+     * @see j86.java.nio.channels.FileChannel.MapMode
      * @see j86.java.nio.MappedByteBuffer
      */
     public abstract MappedByteBuffer map(MapMode mode,

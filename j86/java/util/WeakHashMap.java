@@ -25,12 +25,12 @@
 
 package j86.java.util;
 
-import j86.j86.java.lang.ref.WeakReference;
-import j86.j86.java.lang.ref.ReferenceQueue;
-import j86.j86.java.util.concurrent.ThreadLocalRandom;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.Consumer;
+import j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.ReferenceQueue;
+import j86.java.util.concurrent.ThreadLocalRandom;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.Consumer;
 
 
 /**
@@ -131,7 +131,7 @@ import j86.j86.java.util.function.Consumer;
  * @author      Mark Reinhold
  * @since       1.2
  * @see         j86.java.util.HashMap
- * @see         j86.j86.java.lang.ref.WeakReference
+ * @see         j86.java.lang.ref.WeakReference
  */
 public class WeakHashMap<K,V>
     extends AbstractMap<K,V>

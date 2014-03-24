@@ -44,17 +44,17 @@ import j86.java.io.ObjectInputStream;
 import j86.java.math.BigDecimal;
 import j86.java.math.BigInteger;
 import j86.java.math.RoundingMode;
-import j86.j86.java.text.spi.NumberFormatProvider;
+import j86.java.text.spi.NumberFormatProvider;
 import j86.java.util.ArrayList;
 import j86.java.util.Currency;
 import j86.java.util.Locale;
 import j86.java.util.ResourceBundle;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicInteger;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicLong;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.concurrent.atomic.AtomicInteger;
+import j86.java.util.concurrent.atomic.AtomicLong;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
 
 /**
  * <code>DecimalFormat</code> is a concrete subclass of

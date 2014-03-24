@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -206,11 +206,11 @@ public class TabularType extends OpenType<TabularData> {
      * described by this <code>TabularType</code> instance.
      *
      * <p>If <var>obj</var> is null or is not an instance of
-     * <code>j86.j86.javax.management.openmbean.TabularData</code>,
+     * <code>j86.javax.management.openmbean.TabularData</code>,
      * <code>isValue</code> returns <code>false</code>.</p>
      *
      * <p>If <var>obj</var> is an instance of
-     * <code>j86.j86.javax.management.openmbean.TabularData</code>, say {@code
+     * <code>j86.javax.management.openmbean.TabularData</code>, say {@code
      * td}, the result is true if this {@code TabularType} is
      * <em>assignable from</em> {@link TabularData#getTabularType()
      * td.getTabularType()}, as defined in {@link
@@ -342,7 +342,7 @@ public class TabularType extends OpenType<TabularData> {
     /**
      * Returns a string representation of this <code>TabularType</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.TabularType</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.TabularType</code>),
      * the type name for this instance, the row type string representation of this instance,
      * and the index names of this instance.
      * <p>

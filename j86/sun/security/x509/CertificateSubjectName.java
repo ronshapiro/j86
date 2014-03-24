@@ -30,7 +30,7 @@ import j86.java.io.InputStream;
 import j86.java.io.OutputStream;
 import j86.java.util.Enumeration;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.*;
 

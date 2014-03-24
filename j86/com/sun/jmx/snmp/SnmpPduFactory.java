@@ -36,7 +36,7 @@ package j86.com.sun.jmx.snmp;
  * decide to replace the default implementation <CODE>SnmpPduFactoryBER</CODE>.
  * <P>
  * An <CODE>SnmpPduFactory</CODE> object is attached to an
- * {@link j86.j86.j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer SNMP protocol adaptor}
+ * {@link j86.com.sun.jmx.snmp.daemon.SnmpAdaptorServer SNMP protocol adaptor}
  * or an {@link j86.com.sun.jmx.snmp.SnmpPeer SnmpPeer}.
  * It is used each time an SNMP packet needs to be encoded or decoded.
  * <BR>{@link j86.com.sun.jmx.snmp.SnmpPduFactoryBER SnmpPduFactoryBER} is the default

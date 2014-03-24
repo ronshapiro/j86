@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.imageio.plugins.bmp;
+package j86.javax.imageio.plugins.bmp;
 
 import j86.java.util.Locale;
 import j86.javax.imageio.ImageWriteParam;

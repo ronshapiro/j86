@@ -22,11 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.awt.*;
 import j86.javax.swing.SwingConstants;
-import j86.j86.javax.swing.event.*;
+import j86.javax.swing.event.*;
 
 /**
  * <p>
@@ -76,7 +76,7 @@ A view has the following responsibilities:
     <li>{@link #getPreferredSpan(int) getPreferredSpan}
     <li>{@link #getMaximumSpan(int) getMaximumSpan}
     <li>{@link #getAlignment(int) getAlignment}
-    <li>{@link #preferenceChanged(j86.j86.javax.swing.text.View, boolean, boolean) preferenceChanged}
+    <li>{@link #preferenceChanged(j86.javax.swing.text.View, boolean, boolean) preferenceChanged}
     <li>{@link #setSize(float, float) setSize}
     </ul>
 
@@ -152,8 +152,8 @@ A view has the following responsibilities:
     to perform translation to properly locate spatial representation of the model.
     The methods for doing this are:
     <ul>
-    <li>{@link #modelToView(int, j86.j86.javax.swing.text.Position.Bias, int, javax.swing.text.Position.Bias, j86.java.awt.Shape) modelToView}
-    <li>{@link #viewToModel(float, float, j86.java.awt.Shape, j86.j86.javax.swing.text.Position.Bias[]) viewToModel}
+    <li>{@link #modelToView(int, j86.javax.swing.text.Position.Bias, int, javax.swing.text.Position.Bias, j86.java.awt.Shape) modelToView}
+    <li>{@link #viewToModel(float, float, j86.java.awt.Shape, j86.javax.swing.text.Position.Bias[]) viewToModel}
     <li>{@link #getDocument() getDocument}
     <li>{@link #getElement() getElement}
     <li>{@link #getStartOffset() getStartOffset}

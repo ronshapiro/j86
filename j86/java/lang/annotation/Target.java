@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.lang.annotation;
+package j86.java.lang.annotation;
 
 /**
  * Indicates the contexts in which an annotation type is applicable. The
  * declaration contexts and type contexts in which an annotation type may be
  * applicable are specified in JLS 9.6.4.1, and denoted in source code by enum
- * constants of {@link ElementType j86.j86.java.lang.annotation.ElementType}.
+ * constants of {@link ElementType j86.java.lang.annotation.ElementType}.
  *
  * <p>If an {@code @Target} meta-annotation is not present on an annotation type
  * {@code T} , then an annotation of type {@code T} may be written as a

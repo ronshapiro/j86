@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.krb5;
+package j86.sun.security.jgss.krb5;
 
 import com.j86.sun.security.jgss.InquireType;
 import j86.org.ietf.jgss.*;
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.jgss.GSSUtil;
 import j86.sun.security.jgss.GSSCaller;
-import j86.j86.sun.security.jgss.spi.*;
+import j86.sun.security.jgss.spi.*;
 import j86.sun.security.jgss.TokenTracker;
 import j86.sun.security.krb5.*;
 import j86.java.io.InputStream;
@@ -44,8 +44,8 @@ import j86.java.security.PrivilegedExceptionAction;
 import j86.java.security.PrivilegedActionException;
 import j86.javax.crypto.Cipher;
 import j86.javax.security.auth.Subject;
-import j86.j86.javax.security.auth.kerberos.*;
-import j86.j86.sun.security.krb5.internal.Ticket;
+import j86.javax.security.auth.kerberos.*;
+import j86.sun.security.krb5.internal.Ticket;
 
 /**
  * Implements the mechanism specific context class for the Kerberos v5
@@ -709,7 +709,7 @@ class Krb5Context implements GSSContextSpi {
                                 !subject.isReadOnly()) {
                                 /*
                              * Store the service credentials as
-                             * j86.j86.javax.security.auth.kerberos.KerberosTicket in
+                             * j86.javax.security.auth.kerberos.KerberosTicket in
                              * the Subject. We could wait till the context is
                              * succesfully established; however it is easier
                              * to do here and there is no harm indoing it here.

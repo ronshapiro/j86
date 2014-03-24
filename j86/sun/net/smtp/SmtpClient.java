@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.net.smtp;
+package j86.sun.net.smtp;
 
 import j86.java.util.StringTokenizer;
 import j86.java.io.*;

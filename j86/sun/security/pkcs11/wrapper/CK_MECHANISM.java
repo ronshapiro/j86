@@ -45,10 +45,10 @@
  *  POSSIBILITY  OF SUCH DAMAGE.
  */
 
-package j86.j86.j86.sun.security.pkcs11.wrapper;
+package j86.sun.security.pkcs11.wrapper;
 
 import j86.java.math.BigInteger;
-import static j86.j86.j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
+import static j86.sun.security.pkcs11.wrapper.PKCS11Constants.*;
 
 /**
  * class CK_MECHANISM specifies a particular mechanism and any parameters it
@@ -101,7 +101,7 @@ public class CK_MECHANISM {
     }
 
     public CK_MECHANISM(long mechanism, BigInteger b) {
-        init(mechanism, j86.j86.sun.security.pkcs11.P11Util.getMagnitude(b));
+        init(mechanism, j86.sun.security.pkcs11.P11Util.getMagnitude(b));
     }
 
     public CK_MECHANISM(long mechanism, CK_VERSION version) {

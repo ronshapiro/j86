@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
 /**
  * Signals that a {@code Credential} has expired.

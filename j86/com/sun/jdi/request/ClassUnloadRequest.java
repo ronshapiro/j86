@@ -23,24 +23,24 @@
  * questions.
  */
 
-package j86.j86.com.sun.jdi.request;
+package j86.com.sun.jdi.request;
 
 import j86.com.sun.jdi.*;
 
 /**
  * Request for notification when a class is unloaded in the target VM.
  * When an enabled ClassUnloadRequest is satisfied, a
- * {@link j86.j86.com.sun.jdi.event.EventSet event set} containing an
- * {@link j86.j86.com.sun.jdi.event.ClassUnloadEvent ClassUnloadEvent} will
- * be placed on the {@link j86.j86.com.sun.jdi.event.EventQueue EventQueue}.
+ * {@link j86.com.sun.jdi.event.EventSet event set} containing an
+ * {@link j86.com.sun.jdi.event.ClassUnloadEvent ClassUnloadEvent} will
+ * be placed on the {@link j86.com.sun.jdi.event.EventQueue EventQueue}.
  * The collection of existing ClassUnloadRequests is
  * managed by the {@link EventRequestManager}
  * <p>
  * Refer to the Java Virtual Machine Specification for more information
  * on class unloading.
  *
- * @see j86.j86.com.sun.jdi.event.ClassUnloadEvent
- * @see j86.j86.com.sun.jdi.event.EventQueue
+ * @see j86.com.sun.jdi.event.ClassUnloadEvent
+ * @see j86.com.sun.jdi.event.EventQueue
  * @see EventRequestManager
  *
  * @author Robert Field

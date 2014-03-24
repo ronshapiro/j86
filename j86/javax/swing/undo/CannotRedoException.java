@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.undo;
+package j86.javax.swing.undo;
 
 /**
  * Thrown when an UndoableEdit is told to <code>redo()</code> and can't.

@@ -29,15 +29,15 @@ import j86.java.security.Key;
 import j86.java.security.PrivilegedAction;
 import j86.java.security.AccessController;
 import j86.java.security.InvalidKeyException;
-import j86.j86.java.security.interfaces.ECKey;
-import j86.j86.java.security.interfaces.RSAKey;
-import j86.j86.java.security.interfaces.DSAKey;
-import j86.j86.java.security.spec.KeySpec;
+import j86.java.security.interfaces.ECKey;
+import j86.java.security.interfaces.RSAKey;
+import j86.java.security.interfaces.DSAKey;
+import j86.java.security.spec.KeySpec;
 import j86.javax.crypto.SecretKey;
-import j86.j86.javax.crypto.interfaces.DHKey;
-import j86.j86.javax.crypto.interfaces.DHPublicKey;
-import j86.j86.javax.crypto.spec.DHParameterSpec;
-import j86.j86.javax.crypto.spec.DHPublicKeySpec;
+import j86.javax.crypto.interfaces.DHKey;
+import j86.javax.crypto.interfaces.DHPublicKey;
+import j86.javax.crypto.spec.DHParameterSpec;
+import j86.javax.crypto.spec.DHPublicKeySpec;
 import j86.java.math.BigInteger;
 
 /**

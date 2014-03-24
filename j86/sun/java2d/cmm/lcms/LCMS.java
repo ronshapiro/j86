@@ -23,14 +23,14 @@
  * questions.
  */
 
-package j86.j86.j86.sun.java2d.cmm.lcms;
+package j86.sun.java2d.cmm.lcms;
 
-import j86.j86.java.awt.color.CMMException;
-import j86.j86.java.awt.color.ICC_Profile;
-import j86.j86.sun.java2d.cmm.ColorTransform;
-import j86.j86.sun.java2d.cmm.PCMM;
-import j86.j86.sun.java2d.cmm.Profile;
-import j86.j86.j86.sun.java2d.cmm.lcms.LCMSProfile.TagData;
+import j86.java.awt.color.CMMException;
+import j86.java.awt.color.ICC_Profile;
+import j86.sun.java2d.cmm.ColorTransform;
+import j86.sun.java2d.cmm.PCMM;
+import j86.sun.java2d.cmm.Profile;
+import j86.sun.java2d.cmm.lcms.LCMSProfile.TagData;
 
 public class LCMS implements PCMM {
 

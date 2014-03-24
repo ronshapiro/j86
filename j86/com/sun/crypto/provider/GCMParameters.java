@@ -27,9 +27,9 @@ package j86.com.sun.crypto.provider;
 
 import j86.java.io.IOException;
 import j86.java.security.AlgorithmParametersSpi;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.javax.crypto.spec.GCMParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.javax.crypto.spec.GCMParameterSpec;
 import j86.sun.misc.HexDumpEncoder;
 import j86.sun.security.util.*;
 

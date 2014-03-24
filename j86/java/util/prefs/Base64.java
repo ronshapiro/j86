@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.prefs;
+package j86.java.util.prefs;
 
 /**
  * Static methods for translating Base64 encoded strings to byte arrays

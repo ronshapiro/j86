@@ -25,7 +25,7 @@
 
 package j86.sun.print;
 
-import j86.j86.javax.print.attribute.PrintRequestAttribute;
+import j86.javax.print.attribute.PrintRequestAttribute;
 import j86.java.awt.Frame;
 
 /**

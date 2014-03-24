@@ -30,9 +30,9 @@ import j86.javax.naming.InterruptedNamingException;
 import j86.javax.naming.CommunicationException;
 import j86.javax.naming.NamingException;
 
-import j86.j86.com.sun.jndi.ldap.pool.PoolCallback;
-import j86.j86.com.sun.jndi.ldap.pool.PooledConnection;
-import j86.j86.com.sun.jndi.ldap.pool.PooledConnectionFactory;
+import j86.com.sun.jndi.ldap.pool.PoolCallback;
+import j86.com.sun.jndi.ldap.pool.PooledConnection;
+import j86.com.sun.jndi.ldap.pool.PooledConnectionFactory;
 
 /**
  * Creates an LdapClient. Encapsulates the parameters required to create

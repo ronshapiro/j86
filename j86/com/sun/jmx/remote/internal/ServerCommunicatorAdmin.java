@@ -224,9 +224,9 @@ public abstract class ServerCommunicatorAdmin {
     private boolean terminated = false;
 
     private static final ClassLogger logger =
-        new ClassLogger("j86.j86.javax.management.remote.misc",
+        new ClassLogger("j86.javax.management.remote.misc",
                         "ServerCommunicatorAdmin");
     private static final ClassLogger timelogger =
-        new ClassLogger("j86.j86.javax.management.remote.timeout",
+        new ClassLogger("j86.javax.management.remote.timeout",
                         "ServerCommunicatorAdmin");
 }

@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.java.awt.im;
+package j86.java.awt.im;
 
-import j86.j86.java.awt.font.TextAttribute;
+import j86.java.awt.font.TextAttribute;
 import j86.java.util.Map;
 
 /**

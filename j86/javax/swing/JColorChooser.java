@@ -26,12 +26,12 @@
 package j86.javax.swing;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.io.*;
 import j86.java.util.*;
 
-import j86.j86.javax.swing.colorchooser.*;
-import j86.j86.javax.swing.plaf.ColorChooserUI;
+import j86.javax.swing.colorchooser.*;
+import j86.javax.swing.plaf.ColorChooserUI;
 import j86.javax.accessibility.*;
 
 import j86.sun.swing.SwingUtilities2;

@@ -22,12 +22,12 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.multi;
+package j86.javax.swing.plaf.multi;
 
 import j86.java.util.Vector;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.*;
 
 /**
  * <p>A multiplexing look and feel that allows more than one UI
@@ -52,7 +52,7 @@ import j86.j86.javax.swing.plaf.*;
  * Please see {@link j86.java.beans.XMLEncoder}.
  *
  * @see UIManager#addAuxiliaryLookAndFeel
- * @see j86.j86.j86.javax.swing.plaf.multi
+ * @see j86.javax.swing.plaf.multi
  *
  * @author Willie Walker
  */
@@ -119,13 +119,13 @@ public class MultiLookAndFeel extends LookAndFeel {
      * mappings of UI class IDs
      * (such as "ButtonUI")
      * to <code>ComponentUI</code> class names
-     * (such as "j86.j86.j86.javax.swing.plaf.multi.MultiButtonUI").
+     * (such as "j86.javax.swing.plaf.multi.MultiButtonUI").
      *
      * @return an initialized <code>UIDefaults</code> object
      * @see j86.javax.swing.JComponent#getUIClassID
      */
     public UIDefaults getDefaults() {
-        String packageName = "j86.j86.j86.javax.swing.plaf.multi.Multi";
+        String packageName = "j86.javax.swing.plaf.multi.Multi";
         Object[] uiDefaults = {
                    "ButtonUI", packageName + "ButtonUI",
          "CheckBoxMenuItemUI", packageName + "MenuItemUI",

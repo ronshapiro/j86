@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.logging;
+package j86.java.util.logging;
 
 /**
  * <tt>Handler</tt> that buffers requests in a circular buffer in memory.
@@ -73,14 +73,14 @@ package j86.j86.java.util.logging;
  * <p>
  * For example, the properties for {@code MemoryHandler} would be:
  * <ul>
- * <li>   j86.j86.java.util.logging.MemoryHandler.level=INFO </li>
- * <li>   j86.j86.java.util.logging.MemoryHandler.formatter=java.util.logging.SimpleFormatter </li>
+ * <li>   j86.java.util.logging.MemoryHandler.level=INFO </li>
+ * <li>   j86.java.util.logging.MemoryHandler.formatter=java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * For a custom handler, e.g. com.foo.MyHandler, the properties would be:
  * <ul>
  * <li>   com.foo.MyHandler.level=INFO </li>
- * <li>   com.foo.MyHandler.formatter=j86.j86.java.util.logging.SimpleFormatter </li>
+ * <li>   com.foo.MyHandler.formatter=j86.java.util.logging.SimpleFormatter </li>
  * </ul>
  * <p>
  * @since 1.4

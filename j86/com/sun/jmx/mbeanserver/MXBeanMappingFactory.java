@@ -25,10 +25,10 @@
 
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.javax.management.openmbean.*;
+import j86.javax.management.openmbean.*;
 import j86.com.sun.jmx.mbeanserver.MXBeanMapping;
 import j86.com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory;
-import j86.j86.j86.java.lang.reflect.Type;
+import j86.java.lang.reflect.Type;
 
 /**
  * <p>Defines how types are mapped for a given MXBean or set of MXBeans.

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 /**
  * The {@code PKIXReason} enumerates the potential PKIX-specific reasons

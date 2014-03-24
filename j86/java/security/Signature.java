@@ -25,12 +25,12 @@
 
 package j86.java.security;
 
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 import j86.java.util.*;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentHashMap;
 import j86.java.io.*;
-import j86.j86.java.security.cert.Certificate;
-import j86.j86.java.security.cert.X509Certificate;
+import j86.java.security.cert.Certificate;
+import j86.java.security.cert.X509Certificate;
 
 import j86.java.nio.ByteBuffer;
 
@@ -272,7 +272,7 @@ public abstract class Signature extends SignatureSpi {
         signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA384withRSA", TRUE);
         signatureInfo.put("j86.sun.security.rsa.RSASignature$SHA512withRSA", TRUE);
         signatureInfo.put("com.j86.sun.net.ssl.internal.ssl.RSASignature", TRUE);
-        signatureInfo.put("j86.j86.sun.security.pkcs11.P11Signature", TRUE);
+        signatureInfo.put("j86.sun.security.pkcs11.P11Signature", TRUE);
     }
 
     private static boolean isSpi(Service s) {
@@ -476,7 +476,7 @@ public abstract class Signature extends SignatureSpi {
         // If the certificate is of type X509Certificate,
         // we should check whether it has a Key Usage
         // extension marked as critical.
-        if (certificate instanceof j86.j86.java.security.cert.X509Certificate) {
+        if (certificate instanceof j86.java.security.cert.X509Certificate) {
             // Check whether the cert has a key usage extension
             // marked as a critical extension.
             // The OID for KeyUsage extension is 2.5.29.15.
@@ -798,7 +798,7 @@ public abstract class Signature extends SignatureSpi {
      * @see #getParameter
      *
      * @deprecated Use
-     * {@link #setParameter(j86.j86.java.security.spec.AlgorithmParameterSpec)
+     * {@link #setParameter(j86.java.security.spec.AlgorithmParameterSpec)
      * setParameter}.
      */
     @Deprecated

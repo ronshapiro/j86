@@ -33,22 +33,22 @@ import j86.java.util.List;
 import j86.java.util.Iterator;
 
 import j86.java.security.Principal;
-import j86.j86.java.security.cert.*;
+import j86.java.security.cert.*;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.util.HostnameChecker;
 import j86.sun.security.util.DerValue;
 import j86.sun.security.x509.X500Name;
 
-import j86.j86.j86.j86.sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection;
+import j86.sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection;
 
 /**
  * This class was introduced to provide an additional level of
- * abstraction between j86.j86.javax.net.ssl.HttpURLConnection and
+ * abstraction between j86.javax.net.ssl.HttpURLConnection and
  * com.j86.sun.net.ssl.HttpURLConnection objects. <p>
  *
- * j86.j86.javax.net.ssl.HttpURLConnection is used in the new j86.sun.net version
+ * j86.javax.net.ssl.HttpURLConnection is used in the new j86.sun.net version
  * of protocol implementation (this one)
  * com.j86.sun.net.ssl.HttpURLConnection is used in the com.sun version.
  *
@@ -58,32 +58,32 @@ public class DelegateHttpsURLConnection extends AbstractDelegateHttpsURLConnecti
     // we need a reference to the HttpsURLConnection to get
     // the properties set there
     // we also need it to be public so that it can be referenced
-    // from j86.j86.j86.sun.net.www.protocol.http.HttpURLConnection
+    // from j86.sun.net.www.protocol.http.HttpURLConnection
     // this is for ResponseCache.put(URI, URLConnection)
-    // second parameter needs to be cast to j86.j86.javax.net.ssl.HttpsURLConnection
+    // second parameter needs to be cast to j86.javax.net.ssl.HttpsURLConnection
     // instead of AbstractDelegateHttpsURLConnection
     public com.j86.sun.net.ssl.HttpsURLConnection httpsURLConnection;
 
     DelegateHttpsURLConnection(URL url,
-            j86.j86.j86.sun.net.www.protocol.http.Handler handler,
+            j86.sun.net.www.protocol.http.Handler handler,
             com.j86.sun.net.ssl.HttpsURLConnection httpsURLConnection)
             throws IOException {
         this(url, null, handler, httpsURLConnection);
     }
 
     DelegateHttpsURLConnection(URL url, Proxy p,
-            j86.j86.j86.sun.net.www.protocol.http.Handler handler,
+            j86.sun.net.www.protocol.http.Handler handler,
             com.j86.sun.net.ssl.HttpsURLConnection httpsURLConnection)
             throws IOException {
         super(url, p, handler);
         this.httpsURLConnection = httpsURLConnection;
     }
 
-    protected j86.j86.javax.net.ssl.SSLSocketFactory getSSLSocketFactory() {
+    protected j86.javax.net.ssl.SSLSocketFactory getSSLSocketFactory() {
         return httpsURLConnection.getSSLSocketFactory();
     }
 
-    protected j86.j86.javax.net.ssl.HostnameVerifier getHostnameVerifier() {
+    protected j86.javax.net.ssl.HostnameVerifier getHostnameVerifier() {
         // note: getHostnameVerifier() never returns null
         return new VerifierWrapper(httpsURLConnection.getHostnameVerifier());
     }
@@ -97,7 +97,7 @@ public class DelegateHttpsURLConnection extends AbstractDelegateHttpsURLConnecti
     }
 }
 
-class VerifierWrapper implements j86.j86.javax.net.ssl.HostnameVerifier {
+class VerifierWrapper implements j86.javax.net.ssl.HostnameVerifier {
 
     private com.j86.sun.net.ssl.HostnameVerifier verifier;
 
@@ -111,7 +111,7 @@ class VerifierWrapper implements j86.j86.javax.net.ssl.HostnameVerifier {
      * This means we need to extract the hostname from the X.509 certificate
      * or from the Kerberos principal name, in this wrapper.
      */
-    public boolean verify(String hostname, j86.j86.javax.net.ssl.SSLSession session) {
+    public boolean verify(String hostname, j86.javax.net.ssl.SSLSession session) {
         try {
             String serverName;
             // Use ciphersuite to determine whether Kerberos is active.
@@ -134,7 +134,7 @@ class VerifierWrapper implements j86.j86.javax.net.ssl.HostnameVerifier {
                 return false;
             }
             return verifier.verify(hostname, serverName);
-        } catch (j86.j86.javax.net.ssl.SSLPeerUnverifiedException e) {
+        } catch (j86.javax.net.ssl.SSLPeerUnverifiedException e) {
             return false;
         }
     }
@@ -142,8 +142,8 @@ class VerifierWrapper implements j86.j86.javax.net.ssl.HostnameVerifier {
     /*
      * Get the peer principal from the session
      */
-    private Principal getPeerPrincipal(j86.j86.javax.net.ssl.SSLSession session)
-        throws j86.j86.javax.net.ssl.SSLPeerUnverifiedException
+    private Principal getPeerPrincipal(j86.javax.net.ssl.SSLSession session)
+        throws j86.javax.net.ssl.SSLPeerUnverifiedException
     {
         Principal principal;
         try {
@@ -190,7 +190,7 @@ class VerifierWrapper implements j86.j86.javax.net.ssl.HostnameVerifier {
                     // ignore
                 }
             }
-        } catch (j86.j86.java.security.cert.CertificateException e) {
+        } catch (j86.java.security.cert.CertificateException e) {
             // ignore
         }
         return null;

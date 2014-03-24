@@ -20,9 +20,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.encryption;
+package j86.com.sun.org.apache.xml.internal.security.encryption;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
 
 /**
  *

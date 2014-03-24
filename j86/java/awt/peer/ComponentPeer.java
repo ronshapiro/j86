@@ -23,17 +23,17 @@
  * questions.
  */
 
-package j86.j86.java.awt.peer;
+package j86.java.awt.peer;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.PaintEvent;
-import j86.j86.j86.java.awt.image.ImageProducer;
-import j86.j86.j86.java.awt.image.ImageObserver;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.VolatileImage;
+import j86.java.awt.event.PaintEvent;
+import j86.java.awt.image.ImageProducer;
+import j86.java.awt.image.ImageObserver;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.VolatileImage;
 import j86.java.awt.GraphicsConfiguration;
 import j86.sun.awt.CausedFocusEvent;
-import j86.j86.sun.java2d.pipe.Region;
+import j86.sun.java2d.pipe.Region;
 
 
 /**

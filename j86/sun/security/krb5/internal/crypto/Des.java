@@ -28,14 +28,14 @@
  *  Copyright 1997 The Open Group Research Institute.  All rights reserved.
  */
 
-package j86.j86.j86.sun.security.krb5.internal.crypto;
+package j86.sun.security.krb5.internal.crypto;
 
 import j86.javax.crypto.Cipher;
-import j86.j86.javax.crypto.spec.SecretKeySpec;
+import j86.javax.crypto.spec.SecretKeySpec;
 import j86.javax.crypto.SecretKeyFactory;
 import j86.javax.crypto.SecretKey;
 import j86.java.security.GeneralSecurityException;
-import j86.j86.javax.crypto.spec.IvParameterSpec;
+import j86.javax.crypto.spec.IvParameterSpec;
 import j86.sun.security.krb5.KrbCryptoException;
 import j86.java.util.Arrays;
 import j86.sun.security.action.GetPropertyAction;

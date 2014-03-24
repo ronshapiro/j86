@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.j86.sun.net.spi.nameservice.dns;
+package j86.sun.net.spi.nameservice.dns;
 
-import j86.j86.j86.sun.net.spi.nameservice.*;
+import j86.sun.net.spi.nameservice.*;
 
 public final class DNSNameServiceDescriptor implements NameServiceDescriptor {
     /**

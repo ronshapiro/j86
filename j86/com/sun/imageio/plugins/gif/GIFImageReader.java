@@ -27,9 +27,9 @@ package j86.com.sun.imageio.plugins.gif;
 
 import j86.java.awt.Point;
 import j86.java.awt.Rectangle;
-import j86.j86.j86.java.awt.image.BufferedImage;
-import j86.j86.j86.java.awt.image.DataBuffer;
-import j86.j86.j86.java.awt.image.WritableRaster;
+import j86.java.awt.image.BufferedImage;
+import j86.java.awt.image.DataBuffer;
+import j86.java.awt.image.WritableRaster;
 import j86.java.io.EOFException;
 import j86.java.io.IOException;
 import j86.java.nio.ByteOrder;
@@ -40,15 +40,15 @@ import j86.javax.imageio.IIOException;
 import j86.javax.imageio.ImageReader;
 import j86.javax.imageio.ImageReadParam;
 import j86.javax.imageio.ImageTypeSpecifier;
-import j86.j86.javax.imageio.metadata.IIOMetadata;
-import j86.j86.javax.imageio.spi.ImageReaderSpi;
-import j86.j86.javax.imageio.stream.ImageInputStream;
+import j86.javax.imageio.metadata.IIOMetadata;
+import j86.javax.imageio.spi.ImageReaderSpi;
+import j86.javax.imageio.stream.ImageInputStream;
 import j86.com.sun.imageio.plugins.common.ReaderUtil;
-import j86.j86.j86.java.awt.image.ColorModel;
-import j86.j86.j86.java.awt.image.IndexColorModel;
-import j86.j86.j86.java.awt.image.MultiPixelPackedSampleModel;
-import j86.j86.j86.java.awt.image.PixelInterleavedSampleModel;
-import j86.j86.j86.java.awt.image.SampleModel;
+import j86.java.awt.image.ColorModel;
+import j86.java.awt.image.IndexColorModel;
+import j86.java.awt.image.MultiPixelPackedSampleModel;
+import j86.java.awt.image.PixelInterleavedSampleModel;
+import j86.java.awt.image.SampleModel;
 
 public class GIFImageReader extends ImageReader {
 

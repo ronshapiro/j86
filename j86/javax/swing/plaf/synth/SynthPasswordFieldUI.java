@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.Graphics;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.text.*;
-import j86.j86.javax.swing.plaf.ComponentUI;
+import j86.javax.swing.text.*;
+import j86.javax.swing.plaf.ComponentUI;
 
 /**
  * Provides the Synth L&amp;F UI delegate for

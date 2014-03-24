@@ -35,9 +35,9 @@
 package j86.com.sun.tools.example.debug.tty;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.StepRequest;
-import j86.j86.com.sun.jdi.request.MethodEntryRequest;
-import j86.j86.com.sun.jdi.request.MethodExitRequest;
+import j86.com.sun.jdi.request.StepRequest;
+import j86.com.sun.jdi.request.MethodEntryRequest;
+import j86.com.sun.jdi.request.MethodExitRequest;
 import j86.java.util.*;
 import j86.java.io.*;
 

@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.sun.swing.text;
+package j86.sun.swing.text;
 
 import j86.java.awt.ComponentOrientation;
 import j86.java.awt.Dimension;
@@ -34,33 +34,33 @@ import j86.java.awt.Insets;
 import j86.java.awt.Rectangle;
 import j86.java.awt.Component;
 import j86.java.awt.Container;
-import j86.j86.java.awt.font.FontRenderContext;
-import j86.j86.java.awt.print.PageFormat;
-import j86.j86.java.awt.print.Printable;
-import j86.j86.java.awt.print.PrinterException;
+import j86.java.awt.font.FontRenderContext;
+import j86.java.awt.print.PageFormat;
+import j86.java.awt.print.Printable;
+import j86.java.awt.print.PrinterException;
 import j86.java.text.MessageFormat;
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
 import j86.java.util.List;
-import j86.j86.java.util.concurrent.Callable;
-import j86.j86.java.util.concurrent.ExecutionException;
-import j86.j86.java.util.concurrent.FutureTask;
-import j86.j86.j86.java.util.concurrent.atomic.AtomicReference;
+import j86.java.util.concurrent.Callable;
+import j86.java.util.concurrent.ExecutionException;
+import j86.java.util.concurrent.FutureTask;
+import j86.java.util.concurrent.atomic.AtomicReference;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.border.TitledBorder;
-import j86.j86.javax.swing.text.BadLocationException;
-import j86.j86.javax.swing.text.JTextComponent;
-import j86.j86.javax.swing.text.Document;
-import j86.j86.javax.swing.text.EditorKit;
-import j86.j86.javax.swing.text.AbstractDocument;
-import j86.j86.j86.javax.swing.text.html.HTMLDocument;
-import j86.j86.j86.javax.swing.text.html.HTML;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.border.TitledBorder;
+import j86.javax.swing.text.BadLocationException;
+import j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.Document;
+import j86.javax.swing.text.EditorKit;
+import j86.javax.swing.text.AbstractDocument;
+import j86.javax.swing.text.html.HTMLDocument;
+import j86.javax.swing.text.html.HTML;
 
 import j86.sun.font.FontDesignMetrics;
 
-import j86.j86.j86.sun.swing.text.html.FrameEditorPaneTag;
+import j86.sun.swing.text.html.FrameEditorPaneTag;
 
 /**
  * An implementation of {@code Printable} to print {@code JTextComponent} with
@@ -68,7 +68,7 @@ import j86.j86.j86.sun.swing.text.html.FrameEditorPaneTag;
  *
  * <h1>
  * WARNING: this class is to be used in
- * j86.j86.javax.swing.text.JTextComponent only.
+ * j86.javax.swing.text.JTextComponent only.
  * </h1>
  *
  * <p>
@@ -610,7 +610,7 @@ public class TextComponentPrintable implements CountingPrintable {
                         }
                     });
             } catch (InterruptedException ignore) {
-            } catch (j86.j86.j86.java.lang.reflect.InvocationTargetException ignore) {
+            } catch (j86.java.lang.reflect.InvocationTargetException ignore) {
             }
             Document document = textComponentToPrint.getDocument();
             ((AbstractDocument) document).readLock();
@@ -804,7 +804,7 @@ public class TextComponentPrintable implements CountingPrintable {
     /**
      *  Class to represent segment of integers.
      *  we do not call it Segment to avoid confusion with
-     *  j86.j86.javax.swing.text.Segment
+     *  j86.javax.swing.text.Segment
      */
     private static class IntegerSegment implements Comparable<IntegerSegment> {
         final int start;

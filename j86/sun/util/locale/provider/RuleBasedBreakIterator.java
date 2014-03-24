@@ -38,7 +38,7 @@
  * Taligent is a registered trademark of Taligent, Inc.
  */
 
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.io.BufferedInputStream;
 import j86.java.io.IOException;
@@ -445,7 +445,7 @@ class RuleBasedBreakIterator extends BreakIterator {
                 new PrivilegedExceptionAction<BufferedInputStream>() {
                     @Override
                     public BufferedInputStream run() throws Exception {
-                        return new BufferedInputStream(getClass().getResourceAsStream("/j86.j86.sun.text.resources/" + datafile));
+                        return new BufferedInputStream(getClass().getResourceAsStream("/j86.sun.text.resources/" + datafile));
                     }
                 }
             );

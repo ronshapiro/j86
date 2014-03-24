@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.security.jgss.spnego;
+package j86.sun.security.jgss.spnego;
 
 import j86.java.io.*;
 import j86.java.util.*;

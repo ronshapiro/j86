@@ -24,10 +24,10 @@
  */
 package j86.sun.awt;
 
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.StandardCharsets;
-import j86.j86.j86.sun.nio.cs.HistoricallyNamedCharset;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.StandardCharsets;
+import j86.sun.nio.cs.HistoricallyNamedCharset;
 
 public class FontDescriptor implements Cloneable {
 

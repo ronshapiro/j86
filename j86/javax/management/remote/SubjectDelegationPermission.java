@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.management.remote;
+package j86.javax.management.remote;
 
 import j86.java.security.BasicPermission;
 
@@ -44,14 +44,14 @@ import j86.java.security.BasicPermission;
  * by a "." may appear at the end of the target name, to signify a
  * wildcard match.</p>
  *
- * <p>For example, "*", "j86.j86.javax.management.remote.JMXPrincipal.*" and
- * "j86.j86.javax.management.remote.JMXPrincipal.delegate" are valid target
+ * <p>For example, "*", "j86.javax.management.remote.JMXPrincipal.*" and
+ * "j86.javax.management.remote.JMXPrincipal.delegate" are valid target
  * names. The first one denotes any principal name from any principal
  * class, the second one denotes any principal name of the concrete
- * principal class <code>j86.j86.javax.management.remote.JMXPrincipal</code>
+ * principal class <code>j86.javax.management.remote.JMXPrincipal</code>
  * and the third one denotes a concrete principal name
  * <code>delegate</code> of the concrete principal class
- * <code>j86.j86.javax.management.remote.JMXPrincipal</code>.</p>
+ * <code>j86.javax.management.remote.JMXPrincipal</code>.</p>
  *
  * @since 1.5
  */

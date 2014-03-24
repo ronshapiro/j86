@@ -22,13 +22,13 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.beans.finder;
+package j86.com.sun.beans.finder;
 
 import j86.java.beans.BeanDescriptor;
 import j86.java.beans.BeanInfo;
 import j86.java.beans.MethodDescriptor;
 import j86.java.beans.PropertyDescriptor;
-import j86.j86.j86.java.lang.reflect.Method;
+import j86.java.lang.reflect.Method;
 
 /**
  * This is utility class that provides functionality
@@ -42,7 +42,7 @@ public final class BeanInfoFinder
         extends InstanceFinder<BeanInfo> {
 
     private static final String DEFAULT = "sun.beans.infos";
-    private static final String DEFAULT_NEW = "j86.j86.com.sun.beans.infos";
+    private static final String DEFAULT_NEW = "j86.com.sun.beans.infos";
 
     public BeanInfoFinder() {
         super(BeanInfo.class, true, "BeanInfo", DEFAULT);

@@ -49,7 +49,7 @@ package j86.java.lang;
  *
  * @author  Arthur van Hoff
  * @see     j86.java.lang.Thread
- * @see     j86.j86.java.util.concurrent.Callable
+ * @see     j86.java.util.concurrent.Callable
  * @since   JDK1.0
  */
 @FunctionalInterface

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.util.prefs;
+package j86.java.util.prefs;
 
 import j86.java.util.*;
 import j86.java.io.*;
@@ -35,7 +35,7 @@ import org.xml.sax.*;
 import org.w3c.dom.*;
 
 /**
- * XML Support for j86.j86.java.util.prefs. Methods to import and export preference
+ * XML Support for j86.java.util.prefs. Methods to import and export preference
  * nodes and subtrees.
  *
  * @author  Josh Bloch and Mark Reinhold

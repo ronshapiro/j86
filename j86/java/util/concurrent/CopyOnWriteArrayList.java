@@ -32,7 +32,7 @@
  * All rights reserved.
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 import j86.java.util.AbstractList;
 import j86.java.util.Arrays;
 import j86.java.util.Collection;
@@ -46,10 +46,10 @@ import j86.java.util.Objects;
 import j86.java.util.RandomAccess;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.j86.java.util.concurrent.locks.ReentrantLock;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.UnaryOperator;
+import j86.java.util.concurrent.locks.ReentrantLock;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.UnaryOperator;
 
 /**
  * A thread-safe variant of {@link j86.java.util.ArrayList} in which all mutative

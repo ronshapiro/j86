@@ -32,7 +32,7 @@
  *
  */
 
-package j86.j86.j86.sun.text.resources.hi;
+package j86.sun.text.resources.hi;
 
 import j86.java.util.ListResourceBundle;
 

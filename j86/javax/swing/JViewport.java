@@ -28,13 +28,13 @@ package j86.javax.swing;
 import j86.sun.swing.JLightweightFrame;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.peer.ComponentPeer;
+import j86.java.awt.event.*;
+import j86.java.awt.peer.ComponentPeer;
 import j86.java.beans.Transient;
-import j86.j86.javax.swing.plaf.ViewportUI;
+import j86.javax.swing.plaf.ViewportUI;
 
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.border.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.border.*;
 import j86.javax.accessibility.*;
 
 

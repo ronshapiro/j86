@@ -26,12 +26,12 @@
 package j86.java.net;
 
 import j86.java.io.IOException;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.JarEntry;
-import j86.j86.java.util.jar.Attributes;
-import j86.j86.java.util.jar.Manifest;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.JarEntry;
+import j86.java.util.jar.Attributes;
+import j86.java.util.jar.Manifest;
 import j86.java.security.Permission;
-import j86.j86.sun.net.www.ParseUtil;
+import j86.sun.net.www.ParseUtil;
 
 /**
  * A URL Connection to a Java ARchive (JAR) file or an entry in a JAR
@@ -126,10 +126,10 @@ import j86.j86.sun.net.www.ParseUtil;
  * @see j86.java.net.URL
  * @see j86.java.net.URLConnection
  *
- * @see j86.j86.java.util.jar.JarFile
- * @see j86.j86.java.util.jar.JarInputStream
- * @see j86.j86.java.util.jar.Manifest
- * @see j86.j86.java.util.zip.ZipEntry
+ * @see j86.java.util.jar.JarFile
+ * @see j86.java.util.jar.JarInputStream
+ * @see j86.java.util.jar.Manifest
+ * @see j86.java.util.zip.ZipEntry
  *
  * @author Benjamin Renaud
  * @since 1.2
@@ -300,7 +300,7 @@ public abstract class JarURLConnection extends URLConnection {
      *
      * @see #getJarEntry
      */
-    public j86.j86.java.security.cert.Certificate[] getCertificates()
+    public j86.java.security.cert.Certificate[] getCertificates()
          throws IOException
     {
         JarEntry e = getJarEntry();

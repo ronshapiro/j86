@@ -34,16 +34,16 @@ package j86.sun.font;
 //
 
 import j86.java.awt.Shape;
-import j86.j86.java.awt.font.LayoutPath;
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.GeneralPath;
-import j86.j86.java.awt.geom.NoninvertibleTransformException;
-import j86.j86.java.awt.geom.PathIterator;
-import j86.j86.java.awt.geom.Point2D;
+import j86.java.awt.font.LayoutPath;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.GeneralPath;
+import j86.java.awt.geom.NoninvertibleTransformException;
+import j86.java.awt.geom.PathIterator;
+import j86.java.awt.geom.Point2D;
 import j86.java.util.Formatter;
 import j86.java.util.ArrayList;
 
-import static j86.j86.java.awt.geom.PathIterator.*;
+import static j86.java.awt.geom.PathIterator.*;
 import static j86.java.lang.Math.abs;
 import static j86.java.lang.Math.sqrt;
 

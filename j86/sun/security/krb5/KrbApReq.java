@@ -31,16 +31,16 @@
 
 package j86.sun.security.krb5;
 
-import j86.j86.sun.security.krb5.internal.*;
-import j86.j86.j86.sun.security.krb5.internal.crypto.*;
-import j86.j86.sun.security.jgss.krb5.Krb5AcceptCredential;
+import j86.sun.security.krb5.internal.*;
+import j86.sun.security.krb5.internal.crypto.*;
+import j86.sun.security.jgss.krb5.Krb5AcceptCredential;
 import j86.java.net.InetAddress;
 import j86.sun.security.util.*;
 import j86.java.io.IOException;
 import j86.java.util.Arrays;
 import j86.java.security.MessageDigest;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.j86.sun.security.krb5.internal.rcache.AuthTimeWithHash;
+import j86.sun.security.krb5.internal.rcache.AuthTimeWithHash;
 
 /**
  * This class encapsulates a KRB-AP-REQ that a client sends to a

@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.com.sun.rowset.internal;
+package j86.com.sun.rowset.internal;
 
 import j86.java.sql.*;
 import j86.javax.sql.*;
 import j86.java.util.*;
 import j86.java.math.BigDecimal;
 
-import j86.j86.javax.sql.rowset.*;
-import j86.j86.j86.javax.sql.rowset.spi.*;
+import j86.javax.sql.rowset.*;
+import j86.javax.sql.rowset.spi.*;
 
 import j86.com.sun.rowset.*;
 import j86.java.io.IOException;
@@ -615,7 +615,7 @@ public class SyncResolverImpl extends CachedRowSetImpl implements SyncResolver {
      *          instance touches the data source.
      * @see #acceptChanges(j86.java.sql.Connection)
      * @see j86.javax.sql.RowSetWriter
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public void acceptChanges() throws SyncProviderException {
         throw new UnsupportedOperationException();
@@ -640,8 +640,8 @@ public class SyncResolverImpl extends CachedRowSetImpl implements SyncResolver {
      *                   back to the data source
      * @see #acceptChanges
      * @see j86.javax.sql.RowSetWriter
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncFactory
-     * @see j86.j86.j86.javax.sql.rowset.spi.SyncProvider
+     * @see j86.javax.sql.rowset.spi.SyncFactory
+     * @see j86.javax.sql.rowset.spi.SyncProvider
      */
     public void acceptChanges(Connection con) throws SyncProviderException{
      throw new UnsupportedOperationException();

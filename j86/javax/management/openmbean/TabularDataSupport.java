@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.javax.management.openmbean;
+package j86.javax.management.openmbean;
 
 
 // java import
@@ -770,7 +770,7 @@ public class TabularDataSupport
     /**
      * Returns a string representation of this <code>TabularDataSupport</code> instance.
      * <p>
-     * The string representation consists of the name of this class (ie <code>j86.j86.javax.management.openmbean.TabularDataSupport</code>),
+     * The string representation consists of the name of this class (ie <code>j86.javax.management.openmbean.TabularDataSupport</code>),
      * the string representation of the tabular type of this instance, and the string representation of the contents
      * (ie list the key=value mappings as returned by a call to
      * <tt>dataMap.</tt>{@link j86.java.util.HashMap#toString() toString()}).

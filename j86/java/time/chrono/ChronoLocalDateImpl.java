@@ -54,24 +54,24 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.java.time.chrono;
+package j86.java.time.chrono;
 
-import static j86.j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.ERA;
-import static j86.j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
-import static j86.j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
-import static j86.j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
+import static j86.java.time.temporal.ChronoField.DAY_OF_MONTH;
+import static j86.java.time.temporal.ChronoField.ERA;
+import static j86.java.time.temporal.ChronoField.MONTH_OF_YEAR;
+import static j86.java.time.temporal.ChronoField.PROLEPTIC_MONTH;
+import static j86.java.time.temporal.ChronoField.YEAR_OF_ERA;
 
 import j86.java.io.Serializable;
 import j86.java.time.DateTimeException;
-import j86.j86.java.time.temporal.ChronoUnit;
-import j86.j86.java.time.temporal.Temporal;
-import j86.j86.java.time.temporal.TemporalAdjuster;
-import j86.j86.java.time.temporal.TemporalAmount;
-import j86.j86.java.time.temporal.TemporalField;
-import j86.j86.java.time.temporal.TemporalUnit;
-import j86.j86.java.time.temporal.UnsupportedTemporalTypeException;
-import j86.j86.java.time.temporal.ValueRange;
+import j86.java.time.temporal.ChronoUnit;
+import j86.java.time.temporal.Temporal;
+import j86.java.time.temporal.TemporalAdjuster;
+import j86.java.time.temporal.TemporalAmount;
+import j86.java.time.temporal.TemporalField;
+import j86.java.time.temporal.TemporalUnit;
+import j86.java.time.temporal.UnsupportedTemporalTypeException;
+import j86.java.time.temporal.ValueRange;
 import j86.java.util.Objects;
 
 /**
@@ -81,7 +81,7 @@ import j86.java.util.Objects;
  * For example, the Japanese, Minguo, Thai Buddhist and others.
  * <p>
  * {@code ChronoLocalDate} is built on the generic concepts of year, month and day.
- * The calendar system, represented by a {@link j86.j86.java.time.chrono.Chronology}, expresses the relationship between
+ * The calendar system, represented by a {@link j86.java.time.chrono.Chronology}, expresses the relationship between
  * the fields and this class allows the resulting date to be manipulated.
  * <p>
  * Note that not all calendar systems are suitable for use with this class.
@@ -130,7 +130,7 @@ import j86.java.util.Objects;
  * {@code Chronology} must be registered as a Service implementing the {@code Chronology} interface
  * in the {@code META-INF/Services} file as per the specification of {@link j86.java.util.ServiceLoader}.
  * The subclass must function according to the {@code Chronology} class description and must provide its
- * {@link j86.j86.java.time.chrono.Chronology#getId() chronlogy ID} and {@link Chronology#getCalendarType() calendar type}. </p>
+ * {@link j86.java.time.chrono.Chronology#getId() chronlogy ID} and {@link Chronology#getCalendarType() calendar type}. </p>
  *
  * @implSpec
  * This abstract class must be implemented with care to ensure other classes operate correctly.

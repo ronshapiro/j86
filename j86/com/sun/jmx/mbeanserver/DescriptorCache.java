@@ -25,7 +25,7 @@
 
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.java.lang.ref.WeakReference;
+import j86.java.lang.ref.WeakReference;
 import j86.java.util.WeakHashMap;
 import j86.javax.management.Descriptor;
 import j86.javax.management.ImmutableDescriptor;

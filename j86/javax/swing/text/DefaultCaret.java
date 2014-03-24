@@ -22,18 +22,18 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.javax.swing.text;
+package j86.javax.swing.text;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
-import j86.j86.java.awt.datatransfer.*;
+import j86.java.awt.event.*;
+import j86.java.awt.datatransfer.*;
 import j86.java.beans.*;
-import j86.j86.java.awt.event.ActionEvent;
-import j86.j86.java.awt.event.ActionListener;
+import j86.java.awt.event.ActionEvent;
+import j86.java.awt.event.ActionListener;
 import j86.java.io.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
 import j86.java.util.EventListener;
 import j86.sun.swing.SwingUtilities2;
 
@@ -1056,7 +1056,7 @@ public class DefaultCaret extends Rectangle implements Caret, FocusListener, Mou
      * with a forward bias.
      *
      * @param dot the position &gt;= 0
-     * @see #moveDot(int, j86.j86.javax.swing.text.Position.Bias)
+     * @see #moveDot(int, j86.javax.swing.text.Position.Bias)
      * @see Caret#moveDot
      */
     public void moveDot(int dot) {

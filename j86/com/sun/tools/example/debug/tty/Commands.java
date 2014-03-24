@@ -35,8 +35,8 @@
 package j86.com.sun.tools.example.debug.tty;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.connect.Connector;
-import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.jdi.connect.Connector;
+import j86.com.sun.jdi.request.*;
 import j86.com.sun.tools.example.debug.expr.ExpressionParser;
 import j86.com.sun.tools.example.debug.expr.ParseException;
 

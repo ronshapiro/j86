@@ -48,7 +48,7 @@ public class GSSUtil {
      * Subject and those from the GSSCredential are placed in the private
      * credentials set of the Subject. Any Kerberos specific elements that
      * are added to the subject will be instances of the standard Kerberos
-     * implementation classes defined in j86.j86.javax.security.auth.kerberos.
+     * implementation classes defined in j86.javax.security.auth.kerberos.
      *
      * @return a Subject with the entries that contain elements from the
      * given GSSName and GSSCredential.

@@ -36,4 +36,4 @@
  */
 
 @jdk.Exported
-package j86.j86.com.sun.jdi.connect;
+package j86.com.sun.jdi.connect;

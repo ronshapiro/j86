@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.im;
+package j86.java.awt.im;
 
 
 /**

@@ -22,10 +22,10 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.com.sun.java.swing.plaf.gtk;
+package j86.com.sun.java.swing.plaf.gtk;
 
 import j86.java.awt.*;
-import j86.j86.java.awt.event.*;
+import j86.java.awt.event.*;
 import j86.java.beans.*;
 import j86.java.io.File;
 import j86.java.io.IOException;
@@ -33,19 +33,19 @@ import j86.java.text.MessageFormat;
 import j86.java.util.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.filechooser.*;
-import j86.j86.javax.swing.event.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.j86.javax.swing.plaf.basic.BasicDirectoryModel;
-import j86.j86.javax.swing.table.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.filechooser.*;
+import j86.javax.swing.event.*;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.plaf.basic.BasicDirectoryModel;
+import j86.javax.swing.table.*;
 import j86.javax.accessibility.*;
 
 import j86.sun.swing.SwingUtilities2;
 
-import j86.j86.j86.sun.swing.plaf.synth.*;
+import j86.sun.swing.plaf.synth.*;
 import j86.sun.swing.FilePane;
-import j86.j86.sun.awt.shell.ShellFolder;
+import j86.sun.awt.shell.ShellFolder;
 
 /**
  * GTK FileChooserUI.

@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.security.cert;
+package j86.java.security.cert;
 
 import j86.java.io.IOException;
 import j86.java.security.PublicKey;
 
-import j86.j86.javax.security.auth.x500.X500Principal;
+import j86.javax.security.auth.x500.X500Principal;
 
 import j86.sun.security.x509.NameConstraintsExtension;
 import j86.sun.security.x509.X500Name;

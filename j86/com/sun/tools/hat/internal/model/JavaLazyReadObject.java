@@ -30,10 +30,10 @@
  * at JavaSoft/Sun.
  */
 
-package j86.j86.com.sun.tools.hat.internal.model;
+package j86.com.sun.tools.hat.internal.model;
 
 import j86.java.io.IOException;
-import j86.j86.com.sun.tools.hat.internal.parser.ReadBuffer;
+import j86.com.sun.tools.hat.internal.parser.ReadBuffer;
 
 /*
  * Base class for lazily read Java heap objects.

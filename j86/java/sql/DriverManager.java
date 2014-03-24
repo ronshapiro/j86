@@ -29,7 +29,7 @@ import j86.java.util.Iterator;
 import j86.java.util.ServiceLoader;
 import j86.java.security.AccessController;
 import j86.java.security.PrivilegedAction;
-import j86.j86.java.util.concurrent.CopyOnWriteArrayList;
+import j86.java.util.concurrent.CopyOnWriteArrayList;
 import j86.sun.reflect.CallerSensitive;
 import j86.sun.reflect.Reflection;
 

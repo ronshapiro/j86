@@ -20,23 +20,23 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
+package j86.com.sun.org.apache.xml.internal.security.transforms.implementations;
 
 import j86.java.io.OutputStream;
 
 import javax.xml.transform.TransformerException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
-import j86.j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XPathAPI;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XPathFactory;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException;
+import j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter;
+import j86.com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transform;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformSpi;
+import j86.com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.XPathAPI;
+import j86.com.sun.org.apache.xml.internal.security.utils.XPathFactory;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -138,7 +138,7 @@ public class TransformXPath extends TransformSpi {
         }
 
         /**
-         * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter#isNodeInclude(org.w3c.dom.Node)
+         * @see j86.com.sun.org.apache.xml.internal.security.signature.NodeFilter#isNodeInclude(org.w3c.dom.Node)
          */
         public int isNodeInclude(Node currentNode) {
             try {

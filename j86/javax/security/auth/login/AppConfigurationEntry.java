@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
 import j86.java.util.Map;
 import j86.java.util.Collections;
@@ -39,7 +39,7 @@ import j86.java.util.Collections;
  * options.  Please refer to the {@code Configuration} class for
  * more information on the different control flags and their semantics.
  *
- * @see j86.j86.javax.security.auth.login.Configuration
+ * @see j86.javax.security.auth.login.Configuration
  */
 public class AppConfigurationEntry {
 

@@ -33,15 +33,15 @@
  * http://creativecommons.org/publicdomain/zero/1.0/
  */
 
-package j86.j86.java.util.concurrent;
+package j86.java.util.concurrent;
 import j86.java.util.Collection;
 import j86.java.util.Set;
 import j86.java.util.AbstractSet;
 import j86.java.util.Iterator;
 import j86.java.util.Spliterator;
 import j86.java.util.Spliterators;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.Consumer;
 
 /**
  * A {@link j86.java.util.Set} that uses an internal {@link CopyOnWriteArrayList}

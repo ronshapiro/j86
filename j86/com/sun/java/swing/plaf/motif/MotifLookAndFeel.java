@@ -23,25 +23,25 @@
  * questions.
  */
 
-package j86.j86.com.sun.java.swing.plaf.motif;
+package j86.com.sun.java.swing.plaf.motif;
 
 import j86.java.awt.Color;
 import j86.java.awt.Font;
 import j86.java.awt.Insets;
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.java.awt.event.InputEvent;
+import j86.java.awt.event.KeyEvent;
+import j86.java.awt.event.InputEvent;
 import j86.java.util.*;
 
 import j86.javax.swing.*;
-import j86.j86.javax.swing.plaf.*;
-import j86.j86.javax.swing.border.*;
-import j86.j86.javax.swing.text.JTextComponent;
-import j86.j86.javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.plaf.*;
+import j86.javax.swing.border.*;
+import j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.DefaultEditorKit;
 
-import j86.j86.j86.javax.swing.plaf.basic.BasicLookAndFeel;
-import j86.j86.j86.javax.swing.plaf.basic.BasicBorders;
-import j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxRenderer;
-import j86.j86.j86.javax.swing.plaf.basic.BasicComboBoxEditor;
+import j86.javax.swing.plaf.basic.BasicLookAndFeel;
+import j86.javax.swing.plaf.basic.BasicBorders;
+import j86.javax.swing.plaf.basic.BasicComboBoxRenderer;
+import j86.javax.swing.plaf.basic.BasicComboBoxEditor;
 
 import j86.sun.swing.SwingUtilities2;
 import j86.sun.awt.OSInfo;
@@ -132,7 +132,7 @@ public class MotifLookAndFeel extends BasicLookAndFeel
     protected void initClassDefaults(UIDefaults table)
     {
         super.initClassDefaults(table);
-        String motifPackageName = "j86.j86.com.sun.java.swing.plaf.motif.";
+        String motifPackageName = "j86.com.sun.java.swing.plaf.motif.";
 
         Object[] uiDefaults = {
                    "ButtonUI", motifPackageName + "MotifButtonUI",
@@ -178,7 +178,7 @@ public class MotifLookAndFeel extends BasicLookAndFeel
      * used for getting localized defaults.
      */
     private void initResourceBundle(UIDefaults table) {
-        table.addResourceBundle( "j86.j86.com.sun.java.swing.plaf.motif.resources.motif" );
+        table.addResourceBundle( "j86.com.sun.java.swing.plaf.motif.resources.motif" );
     }
 
 

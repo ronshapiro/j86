@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.sun.nio.fs;
+package j86.sun.nio.fs;
 
-import j86.j86.java.util.regex.PatternSyntaxException;
+import j86.java.util.regex.PatternSyntaxException;
 
 public class Globs {
     private Globs() { }

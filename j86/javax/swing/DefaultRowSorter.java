@@ -37,7 +37,7 @@ import j86.javax.swing.SortOrder;
  * filtering around a grid-based data model.
  * Beyond creating and installing a <code>RowSorter</code>, you very rarely
  * need to interact with one directly.  Refer to
- * {@link j86.j86.javax.swing.table.TableRowSorter TableRowSorter} for a concrete
+ * {@link j86.javax.swing.table.TableRowSorter TableRowSorter} for a concrete
  * implementation of <code>RowSorter</code> for <code>JTable</code>.
  * <p>
  * Sorting is done based on the current <code>SortKey</code>s, in order.
@@ -70,7 +70,7 @@ import j86.javax.swing.SortOrder;
  * By default, rows are in unsorted order (the same as the model) and
  * every column is sortable. The default <code>Comparator</code>s are
  * documented in the subclasses (for example, {@link
- * j86.j86.javax.swing.table.TableRowSorter TableRowSorter}).
+ * j86.javax.swing.table.TableRowSorter TableRowSorter}).
  * <p>
  * If the underlying model structure changes (the
  * <code>modelStructureChanged</code> method is invoked) the following
@@ -78,7 +78,7 @@ import j86.javax.swing.SortOrder;
  * column, current sort order, and whether each column is sortable. To
  * find the default <code>Comparator</code>s, see the concrete
  * implementation (for example, {@link
- * j86.j86.javax.swing.table.TableRowSorter TableRowSorter}).  The default
+ * j86.javax.swing.table.TableRowSorter TableRowSorter}).  The default
  * sort order is unsorted (the same as the model), and columns are
  * sortable by default.
  * <p>
@@ -104,8 +104,8 @@ import j86.javax.swing.SortOrder;
  *
  * @param <M> the type of the model
  * @param <I> the type of the identifier passed to the <code>RowFilter</code>
- * @see j86.j86.javax.swing.table.TableRowSorter
- * @see j86.j86.javax.swing.table.DefaultTableModel
+ * @see j86.javax.swing.table.TableRowSorter
+ * @see j86.javax.swing.table.DefaultTableModel
  * @see j86.java.text.Collator
  * @since 1.6
  */

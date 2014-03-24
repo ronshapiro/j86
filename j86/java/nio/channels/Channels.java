@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.nio.channels;
+package j86.java.nio.channels;
 
 import j86.java.io.FileInputStream;
 import j86.java.io.FileOutputStream;
@@ -33,15 +33,15 @@ import j86.java.io.Reader;
 import j86.java.io.Writer;
 import j86.java.io.IOException;
 import j86.java.nio.ByteBuffer;
-import j86.j86.java.nio.charset.Charset;
-import j86.j86.java.nio.charset.CharsetDecoder;
-import j86.j86.java.nio.charset.CharsetEncoder;
-import j86.j86.java.nio.charset.UnsupportedCharsetException;
-import j86.j86.j86.java.nio.channels.spi.AbstractInterruptibleChannel;
-import j86.j86.java.util.concurrent.ExecutionException;
-import j86.j86.j86.sun.nio.ch.ChannelInputStream;
-import j86.j86.j86.sun.nio.cs.StreamDecoder;
-import j86.j86.j86.sun.nio.cs.StreamEncoder;
+import j86.java.nio.charset.Charset;
+import j86.java.nio.charset.CharsetDecoder;
+import j86.java.nio.charset.CharsetEncoder;
+import j86.java.nio.charset.UnsupportedCharsetException;
+import j86.java.nio.channels.spi.AbstractInterruptibleChannel;
+import j86.java.util.concurrent.ExecutionException;
+import j86.sun.nio.ch.ChannelInputStream;
+import j86.sun.nio.cs.StreamDecoder;
+import j86.sun.nio.cs.StreamEncoder;
 
 
 /**
@@ -122,7 +122,7 @@ public final class Channels {
      */
     public static InputStream newInputStream(ReadableByteChannel ch) {
         checkNotNull(ch, "ch");
-        return new j86.j86.j86.sun.nio.ch.ChannelInputStream(ch);
+        return new j86.sun.nio.ch.ChannelInputStream(ch);
     }
 
     /**

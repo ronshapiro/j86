@@ -28,9 +28,9 @@ import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.IOException;
 import j86.java.util.Properties;
 import j86.java.util.Set;
-import j86.j86.java.util.jar.JarFile;
-import j86.j86.java.util.jar.Manifest;
-import j86.j86.java.util.jar.Attributes;
+import j86.java.util.jar.JarFile;
+import j86.java.util.jar.Manifest;
+import j86.java.util.jar.Attributes;
 
 /*
  * Support class used by JVMTI and VM attach mechanism.

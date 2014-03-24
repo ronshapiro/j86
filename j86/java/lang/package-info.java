@@ -60,8 +60,8 @@
  * <a name="charenc"></a>
  * <h3>Character Encodings</h3>
  *
- * The specification of the {@link j86.j86.java.nio.charset.Charset
- * j86.j86.java.nio.charset.Charset} class describes the naming conventions
+ * The specification of the {@link j86.java.nio.charset.Charset
+ * j86.java.nio.charset.Charset} class describes the naming conventions
  * for character encodings as well as the set of standard encodings
  * that must be supported by every implementation of the Java
  * platform.

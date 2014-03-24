@@ -23,13 +23,13 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 
-import j86.j86.java.awt.geom.AffineTransform;
-import j86.j86.java.awt.geom.Point2D;
-import j86.j86.java.awt.geom.Rectangle2D;
+import j86.java.awt.geom.AffineTransform;
+import j86.java.awt.geom.Point2D;
+import j86.java.awt.geom.Rectangle2D;
 
-import j86.j86.java.lang.annotation.Native;
+import j86.java.lang.annotation.Native;
 
 /**
  * The <code>PageFormat</code> class describes the size and
@@ -331,7 +331,7 @@ public class PageFormat implements Cloneable
      * constructor.
      * @return the matrix used to translate user space rendering
      * to the orientation of the page.
-     * @see j86.j86.java.awt.geom.AffineTransform
+     * @see j86.java.awt.geom.AffineTransform
      */
     public double[] getMatrix() {
         double[] matrix = new double[6];

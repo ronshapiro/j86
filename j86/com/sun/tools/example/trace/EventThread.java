@@ -35,8 +35,8 @@
 package j86.com.sun.tools.example.trace;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.request.*;
-import j86.j86.com.sun.jdi.event.*;
+import j86.com.sun.jdi.request.*;
+import j86.com.sun.jdi.event.*;
 
 import j86.java.util.*;
 import j86.java.io.PrintWriter;

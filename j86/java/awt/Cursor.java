@@ -34,7 +34,7 @@ import j86.java.util.StringTokenizer;
 
 import j86.java.security.AccessController;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 import j86.sun.awt.AWTAccessor;
 
 /**

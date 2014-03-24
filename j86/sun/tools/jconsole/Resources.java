@@ -25,9 +25,9 @@
 
 package j86.sun.tools.jconsole;
 
-import j86.j86.java.awt.event.KeyEvent;
-import j86.j86.j86.java.lang.reflect.Field;
-import j86.j86.j86.java.lang.reflect.Modifier;
+import j86.java.awt.event.KeyEvent;
+import j86.java.lang.reflect.Field;
+import j86.java.lang.reflect.Modifier;
 import j86.java.text.MessageFormat;
 import j86.java.util.Collections;
 import j86.java.util.IdentityHashMap;

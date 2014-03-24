@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.java.util.stream;
+package j86.java.util.stream;
 
 import j86.java.util.AbstractMap;
 import j86.java.util.AbstractSet;
@@ -44,18 +44,18 @@ import j86.java.util.Objects;
 import j86.java.util.Optional;
 import j86.java.util.Set;
 import j86.java.util.StringJoiner;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.java.util.function.BiConsumer;
-import j86.j86.java.util.function.BiFunction;
-import j86.j86.java.util.function.BinaryOperator;
-import j86.j86.java.util.function.Consumer;
-import j86.j86.java.util.function.Function;
-import j86.j86.java.util.function.Predicate;
-import j86.j86.java.util.function.Supplier;
-import j86.j86.java.util.function.ToDoubleFunction;
-import j86.j86.java.util.function.ToIntFunction;
-import j86.j86.java.util.function.ToLongFunction;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.java.util.function.BiConsumer;
+import j86.java.util.function.BiFunction;
+import j86.java.util.function.BinaryOperator;
+import j86.java.util.function.Consumer;
+import j86.java.util.function.Function;
+import j86.java.util.function.Predicate;
+import j86.java.util.function.Supplier;
+import j86.java.util.function.ToDoubleFunction;
+import j86.java.util.function.ToIntFunction;
+import j86.java.util.function.ToLongFunction;
 
 /**
  * Implementations of {@link Collector} that implement various useful reduction
@@ -1169,7 +1169,7 @@ public final class Collectors {
      * @apiNote
      * It is common for either the key or the value to be the input elements.
      * In this case, the utility method
-     * {@link j86.j86.java.util.function.Function#identity()} may be helpful.
+     * {@link j86.java.util.function.Function#identity()} may be helpful.
      * For example, the following produces a {@code Map} mapping
      * students to their grade point average:
      * <pre>{@code
@@ -1336,7 +1336,7 @@ public final class Collectors {
      * @apiNote
      * It is common for either the key or the value to be the input elements.
      * In this case, the utility method
-     * {@link j86.j86.java.util.function.Function#identity()} may be helpful.
+     * {@link j86.java.util.function.Function#identity()} may be helpful.
      * For example, the following produces a {@code Map} mapping
      * students to their grade point average:
      * <pre>{@code

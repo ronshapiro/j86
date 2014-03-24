@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.geom;
+package j86.sun.awt.geom;
 
 final class ChainEnd {
     CurveLink head;

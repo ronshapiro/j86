@@ -25,8 +25,8 @@
 
 package j86.com.sun.jdi;
 
-import j86.j86.com.sun.jdi.event.EventQueue;
-import j86.j86.com.sun.jdi.request.EventRequestManager;
+import j86.com.sun.jdi.event.EventQueue;
+import j86.com.sun.jdi.request.EventRequestManager;
 
 import j86.java.util.List;
 import j86.java.util.Map;
@@ -43,8 +43,8 @@ import j86.java.util.Map;
  * are supported directly by this interface.
  * <P>
  * Instances of this interface are created by instances of
- * {@link j86.j86.com.sun.jdi.connect.Connector}. For example,
- * an {@link j86.j86.com.sun.jdi.connect.AttachingConnector AttachingConnector}
+ * {@link j86.com.sun.jdi.connect.Connector}. For example,
+ * an {@link j86.com.sun.jdi.connect.AttachingConnector AttachingConnector}
  * attaches to a target VM and returns its virtual machine mirror.
  * A Connector will typically create a VirtualMachine by invoking
  * the VirtualMachineManager's {@link
@@ -52,14 +52,14 @@ import j86.java.util.Map;
  * createVirtualMachine(Connection) method.
  * <p>
  * Note that a target VM launched by a launching connector is not
- * guaranteed to be stable until after the {@link j86.j86.com.sun.jdi.event.VMStartEvent} has been
+ * guaranteed to be stable until after the {@link j86.com.sun.jdi.event.VMStartEvent} has been
  * received.
  * <p>
  * Any method on <code>VirtualMachine</code> which
  * takes <code>VirtualMachine</code> as an parameter may throw
  * {@link j86.com.sun.jdi.VMDisconnectedException} if the target VM is
- * disconnected and the {@link j86.j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
- * available to be read from the {@link j86.j86.com.sun.jdi.event.EventQueue}.
+ * disconnected and the {@link j86.com.sun.jdi.event.VMDisconnectEvent} has been or is
+ * available to be read from the {@link j86.com.sun.jdi.event.EventQueue}.
  * <p>
  * Any method on <code>VirtualMachine</code> which
  * takes <code>VirtualMachine</code> as an parameter may throw
@@ -406,11 +406,11 @@ public interface VirtualMachine extends Mirror {
     /**
      * Returns the {@link j86.java.lang.Process} object for this
      * virtual machine if launched
-     * by a {@link j86.j86.com.sun.jdi.connect.LaunchingConnector}
+     * by a {@link j86.com.sun.jdi.connect.LaunchingConnector}
      *
      * @return the {@link j86.java.lang.Process} object for this virtual
      * machine, or null if it was not launched by a
-     * {@link j86.j86.com.sun.jdi.connect.LaunchingConnector}.
+     * {@link j86.com.sun.jdi.connect.LaunchingConnector}.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only
      * -see {@link VirtualMachine#canBeModified()}.
      */
@@ -526,7 +526,7 @@ public interface VirtualMachine extends Mirror {
     /**
      * Determines if the target VM supports filtering
      * events by specific instance object.  For example,
-     * see {@link j86.j86.com.sun.jdi.request.BreakpointRequest#addInstanceFilter}.
+     * see {@link j86.com.sun.jdi.request.BreakpointRequest#addInstanceFilter}.
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -595,8 +595,8 @@ public interface VirtualMachine extends Mirror {
 
     /**
      * Determines if the target VM supports the creation of
-     * {@link j86.j86.com.sun.jdi.request.VMDeathRequest}s.
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createVMDeathRequest
+     * {@link j86.com.sun.jdi.request.VMDeathRequest}s.
+     * @see j86.com.sun.jdi.request.EventRequestManager#createVMDeathRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -608,8 +608,8 @@ public interface VirtualMachine extends Mirror {
     /**
      * Determines if the target VM supports the inclusion of return values
      * in
-     * {@link j86.j86.com.sun.jdi.event.MethodExitEvent}s.
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMethodExitRequest
+     * {@link j86.com.sun.jdi.event.MethodExitEvent}s.
+     * @see j86.com.sun.jdi.request.EventRequestManager#createMethodExitRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
@@ -638,7 +638,7 @@ public interface VirtualMachine extends Mirror {
      * Determines if the target VM supports the filtering of
      * class prepare events by source name.
      *
-     * see {@link j86.j86.com.sun.jdi.request.ClassPrepareRequest#addSourceNameFilter}.
+     * see {@link j86.com.sun.jdi.request.ClassPrepareRequest#addSourceNameFilter}.
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.
      *
@@ -674,14 +674,14 @@ public interface VirtualMachine extends Mirror {
 
     /**
      * Determines if the target VM supports the creation of
-     * {@link j86.j86.com.sun.jdi.request.MonitorContendedEnterRequest}s.
-     * {@link j86.j86.com.sun.jdi.request.MonitorContendedEnteredRequest}s.
-     * {@link j86.j86.com.sun.jdi.request.MonitorWaitRequest}s.
-     * {@link j86.j86.com.sun.jdi.request.MonitorWaitedRequest}s.
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnterRequest
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnteredRequest
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitRequest
-     * @see j86.j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitedRequest
+     * {@link j86.com.sun.jdi.request.MonitorContendedEnterRequest}s.
+     * {@link j86.com.sun.jdi.request.MonitorContendedEnteredRequest}s.
+     * {@link j86.com.sun.jdi.request.MonitorWaitRequest}s.
+     * {@link j86.com.sun.jdi.request.MonitorWaitedRequest}s.
+     * @see j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnterRequest
+     * @see j86.com.sun.jdi.request.EventRequestManager#createMonitorContendedEnteredRequest
+     * @see j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitRequest
+     * @see j86.com.sun.jdi.request.EventRequestManager#createMonitorWaitedRequest
      *
      * @return <code>true</code> if the feature is supported,
      * <code>false</code> otherwise.

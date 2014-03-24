@@ -27,13 +27,13 @@
 
 /*
  * This class contains a map which records the locale list string for
- * each resource in j86.j86.sun.util.resources & j86.j86.sun.text.resources.
+ * each resource in j86.sun.util.resources & j86.sun.text.resources.
  * It is used to avoid loading non-existent localized resources so that
  * jar files won't be opened unnecessary to look up them.
  *
  * @since 1.6
  */
-package j86.j86.j86.sun.util.locale.provider;
+package j86.sun.util.locale.provider;
 
 import j86.java.util.HashMap;
 

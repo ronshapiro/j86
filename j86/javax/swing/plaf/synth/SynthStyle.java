@@ -22,17 +22,17 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.synth;
+package j86.javax.swing.plaf.synth;
 
 import j86.java.awt.*;
 import j86.javax.swing.*;
-import j86.j86.javax.swing.border.Border;
-import j86.j86.javax.swing.plaf.UIResource;
-import j86.j86.j86.javax.swing.plaf.basic.BasicLookAndFeel;
-import j86.j86.javax.swing.text.DefaultEditorKit;
+import j86.javax.swing.border.Border;
+import j86.javax.swing.plaf.UIResource;
+import j86.javax.swing.plaf.basic.BasicLookAndFeel;
+import j86.javax.swing.text.DefaultEditorKit;
 import j86.java.util.HashMap;
 import j86.java.util.Map;
-import j86.j86.javax.swing.text.JTextComponent;
+import j86.javax.swing.text.JTextComponent;
 
 /**
  * <code>SynthStyle</code> is a set of style properties.

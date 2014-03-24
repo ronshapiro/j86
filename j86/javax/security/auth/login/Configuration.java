@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.javax.security.auth.login;
+package j86.javax.security.auth.login;
 
 import j86.javax.security.auth.AuthPermission;
 
@@ -133,8 +133,8 @@ import j86.sun.security.jca.GetInstance;
  *
  * <pre>
  * Login {
- *   j86.j86.com.sun.security.auth.module.UnixLoginModule required;
- *   j86.j86.com.sun.security.auth.module.Krb5LoginModule optional
+ *   j86.com.sun.security.auth.module.UnixLoginModule required;
+ *   j86.com.sun.security.auth.module.Krb5LoginModule optional
  *                   useTicketCache="true"
  *                   ticketCache="${user.home}${/}tickets";
  * };
@@ -142,10 +142,10 @@ import j86.sun.security.jca.GetInstance;
  *
  * <p> This {@code Configuration} specifies that an application named,
  * "Login", requires users to first authenticate to the
- * <i>j86.j86.com.sun.security.auth.module.UnixLoginModule</i>, which is
+ * <i>j86.com.sun.security.auth.module.UnixLoginModule</i>, which is
  * required to succeed.  Even if the <i>UnixLoginModule</i>
  * authentication fails, the
- * <i>j86.j86.com.sun.security.auth.module.Krb5LoginModule</i>
+ * <i>j86.com.sun.security.auth.module.Krb5LoginModule</i>
  * still gets invoked.  This helps hide the source of failure.
  * Since the <i>Krb5LoginModule</i> is <i>Optional</i>, the overall
  * authentication succeeds only if the <i>UnixLoginModule</i>
@@ -182,7 +182,7 @@ import j86.sun.security.jca.GetInstance;
  * Java Cryptography Architecture Standard Algorithm Name Documentation</a>
  * for a list of standard Configuration types.
  *
- * @see j86.j86.javax.security.auth.login.LoginContext
+ * @see j86.javax.security.auth.login.LoginContext
  * @see j86.java.security.Security security properties
  */
 public abstract class Configuration {

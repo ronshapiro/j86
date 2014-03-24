@@ -41,19 +41,19 @@ package j86.java.text;
 import j86.java.io.IOException;
 import j86.java.io.ObjectOutputStream;
 import j86.java.io.Serializable;
-import j86.j86.java.lang.ref.SoftReference;
-import j86.j86.java.text.spi.DateFormatSymbolsProvider;
+import j86.java.lang.ref.SoftReference;
+import j86.java.text.spi.DateFormatSymbolsProvider;
 import j86.java.util.Arrays;
 import j86.java.util.Locale;
 import j86.java.util.Objects;
 import j86.java.util.ResourceBundle;
 import j86.java.util.TimeZone;
-import j86.j86.java.util.concurrent.ConcurrentHashMap;
-import j86.j86.java.util.concurrent.ConcurrentMap;
-import j86.j86.j86.sun.util.locale.provider.LocaleProviderAdapter;
-import j86.j86.j86.sun.util.locale.provider.LocaleServiceProviderPool;
-import j86.j86.j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
-import j86.j86.j86.sun.util.locale.provider.TimeZoneNameUtility;
+import j86.java.util.concurrent.ConcurrentHashMap;
+import j86.java.util.concurrent.ConcurrentMap;
+import j86.sun.util.locale.provider.LocaleProviderAdapter;
+import j86.sun.util.locale.provider.LocaleServiceProviderPool;
+import j86.sun.util.locale.provider.ResourceBundleBasedAdapter;
+import j86.sun.util.locale.provider.TimeZoneNameUtility;
 
 /**
  * <code>DateFormatSymbols</code> is a public class for encapsulating
@@ -108,7 +108,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * locale. This constructor can only
      * construct instances for the locales supported by the Java
      * runtime environment, not for those supported by installed
-     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      * <p>This is equivalent to calling
@@ -131,7 +131,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * resources for the given locale. This constructor can only
      * construct instances for the locales supported by the Java
      * runtime environment, not for those supported by installed
-     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations. For full locale coverage, use the
      * {@link #getInstance(Locale) getInstance} method.
      *
@@ -287,7 +287,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * localized instances.
      * The returned array represents the union of locales supported by the
      * Java runtime and by installed
-     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.  It must contain at least a <code>Locale</code>
      * instance equal to {@link j86.java.util.Locale#US Locale.US}.
      *
@@ -306,7 +306,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * locale.  This method provides access to <code>DateFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.
      * <p>This is equivalent to calling {@link #getInstance(Locale)
      *     getInstance(Locale.getDefault(Locale.Category.FORMAT))}.
@@ -324,7 +324,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * locale.  This method provides access to <code>DateFormatSymbols</code>
      * instances for locales supported by the Java runtime itself as well
      * as for those supported by installed
-     * {@link j86.j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
+     * {@link j86.java.text.spi.DateFormatSymbolsProvider DateFormatSymbolsProvider}
      * implementations.
      * @param locale the given locale.
      * @return a <code>DateFormatSymbols</code> instance.
@@ -526,7 +526,7 @@ public class DateFormatSymbols implements Serializable, Cloneable {
      * on this <code>DateFormatSymbols</code> instance, then the strings
      * provided by that call are returned. Otherwise, the returned array
      * contains names provided by the Java runtime and by installed
-     * {@link j86.j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider}
+     * {@link j86.java.util.spi.TimeZoneNameProvider TimeZoneNameProvider}
      * implementations.
      *
      * @return the time zone strings.

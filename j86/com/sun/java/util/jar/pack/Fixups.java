@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.com.sun.j86.j86.java.util.jar.pack;
+package j86.com.sun.j86.java.util.jar.pack;
 
-import j86.com.sun.j86.j86.java.util.jar.pack.ConstantPool.Entry;
+import j86.com.sun.j86.java.util.jar.pack.ConstantPool.Entry;
 import j86.java.util.AbstractCollection;
 import j86.java.util.ArrayList;
 import j86.java.util.Collection;

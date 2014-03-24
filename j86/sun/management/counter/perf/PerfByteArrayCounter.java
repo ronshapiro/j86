@@ -23,9 +23,9 @@
  * questions.
  */
 
-package j86.j86.j86.sun.management.counter.perf;
+package j86.sun.management.counter.perf;
 
-import j86.j86.sun.management.counter.*;
+import j86.sun.management.counter.*;
 import j86.java.nio.*;
 
 public class PerfByteArrayCounter extends AbstractCounter

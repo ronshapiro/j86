@@ -33,7 +33,7 @@ import j86.javax.management.MBeanServer;
 import j86.javax.management.ObjectName;
 import j86.javax.management.OperationsException;
 import j86.javax.management.ReflectionException;
-import j86.j86.javax.management.loading.ClassLoaderRepository;
+import j86.javax.management.loading.ClassLoaderRepository;
 
 /**
  * <p>This interface specifies the behavior to be implemented by an

@@ -33,7 +33,7 @@ package j86.javax.security.cert;
  * exist for compatibility with earlier versions of the
  * Java Secure Sockets Extension (JSSE). New applications should instead
  * use the standard Java SE certificate classes located in
- * {@code j86.j86.java.security.cert}.</em></p>
+ * {@code j86.java.security.cert}.</em></p>
  *
  * @author Hemma Prafullchandra
  * @since 1.4

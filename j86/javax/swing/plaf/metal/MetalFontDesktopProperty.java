@@ -22,7 +22,7 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
-package j86.j86.j86.javax.swing.plaf.metal;
+package j86.javax.swing.plaf.metal;
 
 import j86.java.awt.*;
 
@@ -31,7 +31,7 @@ import j86.java.awt.*;
  * is only used on Windows.
  *
  */
-class MetalFontDesktopProperty extends j86.j86.com.sun.java.swing.plaf.windows.DesktopProperty {
+class MetalFontDesktopProperty extends j86.com.sun.java.swing.plaf.windows.DesktopProperty {
     /**
      * Maps from metal font theme type as defined in MetalTheme
      * to the corresponding desktop property name.

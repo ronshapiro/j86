@@ -20,7 +20,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package j86.j86.com.sun.org.apache.xml.internal.security.signature;
+package j86.com.sun.org.apache.xml.internal.security.signature;
 
 import j86.java.io.IOException;
 import j86.java.util.ArrayList;
@@ -32,16 +32,16 @@ import j86.java.util.Set;
 
 import javax.xml.parsers.ParserConfigurationException;
 
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
-import j86.j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
-import j86.j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-import j86.j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.Constants;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.I18n;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
-import j86.j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
-import j86.j86.j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
+import j86.com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+import j86.com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+import j86.com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+import j86.com.sun.org.apache.xml.internal.security.transforms.Transforms;
+import j86.com.sun.org.apache.xml.internal.security.utils.Constants;
+import j86.com.sun.org.apache.xml.internal.security.utils.I18n;
+import j86.com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy;
+import j86.com.sun.org.apache.xml.internal.security.utils.XMLUtils;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver;
+import j86.com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi;
 import org.w3c.dom.Attr;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
@@ -61,8 +61,8 @@ public class Manifest extends SignatureElementProxy {
     public static final int MAXIMUM_REFERENCE_COUNT = 30;
 
     /** {@link org.apache.commons.logging} logging facility */
-    private static j86.j86.java.util.logging.Logger log =
-        j86.j86.java.util.logging.Logger.getLogger(Manifest.class.getName());
+    private static j86.java.util.logging.Logger log =
+        j86.java.util.logging.Logger.getLogger(Manifest.class.getName());
 
     /** Field references */
     private List<Reference> references;
@@ -157,13 +157,13 @@ public class Manifest extends SignatureElementProxy {
 
     /**
      * This <code>addDocument</code> method is used to add a new resource to the
-     * signed info. A {@link j86.j86.com.sun.org.apache.xml.internal.security.signature.Reference} is built
+     * signed info. A {@link j86.com.sun.org.apache.xml.internal.security.signature.Reference} is built
      * from the supplied values.
      *
      * @param baseURI the URI of the resource where the XML instance was stored
      * @param referenceURI <code>URI</code> attribute in <code>Reference</code> for specifying
      * where data is
-     * @param transforms j86.j86.com.sun.org.apache.xml.internal.security.signature.Transforms object with an ordered
+     * @param transforms j86.com.sun.org.apache.xml.internal.security.signature.Transforms object with an ordered
      * list of transformations to be performed.
      * @param digestURI The digest algorithm URI to be used.
      * @param referenceId
@@ -273,11 +273,11 @@ public class Manifest extends SignatureElementProxy {
      *
      * @return true if all References verify, false if one or more do not verify.
      * @throws MissingResourceFailureException if a {@link Reference} does not verify
-     * (throws a {@link j86.j86.com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException}
+     * (throws a {@link j86.com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException}
      * because of an uninitialized {@link XMLSignatureInput}
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.Reference#verify
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.SignedInfo#verify()
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.Reference#verify
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.SignedInfo#verify()
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException
      * @throws XMLSecurityException
      */
     public boolean verifyReferences()
@@ -298,11 +298,11 @@ public class Manifest extends SignatureElementProxy {
      * @param followManifests
      * @return true if all References verify, false if one or more do not verify.
      * @throws MissingResourceFailureException if a {@link Reference} does not verify
-     * (throws a {@link j86.j86.com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException}
+     * (throws a {@link j86.com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException}
      * because of an uninitialized {@link XMLSignatureInput}
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.Reference#verify
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.SignedInfo#verify(boolean)
-     * @see j86.j86.com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.Reference#verify
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.SignedInfo#verify(boolean)
+     * @see j86.com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException
      * @throws XMLSecurityException
      */
     public boolean verifyReferences(boolean followManifests)
@@ -313,9 +313,9 @@ public class Manifest extends SignatureElementProxy {
                     this.constructionElement.getFirstChild(), Constants._TAG_REFERENCE
                 );
         }
-        if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-            log.log(j86.j86.java.util.logging.Level.FINE, "verify " + referencesEl.length + " References");
-            log.log(j86.j86.java.util.logging.Level.FINE, "I am " + (followManifests
+        if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+            log.log(j86.java.util.logging.Level.FINE, "verify " + referencesEl.length + " References");
+            log.log(j86.java.util.logging.Level.FINE, "I am " + (followManifests
                 ? "" : "not") + " requested to follow nested Manifests");
         }
         if (referencesEl.length == 0) {
@@ -344,14 +344,14 @@ public class Manifest extends SignatureElementProxy {
                 if (!currentRefVerified) {
                     verify = false;
                 }
-                if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                    log.log(j86.j86.java.util.logging.Level.FINE, "The Reference has Type " + currentRef.getType());
+                if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                    log.log(j86.java.util.logging.Level.FINE, "The Reference has Type " + currentRef.getType());
                 }
 
                 // was verification successful till now and do we want to verify the Manifest?
                 if (verify && followManifests && currentRef.typeIsReferenceToManifest()) {
-                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                        log.log(j86.j86.java.util.logging.Level.FINE, "We have to follow a nested Manifest");
+                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                        log.log(j86.java.util.logging.Level.FINE, "We have to follow a nested Manifest");
                     }
 
                     try {
@@ -375,8 +375,8 @@ public class Manifest extends SignatureElementProxy {
                                         );
                                     break findManifest;
                                 } catch (XMLSecurityException ex) {
-                                    if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                                        log.log(j86.j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
+                                    if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                                        log.log(j86.java.util.logging.Level.FINE, ex.getMessage(), ex);
                                     }
                                     // Hm, seems not to be a ds:Manifest
                                 }
@@ -398,10 +398,10 @@ public class Manifest extends SignatureElementProxy {
                         if (!referencedManifestValid) {
                             verify = false;
 
-                            log.log(j86.j86.java.util.logging.Level.WARNING, "The nested Manifest was invalid (bad)");
+                            log.log(j86.java.util.logging.Level.WARNING, "The nested Manifest was invalid (bad)");
                         } else {
-                            if (log.isLoggable(j86.j86.java.util.logging.Level.FINE)) {
-                                log.log(j86.j86.java.util.logging.Level.FINE, "The nested Manifest was valid (good)");
+                            if (log.isLoggable(j86.java.util.logging.Level.FINE)) {
+                                log.log(j86.java.util.logging.Level.FINE, "The nested Manifest was valid (good)");
                             }
                         }
                     } catch (IOException ex) {

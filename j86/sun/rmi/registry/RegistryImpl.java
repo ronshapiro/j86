@@ -33,12 +33,12 @@ import j86.java.io.FilePermission;
 import j86.java.io.IOException;
 import j86.java.net.*;
 import j86.java.rmi.*;
-import j86.j86.java.rmi.server.ObjID;
-import j86.j86.java.rmi.server.RemoteServer;
-import j86.j86.java.rmi.server.ServerNotActiveException;
-import j86.j86.java.rmi.registry.Registry;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.RemoteServer;
+import j86.java.rmi.server.ServerNotActiveException;
+import j86.java.rmi.registry.Registry;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
 import j86.java.security.AccessControlContext;
 import j86.java.security.AccessController;
 import j86.java.security.CodeSource;
@@ -68,9 +68,9 @@ import j86.sun.rmi.transport.Target;
  *
  * The LocateRegistry class is used to obtain registry for different hosts.
  *
- * @see j86.j86.java.rmi.registry.LocateRegistry
+ * @see j86.java.rmi.registry.LocateRegistry
  */
-public class RegistryImpl extends j86.j86.java.rmi.server.RemoteServer
+public class RegistryImpl extends j86.java.rmi.server.RemoteServer
         implements Registry
 {
 
@@ -367,7 +367,7 @@ public class RegistryImpl extends j86.j86.java.rmi.server.RemoteServer
 
             /*
              * Fix bugid 4242317: Classes defined by this class loader should
-             * be annotated with the value of the "j86.j86.java.rmi.server.codebase"
+             * be annotated with the value of the "j86.java.rmi.server.codebase"
              * property, not the "file:" URLs for the CLASSPATH elements.
              */
             j86.sun.rmi.server.LoaderHandler.registerCodebaseLoader(cl);
@@ -418,7 +418,7 @@ public class RegistryImpl extends j86.j86.java.rmi.server.RemoteServer
             new j86.java.security.PrivilegedAction<PermissionCollection>() {
                 public PermissionCollection run() {
                     CodeSource codesource = new CodeSource(null,
-                        (j86.j86.java.security.cert.Certificate[]) null);
+                        (j86.java.security.cert.Certificate[]) null);
                     Policy p = j86.java.security.Policy.getPolicy();
                     if (p != null) {
                         return p.getPermissions(codesource);
@@ -447,7 +447,7 @@ public class RegistryImpl extends j86.j86.java.rmi.server.RemoteServer
          */
         ProtectionDomain pd = new ProtectionDomain(
             new CodeSource(null,
-                (j86.j86.java.security.cert.Certificate[]) null), perms);
+                (j86.java.security.cert.Certificate[]) null), perms);
         return new AccessControlContext(new ProtectionDomain[] { pd });
     }
 }

@@ -93,7 +93,7 @@ public interface ThreadReference extends ObjectReference {
      * suspends on this thread is decremented. If it is decremented to 0,
      * the thread will continue to execute.
      * Note: the normal way to resume from an event related suspension is
-     * via {@link j86.j86.com.sun.jdi.event.EventSet#resume}.
+     * via {@link j86.com.sun.jdi.event.EventSet#resume}.
      * @throws VMCannotBeModifiedException if the VirtualMachine is read-only - see {@link VirtualMachine#canBeModified()}.
      */
     void resume();
@@ -416,7 +416,7 @@ public interface ThreadReference extends ObjectReference {
      * synchronized method) and locks acquired by entering
      * synchronized blocks within the called method are
      * released. Note: this does not apply to native locks or
-     * j86.j86.j86.java.util.concurrent.locks locks.
+     * j86.java.util.concurrent.locks locks.
      * <p>
      * Events, such as MethodExit, are generated as they would be in
      * a normal return.

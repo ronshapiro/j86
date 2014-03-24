@@ -23,20 +23,20 @@
  * questions.
  */
 
-package j86.j86.java.rmi.registry;
+package j86.java.rmi.registry;
 
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.server.ObjID;
-import j86.j86.java.rmi.server.RMIClientSocketFactory;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
-import j86.j86.java.rmi.server.RemoteRef;
-import j86.j86.java.rmi.server.UnicastRemoteObject;
+import j86.java.rmi.server.ObjID;
+import j86.java.rmi.server.RMIClientSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RemoteRef;
+import j86.java.rmi.server.UnicastRemoteObject;
 import j86.sun.rmi.registry.RegistryImpl;
 import j86.sun.rmi.server.UnicastRef2;
 import j86.sun.rmi.server.UnicastRef;
 import j86.sun.rmi.server.Util;
 import j86.sun.rmi.transport.LiveRef;
-import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
+import j86.sun.rmi.transport.tcp.TCPEndpoint;
 
 /**
  * <code>LocateRegistry</code> is used to obtain a reference to a bootstrap
@@ -52,7 +52,7 @@ import j86.j86.sun.rmi.transport.tcp.TCPEndpoint;
  * @author  Ann Wollrath
  * @author  Peter Jones
  * @since   JDK1.1
- * @see     j86.j86.java.rmi.registry.Registry
+ * @see     j86.java.rmi.registry.Registry
  */
 public final class LocateRegistry {
 
@@ -167,7 +167,7 @@ public final class LocateRegistry {
          * client socket factory.  If the supplied client socket factory is
          * null, then the ref type is a UnicastRef, otherwise the ref type
          * is a UnicastRef2.  If the property
-         * j86.j86.java.rmi.server.ignoreStubClasses is true, then the proxy
+         * j86.java.rmi.server.ignoreStubClasses is true, then the proxy
          * returned is an instance of a dynamic proxy class that implements
          * the Registry interface; otherwise the proxy returned is an
          * instance of the pregenerated stub class for RegistryImpl.

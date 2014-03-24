@@ -23,12 +23,12 @@
  * questions.
  */
 
-package j86.j86.java.rmi.activation;
+package j86.java.rmi.activation;
 
 import j86.java.rmi.Remote;
 import j86.java.rmi.RemoteException;
-import j86.j86.java.rmi.activation.UnknownGroupException;
-import j86.j86.java.rmi.activation.UnknownObjectException;
+import j86.java.rmi.activation.UnknownGroupException;
+import j86.java.rmi.activation.UnknownObjectException;
 
 /**
  * The <code>ActivationSystem</code> provides a means for registering

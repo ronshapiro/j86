@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.awt.print;
+package j86.java.awt.print;
 import j86.java.io.IOException;
 
 /**

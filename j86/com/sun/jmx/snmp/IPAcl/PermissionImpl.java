@@ -24,7 +24,7 @@
  */
 
 
-package j86.j86.com.sun.jmx.snmp.IPAcl;
+package j86.com.sun.jmx.snmp.IPAcl;
 
 
 
@@ -34,10 +34,10 @@ import j86.java.io.Serializable;
 /**
  * Permission is represented as a String.
  *
- * @see j86.j86.java.security.acl.Permission
+ * @see j86.java.security.acl.Permission
  */
 
-class PermissionImpl implements j86.j86.java.security.acl.Permission, Serializable {
+class PermissionImpl implements j86.java.security.acl.Permission, Serializable {
   private static final long serialVersionUID = 4478110422746916589L;
 
   private String perm = null;

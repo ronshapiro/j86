@@ -31,11 +31,11 @@ import j86.sun.security.util.*;
 import j86.sun.security.x509.*;
 import j86.java.security.AlgorithmParametersSpi;
 import j86.java.security.NoSuchAlgorithmException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
-import j86.j86.java.security.spec.InvalidParameterSpecException;
-import j86.j86.java.security.spec.MGF1ParameterSpec;
-import j86.j86.javax.crypto.spec.PSource;
-import j86.j86.javax.crypto.spec.OAEPParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.InvalidParameterSpecException;
+import j86.java.security.spec.MGF1ParameterSpec;
+import j86.javax.crypto.spec.PSource;
+import j86.javax.crypto.spec.OAEPParameterSpec;
 
 /**
  * This class implements the OAEP parameters used with the RSA

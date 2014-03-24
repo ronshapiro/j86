@@ -56,7 +56,7 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
  * THE POSSIBILITY OF SUCH DAMAGE.
  */
-package j86.j86.jdk.internal.org.objectweb.asm.commons;
+package j86.jdk.internal.org.objectweb.asm.commons;
 
 import j86.java.io.ByteArrayOutputStream;
 import j86.java.io.DataOutput;
@@ -108,7 +108,7 @@ import j86.jdk.internal.org.objectweb.asm.Opcodes;
  * 3. The descriptor of the field in UTF encoding
  * 5. If a class initializer exists, write out the following:
  * 1. The name of the method, &lt;clinit&gt;, in UTF encoding.
- * 2. The modifier of the method, j86.j86.j86.java.lang.reflect.Modifier.STATIC,
+ * 2. The modifier of the method, j86.java.lang.reflect.Modifier.STATIC,
  * written as a 32-bit integer.
  * 3. The descriptor of the method, ()V, in UTF encoding.
  * 6. For each non-private constructor sorted by method name and signature:
@@ -424,7 +424,7 @@ public class SerialVersionUIDAdder extends ClassVisitor {
             /*
              * 5. If a class initializer exists, write out the following: 1. The
              * name of the method, <clinit>, in UTF encoding. 2. The modifier of
-             * the method, j86.j86.j86.java.lang.reflect.Modifier.STATIC, written as a
+             * the method, j86.java.lang.reflect.Modifier.STATIC, written as a
              * 32-bit integer. 3. The descriptor of the method, ()V, in UTF
              * encoding.
              */

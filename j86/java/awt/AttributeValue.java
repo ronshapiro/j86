@@ -25,7 +25,7 @@
 
 package j86.java.awt;
 
-import j86.j86.sun.util.logging.PlatformLogger;
+import j86.sun.util.logging.PlatformLogger;
 
 abstract class AttributeValue {
     private static final PlatformLogger log = PlatformLogger.getLogger("j86.java.awt.AttributeValue");
@@ -45,7 +45,7 @@ abstract class AttributeValue {
         this.value = value;
         this.names = names;
     }
-    // This hashCode is used by the j86.j86.sun.awt.implementation as an array
+    // This hashCode is used by the j86.sun.awt.implementation as an array
     // index.
     public int hashCode() {
         return value;

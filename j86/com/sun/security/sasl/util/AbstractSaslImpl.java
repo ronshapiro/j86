@@ -23,15 +23,15 @@
  * questions.
  */
 
-package j86.j86.com.sun.security.sasl.util;
+package j86.com.sun.security.sasl.util;
 
 import j86.javax.security.sasl.*;
 import j86.java.io.*;
 import j86.java.util.Map;
 import j86.java.util.StringTokenizer;
 
-import j86.j86.java.util.logging.Logger;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Logger;
+import j86.java.util.logging.Level;
 
 import j86.sun.misc.HexDumpEncoder;
 

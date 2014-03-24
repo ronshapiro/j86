@@ -24,7 +24,7 @@
  */
 package j86.com.sun.jmx.mbeanserver;
 
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 
 import j86.javax.management.Attribute;
 import j86.javax.management.AttributeList;

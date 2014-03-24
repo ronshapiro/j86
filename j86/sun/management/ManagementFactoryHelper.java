@@ -25,7 +25,7 @@
 
 package j86.sun.management;
 
-import j86.j86.java.lang.management.*;
+import j86.java.lang.management.*;
 
 import j86.javax.management.DynamicMBean;
 import j86.javax.management.InstanceAlreadyExistsException;
@@ -39,7 +39,7 @@ import j86.java.security.AccessController;
 import j86.java.security.PrivilegedActionException;
 import j86.java.security.PrivilegedExceptionAction;
 
-import j86.j86.sun.util.logging.LoggingSupport;
+import j86.sun.util.logging.LoggingSupport;
 
 import j86.java.util.ArrayList;
 import j86.java.util.Collections;
@@ -48,7 +48,7 @@ import j86.java.util.List;
 import com.j86.sun.management.DiagnosticCommandMBean;
 import com.j86.sun.management.HotSpotDiagnosticMXBean;
 
-import static j86.j86.java.lang.management.ManagementFactory.*;
+import static j86.java.lang.management.ManagementFactory.*;
 
 /**
  * ManagementFactoryHelper provides static factory methods to create
@@ -147,7 +147,7 @@ public class ManagementFactoryHelper {
 
     /**
      * The logging MXBean object is an instance of
-     * PlatformLoggingMXBean and j86.j86.java.util.logging.LoggingMXBean
+     * PlatformLoggingMXBean and j86.java.util.logging.LoggingMXBean
      * but it can't directly implement two MXBean interfaces
      * as a compliant MXBean implements exactly one MXBean interface,
      * or if it implements one interface that is a subinterface of
@@ -159,13 +159,13 @@ public class ManagementFactoryHelper {
      * that extend PlatformLoggingMXBean and j.u.l.LoggingMXBean
     */
     public interface LoggingMXBean
-        extends PlatformLoggingMXBean, j86.j86.java.util.logging.LoggingMXBean {
+        extends PlatformLoggingMXBean, j86.java.util.logging.LoggingMXBean {
     }
 
     static class PlatformLoggingImpl implements LoggingMXBean
     {
         final static PlatformLoggingMXBean instance = new PlatformLoggingImpl();
-        final static String LOGGING_MXBEAN_NAME = "j86.j86.java.util.logging:type=Logging";
+        final static String LOGGING_MXBEAN_NAME = "j86.java.util.logging:type=Logging";
 
         private volatile ObjectName objname;  // created lazily
         @Override
@@ -210,7 +210,7 @@ public class ManagementFactoryHelper {
             bufferPools = new ArrayList<>(2);
             bufferPools.add(createBufferPoolMXBean(j86.sun.misc.SharedSecrets.getJavaNioAccess()
                 .getDirectBufferPool()));
-            bufferPools.add(createBufferPoolMXBean(j86.j86.j86.sun.nio.ch.FileChannelImpl
+            bufferPools.add(createBufferPoolMXBean(j86.sun.nio.ch.FileChannelImpl
                 .getMappedBufferPool()));
         }
         return bufferPools;

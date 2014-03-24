@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.j86.sun.nio.ch;
+package j86.sun.nio.ch;
 
 import j86.java.nio.ByteBuffer;
 import j86.sun.misc.*;

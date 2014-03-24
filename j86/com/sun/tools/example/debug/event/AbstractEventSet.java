@@ -35,8 +35,8 @@
 package j86.com.sun.tools.example.debug.event;
 
 import j86.com.sun.jdi.*;
-import j86.j86.com.sun.jdi.event.*;
-import j86.j86.com.sun.jdi.request.*;
+import j86.com.sun.jdi.event.*;
+import j86.com.sun.jdi.request.*;
 
 import j86.java.util.*;
 
@@ -108,7 +108,7 @@ public abstract class AbstractEventSet extends EventObject implements EventSet {
      * policies for each event's request. The one that suspends the
      * most threads is chosen when the event occurs in the target VM
      * and that policy is returned here. See
-     * j86.j86.com.sun.jdi.request.EventRequest for the possible policy values.
+     * j86.com.sun.jdi.request.EventRequest for the possible policy values.
      *
      * @return the integer suspendPolicy
      */

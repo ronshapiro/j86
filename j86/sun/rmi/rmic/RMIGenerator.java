@@ -249,7 +249,7 @@ public class RMIGenerator implements RMIConstants, Generator {
     private File skeletonFile;
 
     /**
-     * Names to use for the j86.j86.j86.java.lang.reflect.Method static fields
+     * Names to use for the j86.java.lang.reflect.Method static fields
      * corresponding to each remote method.
      */
     private String[] methodFieldNames;
@@ -370,7 +370,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                 p.pln();
 
                 /*
-                 * Initialize j86.j86.j86.java.lang.reflect.Method fields for each remote
+                 * Initialize j86.java.lang.reflect.Method fields for each remote
                  * method in a static initializer.
                  */
                 p.plnI("static {");
@@ -388,7 +388,7 @@ public class RMIGenerator implements RMIConstants, Generator {
                     p.plnI(idRemoteRef + ".class.getMethod(\"invoke\",");
                     p.plnI("new j86.java.lang.Class[] {");
                     p.pln(idRemote + ".class,");
-                    p.pln("j86.j86.j86.java.lang.reflect.Method.class,");
+                    p.pln("j86.java.lang.reflect.Method.class,");
                     p.pln("j86.java.lang.Object[].class,");
                     p.pln("long.class");
                     p.pOln("});");
@@ -963,14 +963,14 @@ public class RMIGenerator implements RMIConstants, Generator {
     }
 
     /**
-     * Write declaration for j86.j86.j86.java.lang.reflect.Method static fields
+     * Write declaration for j86.java.lang.reflect.Method static fields
      * corresponding to each remote method in a stub.
      */
     private void writeMethodFieldDeclarations(IndentingWriter p)
         throws IOException
     {
         for (int i = 0; i < methodFieldNames.length; i++) {
-            p.pln("private static j86.j86.j86.java.lang.reflect.Method " +
+            p.pln("private static j86.java.lang.reflect.Method " +
                 methodFieldNames[i] + ";");
         }
     }

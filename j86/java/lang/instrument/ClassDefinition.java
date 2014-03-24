@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.java.lang.instrument;
+package j86.java.lang.instrument;
 
 /*
  * Copyright 2003 Wily Technology, Inc.
@@ -33,7 +33,7 @@ package j86.j86.java.lang.instrument;
  * This class serves as a parameter block to the <code>Instrumentation.redefineClasses</code> method.
  * Serves to bind the <code>Class</code> that needs redefining together with the new class file bytes.
  *
- * @see     j86.j86.java.lang.instrument.Instrumentation#redefineClasses
+ * @see     j86.java.lang.instrument.Instrumentation#redefineClasses
  * @since   1.5
  */
 public final class ClassDefinition {

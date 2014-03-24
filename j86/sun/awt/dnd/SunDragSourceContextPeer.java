@@ -23,7 +23,7 @@
  * questions.
  */
 
-package j86.j86.sun.awt.dnd;
+package j86.sun.awt.dnd;
 
 import j86.java.awt.AWTEvent;
 import j86.java.awt.Component;
@@ -32,27 +32,27 @@ import j86.java.awt.EventQueue;
 import j86.java.awt.Image;
 import j86.java.awt.Point;
 
-import j86.j86.java.awt.datatransfer.Transferable;
+import j86.java.awt.datatransfer.Transferable;
 
-import j86.j86.java.awt.dnd.DnDConstants;
-import j86.j86.java.awt.dnd.DragSourceContext;
-import j86.j86.java.awt.dnd.DragSourceEvent;
-import j86.j86.java.awt.dnd.DragSourceDropEvent;
-import j86.j86.java.awt.dnd.DragSourceDragEvent;
-import j86.j86.java.awt.dnd.DragGestureEvent;
-import j86.j86.java.awt.dnd.InvalidDnDOperationException;
+import j86.java.awt.dnd.DnDConstants;
+import j86.java.awt.dnd.DragSourceContext;
+import j86.java.awt.dnd.DragSourceEvent;
+import j86.java.awt.dnd.DragSourceDropEvent;
+import j86.java.awt.dnd.DragSourceDragEvent;
+import j86.java.awt.dnd.DragGestureEvent;
+import j86.java.awt.dnd.InvalidDnDOperationException;
 
-import j86.j86.j86.java.awt.dnd.peer.DragSourceContextPeer;
+import j86.java.awt.dnd.peer.DragSourceContextPeer;
 
-import j86.j86.java.awt.event.InputEvent;
-import j86.j86.java.awt.event.MouseEvent;
+import j86.java.awt.event.InputEvent;
+import j86.java.awt.event.MouseEvent;
 
 import j86.java.util.Map;
 import j86.java.util.SortedMap;
 
 import j86.sun.awt.SunToolkit;
-import j86.j86.sun.awt.datatransfer.DataTransferer;
-import j86.j86.java.awt.datatransfer.DataFlavor;
+import j86.sun.awt.datatransfer.DataTransferer;
+import j86.java.awt.datatransfer.DataFlavor;
 
 
 /**

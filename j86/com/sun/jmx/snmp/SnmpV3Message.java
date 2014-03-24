@@ -27,16 +27,16 @@ package j86.com.sun.jmx.snmp;
 // java imports
 //
 import j86.java.util.Vector;
-import j86.j86.java.util.logging.Level;
+import j86.java.util.logging.Level;
 import j86.java.net.InetAddress;
 
 // import debug stuff
 //
 import static j86.com.sun.jmx.defaults.JmxProperties.SNMP_LOGGER;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityModel;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpDecryptedPdu;
-import j86.j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
+import j86.com.sun.jmx.snmp.internal.SnmpMsgProcessingSubSystem;
+import j86.com.sun.jmx.snmp.internal.SnmpSecurityModel;
+import j86.com.sun.jmx.snmp.internal.SnmpDecryptedPdu;
+import j86.com.sun.jmx.snmp.internal.SnmpSecurityCache;
 
 import j86.com.sun.jmx.snmp.SnmpMsg;
 import j86.com.sun.jmx.snmp.SnmpPdu;

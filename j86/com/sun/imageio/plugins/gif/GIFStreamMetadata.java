@@ -25,9 +25,9 @@
 
 package j86.com.sun.imageio.plugins.gif;
 
-import j86.j86.javax.imageio.metadata.IIOInvalidTreeException;
-import j86.j86.javax.imageio.metadata.IIOMetadataNode;
-import j86.j86.javax.imageio.metadata.IIOMetadataFormatImpl;
+import j86.javax.imageio.metadata.IIOInvalidTreeException;
+import j86.javax.imageio.metadata.IIOMetadataNode;
+import j86.javax.imageio.metadata.IIOMetadataFormatImpl;
 import org.w3c.dom.Node;
 
 // TODO - document elimination of globalColorTableFlag

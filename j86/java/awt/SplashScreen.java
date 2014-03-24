@@ -25,12 +25,12 @@
 package j86.java.awt;
 
 import j86.java.io.IOException;
-import j86.j86.j86.java.awt.image.*;
+import j86.java.awt.image.*;
 import j86.java.net.URL;
 import j86.java.net.URLConnection;
 import j86.java.io.File;
-import j86.j86.sun.util.logging.PlatformLogger;
-import j86.j86.j86.sun.awt.image.SunWritableRaster;
+import j86.sun.util.logging.PlatformLogger;
+import j86.sun.awt.image.SunWritableRaster;
 
 /**
  * The splash screen can be displayed at application startup, before the

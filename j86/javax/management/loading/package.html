@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>j86.j86.javax.management.loading package</title>
+<title>j86.javax.management.loading package</title>
 <!--
 Copyright (c) 1999, 2011, Oracle and/or its affiliates. All rights reserved.
 DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
@@ -40,7 +40,7 @@ questions.
 	objects via the method {@link
 	j86.javax.management.MBeanServer#instantiate(String, ObjectName,
 	Object[], String[])}.  The {@link
-	j86.j86.javax.management.loading.MLet MLet} class is an example of
+	j86.javax.management.loading.MLet MLet} class is an example of
 	such an MBean.  It is a {@link j86.java.net.URLClassLoader
 	URLClassLoader}, so the list of URLs to load classes from can
 	be configured.</p>
@@ -60,9 +60,9 @@ questions.
 	find a class in its own set of URLs.</p>
 
       <p>If an MBean implements the interface {@link
-	j86.j86.javax.management.loading.PrivateClassLoader PrivateClassLoader},
+	j86.javax.management.loading.PrivateClassLoader PrivateClassLoader},
 	then it is not added to the class loader repository.  The class
-	{@link j86.j86.javax.management.loading.PrivateMLet PrivateMLet} is a
+	{@link j86.javax.management.loading.PrivateMLet PrivateMLet} is a
 	subclass of <code>MLet</code> that implements
 	<code>PrivateClassLoader</code>.</p>
 

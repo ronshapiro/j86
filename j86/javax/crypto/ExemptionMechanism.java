@@ -33,7 +33,7 @@ import j86.java.security.NoSuchAlgorithmException;
 import j86.java.security.NoSuchProviderException;
 import j86.java.security.InvalidKeyException;
 import j86.java.security.InvalidAlgorithmParameterException;
-import j86.j86.java.security.spec.AlgorithmParameterSpec;
+import j86.java.security.spec.AlgorithmParameterSpec;
 
 import j86.sun.security.jca.GetInstance.Instance;
 

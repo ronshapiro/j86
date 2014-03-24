@@ -28,13 +28,13 @@ package j86.javax.rmi.ssl;
 import j86.java.io.IOException;
 import j86.java.net.ServerSocket;
 import j86.java.net.Socket;
-import j86.j86.java.rmi.server.RMIServerSocketFactory;
+import j86.java.rmi.server.RMIServerSocketFactory;
 import j86.java.util.Arrays;
 import j86.java.util.List;
-import j86.j86.javax.net.ssl.SSLContext;
-import j86.j86.javax.net.ssl.SSLServerSocketFactory;
-import j86.j86.javax.net.ssl.SSLSocket;
-import j86.j86.javax.net.ssl.SSLSocketFactory;
+import j86.javax.net.ssl.SSLContext;
+import j86.javax.net.ssl.SSLServerSocketFactory;
+import j86.javax.net.ssl.SSLSocket;
+import j86.javax.net.ssl.SSLSocketFactory;
 
 /**
  * <p>An <code>SslRMIServerSocketFactory</code> instance is used by the RMI
@@ -61,8 +61,8 @@ import j86.j86.javax.net.ssl.SSLSocketFactory;
  * authentication is required by the server). This behavior can be modified
  * by supplying an already initialized <code>SSLContext</code> instance.
  *
- * @see j86.j86.javax.net.ssl.SSLSocketFactory
- * @see j86.j86.javax.net.ssl.SSLServerSocketFactory
+ * @see j86.javax.net.ssl.SSLSocketFactory
+ * @see j86.javax.net.ssl.SSLServerSocketFactory
  * @see j86.javax.rmi.ssl.SslRMIClientSocketFactory
  * @since 1.5
  */

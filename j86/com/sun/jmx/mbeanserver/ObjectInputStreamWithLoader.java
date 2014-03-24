@@ -30,7 +30,7 @@ import j86.java.io.IOException;
 import j86.java.io.InputStream;
 import j86.java.io.ObjectInputStream;
 import j86.java.io.ObjectStreamClass;
-import j86.j86.sun.reflect.misc.ReflectUtil;
+import j86.sun.reflect.misc.ReflectUtil;
 
 /**
  * This class deserializes an object in the context of a specific class loader.

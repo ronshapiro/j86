@@ -25,7 +25,7 @@
 
 package j86.java.util;
 
-import j86.j86.java.util.function.Consumer;
+import j86.java.util.function.Consumer;
 
 /**
  * Doubly-linked list implementation of the {@code List} and {@code Deque}
@@ -1095,7 +1095,7 @@ public class LinkedList<E>
     @SuppressWarnings("unchecked")
     public <T> T[] toArray(T[] a) {
         if (a.length < size)
-            a = (T[])j86.j86.j86.java.lang.reflect.Array.newInstance(
+            a = (T[])j86.java.lang.reflect.Array.newInstance(
                                 a.getClass().getComponentType(), size);
         int i = 0;
         Object[] result = a;

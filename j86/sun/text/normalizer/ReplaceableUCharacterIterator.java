@@ -35,7 +35,7 @@
  *******************************************************************************
  */
 
-package j86.j86.sun.text.normalizer;
+package j86.sun.text.normalizer;
 
 /**
  * DLF docs must define behavior when Replaceable is mutated underneath

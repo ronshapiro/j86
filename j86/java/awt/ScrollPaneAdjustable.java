@@ -26,9 +26,9 @@ package j86.java.awt;
 
 import j86.sun.awt.AWTAccessor;
 
-import j86.j86.java.awt.event.AdjustmentEvent;
-import j86.j86.java.awt.event.AdjustmentListener;
-import j86.j86.java.awt.peer.ScrollPanePeer;
+import j86.java.awt.event.AdjustmentEvent;
+import j86.java.awt.event.AdjustmentListener;
+import j86.java.awt.peer.ScrollPanePeer;
 import j86.java.io.Serializable;
 
 
@@ -370,8 +370,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      * @param    l   the adjustment listener.
      * @see      #removeAdjustmentListener
      * @see      #getAdjustmentListeners
-     * @see      j86.j86.java.awt.event.AdjustmentListener
-     * @see      j86.j86.java.awt.event.AdjustmentEvent
+     * @see      j86.java.awt.event.AdjustmentListener
+     * @see      j86.java.awt.event.AdjustmentEvent
      */
     public synchronized void addAdjustmentListener(AdjustmentListener l) {
         if (l == null) {
@@ -391,8 +391,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      * @param         l     the adjustment listener.
      * @see           #addAdjustmentListener
      * @see           #getAdjustmentListeners
-     * @see           j86.j86.java.awt.event.AdjustmentListener
-     * @see           j86.j86.java.awt.event.AdjustmentEvent
+     * @see           j86.java.awt.event.AdjustmentListener
+     * @see           j86.java.awt.event.AdjustmentEvent
      * @since         JDK1.1
      */
     public synchronized void removeAdjustmentListener(AdjustmentListener l){
@@ -413,8 +413,8 @@ public class ScrollPaneAdjustable implements Adjustable, Serializable {
      *
      * @see           #addAdjustmentListener
      * @see           #removeAdjustmentListener
-     * @see           j86.j86.java.awt.event.AdjustmentListener
-     * @see           j86.j86.java.awt.event.AdjustmentEvent
+     * @see           j86.java.awt.event.AdjustmentListener
+     * @see           j86.java.awt.event.AdjustmentEvent
      * @since 1.4
      */
     public synchronized AdjustmentListener[] getAdjustmentListeners() {
